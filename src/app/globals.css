@@ -6,6 +6,8 @@
   --color-sand: #eee0c0;
   --color-maroon: #881c1c;
   --color-maroon-dark: #6b1515;
+  --color-navy: #1b2a4a;
+  --color-navy-dark: #101c34;
   --color-gold: #c9a84c;
   --color-gold-light: #dfc070;
   --color-gold-dark: #a07831;
@@ -19,6 +21,8 @@
   --color-sand: var(--color-sand);
   --color-maroon: var(--color-maroon);
   --color-maroon-dark: var(--color-maroon-dark);
+  --color-navy: var(--color-navy);
+  --color-navy-dark: var(--color-navy-dark);
   --color-gold: var(--color-gold);
   --color-gold-light: var(--color-gold-light);
   --color-gold-dark: var(--color-gold-dark);

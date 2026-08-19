@@ -3,7 +3,7 @@ export const footerExploreLinks = [
   { label: "Destinations (Nepal)", href: "/destinations/nepal" },
   { label: "Popular Tours", href: "/packages" },
   { label: "Fleet & Car Rental", href: "/car-rental" },
-  { label: "Travel by Month", href: "/travel-by-month" },
+  { label: "Travel by Month", href: "/best-time-to-visit" },
 ] as const;
 
 export const sisterCompanies = [
@@ -12,15 +12,13 @@ export const sisterCompanies = [
 ] as const;
 
 export const footerCompanyLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "Our Story", href: "/our-story" },
-  { label: "Why Choose Us", href: "/why-choose-us" },
-  { label: "Blog", href: "/blogs" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Blog", href: "/travel-guide" },
 ] as const;
 
 export const footerLegalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Terms & Conditions", href: "/cancellation-policy-and-terms-and-conditions" },
   { label: "Sitemap", href: "/sitemap.xml" },
 ] as const;
 

@@ -4,19 +4,21 @@ import type { ReactNode } from "react";
 type ButtonProps = {
   href: string;
   children: ReactNode;
-  variant?: "primary" | "outline" | "maroon";
+  variant?: "primary" | "outline" | "outlineDark" | "maroon" | "gold";
   size?: "md" | "sm";
   className?: string;
   external?: boolean;
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wide transition-colors duration-200 min-h-11";
+  "inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wide transition-all duration-200 ease-out min-h-11 hover:scale-[1.04]";
 
 const variants = {
   primary: "bg-gold text-ink hover:bg-gold-light",
   outline: "border border-ivory/70 text-ivory hover:bg-ivory/10",
+  outlineDark: "border border-ink-soft/40 text-ink hover:bg-cream",
   maroon: "bg-maroon text-ivory hover:bg-maroon-dark",
+  gold: "bg-gold text-ivory shadow-sm hover:bg-gold-dark",
 };
 
 const sizes = {

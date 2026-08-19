@@ -4,7 +4,7 @@ import { TrustStrip } from "@/components/home/TrustStrip";
 import { RegionHighlights } from "@/components/home/RegionHighlights";
 import { WhyTravelWithUs } from "@/components/home/WhyTravelWithUs";
 import { Testimonials } from "@/components/home/Testimonials";
-import { CTASection } from "@/components/home/CTASection";
+import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { organizationJsonLd } from "@/lib/seo/organization-schema";
 import { HREFLANG_LOCALES, SITE_NAME, SITE_URL } from "@/lib/seo/business";
 
@@ -51,13 +51,30 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
       />
+
       <main>
         <Hero />
         <TrustStrip />
         <RegionHighlights />
         <WhyTravelWithUs />
         <Testimonials />
-        <CTASection />
+
+        <JourneyCTA
+          backgroundImage="/images/home/hero.webp"
+          eyebrow="Start Your Journey"
+          headline="Your India Journey Awaits."
+          headlineItalic="Where Will You Begin?"
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          primaryLabel="Plan My Journey"
+          primaryHref="/contact"
+          whatsappMessage="Hi! I'd like to plan a tour with Colourful Indian Holidays."
+          trustBadges={[
+            "IATO Registered Agency",
+            "No Hidden Fees",
+            "International Payments Accepted",
+            "Respond Within 2 Hours",
+          ]}
+        />
       </main>
     </>
   );

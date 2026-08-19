@@ -2,7 +2,19 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { whatsappUrl, mailtoUrl } from "@/lib/whatsapp";
 
-export function CTASection() {
+type CTASectionProps = {
+  heading?: string;
+  description?: string;
+  whatsappMessage?: string;
+  emailSubject?: string;
+};
+
+export function CTASection({
+  heading = "Let's Start Planning Your India Journey",
+  description = "Tell us where you're travelling from and what you have in mind — we'll reply with a tailored itinerary and quote, usually within 24 hours.",
+  whatsappMessage = "Hi! I'd like to plan a tour with Colourful Indian Holidays.",
+  emailSubject = "Enquiry: Rajasthan & India Tour",
+}: CTASectionProps = {}) {
   return (
     <section
       id="trip-planner-cta"
@@ -10,25 +22,13 @@ export function CTASection() {
     >
       <div className="mx-auto max-w-2xl px-6 sm:px-8">
         <Reveal>
-          <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-            Let&apos;s Start Planning Your India Journey
-          </h2>
-          <p className="mt-4 text-ivory/80">
-            Tell us where you&apos;re travelling from and what you have in mind — we&apos;ll
-            reply with a tailored itinerary and quote, usually within 24 hours.
-          </p>
+          <h2 className="font-display text-3xl font-semibold sm:text-4xl">{heading}</h2>
+          <p className="mt-4 text-ivory/80">{description}</p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button
-              href={whatsappUrl("Hi! I'd like to plan a tour with Colourful Indian Holidays.")}
-              external
-            >
+            <Button href={whatsappUrl(whatsappMessage)} external>
               Chat on WhatsApp
             </Button>
-            <Button
-              href={mailtoUrl("Enquiry: Rajasthan & India Tour")}
-              external
-              variant="outline"
-            >
+            <Button href={mailtoUrl(emailSubject)} external variant="outline">
               Email Us
             </Button>
           </div>

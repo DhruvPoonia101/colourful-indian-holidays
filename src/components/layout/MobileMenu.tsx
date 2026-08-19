@@ -116,7 +116,30 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             transition={{ duration: 0.2 }}
                             className="overflow-hidden"
                           >
-                            {item.items.length > 0 ? (
+                            {item.columns && item.columns.length > 0 ? (
+                              <div className="flex flex-col gap-4 pb-3 pl-3">
+                                {item.columns.map((column) => (
+                                  <div key={column.heading}>
+                                    <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-gold-dark">
+                                      {column.heading}
+                                    </p>
+                                    <ul className="flex flex-col gap-1">
+                                      {column.items.map((link) => (
+                                        <li key={link.href}>
+                                          <Link
+                                            href={link.href}
+                                            onClick={onClose}
+                                            className="block rounded-lg px-2 py-2 text-sm text-ink-soft transition-colors hover:bg-cream hover:text-maroon"
+                                          >
+                                            {link.label}
+                                          </Link>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                ))}
+                              </div>
+                            ) : item.items.length > 0 ? (
                               <ul className="flex flex-col gap-1 pb-3 pl-3">
                                 {item.items.map((link) => (
                                   <li key={link.href}>
@@ -181,14 +204,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   <FiMail aria-hidden="true" className="h-5 w-5" />
                 </a>
               </div>
-              <Button
-                href={whatsappUrl(
-                  "Hi! I'd like to plan a tour with Colourful Indian Holidays."
-                )}
-                external
-                variant="maroon"
-                className="w-full"
-              >
+              <Button href="/contact" variant="maroon" className="w-full">
                 Plan My Journey
               </Button>
             </div>
