@@ -84,7 +84,7 @@ export default function KazirangaPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Kaziranga — photo coming soon"
+          imageAlt="One-horned rhino and safari jeeps at Kaziranga National Park"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Kaziranga — Home to the Great One-Horned Rhino"

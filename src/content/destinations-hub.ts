@@ -51,7 +51,7 @@ export const wildlifeDestinations: CityCard[] = [
     description: "A tiger reintroduction success story among ancient temple ruins.",
     href: "/destinations/sariska",
     image: "/images/destinations/sariska.webp",
-    imageAlt: "Sariska — photo coming soon",
+    imageAlt: "Forest landscape at Sariska Tiger Reserve",
   },
   {
     name: "Bandhavgarh",
@@ -59,7 +59,7 @@ export const wildlifeDestinations: CityCard[] = [
     description: "India's best tiger-sighting odds, set around an ancient fort.",
     href: "/destinations/bandhavgarh",
     image: "/images/destinations/bandhavgarh.webp",
-    imageAlt: "Bandhavgarh — photo coming soon",
+    imageAlt: "Safari jeeps at Bandhavgarh Tiger Reserve",
   },
   {
     name: "Kaziranga",
@@ -67,7 +67,7 @@ export const wildlifeDestinations: CityCard[] = [
     description: "Two-thirds of the world's one-horned rhino population, in Assam.",
     href: "/destinations/kaziranga",
     image: "/images/destinations/kaziranga.webp",
-    imageAlt: "Kaziranga — photo coming soon",
+    imageAlt: "One-horned rhino and safari jeeps at Kaziranga National Park",
   },
 ] as const;
 
@@ -78,7 +78,7 @@ export const beachDestinations: CityCard[] = [
     description: "The Mahabalipuram Shore Temple, Marina Beach, and Kanyakumari.",
     href: "/destinations/tamil-nadu-beaches",
     image: "/images/destinations/tamil-nadu-beaches.webp",
-    imageAlt: "Tamil Nadu Beaches — photo coming soon",
+    imageAlt: "Aerial view of the Tamil Nadu coastline with fishing boats",
   },
   {
     name: "Gujarat Beaches",
@@ -86,7 +86,7 @@ export const beachDestinations: CityCard[] = [
     description: "Portuguese-era Diu and the sacred shore temple at Somnath.",
     href: "/destinations/gujarat-beaches",
     image: "/images/destinations/gujarat-beaches.webp",
-    imageAlt: "Gujarat Beaches — photo coming soon",
+    imageAlt: "Gujarat coastline at dusk",
   },
   {
     name: "Maharashtra Beaches",
@@ -94,7 +94,7 @@ export const beachDestinations: CityCard[] = [
     description: "Alibaug's forts and the quieter Konkan coast at Ganpatipule.",
     href: "/destinations/maharashtra-beaches",
     image: "/images/destinations/maharashtra-beaches.webp",
-    imageAlt: "Maharashtra Beaches — photo coming soon",
+    imageAlt: "Aerial view of the Maharashtra Konkan coastline",
   },
   {
     name: "Andaman Islands",
@@ -102,7 +102,7 @@ export const beachDestinations: CityCard[] = [
     description: "Radhanagar Beach, coral reefs, and Havelock Island.",
     href: "/destinations/andaman-islands",
     image: "/images/destinations/andaman-islands.webp",
-    imageAlt: "Andaman Islands — photo coming soon",
+    imageAlt: "Palm-fringed beach in the Andaman Islands",
   },
 ] as const;
 

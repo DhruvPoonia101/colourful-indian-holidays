@@ -84,7 +84,7 @@ export default function MaharashtraBeachesPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Maharashtra Beaches — photo coming soon"
+          imageAlt="Aerial view of the Maharashtra Konkan coastline"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Maharashtra Beaches — An Easy Escape from Mumbai"

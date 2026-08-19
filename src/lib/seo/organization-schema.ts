@@ -1,4 +1,4 @@
-import { BUSINESS, SITE_URL } from "./business";
+import { BUSINESS, SITE_NAME, SITE_URL } from "./business";
 
 export function organizationJsonLd() {
   return {
@@ -37,5 +37,14 @@ export function organizationJsonLd() {
       areaServed: "Worldwide",
       availableLanguage: BUSINESS.languages,
     },
+  };
+}
+
+export function websiteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
   };
 }

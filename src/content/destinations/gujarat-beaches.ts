@@ -11,7 +11,7 @@ export const gujaratBeachesAttractions: CityCard[] = [
     description: "Quiet beaches backed by colonial-era forts and churches, a legacy of nearly 450 years of Portuguese rule.",
     href: "/destinations/gujarat-beaches",
     image: "/images/destinations/diu-beach.webp",
-    imageAlt: "Diu Beach — photo coming soon",
+    imageAlt: "Diu Beach",
   },
   {
     name: "Somnath Beach",
@@ -19,7 +19,7 @@ export const gujaratBeachesAttractions: CityCard[] = [
     description: "One of the twelve Jyotirlinga shrines to Shiva, rebuilt multiple times through history, standing directly on the Arabian Sea coast.",
     href: "/destinations/gujarat-beaches",
     image: "/images/destinations/somnath-beach.webp",
-    imageAlt: "Somnath Beach — photo coming soon",
+    imageAlt: "Somnath Beach",
   },
 ] as const;
 

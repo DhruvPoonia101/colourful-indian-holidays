@@ -5,12 +5,12 @@ import { RegionHighlights } from "@/components/home/RegionHighlights";
 import { WhyTravelWithUs } from "@/components/home/WhyTravelWithUs";
 import { Testimonials } from "@/components/home/Testimonials";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
-import { organizationJsonLd } from "@/lib/seo/organization-schema";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/organization-schema";
 import { HREFLANG_LOCALES, SITE_NAME, SITE_URL } from "@/lib/seo/business";
 
-const title = "Luxury Rajasthan & India Tour Packages for International Travellers";
+const title = "Private Rajasthan, India, Nepal & Bhutan Tours for International Travellers";
 const description =
-  "Private, tailor-made Rajasthan and India tours for travellers from the USA, UK, Australia and beyond. Heritage palace hotels, English-speaking guides and custom itineraries since 2008.";
+  "Private, tailor-made tours across Rajasthan, India, Nepal and Bhutan for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2008.";
 
 export const metadata: Metadata = {
   title,
@@ -50,6 +50,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
       />
 
       <main>

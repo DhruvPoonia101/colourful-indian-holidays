@@ -14,24 +14,29 @@ export const heroSlides = [
 ] as const;
 
 export const heroCopy = {
-  eyebrow: "Rajasthan & India, Curated for the World",
-  headline: "Journeys Through Royal Rajasthan & Timeless India",
+  eyebrow: "Rajasthan, India, Nepal & Bhutan — Curated for the World",
+  headline: "Private Journeys Across Rajasthan, India, Nepal & Bhutan",
   subheadline:
-    "Private, tailor-made tours for international travellers — heritage palaces, expert English-speaking guides, and itineraries built around you, from your first enquiry to the trip home.",
+    "Private, tailor-made tours for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2008.",
   ctaLabel: "Plan My Journey",
 };
 
 export const trustStats = [
-  { label: "Years Crafting Journeys", value: "18+", isPlaceholder: false },
-  { label: "Tours Completed", value: "500+", isPlaceholder: true },
-  { label: "Traveller Rating", value: "4.9 / 5", isPlaceholder: false },
-  { label: "Countries Welcomed", value: "40+", isPlaceholder: true },
+  { icon: "users", value: "7900+", label: "Happy Travellers" },
+  { icon: "globe", value: "30+", label: "Countries Served" },
+  { icon: "shield", value: "18+", label: "Years of Experience" },
+  { icon: "headset", value: "8+", label: "Offices" },
 ] as const;
 
 export const associations = [
   { src: "/awards/iato.webp", alt: "IATO — Indian Association of Tour Operators member" },
   { src: "/awards/ministry-tourism.webp", alt: "Approved by the Ministry of Tourism, Government of India" },
   { src: "/awards/rajasthan-tourism.webp", alt: "Recognised by Rajasthan Tourism" },
+  { src: "/awards/tripadvisor-2014.webp", alt: "TripAdvisor Travellers' Choice 2014" },
+  { src: "/awards/tripadvisor-2015.webp", alt: "TripAdvisor Travellers' Choice 2015" },
+  { src: "/awards/tripadvisor-2016.webp", alt: "TripAdvisor Travellers' Choice 2016" },
+  { src: "/awards/tripadvisor-2017.webp", alt: "TripAdvisor Travellers' Choice 2017" },
+  { src: "/awards/tripadvisor-2019.webp", alt: "TripAdvisor Travellers' Choice 2019" },
   { src: "/awards/tripadvisor-2024.webp", alt: "TripAdvisor Travellers' Choice 2024" },
 ] as const;
 
@@ -44,18 +49,18 @@ export const regions = [
     alt: "Amber Fort, Jaipur, Rajasthan",
   },
   {
-    name: "Golden Triangle",
-    description: "Delhi, Agra and Jaipur — India's classic first journey.",
-    href: "/destinations/golden-triangle",
+    name: "Agra",
+    description: "Home of the Taj Mahal, and the heart of the Golden Triangle.",
+    href: "/destinations/agra",
     image: "/images/destinations/agra-taj-mahal.webp",
     alt: "Taj Mahal at sunrise, Agra",
   },
   {
-    name: "Kerala Backwaters",
-    description: "Palm-lined lagoons and houseboats through God's Own Country.",
-    href: "/destinations/kerala",
-    image: "/images/destinations/alleppey-backwaters.webp",
-    alt: "Houseboat on the Alleppey backwaters, Kerala",
+    name: "Kaziranga",
+    description: "Home to two-thirds of the world's one-horned rhinoceros population.",
+    href: "/destinations/kaziranga",
+    image: "/images/destinations/kaziranga.webp",
+    alt: "One-horned rhino and safari jeeps at Kaziranga National Park",
   },
   {
     name: "Varanasi & Spiritual India",
@@ -91,24 +96,21 @@ export const differentiators = [
 
 export const testimonials = [
   {
-    quote:
-      "Placeholder review — replace with a real traveller quote before launch. Every detail of our Rajasthan trip was thoughtfully arranged, from the palace hotels to our wonderful guide.",
-    name: "Sample Traveller",
+    quote: "The service we received from Narendra Poonia was superb.",
+    name: "Joss Harrow",
     origin: "United Kingdom",
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
-    quote:
-      "Placeholder review — replace with a real traveller quote before launch. A seamless, private journey across the Golden Triangle that felt designed just for us.",
-    name: "Sample Traveller",
-    origin: "United States",
-    isPlaceholder: true,
+    quote: "Would recommend Colourful Indian Holidays to anyone thinking of travelling to India.",
+    name: "Chloe Lawlor",
+    origin: "Ireland",
+    isPlaceholder: false,
   },
   {
-    quote:
-      "Placeholder review — replace with a real traveller quote before launch. Responsive, knowledgeable and genuinely caring — highly recommended for first-time visitors to India.",
-    name: "Sample Traveller",
-    origin: "Australia",
-    isPlaceholder: true,
+    quote: "Highly recommended to anyone who would like to discover the rich culture and heritage of India.",
+    name: "KD Yu",
+    origin: "Philippines",
+    isPlaceholder: false,
   },
 ] as const;

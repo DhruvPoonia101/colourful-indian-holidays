@@ -84,7 +84,7 @@ export default function BandhavgarhPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Bandhavgarh — photo coming soon"
+          imageAlt="Safari jeeps at Bandhavgarh Tiger Reserve"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Bandhavgarh — India's Highest Tiger Density"

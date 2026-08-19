@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { BracketEyebrow } from "@/components/ui/BracketEyebrow";
 import { testimonials } from "@/content/home";
 
 export function Testimonials() {
@@ -6,10 +7,8 @@ export function Testimonials() {
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-dark">
-            Traveller Stories
-          </p>
-          <h2 className="mt-3 max-w-2xl font-display text-3xl font-semibold text-ink sm:text-4xl">
+          <BracketEyebrow>Traveller Stories</BracketEyebrow>
+          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold text-ink sm:text-4xl">
             What Our Guests Say
           </h2>
           <p className="mt-2 text-sm text-ink-soft/70">

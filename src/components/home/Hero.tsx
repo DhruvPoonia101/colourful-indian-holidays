@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
+import { BracketEyebrow } from "@/components/ui/BracketEyebrow";
 import { heroCopy, heroSlides } from "@/content/home";
 
 const ROTATE_MS = 6000;
@@ -63,9 +64,8 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-light"
         >
-          {heroCopy.eyebrow}
+          <BracketEyebrow tone="light">{heroCopy.eyebrow}</BracketEyebrow>
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

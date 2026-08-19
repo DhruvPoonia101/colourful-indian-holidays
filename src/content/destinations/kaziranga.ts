@@ -11,7 +11,7 @@ export const kazirangaAttractions: CityCard[] = [
     description: "Jeep safaris across the Brahmaputra floodplain, with genuinely strong odds of seeing the great one-horned rhinoceros in open grassland.",
     href: "/destinations/kaziranga",
     image: "/images/destinations/kaziranga-rhino.webp",
-    imageAlt: "Rhino Safari — photo coming soon",
+    imageAlt: "Rhino Safari",
   },
   {
     name: "Elephant-Back Safari",
@@ -19,7 +19,7 @@ export const kazirangaAttractions: CityCard[] = [
     description: "A traditional elephant-back safari through Kaziranga's tall grassland, moving quietly enough to approach grazing rhinos closely.",
     href: "/destinations/kaziranga",
     image: "/images/destinations/kaziranga-safari.webp",
-    imageAlt: "Elephant-Back Safari — photo coming soon",
+    imageAlt: "Elephant-Back Safari",
   },
 ] as const;
 

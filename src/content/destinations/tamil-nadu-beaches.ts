@@ -11,7 +11,7 @@ export const tamilNaduBeachesAttractions: CityCard[] = [
     description: "A 7th-century shore temple standing directly on the sand, alongside rock-cut cave temples and the famous Five Rathas monoliths.",
     href: "/destinations/tamil-nadu-beaches",
     image: "/images/destinations/mahabalipuram-beach.webp",
-    imageAlt: "Mahabalipuram Beach — photo coming soon",
+    imageAlt: "Mahabalipuram Beach",
   },
   {
     name: "Marina Beach, Chennai",
@@ -19,7 +19,7 @@ export const tamilNaduBeachesAttractions: CityCard[] = [
     description: "A 13-kilometre stretch of sand running along the city itself — busiest at sunrise and sunset, when locals turn out in numbers.",
     href: "/destinations/tamil-nadu-beaches",
     image: "/images/destinations/marina-beach-chennai.webp",
-    imageAlt: "Marina Beach, Chennai — photo coming soon",
+    imageAlt: "Marina Beach, Chennai",
   },
   {
     name: "Kanyakumari Beach",
@@ -27,7 +27,7 @@ export const tamilNaduBeachesAttractions: CityCard[] = [
     description: "The southernmost point of mainland India, where the Bay of Bengal, Arabian Sea and Indian Ocean converge — a genuinely unusual sunrise and sunset in the same spot.",
     href: "/destinations/tamil-nadu-beaches",
     image: "/images/destinations/kanyakumari-beach.webp",
-    imageAlt: "Kanyakumari Beach — photo coming soon",
+    imageAlt: "Kanyakumari Beach",
   },
 ] as const;
 

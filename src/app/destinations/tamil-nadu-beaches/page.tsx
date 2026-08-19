@@ -84,7 +84,7 @@ export default function TamilNaduBeachesPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Tamil Nadu Beaches — photo coming soon"
+          imageAlt="Aerial view of the Tamil Nadu coastline with fishing boats"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Tamil Nadu Beaches — India's Southern Coastline"

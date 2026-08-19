@@ -11,7 +11,7 @@ export const andamanIslandsAttractions: CityCard[] = [
     description: "A wide, white-sand beach on Havelock Island with clear turquoise water, consistently ranked among the top beaches in Asia.",
     href: "/destinations/andaman-islands",
     image: "/images/destinations/radhanagar-beach.webp",
-    imageAlt: "Radhanagar Beach — photo coming soon",
+    imageAlt: "Radhanagar Beach",
   },
   {
     name: "Havelock Island",
@@ -19,7 +19,7 @@ export const andamanIslandsAttractions: CityCard[] = [
     description: "The Andamans' most developed island for tourism, with some of India's best snorkelling and diving directly offshore.",
     href: "/destinations/andaman-islands",
     image: "/images/destinations/havelock-island.webp",
-    imageAlt: "Havelock Island — photo coming soon",
+    imageAlt: "Havelock Island",
   },
 ] as const;
 

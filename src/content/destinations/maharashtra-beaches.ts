@@ -11,7 +11,7 @@ export const maharashtraBeachesAttractions: CityCard[] = [
     description: "A relaxed coastal town a short ferry or drive from Mumbai, dotted with Maratha-era forts including the sea fort of Kolaba.",
     href: "/destinations/maharashtra-beaches",
     image: "/images/destinations/alibaug-beach.webp",
-    imageAlt: "Alibaug Beach — photo coming soon",
+    imageAlt: "Alibaug Beach",
   },
   {
     name: "Ganpatipule Beach",
@@ -19,7 +19,7 @@ export const maharashtraBeachesAttractions: CityCard[] = [
     description: "A quieter stretch of coastline south of Alibaug, home to a well-known Ganpati temple that sits directly on the beach.",
     href: "/destinations/maharashtra-beaches",
     image: "/images/destinations/ganpatipule-beach.webp",
-    imageAlt: "Ganpatipule Beach — photo coming soon",
+    imageAlt: "Ganpatipule Beach",
   },
 ] as const;
 

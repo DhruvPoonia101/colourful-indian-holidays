@@ -11,7 +11,7 @@ export const sariskaAttractions: CityCard[] = [
     description: "A jeep safari through dry deciduous forest and rocky hills, home to Rajasthan's second major tiger population after a successful reintroduction programme.",
     href: "/destinations/sariska",
     image: "/images/destinations/sariska-tiger.webp",
-    imageAlt: "Tiger Safari — photo coming soon",
+    imageAlt: "Tiger Safari",
   },
   {
     name: "Sariska Fort & Temple Ruins",
@@ -19,7 +19,7 @@ export const sariskaAttractions: CityCard[] = [
     description: "Centuries-old temple ruins and a hilltop fort scattered through the reserve, adding genuine history to the wildlife experience.",
     href: "/destinations/sariska",
     image: "/images/destinations/sariska-fort.webp",
-    imageAlt: "Sariska Fort & Temple Ruins — photo coming soon",
+    imageAlt: "Sariska Fort & Temple Ruins",
   },
 ] as const;
 

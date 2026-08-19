@@ -11,7 +11,7 @@ export const bandhavgarhAttractions: CityCard[] = [
     description: "A jeep safari through Bandhavgarh's core zone, where sighting odds are consistently among the best of any Indian tiger reserve.",
     href: "/destinations/bandhavgarh",
     image: "/images/destinations/bandhavgarh-tiger.webp",
-    imageAlt: "Tiger Safari — photo coming soon",
+    imageAlt: "Tiger Safari",
   },
   {
     name: "Bandhavgarh Fort",
@@ -19,7 +19,7 @@ export const bandhavgarhAttractions: CityCard[] = [
     description: "A hilltop fort with ruins, statues and carvings dating back over a thousand years, standing at the heart of the reserve.",
     href: "/destinations/bandhavgarh",
     image: "/images/destinations/bandhavgarh-fort.webp",
-    imageAlt: "Bandhavgarh Fort — photo coming soon",
+    imageAlt: "Bandhavgarh Fort",
   },
 ] as const;
 

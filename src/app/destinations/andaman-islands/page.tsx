@@ -84,7 +84,7 @@ export default function AndamanIslandsPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Andaman Islands — photo coming soon"
+          imageAlt="Palm-fringed beach in the Andaman Islands"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Andaman Islands — India's Tropical Frontier"

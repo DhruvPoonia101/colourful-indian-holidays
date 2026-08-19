@@ -84,7 +84,7 @@ export default function GujaratBeachesPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Gujarat Beaches — photo coming soon"
+          imageAlt="Gujarat coastline at dusk"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Gujarat Beaches — Quiet Coastline, Real History"

@@ -84,7 +84,7 @@ export default function SariskaPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Sariska — photo coming soon"
+          imageAlt="Forest landscape at Sariska Tiger Reserve"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Sariska — Tiger Reserve on Rajasthan's Doorstep"
