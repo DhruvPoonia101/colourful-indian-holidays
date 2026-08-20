@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { BracketEyebrow } from "@/components/ui/BracketEyebrow";
+import { SectionEyebrow } from "@/components/destinations/SectionEyebrow";
 import { heroCopy, heroSlides } from "@/content/home";
 
 const ROTATE_MS = 6000;
@@ -29,7 +29,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative flex min-h-[100svh] w-full items-end overflow-hidden bg-ink text-ivory"
+      className="relative flex min-h-[calc(100svh-var(--header-height,88px))] w-full items-end overflow-hidden bg-ink text-ivory"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
@@ -53,6 +53,7 @@ export function Hero() {
               fetchPriority={activeIndex === 0 ? "high" : "auto"}
               sizes="100vw"
               className="object-cover"
+              style={{ objectPosition: heroSlides[activeIndex].focalPoint }}
             />
           </motion.div>
         </AnimatePresence>
@@ -60,13 +61,13 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-24 pt-16 sm:px-8 sm:pb-32 sm:pt-20">
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          <BracketEyebrow tone="light">{heroCopy.eyebrow}</BracketEyebrow>
-        </motion.p>
+          <SectionEyebrow tone="dark">{heroCopy.eyebrow}</SectionEyebrow>
+        </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

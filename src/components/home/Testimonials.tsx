@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { BracketEyebrow } from "@/components/ui/BracketEyebrow";
+import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { testimonials } from "@/content/home";
 
 export function Testimonials() {
@@ -7,13 +7,9 @@ export function Testimonials() {
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
-          <BracketEyebrow>Traveller Stories</BracketEyebrow>
-          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold text-ink sm:text-4xl">
-            What Our Guests Say
-          </h2>
-          <p className="mt-2 text-sm text-ink-soft/70">
-            Placeholder testimonials shown below — swap in verified traveller reviews before
-            launch.
+          <SectionIntro eyebrow="Traveller Stories" heading="What Our Guests Say" />
+          <p className="mt-4 text-sm text-ink-soft/70">
+            Real reviews from Tripadvisor, verified by us word-for-word.
           </p>
         </Reveal>
 

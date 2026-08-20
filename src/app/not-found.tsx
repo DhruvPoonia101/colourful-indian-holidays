@@ -25,7 +25,7 @@ export default function NotFound() {
     <main>
       <section className="relative flex min-h-[70svh] w-full items-center overflow-hidden bg-ink text-ivory">
         <Image
-          src="/images/home/hero.webp"
+          src="/images/destinations/amber-fort-jaipur.webp"
           alt="Colourful Indian Holidays"
           fill
           priority
@@ -84,7 +84,7 @@ export default function NotFound() {
       </section>
 
       <JourneyCTA
-        backgroundImage="/images/home/hero.webp"
+        backgroundImage="/images/destinations/amber-fort-jaipur.webp"
         eyebrow="Start Your Journey"
         headline="Your India Journey Awaits."
         headlineItalic="Where Will You Begin?"

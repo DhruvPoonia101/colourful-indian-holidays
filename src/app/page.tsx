@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
+import { FiArrowRight } from "react-icons/fi";
 import { Hero } from "@/components/home/Hero";
+import { TripPlannerBar } from "@/components/home/TripPlannerBar";
 import { TrustStrip } from "@/components/home/TrustStrip";
+import { TrustedWorldwide } from "@/components/home/TrustedWorldwide";
+import { IntroSection } from "@/components/home/IntroSection";
 import { RegionHighlights } from "@/components/home/RegionHighlights";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { WhyTravelWithUs } from "@/components/home/WhyTravelWithUs";
 import { Testimonials } from "@/components/home/Testimonials";
+import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { Button } from "@/components/ui/Button";
+import { featuredThemes } from "@/content/themes-hub";
+import { featuredPackages } from "@/content/packages-hub";
+import { homeFaqs } from "@/content/home";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/organization-schema";
+import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { HREFLANG_LOCALES, SITE_NAME, SITE_URL } from "@/lib/seo/business";
 
 const title = "Private Rajasthan, India, Nepal & Bhutan Tours for International Travellers";
@@ -29,10 +40,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${SITE_URL}/images/home/hero.webp`,
+        url: `${SITE_URL}/images/destinations/amber-fort-jaipur.webp`,
         width: 1200,
         height: 630,
-        alt: "Rajasthan palace at golden hour, Colourful Indian Holidays",
+        alt: "Amber Fort at sunset, Jaipur, Rajasthan",
       },
     ],
   },
@@ -40,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${title} | ${SITE_NAME}`,
     description,
-    images: [`${SITE_URL}/images/home/hero.webp`],
+    images: [`${SITE_URL}/images/destinations/amber-fort-jaipur.webp`],
   },
 };
 
@@ -55,16 +66,59 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(homeFaqs)) }}
+      />
 
       <main>
         <Hero />
+        <TripPlannerBar />
         <TrustStrip />
+        <TrustedWorldwide />
+        <IntroSection />
         <RegionHighlights />
+
+        <CityGrid
+          eyebrow="Popular Experiences"
+          heading="What Kind of Trip Are You Looking For?"
+          cities={featuredThemes}
+          topDivider
+        />
+        <div className="flex justify-center pb-16 sm:pb-20">
+          <Button href="/themes" variant="gold">
+            Explore All Experiences
+            <FiArrowRight aria-hidden="true" className="h-4 w-4" />
+          </Button>
+        </div>
+
+        <CityGrid
+          eyebrow="Popular Tour Packages"
+          heading="Where to Start"
+          cities={featuredPackages}
+          topDivider
+        />
+        <div className="flex justify-center pb-16 sm:pb-20">
+          <Button href="/packages" variant="gold">
+            View All Tour Packages
+            <FiArrowRight aria-hidden="true" className="h-4 w-4" />
+          </Button>
+        </div>
+
         <WhyTravelWithUs />
         <Testimonials />
 
+        <FAQSection
+          eyebrow="FAQ"
+          heading="Common Questions"
+          intro="Everything international travellers ask before booking a trip with us — answered honestly."
+          faqs={homeFaqs}
+          whatsappMessage="Hi! I have a question before booking a trip with Colourful Indian Holidays."
+          topDivider
+        />
+
         <JourneyCTA
-          backgroundImage="/images/home/hero.webp"
+          backgroundImage="/images/destinations/amber-fort-jaipur.webp"
           eyebrow="Start Your Journey"
           headline="Your India Journey Awaits."
           headlineItalic="Where Will You Begin?"

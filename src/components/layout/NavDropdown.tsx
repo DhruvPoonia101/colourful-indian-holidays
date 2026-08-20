@@ -101,8 +101,8 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
         onClick={() => setOpen(true)}
         className={`flex items-center gap-1 whitespace-nowrap border-b-2 text-sm font-medium transition-colors focus-visible:outline-none ${
           isActive
-  ? "border-gold text-gold-dark"
-  : "border-transparent text-ink hover:border-gold/70 hover:text-gold-dark focus-visible:text-gold-dark"
+            ? "border-gold text-gold-dark"
+            : "border-transparent text-ink/80 hover:text-maroon focus-visible:text-maroon"
         }`}
       >
         {item.label}

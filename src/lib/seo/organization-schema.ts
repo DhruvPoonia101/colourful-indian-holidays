@@ -8,7 +8,7 @@ export function organizationJsonLd() {
     legalName: BUSINESS.legalName,
     url: BUSINESS.url,
     logo: `${SITE_URL}/logo.png`,
-    image: `${SITE_URL}/images/home/hero.webp`,
+    image: `${SITE_URL}/images/destinations/amber-fort-jaipur.webp`,
     telephone: BUSINESS.telephone,
     email: BUSINESS.email,
     foundingDate: String(BUSINESS.foundingYear),

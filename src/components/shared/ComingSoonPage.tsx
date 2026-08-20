@@ -28,7 +28,7 @@ export function ComingSoonPage({
   return (
     <main>
       <PageHero
-        image="/images/home/hero.webp"
+        image="/images/destinations/amber-fort-jaipur.webp"
         imageAlt="Colourful Indian Holidays"
         breadcrumbs={breadcrumbs}
         eyebrow={categoryLabel}
@@ -57,7 +57,7 @@ export function ComingSoonPage({
       </section>
 
       <JourneyCTA
-        backgroundImage="/images/home/hero.webp"
+        backgroundImage="/images/destinations/amber-fort-jaipur.webp"
         eyebrow="Start Your Journey"
         headline="Your India Journey Awaits."
         headlineItalic="Where Will You Begin?"

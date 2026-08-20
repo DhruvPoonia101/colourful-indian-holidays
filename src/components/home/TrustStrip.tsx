@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { FiUsers, FiGlobe, FiShield, FiHeadphones } from "react-icons/fi";
 import { Reveal } from "@/components/ui/Reveal";
-import { BracketEyebrow } from "@/components/ui/BracketEyebrow";
-import { associations, trustStats } from "@/content/home";
+import { SectionIntro } from "@/components/destinations/SectionIntro";
+import { trustStats } from "@/content/home";
 
 const STAT_ICONS = {
   users: FiUsers,
@@ -17,11 +16,8 @@ export function TrustStrip() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
           <div className="text-center">
-            <BracketEyebrow>Our Journey</BracketEyebrow>
-            <h2 className="mt-4 font-display text-3xl font-semibold text-ink sm:text-4xl">
-              Numbers That Speak
-            </h2>
-            <p className="mt-3 text-base text-ink-soft">
+            <SectionIntro eyebrow="Our Journey" heading="Numbers That Speak" align="center" />
+            <p className="mt-4 text-base text-ink-soft">
               Trusted by thousands of travellers around the world.
             </p>
           </div>
@@ -48,22 +44,6 @@ export function TrustStrip() {
               );
             })}
           </dl>
-        </Reveal>
-
-        <Reveal delay={0.2}>
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 opacity-80 grayscale sm:mt-14">
-            {associations.map((mark) => (
-              <Image
-                key={mark.src}
-                src={mark.src}
-                alt={mark.alt}
-                width={96}
-                height={56}
-                sizes="96px"
-                className="h-10 w-auto object-contain sm:h-12"
-              />
-            ))}
-          </div>
         </Reveal>
       </div>
     </section>

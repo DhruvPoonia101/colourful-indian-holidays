@@ -22,10 +22,10 @@ export const BUSINESS = {
     "https://www.linkedin.com/in/narendrapoonia/",
     "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
   ],
-  // Sourced from rajasthantravelagency.com's published schema on 2026-08-13 — confirm still current before launch.
+  // Verified directly against this business's own Tripadvisor listing on 2026-08-19.
   aggregateRating: {
     ratingValue: "4.9",
-    reviewCount: "138",
+    reviewCount: "282",
   },
   languages: ["English", "French", "German", "Spanish"],
 } as const;

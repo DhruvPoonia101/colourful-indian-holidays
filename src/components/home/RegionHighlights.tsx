@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
-import { BracketEyebrow } from "@/components/ui/BracketEyebrow";
+import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { regions } from "@/content/home";
 
 export function RegionHighlights() {
@@ -9,10 +9,10 @@ export function RegionHighlights() {
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
-          <BracketEyebrow>Explore By Region</BracketEyebrow>
-          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold text-ink sm:text-4xl">
-            India, One Extraordinary Region at a Time
-          </h2>
+          <SectionIntro
+            eyebrow="Explore By Region"
+            heading="India, One Extraordinary Region at a Time"
+          />
         </Reveal>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

@@ -1,15 +1,25 @@
+import type { FaqItem } from "@/lib/seo/faq-schema";
+
 export const heroSlides = [
   {
-    src: "/images/home/hero.webp",
-    alt: "Golden hour over a Rajasthan palace courtyard",
+    src: "/images/destinations/agra-taj-mahal.webp",
+    alt: "Taj Mahal at sunrise, Agra",
+    focalPoint: "center 40%",
   },
   {
-    src: "/images/destinations/udaipur-lake-palace.webp",
-    alt: "Lake Palace floating on Lake Pichola, Udaipur",
+    src: "/images/destinations/delhi-india-gate.webp",
+    alt: "India Gate at dusk, Delhi",
+    focalPoint: "center",
   },
   {
-    src: "/images/destinations/mehrangarh-fort-jodhpur.webp",
-    alt: "Mehrangarh Fort overlooking the blue city of Jodhpur",
+    src: "/images/destinations/thekkady.webp",
+    alt: "Kerala backwaters houseboat cruising a palm-lined canal",
+    focalPoint: "center 55%",
+  },
+  {
+    src: "/images/destinations/tiger-safari-jeep.webp",
+    alt: "A Bengal tiger resting on a safari track surrounded by jeeps",
+    focalPoint: "center 85%",
   },
 ] as const;
 
@@ -112,5 +122,47 @@ export const testimonials = [
     name: "KD Yu",
     origin: "Philippines",
     isPlaceholder: false,
+  },
+] as const;
+
+export const introCopy = {
+  eyebrow: "Who We Are",
+  heading: "Private Travel Planning Across the Indian Subcontinent",
+  paragraphs: [
+    "Colourful Indian Holidays has been designing private, tailor-made journeys since 2008 — not fixed group tours, but itineraries built around your own dates, pace and interests. Rajasthan's forts and palaces remain our deepest expertise, but our reach now spans wildlife safaris at Ranthambore and Kaziranga, coastal escapes from Tamil Nadu to the Andaman Islands, and festival-timed trips built around events like the Pushkar Camel Fair and Kumbh Mela.",
+    "Every trip includes a private, English-speaking guide and driver, handpicked heritage and luxury hotels, and one point of contact from your first enquiry to the day you fly home. We also plan trips that extend beyond India — into Nepal and Bhutan — for travellers who want to see more of the subcontinent in a single journey.",
+  ],
+} as const;
+
+export const homeFaqs: FaqItem[] = [
+  {
+    question: "Do you offer private tours, or do we join a group?",
+    answer:
+      "Every itinerary we build is private — your own guide, driver and schedule, not a fixed departure date shared with strangers. You can travel as a couple, a family, or a small group of friends, and the pace is entirely up to you.",
+  },
+  {
+    question: "How far in advance should I book?",
+    answer:
+      "We can often arrange trips with just a few weeks' notice, but 2 to 3 months ahead gives the most flexibility on hotels and guides, especially during the October to March peak season. Festival-timed trips (like the Pushkar Camel Fair or Kumbh Mela) are worth booking further out, since accommodation near those events fills up early.",
+  },
+  {
+    question: "Do I need a visa to visit India?",
+    answer:
+      "Most international travellers can apply for the Indian e-Visa online before departure. Requirements vary by nationality, so we recommend confirming current rules for your passport before booking flights — we're happy to advise on this as part of planning your trip.",
+  },
+  {
+    question: "Can you combine India with Nepal and Bhutan in one trip?",
+    answer:
+      "Yes, this is one of the most common ways we build a longer itinerary — combining Rajasthan or North India with Nepal and Bhutan, since all three countries connect well by air. Tell us how much time you have and we'll build a route around it.",
+  },
+  {
+    question: "What's included in your tour pricing?",
+    answer:
+      "Every quote we send spells out exactly what's included — accommodation, private car and driver, guides where relevant, and any entry fees or activities in the itinerary. We don't add unexplained costs after you've agreed a quote.",
+  },
+  {
+    question: "How do I actually start planning a trip with you?",
+    answer:
+      "Send us a message through WhatsApp, email, or the contact form with your rough dates and what you'd like to see — we typically reply within 24 hours with initial ideas and questions to shape a tailored itinerary.",
   },
 ] as const;
