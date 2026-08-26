@@ -131,6 +131,9 @@ export default function Home() {
             "No Hidden Fees",
             "International Payments Accepted",
             "Respond Within 2 Hours",
+            "Recognised by Ministry of Tourism, Govt of India",
+            "4.9 Star Rating on Google",
+            "5 Star Rating on Trip Advisor",
           ]}
         />
       </main>
