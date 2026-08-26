@@ -6,7 +6,7 @@ import { associations } from "@/content/home";
 export function TrustedWorldwide() {
   return (
     <section className="py-16 sm:py-20">
-      <div className="mx-auto max-w-5xl px-6 text-center sm:px-8">
+      <div className="mx-auto max-w-6xl px-6 text-center sm:px-8">
         <Reveal>
           <SectionIntro
             eyebrow="Trusted Worldwide"
@@ -20,11 +20,15 @@ export function TrustedWorldwide() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-6 sm:mt-12 sm:gap-8">
+          <div className="mt-10 flex flex-nowrap items-center justify-start gap-5 overflow-x-auto px-1 pb-2 sm:mt-12 sm:justify-center sm:gap-6">
             {associations.map((mark) => (
-              <div
+              <a
                 key={mark.src}
-                className="relative h-20 w-20 shrink-0 transition-transform duration-200 hover:scale-105 sm:h-24 sm:w-24"
+                href={mark.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={mark.alt}
+                className="relative h-16 w-16 shrink-0 transition-transform duration-200 hover:scale-105 sm:h-24 sm:w-24"
               >
                 <Image
                   src={mark.src}
@@ -33,7 +37,7 @@ export function TrustedWorldwide() {
                   sizes="96px"
                   className="object-contain"
                 />
-              </div>
+              </a>
             ))}
           </div>
         </Reveal>

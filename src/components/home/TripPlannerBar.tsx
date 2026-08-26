@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FiCalendar } from "react-icons/fi";
+import { FiCalendar, FiChevronDown } from "react-icons/fi";
 import { tripPlannerDestinations } from "@/lib/trip-planner-destinations";
 
 const DAYS_OPTIONS = ["3–5 Days", "6–9 Days", "10–14 Days", "15+ Days", "Not Sure Yet"];
@@ -10,7 +10,7 @@ const fieldWrapClass =
   "relative flex-1 rounded-full border border-ink-soft/10 bg-white/70 px-5 py-3 sm:px-6 sm:py-3.5";
 
 const selectClass =
-  "w-full appearance-none bg-transparent pr-6 text-sm text-ink focus:outline-none disabled:text-ink-soft/60";
+  "w-full appearance-none bg-transparent pr-4 text-sm text-ink focus:outline-none disabled:text-ink-soft/60";
 
 const inputClass = "w-full bg-transparent pr-6 text-sm text-ink focus:outline-none";
 
@@ -59,7 +59,7 @@ export function TripPlannerBar() {
         onSubmit={handleSubmit}
         className="flex flex-col gap-3 rounded-3xl border border-white/40 bg-white/60 p-4 shadow-xl backdrop-blur-xl sm:flex-row sm:items-center sm:gap-4 sm:p-5"
       >
-        <div className={fieldWrapClass}>
+        <div className={`${fieldWrapClass} sm:flex-[1.5]`}>
           <label htmlFor="tp-destination" className="sr-only">
             Where do you want to go?
           </label>
@@ -79,6 +79,10 @@ export function TripPlannerBar() {
               </option>
             ))}
           </select>
+          <FiChevronDown
+            aria-hidden="true"
+            className="pointer-events-none absolute right-5 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-soft/70 sm:right-6"
+          />
         </div>
 
         <div className={fieldWrapClass}>
@@ -119,6 +123,10 @@ export function TripPlannerBar() {
               </option>
             ))}
           </select>
+          <FiChevronDown
+            aria-hidden="true"
+            className="pointer-events-none absolute right-5 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-soft/70 sm:right-6"
+          />
         </div>
 
         <div className={fieldWrapClass}>
@@ -141,7 +149,7 @@ export function TripPlannerBar() {
           disabled={status === "submitting"}
           className="min-h-11 shrink-0 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100"
         >
-          {status === "submitting" ? "Sending…" : "Get My Itinerary"}
+          {status === "submitting" ? "Sending…" : "Plan My Journey"}
         </button>
       </form>
 

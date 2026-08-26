@@ -39,15 +39,51 @@ export const trustStats = [
 ] as const;
 
 export const associations = [
-  { src: "/awards/iato.webp", alt: "IATO — Indian Association of Tour Operators member" },
-  { src: "/awards/ministry-tourism.webp", alt: "Approved by the Ministry of Tourism, Government of India" },
-  { src: "/awards/rajasthan-tourism.webp", alt: "Recognised by Rajasthan Tourism" },
-  { src: "/awards/tripadvisor-2014.webp", alt: "TripAdvisor Travellers' Choice 2014" },
-  { src: "/awards/tripadvisor-2015.webp", alt: "TripAdvisor Travellers' Choice 2015" },
-  { src: "/awards/tripadvisor-2016.webp", alt: "TripAdvisor Travellers' Choice 2016" },
-  { src: "/awards/tripadvisor-2017.webp", alt: "TripAdvisor Travellers' Choice 2017" },
-  { src: "/awards/tripadvisor-2019.webp", alt: "TripAdvisor Travellers' Choice 2019" },
-  { src: "/awards/tripadvisor-2024.webp", alt: "TripAdvisor Travellers' Choice 2024" },
+  {
+    src: "/awards/iato.webp",
+    alt: "IATO — Indian Association of Tour Operators member",
+    href: "https://iato.in/",
+  },
+  {
+    src: "/awards/ministry-tourism.webp",
+    alt: "Approved by the Ministry of Tourism, Government of India",
+    href: "https://nidhi.tourism.gov.in/home/directory?categoryCode=02&subcategory=&type=registered&cityName=COLOURFUL+INDIAN+HOLIDAYS+%28Unit%29&cityCode=ERJ000157_U&stateName=",
+  },
+  {
+    src: "/awards/rajasthan-tourism.webp",
+    alt: "Recognised by Rajasthan Tourism",
+    href: "https://www.tourism.rajasthan.gov.in/",
+  },
+  {
+    src: "/awards/tripadvisor-2014.webp",
+    alt: "TripAdvisor Travellers' Choice 2014",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+  },
+  {
+    src: "/awards/tripadvisor-2015.webp",
+    alt: "TripAdvisor Travellers' Choice 2015",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+  },
+  {
+    src: "/awards/tripadvisor-2016.webp",
+    alt: "TripAdvisor Travellers' Choice 2016",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+  },
+  {
+    src: "/awards/tripadvisor-2017.webp",
+    alt: "TripAdvisor Travellers' Choice 2017",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+  },
+  {
+    src: "/awards/tripadvisor-2019.webp",
+    alt: "TripAdvisor Travellers' Choice 2019",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+  },
+  {
+    src: "/awards/tripadvisor-2024.webp",
+    alt: "TripAdvisor Travellers' Choice 2024",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+  },
 ] as const;
 
 export const regions = [
