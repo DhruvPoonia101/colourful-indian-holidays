@@ -39,7 +39,7 @@ export const festivalCards: CityCard[] = [
     description: "Elaborately painted elephants paraded through Jaipur, timed alongside the colour festival.",
     href: "/themes/festival-tours/elephant-festival",
     image: "/images/destinations/elephant-festival.webp",
-    imageAlt: "Elephant Festival, Jaipur — photo coming soon",
+    imageAlt: "Decorated elephants at the Elephant Festival, Jaipur",
   },
   {
     name: "Teej Festival",
@@ -47,7 +47,7 @@ export const festivalCards: CityCard[] = [
     description: "A royal Jaipur procession marking the monsoon, with women in traditional dress and flower-decorated swings.",
     href: "/themes/festival-tours/teej-festival",
     image: "/images/destinations/teej-festival.webp",
-    imageAlt: "Teej Festival, Rajasthan — photo coming soon",
+    imageAlt: "Women celebrating Teej Festival in traditional red attire",
   },
   {
     name: "Diwali",
@@ -55,15 +55,7 @@ export const festivalCards: CityCard[] = [
     description: "India's biggest festival — the Festival of Lights, at its most vivid in Varanasi and Amritsar.",
     href: "/themes/festival-tours/diwali",
     image: "/images/destinations/diwali.webp",
-    imageAlt: "Diwali celebrations — photo coming soon",
-  },
-  {
-    name: "Urs Festival, Ajmer",
-    tagline: "Islamic month of Rajab",
-    description: "A six-day Sufi festival at the Ajmer Sharif Dargah, with all-night qawwali performances.",
-    href: "/themes/festival-tours/the-urs-festival-ajmer",
-    image: "/images/destinations/urs-festival-ajmer.webp",
-    imageAlt: "Urs Festival, Ajmer — photo coming soon",
+    imageAlt: "Diyas and rangoli lit for Diwali",
   },
   {
     name: "Goa Carnival",
@@ -71,7 +63,7 @@ export const festivalCards: CityCard[] = [
     description: "A Portuguese-heritage street carnival with parades, floats and live music across Goa.",
     href: "/themes/festival-tours/goa-carnival",
     image: "/images/destinations/goa-carnival.webp",
-    imageAlt: "Goa Carnival — photo coming soon",
+    imageAlt: "Colourful parade float at Goa Carnival",
   },
   {
     name: "Onam",
@@ -79,7 +71,7 @@ export const festivalCards: CityCard[] = [
     description: "Kerala's biggest festival — flower carpets, snake boat races, and a traditional feast.",
     href: "/themes/festival-tours/onam",
     image: "/images/destinations/onam.webp",
-    imageAlt: "Onam celebrations, Kerala — photo coming soon",
+    imageAlt: "Traditional flower rangoli for Onam celebrations",
   },
   {
     name: "Kutch Mahotsav",
@@ -87,6 +79,6 @@ export const festivalCards: CityCard[] = [
     description: "A months-long desert festival on the white salt flats of the Rann of Kutch.",
     href: "/themes/festival-tours/kutch-mahotsav",
     image: "/images/destinations/kutch-mahotsav.webp",
-    imageAlt: "Kutch Mahotsav, Rann of Kutch — photo coming soon",
+    imageAlt: "Tented camp at Kutch Mahotsav, Rann of Kutch",
   },
 ] as const;

@@ -5,6 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 export const metadata: Metadata = {
   title: "Page Not Found | Colourful Indian Holidays",
@@ -86,18 +87,13 @@ export default function NotFound() {
       <JourneyCTA
         backgroundImage="/images/destinations/amber-fort-jaipur.webp"
         eyebrow="Start Your Journey"
-        headline="Your India Journey Awaits."
+        headline="Your India, Nepal & Bhutan Journey Awaits."
         headlineItalic="Where Will You Begin?"
         subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
         primaryLabel="Plan My Journey"
         primaryHref="/contact"
         whatsappMessage="Hi! I'd like to plan a tour with Colourful Indian Holidays."
-        trustBadges={[
-          "IATO Registered Agency",
-          "No Hidden Fees",
-          "International Payments Accepted",
-          "Respond Within 2 Hours",
-        ]}
+        trustBadges={DEFAULT_TRUST_BADGES}
       />
     </main>
   );

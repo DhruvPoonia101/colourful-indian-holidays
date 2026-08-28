@@ -6,6 +6,7 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Monuments in Rajasthan: A Complete Guide | Travel Guide";
 const description =
@@ -181,12 +182,7 @@ export default function MonumentsGuidePage() {
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a Rajasthan trip focused on the forts and palaces with Colourful Indian Holidays."
-          trustBadges={[
-            "IATO Registered Agency",
-            "No Hidden Fees",
-            "International Payments Accepted",
-            "Respond Within 2 Hours",
-          ]}
+          trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
     </>

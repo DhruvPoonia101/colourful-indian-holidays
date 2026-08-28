@@ -9,6 +9,7 @@ import { pushkarFairHighlights, pushkarFairFaqs } from "@/content/festivals/push
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Pushkar Fair | Festival Guide";
 const description =
@@ -107,12 +108,7 @@ export default function PushkarFairPage() {
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a trip around Pushkar Fair with Colourful Indian Holidays."
-          trustBadges={[
-            "IATO Registered Agency",
-            "No Hidden Fees",
-            "International Payments Accepted",
-            "Respond Within 2 Hours",
-          ]}
+          trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
     </>

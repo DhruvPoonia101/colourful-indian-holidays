@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
+import { Button } from "@/components/ui/Button";
 import { regions } from "@/content/home";
 
 export function RegionHighlights() {
@@ -40,6 +42,15 @@ export function RegionHighlights() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.2}>
+          <div className="mt-10 flex justify-center">
+            <Button href="/destinations" variant="gold">
+              Explore All Regions
+              <FiArrowRight aria-hidden="true" className="h-4 w-4" />
+            </Button>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

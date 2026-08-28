@@ -18,10 +18,11 @@ import { homeFaqs } from "@/content/home";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/organization-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { HREFLANG_LOCALES, SITE_NAME, SITE_URL } from "@/lib/seo/business";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Private Rajasthan, India, Nepal & Bhutan Tours for International Travellers";
+const title = "Private India, Nepal & Bhutan Tours for International Travellers";
 const description =
-  "Private, tailor-made tours across Rajasthan, India, Nepal and Bhutan for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2008.";
+  "Private, tailor-made tours across India, Nepal and Bhutan for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2008.";
 
 export const metadata: Metadata = {
   title,
@@ -120,21 +121,13 @@ export default function Home() {
         <JourneyCTA
           backgroundImage="/images/destinations/amber-fort-jaipur.webp"
           eyebrow="Start Your Journey"
-          headline="Your India Journey Awaits."
+          headline="Your India, Nepal & Bhutan Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a tour with Colourful Indian Holidays."
-          trustBadges={[
-            "IATO Registered Agency",
-            "No Hidden Fees",
-            "International Payments Accepted",
-            "Respond Within 2 Hours",
-            "Recognised by Ministry of Tourism, Govt of India",
-            "4.9 Star Rating on Google",
-            "5 Star Rating on Trip Advisor",
-          ]}
+          trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
     </>

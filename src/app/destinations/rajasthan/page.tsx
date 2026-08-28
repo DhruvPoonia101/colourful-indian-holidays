@@ -26,6 +26,7 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Rajasthan Tour Packages for International Travellers | Forts, Palaces & Desert";
 const description =
@@ -242,12 +243,7 @@ export default function RajasthanPage() {
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a Rajasthan trip with Colourful Indian Holidays."
-          trustBadges={[
-            "IATO Registered Agency",
-            "No Hidden Fees",
-            "International Payments Accepted",
-            "Respond Within 2 Hours",
-          ]}
+          trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
     </>

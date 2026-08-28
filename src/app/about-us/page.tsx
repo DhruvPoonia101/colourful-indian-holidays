@@ -5,11 +5,12 @@ import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { BUSINESS, SITE_NAME, SITE_URL } from "@/lib/seo/business";
-import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "About Us | Colourful Indian Holidays";
 const description =
-  "Founded in 2008 and based in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across Rajasthan, India, Nepal and Bhutan for travellers from around the world.";
+  "Founded in 2008 and based in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal and Bhutan for travellers from around the world.";
 const pagePath = "/about-us";
 
 export const metadata: Metadata = {
@@ -72,7 +73,7 @@ export default function AboutUsPage() {
           breadcrumbs={breadcrumbs}
           eyebrow="About Us"
           headline={`${SITE_NAME}, Since ${BUSINESS.foundingYear}`}
-          subheadline="A Jaipur-based team designing private journeys across Rajasthan, India, Nepal and Bhutan for travellers from around the world."
+          subheadline="A Jaipur-based team designing private journeys across India, Nepal and Bhutan for travellers from around the world."
         />
 
         <section className="py-14 sm:py-20">
@@ -82,14 +83,14 @@ export default function AboutUsPage() {
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Colourful Indian Holidays was founded in {BUSINESS.foundingYear} in Jaipur,
-                  built on a simple idea: the best way to show someone Rajasthan and India is to
+                  built on a simple idea: the best way to show someone India is to
                   plan their trip the way we&apos;d plan it for a friend — privately, around
                   their own dates and interests, not squeezed into someone else&apos;s fixed
                   itinerary.
                 </p>
                 <p>
                   Since then, we&apos;ve grown into a full-service travel company covering
-                  Rajasthan, the Golden Triangle, wider India, Nepal and Bhutan — but the
+                  the Golden Triangle, wider India, Nepal and Bhutan — but the
                   approach hasn&apos;t changed. Every itinerary is still built by people based
                   here, who know the roads, the hotels, and the guides personally, rather than
                   assembled from a template.
@@ -114,18 +115,13 @@ export default function AboutUsPage() {
         <JourneyCTA
           backgroundImage="/images/about/about-hero.webp"
           eyebrow="Start Your Journey"
-          headline="Your India Journey Awaits."
+          headline="Your India, Nepal & Bhutan Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a tour with Colourful Indian Holidays."
-          trustBadges={[
-            "IATO Registered Agency",
-            "No Hidden Fees",
-            "International Payments Accepted",
-            "Respond Within 2 Hours",
-          ]}
+          trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
     </>

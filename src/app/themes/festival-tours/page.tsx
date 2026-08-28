@@ -5,6 +5,7 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { festivalCards } from "@/content/festivals-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Festival Tours | Time Your India Trip Around a Real Celebration";
 const description =
@@ -66,12 +67,7 @@ export default function FestivalToursPage() {
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a trip around an Indian festival with Colourful Indian Holidays."
-          trustBadges={[
-            "IATO Registered Agency",
-            "No Hidden Fees",
-            "International Payments Accepted",
-            "Respond Within 2 Hours",
-          ]}
+          trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
     </>

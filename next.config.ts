@@ -19,6 +19,15 @@ const nextConfig: NextConfig = {
   //        these redirects point at the nearest live page so nothing 404s meanwhile
   async redirects() {
     return [
+      // Active backlink campaign (Jun–Aug 2026) — verified against
+      // Backlink-August-26 tracking sheet, ~50 live backlinks point here.
+      { source: "/kashmir-holiday-tour-package", destination: "/packages/kashmir-ladakh-tours", permanent: true },
+      { source: "/india-nepal-bhutan-tour-packages", destination: "/packages/india-nepal-bhutan-tours", permanent: true },
+      { source: "/nepal-bhutan-tour-packages", destination: "/packages/nepal-bhutan-tours", permanent: true },
+      { source: "/rajasthan-heritage-tour-package", destination: "/packages/rajasthan-tours", permanent: true },
+      { source: "/north-india-travel-packages", destination: "/packages/north-india-tours", permanent: true },
+      { source: "/cultural-golden-triangle-with-varanasi-tour-packages", destination: "/packages/golden-triangle-tours", permanent: true },
+      { source: "/tour-operators-in-jaipur-rajasthan", destination: "/destinations/rajasthan", permanent: true },
       { source: "/destinations/ranthambore", destination: "/destinations/rajasthan/ranthambore", permanent: true },
       { source: "/pilgrimage-holiday-destinations-in-india", destination: "/travel-guide/pilgrimage-holiday-destinations-in-india", permanent: true },
       { source: "/monuments-in-rajasthan", destination: "/travel-guide/monuments-in-rajasthan", permanent: true },

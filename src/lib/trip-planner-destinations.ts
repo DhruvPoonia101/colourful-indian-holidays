@@ -1,22 +1,16 @@
-import { navItems } from "@/content/nav";
-
 /**
- * Flat, deduplicated list of destination labels pulled from the "Destinations"
- * mega-menu in the main nav, so the trip planner dropdown always stays in
- * sync with the nav without maintaining a second list by hand.
+ * Fixed list of options shown in the homepage trip planner's "Where do you
+ * want to go?" dropdown — kept as a plain list (rather than derived from the
+ * nav) since these are curated multi-city circuit names, not raw destinations.
  */
-export const tripPlannerDestinations: string[] = (() => {
-  const destinationsDropdown = navItems.find(
-    (item) => item.type === "dropdown" && item.label === "Destinations"
-  );
-
-  if (!destinationsDropdown || destinationsDropdown.type !== "dropdown" || !destinationsDropdown.columns) {
-    return [];
-  }
-
-  const labels = destinationsDropdown.columns.flatMap((column) =>
-    column.items.map((item) => item.label)
-  );
-
-  return Array.from(new Set(labels));
-})();
+export const tripPlannerDestinations: string[] = [
+  "Golden Triangle",
+  "Taj Mahal & Rajasthan",
+  "Golden Triangle & Kerala",
+  "Triangle & Varanasi & Amritsar",
+  "Golden Triangle & Goa",
+  "Kerala & Back Waters",
+  "South India Tamil Nadu",
+  "India & Nepal",
+  "Delhi – Agra Same Day",
+];

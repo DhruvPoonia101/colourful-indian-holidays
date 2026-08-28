@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 
-import { associations } from "@/content/home";
 import {
   footerCompanyLinks,
   footerExploreLinks,
@@ -282,22 +281,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* =======================================================
-              ASSOCIATIONS
-          ======================================================= */}
-          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 opacity-60 grayscale">
-            {associations.map((mark) => (
-              <Image
-                key={mark.src}
-                src={mark.src}
-                alt={mark.alt}
-                width={75}
-                height={40}
-                sizes="75px"
-                className="h-7 w-auto object-contain"
-              />
-            ))}
-          </div>
         </div>
       </div>
     </footer>

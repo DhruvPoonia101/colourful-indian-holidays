@@ -8,7 +8,7 @@ export const fleetCards: CityCard[] = [
     description: "A comfortable, air-conditioned sedan with a private driver — ideal for couples or solo travellers.",
     href: "/car-rental/sedan",
     image: "/images/destinations/car-sedan.webp",
-    imageAlt: "Sedan — photo coming soon",
+    imageAlt: "White sedan car for rental",
   },
   {
     name: "SUV",
@@ -16,7 +16,7 @@ export const fleetCards: CityCard[] = [
     description: "More space and ground clearance for longer drives and less predictable road conditions.",
     href: "/car-rental/suv",
     image: "/images/destinations/car-suv.webp",
-    imageAlt: "SUV — photo coming soon",
+    imageAlt: "White SUV for rental",
   },
   {
     name: "Tempo Traveller",
@@ -24,7 +24,7 @@ export const fleetCards: CityCard[] = [
     description: "The standard choice for small groups and families travelling together on one itinerary.",
     href: "/car-rental/tempo-traveller",
     image: "/images/destinations/car-tempo-traveller.webp",
-    imageAlt: "Tempo Traveller — photo coming soon",
+    imageAlt: "Tempo Traveller minibus for group rental",
   },
   {
     name: "Luxury Cars",
@@ -32,7 +32,7 @@ export const fleetCards: CityCard[] = [
     description: "A higher standard of vehicle and driver for travellers who want extra comfort throughout.",
     href: "/car-rental/luxury-cars",
     image: "/images/destinations/car-luxury.webp",
-    imageAlt: "Luxury Cars — photo coming soon",
+    imageAlt: "Luxury sedan for private rental",
   },
   {
     name: "Coaches",
@@ -40,7 +40,7 @@ export const fleetCards: CityCard[] = [
     description: "For larger groups, corporate trips, and family reunions travelling together.",
     href: "/car-rental/coaches",
     image: "/images/destinations/car-coach.webp",
-    imageAlt: "Coaches — photo coming soon",
+    imageAlt: "Coach bus for group rental",
   },
 ] as const;
 

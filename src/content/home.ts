@@ -24,8 +24,8 @@ export const heroSlides = [
 ] as const;
 
 export const heroCopy = {
-  eyebrow: "Rajasthan, India, Nepal & Bhutan — Curated for the World",
-  headline: "Private Journeys Across Rajasthan, India, Nepal & Bhutan",
+  eyebrow: "India, Nepal & Bhutan — Curated for the World",
+  headline: "Private Journeys Across India, Nepal & Bhutan",
   subheadline:
     "Private, tailor-made tours for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2008.",
   ctaLabel: "Plan My Journey",
