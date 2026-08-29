@@ -56,6 +56,7 @@ export default function PackagesHubPage() {
           eyebrow="Popular Categories"
           heading="Where to Start"
           cities={featuredPackages}
+          showActions
         />
 
         <MoreDestinationsList

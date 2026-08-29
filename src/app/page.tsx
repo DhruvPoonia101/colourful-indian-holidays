@@ -75,8 +75,9 @@ export default function Home() {
       <main>
         <Hero />
         <TripPlannerBar />
-        <TrustStrip />
+        
         <TrustedWorldwide />
+        
         <IntroSection />
         <RegionHighlights />
 
@@ -85,6 +86,7 @@ export default function Home() {
           heading="What Kind of Trip Are You Looking For?"
           cities={featuredThemes}
           topDivider
+          showActions
         />
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/themes" variant="gold">
@@ -98,6 +100,7 @@ export default function Home() {
           heading="Where to Start"
           cities={featuredPackages}
           topDivider
+          showActions
         />
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/packages" variant="gold">
@@ -105,8 +108,8 @@ export default function Home() {
             <FiArrowRight aria-hidden="true" className="h-4 w-4" />
           </Button>
         </div>
-
         <WhyTravelWithUs />
+        <TrustStrip />
         <Testimonials />
 
         <FAQSection

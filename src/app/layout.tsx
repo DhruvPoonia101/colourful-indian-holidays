@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { StickyWhatsAppButton } from "@/components/shared/StickyWhatsAppButton";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Navbar />
         {children}
         <Footer />
+        <StickyWhatsAppButton />
       </body>
     </html>
   );

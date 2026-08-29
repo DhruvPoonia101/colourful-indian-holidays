@@ -56,6 +56,7 @@ export default function ThemesHubPage() {
           eyebrow="Popular Experiences"
           heading="What Kind of Trip Are You Looking For?"
           cities={featuredThemes}
+          showActions
         />
 
         <MoreDestinationsList

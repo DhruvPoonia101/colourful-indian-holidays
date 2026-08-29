@@ -86,20 +86,78 @@ export default function AboutUsPage() {
                   built on a simple idea: the best way to show someone India is to
                   plan their trip the way we&apos;d plan it for a friend — privately, around
                   their own dates and interests, not squeezed into someone else&apos;s fixed
-                  itinerary.
+                  itinerary. For an international traveller researching India for the first
+                  time, that distinction matters more than it might seem — most of the
+                  frustration people report from group tours comes down to a schedule they
+                  never agreed to and a pace they can&apos;t control. We built this company to
+                  remove both of those problems from the start.
                 </p>
                 <p>
                   Since then, we&apos;ve grown into a full-service travel company covering
                   the Golden Triangle, wider India, Nepal and Bhutan — but the
                   approach hasn&apos;t changed. Every itinerary is still built by people based
                   here, who know the roads, the hotels, and the guides personally, rather than
-                  assembled from a template.
+                  assembled from a template or resold from a wholesaler. When you ask us about
+                  the drive time between two cities, the best season for a particular festival,
+                  or which hotel actually has the view it advertises, you&apos;re getting an
+                  answer from someone who has been there, not a generic travel database.
                 </p>
                 <p>
-                  Today we work with travellers from the USA, UK, Australia, Europe and beyond,
-                  speaking English, French, German and Spanish, and we&apos;re proud to be an
-                  IATO-registered agency recognised by Rajasthan Tourism and the Ministry of
-                  Tourism, Government of India.
+                  Today we work with travellers from the USA, UK, Australia, Canada, across
+                  Europe and beyond, speaking English, French, German and Spanish, and we&apos;re
+                  proud to be an IATO-registered agency recognised by Rajasthan Tourism and the
+                  Ministry of Tourism, Government of India. That registration isn&apos;t just a
+                  badge on a website — it means the agency you&apos;re booking with is an
+                  accountable, verifiable business, which is exactly the kind of reassurance
+                  international travellers tell us they look for before wiring money to a
+                  company on the other side of the world.
+                </p>
+                <p>
+                  Most of our guests are planning their first trip to India, often after years of
+                  wanting to visit but hesitating over the logistics — where to start, how to
+                  avoid tourist traps, whether a private guide is worth the cost, and how to know
+                  a booking is legitimate before paying a deposit. Those are exactly the questions
+                  we built this company to answer directly, in plain English, from a real Jaipur
+                  office rather than a call centre reading from a script.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="border-t border-sand/70 bg-cream/40 py-14 sm:py-20">
+          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+            <Reveal>
+              <SectionIntro
+                eyebrow="Planning From Abroad"
+                heading="What International Travellers Ask Us Before Booking"
+              />
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
+                <p>
+                  <strong className="text-ink">Communication and language.</strong> Every guide
+                  and driver we assign speaks fluent English, and our office team also covers
+                  French, German and Spanish, so questions about the itinerary, a hotel change,
+                  or a delayed flight can be handled directly, without a translation gap at the
+                  moment it matters most.
+                </p>
+                <p>
+                  <strong className="text-ink">Safety and legitimacy.</strong> As an
+                  IATO-registered agency recognised by the Ministry of Tourism, we&apos;re
+                  accountable to real industry standards, not an anonymous website. Every driver
+                  and guide is someone we&apos;ve worked with directly, not a subcontractor booked
+                  the day before your trip.
+                </p>
+                <p>
+                  <strong className="text-ink">Visas and entry requirements.</strong> While visa
+                  applications are ultimately your own responsibility, we&apos;re happy to point
+                  first-time visitors toward the correct e-Visa process for India and confirm
+                  what documentation each stop on your itinerary typically requires.
+                </p>
+                <p>
+                  <strong className="text-ink">Payment and pricing transparency.</strong> Every
+                  quote shows exactly what&apos;s included — hotels, transport, guide fees, and
+                  entry tickets — so there are no surprise charges added once you&apos;ve already
+                  committed to the trip.
                 </p>
               </div>
             </Reveal>

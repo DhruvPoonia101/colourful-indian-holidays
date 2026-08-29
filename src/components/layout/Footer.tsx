@@ -13,7 +13,6 @@ import { FiMail, FiPhone } from "react-icons/fi";
 import {
   footerCompanyLinks,
   footerExploreLinks,
-  footerLegalLinks,
   sisterCompanies,
   socialLinks,
 } from "@/content/footer";
@@ -237,22 +236,28 @@ export function Footer() {
             BOTTOM BAR
         ========================================================= */}
         <div className="mt-10 border-t border-[#E9DCCB]/10 pt-6">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-between">
             
-            {/* Copyright + Legal */}
+            {/* Copyright */}
             <p className="text-[11px] leading-5 text-[#E9DCCB]/45">
-              © {year} {SITE_NAME} · Est. {BUSINESS.foundingYear} ·{" "}
-              {footerLegalLinks.map((link, index) => (
-                <span key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="transition-colors hover:text-[#D5A93A]"
-                  >
-                    {link.label}
-                  </Link>
-                  {index < footerLegalLinks.length - 1 && " · "}
-                </span>
-              ))}
+              © {year} {SITE_NAME} · Est. {BUSINESS.foundingYear}
+            </p>
+
+            {/* Privacy Policy / Terms & Conditions — centered */}
+            <p className="text-[11px] leading-5 text-[#E9DCCB]/45">
+              <Link
+                href="/privacy-policy"
+                className="transition-colors hover:text-[#D5A93A]"
+              >
+                Privacy Policy
+              </Link>
+              {" · "}
+              <Link
+                href="/cancellation-policy-and-terms-and-conditions"
+                className="transition-colors hover:text-[#D5A93A]"
+              >
+                Terms &amp; Conditions
+              </Link>
             </p>
 
             {/* Tripadvisor Rating */}

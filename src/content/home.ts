@@ -140,23 +140,70 @@ export const differentiators = [
   },
 ] as const;
 
-export const testimonials = [
+export type Testimonial = {
+  quote: string;
+  name: string;
+  origin?: string;
+  platform: "google" | "tripadvisor";
+  rating: number;
+  isPlaceholder?: boolean;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "Incredible experience with colorful Indian holidays. All the 12 days trip was very comfortable with good car and very good driver Bunti who had a professional behavior helping us to everything that we need. Highly recommend Colourful",
+    name: "David Bernat",
+    platform: "google",
+    rating: 5,
+    isPlaceholder: false,
+  },
+  {
+    quote:
+      "Booked a tour of Agra and Rajestan with CIH. Narendra helped us plan our trip and itinerary - worked through a few options before final plans were fixed. The tour was excellent with great guides at each stopover. The hotels were all good, especially the Haveli in Jaipur and the Taj in Agra. The price we paid was great value too. Would recommend CIH and hope to tour with them again soon.",
+    name: "Sanjiv Shah",
+    platform: "google",
+    rating: 5,
+    isPlaceholder: false,
+  },
+  {
+    quote:
+      "Our second trip with CIH, tour Chennai to Cochin. Excellent trip, great hotels , except LA Woods, great guides, really good safe driver, food wonderful. We have recommended them to our friends who have also been. Runs like clockwork",
+    name: "Pete Wellock",
+    platform: "google",
+    rating: 5,
+    isPlaceholder: false,
+  },
+  {
+    quote:
+      "Way back 2013, I with my family visited Delhi for a family function. At that time, as it was our first trip to Delhi, colourful travels chalked out our tour trip and made it an enjoyable one!! Perfect planning indeed",
+    name: "Chandramouleeswaran Doraiswamy",
+    platform: "google",
+    rating: 5,
+    isPlaceholder: false,
+  },
   {
     quote: "The service we received from Narendra Poonia was superb.",
     name: "Joss Harrow",
     origin: "United Kingdom",
+    platform: "tripadvisor",
+    rating: 5,
     isPlaceholder: false,
   },
   {
     quote: "Would recommend Colourful Indian Holidays to anyone thinking of travelling to India.",
     name: "Chloe Lawlor",
     origin: "Ireland",
+    platform: "tripadvisor",
+    rating: 5,
     isPlaceholder: false,
   },
   {
     quote: "Highly recommended to anyone who would like to discover the rich culture and heritage of India.",
     name: "KD Yu",
     origin: "Philippines",
+    platform: "tripadvisor",
+    rating: 5,
     isPlaceholder: false,
   },
 ] as const;

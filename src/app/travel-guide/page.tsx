@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { Reveal } from "@/components/ui/Reveal";
 import { guideArticles } from "@/content/travel-guide";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -61,6 +62,23 @@ export default function TravelGuidePage() {
           headline="Practical Guides to India, Written by People Who Live Here"
           subheadline="Real travel advice for international visitors — pilgrimage destinations, monuments, festivals and more, from our Jaipur-based team."
         />
+
+        <section className="py-10 sm:py-14">
+          <div className="mx-auto max-w-3xl px-6 text-center sm:px-8">
+            <Reveal>
+              <p className="text-base leading-relaxed text-ink-soft">
+                Planning a first trip to India, Nepal or Bhutan raises questions no brochure
+                really answers — which pilgrimage sites are worth the detour, how to read a
+                monument&apos;s history without a guidebook&apos;s dry summary, or when a festival is
+                worth timing your whole trip around. This travel guide is written by our
+                Jaipur-based team specifically for international visitors, covering the
+                practical details — what to expect, when to go, what to book in advance — that
+                make the difference between a rushed sightseeing checklist and a trip that
+                actually makes sense of the place you&apos;re visiting.
+              </p>
+            </Reveal>
+          </div>
+        </section>
 
         <CityGrid eyebrow="Latest Guides" heading="Start Here" cities={cards} />
 

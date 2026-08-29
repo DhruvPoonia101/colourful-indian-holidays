@@ -56,6 +56,7 @@ export default function FestivalToursPage() {
           eyebrow="Festival Tours"
           heading="Choose a Festival"
           cities={festivalCards}
+          showActions
         />
 
         <JourneyCTA
