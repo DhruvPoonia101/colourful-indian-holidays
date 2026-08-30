@@ -51,7 +51,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative flex min-h-[calc(78svh-var(--header-height,88px))] w-full items-end overflow-hidden bg-ink text-ivory sm:min-h-[calc(96vh-var(--header-height,88px))]"
+      className="relative flex min-h-[calc(78svh-var(--header-height,88px))] w-full items-end overflow-hidden bg-ink text-ivory sm:min-h-[calc(82svh-var(--header-height,88px))]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
@@ -73,8 +73,8 @@ export function Hero() {
               src={heroSlides[activeIndex].src}
               alt={heroSlides[activeIndex].alt}
               fill
-              priority={activeIndex === 0}
-              fetchPriority={activeIndex === 0 ? "high" : "auto"}
+              priority={activeIndex <= 1}
+              fetchPriority={activeIndex <= 1 ? "high" : "auto"}
               sizes="100vw"
               className="object-cover"
               style={{ objectPosition: heroSlides[activeIndex].focalPoint }}
