@@ -79,7 +79,11 @@ export default function MonumentsGuidePage() {
             why so many of them still stand today, largely intact, in a way that&apos;s
             genuinely unusual for structures this old. For an international traveller planning a
             first trip through India, that density of well-preserved, still-standing history is
-            one of the strongest reasons Rajasthan tends to anchor the whole itinerary rather
+            one of the strongest reasons{" "}
+            <Link href="/destinations/rajasthan" className="text-maroon underline">
+              Rajasthan
+            </Link>{" "}
+            tends to anchor the whole itinerary rather
             than being treated as a side trip. Below is what to expect at each of the major
             sites, roughly in the order most first-time visitors see them, along with practical
             notes on timing, entry, and what a private guide actually adds at each stop.
@@ -248,7 +252,10 @@ export default function MonumentsGuidePage() {
           <ArticleP>
             Most of these monuments reward at least half a day each rather than a rushed hour —
             Amber Fort, Mehrangarh and Chittorgarh in particular have enough scale that a hurried
-            visit means missing entire wings. If you&apos;re building a Rajasthan itinerary
+            visit means missing entire wings. If you&apos;re building a{" "}
+            <Link href="/packages/rajasthan-tours" className="text-maroon underline">
+              Rajasthan itinerary
+            </Link>{" "}
             around these sites specifically, count on roughly 8 to 10 days to cover Jaipur,
             Jodhpur, Udaipur and Jaisalmer comfortably without back-to-back travel days, or closer
             to 12 to 14 days if you want to add Chittorgarh, Kumbhalgarh and Bikaner into the same
@@ -299,7 +306,12 @@ export default function MonumentsGuidePage() {
             . Whether you want the essential Jaipur–Jodhpur–Udaipur circuit or a longer route
             that adds Jaisalmer, Chittorgarh, Kumbhalgarh or Bikaner, tell us how many days you
             have and we&apos;ll build a route around the monuments that matter most to you,
-            with a private guide at every stop.
+            with a private guide at every stop. If you&apos;d also like to add Rajasthan&apos;s
+            pilgrimage sites — Pushkar and Ajmer among them — see our guide to{" "}
+            <Link href="/travel-guide/pilgrimage-holiday-destinations-in-india" className="text-maroon underline">
+              India&apos;s pilgrimage destinations
+            </Link>
+            .
           </ArticleP>
         </ArticleBody>
 

@@ -110,7 +110,11 @@ export default function PilgrimageGuidePage() {
             atmospheric than it once was. A short trip outside the city to Sarnath, where the
             Buddha delivered his first sermon after attaining enlightenment, adds a Buddhist
             counterpoint to Varanasi&apos;s intensely Hindu character, and is a common half-day
-            add-on for travellers with an extra day to spare.
+            add-on for travellers with an extra day to spare. See our full{" "}
+            <Link href="/destinations/varanasi" className="text-maroon underline">
+              Varanasi destination guide
+            </Link>{" "}
+            for more on the city beyond its pilgrimage sites.
           </ArticleP>
 
           <ArticleH2>Rishikesh &amp; Haridwar — Where the Ganges Begins</ArticleH2>
@@ -166,12 +170,21 @@ export default function PilgrimageGuidePage() {
             Brahma&apos;s hand as he performed a yagna (fire ritual) here, which is why the town
             carries such deep religious significance despite its modest size. It&apos;s a
             smaller, more low-key pilgrimage stop than Varanasi or Amritsar, which makes it an
-            easy add-on to a Rajasthan itinerary rather than a destination requiring a special
+            easy add-on to a{" "}
+            <Link href="/destinations/rajasthan" className="text-maroon underline">
+              Rajasthan itinerary
+            </Link>{" "}
+            rather than a destination requiring a special
             trip of its own — most travellers visit as a natural stop between Jaipur and Jodhpur
             or Udaipur rather than a dedicated pilgrimage journey. If your timing lines up with
             the Pushkar Camel Fair, held each autumn, you&apos;ll see the town at its most
             colourful, with tens of thousands of camels, traders and pilgrims filling the
-            surrounding desert for the event.
+            surrounding desert for the event. Pushkar and Ajmer pair naturally with the forts and
+            palaces covered in our{" "}
+            <Link href="/travel-guide/monuments-in-rajasthan" className="text-maroon underline">
+              Rajasthan monuments guide
+            </Link>
+            .
           </ArticleP>
 
           <ArticleH2>Ajmer — Ajmer Sharif Dargah</ArticleH2>

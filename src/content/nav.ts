@@ -24,6 +24,10 @@ export type NavDropdown = {
   gridLayout?: boolean;
   /** Grouped mega-menu columns (e.g. Destination). Takes precedence over `items` when present. */
   columns?: DropdownColumn[];
+  /** Overrides the default 3-column grid wrap for `columns` — use when columns have
+   * uneven item counts and wrapping to a second row would leave an awkward gap
+   * above the shorter columns (e.g. Destinations' 5 columns of very different lengths). */
+  columnsPerRow?: number;
   /** Optional full-width row below the columns (e.g. Packages' "By Duration" strip). */
   durationRow?: DropdownColumn;
   viewAllHref?: string;
@@ -41,6 +45,7 @@ export const navItems: NavItem[] = [
     type: "dropdown",
     label: "Destinations",
     activeMatch: "/destinations",
+    columnsPerRow: 5,
     items: [],
     columns: [
       {

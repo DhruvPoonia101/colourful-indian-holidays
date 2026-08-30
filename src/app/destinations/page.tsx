@@ -61,6 +61,7 @@ export default function DestinationsHubPage() {
           eyebrow="Flagship Destinations"
           heading="Where Most Journeys Begin"
           cities={flagshipDestinations}
+          showActions
         />
 
         <CityGrid
@@ -68,6 +69,7 @@ export default function DestinationsHubPage() {
           heading="India's Tiger Reserves & Beyond"
           cities={wildlifeDestinations}
           topDivider
+          showActions
         />
 
         <CityGrid
@@ -75,6 +77,7 @@ export default function DestinationsHubPage() {
           heading="India's Coastlines"
           cities={beachDestinations}
           topDivider
+          showActions
         />
 
         <MoreDestinationsList

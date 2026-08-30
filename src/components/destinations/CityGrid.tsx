@@ -40,7 +40,7 @@ export function CityGrid({
           {cities.map((city, index) => {
             if (!showActions) {
               return (
-                <Reveal key={city.name} delay={index * 0.08}>
+                <Reveal key={city.name} delay={index * 0.05}>
                   <Link
                     href={city.href}
                     className="group relative block h-96 overflow-hidden rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl"
@@ -68,7 +68,7 @@ export function CityGrid({
             }
 
             return (
-              <Reveal key={city.name} delay={index * 0.08}>
+              <Reveal key={city.name} delay={index * 0.05}>
                 <div className="group relative h-96 overflow-hidden rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl">
                   <Image
                     src={city.image}

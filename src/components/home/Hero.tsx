@@ -1,23 +1,46 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { SectionEyebrow } from "@/components/destinations/SectionEyebrow";
 import { heroCopy, heroSlides } from "@/content/home";
 
-const ROTATE_MS = 6000;
+const ROTATE_MS = 3000;
+const CROSSFADE_EASE = [0.32, 0, 0.67, 0] as const;
+
+const slideVariants = {
+  enter: (dir: number) => ({ x: dir * 80, opacity: 0, scale: 1.04 }),
+  center: { x: 0, opacity: 1, scale: 1 },
+  exit: (dir: number) => ({ x: dir * -80, opacity: 0, scale: 0.97 }),
+};
+
+const slideVariantsReduced = {
+  enter: { opacity: 0 },
+  center: { opacity: 1 },
+  exit: { opacity: 0 },
+};
 
 export function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
   const prefersReducedMotion = useReducedMotion();
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const goTo = useCallback(
+    (index: number) => {
+      setDirection(index > activeIndex ? 1 : -1);
+      setActiveIndex(index);
+    },
+    [activeIndex]
+  );
 
   useEffect(() => {
     if (isPaused || prefersReducedMotion) return;
 
     timerRef.current = setInterval(() => {
+      setDirection(1);
       setActiveIndex((current) => (current + 1) % heroSlides.length);
     }, ROTATE_MS);
 
@@ -28,20 +51,22 @@ export function Hero() {
 
   return (
     <section
-      className="relative flex min-h-[calc(78svh-var(--header-height,88px))] w-full items-end overflow-hidden bg-ink text-ivory sm:min-h-[calc(98svh-var(--header-height,92px))]"
+      className="relative flex min-h-[calc(78svh-var(--header-height,88px))] w-full items-end overflow-hidden bg-ink text-ivory sm:min-h-[calc(96vh-var(--header-height,88px))]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
       onBlur={() => setIsPaused(false)}
     >
       <div className="absolute inset-0">
-        <AnimatePresence initial={false} mode="sync">
+        <AnimatePresence custom={direction} initial={false} mode="sync">
           <motion.div
             key={heroSlides[activeIndex].src}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.1, ease: "easeInOut" }}
+            custom={direction}
+            variants={prefersReducedMotion ? slideVariantsReduced : slideVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.9, ease: CROSSFADE_EASE }}
             className="absolute inset-0"
           >
             <Image
@@ -89,7 +114,7 @@ export function Hero() {
             <button
               key={slide.src}
               type="button"
-              onClick={() => setActiveIndex(index)}
+              onClick={() => goTo(index)}
               aria-label={`Show slide ${index + 1}: ${slide.alt}`}
               aria-current={index === activeIndex}
               className="flex h-11 w-11 items-center justify-center"

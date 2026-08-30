@@ -157,7 +157,14 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
       >
         {hasColumns ? (
           <>
-            <div className="grid grid-cols-3 gap-x-6 gap-y-5">
+            <div
+              className={`grid gap-x-6 gap-y-5 ${item.columnsPerRow ? "" : "grid-cols-3"}`}
+              style={
+                item.columnsPerRow
+                  ? { gridTemplateColumns: `repeat(${item.columnsPerRow}, minmax(0, 1fr))` }
+                  : undefined
+              }
+            >
               {item.columns!.map((column) => (
                 <div key={column.heading}>
                   <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gold-dark">
