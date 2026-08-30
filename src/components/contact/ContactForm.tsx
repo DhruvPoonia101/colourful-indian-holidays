@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { FiSend } from "react-icons/fi";
-import { whatsappUrl } from "@/lib/whatsapp";
 
 const TRAVEL_MONTHS = [
   "January",
@@ -41,22 +40,38 @@ export function ContactForm() {
   const [travelMonth, setTravelMonth] = useState("");
   const [travellers, setTravellers] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    setStatus("submitting");
+    setErrorMessage("");
 
-    const lines = [
-      "Hi! I'd like to enquire about a trip with Colourful Indian Holidays.",
-      "",
-      `Name: ${fullName}`,
-      `Email: ${email}`,
-      phone && `Phone: ${phone}`,
-      travelMonth && `Preferred Travel Month: ${travelMonth}`,
-      travellers && `Number of Travellers: ${travellers}`,
-      message && `Message: ${message}`,
-    ].filter(Boolean);
+    try {
+      const response = await fetch("/api/contact-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ fullName, email, phone, travelMonth, travellers, message }),
+      });
 
-    window.open(whatsappUrl(lines.join("\n")), "_blank", "noopener,noreferrer");
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data?.error ?? "Something went wrong.");
+      }
+
+      setStatus("success");
+      setFullName("");
+      setEmail("");
+      setPhone("");
+      setTravelMonth("");
+      setTravellers("");
+      setMessage("");
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
+    }
   };
 
   return (
@@ -190,16 +205,26 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark"
+        disabled={status === "submitting"}
+        className="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100"
       >
-        Send Inquiry
+        {status === "submitting" ? "Sending…" : "Send Inquiry"}
         <FiSend aria-hidden="true" className="h-4 w-4" />
       </button>
 
-      <p className="mt-4 text-xs text-ink-soft/70">
-        Sending this opens WhatsApp with your details filled in, so you can review and send it
-        directly to our team.
-      </p>
+      {status === "success" && (
+        <p className="mt-4 text-sm font-medium text-gold-dark">
+          Thanks! We&apos;ve got your enquiry and will reply within 24 hours.
+        </p>
+      )}
+      {status === "error" && (
+        <p className="mt-4 text-sm font-medium text-maroon">{errorMessage}</p>
+      )}
+      {status !== "success" && status !== "error" && (
+        <p className="mt-4 text-xs text-ink-soft/70">
+          We&apos;ll reply directly to the email address you provide, usually within 24 hours.
+        </p>
+      )}
     </form>
   );
 }
