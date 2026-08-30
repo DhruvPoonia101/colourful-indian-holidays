@@ -39,10 +39,7 @@ export async function POST(request: Request) {
 
   try {
     const { error } = await resend.emails.send({
-      // Swap this for an address on your own verified domain once you set one
-      // up in Resend (e.g. "Colourful Indian Holidays <enquiries@colourfulindianholidays.com>").
-      // Until then, Resend's shared sandbox address works for delivery to BUSINESS.email.
-      from: "Colourful Indian Holidays <onboarding@resend.dev>",
+      from: "Colourful Indian Holidays <enquiries@colourfulindianholidays.com>",
       to: BUSINESS.email,
       replyTo: email,
       subject: `New Itinerary Request — ${destination}`,
