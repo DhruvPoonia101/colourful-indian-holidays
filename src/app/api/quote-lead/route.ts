@@ -12,6 +12,7 @@ type QuotePayload = {
   travellers?: string;
   message?: string;
   pageName?: string;
+  pageUrl?: string;
 };
 
 export async function POST(request: Request) {
@@ -23,11 +24,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { fullName, email, phone, travelMonth, travellers, message, pageName } = body;
+  const { fullName, email, phone, travelMonth, travellers, message, pageName, pageUrl } = body;
 
-  if (!fullName || !email || !EMAIL_REGEX.test(email)) {
+  if (!fullName || !email || !EMAIL_REGEX.test(email) || !phone || !travelMonth || !travellers) {
     return NextResponse.json(
-      { error: "Please fill in your name and a valid email address." },
+      { error: "Please fill in your name, email, phone, preferred travel month, and number of travellers." },
       { status: 400 }
     );
   }
@@ -52,11 +53,12 @@ export async function POST(request: Request) {
       html: `
         <h2>New "Get a Free Quote" request</h2>
         <p><strong>Page:</strong> ${pageName ?? "Not specified"}</p>
+        ${pageUrl ? `<p><strong>Submitted From:</strong> <a href="${pageUrl}">${pageUrl}</a></p>` : ""}
         <p><strong>Name:</strong> ${fullName}</p>
         <p><strong>Email:</strong> ${email}</p>
-        ${phone ? `<p><strong>Phone / WhatsApp:</strong> ${phone}</p>` : ""}
-        ${travelMonth ? `<p><strong>Preferred Travel Month:</strong> ${travelMonth}</p>` : ""}
-        ${travellers ? `<p><strong>Number of Travellers:</strong> ${travellers}</p>` : ""}
+        <p><strong>Phone / WhatsApp:</strong> ${phone}</p>
+        <p><strong>Preferred Travel Month:</strong> ${travelMonth}</p>
+        <p><strong>Number of Travellers:</strong> ${travellers}</p>
         ${message ? `<p><strong>Special Requests:</strong> ${message}</p>` : ""}
         <p style="margin-top:16px;color:#888;font-size:12px;">Submitted from the "Get a Free Quote" button.</p>
       `,

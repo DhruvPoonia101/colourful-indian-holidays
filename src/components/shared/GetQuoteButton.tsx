@@ -38,7 +38,16 @@ export function GetQuoteButton({ pageName }: { pageName: string }) {
       const response = await fetch("/api/quote-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fullName, email, phone, travelMonth, travellers, message, pageName }),
+        body: JSON.stringify({
+          fullName,
+          email,
+          phone,
+          travelMonth,
+          travellers,
+          message,
+          pageName,
+          pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
+        }),
       });
 
       const data = await response.json();
@@ -130,12 +139,14 @@ export function GetQuoteButton({ pageName }: { pageName: string }) {
                     />
                     <input
                       type="tel"
+                      required
                       placeholder="Phone / WhatsApp Number"
                       value={phone}
                       onChange={(event) => setPhone(event.target.value)}
                       className={fieldClass}
                     />
                     <select
+                      required
                       value={travelMonth}
                       onChange={(event) => setTravelMonth(event.target.value)}
                       className={`${fieldClass} ${travelMonth ? "text-ink" : "text-ink-soft/60"}`}
@@ -148,6 +159,7 @@ export function GetQuoteButton({ pageName }: { pageName: string }) {
                       ))}
                     </select>
                     <select
+                      required
                       value={travellers}
                       onChange={(event) => setTravellers(event.target.value)}
                       className={`${fieldClass} ${travellers ? "text-ink" : "text-ink-soft/60"}`}
