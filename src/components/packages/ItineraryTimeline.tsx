@@ -12,18 +12,24 @@ export function ItineraryTimeline({
   intro,
   days,
   topDivider = false,
+  actionSlot,
 }: {
   eyebrow: string;
   heading: string;
   intro?: string;
   days: ItineraryDay[];
   topDivider?: boolean;
+  /** Optional element (e.g. a button) rendered to the right of the heading. */
+  actionSlot?: React.ReactNode;
 }) {
   return (
     <section className={`py-10 sm:py-14 ${topDivider ? "border-t border-sand/70" : ""}`}>
       <div className="mx-auto max-w-4xl px-6 sm:px-8">
         <Reveal>
-          <SectionIntro eyebrow={eyebrow} heading={heading} />
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <SectionIntro eyebrow={eyebrow} heading={heading} />
+            {actionSlot && <div className="shrink-0">{actionSlot}</div>}
+          </div>
           {intro && <p className="mt-4 text-base leading-relaxed text-ink-soft">{intro}</p>}
         </Reveal>
 

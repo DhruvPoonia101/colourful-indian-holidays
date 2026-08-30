@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    formats: ["image/avif", "image/webp"],
+    formats: ["image/webp"],
   },
 
   // 301 redirects preserving Google rankings from the old site during the domain

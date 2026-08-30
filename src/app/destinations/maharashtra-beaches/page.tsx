@@ -7,6 +7,7 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -100,7 +101,12 @@ export default function MaharashtraBeachesPage() {
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Maharashtra Beaches — An Easy Escape from Mumbai" />
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <SectionIntro eyebrow="Overview" heading="Maharashtra Beaches — An Easy Escape from Mumbai" />
+                <div className="shrink-0">
+                  <GetQuoteButton pageName="Maharashtra Beaches" />
+                </div>
+              </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>Maharashtra&apos;s Konkan coast runs south from Mumbai, and Alibaug has become the city&apos;s go-to weekend escape — close enough for a straightforward trip, with beaches, old Maratha-era forts, and a noticeably slower pace than Mumbai itself.</p>
                 <p>Further south, Ganpatipule sits on a quieter stretch of the Konkan coast, home to a well-known Ganpati temple directly on the beach and considerably fewer visitors than Alibaug sees.</p>

@@ -7,6 +7,7 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -114,10 +115,15 @@ export default function DelhiPage() {
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <SectionIntro
                 eyebrow="Overview"
                 heading="Three Cities of Delhi, Layered Into One"
               />
+                <div className="shrink-0">
+                  <GetQuoteButton pageName="Delhi" />
+                </div>
+              </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Delhi isn&apos;t one city so much as several, built one on top of another —

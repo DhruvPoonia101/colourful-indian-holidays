@@ -51,7 +51,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative flex min-h-[calc(78svh-var(--header-height,88px))] w-full items-end overflow-hidden bg-ink text-ivory sm:min-h-[calc(82svh-var(--header-height,88px))]"
+      className="relative flex min-h-[calc(78svh-var(--header-height,88px))] w-full items-end overflow-hidden bg-ink text-ivory sm:min-h-[calc(95svh-var(--header-height,88px))]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}

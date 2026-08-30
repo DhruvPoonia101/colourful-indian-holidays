@@ -7,6 +7,7 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -100,7 +101,12 @@ export default function SariskaPage() {
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Sariska — Tiger Reserve on Rajasthan's Doorstep" />
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <SectionIntro eyebrow="Overview" heading="Sariska — Tiger Reserve on Rajasthan's Doorstep" />
+                <div className="shrink-0">
+                  <GetQuoteButton pageName="Sariska" />
+                </div>
+              </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>Sariska Tiger Reserve made headlines in the mid-2000s when its entire tiger population was lost to poaching — and made headlines again when a careful reintroduction programme successfully brought tigers back. That recovery story is part of what makes a visit here worthwhile, alongside the park&apos;s genuine wildlife and the ancient temple ruins scattered through it.</p>
                 <p>What makes Sariska especially practical is its location — close enough to both Jaipur and Delhi that it fits naturally into a Rajasthan itinerary as a single-day safari, rather than requiring a dedicated multi-night stay.</p>

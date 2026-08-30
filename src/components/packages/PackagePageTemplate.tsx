@@ -4,6 +4,7 @@ import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { ItineraryTimeline } from "@/components/packages/ItineraryTimeline";
 import { InclusionsExclusions } from "@/components/packages/InclusionsExclusions";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -68,6 +69,7 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
           intro={content.overview}
           days={content.itinerary}
           topDivider
+          actionSlot={<GetQuoteButton pageName={content.name} />}
         />
 
         <InclusionsExclusions

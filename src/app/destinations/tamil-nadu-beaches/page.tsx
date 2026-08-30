@@ -7,6 +7,7 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -100,7 +101,12 @@ export default function TamilNaduBeachesPage() {
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Tamil Nadu Beaches — India's Southern Coastline" />
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <SectionIntro eyebrow="Overview" heading="Tamil Nadu Beaches — India's Southern Coastline" />
+                <div className="shrink-0">
+                  <GetQuoteButton pageName="Tamil Nadu Beaches" />
+                </div>
+              </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>Tamil Nadu&apos;s coastline isn&apos;t a beach-resort destination in the Goa sense — it&apos;s a working coast, layered with centuries of maritime and temple history. Mahabalipuram&apos;s 7th-century Shore Temple sits directly on the sand, a UNESCO World Heritage Site that&apos;s still an active pilgrimage site as much as a monument.</p>
                 <p>Most travellers add Tamil Nadu&apos;s coast as an extension to a wider South India itinerary rather than a standalone beach trip, combining Chennai&apos;s Marina Beach with a day trip to Mahabalipuram and, further south, Kanyakumari — the southernmost tip of mainland India, where the Bay of Bengal, Arabian Sea and Indian Ocean meet.</p>
