@@ -155,6 +155,7 @@ export default function TamilNaduBeachesPage() {
           heading="Nearby & Related Destinations"
           cities={tamilNaduBeachesRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

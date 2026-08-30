@@ -144,6 +144,7 @@ export default function RajasthanPage() {
           heading="Where to Go in Rajasthan"
           cities={rajasthanCities}
           topDivider
+          showActions
         />
 
         <MoreDestinationsList
@@ -155,6 +156,7 @@ export default function RajasthanPage() {
           eyebrow="Popular Tours"
           heading="Popular Rajasthan Tours"
           cities={rajasthanPopularTours}
+          showActions
         />
 
         <GettingThere

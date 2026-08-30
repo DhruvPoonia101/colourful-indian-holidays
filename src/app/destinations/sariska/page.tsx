@@ -155,6 +155,7 @@ export default function SariskaPage() {
           heading="Nearby & Related Destinations"
           cities={sariskaRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

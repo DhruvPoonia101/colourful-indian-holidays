@@ -19,6 +19,7 @@ export function CityGrid({
   cities,
   topDivider = false,
   showActions = false,
+  columns = 3,
 }: {
   eyebrow: string;
   heading: string;
@@ -28,6 +29,9 @@ export function CityGrid({
    * tour/experience/package listings. Leave false for attraction lists,
    * related-destination links, and other non-bookable grids. */
   showActions?: boolean;
+  /** Number of columns at the `lg` breakpoint (2 columns at `sm`, 1 below that,
+   * unchanged). Defaults to 3 — the standard grid used across the site. */
+  columns?: 3 | 4;
 }) {
   return (
     <section className={`py-10 sm:py-14 ${topDivider ? "border-t border-sand/70" : ""}`}>
@@ -36,7 +40,11 @@ export function CityGrid({
           <SectionIntro eyebrow={eyebrow} heading={heading} />
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className={`mt-12 grid gap-6 sm:grid-cols-2 ${
+            columns === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3"
+          }`}
+        >
           {cities.map((city, index) => {
             if (!showActions) {
               return (

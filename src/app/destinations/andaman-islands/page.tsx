@@ -155,6 +155,7 @@ export default function AndamanIslandsPage() {
           heading="Nearby & Related Destinations"
           cities={andamanIslandsRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

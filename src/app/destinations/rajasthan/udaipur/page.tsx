@@ -11,24 +11,24 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  agraAttractions,
-  agraQuickFacts,
-  agraGettingThere,
-  agraHighlights,
-  agraRelatedDestinations,
-  agraFaqs,
-} from "@/content/destinations/agra";
+  udaipurAttractions,
+  udaipurQuickFacts,
+  udaipurGettingThere,
+  udaipurHighlights,
+  udaipurRelatedDestinations,
+  udaipurFaqs,
+} from "@/content/destinations/udaipur";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Agra Tour Packages for International Travellers | Taj Mahal & the Golden Triangle";
+const title = "Udaipur Tour Packages | The City of Lakes, Rajasthan";
 const description =
-  "Plan a private Agra trip — the Taj Mahal, Agra Fort and Fatehpur Sikri, with an English-speaking guide and driver. The essential middle stop on every Golden Triangle itinerary.";
-const pagePath = "/destinations/agra";
-const heroImage = "/images/destinations/agra-taj-mahal.webp";
+  "Plan a private Udaipur tour — the Lake Palace, City Palace and a sunset boat ride on Lake Pichola, with an English-speaking guide and private driver.";
+const pagePath = "/destinations/rajasthan/udaipur";
+const heroImage = "/images/destinations/udaipur-lake-palace.webp";
 
 export const metadata: Metadata = {
   title,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}${heroImage}`,
         width: 1200,
         height: 630,
-        alt: "Taj Mahal at sunrise, Agra",
+        alt: "Lake Palace floating on Lake Pichola, Udaipur",
       },
     ],
   },
@@ -62,10 +62,11 @@ export const metadata: Metadata = {
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
-  { name: "Agra", path: pagePath },
+  { name: "Rajasthan", path: "/destinations/rajasthan" },
+  { name: "Udaipur", path: pagePath },
 ];
 
-export default function AgraPage() {
+export default function UdaipurPage() {
   return (
     <>
       <script
@@ -74,23 +75,23 @@ export default function AgraPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(agraFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(udaipurFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Agra",
+              name: "Udaipur",
               description,
               path: pagePath,
               image: heroImage,
-              latitude: 27.1767,
-              longitude: 78.0081,
+              latitude: 24.5854,
+              longitude: 73.7125,
               containsPlaces: [
-                { name: "Taj Mahal", path: pagePath },
-                { name: "Agra Fort", path: pagePath },
-                { name: "Fatehpur Sikri", path: pagePath },
+                { name: "Lake Palace", path: pagePath },
+                { name: "City Palace", path: pagePath },
+                { name: "Jagdish Temple", path: pagePath },
               ],
             })
           ),
@@ -100,40 +101,37 @@ export default function AgraPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Taj Mahal at sunrise, Agra"
+          imageAlt="Lake Palace floating on Lake Pichola, Udaipur"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Agra — Home of the Taj Mahal"
-          subheadline="One building draws most travellers to Agra, but Mughal forts, an abandoned imperial city, and centuries-old marble craftsmanship make it worth more than a rushed afternoon."
-          primaryHref="/packages/golden-triangle-tours"
-          primaryLabel="View Golden Triangle Tours"
-          whatsappMessage="Hi! I'd like to plan an Agra trip with Colourful Indian Holidays."
+          headline="Udaipur — The City of Lakes"
+          subheadline="Palaces on the water, hills ringing every view, and often called the most romantic city in India — the natural finale of a classic Rajasthan circuit."
+          primaryHref="/packages/rajasthan-tours"
+          primaryLabel="View Rajasthan Tours"
+          whatsappMessage="Hi! I'd like to plan an Udaipur trip with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={agraQuickFacts} />
+        <QuickFacts facts={udaipurQuickFacts} />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro
                 eyebrow="Overview"
-                heading="More Than a Single Monument"
+                heading="Rajasthan's Lakeside Counterpoint to the Desert"
               />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Agra is almost always visited for one reason, and the Taj Mahal genuinely
-                  earns the reputation — it&apos;s one of those rare landmarks that looks even
-                  better in person than in every photo you&apos;ve already seen of it. But
-                  building a rushed few hours around a single building undersells the city.
-                  Agra was a Mughal capital for generations, and that history is still standing
-                  a short drive from the Taj Mahal itself.
+                  Udaipur is built around a series of artificial lakes ringed by hills and
+                  palaces — a setting genuinely unlike anywhere else in Rajasthan, where forts
+                  and desert landscapes dominate. The City Palace, expanded by successive Mewar
+                  rulers over nearly 400 years, and the Lake Palace floating at the centre of
+                  Lake Pichola, are the two sights most travellers come specifically to see.
                 </p>
                 <p>
-                  Agra Fort and the abandoned city of Fatehpur Sikri both date from the same
-                  dynasty and the same red-sandstone-and-white-marble architectural language,
-                  and both see a fraction of the Taj Mahal&apos;s crowds. Given how easy Agra is
-                  to reach from both Delhi and Jaipur, it&apos;s worth planning for a proper day
-                  here rather than treating it as a photo stop on the way to Rajasthan.
+                  Arriving after Jaipur and Jodhpur, Udaipur&apos;s calmer, lakeside pace is a
+                  deliberate shift from the desert forts earlier in a Rajasthan trip — which is
+                  exactly why it so often closes out the classic circuit rather than opening it.
                 </p>
               </div>
             </Reveal>
@@ -142,21 +140,21 @@ export default function AgraPage() {
 
         <CityGrid
           eyebrow="Top Attractions"
-          heading="What to See in Agra"
-          cities={agraAttractions}
+          heading="What to See in Udaipur"
+          cities={udaipurAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
-          heading="Getting to Agra"
-          items={agraGettingThere}
+          heading="Getting to Udaipur"
+          items={udaipurGettingThere}
         />
 
         <HighlightsStrip
-          eyebrow="Why Agra"
-          heading="What to See Beyond the Taj Mahal"
-          highlights={agraHighlights}
+          eyebrow="Why Udaipur"
+          heading="What Makes This City Different"
+          highlights={udaipurHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -164,15 +162,14 @@ export default function AgraPage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Best Time to Visit"
-                heading="October to March is Agra's Most Comfortable Season"
+                heading="October to March is Udaipur's Most Comfortable Season"
                 align="center"
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                Cool, dry mornings make an early Taj Mahal visit genuinely pleasant. April to
-                June runs extremely hot — often the hottest stop on a Golden Triangle
-                itinerary — while the July to September monsoon brings humidity but also fewer
-                crowds around the monument.
+                Comfortable daytime temperatures run from October through March, and the lakes
+                are typically fuller after the monsoon, making the views and boat rides more
+                scenic through autumn and winter. April through June brings intense heat.
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -187,29 +184,29 @@ export default function AgraPage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={agraRelatedDestinations}
+          cities={udaipurRelatedDestinations}
           topDivider
           showActions
         />
 
         <FAQSection
           eyebrow="FAQ"
-          heading="Common Questions About Agra"
-          intro="Everything international travellers ask before booking an Agra trip — answered honestly."
-          faqs={agraFaqs}
-          whatsappMessage="Hi! I have a question before booking my Agra trip with Colourful Indian Holidays."
+          heading="Common Questions About Udaipur"
+          intro="Everything international travellers ask before booking an Udaipur trip — answered honestly."
+          faqs={udaipurFaqs}
+          whatsappMessage="Hi! I have a question before booking my Udaipur trip with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Agra Journey Awaits."
+          headline="Your Udaipur Journey Awaits."
           headlineItalic="When Will You Go?"
-          subtext="Tell us how many days you have and what you'd like to see — we'll reply with a tailored Agra itinerary and quote, usually within 24 hours."
+          subtext="Tell us how many days you have and we'll build Udaipur into your wider Rajasthan itinerary — usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan an Agra trip with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan an Udaipur trip with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

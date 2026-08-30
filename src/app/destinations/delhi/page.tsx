@@ -189,6 +189,7 @@ export default function DelhiPage() {
           heading="Nearby & Related Destinations"
           cities={delhiRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

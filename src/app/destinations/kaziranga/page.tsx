@@ -155,6 +155,7 @@ export default function KazirangaPage() {
           heading="Nearby & Related Destinations"
           cities={kazirangaRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

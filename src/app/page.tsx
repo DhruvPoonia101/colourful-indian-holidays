@@ -87,6 +87,7 @@ export default function Home() {
           cities={featuredThemes}
           topDivider
           showActions
+          columns={4}
         />
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/themes" variant="gold">
@@ -101,6 +102,7 @@ export default function Home() {
           cities={featuredPackages}
           topDivider
           showActions
+          columns={4}
         />
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/packages" variant="gold">

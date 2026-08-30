@@ -21,7 +21,7 @@ export function RegionHighlights() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {regions.map((region, index) => (
             <Reveal key={region.name} delay={index * 0.05}>
-              <div className="group relative h-80 overflow-hidden rounded-2xl">
+              <div className="group relative h-96 overflow-hidden rounded-2xl">
                 <Image
                   src={region.image}
                   alt={region.alt}

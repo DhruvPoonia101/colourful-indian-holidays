@@ -155,6 +155,7 @@ export default function BandhavgarhPage() {
           heading="Nearby & Related Destinations"
           cities={bandhavgarhRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

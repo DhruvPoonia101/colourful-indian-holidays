@@ -155,6 +155,7 @@ export default function GujaratBeachesPage() {
           heading="Nearby & Related Destinations"
           cities={gujaratBeachesRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

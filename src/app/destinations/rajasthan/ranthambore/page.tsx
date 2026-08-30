@@ -189,6 +189,7 @@ export default function RanthamborePage() {
           heading="Nearby & Related Destinations"
           cities={ranthamboreRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

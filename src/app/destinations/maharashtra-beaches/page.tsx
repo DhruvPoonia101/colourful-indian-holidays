@@ -155,6 +155,7 @@ export default function MaharashtraBeachesPage() {
           heading="Nearby & Related Destinations"
           cities={maharashtraBeachesRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

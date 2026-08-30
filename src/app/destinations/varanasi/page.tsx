@@ -190,6 +190,7 @@ export default function VaranasiPage() {
           heading="Nearby & Related Destinations"
           cities={varanasiRelatedDestinations}
           topDivider
+          showActions
         />
 
         <FAQSection

@@ -11,24 +11,24 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  agraAttractions,
-  agraQuickFacts,
-  agraGettingThere,
-  agraHighlights,
-  agraRelatedDestinations,
-  agraFaqs,
-} from "@/content/destinations/agra";
+  jaipurAttractions,
+  jaipurQuickFacts,
+  jaipurGettingThere,
+  jaipurHighlights,
+  jaipurRelatedDestinations,
+  jaipurFaqs,
+} from "@/content/destinations/jaipur";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Agra Tour Packages for International Travellers | Taj Mahal & the Golden Triangle";
+const title = "Jaipur Tour Packages | The Pink City, Rajasthan";
 const description =
-  "Plan a private Agra trip — the Taj Mahal, Agra Fort and Fatehpur Sikri, with an English-speaking guide and driver. The essential middle stop on every Golden Triangle itinerary.";
-const pagePath = "/destinations/agra";
-const heroImage = "/images/destinations/agra-taj-mahal.webp";
+  "Plan a private Jaipur tour — Amber Fort, City Palace, Hawa Mahal and Jantar Mantar, with an English-speaking guide and private driver. The natural start of any Rajasthan itinerary.";
+const pagePath = "/destinations/rajasthan/jaipur";
+const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 
 export const metadata: Metadata = {
   title,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}${heroImage}`,
         width: 1200,
         height: 630,
-        alt: "Taj Mahal at sunrise, Agra",
+        alt: "Amber Fort at sunset, Jaipur",
       },
     ],
   },
@@ -62,10 +62,11 @@ export const metadata: Metadata = {
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
-  { name: "Agra", path: pagePath },
+  { name: "Rajasthan", path: "/destinations/rajasthan" },
+  { name: "Jaipur", path: pagePath },
 ];
 
-export default function AgraPage() {
+export default function JaipurPage() {
   return (
     <>
       <script
@@ -74,23 +75,24 @@ export default function AgraPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(agraFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(jaipurFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Agra",
+              name: "Jaipur",
               description,
               path: pagePath,
               image: heroImage,
-              latitude: 27.1767,
-              longitude: 78.0081,
+              latitude: 26.9124,
+              longitude: 75.7873,
               containsPlaces: [
-                { name: "Taj Mahal", path: pagePath },
-                { name: "Agra Fort", path: pagePath },
-                { name: "Fatehpur Sikri", path: pagePath },
+                { name: "Amber Fort", path: pagePath },
+                { name: "City Palace", path: pagePath },
+                { name: "Hawa Mahal", path: pagePath },
+                { name: "Jantar Mantar", path: pagePath },
               ],
             })
           ),
@@ -100,40 +102,39 @@ export default function AgraPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Taj Mahal at sunrise, Agra"
+          imageAlt="Amber Fort at sunset, Jaipur"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Agra — Home of the Taj Mahal"
-          subheadline="One building draws most travellers to Agra, but Mughal forts, an abandoned imperial city, and centuries-old marble craftsmanship make it worth more than a rushed afternoon."
-          primaryHref="/packages/golden-triangle-tours"
-          primaryLabel="View Golden Triangle Tours"
-          whatsappMessage="Hi! I'd like to plan an Agra trip with Colourful Indian Holidays."
+          headline="Jaipur — The Pink City"
+          subheadline="Forts, palaces and bazaars in Rajasthan's capital — the natural first stop on almost every Rajasthan itinerary, and a common third stop on the classic Golden Triangle route."
+          primaryHref="/packages/rajasthan-tours"
+          primaryLabel="View Rajasthan Tours"
+          whatsappMessage="Hi! I'd like to plan a Jaipur trip with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={agraQuickFacts} />
+        <QuickFacts facts={jaipurQuickFacts} />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro
                 eyebrow="Overview"
-                heading="More Than a Single Monument"
+                heading="Rajasthan's Capital, and Its Most Iconic City"
               />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Agra is almost always visited for one reason, and the Taj Mahal genuinely
-                  earns the reputation — it&apos;s one of those rare landmarks that looks even
-                  better in person than in every photo you&apos;ve already seen of it. But
-                  building a rushed few hours around a single building undersells the city.
-                  Agra was a Mughal capital for generations, and that history is still standing
-                  a short drive from the Taj Mahal itself.
+                  Jaipur is where most Rajasthan itineraries begin, and for good reason — within
+                  a compact area you get a hilltop fort-palace, a still-occupied royal palace,
+                  one of India&apos;s most recognisable facades, and a UNESCO-listed astronomical
+                  observatory, all within a short drive of each other. The city takes its
+                  nickname, the Pink City, from the terracotta wash applied to its old-city
+                  buildings in 1876, a tradition that continues to this day.
                 </p>
                 <p>
-                  Agra Fort and the abandoned city of Fatehpur Sikri both date from the same
-                  dynasty and the same red-sandstone-and-white-marble architectural language,
-                  and both see a fraction of the Taj Mahal&apos;s crowds. Given how easy Agra is
-                  to reach from both Delhi and Jaipur, it&apos;s worth planning for a proper day
-                  here rather than treating it as a photo stop on the way to Rajasthan.
+                  For international travellers, Jaipur is also simply an easy city to visit —
+                  well-connected by air and rail, with an established tourism infrastructure and
+                  English widely spoken at the major sites. It&apos;s the reason Jaipur so often
+                  anchors a wider Rajasthan trip rather than being treated as a single stop.
                 </p>
               </div>
             </Reveal>
@@ -142,21 +143,21 @@ export default function AgraPage() {
 
         <CityGrid
           eyebrow="Top Attractions"
-          heading="What to See in Agra"
-          cities={agraAttractions}
+          heading="What to See in Jaipur"
+          cities={jaipurAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
-          heading="Getting to Agra"
-          items={agraGettingThere}
+          heading="Getting to Jaipur"
+          items={jaipurGettingThere}
         />
 
         <HighlightsStrip
-          eyebrow="Why Agra"
-          heading="What to See Beyond the Taj Mahal"
-          highlights={agraHighlights}
+          eyebrow="Why Jaipur"
+          heading="What Makes This City Different"
+          highlights={jaipurHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -164,15 +165,15 @@ export default function AgraPage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Best Time to Visit"
-                heading="October to March is Agra's Most Comfortable Season"
+                heading="October to March is Jaipur's Most Comfortable Season"
                 align="center"
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                Cool, dry mornings make an early Taj Mahal visit genuinely pleasant. April to
-                June runs extremely hot — often the hottest stop on a Golden Triangle
-                itinerary — while the July to September monsoon brings humidity but also fewer
-                crowds around the monument.
+                Daytime temperatures are manageable for walking between sites from October
+                through March. April through June brings intense heat that makes midday
+                sightseeing genuinely uncomfortable, while the July–September monsoon brings
+                humidity and occasional heavy rain.
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -187,29 +188,29 @@ export default function AgraPage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={agraRelatedDestinations}
+          cities={jaipurRelatedDestinations}
           topDivider
           showActions
         />
 
         <FAQSection
           eyebrow="FAQ"
-          heading="Common Questions About Agra"
-          intro="Everything international travellers ask before booking an Agra trip — answered honestly."
-          faqs={agraFaqs}
-          whatsappMessage="Hi! I have a question before booking my Agra trip with Colourful Indian Holidays."
+          heading="Common Questions About Jaipur"
+          intro="Everything international travellers ask before booking a Jaipur trip — answered honestly."
+          faqs={jaipurFaqs}
+          whatsappMessage="Hi! I have a question before booking my Jaipur trip with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Agra Journey Awaits."
+          headline="Your Jaipur Journey Awaits."
           headlineItalic="When Will You Go?"
-          subtext="Tell us how many days you have and what you'd like to see — we'll reply with a tailored Agra itinerary and quote, usually within 24 hours."
+          subtext="Tell us how many days you have and we'll build Jaipur into your wider Rajasthan itinerary — usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan an Agra trip with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a Jaipur trip with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
