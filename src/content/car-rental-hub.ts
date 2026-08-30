@@ -4,7 +4,7 @@ import type { Highlight } from "@/components/destinations/HighlightsStrip";
 export const fleetCards: CityCard[] = [
   {
     name: "Sedan",
-    tagline: "1 – 3 Travellers",
+    tagline: "1 – 4 Travellers",
     description: "A comfortable, air-conditioned sedan with a private driver — ideal for couples or solo travellers.",
     href: "/car-rental/sedan",
     image: "/images/destinations/car-sedan.webp",
@@ -12,7 +12,7 @@ export const fleetCards: CityCard[] = [
   },
   {
     name: "SUV",
-    tagline: "1 – 4 Travellers",
+    tagline: "1 – 6 Travellers",
     description: "More space and ground clearance for longer drives and less predictable road conditions.",
     href: "/car-rental/suv",
     image: "/images/destinations/car-suv.webp",

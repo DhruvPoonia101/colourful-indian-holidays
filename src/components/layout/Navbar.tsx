@@ -217,7 +217,7 @@ export function Navbar() {
             >
               <Button
                 href="/contact"
-                variant="maroon"
+                variant="navy"
                 size="sm"
                 className="
                   whitespace-nowrap

@@ -5,11 +5,14 @@ import { BUSINESS } from "@/lib/seo/business";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type QuotePayload = {
+  formType?: "tour" | "carRental";
   fullName?: string;
   email?: string;
   phone?: string;
   travelMonth?: string;
   travellers?: string;
+  route?: string;
+  date?: string;
   message?: string;
   pageName?: string;
   pageUrl?: string;
@@ -24,11 +27,31 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { fullName, email, phone, travelMonth, travellers, message, pageName, pageUrl } = body;
+  const {
+    formType,
+    fullName,
+    email,
+    phone,
+    travelMonth,
+    travellers,
+    route,
+    date,
+    message,
+    pageName,
+    pageUrl,
+  } = body;
 
-  if (!fullName || !email || !EMAIL_REGEX.test(email) || !phone || !travelMonth || !travellers) {
+  const baseValid = Boolean(fullName && email && EMAIL_REGEX.test(email) && phone);
+  const isCarRental = formType === "carRental";
+  const detailsValid = isCarRental ? Boolean(route && date) : Boolean(travelMonth && travellers);
+
+  if (!baseValid || !detailsValid) {
     return NextResponse.json(
-      { error: "Please fill in your name, email, phone, preferred travel month, and number of travellers." },
+      {
+        error: isCarRental
+          ? "Please fill in your name, email, phone, route, and travel date."
+          : "Please fill in your name, email, phone, preferred travel month, and number of travellers.",
+      },
       { status: 400 }
     );
   }
@@ -57,9 +80,11 @@ export async function POST(request: Request) {
         <p><strong>Name:</strong> ${fullName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone / WhatsApp:</strong> ${phone}</p>
-        <p><strong>Preferred Travel Month:</strong> ${travelMonth}</p>
-        <p><strong>Number of Travellers:</strong> ${travellers}</p>
-        ${message ? `<p><strong>Special Requests:</strong> ${message}</p>` : ""}
+        ${route ? `<p><strong>Route / Destination:</strong> ${route}</p>` : ""}
+        ${date ? `<p><strong>Travel Date:</strong> ${date}</p>` : ""}
+        ${travelMonth ? `<p><strong>Preferred Travel Month:</strong> ${travelMonth}</p>` : ""}
+        ${travellers ? `<p><strong>Number of Travellers:</strong> ${travellers}</p>` : ""}
+        ${message ? `<p><strong>${isCarRental ? "Additional Notes" : "Special Requests"}:</strong> ${message}</p>` : ""}
         <p style="margin-top:16px;color:#888;font-size:12px;">Submitted from the "Get a Free Quote" button.</p>
       `,
     });

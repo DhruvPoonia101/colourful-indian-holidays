@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FiSend, FiX } from "react-icons/fi";
+import { FiCalendar, FiSend, FiX } from "react-icons/fi";
 
 const TRAVEL_MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -12,13 +12,29 @@ const TRAVEL_MONTHS = [
 
 const TRAVELLER_COUNTS = ["1", "2", "3–4", "5–8", "9+"];
 
-export function GetQuoteButton({ pageName }: { pageName: string }) {
+const todayISO = new Date().toISOString().split("T")[0];
+const twoYearsOutISO = new Date(new Date().setFullYear(new Date().getFullYear() + 2))
+  .toISOString()
+  .split("T")[0];
+
+export function GetQuoteButton({
+  pageName,
+  variant = "tour",
+}: {
+  pageName: string;
+  /** "tour" (default) asks for travel month + traveller count — used on destination
+   * and package pages. "carRental" asks for route + a specific date instead. */
+  variant?: "tour" | "carRental";
+}) {
+  const dateInputRef = useRef<HTMLInputElement>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [travelMonth, setTravelMonth] = useState("");
   const [travellers, setTravellers] = useState("");
+  const [route, setRoute] = useState("");
+  const [date, setDate] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -39,11 +55,14 @@ export function GetQuoteButton({ pageName }: { pageName: string }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          formType: variant,
           fullName,
           email,
           phone,
-          travelMonth,
-          travellers,
+          travelMonth: variant === "tour" ? travelMonth : undefined,
+          travellers: variant === "tour" ? travellers : undefined,
+          route: variant === "carRental" ? route : undefined,
+          date: variant === "carRental" ? date : undefined,
           message,
           pageName,
           pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
@@ -62,6 +81,8 @@ export function GetQuoteButton({ pageName }: { pageName: string }) {
       setPhone("");
       setTravelMonth("");
       setTravellers("");
+      setRoute("");
+      setDate("");
       setMessage("");
     } catch (err) {
       setStatus("error");
@@ -145,39 +166,79 @@ export function GetQuoteButton({ pageName }: { pageName: string }) {
                       onChange={(event) => setPhone(event.target.value)}
                       className={fieldClass}
                     />
-                    <select
-                      required
-                      value={travelMonth}
-                      onChange={(event) => setTravelMonth(event.target.value)}
-                      className={`${fieldClass} ${travelMonth ? "text-ink" : "text-ink-soft/60"}`}
-                    >
-                      <option value="">Preferred Travel Month</option>
-                      {TRAVEL_MONTHS.map((month) => (
-                        <option key={month} value={month} className="text-ink">
-                          {month}
-                        </option>
-                      ))}
-                    </select>
-                    <select
-                      required
-                      value={travellers}
-                      onChange={(event) => setTravellers(event.target.value)}
-                      className={`${fieldClass} ${travellers ? "text-ink" : "text-ink-soft/60"}`}
-                    >
-                      <option value="">Number of Travellers</option>
-                      {TRAVELLER_COUNTS.map((count) => (
-                        <option key={count} value={count} className="text-ink">
-                          {count}
-                        </option>
-                      ))}
-                    </select>
-                    <textarea
-                      placeholder="Special Requests (optional)"
-                      rows={3}
-                      value={message}
-                      onChange={(event) => setMessage(event.target.value)}
-                      className="w-full rounded-2xl border border-sand bg-white px-5 py-3 text-sm text-ink placeholder:text-ink-soft/60 focus:outline-none focus:ring-2 focus:ring-gold/40"
-                    />
+
+                    {variant === "carRental" ? (
+                      <>
+                        <input
+                          type="text"
+                          required
+                          placeholder="Route / Destination (e.g. Jaipur to Udaipur)"
+                          value={route}
+                          onChange={(event) => setRoute(event.target.value)}
+                          className={fieldClass}
+                        />
+                        <div className="relative">
+                          <input
+                            ref={dateInputRef}
+                            type="date"
+                            required
+                            min={todayISO}
+                            max={twoYearsOutISO}
+                            value={date}
+                            onChange={(event) => setDate(event.target.value)}
+                            onClick={() => dateInputRef.current?.showPicker?.()}
+                            className={`${fieldClass} cursor-pointer pr-12 [&::-webkit-calendar-picker-indicator]:opacity-0`}
+                          />
+                          <FiCalendar
+                            aria-hidden="true"
+                            className="pointer-events-none absolute right-5 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-soft/70"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Anything else we should know? (optional)"
+                          rows={3}
+                          value={message}
+                          onChange={(event) => setMessage(event.target.value)}
+                          className="w-full rounded-2xl border border-sand bg-white px-5 py-3 text-sm text-ink placeholder:text-ink-soft/60 focus:outline-none focus:ring-2 focus:ring-gold/40"
+                        />
+                      </>
+                    ) : (
+                      <>
+                        <select
+                          required
+                          value={travelMonth}
+                          onChange={(event) => setTravelMonth(event.target.value)}
+                          className={`${fieldClass} ${travelMonth ? "text-ink" : "text-ink-soft/60"}`}
+                        >
+                          <option value="">Preferred Travel Month</option>
+                          {TRAVEL_MONTHS.map((month) => (
+                            <option key={month} value={month} className="text-ink">
+                              {month}
+                            </option>
+                          ))}
+                        </select>
+                        <select
+                          required
+                          value={travellers}
+                          onChange={(event) => setTravellers(event.target.value)}
+                          className={`${fieldClass} ${travellers ? "text-ink" : "text-ink-soft/60"}`}
+                        >
+                          <option value="">Number of Travellers</option>
+                          {TRAVELLER_COUNTS.map((count) => (
+                            <option key={count} value={count} className="text-ink">
+                              {count}
+                            </option>
+                          ))}
+                        </select>
+                        <textarea
+                          placeholder="Special Requests (optional)"
+                          rows={3}
+                          value={message}
+                          onChange={(event) => setMessage(event.target.value)}
+                          className="w-full rounded-2xl border border-sand bg-white px-5 py-3 text-sm text-ink placeholder:text-ink-soft/60 focus:outline-none focus:ring-2 focus:ring-gold/40"
+                        />
+                      </>
+                    )}
 
                     <button
                       type="submit"

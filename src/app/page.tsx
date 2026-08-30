@@ -14,6 +14,7 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Button } from "@/components/ui/Button";
 import { featuredThemes } from "@/content/themes-hub";
 import { featuredPackages } from "@/content/packages-hub";
+import { fleetCards } from "@/content/car-rental-hub";
 import { homeFaqs } from "@/content/home";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/organization-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
@@ -107,6 +108,21 @@ export default function Home() {
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/packages" variant="gold">
             View All Tour Packages
+            <FiArrowRight aria-hidden="true" className="h-4 w-4" />
+          </Button>
+        </div>
+
+        <CityGrid
+          eyebrow="Car Rental"
+          heading="Private Vehicles, Always With a Driver"
+          cities={fleetCards.slice(0, 4)}
+          topDivider
+          showActions
+          columns={4}
+        />
+        <div className="flex justify-center pb-16 sm:pb-20">
+          <Button href="/car-rental" variant="gold">
+            Explore All Vehicles
             <FiArrowRight aria-hidden="true" className="h-4 w-4" />
           </Button>
         </div>

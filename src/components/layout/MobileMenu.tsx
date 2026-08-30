@@ -204,7 +204,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   <FiMail aria-hidden="true" className="h-5 w-5" />
                 </a>
               </div>
-              <Button href="/contact" variant="maroon" className="w-full">
+              <Button href="/contact" variant="navy" className="w-full">
                 Plan My Journey
               </Button>
             </div>
