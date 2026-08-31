@@ -3,6 +3,7 @@ import { FiCalendar, FiCheck, FiMessageCircle, FiPhone } from "react-icons/fi";
 import { Reveal } from "@/components/ui/Reveal";
 import { BUSINESS } from "@/lib/seo/business";
 import { whatsappUrl } from "@/lib/whatsapp";
+import type { TrustBadge } from "@/content/trust-badges";
 
 type JourneyCTAProps = {
   /** Optional background photo. Falls back to a solid deep-maroon background if omitted. */
@@ -16,7 +17,7 @@ type JourneyCTAProps = {
   primaryLabel: string;
   primaryHref: string;
   whatsappMessage: string;
-  trustBadges: string[];
+  trustBadges: TrustBadge[];
 };
 
 export function JourneyCTA({
@@ -112,15 +113,32 @@ export function JourneyCTA({
           </div>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5">
-            {trustBadges.map((badge) => (
-              <span
-                key={badge}
-                className="inline-flex items-center gap-1.5 rounded-full border border-ivory/25 px-3.5 py-1.5 text-xs font-medium text-ivory/85 transition-all duration-200 ease-out hover:scale-105 hover:border-gold/50 hover:bg-ivory/5 hover:text-ivory"
-              >
-                <FiCheck aria-hidden="true" className="h-3.5 w-3.5 text-gold-light" />
-                {badge}
-              </span>
-            ))}
+            {trustBadges.map((badge) => {
+              const pillClasses =
+                "inline-flex items-center gap-1.5 rounded-full border border-ivory/25 px-3.5 py-1.5 text-xs font-medium text-ivory/85 transition-all duration-200 ease-out hover:scale-105 hover:border-gold/50 hover:bg-ivory/5 hover:text-ivory";
+
+              if (badge.href) {
+                return (
+                  <a
+                    key={badge.label}
+                    href={badge.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={pillClasses}
+                  >
+                    <FiCheck aria-hidden="true" className="h-3.5 w-3.5 text-gold-light" />
+                    {badge.label}
+                  </a>
+                );
+              }
+
+              return (
+                <span key={badge.label} className={pillClasses}>
+                  <FiCheck aria-hidden="true" className="h-3.5 w-3.5 text-gold-light" />
+                  {badge.label}
+                </span>
+              );
+            })}
           </div>
         </Reveal>
       </div>

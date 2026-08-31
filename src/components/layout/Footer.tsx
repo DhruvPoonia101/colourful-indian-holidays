@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   FaFacebook,
+  FaGoogle,
   FaInstagram,
   FaLinkedin,
   FaStar,
@@ -26,6 +27,10 @@ const socialIcons = {
   linkedin: FaLinkedin,
   tripadvisor: FaTripadvisor,
 };
+
+const tripadvisorFooterUrl = BUSINESS.sameAs.find((url) =>
+  url.includes("tripadvisor")
+);
 
 export function Footer() {
   const address = BUSINESS.address;
@@ -260,29 +265,67 @@ export function Footer() {
               </Link>
             </p>
 
-            {/* Tripadvisor Rating */}
-            <div className="flex items-center gap-2 text-[12px]">
-              <FaTripadvisor
-                aria-hidden="true"
-                className="h-4 w-4 text-[#34E0A1]"
-              />
+            {/* Google + Tripadvisor Ratings */}
+            <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-end">
+              <a
+                href={BUSINESS.googleRating.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="See our Google reviews"
+                className="group flex items-center gap-2 text-[12px] transition-colors duration-200 hover:text-[#D5A93A]"
+              >
+                <FaGoogle
+                  aria-hidden="true"
+                  className="h-4 w-4 text-[#E9DCCB]/60 transition-colors duration-200 group-hover:text-[#D5A93A]"
+                />
 
-              <span className="font-semibold text-[#F8F1E7]">
-                {BUSINESS.aggregateRating.ratingValue}
-              </span>
+                <span className="font-semibold text-[#F8F1E7]">
+                  {BUSINESS.googleRating.ratingValue}
+                </span>
 
-              <div className="flex gap-0.5" aria-hidden="true">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <FaStar
-                    key={index}
-                    className="h-3 w-3 text-[#D5A93A]"
-                  />
-                ))}
-              </div>
+                <div className="flex gap-0.5" aria-hidden="true">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <FaStar
+                      key={index}
+                      className="h-3 w-3 text-[#D5A93A]"
+                    />
+                  ))}
+                </div>
 
-              <span className="text-[#E9DCCB]/50">
-                ({BUSINESS.aggregateRating.reviewCount} reviews)
-              </span>
+                <span className="text-[#E9DCCB]/50 transition-colors duration-200 group-hover:text-[#D5A93A]/80">
+                  ({BUSINESS.googleRating.reviewCount} reviews)
+                </span>
+              </a>
+
+              <a
+                href={tripadvisorFooterUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="See our Tripadvisor reviews"
+                className="group flex items-center gap-2 text-[12px] transition-colors duration-200 hover:text-[#D5A93A]"
+              >
+                <FaTripadvisor
+                  aria-hidden="true"
+                  className="h-4 w-4 text-[#34E0A1]"
+                />
+
+                <span className="font-semibold text-[#F8F1E7]">
+                  {BUSINESS.aggregateRating.ratingValue}
+                </span>
+
+                <div className="flex gap-0.5" aria-hidden="true">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <FaStar
+                      key={index}
+                      className="h-3 w-3 text-[#D5A93A]"
+                    />
+                  ))}
+                </div>
+
+                <span className="text-[#E9DCCB]/50 transition-colors duration-200 group-hover:text-[#D5A93A]/80">
+                  ({BUSINESS.aggregateRating.reviewCount} reviews)
+                </span>
+              </a>
             </div>
           </div>
 
