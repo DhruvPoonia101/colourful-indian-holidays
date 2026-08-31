@@ -22,7 +22,8 @@ export type PackageContent = {
    * the business. Must be verified against real rates before this page is
    * allowed to be indexed (see `draftPendingReview` below).
    */
-  startingPrice: number;
+  /** Kept for currency labeling only — no fixed price is published; every
+   * package shows "Price on Request" instead. */
   priceCurrency: string;
   itinerary: ItineraryDay[];
   inclusions: string[];

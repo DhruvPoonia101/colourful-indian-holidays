@@ -11,17 +11,13 @@ export type TouristTripInput = {
   description: string;
   image: string;
   durationDays: number;
-  startingPrice: number;
+  /** Omit when pricing is "on request" rather than a fixed public rate —
+   * never pass an unverified or estimated number here. */
+  startingPrice?: number;
   priceCurrency: string;
   itinerary: TripItineraryDay[];
 };
 
-/**
- * TouristTrip schema for a tour package page. NOTE: `startingPrice` becomes
- * a public Offer price in this markup — never call this with an unverified
- * or estimated price. Confirm real pricing before a page using this goes
- * live/indexed.
- */
 export function touristTripJsonLd(trip: TouristTripInput) {
   return {
     "@context": "https://schema.org",
@@ -41,8 +37,15 @@ export function touristTripJsonLd(trip: TouristTripInput) {
     },
     offers: {
       "@type": "Offer",
-      price: trip.startingPrice,
+      // No fixed `price` — schema.org's convention for "price on request" is
+      // to state the currency without an amount, rather than publish a
+      // number that isn't a real, confirmed rate.
       priceCurrency: trip.priceCurrency,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: trip.priceCurrency,
+        description: "Price on request — contact us for a personalised quote.",
+      },
       availability: "https://schema.org/InStock",
       url: `${SITE_URL}/packages/${trip.slug}`,
     },

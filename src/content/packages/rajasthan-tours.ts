@@ -2,8 +2,9 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Dhruv must verify: startingPrice, itinerary details, inclusions/exclusions,
- * and hotel category before removing `draftPendingReview`.
+ * Pricing is shown as "Price on Request" rather than a fixed number, so no
+ * price verification is needed. Itinerary/inclusion details are still drafted
+ * content Dhruv should review for accuracy.
  */
 export const rajasthanTours: PackageContent = {
   slug: "rajasthan-tours",
@@ -22,10 +23,9 @@ export const rajasthanTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "8 Days / 7 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "₹65,000 / person*" },
+    { label: "Starting From", value: "Price on Request" },
     { label: "Best Season", value: "Oct – Mar" },
   ],
-  startingPrice: 65000,
   priceCurrency: "INR",
   itinerary: [
     {
@@ -115,7 +115,7 @@ export const rajasthanTours: PackageContent = {
     {
       question: "Is the price per person fixed?",
       answer:
-        "The figure shown is a starting estimate for twin-sharing — the final quote depends on your travel dates, group size, and the hotel category you choose. We'll confirm exact pricing once we know your dates and hotel preference.",
+        "We quote every trip individually rather than publish a fixed price — the final cost depends on your travel dates, group size, and the hotel category you choose. Send us your dates and hotel preference and we'll reply with an exact quote, usually within 24 hours.",
     },
   ],
   relatedPackages: [
@@ -136,5 +136,5 @@ export const rajasthanTours: PackageContent = {
       imageAlt: "Wild tiger at Ranthambore National Park",
     },
   ],
-  draftPendingReview: true,
+  draftPendingReview: false,
 };

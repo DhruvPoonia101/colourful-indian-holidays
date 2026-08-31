@@ -40,7 +40,6 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
               description: content.metaDescription,
               image: content.heroImage,
               durationDays: content.itinerary.length,
-              startingPrice: content.startingPrice,
               priceCurrency: content.priceCurrency,
               itinerary: content.itinerary,
             })

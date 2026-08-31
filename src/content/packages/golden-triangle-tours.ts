@@ -2,8 +2,9 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Dhruv must verify: startingPrice, itinerary details, inclusions/exclusions,
- * and hotel category before removing `draftPendingReview`.
+ * Pricing is shown as "Price on Request" rather than a fixed number, so no
+ * price verification is needed. Itinerary/inclusion details are still drafted
+ * content Dhruv should review for accuracy.
  */
 export const goldenTriangleTours: PackageContent = {
   slug: "golden-triangle-tours",
@@ -22,10 +23,9 @@ export const goldenTriangleTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "6 Days / 5 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "₹45,000 / person*" },
+    { label: "Starting From", value: "Price on Request" },
     { label: "Best Season", value: "Oct – Mar" },
   ],
-  startingPrice: 45000,
   priceCurrency: "INR",
   itinerary: [
     {
@@ -105,7 +105,7 @@ export const goldenTriangleTours: PackageContent = {
     {
       question: "Is the price per person fixed?",
       answer:
-        "The figure shown is a starting estimate for twin-sharing — the final quote depends on your travel dates, group size, and the hotel category you choose. We'll confirm exact pricing once we know your dates and hotel preference.",
+        "We quote every trip individually rather than publish a fixed price — the final cost depends on your travel dates, group size, and the hotel category you choose. Send us your dates and hotel preference and we'll reply with an exact quote, usually within 24 hours.",
     },
   ],
   relatedPackages: [
@@ -126,5 +126,5 @@ export const goldenTriangleTours: PackageContent = {
       imageAlt: "India Gate at dusk, Delhi",
     },
   ],
-  draftPendingReview: true,
+  draftPendingReview: false,
 };

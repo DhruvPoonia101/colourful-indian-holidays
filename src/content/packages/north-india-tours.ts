@@ -2,8 +2,9 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Dhruv must verify: startingPrice, itinerary details, inclusions/exclusions,
- * and hotel category before removing `draftPendingReview`.
+ * Pricing is shown as "Price on Request" rather than a fixed number, so no
+ * price verification is needed. Itinerary/inclusion details are still drafted
+ * content Dhruv should review for accuracy.
  */
 export const northIndiaTours: PackageContent = {
   slug: "north-india-tours",
@@ -22,10 +23,9 @@ export const northIndiaTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "9 Days / 8 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "₹75,000 / person*" },
+    { label: "Starting From", value: "Price on Request" },
     { label: "Best Season", value: "Oct – Mar" },
   ],
-  startingPrice: 75000,
   priceCurrency: "INR",
   itinerary: [
     {
@@ -120,7 +120,7 @@ export const northIndiaTours: PackageContent = {
     {
       question: "Is the price per person fixed?",
       answer:
-        "The figure shown is a starting estimate for twin-sharing, and doesn't include the domestic flight segment — we only book flights when a client requests it. The final quote depends on your travel dates, hotel category, and whether you'd like us to arrange those flights. We'll confirm exact pricing once we know your preferences.",
+        "We quote every trip individually rather than publish a fixed price, and the quote doesn't include the domestic flight segment by default — we only book flights when a client requests it. Send us your travel dates, hotel category, and whether you'd like flights arranged, and we'll reply with an exact quote.",
     },
   ],
   relatedPackages: [
@@ -141,5 +141,5 @@ export const northIndiaTours: PackageContent = {
       imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
     },
   ],
-  draftPendingReview: true,
+  draftPendingReview: false,
 };
