@@ -20,7 +20,7 @@ export function TrustedWorldwide() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="mt-10 flex flex-nowrap items-center justify-start gap-5 overflow-x-auto px-1 pb-2 sm:mt-12 sm:justify-center sm:gap-6">
+          <div className="mt-10 flex flex-nowrap items-center justify-between gap-2 sm:mt-12 sm:gap-4 lg:gap-6">
             {associations.map((mark) => (
               <a
                 key={mark.src}
@@ -28,13 +28,13 @@ export function TrustedWorldwide() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={mark.alt}
-                className="relative h-16 w-16 shrink-0 transition-transform duration-200 hover:scale-105 sm:h-24 sm:w-24"
+                className="relative aspect-square w-full min-w-0 flex-1 transition-transform duration-200 hover:scale-105"
               >
                 <Image
                   src={mark.src}
                   alt={mark.alt}
                   fill
-                  sizes="96px"
+                  sizes="(min-width: 1024px) 96px, (min-width: 640px) 64px, 32px"
                   className="object-contain"
                 />
               </a>

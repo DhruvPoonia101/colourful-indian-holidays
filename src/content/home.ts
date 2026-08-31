@@ -45,6 +45,11 @@ export const associations = [
     href: "https://iato.in/member-get?id=eyJpdiI6IlM1bVJjMHM5NkhZTmQ1Z1gxUkNjUWc9PSIsInZhbHVlIjoiTTJTUFJ6TGRkOXN5OExHRkRWMEVidz09IiwibWFjIjoiMWFhYzI5Y2RlMDI1NTZmZWQwZjgxOGM4YTg4ZTQ3ZjIzYTJkYTQ1MTE5MzgyZjliMWNkNjBiMzAzOWI4MzE2NCIsInRhZyI6IiJ9",
   },
   {
+    src: "/awards/google-reviews.webp",
+    alt: "4.9 Star Rating on Google Reviews",
+    href: "https://share.google/7X4vOahXLHBf878Zv",
+  },
+  {
     src: "/awards/ministry-tourism.webp",
     alt: "Approved by the Ministry of Tourism, Government of India",
     href: "https://nidhi.tourism.gov.in/home/directory?categoryCode=02&subcategory=&type=registered&cityName=COLOURFUL+INDIAN+HOLIDAYS+%28Unit%29&cityCode=ERJ000157_U&stateName=",
