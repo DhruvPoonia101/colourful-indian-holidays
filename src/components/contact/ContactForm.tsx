@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { FiSend } from "react-icons/fi";
+import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
+import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
 
 const TRAVEL_MONTHS = [
   "January",
@@ -42,9 +44,18 @@ export function ContactForm() {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const { honeypot, setHoneypot, formLoadedAt } = useHoneypot();
+  const [turnstileToken, setTurnstileToken] = useState("");
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (!turnstileToken) {
+      setStatus("error");
+      setErrorMessage("Please complete the verification check before sending.");
+      return;
+    }
+
     setStatus("submitting");
     setErrorMessage("");
 
@@ -52,7 +63,17 @@ export function ContactForm() {
       const response = await fetch("/api/contact-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fullName, email, phone, travelMonth, travellers, message }),
+        body: JSON.stringify({
+          fullName,
+          email,
+          phone,
+          travelMonth,
+          travellers,
+          message,
+          companyWebsite: honeypot,
+          formLoadedAt,
+          turnstileToken,
+        }),
       });
 
       const data = await response.json();
@@ -68,6 +89,7 @@ export function ContactForm() {
       setTravelMonth("");
       setTravellers("");
       setMessage("");
+      setTurnstileToken("");
     } catch (err) {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
@@ -88,6 +110,7 @@ export function ContactForm() {
       </p>
 
       <div className="mt-8 flex flex-col gap-4">
+        <HoneypotField value={honeypot} onChange={setHoneypot} />
         <div>
           <label htmlFor="fullName" className="sr-only">
             Full name
@@ -201,6 +224,10 @@ export function ContactForm() {
             className="w-full resize-y rounded-2xl border border-sand bg-white px-6 py-4 text-sm text-ink placeholder:text-ink-soft/60 transition-colors focus:border-maroon focus:outline-none focus:ring-2 focus:ring-maroon/20"
           />
         </div>
+      </div>
+
+      <div className="mt-6">
+        <TurnstileWidget onVerify={setTurnstileToken} onExpire={() => setTurnstileToken("")} />
       </div>
 
       <button

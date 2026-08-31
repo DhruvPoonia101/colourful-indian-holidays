@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { BUSINESS } from "@/lib/seo/business";
+import {
+  getClientIp,
+  isHoneypotFilled,
+  isRateLimited,
+  isSubmittedTooFast,
+  verifyTurnstileToken,
+} from "@/lib/spam-protection";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -9,6 +16,9 @@ type LeadPayload = {
   travelDate?: string;
   days?: string;
   email?: string;
+  companyWebsite?: string;
+  formLoadedAt?: number;
+  turnstileToken?: string;
 };
 
 export async function POST(request: Request) {
@@ -20,7 +30,27 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { destination, travelDate, days, email } = body;
+  const { destination, travelDate, days, email, companyWebsite, formLoadedAt, turnstileToken } = body;
+
+  if (isHoneypotFilled(companyWebsite) || isSubmittedTooFast(formLoadedAt)) {
+    return NextResponse.json({ ok: true });
+  }
+
+  const ip = getClientIp(request);
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again in a few minutes." },
+      { status: 429 }
+    );
+  }
+
+  const humanVerified = await verifyTurnstileToken(turnstileToken, ip);
+  if (!humanVerified) {
+    return NextResponse.json(
+      { error: "We couldn't verify you're human. Please try again." },
+      { status: 400 }
+    );
+  }
 
   if (!destination || !travelDate || !days || !email || !EMAIL_REGEX.test(email)) {
     return NextResponse.json({ error: "Please fill in every field with a valid email." }, { status: 400 });

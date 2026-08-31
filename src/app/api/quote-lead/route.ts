@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { BUSINESS } from "@/lib/seo/business";
+import {
+  getClientIp,
+  isHoneypotFilled,
+  isRateLimited,
+  isSubmittedTooFast,
+  verifyTurnstileToken,
+} from "@/lib/spam-protection";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -16,6 +23,9 @@ type QuotePayload = {
   message?: string;
   pageName?: string;
   pageUrl?: string;
+  companyWebsite?: string;
+  formLoadedAt?: number;
+  turnstileToken?: string;
 };
 
 export async function POST(request: Request) {
@@ -39,7 +49,30 @@ export async function POST(request: Request) {
     message,
     pageName,
     pageUrl,
+    companyWebsite,
+    formLoadedAt,
+    turnstileToken,
   } = body;
+
+  if (isHoneypotFilled(companyWebsite) || isSubmittedTooFast(formLoadedAt)) {
+    return NextResponse.json({ ok: true });
+  }
+
+  const ip = getClientIp(request);
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again in a few minutes." },
+      { status: 429 }
+    );
+  }
+
+  const humanVerified = await verifyTurnstileToken(turnstileToken, ip);
+  if (!humanVerified) {
+    return NextResponse.json(
+      { error: "We couldn't verify you're human. Please try again." },
+      { status: 400 }
+    );
+  }
 
   const baseValid = Boolean(fullName && email && EMAIL_REGEX.test(email) && phone);
   const isCarRental = formType === "carRental";

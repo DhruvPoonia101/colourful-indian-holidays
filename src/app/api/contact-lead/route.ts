@@ -1,6 +1,13 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { BUSINESS } from "@/lib/seo/business";
+import {
+  getClientIp,
+  isHoneypotFilled,
+  isRateLimited,
+  isSubmittedTooFast,
+  verifyTurnstileToken,
+} from "@/lib/spam-protection";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -11,6 +18,9 @@ type ContactPayload = {
   travelMonth?: string;
   travellers?: string;
   message?: string;
+  companyWebsite?: string;
+  formLoadedAt?: number;
+  turnstileToken?: string;
 };
 
 export async function POST(request: Request) {
@@ -22,7 +32,39 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { fullName, email, phone, travelMonth, travellers, message } = body;
+  const {
+    fullName,
+    email,
+    phone,
+    travelMonth,
+    travellers,
+    message,
+    companyWebsite,
+    formLoadedAt,
+    turnstileToken,
+  } = body;
+
+  // Bots that auto-fill every field trip the honeypot or submit too fast.
+  // Return a generic success without sending an email — no signal for the bot to adapt to.
+  if (isHoneypotFilled(companyWebsite) || isSubmittedTooFast(formLoadedAt)) {
+    return NextResponse.json({ ok: true });
+  }
+
+  const ip = getClientIp(request);
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again in a few minutes." },
+      { status: 429 }
+    );
+  }
+
+  const humanVerified = await verifyTurnstileToken(turnstileToken, ip);
+  if (!humanVerified) {
+    return NextResponse.json(
+      { error: "We couldn't verify you're human. Please try again." },
+      { status: 400 }
+    );
+  }
 
   if (!fullName || !email || !EMAIL_REGEX.test(email)) {
     return NextResponse.json(

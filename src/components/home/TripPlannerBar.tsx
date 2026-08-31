@@ -3,6 +3,8 @@
 import { useRef, useState } from "react";
 import { FiCalendar, FiChevronDown } from "react-icons/fi";
 import { tripPlannerDestinations } from "@/lib/trip-planner-destinations";
+import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
+import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
 
 const DAYS_OPTIONS = ["3–5 Days", "6–9 Days", "10–14 Days", "15+ Days", "Not Sure Yet"];
 
@@ -29,9 +31,18 @@ export function TripPlannerBar() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const { honeypot, setHoneypot, formLoadedAt } = useHoneypot();
+  const [turnstileToken, setTurnstileToken] = useState("");
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (!turnstileToken) {
+      setStatus("error");
+      setErrorMessage("Please complete the verification check before sending.");
+      return;
+    }
+
     setStatus("submitting");
     setErrorMessage("");
 
@@ -39,7 +50,15 @@ export function TripPlannerBar() {
       const response = await fetch("/api/trip-planner-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ destination, travelDate, days, email }),
+        body: JSON.stringify({
+          destination,
+          travelDate,
+          days,
+          email,
+          companyWebsite: honeypot,
+          formLoadedAt,
+          turnstileToken,
+        }),
       });
 
       const data = await response.json();
@@ -53,6 +72,7 @@ export function TripPlannerBar() {
       setTravelDate("");
       setDays("");
       setEmail("");
+      setTurnstileToken("");
     } catch (err) {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
@@ -65,6 +85,7 @@ export function TripPlannerBar() {
         onSubmit={handleSubmit}
         className="flex flex-col gap-4 rounded-3xl border border-white/40 bg-white/60 p-5 shadow-xl backdrop-blur-xl sm:flex-row sm:items-center sm:gap-5 sm:p-6"
       >
+        <HoneypotField value={honeypot} onChange={setHoneypot} />
         <div className={`${fieldWrapClass} sm:flex-[1.5]`}>
           <label htmlFor="tp-destination" className="sr-only">
             Where do you want to go?
@@ -162,6 +183,10 @@ export function TripPlannerBar() {
           {status === "submitting" ? "Sending…" : "Plan My Journey"}
         </button>
       </form>
+
+      <div className="mt-3 flex justify-center sm:justify-start">
+        <TurnstileWidget onVerify={setTurnstileToken} onExpire={() => setTurnstileToken("")} />
+      </div>
 
       {status === "success" && (
         <p className="mt-2 text-center text-sm font-medium text-gold-dark sm:text-left">

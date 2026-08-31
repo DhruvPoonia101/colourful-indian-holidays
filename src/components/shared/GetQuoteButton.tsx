@@ -3,6 +3,8 @@
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiCalendar, FiSend, FiX } from "react-icons/fi";
+import { HoneypotField } from "@/components/shared/Honeypot";
+import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
 
 const TRAVEL_MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -38,15 +40,32 @@ export function GetQuoteButton({
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [honeypot, setHoneypot] = useState("");
+  const [formLoadedAt, setFormLoadedAt] = useState(() => Date.now());
+  const [turnstileToken, setTurnstileToken] = useState("");
+
+  const open = () => {
+    setIsOpen(true);
+    setFormLoadedAt(Date.now()); // reset the time-trap for each fresh open, not just page load
+  };
 
   const close = () => {
     setIsOpen(false);
     setStatus("idle");
     setErrorMessage("");
+    setHoneypot("");
+    setTurnstileToken("");
   };
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    if (!turnstileToken) {
+      setStatus("error");
+      setErrorMessage("Please complete the verification check before sending.");
+      return;
+    }
+
     setStatus("submitting");
     setErrorMessage("");
 
@@ -66,6 +85,9 @@ export function GetQuoteButton({
           message,
           pageName,
           pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
+          companyWebsite: honeypot,
+          formLoadedAt,
+          turnstileToken,
         }),
       });
 
@@ -84,6 +106,7 @@ export function GetQuoteButton({
       setRoute("");
       setDate("");
       setMessage("");
+      setTurnstileToken("");
     } catch (err) {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
@@ -97,7 +120,7 @@ export function GetQuoteButton({
     <>
       <button
         type="button"
-        onClick={() => setIsOpen(true)}
+        onClick={open}
         className="inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark"
       >
         Get a Free Quote
@@ -142,6 +165,7 @@ export function GetQuoteButton({
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                    <HoneypotField value={honeypot} onChange={setHoneypot} />
                     <input
                       type="text"
                       required
@@ -239,6 +263,13 @@ export function GetQuoteButton({
                         />
                       </>
                     )}
+
+                    <div className="flex justify-center">
+                      <TurnstileWidget
+                        onVerify={setTurnstileToken}
+                        onExpire={() => setTurnstileToken("")}
+                      />
+                    </div>
 
                     <button
                       type="submit"
