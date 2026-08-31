@@ -9,11 +9,11 @@ import { testimonials } from "@/content/home";
 import { BUSINESS } from "@/lib/seo/business";
 
 const quickStats = [
-  { value: "4.9★", label: "Google Rating" },
-  { value: "140+", label: "Google Reviews" },
-  { value: "4.9★", label: "Tripadvisor Rating" },
-  { value: "282+", label: "Tripadvisor Reviews" },
-  { value: "7900+", label: "Happy Travellers" },
+  { value: "4.9★", label: "Google Rating", platform: "google" as const },
+  { value: "140+", label: "Google Reviews", platform: "google" as const },
+  { value: "4.9★", label: "Tripadvisor Rating", platform: "tripadvisor" as const },
+  { value: "282+", label: "Tripadvisor Reviews", platform: "tripadvisor" as const },
+  { value: "7900+", label: "Happy Travellers", platform: null },
 ];
 
 const tripadvisorUrl = BUSINESS.sameAs.find((url) => url.includes("tripadvisor"));
@@ -41,17 +41,46 @@ export function Testimonials() {
 
         <Reveal delay={0.08}>
           <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-5">
-            {quickStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-2xl bg-white px-4 py-6 text-center shadow-sm sm:px-6 sm:py-8"
-              >
-                <p className="font-display text-3xl font-bold text-gold-dark sm:text-4xl">
-                  {stat.value}
-                </p>
-                <p className="mt-1.5 text-sm text-ink-soft">{stat.label}</p>
-              </div>
-            ))}
+            {quickStats.map((stat) => {
+              const href =
+                stat.platform === "google"
+                  ? BUSINESS.googleRating.mapsUrl
+                  : stat.platform === "tripadvisor"
+                    ? tripadvisorUrl
+                    : undefined;
+
+              const content = (
+                <>
+                  <p className="font-display text-3xl font-bold text-gold-dark sm:text-4xl">
+                    {stat.value}
+                  </p>
+                  <p className="mt-1.5 text-sm text-ink-soft">{stat.label}</p>
+                </>
+              );
+
+              if (href) {
+                return (
+                  <a
+                    key={stat.label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-2xl bg-white px-4 py-6 text-center shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:ring-1 hover:ring-gold sm:px-6 sm:py-8"
+                  >
+                    {content}
+                  </a>
+                );
+              }
+
+              return (
+                <div
+                  key={stat.label}
+                  className="rounded-2xl bg-white px-4 py-6 text-center shadow-sm sm:px-6 sm:py-8"
+                >
+                  {content}
+                </div>
+              );
+            })}
           </div>
         </Reveal>
 
