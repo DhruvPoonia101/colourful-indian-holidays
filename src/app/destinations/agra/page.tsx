@@ -129,17 +129,37 @@ export default function AgraPage() {
                 <p>
                   Agra is almost always visited for one reason, and the Taj Mahal genuinely
                   earns the reputation — it&apos;s one of those rare landmarks that looks even
-                  better in person than in every photo you&apos;ve already seen of it. But
-                  building a rushed few hours around a single building undersells the city.
-                  Agra was a Mughal capital for generations, and that history is still standing
-                  a short drive from the Taj Mahal itself.
+                  better in person than in every photo you&apos;ve already seen of it. Built by
+                  Emperor Shah Jahan as a mausoleum for his wife Mumtaz Mahal, completed around
+                  1653 after roughly two decades of construction, it remains one of the most
+                  technically accomplished buildings anywhere in the world — perfectly symmetrical
+                  white marble that shifts colour with the light, from soft pink at sunrise to
+                  brilliant white at midday to a warm gold at sunset. But building a rushed few
+                  hours around a single building undersells the city. Agra was a Mughal capital
+                  for generations, and that history is still standing a short drive from the Taj
+                  Mahal itself.
                 </p>
                 <p>
                   Agra Fort and the abandoned city of Fatehpur Sikri both date from the same
                   dynasty and the same red-sandstone-and-white-marble architectural language,
-                  and both see a fraction of the Taj Mahal&apos;s crowds. Given how easy Agra is
-                  to reach from both Delhi and Jaipur, it&apos;s worth planning for a proper day
-                  here rather than treating it as a photo stop on the way to Rajasthan.
+                  and both see a fraction of the Taj Mahal&apos;s crowds. Agra Fort, a UNESCO
+                  World Heritage Site in its own right, was the primary residence of Mughal
+                  emperors before the capital shifted to Delhi, and it&apos;s from one of its
+                  marble balconies that Shah Jahan reportedly spent his final years gazing at the
+                  Taj Mahal after being imprisoned there by his own son. Fatehpur Sikri, built by
+                  Emperor Akbar as an entirely new capital city and abandoned within
+                  decades — likely due to water shortages — stands today almost exactly as it was
+                  left, a genuinely eerie and remarkable place to walk through.
+                </p>
+                <p>
+                  Given how easy Agra is to reach from both Delhi and Jaipur — typically under
+                  four hours by road from either — it&apos;s worth planning for a proper day here
+                  rather than treating it as a photo stop on the way to Rajasthan. Arriving early
+                  for sunrise at the Taj Mahal avoids both the worst of the crowds and the heat,
+                  and leaves the rest of the day free for Agra Fort, Fatehpur Sikri, or the
+                  smaller but genuinely beautiful Itmad-ud-Daulah tomb, sometimes called the
+                  &quot;Baby Taj&quot; for the way it anticipated many of the design ideas the Taj
+                  Mahal would later perfect.
                 </p>
               </div>
             </Reveal>

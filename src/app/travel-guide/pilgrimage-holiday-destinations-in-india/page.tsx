@@ -79,10 +79,15 @@ export default function PilgrimageGuidePage() {
             international travellers, that authenticity is the draw, but it also means visiting
             respectfully matters more here than almost anywhere else on a typical India
             itinerary — these are living religious sites, not heritage attractions repurposed
-            for tourism. Below is a guide to India&apos;s most significant pilgrimage
-            destinations, what a visit to each actually involves, and the practical etiquette
-            worth knowing before you go, so you can experience these places as a respectful
-            observer rather than an intruder on someone else&apos;s sacred moment.
+            for tourism. India&apos;s religious landscape is genuinely diverse, spanning Hindu,
+            Sikh, Buddhist and Muslim traditions that have coexisted and, in many cases,
+            physically overlapped for centuries — Ajmer&apos;s Sufi shrine and Pushkar&apos;s
+            Hindu temples sit fifteen kilometres apart, and the Golden Temple&apos;s hospitality
+            extends to visitors of every background without exception. Below is a guide to
+            India&apos;s most significant pilgrimage destinations, what a visit to each actually
+            involves, and the practical etiquette worth knowing before you go, so you can
+            experience these places as a respectful observer rather than an intruder on someone
+            else&apos;s sacred moment.
           </ArticleP>
 
           <ArticleH2>Varanasi — The Ganges Ghats</ArticleH2>
@@ -110,7 +115,11 @@ export default function PilgrimageGuidePage() {
             atmospheric than it once was. A short trip outside the city to Sarnath, where the
             Buddha delivered his first sermon after attaining enlightenment, adds a Buddhist
             counterpoint to Varanasi&apos;s intensely Hindu character, and is a common half-day
-            add-on for travellers with an extra day to spare. See our full{" "}
+            add-on for travellers with an extra day to spare. International visitors researching
+            India&apos;s spiritual heritage often arrive in Varanasi expecting only the famous
+            ghats, and leave surprised by how much the city itself — its narrow lanes, its
+            centuries-old silk-weaving tradition, and its role as a centre of Sanskrit learning —
+            adds beyond the pilgrimage sites alone. See our full{" "}
             <Link href="/destinations/varanasi" className="text-maroon underline">
               Varanasi destination guide
             </Link>{" "}
@@ -132,7 +141,11 @@ export default function PilgrimageGuidePage() {
             made famous by the Beatles&apos; 1968 visit — and is worth building into a trip even
             if pilgrimage itself isn&apos;t your primary interest, since the town also offers
             river rafting, suspension-bridge crossings over the Ganges, and a genuinely relaxed
-            pace after busier stops elsewhere on an itinerary.
+            pace after busier stops elsewhere on an itinerary. International visitors specifically
+            drawn to India&apos;s wellness and yoga traditions often extend their stay here beyond
+            a simple day trip, since several ashrams and yoga centres in Rishikesh offer
+            short courses and retreats that welcome foreign visitors without requiring any prior
+            experience.
           </ArticleP>
 
           <ArticleH2>Amritsar — The Golden Temple</ArticleH2>
@@ -231,6 +244,40 @@ export default function PilgrimageGuidePage() {
             the world&apos;s busiest religious sites firsthand.
           </ArticleP>
 
+          <ArticleH2>Shirdi — The Sai Baba Temple</ArticleH2>
+          <ArticleP>
+            Shirdi, a small town in Maharashtra, draws millions of pilgrims each year to the
+            Samadhi Mandir, the shrine built over the resting place of Sai Baba of Shirdi, a
+            19th-century saint venerated by Hindus and Muslims alike for teaching that all paths
+            lead to the same divine truth. Unlike many of India&apos;s older pilgrimage traditions,
+            devotion to Sai Baba is a comparatively recent phenomenon that has grown enormously
+            over the past century, and Shirdi today functions almost entirely around pilgrim
+            infrastructure — accommodation, prasad (blessed food) counters, and a well-organised
+            queue system for darshan (viewing the shrine) that can still involve a significant
+            wait during peak periods and festivals. It&apos;s a further-flung addition for most
+            international itineraries, sitting a few hours from Mumbai or Pune, but travellers
+            building a Maharashtra-focused trip, or with a specific personal connection to Sai
+            Baba&apos;s teachings, often make the detour deliberately rather than as an
+            afterthought.
+          </ArticleP>
+
+          <ArticleH2>Vaishno Devi — The Mountain Shrine in Jammu</ArticleH2>
+          <ArticleP>
+            Vaishno Devi, in the Trikuta Hills near Jammu, is one of the most-visited Hindu
+            pilgrimage sites in India, drawing several million pilgrims a year to a cave shrine
+            dedicated to the goddess Vaishno Devi, an incarnation of the divine feminine. Unlike
+            most sites on this list, reaching the shrine is itself part of the pilgrimage — a
+            roughly 12-kilometre trek uphill from the base at Katra, undertaken on foot, by pony,
+            palanquin, or helicopter for those short on time or mobility. The physical effort
+            involved is, for many devotees, part of the spiritual significance of the visit
+            rather than an inconvenience to be minimised. For international travellers, Vaishno
+            Devi is a genuinely different kind of pilgrimage experience from the ghats of Varanasi
+            or the Golden Temple — more physically demanding, set in cooler mountain terrain
+            rather than a riverside or desert town, and best suited to travellers who specifically
+            want that combination of trek and shrine rather than those looking for an easy add-on
+            to an existing circuit.
+          </ArticleP>
+
           <ArticleH2>Visiting Respectfully — A Note for International Travellers</ArticleH2>
           <ArticleP>
             Each of these sites is, first and foremost, a place of active worship rather than a
@@ -258,10 +305,45 @@ export default function PilgrimageGuidePage() {
             annually according to the Islamic lunar calendar, so it&apos;s worth checking exact
             dates if you specifically want to experience it. Bodh Gaya sees the largest crowds
             around the Dalai Lama&apos;s winter teachings, usually in December or January, and
-            is considerably quieter outside that window. Tirupati draws heavy pilgrim traffic
-            year-round regardless of season, so visitor volume there is less a matter of timing
-            and more something to plan around directly, with early-morning visits generally the
-            least crowded option.
+            is considerably quieter outside that window. Tirupati and Shirdi draw heavy pilgrim
+            traffic year-round regardless of season, so visitor volume there is less a matter of
+            timing and more something to plan around directly, with early-morning visits generally
+            the least crowded option. Vaishno Devi is best avoided during the height of summer
+            heat and the monsoon months, when the uphill trek becomes considerably more
+            demanding — the cooler months from September through March suit the physical trek
+            far better.
+          </ArticleP>
+
+          <ArticleH2>How Pilgrimage Sites Fit Into a Wider India Itinerary</ArticleH2>
+          <ArticleP>
+            Very few international travellers build an entire trip solely around pilgrimage
+            destinations — more commonly, one or two of these sites become a meaningful thread
+            woven through a wider India itinerary that also covers forts, wildlife, and cities.
+            Varanasi pairs naturally with a Golden Triangle extension, since it&apos;s a
+            comparatively short flight from Delhi or Agra and adds a spiritual and cultural
+            dimension that the Taj Mahal and Jaipur&apos;s palaces, as remarkable as they are,
+            don&apos;t on their own provide. Pushkar and Ajmer, as noted, slot directly into a
+            Rajasthan circuit as a natural stop between Jaipur and the state&apos;s western
+            cities, adding very little extra travel time for a genuinely different kind of
+            experience from forts and palaces. Rishikesh and Haridwar work well as a northern
+            extension for travellers who want to pair Delhi and the Golden Triangle with the
+            Himalayan foothills, particularly if yoga, meditation, or river rafting also interest
+            you beyond the pilgrimage sites themselves. Amritsar, being close to the
+            India–Pakistan border in Punjab, is most often combined with a northern circuit that
+            also includes Delhi and sometimes Dharamshala, rather than tacked onto a Rajasthan-only
+            trip. Bodh Gaya, Tirupati, Shirdi and Vaishno Devi each sit further from the standard
+            first-timer circuit and are better suited to travellers on a longer trip, a repeat
+            visit to India, or those with a specific personal or spiritual reason to prioritise
+            that particular site over convenience.
+          </ArticleP>
+          <ArticleP>
+            When we build an itinerary that includes pilgrimage destinations, the sequencing
+            matters as much as the site list itself — visiting Varanasi&apos;s ghats at dawn
+            after arriving late the previous night rarely does the experience justice, so we
+            build in enough time around each stop for it to land properly rather than squeezing
+            it between other commitments. The same goes for physically demanding sites like
+            Vaishno Devi, where arriving with a day already behind you changes how much you get
+            out of the trek itself.
           </ArticleP>
 
           <ArticleH2>Planning a Pilgrimage-Focused Trip</ArticleH2>
@@ -292,7 +374,73 @@ export default function PilgrimageGuidePage() {
               At the Golden Temple, head coverings are required for everyone regardless of
               gender — scarves are provided free at the entrance if you don&apos;t have your own
             </li>
+            <li>
+              Alcohol, meat, tobacco and non-vegetarian food are prohibited within many temple
+              precincts, including the Golden Temple complex and the town of Pushkar itself —
+              check local norms before you arrive rather than assuming standard rules apply
+            </li>
+            <li>
+              At Vaishno Devi, pony, palanquin and helicopter options exist for travellers unable
+              to manage the full trek on foot — worth arranging in advance during peak pilgrimage
+              season, when demand for these options rises sharply
+            </li>
+            <li>
+              Security screening is standard at most major pilgrimage sites, including the Golden
+              Temple and Vaishno Devi — build a little extra time into your schedule around
+              entry, particularly during festivals or peak season
+            </li>
           </ArticleUL>
+          <ArticleP>
+            Getting to each of these sites varies considerably in ease. Varanasi, Amritsar and
+            Rishikesh &amp; Haridwar all have their own airports or sit within a comfortable
+            drive of one, making them straightforward to fold into a wider itinerary. Pushkar and
+            Ajmer are easily reached by road from Jaipur, typically as a same-day or overnight
+            addition to a Rajasthan circuit. Bodh Gaya, Tirupati, Shirdi and Vaishno Devi require
+            more deliberate planning — additional flights, longer road transfers, or in Vaishno
+            Devi&apos;s case, the trek itself — which is exactly why we recommend deciding early
+            in the planning process whether one of these sites is a priority for your trip, so
+            the rest of the itinerary can be built around it rather than squeezed in as an
+            afterthought.
+          </ArticleP>
+
+          <ArticleP>
+            One final note worth keeping in mind across every site on this list: India&apos;s
+            pilgrimage destinations draw pilgrims first and tourists second, which is precisely
+            the opposite of how most famous monuments and attractions function. That ordering is
+            what makes these places feel genuinely alive rather than preserved for visitors, and
+            it&apos;s also why patience, quiet observation, and a willingness to let a local guide
+            set the pace tend to produce a far more rewarding visit than trying to see everything
+            on your own schedule.
+          </ArticleP>
+
+          <ArticleH2>Frequently Asked Questions</ArticleH2>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              Do non-Hindu or non-religious travellers visit these sites too?
+            </span>{" "}
+            Yes, regularly. Most of these sites — the Golden Temple especially — actively welcome
+            visitors of every background, and the ceremonies themselves are striking to witness
+            regardless of your own beliefs. Respectful curiosity is generally met with genuine
+            warmth.
+          </ArticleP>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              Is it appropriate to photograph ceremonies like the Ganga aarti?
+            </span>{" "}
+            Generally yes for public ceremonies like the evening aarti at Varanasi or Haridwar,
+            though always be mindful of people actively praying nearby. Cremation rites at
+            Varanasi&apos;s ghats are a firm exception — never photograph these without explicit
+            permission.
+          </ArticleP>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              How many pilgrimage sites should we realistically add to a two-week India trip?
+            </span>{" "}
+            One or two integrated naturally into your route — Pushkar and Ajmer alongside
+            Rajasthan, or Varanasi alongside a Golden Triangle extension — tends to work far
+            better than trying to cover several sites spread across the country, which usually
+            means sacrificing depth elsewhere in the itinerary.
+          </ArticleP>
           <ArticleP>
             Varanasi, Rishikesh &amp; Haridwar, Amritsar, and Pushkar can all be combined into a
             single wider India itinerary alongside{" "}

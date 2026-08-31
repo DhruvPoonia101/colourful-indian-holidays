@@ -248,6 +248,62 @@ export default function MonumentsGuidePage() {
             Pushkar Camel Fair season or a dedicated desert-focused itinerary.
           </ArticleP>
 
+          <ArticleH2>Bundi Palace &amp; Taragarh Fort</ArticleH2>
+          <ArticleP>
+            Bundi is one of Rajasthan&apos;s most underrated stops for anyone specifically
+            interested in monuments, and Rudyard Kipling — who also praised Mehrangarh — once
+            wrote that Bundi Palace looked like something out of a fairy tale &quot;that a monkey
+            with a paintbox could have improved.&quot; Built from the 16th century onward and
+            spilling down a hillside overlooking the town&apos;s tightly packed blue-washed
+            houses, the palace is famous for its murals — the Chitrashala gallery in particular
+            houses some of the finest surviving examples of Rajput miniature painting anywhere,
+            depicting court scenes, hunting expeditions and Krishna legends in extraordinary
+            detail. Above the palace, Taragarh Fort (the &quot;Star Fort&quot;) offers commanding
+            views and a genuinely atmospheric, semi-ruined feel that&apos;s different from the
+            more fully restored forts elsewhere in the state. Bundi sees a fraction of the
+            visitors that Jaipur or Udaipur do, which means both the palace and fort are usually
+            explored in relative quiet — a real draw for travellers who&apos;ve already covered
+            the state&apos;s more famous sites and want something further off the standard
+            circuit.
+          </ArticleP>
+
+          <ArticleH2>Ranthambore Fort</ArticleH2>
+          <ArticleP>
+            Most international visitors come to Ranthambore for the tiger safaris, but the fort
+            that gives the national park its name is a genuine monument in its own right, and one
+            that&apos;s easy to underrate if you&apos;re focused entirely on wildlife. Dating back
+            to the 10th century and rebuilt and expanded over subsequent centuries, Ranthambore
+            Fort sits atop a hill within the park itself, surrounded by the same forest that the
+            reserve&apos;s tigers roam — a genuinely unusual combination of ancient monument and
+            active wildlife habitat that few other sites in India offer. The fort includes several
+            temples, including one dedicated to Ganesh that remains an active pilgrimage site,
+            drawing devotees from well beyond Ranthambore itself, particularly during Ganesh
+            Chaturthi. For travellers building a{" "}
+            <Link href="/destinations/rajasthan" className="text-maroon underline">
+              Rajasthan wildlife and heritage itinerary
+            </Link>
+            , setting aside even a couple of hours for the fort alongside the safaris adds a
+            historical dimension to a stop most visitors otherwise treat purely as a nature
+            experience.
+          </ArticleP>
+
+          <ArticleH2>The Hill Forts of Rajasthan — A UNESCO World Heritage Site</ArticleH2>
+          <ArticleP>
+            Six of Rajasthan&apos;s forts — Chittorgarh, Kumbhalgarh, Ranthambore, Jaisalmer,
+            Gagron, and Amber — are collectively inscribed as a single UNESCO World Heritage
+            Site, the &quot;Hill Forts of Rajasthan,&quot; recognised in 2013 for representing a
+            distinct form of Rajput military architecture developed between the 5th and 18th
+            centuries. UNESCO&apos;s listing specifically highlights how these forts adapted to
+            the landscape around them — some built on isolated hilltops, others integrated into
+            existing towns — while sharing common defensive principles: massive fortification
+            walls, elaborate gateways designed to slow attackers, and water harvesting systems
+            that allowed each fort to withstand prolonged sieges. Knowing that these six sites
+            form a single recognised heritage group is useful when planning a monuments-focused
+            itinerary, since it explains why they&apos;re treated as a natural set by guides and
+            historians alike, even though they&apos;re spread across very different parts of the
+            state and were built by different Rajput dynasties at different points in history.
+          </ArticleP>
+
           <ArticleH2>How Much Time to Allow, and When to Go</ArticleH2>
           <ArticleP>
             Most of these monuments reward at least half a day each rather than a rushed hour —
@@ -294,6 +350,49 @@ export default function MonumentsGuidePage() {
               advance so you can decide before you&apos;re at the gate
             </li>
           </ArticleUL>
+
+          <ArticleH2>Frequently Asked Questions</ArticleH2>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              How many days do we need to see Rajasthan&apos;s major monuments properly?
+            </span>{" "}
+            Count on roughly 8–10 days to cover Jaipur, Jodhpur, Udaipur and Jaisalmer without
+            back-to-back travel days, or 12–14 days if you want to add Chittorgarh, Kumbhalgarh,
+            Bundi or Bikaner into the same trip. Rushing any of the major forts tends to mean
+            missing entire wings, so we&apos;d rather build in an extra day than cut one short.
+          </ArticleP>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              Is a guide really necessary, or can we visit these forts independently?
+            </span>{" "}
+            You can visit independently, but the history behind these sites is dense and often
+            not fully conveyed by on-site signage, particularly at less-visited forts like
+            Chittorgarh or Bundi. Most travellers find a private guide turns a walk through empty
+            rooms into something considerably more vivid — well worth it for sites of this scale
+            and significance.
+          </ArticleP>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              Which Rajasthan fort should we prioritise if we only have time for one or two?
+            </span>{" "}
+            Amber Fort and Mehrangarh are the two most consistently recommended for first-time
+            visitors — both are extensively restored, well curated for international visitors,
+            and represent Rajasthan&apos;s fort architecture at its most impressive. If you want
+            something quieter and further off the standard circuit, Chittorgarh or Bundi are
+            excellent second choices.
+          </ArticleP>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              Are these monuments suitable for visitors with limited mobility?
+            </span>{" "}
+            It varies considerably by site. Amber Fort offers a jeep ride partway up, and City
+            Palace in both Jaipur and Udaipur involve mostly level walking within the complex, but
+            forts like Mehrangarh, Chittorgarh and Kumbhalgarh involve significant walking over
+            uneven stone surfaces and some stairs. Let us know about any mobility considerations
+            when planning your itinerary and we&apos;ll factor it into which sites and routes we
+            recommend.
+          </ArticleP>
+
           <ArticleP>
             All of these sites are covered across our{" "}
             <Link href="/destinations/rajasthan" className="text-maroon underline">

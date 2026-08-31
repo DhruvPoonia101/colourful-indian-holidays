@@ -131,7 +131,21 @@ export default function DelhiPage() {
                   its wide avenues and government buildings, and the fast-moving modern capital
                   that surrounds both. For most of our international guests, it&apos;s also the
                   first place they land in India, and the natural starting point for a wider
-                  Golden Triangle or Rajasthan itinerary.
+                  Golden Triangle or Rajasthan itinerary. Few cities anywhere let you walk from a
+                  17th-century Mughal fort to a British colonial parliament building to a glass-
+                  fronted modern shopping district in the space of a single day, and Delhi&apos;s
+                  layered history is precisely why that&apos;s possible here.
+                </p>
+                <p>
+                  Old Delhi centres on the Red Fort and Jama Masjid, India&apos;s largest mosque,
+                  surrounded by Chandni Chowk&apos;s dense lanes of spice traders, wedding-card
+                  printers and some of the country&apos;s most celebrated street food stalls —
+                  best explored on foot or by cycle rickshaw rather than car, given how narrow
+                  and crowded the lanes genuinely are. New Delhi, built by the British in the
+                  early 20th century as the seat of colonial government, feels almost like a
+                  different city entirely — wide, tree-lined avenues, India Gate, and the
+                  imposing Rashtrapati Bhavan (the President&apos;s residence), all laid out on a
+                  scale meant to project imperial authority.
                 </p>
                 <p>
                   What makes Delhi worth two or three days on its own, rather than just an
@@ -139,7 +153,10 @@ export default function DelhiPage() {
                   world-class museums, some of the best regional Indian food anywhere in the
                   country, and bazaars that have operated the same way for centuries, all
                   connected by an easy-to-use metro and, on our itineraries, your own private
-                  guide and driver.
+                  guide and driver. Humayun&apos;s Tomb, a UNESCO World Heritage Site and the
+                  architectural forerunner to the Taj Mahal, and the Qutub Minar, the tallest
+                  brick minaret in the world, both add genuine depth for travellers who want more
+                  than a quick highlights tour before continuing on to Agra or Rajasthan.
                 </p>
               </div>
             </Reveal>

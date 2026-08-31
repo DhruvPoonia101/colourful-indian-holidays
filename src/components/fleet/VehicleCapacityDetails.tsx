@@ -35,7 +35,7 @@ export function VehicleCapacityDetails({
           </p>
           <p className="mt-2 text-sm text-ink-soft">
             New to hiring a car in Rajasthan?{" "}
-            <Link href="/travel-guide" className="text-maroon underline">
+            <Link href="/travel-guide/hiring-a-car-in-rajasthan" className="text-maroon underline">
               Read our complete guide
             </Link>
             .

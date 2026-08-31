@@ -11,6 +11,17 @@ export type GuideArticle = {
 
 export const guideArticles: GuideArticle[] = [
   {
+    title: "Hiring a Car in Rajasthan: A Complete Guide",
+    slug: "hiring-a-car-in-rajasthan",
+    excerpt:
+      "Sedan, SUV, Tempo Traveller, luxury car or coach — how to choose the right private vehicle and driver for your trip, and what to expect on the road.",
+    category: "Rajasthan",
+    image: "/images/destinations/car-suv.webp",
+    imageAlt: "Private SUV on a Rajasthan highway",
+    datePublished: "2026-08-31",
+    published: true,
+  },
+  {
     title: "Pilgrimage Holiday Destinations in India",
     slug: "pilgrimage-holiday-destinations-in-india",
     excerpt:

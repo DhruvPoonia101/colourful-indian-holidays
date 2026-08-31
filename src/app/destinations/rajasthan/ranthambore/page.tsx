@@ -132,14 +132,36 @@ export default function RanthamborePage() {
                   today it&apos;s one of India&apos;s most reliable places to see a wild Bengal
                   tiger. The park&apos;s dry, open deciduous terrain works in visitors&apos;
                   favour: unlike denser forest parks, sightings here are a genuine, likely
-                  outcome of a safari rather than a rare stroke of luck.
+                  outcome of a safari rather than a rare stroke of luck. The reserve owes much of
+                  its current health to Project Tiger, the Indian government&apos;s conservation
+                  initiative launched in the 1970s, which helped pull the park&apos;s tiger
+                  population back from the brink after decades of hunting had reduced it
+                  dramatically.
+                </p>
+                <p>
+                  What sets Ranthambore apart from many other Indian tiger reserves is the
+                  ruined 10th-century fort that sits within the park itself, giving safaris here
+                  a genuinely different character — you&apos;re moving through active wildlife
+                  habitat that also happens to contain ancient temples, crumbling gateways and
+                  stepwells, some still functioning as pilgrimage sites for local devotees. Zones
+                  closer to the fort and the park&apos;s lakes tend to offer the richest mix of
+                  wildlife and ruins in a single safari, though sightings across all zones depend
+                  heavily on season and a certain amount of luck, however good the underlying
+                  odds.
                 </p>
                 <p>
                   What makes Ranthambore an easy addition to a Rajasthan trip is simply how
                   close it sits to Jaipur — a few hours&apos; drive turns a wildlife safari from
                   a special separate trip into a natural stop on the way through the rest of the
                   state. Most of our guests add 1 to 2 nights here, book 2 to 4 safaris across
-                  different zones, and continue on into the rest of their Rajasthan itinerary.
+                  different zones to maximise the chances of a good sighting, and continue on
+                  into the rest of their Rajasthan itinerary. Safaris run in open-topped canters
+                  or smaller jeeps, both with a naturalist guide who reads tracks, alarm calls
+                  from deer and langurs, and other signs experienced trackers use to anticipate
+                  where a tiger is likely to be. Beyond tigers, the park is also home to
+                  leopards, sloth bears, marsh crocodiles and a wide range of birdlife, making it
+                  a worthwhile stop even for travellers who don&apos;t see a tiger on their
+                  particular safari.
                 </p>
               </div>
             </Reveal>

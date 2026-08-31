@@ -133,14 +133,35 @@ export default function VaranasiPage() {
                   ceremony that has taken place at that spot for generations, and it happens
                   again tonight regardless of who&apos;s watching. That&apos;s what sets
                   Varanasi apart from almost everywhere else on a typical India itinerary — the
-                  city&apos;s significance isn&apos;t historical, it&apos;s current.
+                  city&apos;s significance isn&apos;t historical, it&apos;s current. Among the
+                  oldest continuously inhabited cities in the world, built along the western bank
+                  of the Ganges, Varanasi has drawn Hindu pilgrims for millennia on the belief
+                  that dying here, or having one&apos;s ashes scattered in the river, brings
+                  moksha — release from the cycle of rebirth.
+                </p>
+                <p>
+                  The ghats — riverside stone steps stretching for several kilometres along the
+                  Ganges — are where that belief plays out daily, in bathing, prayer, laundry and
+                  cremation rites, all visible from a single boat ride. A sunrise trip along the
+                  water shows a completely different mood from the evening aarti&apos;s fire and
+                  drums: quieter, full of ordinary daily ritual rather than ceremony, with the
+                  city&apos;s skyline of temples and old buildings silhouetted behind the crowds
+                  gathering to bathe. The Kashi Vishwanath Temple, one of the twelve Jyotirlinga
+                  shrines dedicated to Shiva and among the most significant Hindu temples
+                  anywhere, sits a short walk from the main ghats, now connected to the
+                  riverfront by a wide pedestrian corridor that has made the walk considerably
+                  more atmospheric in recent years.
                 </p>
                 <p>
                   Most travellers build Varanasi in as a 2 to 3 day extension to a wider North
                   India trip, flying in from Delhi or Agra. It rewards a slower pace than a
                   rushed day trip would allow — the sunrise boat ride and the evening aarti show
                   genuinely different sides of the same place, and both are worth building real
-                  time around.
+                  time around. A short trip outside the city to Sarnath, where the Buddha
+                  delivered his first sermon after attaining enlightenment, adds a Buddhist
+                  counterpoint to Varanasi&apos;s intensely Hindu character, and is a common
+                  half-day add-on for travellers with an extra day to spare before continuing
+                  their itinerary.
                 </p>
               </div>
             </Reveal>
