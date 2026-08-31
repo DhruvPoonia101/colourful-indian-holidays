@@ -11,6 +11,8 @@ import { BUSINESS } from "@/lib/seo/business";
 const quickStats = [
   { value: "4.9★", label: "Google Rating" },
   { value: "140+", label: "Google Reviews" },
+  { value: "4.9★", label: "Tripadvisor Rating" },
+  { value: "282+", label: "Tripadvisor Reviews" },
   { value: "7900+", label: "Happy Travellers" },
 ];
 
@@ -38,7 +40,7 @@ export function Testimonials() {
         </Reveal>
 
         <Reveal delay={0.08}>
-          <div className="mx-auto mt-10 grid max-w-3xl grid-cols-3 gap-4 sm:gap-6">
+          <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-5">
             {quickStats.map((stat) => (
               <div
                 key={stat.label}
@@ -131,7 +133,7 @@ export function Testimonials() {
             className="inline-flex items-center gap-2 rounded-full border border-sand bg-white px-5 py-2.5 text-sm font-semibold text-ink transition-all duration-200 hover:scale-[1.03] hover:border-gold"
           >
             <FaGoogle aria-hidden="true" className="h-4 w-4 text-[#4285F4]" />
-            See More Google Reviews
+            Check Google Reviews
           </a>
           {tripadvisorUrl && (
             <a
@@ -141,7 +143,7 @@ export function Testimonials() {
               className="inline-flex items-center gap-2 rounded-full border border-sand bg-white px-5 py-2.5 text-sm font-semibold text-ink transition-all duration-200 hover:scale-[1.03] hover:border-gold"
             >
               <FaTripadvisor aria-hidden="true" className="h-4 w-4 text-[#34E0A1]" />
-              See More Tripadvisor Reviews
+              Check TripAdvisor Reviews
             </a>
           )}
         </div>

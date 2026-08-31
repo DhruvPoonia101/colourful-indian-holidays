@@ -42,7 +42,7 @@ export const associations = [
   {
     src: "/awards/iato.webp",
     alt: "IATO — Indian Association of Tour Operators member",
-    href: "https://iato.in/",
+    href: "https://iato.in/member-get?id=eyJpdiI6IlM1bVJjMHM5NkhZTmQ1Z1gxUkNjUWc9PSIsInZhbHVlIjoiTTJTUFJ6TGRkOXN5OExHRkRWMEVidz09IiwibWFjIjoiMWFhYzI5Y2RlMDI1NTZmZWQwZjgxOGM4YTg4ZTQ3ZjIzYTJkYTQ1MTE5MzgyZjliMWNkNjBiMzAzOWI4MzE2NCIsInRhZyI6IiJ9",
   },
   {
     src: "/awards/ministry-tourism.webp",
@@ -51,8 +51,8 @@ export const associations = [
   },
   {
     src: "/awards/rajasthan-tourism.webp",
-    alt: "Recognised by Rajasthan Tourism",
-    href: "https://www.tourism.rajasthan.gov.in/",
+    alt: "Recognised by Rajasthan Tourism — Certificate of Recognition",
+    href: "/documents/rajasthan-tourism-certificate.pdf",
   },
   {
     src: "/awards/tripadvisor-2014.webp",
