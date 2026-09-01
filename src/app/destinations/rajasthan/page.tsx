@@ -12,24 +12,25 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  ranthamboreAttractions,
-  ranthamboreQuickFacts,
-  ranthamboreGettingThere,
-  ranthamboreHighlights,
-  ranthamboreRelatedDestinations,
-  ranthamboreFaqs,
-} from "@/content/destinations/ranthambore";
+  pushkarAttractions,
+  pushkarQuickFacts,
+  pushkarGettingThere,
+  pushkarHighlights,
+  pushkarRelatedDestinations,
+  pushkarFaqs,
+} from "@/content/destinations/pushkar";
+import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Ranthambore Tiger Safari Tours | Rajasthan's Best Wildlife Destination";
+const title = "Pushkar Tour Packages | The Holy Town, Rajasthan";
 const description =
-  "Plan a private Ranthambore safari — one of India's best tiger-sighting parks, easily combined with a wider Rajasthan itinerary. Expert-guided jeep safaris with a private driver.";
-const pagePath = "/destinations/rajasthan/ranthambore";
-const heroImage = "/images/destinations/ranthambore-tiger.webp";
+  "Plan a private Pushkar trip — the sacred lake, Brahma Temple and (in season) the famous Camel Fair, with an English-speaking guide and private driver.";
+const pagePath = "/destinations/rajasthan/pushkar";
+const heroImage = "/images/destinations/pushkar.webp";
 
 export const metadata: Metadata = {
   title,
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}${heroImage}`,
         width: 1200,
         height: 630,
-        alt: "Wild tiger at Ranthambore National Park",
+        alt: "Traditional Rajasthani procession at the Pushkar Camel Fair",
       },
     ],
   },
@@ -64,10 +65,10 @@ const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
   { name: "Rajasthan", path: "/destinations/rajasthan" },
-  { name: "Ranthambore", path: pagePath },
+  { name: "Pushkar", path: pagePath },
 ];
 
-export default function RanthamborePage() {
+export default function PushkarPage() {
   return (
     <>
       <script
@@ -76,23 +77,22 @@ export default function RanthamborePage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(ranthamboreFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(pushkarFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Ranthambore",
+              name: "Pushkar",
               description,
               path: pagePath,
               image: heroImage,
-              latitude: 26.0173,
-              longitude: 76.5026,
+              latitude: 26.4899,
+              longitude: 74.5511,
               containsPlaces: [
-                { name: "Ranthambore Fort", path: pagePath },
-                { name: "Trinetra Ganesh Temple", path: pagePath },
-                { name: "Padam Talao", path: pagePath },
+                { name: "Pushkar Lake", path: pagePath },
+                { name: "Brahma Temple", path: pagePath },
               ],
             })
           ),
@@ -102,17 +102,17 @@ export default function RanthamborePage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Wild tiger at Ranthambore National Park"
+          imageAlt="Traditional Rajasthani procession at the Pushkar Camel Fair"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Ranthambore — Rajasthan's Tiger Country"
-          subheadline="A former royal hunting ground turned national park, with one of the best wild tiger-sighting records in India — and a genuinely easy add-on to any Rajasthan itinerary."
-          primaryHref="/packages/wildlife-tours"
-          primaryLabel="View Wildlife Safari Tours"
-          whatsappMessage="Hi! I'd like to plan a Ranthambore safari with Colourful Indian Holidays."
+          headline="Pushkar — The Holy Town"
+          subheadline="A sacred lake ringed by ghats, one of India's only Brahma temples, and home to the country's most famous camel fair — a relaxed, low-key stop on any Rajasthan circuit."
+          primaryHref="/packages/rajasthan-tours"
+          primaryLabel="View Rajasthan Tours"
+          whatsappMessage="Hi! I'd like to plan a Pushkar trip with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={ranthamboreQuickFacts} />
+        <QuickFacts facts={pushkarQuickFacts} />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
@@ -120,48 +120,25 @@ export default function RanthamborePage() {
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <SectionIntro
                 eyebrow="Overview"
-                heading="A Royal Hunting Ground, Now a Tiger Sanctuary"
+                heading="A Small Town With Deep Religious Significance"
               />
                 <div className="shrink-0">
-                  <GetQuoteButton pageName="Ranthambore" />
+                  <GetQuoteButton pageName="Pushkar" />
                 </div>
               </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Ranthambore was once the private hunting ground of the Maharajas of Jaipur —
-                  today it&apos;s one of India&apos;s most reliable places to see a wild Bengal
-                  tiger. The park&apos;s dry, open deciduous terrain works in visitors&apos;
-                  favour: unlike denser forest parks, sightings here are a genuine, likely
-                  outcome of a safari rather than a rare stroke of luck. The reserve owes much of
-                  its current health to Project Tiger, the Indian government&apos;s conservation
-                  initiative launched in the 1970s, which helped pull the park&apos;s tiger
-                  population back from the brink after decades of hunting had reduced it
-                  dramatically.
+                  Pushkar is built around a lake Hindu mythology says formed where a lotus petal
+                  fell from Lord Brahma&apos;s hand, and is home to one of the very few temples in
+                  India dedicated to Brahma the Creator — a genuine rarity given his prominence
+                  in Hindu cosmology. More than 50 ghats ring the lake, used for bathing and
+                  prayer much as they have been for centuries.
                 </p>
                 <p>
-                  What sets Ranthambore apart from many other Indian tiger reserves is the
-                  ruined 10th-century fort that sits within the park itself, giving safaris here
-                  a genuinely different character — you&apos;re moving through active wildlife
-                  habitat that also happens to contain ancient temples, crumbling gateways and
-                  stepwells, some still functioning as pilgrimage sites for local devotees. Zones
-                  closer to the fort and the park&apos;s lakes tend to offer the richest mix of
-                  wildlife and ruins in a single safari, though sightings across all zones depend
-                  heavily on season and a certain amount of luck, however good the underlying
-                  odds.
-                </p>
-                <p>
-                  What makes Ranthambore an easy addition to a Rajasthan trip is simply how
-                  close it sits to Jaipur — a few hours&apos; drive turns a wildlife safari from
-                  a special separate trip into a natural stop on the way through the rest of the
-                  state. Most of our guests add 1 to 2 nights here, book 2 to 4 safaris across
-                  different zones to maximise the chances of a good sighting, and continue on
-                  into the rest of their Rajasthan itinerary. Safaris run in open-topped canters
-                  or smaller jeeps, both with a naturalist guide who reads tracks, alarm calls
-                  from deer and langurs, and other signs experienced trackers use to anticipate
-                  where a tiger is likely to be. Beyond tigers, the park is also home to
-                  leopards, sloth bears, marsh crocodiles and a wide range of birdlife, making it
-                  a worthwhile stop even for travellers who don&apos;t see a tiger on their
-                  particular safari.
+                  Pushkar is also home to one of the world&apos;s largest camel fairs, held each
+                  autumn, when tens of thousands of camels, traders and pilgrims fill the desert
+                  around the town. Outside fair season, it&apos;s simply a relaxed, low-key stop — a
+                  welcome change of pace after busier cities like Jaipur or Jodhpur.
                 </p>
               </div>
             </Reveal>
@@ -170,21 +147,21 @@ export default function RanthamborePage() {
 
         <CityGrid
           eyebrow="Top Attractions"
-          heading="What to See in Ranthambore"
-          cities={ranthamboreAttractions}
+          heading="What to See in Pushkar"
+          cities={pushkarAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
-          heading="Getting to Ranthambore"
-          items={ranthamboreGettingThere}
+          heading="Getting to Pushkar"
+          items={pushkarGettingThere}
         />
 
         <HighlightsStrip
-          eyebrow="Why Ranthambore"
-          heading="What Makes This Park Different"
-          highlights={ranthamboreHighlights}
+          eyebrow="Why Pushkar"
+          heading="What Makes This Town Different"
+          highlights={pushkarHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -192,15 +169,14 @@ export default function RanthamborePage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Best Time to Visit"
-                heading="October to June is Ranthambore's Safari Season"
+                heading="October to March is Pushkar's Most Comfortable Season"
                 align="center"
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                The park closes for the July to September monsoon. October to March brings
-                cooler, more comfortable safari conditions, while April to June — despite the
-                heat — often produces the best tiger sightings, as animals spend more time near
-                water sources.
+                Comfortable daytime temperatures run from October through March, with the Camel
+                Fair typically falling in October or November. Summer months bring intense
+                desert heat.
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -215,29 +191,37 @@ export default function RanthamborePage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={ranthamboreRelatedDestinations}
+          cities={pushkarRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Plan Your Trip"
+          heading="Getting Around by Private Car"
+          cities={fleetCards.slice(0, 3)}
           topDivider
           showActions
         />
 
         <FAQSection
           eyebrow="FAQ"
-          heading="Common Questions About Ranthambore"
-          intro="Everything international travellers ask before booking a Ranthambore safari — answered honestly."
-          faqs={ranthamboreFaqs}
-          whatsappMessage="Hi! I have a question before booking my Ranthambore safari with Colourful Indian Holidays."
+          heading="Common Questions About Pushkar"
+          intro="Everything international travellers ask before booking a Pushkar trip — answered honestly."
+          faqs={pushkarFaqs}
+          whatsappMessage="Hi! I have a question before booking my Pushkar trip with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Ranthambore Safari Awaits."
+          headline="Your Pushkar Journey Awaits."
           headlineItalic="When Will You Go?"
-          subtext="Tell us how many days you have and we'll build a Ranthambore safari into your wider Rajasthan itinerary — usually with a reply within 24 hours."
+          subtext="Tell us how many days you have and we'll build Pushkar into your wider Rajasthan itinerary — usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a Ranthambore safari with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a Pushkar trip with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

@@ -19,6 +19,7 @@ import {
   ranthamboreRelatedDestinations,
   ranthamboreFaqs,
 } from "@/content/destinations/ranthambore";
+import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
@@ -216,6 +217,14 @@ export default function RanthamborePage() {
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
           cities={ranthamboreRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Plan Your Trip"
+          heading="Getting Around by Private Car"
+          cities={fleetCards.slice(0, 3)}
           topDivider
           showActions
         />

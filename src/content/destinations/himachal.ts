@@ -4,8 +4,6 @@ import type { QuickFact } from "@/components/destinations/QuickFacts";
 import type { GettingThereItem } from "@/components/destinations/GettingThere";
 import type { FaqItem } from "@/lib/seo/faq-schema";
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const himachalAttractions: CityCard[] = [
   {
     name: "Manali & the Kullu Valley",
@@ -13,8 +11,8 @@ export const himachalAttractions: CityCard[] = [
     description:
       "A pine-forested town on the Beas river, framed by snow-capped peaks — the base for adventure activities and the road toward Rohtang Pass and Ladakh.",
     href: "/destinations/himachal",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Manali, Himachal Pradesh",
+    image: "/images/destinations/manali-valley.webp",
+    imageAlt: "Snow-capped mountains and river valley near Manali",
   },
   {
     name: "Shimla",
@@ -22,8 +20,8 @@ export const himachalAttractions: CityCard[] = [
     description:
       "Himachal's capital and once the summer seat of British India, known for its colonial-era architecture, The Mall, and the toy train that climbs up to meet it.",
     href: "/destinations/himachal",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Shimla, Himachal Pradesh",
+    image: "/images/destinations/shimla-town.webp",
+    imageAlt: "Shimla's colonial-era hillside town",
   },
   {
     name: "Rohtang Pass",
@@ -31,8 +29,8 @@ export const himachalAttractions: CityCard[] = [
     description:
       "A dramatic high-altitude pass connecting Manali toward Lahaul-Spiti and Ladakh, open only in the warmer months and popular for its snow and views.",
     href: "/destinations/himachal",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Rohtang Pass, Himachal Pradesh",
+    image: "/images/destinations/rohtang-pass.webp",
+    imageAlt: "Snow-lined road at Rohtang Pass, Himachal Pradesh",
   },
 ] as const;
 

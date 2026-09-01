@@ -4,8 +4,6 @@ import type { QuickFact } from "@/components/destinations/QuickFacts";
 import type { GettingThereItem } from "@/components/destinations/GettingThere";
 import type { FaqItem } from "@/lib/seo/faq-schema";
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const darjeelingAttractions: CityCard[] = [
   {
     name: "Darjeeling Hillside & Tea Gardens",
@@ -22,8 +20,8 @@ export const darjeelingAttractions: CityCard[] = [
     description:
       "A pre-dawn drive up Tiger Hill for sunrise over Kanchenjunga, the world's third-highest peak — on a clear day, even Everest is visible in the distance.",
     href: "/destinations/darjeeling",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Tiger Hill sunrise, Darjeeling",
+    image: "/images/destinations/tiger-hill-darjeeling.webp",
+    imageAlt: "Sunrise over the clouds from Tiger Hill, Darjeeling",
   },
   {
     name: "Darjeeling Himalayan Railway",
@@ -31,8 +29,8 @@ export const darjeelingAttractions: CityCard[] = [
     description:
       "A UNESCO World Heritage narrow-gauge railway completed in 1881, still climbing the same steep mountain route on vintage steam and diesel locomotives.",
     href: "/destinations/darjeeling",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Darjeeling Himalayan Railway",
+    image: "/images/destinations/darjeeling-himalayan-railway.webp",
+    imageAlt: "The Darjeeling Himalayan Railway 'toy train'",
   },
 ] as const;
 

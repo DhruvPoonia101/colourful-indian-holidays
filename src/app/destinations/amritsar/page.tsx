@@ -12,13 +12,13 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  jaisalmerAttractions,
-  jaisalmerQuickFacts,
-  jaisalmerGettingThere,
-  jaisalmerHighlights,
-  jaisalmerRelatedDestinations,
-  jaisalmerFaqs,
-} from "@/content/destinations/jaisalmer";
+  amritsarAttractions,
+  amritsarQuickFacts,
+  amritsarGettingThere,
+  amritsarHighlights,
+  amritsarRelatedDestinations,
+  amritsarFaqs,
+} from "@/content/destinations/amritsar";
 import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
@@ -26,11 +26,11 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Jaisalmer Tour Packages | The Golden City, Rajasthan";
+const title = "Amritsar | Golden Temple & Wagah Border Ceremony";
 const description =
-  "Plan a private Jaisalmer tour — the living fort, Sam Sand Dunes camel safari and desert camp, with an English-speaking guide and private driver.";
-const pagePath = "/destinations/rajasthan/jaisalmer";
-const heroImage = "/images/destinations/jaisalmer-desert.webp";
+  "Plan a trip to Amritsar — the Golden Temple, Sikhism's holiest shrine, the daily Wagah Border ceremony, and Jallianwala Bagh's pivotal place in India's history.";
+const pagePath = "/destinations/amritsar";
+const heroImage = "/images/destinations/amritsar.webp";
 
 export const metadata: Metadata = {
   title,
@@ -44,31 +44,16 @@ export const metadata: Metadata = {
     url: `${SITE_URL}${pagePath}`,
     siteName: SITE_NAME,
     type: "website",
-    images: [
-      {
-        url: `${SITE_URL}${heroImage}`,
-        width: 1200,
-        height: 630,
-        alt: "Camel safari at sunset, Sam Sand Dunes near Jaisalmer",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${title} | ${SITE_NAME}`,
-    description,
-    images: [`${SITE_URL}${heroImage}`],
   },
 };
 
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
-  { name: "Rajasthan", path: "/destinations/rajasthan" },
-  { name: "Jaisalmer", path: pagePath },
+  { name: "Amritsar", path: pagePath },
 ];
 
-export default function JaisalmerPage() {
+export default function AmritsarPage() {
   return (
     <>
       <script
@@ -77,24 +62,23 @@ export default function JaisalmerPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(jaisalmerFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(amritsarFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Jaisalmer",
+              name: "Amritsar",
               description,
               path: pagePath,
               image: heroImage,
-              latitude: 26.9157,
-              longitude: 70.9083,
-              containsPlaces: [
-                { name: "Jaisalmer Fort", path: pagePath },
-                { name: "Sam Sand Dunes", path: pagePath },
-                { name: "Patwon Ki Haveli", path: pagePath },
-              ],
+              latitude: 31.634,
+              longitude: 74.8723,
+              containsPlaces: amritsarAttractions.map((attraction) => ({
+                name: attraction.name,
+                path: attraction.href,
+              })),
             })
           ),
         }}
@@ -103,42 +87,49 @@ export default function JaisalmerPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Camel safari at sunset, Sam Sand Dunes near Jaisalmer"
+          imageAlt="The Golden Temple, Amritsar"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Jaisalmer — The Golden City"
-          subheadline="A living sandstone fort on the edge of the Thar Desert, with camel safaris and desert camps beyond — the furthest and most distinct stop on a Rajasthan circuit."
-          primaryHref="/packages/rajasthan-tours"
-          primaryLabel="View Rajasthan Tours"
-          whatsappMessage="Hi! I'd like to plan a Jaisalmer trip with Colourful Indian Holidays."
+          headline="Amritsar — Sikhism's Spiritual Heart"
+          subheadline="The gold-plated Harmandir Sahib, a daily border ceremony unlike anything else in India, and a city defined by Punjabi warmth and hospitality."
+          primaryHref="/packages"
+          primaryLabel="View Tour Packages"
+          whatsappMessage="Hi! I'd like to plan a trip to Amritsar with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={jaisalmerQuickFacts} />
+        <QuickFacts facts={amritsarQuickFacts} />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro
-                eyebrow="Overview"
-                heading="A Fort Still Genuinely Lived In"
-              />
+                <SectionIntro eyebrow="Overview" heading="Sikhism's Spiritual Heart" />
                 <div className="shrink-0">
-                  <GetQuoteButton pageName="Jaisalmer" />
+                  <GetQuoteButton pageName="Amritsar" />
                 </div>
               </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Jaisalmer is one of the very few &quot;living forts&quot; left in the world — around a
-                  quarter of the old city&apos;s population still lives within its walls, running
-                  shops, guesthouses and restaurants built into the same honey-coloured
-                  sandstone the fort itself is carved from. Built in 1156, it glows almost amber
-                  at sunset, giving the city its nickname, the Golden City.
+                  The Golden Temple, or Harmandir Sahib, is the reason most visitors come to
+                  Amritsar, and it&apos;s hard to overstate how different the experience is from
+                  visiting a typical monument. Its gold-plated sanctum sits at the centre of the
+                  Amrit Sarovar, a sacred pool that gives the city its name, and the temple stays
+                  open around the clock — prayers continuing through the night, pilgrims
+                  circling the water, and a free community kitchen serving tens of thousands of
+                  meals daily to anyone who comes, regardless of faith or background. It&apos;s
+                  one of the few places on a typical India itinerary where the atmosphere itself,
+                  rather than any single view or structure, is what visitors remember most.
                 </p>
                 <p>
-                  Beyond the fort, Jaisalmer&apos;s setting deep in the Thar Desert makes it the most
-                  distinct stop on a Rajasthan circuit — a short drive to the Sam Sand Dunes adds
-                  a camel safari and, often, a night at a desert camp under a genuinely dark sky.
+                  A short walk away, Jallianwala Bagh adds real historical weight — a public
+                  garden that was the site of the 1919 massacre now widely seen as a turning point
+                  in India&apos;s independence movement. And each evening, the Wagah Border
+                  ceremony, held at the India-Pakistan border a short drive from the city, draws
+                  large, energetic crowds on both sides for a display of military pageantry
+                  genuinely unlike anything else most international visitors will see in India.
+                  Combined with Punjab&apos;s warm hospitality and distinct cuisine, Amritsar
+                  works well as a focused 1 to 2 day stop, typically added onto a wider North
+                  India or Golden Triangle itinerary.
                 </p>
               </div>
             </Reveal>
@@ -147,21 +138,21 @@ export default function JaisalmerPage() {
 
         <CityGrid
           eyebrow="Top Attractions"
-          heading="What to See in Jaisalmer"
-          cities={jaisalmerAttractions}
+          heading="What to See"
+          cities={amritsarAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
-          heading="Getting to Jaisalmer"
-          items={jaisalmerGettingThere}
+          heading="Getting There"
+          items={amritsarGettingThere}
         />
 
         <HighlightsStrip
-          eyebrow="Why Jaisalmer"
-          heading="What Makes This City Different"
-          highlights={jaisalmerHighlights}
+          eyebrow="Why Visit"
+          heading="What Makes This Different"
+          highlights={amritsarHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -169,14 +160,14 @@ export default function JaisalmerPage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Best Time to Visit"
-                heading="October to February is Jaisalmer's Most Comfortable Season"
+                heading="October to March is the Best Season"
                 align="center"
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                Jaisalmer&apos;s desert climate brings extreme summer heat, so October through
-                February is considerably more comfortable for both the fort and the desert
-                safari than the rest of the year.
+                Cooler, more comfortable weather makes this the best window for visiting the
+                Golden Temple and attending the outdoor Wagah Border ceremony. Summer brings
+                intense heat that makes midday sightseeing genuinely uncomfortable.
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -191,7 +182,7 @@ export default function JaisalmerPage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={jaisalmerRelatedDestinations}
+          cities={amritsarRelatedDestinations}
           topDivider
           showActions
         />
@@ -206,22 +197,22 @@ export default function JaisalmerPage() {
 
         <FAQSection
           eyebrow="FAQ"
-          heading="Common Questions About Jaisalmer"
-          intro="Everything international travellers ask before booking a Jaisalmer trip — answered honestly."
-          faqs={jaisalmerFaqs}
-          whatsappMessage="Hi! I have a question before booking my Jaisalmer trip with Colourful Indian Holidays."
+          heading="Common Questions"
+          intro="Everything international travellers ask before booking — answered honestly."
+          faqs={amritsarFaqs}
+          whatsappMessage="Hi! I have a question before booking my trip to Amritsar with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Jaisalmer Journey Awaits."
+          headline="Your Journey to Amritsar Awaits."
           headlineItalic="When Will You Go?"
-          subtext="Tell us how many days you have and we'll build Jaisalmer into your wider Rajasthan itinerary — usually with a reply within 24 hours."
+          subtext="Tell us how many days you have and what you'd like to see — we'll reply with a tailored itinerary and quote, usually within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a Jaisalmer trip with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to Amritsar with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

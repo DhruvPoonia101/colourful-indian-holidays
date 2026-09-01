@@ -45,7 +45,7 @@ export const navItems: NavItem[] = [
     type: "dropdown",
     label: "Destinations",
     activeMatch: "/destinations",
-    columnsPerRow: 5,
+    columnsPerRow: 4,
     items: [],
     columns: [
       {
@@ -59,27 +59,56 @@ export const navItems: NavItem[] = [
         ],
       },
       {
-        heading: "India — Himalayan",
+        heading: "India — North",
         items: [
           { label: "Leh & Ladakh", href: "/destinations/leh-ladakh" },
           { label: "Srinagar & Kashmir", href: "/destinations/srinagar-kashmir" },
-          { label: "Himachal (Manali & Shimla)", href: "/destinations/himachal" },
+          { label: "Himachal", href: "/destinations/himachal" },
           { label: "Rishikesh & Haridwar", href: "/destinations/rishikesh-haridwar" },
-          { label: "Darjeeling", href: "/destinations/darjeeling" },
+          { label: "Amritsar", href: "/destinations/amritsar" },
+          { label: "Sariska", href: "/destinations/sariska" },
         ],
       },
       {
-        heading: "India — More",
+        heading: "India — South",
         items: [
-          { label: "Goa", href: "/destinations/goa" },
-          { label: "Mumbai", href: "/destinations/mumbai" },
           { label: "Kerala", href: "/destinations/kerala" },
           { label: "Madurai", href: "/destinations/madurai" },
           { label: "Chennai", href: "/destinations/chennai" },
-          { label: "Amritsar", href: "/destinations/amritsar" },
-          { label: "Andaman Islands", href: "/destinations/andaman-islands" },
-          { label: "Kaziranga", href: "/destinations/kaziranga" },
+          { label: "Mahabalipuram", href: "/destinations/mahabalipuram" },
+          { label: "Pondicherry", href: "/destinations/pondicherry" },
           { label: "Tamil Nadu Beaches", href: "/destinations/tamil-nadu-beaches" },
+        ],
+      },
+      {
+        heading: "India — West",
+        items: [
+          { label: "Goa", href: "/destinations/goa" },
+          { label: "Mumbai", href: "/destinations/mumbai" },
+          { label: "Gujarat", href: "/destinations/gujarat" },
+          { label: "Gujarat Beaches", href: "/destinations/gujarat-beaches" },
+          { label: "Maharashtra", href: "/destinations/maharashtra" },
+          { label: "Maharashtra Beaches", href: "/destinations/maharashtra-beaches" },
+        ],
+      },
+      {
+        heading: "India — East",
+        items: [
+          { label: "Darjeeling", href: "/destinations/darjeeling" },
+          { label: "Sikkim", href: "/destinations/sikkim" },
+          { label: "Kolkata", href: "/destinations/kolkata" },
+          { label: "Kaziranga", href: "/destinations/kaziranga" },
+          { label: "Odisha", href: "/destinations/odisha" },
+          { label: "Andaman Islands", href: "/destinations/andaman-islands" },
+        ],
+      },
+      {
+        heading: "India — Central",
+        items: [
+          { label: "Khajuraho", href: "/destinations/khajuraho" },
+          { label: "Bandhavgarh", href: "/destinations/bandhavgarh" },
+          { label: "Kanha", href: "/destinations/kanha" },
+          { label: "Pench", href: "/destinations/pench" },
         ],
       },
       {
@@ -99,6 +128,7 @@ export const navItems: NavItem[] = [
           { label: "Thimphu", href: "/destinations/thimphu" },
           { label: "Paro", href: "/destinations/paro" },
           { label: "Punakha", href: "/destinations/punakha" },
+          { label: "Gangtey", href: "/destinations/gangtey" },
         ],
       },
     ],

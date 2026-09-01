@@ -102,8 +102,8 @@ export const rishikeshHaridwarRelatedDestinations: CityCard[] = [
     tagline: "Mountains & Colonial Heritage",
     description: "A further stretch of the Himalayan foothills, for travellers with more time.",
     href: "/destinations/himachal",
-    image: "/images/destinations/urs-festival-ajmer.webp",
-    imageAlt: "Photo coming soon — Himachal Pradesh",
+    image: "/images/destinations/shimla-town.webp",
+    imageAlt: "Shimla's colonial-era hillside town",
   },
   {
     name: "Delhi",

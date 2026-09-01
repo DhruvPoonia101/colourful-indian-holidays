@@ -19,6 +19,7 @@ import {
   goaRelatedDestinations,
   goaFaqs,
 } from "@/content/destinations/goa";
+import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
@@ -187,6 +188,14 @@ export default function GoaPage() {
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
           cities={goaRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Plan Your Trip"
+          heading="Getting Around by Private Car"
+          cities={fleetCards.slice(0, 3)}
           topDivider
           showActions
         />

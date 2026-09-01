@@ -4,8 +4,6 @@ import type { QuickFact } from "@/components/destinations/QuickFacts";
 import type { GettingThereItem } from "@/components/destinations/GettingThere";
 import type { FaqItem } from "@/lib/seo/faq-schema";
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const maduraiAttractions: CityCard[] = [
   {
     name: "Meenakshi Amman Temple",
@@ -22,8 +20,8 @@ export const maduraiAttractions: CityCard[] = [
     description:
       "A grand palace built in 1636 by King Thirumalai Nayak, blending Dravidian and Islamic architectural styles across its surviving courtyards and halls.",
     href: "/destinations/madurai",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Thirumalai Nayakkar Palace, Madurai",
+    image: "/images/destinations/thirumalai-nayakkar-palace.webp",
+    imageAlt: "Thirumalai Nayakkar Palace, Madurai",
   },
   {
     name: "Vaigai River & Old City",
@@ -31,8 +29,8 @@ export const maduraiAttractions: CityCard[] = [
     description:
       "Madurai's old city streets radiate outward from the temple in a traditional mandala layout, among the oldest continuously inhabited urban plans in India.",
     href: "/destinations/madurai",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Madurai old city streets",
+    image: "/images/destinations/vaigai-river-madurai.webp",
+    imageAlt: "Temple tank on the Vaigai River, Madurai",
   },
 ] as const;
 

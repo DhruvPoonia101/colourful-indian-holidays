@@ -130,6 +130,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/destinations/amritsar`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/destinations/sariska`,
       lastModified: new Date(),
       changeFrequency: "monthly",

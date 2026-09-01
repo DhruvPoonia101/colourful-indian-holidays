@@ -19,6 +19,7 @@ import {
   himachalRelatedDestinations,
   himachalFaqs,
 } from "@/content/destinations/himachal";
+import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
@@ -29,7 +30,7 @@ const title = "Himachal Pradesh | Manali & Shimla Tours";
 const description =
   "Plan a trip to Himachal Pradesh — Manali's mountains and adventure activities, Shimla's colonial-era hill station charm, and the road toward Rohtang Pass.";
 const pagePath = "/destinations/himachal";
-const heroImage = "/images/destinations/urs-festival-ajmer.webp";
+const heroImage = "/images/destinations/shimla-town.webp";
 
 export const metadata: Metadata = {
   title,
@@ -86,7 +87,7 @@ export default function HimachalPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Photo coming soon — Himachal Pradesh"
+          imageAlt="Shimla's colonial-era hillside town"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Himachal Pradesh — Manali & Shimla"
@@ -197,6 +198,14 @@ export default function HimachalPage() {
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
           cities={himachalRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Plan Your Trip"
+          heading="Getting Around by Private Car"
+          cities={fleetCards.slice(0, 3)}
           topDivider
           showActions
         />
