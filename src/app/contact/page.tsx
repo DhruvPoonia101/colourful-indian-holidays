@@ -73,14 +73,7 @@ export default function ContactPage() {
           quoteButtonPageName="Contact Us (Header)"
         />
 
-        {/* 2. Why Plan With Us — trust, before the ask */}
-        <HighlightsStrip
-          eyebrow="Why Plan With Us"
-          heading="What You Get Working With Us Directly"
-          highlights={contactWhyPlanWithUs}
-        />
-
-        {/* 3. Contact Info + Enquiry Form, side by side (merged: options + office/company info) */}
+        {/* 2. Contact Info + Enquiry Form, side by side (merged: options + office/company info) */}
         <section id="enquiry-form" className="border-t border-sand/70 py-10 sm:py-14">
           <div className="mx-auto grid max-w-6xl gap-8 px-6 sm:px-8 lg:grid-cols-[380px_1fr] lg:gap-12">
             <div className="lg:order-1">
@@ -92,12 +85,20 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* 3b. Map */}
+        {/* 2b. Map */}
         <section className="pb-10 sm:pb-14">
           <div className="mx-auto max-w-6xl px-6 sm:px-8">
             <LocationMap />
           </div>
         </section>
+
+        {/* 3. Why Plan With Us — trust, after the map, before FAQ */}
+        <HighlightsStrip
+          eyebrow="Why Plan With Us"
+          heading="What You Get Working With Us Directly"
+          highlights={contactWhyPlanWithUs}
+          topDivider
+        />
 
         {/* 4. FAQ */}
         <FAQSection
