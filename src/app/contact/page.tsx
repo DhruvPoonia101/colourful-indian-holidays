@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/layout/PageHero";
+import { SimplePageHeader } from "@/components/layout/SimplePageHeader";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { ContactInfoCard } from "@/components/contact/ContactInfoCard";
+import { LocationMap } from "@/components/contact/LocationMap";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { contactWhyPlanWithUs, contactFaqs } from "@/content/contact";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -63,15 +64,13 @@ export default function ContactPage() {
       />
 
       <main>
-        {/* 1. Hero */}
-        <PageHero
-          image={heroImage}
-          imageAlt="Udaipur City Palace at night, viewed across Lake Pichola"
+        {/* 1. Header */}
+        <SimplePageHeader
           breadcrumbs={breadcrumbs}
           eyebrow="Get in Touch"
           headline="Let's Plan Your India Journey"
           subheadline="Tell us what you have in mind, and our Rajasthan-based travel experts will reply with a tailored itinerary and quote — usually within 24 hours."
-          whatsappMessage="Hi! I'd like to plan a tour with Colourful Indian Holidays."
+          quoteButtonPageName="Contact Us (Header)"
         />
 
         {/* 2. Why Plan With Us — trust, before the ask */}
@@ -90,6 +89,13 @@ export default function ContactPage() {
             <div className="lg:order-2">
               <ContactForm />
             </div>
+          </div>
+        </section>
+
+        {/* 3b. Map */}
+        <section className="pb-10 sm:pb-14">
+          <div className="mx-auto max-w-6xl px-6 sm:px-8">
+            <LocationMap />
           </div>
         </section>
 

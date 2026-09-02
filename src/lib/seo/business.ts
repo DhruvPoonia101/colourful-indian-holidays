@@ -8,7 +8,7 @@ export const BUSINESS = {
   telephone: "+91 9929094862",
   whatsapp: "919929094862",
   email: "colourfulindianholidays@gmail.com",
-  foundingYear: 2008,
+  foundingYear: 2007,
   address: {
     streetAddress: "UG-36, Crown Plaza, Vaishali Nagar, Near Nursery Circle",
     addressLocality: "Jaipur",
