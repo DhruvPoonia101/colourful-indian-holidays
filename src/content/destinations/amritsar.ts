@@ -4,8 +4,6 @@ import type { QuickFact } from "@/components/destinations/QuickFacts";
 import type { GettingThereItem } from "@/components/destinations/GettingThere";
 import type { FaqItem } from "@/lib/seo/faq-schema";
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const amritsarAttractions: CityCard[] = [
   {
     name: "The Golden Temple",
@@ -22,8 +20,8 @@ export const amritsarAttractions: CityCard[] = [
     description:
       "A high-energy border-closing ceremony performed daily by Indian and Pakistani troops at the Attari-Wagah border, drawing large crowds on both sides.",
     href: "/destinations/amritsar",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Wagah Border ceremony, Amritsar",
+    image: "/images/destinations/wagah-border.webp",
+    imageAlt: "The Wagah Border ceremony, near Amritsar",
   },
   {
     name: "Jallianwala Bagh",
@@ -31,8 +29,8 @@ export const amritsarAttractions: CityCard[] = [
     description:
       "A public garden and memorial to the 1919 massacre that became a turning point in India's independence movement, a short walk from the Golden Temple.",
     href: "/destinations/amritsar",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Jallianwala Bagh, Amritsar",
+    image: "/images/destinations/jallianwala-bagh.webp",
+    imageAlt: "The Jallianwala Bagh memorial, Amritsar",
   },
 ] as const;
 

@@ -73,12 +73,12 @@ export const bandhavgarhHighlights: Highlight[] = [
 
 export const bandhavgarhRelatedDestinations: CityCard[] = [
   {
-    name: "Rajasthan",
-    tagline: "Land of Kings",
-    description: "Forts, palaces and desert citadels — the natural pairing for almost any India trip.",
-    href: "/destinations/rajasthan",
-    image: "/images/destinations/amber-fort-jaipur.webp",
-    imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
+    name: "Khajuraho",
+    tagline: "UNESCO Temple Sculpture",
+    description: "A natural Central India pairing, both in Madhya Pradesh.",
+    href: "/destinations/khajuraho",
+    image: "/images/destinations/khajuraho-kandariya-mahadeva.webp",
+    imageAlt: "Kandariya Mahadeva Temple at sunset, Khajuraho",
   },
   {
     name: "Delhi",

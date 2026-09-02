@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiChevronDown, FiMail, FiPhone, FiX } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-import { Button } from "@/components/ui/Button";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { BUSINESS } from "@/lib/seo/business";
 import { whatsappUrl } from "@/lib/whatsapp";
 import { navItems } from "@/content/nav";
@@ -204,9 +204,16 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   <FiMail aria-hidden="true" className="h-5 w-5" />
                 </a>
               </div>
-              <Button href="/contact" variant="navy" className="w-full">
-                Plan My Journey
-              </Button>
+              <GetQuoteButton
+                pageName="Plan My Journey (Mobile Nav)"
+                triggerLabel="Plan My Journey"
+                triggerClassName="
+                  inline-flex w-full items-center justify-center gap-2
+                  rounded-full bg-[#12233F] px-7 py-3.5 text-sm font-semibold
+                  tracking-wide text-ivory shadow-sm transition-all duration-200
+                  ease-out min-h-11 hover:scale-[1.04] hover:bg-[#1B335C]
+                "
+              />
             </div>
         </motion.div>
         )}

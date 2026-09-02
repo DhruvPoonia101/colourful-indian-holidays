@@ -22,11 +22,20 @@ const twoYearsOutISO = new Date(new Date().setFullYear(new Date().getFullYear() 
 export function GetQuoteButton({
   pageName,
   variant = "tour",
+  triggerLabel = "Get a Free Quote",
+  triggerClassName,
 }: {
   pageName: string;
   /** "tour" (default) asks for travel month + traveller count — used on destination
    * and package pages. "carRental" asks for route + a specific date instead. */
   variant?: "tour" | "carRental";
+  /** Text shown on the button that opens the modal. Defaults to "Get a Free Quote" —
+   * override for other entry points (e.g. the navbar's "Plan My Journey" button) that
+   * should open the same modal under different wording. */
+  triggerLabel?: string;
+  /** Full className for the trigger button, overriding the default gold pill style.
+   * Use this to match the trigger to its surrounding context (e.g. the navbar). */
+  triggerClassName?: string;
 }) {
   const dateInputRef = useRef<HTMLInputElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -121,9 +130,12 @@ export function GetQuoteButton({
       <button
         type="button"
         onClick={open}
-        className="inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark"
+        className={
+          triggerClassName ??
+          "inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark"
+        }
       >
-        Get a Free Quote
+        {triggerLabel}
       </button>
 
       <AnimatePresence>

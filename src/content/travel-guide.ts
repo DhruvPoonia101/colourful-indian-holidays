@@ -50,8 +50,8 @@ export const guideArticles: GuideArticle[] = [
     category: "India",
     image: "/images/destinations/agra-taj-mahal.webp",
     imageAlt: "Taj Mahal at sunrise, Agra",
-    datePublished: "2026-08-01",
-    published: false,
+    datePublished: "2026-09-02",
+    published: true,
   },
   {
     title: "Places to Visit in Shekhawati",

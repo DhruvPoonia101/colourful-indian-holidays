@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
-import { MoreDestinationsList } from "@/components/destinations/MoreDestinationsList";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import {
   flagshipDestinations,
   wildlifeDestinations,
   beachDestinations,
-  moreDestinations,
+  himalayanDestinations,
+  moreIndiaDestinations,
 } from "@/content/destinations-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -80,9 +80,20 @@ export default function DestinationsHubPage() {
           showActions
         />
 
-        <MoreDestinationsList
-          destinations={moreDestinations}
-          toggleLabel="Explore More Destinations"
+        <CityGrid
+          eyebrow="The Himalayas"
+          heading="Mountains, Valleys & Hill Stations"
+          cities={himalayanDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="More of India"
+          heading="Further Afield"
+          cities={moreIndiaDestinations}
+          topDivider
+          showActions
         />
 
         <JourneyCTA

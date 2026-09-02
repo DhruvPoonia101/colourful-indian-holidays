@@ -96,12 +96,12 @@ export const chennaiRelatedDestinations: CityCard[] = [
     imageAlt: "Tamil Nadu coastline",
   },
   {
-    name: "Kerala",
-    tagline: "Backwaters & Beaches",
-    description: "A neighbouring state offering a genuinely different landscape and pace.",
-    href: "/destinations/kerala",
-    image: "/images/destinations/alleppey-backwaters.webp",
-    imageAlt: "Houseboat on the Alleppey backwaters, Kerala",
+    name: "Mahabalipuram",
+    tagline: "UNESCO Rock-Cut Monuments",
+    description: "A short drive south of Chennai — the Shore Temple and Five Rathas, easily done as a day trip.",
+    href: "/destinations/mahabalipuram",
+    image: "/images/destinations/chennai.webp",
+    imageAlt: "The Shore Temple, Mahabalipuram",
   },
 ] as const;
 

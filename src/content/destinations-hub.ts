@@ -1,5 +1,4 @@
 import type { CityCard } from "@/components/destinations/CityGrid";
-import type { MoreDestination } from "@/components/destinations/MoreDestinationsList";
 
 export const flagshipDestinations: CityCard[] = [
   {
@@ -69,6 +68,22 @@ export const wildlifeDestinations: CityCard[] = [
     image: "/images/destinations/kaziranga.webp",
     imageAlt: "One-horned rhino and safari jeeps at Kaziranga National Park",
   },
+  {
+    name: "Kanha",
+    tagline: "The Jungle Book's Setting",
+    description: "Sal forests and open meadows said to have inspired Kipling's classic.",
+    href: "/destinations/kanha",
+    image: "/images/destinations/kanha-tiger-safari.webp",
+    imageAlt: "A tiger in the grasslands of Kanha National Park",
+  },
+  {
+    name: "Pench",
+    tagline: "The Original Jungle Book Setting",
+    description: "A growing tiger population in teak and bamboo forest, near Nagpur.",
+    href: "/destinations/pench",
+    image: "/images/destinations/pench-tiger-safari.webp",
+    imageAlt: "A tiger at a waterhole in Pench National Park",
+  },
 ] as const;
 
 export const beachDestinations: CityCard[] = [
@@ -106,25 +121,251 @@ export const beachDestinations: CityCard[] = [
   },
 ] as const;
 
-export const moreDestinations: MoreDestination[] = [
-  { name: "Leh & Ladakh", href: "/destinations/leh-ladakh" },
-  { name: "Srinagar & Kashmir", href: "/destinations/srinagar-kashmir" },
-  { name: "Himachal (Manali & Shimla)", href: "/destinations/himachal" },
-  { name: "Rishikesh & Haridwar", href: "/destinations/rishikesh-haridwar" },
-  { name: "Darjeeling", href: "/destinations/darjeeling" },
-  { name: "Goa", href: "/destinations/goa" },
-  { name: "Mumbai", href: "/destinations/mumbai" },
-  { name: "Kerala", href: "/destinations/kerala" },
-  { name: "Madurai", href: "/destinations/madurai" },
-  { name: "Chennai", href: "/destinations/chennai" },
-  { name: "Amritsar", href: "/destinations/amritsar" },
-  { name: "Kathmandu", href: "/destinations/kathmandu" },
-  { name: "Pokhara", href: "/destinations/pokhara" },
-  { name: "Chitwan", href: "/destinations/chitwan" },
-  { name: "Nagarkot", href: "/destinations/nagarkot" },
-  { name: "Lumbini", href: "/destinations/lumbini" },
-  { name: "Everest Region", href: "/destinations/everest-region" },
-  { name: "Thimphu", href: "/destinations/thimphu" },
-  { name: "Paro", href: "/destinations/paro" },
-  { name: "Punakha", href: "/destinations/punakha" },
+export const himalayanDestinations: CityCard[] = [
+  {
+    name: "Leh & Ladakh",
+    tagline: "High-Altitude Desert",
+    description: "Turquoise lakes, monasteries and some of the world's highest mountain passes.",
+    href: "/destinations/leh-ladakh",
+    image: "/images/destinations/Leh-4.webp",
+    imageAlt: "Motorbikes parked beside Pangong Lake, Ladakh",
+  },
+  {
+    name: "Srinagar & Kashmir",
+    tagline: "The Valley of Gardens",
+    description: "Houseboats on Dal Lake, Mughal gardens, and the alpine meadows of Gulmarg.",
+    href: "/destinations/srinagar-kashmir",
+    image: "/images/destinations/Srinagar-3.webp",
+    imageAlt: "Houseboats on Dal Lake with snow-capped mountains behind, Srinagar",
+  },
+  {
+    name: "Himachal (Manali & Shimla)",
+    tagline: "Mountains & Colonial Heritage",
+    description: "Adventure activities in Manali, colonial charm in Shimla.",
+    href: "/destinations/himachal",
+    image: "/images/destinations/shimla-town.webp",
+    imageAlt: "Shimla's colonial-era hillside town",
+  },
+  {
+    name: "Rishikesh & Haridwar",
+    tagline: "Where the Ganges Begins",
+    description: "Yoga, white-water rafting, and the sacred ghats where the Ganges meets the plains.",
+    href: "/destinations/rishikesh-haridwar",
+    image: "/images/destinations/rishikesh-2.webp",
+    imageAlt: "Suspension bridge over the Ganges, Rishikesh",
+  },
+  {
+    name: "Darjeeling",
+    tagline: "Tea, Cloud & the Himalayas",
+    description: "Terraced tea gardens, a UNESCO toy train, and sunrise views of Kanchenjunga.",
+    href: "/destinations/darjeeling",
+    image: "/images/destinations/Darjeeling.webp",
+    imageAlt: "Darjeeling hillside town wrapped in cloud",
+  },
+] as const;
+
+export const moreIndiaDestinations: CityCard[] = [
+  {
+    name: "Goa",
+    tagline: "Beaches & Portuguese Heritage",
+    description: "Beach shacks and nightlife in the north, quieter resorts in the south.",
+    href: "/destinations/goa",
+    image: "/images/destinations/Goa.webp",
+    imageAlt: "Coastal beach and cliffs, North Goa",
+  },
+  {
+    name: "Mumbai",
+    tagline: "India's City of Dreams",
+    description: "Colonial-era architecture, Marine Drive, and India's financial capital.",
+    href: "/destinations/mumbai",
+    image: "/images/destinations/Mumbai.webp",
+    imageAlt: "Chhatrapati Shivaji Maharaj Terminus, Mumbai",
+  },
+  {
+    name: "Kerala",
+    tagline: "God's Own Country",
+    description: "Backwater houseboats, misty tea gardens, and colonial Fort Kochi.",
+    href: "/destinations/kerala",
+    image: "/images/destinations/alleppey-backwaters.webp",
+    imageAlt: "Houseboat on the Alleppey backwaters, Kerala",
+  },
+  {
+    name: "Madurai",
+    tagline: "Tamil Nadu's Temple City",
+    description: "The towering, sculpture-covered gopurams of Meenakshi Amman Temple.",
+    href: "/destinations/madurai",
+    image: "/images/destinations/madurai.webp",
+    imageAlt: "Meenakshi Amman Temple gopuram, Madurai",
+  },
+  {
+    name: "Chennai",
+    tagline: "Gateway to Tamil Nadu",
+    description: "A sweeping urban beach and South India's most practical starting point.",
+    href: "/destinations/chennai",
+    image: "/images/destinations/chennai.webp",
+    imageAlt: "Shore Temple, Mahabalipuram, near Chennai",
+  },
+  {
+    name: "Mahabalipuram",
+    tagline: "Stone Carved by the Sea",
+    description: "UNESCO rock-cut temples and monuments on the Bay of Bengal.",
+    href: "/destinations/mahabalipuram",
+    image: "/images/destinations/mahabalipuram-beach.webp",
+    imageAlt: "Mahabalipuram beach on the Bay of Bengal",
+  },
+  {
+    name: "Pondicherry",
+    tagline: "A French Corner of South India",
+    description: "Mustard-yellow colonial villas and a boulder-lined seafront promenade.",
+    href: "/destinations/pondicherry",
+    image: "/images/destinations/pondicherry-beach.webp",
+    imageAlt: "Rocky seafront promenade, Pondicherry",
+  },
+  {
+    name: "Amritsar",
+    tagline: "Sikhism's Spiritual Heart",
+    description: "The gold-plated Golden Temple and the daily Wagah Border ceremony.",
+    href: "/destinations/amritsar",
+    image: "/images/destinations/amritsar.webp",
+    imageAlt: "The Golden Temple, Amritsar",
+  },
+  {
+    name: "Khajuraho",
+    tagline: "Central India's Sculpted Masterpiece",
+    description: "UNESCO temples with some of the most intricately carved stone sculpture in India.",
+    href: "/destinations/khajuraho",
+    image: "/images/destinations/khajuraho-kandariya-mahadeva.webp",
+    imageAlt: "Kandariya Mahadeva Temple at sunset, Khajuraho",
+  },
+] as const;
+
+const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
+
+export const comingSoonIndiaDestinations: CityCard[] = [
+  {
+    name: "Gujarat",
+    tagline: "Coming Soon",
+    description: "Ahmedabad's heritage, the Rann of Kutch, and the lions of Gir.",
+    href: "/destinations/gujarat",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Gujarat",
+  },
+  {
+    name: "Maharashtra",
+    tagline: "Coming Soon",
+    description: "Beyond Mumbai — the mainland heart of Maharashtra state.",
+    href: "/destinations/maharashtra",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Maharashtra",
+  },
+  {
+    name: "Sikkim",
+    tagline: "Coming Soon",
+    description: "A small Himalayan state framed by Kanchenjunga.",
+    href: "/destinations/sikkim",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Sikkim",
+  },
+  {
+    name: "Kolkata",
+    tagline: "Coming Soon",
+    description: "West Bengal's colonial-era capital.",
+    href: "/destinations/kolkata",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Kolkata",
+  },
+  {
+    name: "Odisha",
+    tagline: "Coming Soon",
+    description: "Puri's Jagannath Temple and the Sun Temple at Konark.",
+    href: "/destinations/odisha",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Odisha",
+  },
+] as const;
+
+export const nepalDestinations: CityCard[] = [
+  {
+    name: "Kathmandu",
+    tagline: "Coming Soon",
+    description: "Nepal's capital, layered with temples and Himalayan history.",
+    href: "/destinations/kathmandu",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Kathmandu",
+  },
+  {
+    name: "Pokhara",
+    tagline: "Coming Soon",
+    description: "Lakeside views of the Annapurna range.",
+    href: "/destinations/pokhara",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Pokhara",
+  },
+  {
+    name: "Chitwan",
+    tagline: "Coming Soon",
+    description: "Jungle safaris and one-horned rhinos in Nepal's lowlands.",
+    href: "/destinations/chitwan",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Chitwan",
+  },
+  {
+    name: "Nagarkot",
+    tagline: "Coming Soon",
+    description: "Sunrise views over the Himalayan range near Kathmandu.",
+    href: "/destinations/nagarkot",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Nagarkot",
+  },
+  {
+    name: "Lumbini",
+    tagline: "Coming Soon",
+    description: "The birthplace of the Buddha, a UNESCO World Heritage Site.",
+    href: "/destinations/lumbini",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Lumbini",
+  },
+  {
+    name: "Everest Region",
+    tagline: "Coming Soon",
+    description: "Trekking routes toward the world's highest peak.",
+    href: "/destinations/everest-region",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Everest Region",
+  },
+] as const;
+
+export const bhutanDestinations: CityCard[] = [
+  {
+    name: "Thimphu",
+    tagline: "Coming Soon",
+    description: "Bhutan's capital, still without a single traffic light.",
+    href: "/destinations/thimphu",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Thimphu",
+  },
+  {
+    name: "Paro",
+    tagline: "Coming Soon",
+    description: "Home to the iconic Tiger's Nest monastery.",
+    href: "/destinations/paro",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Paro",
+  },
+  {
+    name: "Punakha",
+    tagline: "Coming Soon",
+    description: "Bhutan's former capital and its most photographed dzong.",
+    href: "/destinations/punakha",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Punakha",
+  },
+  {
+    name: "Gangtey",
+    tagline: "Coming Soon",
+    description: "A glacial valley known for wintering black-necked cranes.",
+    href: "/destinations/gangtey",
+    image: PLACEHOLDER,
+    imageAlt: "Photo coming soon — Gangtey",
+  },
 ] as const;

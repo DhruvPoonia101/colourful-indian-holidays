@@ -8,7 +8,7 @@ import { FiMenu } from "react-icons/fi";
 
 import { NavDropdown } from "@/components/layout/NavDropdown";
 import { MobileMenu } from "@/components/layout/MobileMenu";
-import { Button } from "@/components/ui/Button";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { navItems } from "@/content/nav";
 
 export function Navbar() {
@@ -215,21 +215,16 @@ export function Navbar() {
                 lg:flex
               "
             >
-              <Button
-                href="/contact"
-                variant="navy"
-                size="sm"
-                className="
-                  whitespace-nowrap
-                  rounded-full
-                  px-7
-                  py-3
-                  text-sm
-                  font-semibold
+              <GetQuoteButton
+                pageName="Plan My Journey (Navbar)"
+                triggerLabel="Plan My Journey"
+                triggerClassName="
+                  inline-flex items-center justify-center gap-2 whitespace-nowrap
+                  rounded-full bg-[#12233F] px-7 py-3 text-sm font-semibold
+                  tracking-wide text-ivory shadow-sm transition-all duration-200
+                  ease-out min-h-11 hover:scale-[1.04] hover:bg-[#1B335C]
                 "
-              >
-                Plan My Journey
-              </Button>
+              />
             </div>
 
             {/* =====================================================
