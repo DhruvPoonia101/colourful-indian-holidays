@@ -4,7 +4,6 @@ import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { ItineraryTimeline } from "@/components/packages/ItineraryTimeline";
 import { InclusionsExclusions } from "@/components/packages/InclusionsExclusions";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -55,12 +54,12 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
           eyebrow={content.tagline}
           headline={content.heroHeadline}
           subheadline={content.heroSubheadline}
-          primaryHref="/contact"
           primaryLabel="Plan My Journey"
+          primaryQuoteButtonPageName={`${content.name} (Hero)`}
           whatsappMessage={`Hi! I'd like to know more about the ${content.name}.`}
         />
 
-        <QuickFacts facts={content.quickFacts} />
+        <QuickFacts facts={content.quickFacts} quoteButtonPageName={`${content.name} (Quick Facts)`} />
 
         <ItineraryTimeline
           eyebrow="Day By Day"
@@ -68,7 +67,6 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
           intro={content.overview}
           days={content.itinerary}
           topDivider
-          actionSlot={<GetQuoteButton pageName={content.name} />}
         />
 
         <InclusionsExclusions

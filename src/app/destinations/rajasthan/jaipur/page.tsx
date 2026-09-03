@@ -8,7 +8,6 @@ import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
@@ -114,20 +113,15 @@ export default function JaipurPage() {
           whatsappMessage="Hi! I'd like to plan a Jaipur trip with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={jaipurQuickFacts} />
+        <QuickFacts facts={jaipurQuickFacts} quoteButtonPageName="Jaipur" />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro
+              <SectionIntro
                   eyebrow="Overview"
                   heading="Rajasthan's Capital, and Its Most Iconic City"
                 />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName="Jaipur" />
-                </div>
-              </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Jaipur is where most Rajasthan itineraries begin, and for good reason — within

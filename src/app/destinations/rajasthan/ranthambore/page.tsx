@@ -7,7 +7,6 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -113,20 +112,15 @@ export default function RanthamborePage() {
           whatsappMessage="Hi! I'd like to plan a Ranthambore safari with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={ranthamboreQuickFacts} />
+        <QuickFacts facts={ranthamboreQuickFacts} quoteButtonPageName="Ranthambore" />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro
+              <SectionIntro
                 eyebrow="Overview"
                 heading="A Royal Hunting Ground, Now a Tiger Sanctuary"
               />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName="Ranthambore" />
-                </div>
-              </div>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Ranthambore was once the private hunting ground of the Maharajas of Jaipur —

@@ -7,7 +7,6 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -97,17 +96,12 @@ export default function GujaratBeachesPage() {
           whatsappMessage="Hi! I'd like to plan a trip to Gujarat Beaches with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={gujaratBeachesQuickFacts} />
+        <QuickFacts facts={gujaratBeachesQuickFacts} quoteButtonPageName="Gujarat Beaches" />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro eyebrow="Overview" heading="Gujarat Beaches — Quiet Coastline, Real History" />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName="Gujarat Beaches" />
-                </div>
-              </div>
+              <SectionIntro eyebrow="Overview" heading="Gujarat Beaches — Quiet Coastline, Real History" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>Gujarat&apos;s coastline sees a fraction of the visitors that Goa or Kerala do, which is exactly what makes it worth knowing about. Diu, a former Portuguese colony until 1961, still carries that architectural legacy — colonial-era churches and forts sit alongside quiet beaches, with none of the crowds of India&apos;s better-known coastal towns.</p>
                 <p>Further along the coast, Somnath is home to one of the twelve Jyotirlinga shrines dedicated to Shiva — a temple with a long, dramatic history of destruction and rebuilding, standing directly on the shore of the Arabian Sea.</p>

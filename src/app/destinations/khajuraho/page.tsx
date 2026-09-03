@@ -7,7 +7,6 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -97,17 +96,12 @@ export default function KhajurahoPage() {
           whatsappMessage="Hi! I'd like to plan a trip to Khajuraho with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={khajurahoQuickFacts} />
+        <QuickFacts facts={khajurahoQuickFacts} quoteButtonPageName="Khajuraho" />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro eyebrow="Overview" heading="Central India's Sculpted Masterpiece" />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName="Khajuraho" />
-                </div>
-              </div>
+              <SectionIntro eyebrow="Overview" heading="Central India's Sculpted Masterpiece" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Khajuraho sits in the heart of Madhya Pradesh, and its temple complex — built

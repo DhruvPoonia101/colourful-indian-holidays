@@ -21,7 +21,7 @@ export function ArticleUL({ children }: { children: React.ReactNode }) {
 export function ArticleBody({ children }: { children: React.ReactNode }) {
   return (
     <section className="py-14 sm:py-20">
-      <div className="mx-auto max-w-3xl px-6 sm:px-8">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>{children}</Reveal>
       </div>
     </section>

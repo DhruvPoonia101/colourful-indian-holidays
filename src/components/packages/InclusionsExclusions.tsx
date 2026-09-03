@@ -17,7 +17,7 @@ export function InclusionsExclusions({
 }) {
   return (
     <section className={`py-10 sm:py-14 ${topDivider ? "border-t border-sand/70" : ""}`}>
-      <div className="mx-auto max-w-5xl px-6 sm:px-8">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
           <SectionIntro eyebrow={eyebrow} heading={heading} />
         </Reveal>

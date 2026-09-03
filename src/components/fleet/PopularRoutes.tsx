@@ -14,7 +14,7 @@ const POPULAR_ROUTES = [
 export function PopularRoutes() {
   return (
     <section className="py-6 sm:py-8">
-      <div className="mx-auto max-w-3xl px-6 sm:px-8">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
           <div className="rounded-3xl bg-white p-6 shadow-sm sm:p-7">
             <h3 className="font-display text-xl font-semibold text-ink">Popular Routes</h3>

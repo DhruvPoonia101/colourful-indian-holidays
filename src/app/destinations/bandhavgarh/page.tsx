@@ -7,7 +7,6 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -97,17 +96,12 @@ export default function BandhavgarhPage() {
           whatsappMessage="Hi! I'd like to plan a trip to Bandhavgarh with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={bandhavgarhQuickFacts} />
+        <QuickFacts facts={bandhavgarhQuickFacts} quoteButtonPageName="Bandhavgarh" />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro eyebrow="Overview" heading="Bandhavgarh — India's Highest Tiger Density" />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName="Bandhavgarh" />
-                </div>
-              </div>
+              <SectionIntro eyebrow="Overview" heading="Bandhavgarh — India's Highest Tiger Density" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>Bandhavgarh has the highest density of tigers of any national park in India, which translates directly into some of the best sighting odds anywhere in the country. The park is built around an ancient hilltop fort, with ruins and statues dating back centuries scattered through the core zone.</p>
                 <p>Bandhavgarh also holds a specific place in tiger history — it&apos;s where the first white tiger was discovered in the wild in 1951, an animal that went on to found the white tiger bloodline seen in zoos worldwide today. Most travellers combine it with Khajuraho, a short flight or drive away.</p>

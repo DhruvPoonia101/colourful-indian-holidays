@@ -7,7 +7,6 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -97,17 +96,12 @@ export default function AndamanIslandsPage() {
           whatsappMessage="Hi! I'd like to plan a trip to Andaman Islands with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={andamanIslandsQuickFacts} />
+        <QuickFacts facts={andamanIslandsQuickFacts} quoteButtonPageName="Andaman Islands" />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro eyebrow="Overview" heading="Andaman Islands — India's Tropical Frontier" />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName="Andaman Islands" />
-                </div>
-              </div>
+              <SectionIntro eyebrow="Overview" heading="Andaman Islands — India's Tropical Frontier" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>The Andaman Islands sit far out in the Bay of Bengal, closer to Myanmar and Thailand than to mainland India — and it shows, in turquoise water, coral reefs, and beaches that feel genuinely unlike anywhere else in the country. Radhanagar Beach on Havelock Island has repeatedly been rated among the best beaches in Asia.</p>
                 <p>Port Blair, the main gateway, is also home to Cellular Jail, a former British colonial prison and a significant site in India&apos;s independence movement — worth building into an itinerary alongside the islands&apos; natural beauty for a fuller picture of the Andamans.</p>

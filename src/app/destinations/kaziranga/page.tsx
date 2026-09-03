@@ -7,7 +7,6 @@ import { GettingThere } from "@/components/destinations/GettingThere";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -97,17 +96,12 @@ export default function KazirangaPage() {
           whatsappMessage="Hi! I'd like to plan a trip to Kaziranga with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={kazirangaQuickFacts} />
+        <QuickFacts facts={kazirangaQuickFacts} quoteButtonPageName="Kaziranga" />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro eyebrow="Overview" heading="Kaziranga — Home to the Great One-Horned Rhino" />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName="Kaziranga" />
-                </div>
-              </div>
+              <SectionIntro eyebrow="Overview" heading="Kaziranga — Home to the Great One-Horned Rhino" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>Kaziranga National Park, in the northeastern state of Assam, is genuinely unlike any other wildlife destination in India — a UNESCO World Heritage Site built around the Brahmaputra River&apos;s floodplain, and home to roughly two-thirds of the world&apos;s entire population of the great one-horned rhinoceros.</p>
                 <p>The park&apos;s safaris come in two distinct forms — jeep safaris covering more ground, and elephant-back safaris that move quietly enough through the tall grassland to get remarkably close to rhinos grazing in the open. Kaziranga is also a tiger reserve, though the rhino is unquestionably the park&apos;s signature sight.</p>

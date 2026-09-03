@@ -24,7 +24,7 @@ export function ItineraryTimeline({
 }) {
   return (
     <section className={`py-10 sm:py-14 ${topDivider ? "border-t border-sand/70" : ""}`}>
-      <div className="mx-auto max-w-4xl px-6 sm:px-8">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <SectionIntro eyebrow={eyebrow} heading={heading} />

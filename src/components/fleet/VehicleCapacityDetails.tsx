@@ -17,7 +17,7 @@ export function VehicleCapacityDetails({
 }) {
   return (
     <section className="py-6 sm:py-8">
-      <div className="mx-auto max-w-3xl px-6 sm:px-8">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
           <div className="flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-2 rounded-full bg-cream px-4 py-2 text-xs font-semibold uppercase tracking-wide text-gold-dark sm:text-sm">

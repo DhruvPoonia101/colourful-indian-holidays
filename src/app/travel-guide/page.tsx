@@ -64,7 +64,7 @@ export default function TravelGuidePage() {
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 text-center sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 text-center sm:px-8">
             <Reveal>
               <p className="text-base leading-relaxed text-ink-soft">
                 Planning a first trip to India, Nepal or Bhutan raises questions no brochure

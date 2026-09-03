@@ -5,7 +5,6 @@ import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
-import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { VehicleCapacityDetails } from "@/components/fleet/VehicleCapacityDetails";
 import { PopularRoutes } from "@/components/fleet/PopularRoutes";
 import { Reveal } from "@/components/ui/Reveal";
@@ -40,22 +39,21 @@ export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
           eyebrow={content.tagline}
           headline={content.heroHeadline}
           subheadline={content.heroSubheadline}
-          primaryHref="/contact"
           primaryLabel="Plan My Journey"
+          primaryQuoteButtonPageName={`${content.name} (Hero)`}
           whatsappMessage={`Hi! I'd like to book a ${content.name} for my trip with Colourful Indian Holidays.`}
         />
 
-        <QuickFacts facts={content.quickFacts} />
+        <QuickFacts
+          facts={content.quickFacts}
+          quoteButtonPageName={content.name}
+          quoteButtonVariant="carRental"
+        />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                <SectionIntro eyebrow="Overview" heading={`About the ${content.name}`} />
-                <div className="shrink-0">
-                  <GetQuoteButton pageName={content.name} variant="carRental" />
-                </div>
-              </div>
+              <SectionIntro eyebrow="Overview" heading={`About the ${content.name}`} />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 {content.overview.map((paragraph) => (
                   <p key={paragraph.slice(0, 40)}>{paragraph}</p>
