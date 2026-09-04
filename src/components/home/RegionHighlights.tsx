@@ -45,12 +45,12 @@ export function RegionHighlights() {
                       View Tour
                     </Link>
                     <a
-                      href={whatsappUrl(`Hi! I'd like to book a trip to ${region.name}.`)}
+                      href={whatsappUrl(`Hi! I'd like to enquire about a trip to ${region.name}.`)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 rounded-full bg-gold px-3 py-2 text-center text-xs font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark sm:text-sm"
                     >
-                      Book Now
+                      Enquire Now
                     </a>
                   </div>
                 </div>

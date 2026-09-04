@@ -15,6 +15,7 @@ type LeadPayload = {
   destination?: string;
   travelDate?: string;
   days?: string;
+  travellers?: string;
   email?: string;
   companyWebsite?: string;
   formLoadedAt?: number;
@@ -30,7 +31,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { destination, travelDate, days, email, companyWebsite, formLoadedAt, turnstileToken } = body;
+  const { destination, travelDate, days, travellers, email, companyWebsite, formLoadedAt, turnstileToken } = body;
 
   if (isHoneypotFilled(companyWebsite) || isSubmittedTooFast(formLoadedAt)) {
     return NextResponse.json({ ok: true });
@@ -52,7 +53,7 @@ export async function POST(request: Request) {
     );
   }
 
-  if (!destination || !travelDate || !days || !email || !EMAIL_REGEX.test(email)) {
+  if (!destination || !travelDate || !days || !travellers || !email || !EMAIL_REGEX.test(email)) {
     return NextResponse.json({ error: "Please fill in every field with a valid email." }, { status: 400 });
   }
 
@@ -78,6 +79,7 @@ export async function POST(request: Request) {
         <p><strong>Destination:</strong> ${destination}</p>
         <p><strong>Travel Date:</strong> ${travelDate}</p>
         <p><strong>Trip Length:</strong> ${days}</p>
+        <p><strong>No of Persons:</strong> ${travellers}</p>
         <p><strong>Traveller Email:</strong> ${email}</p>
         <p style="margin-top:16px;color:#888;font-size:12px;">Submitted from the homepage hero trip planner.</p>
       `,

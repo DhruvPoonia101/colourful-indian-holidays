@@ -25,7 +25,7 @@ export function CityGrid({
   heading: string;
   cities: CityCard[];
   topDivider?: boolean;
-  /** Adds "View Tour" / "Book Now" buttons below each card — for bookable
+  /** Adds "View Tour" / "Enquire Now" buttons below each card — for bookable
    * tour/experience/package listings. Leave false for attraction lists,
    * related-destination links, and other non-bookable grids. */
   showActions?: boolean;
@@ -104,12 +104,12 @@ export function CityGrid({
                         View Tour
                       </Link>
                       <a
-                        href={whatsappUrl(`Hi! I'd like to book the ${city.name}.`)}
+                        href={whatsappUrl(`Hi! I'd like to enquire about the ${city.name}.`)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 rounded-full bg-gold px-4 py-2.5 text-center text-sm font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark"
                       >
-                        Book Now
+                        Enquire Now
                       </a>
                     </div>
                   </div>

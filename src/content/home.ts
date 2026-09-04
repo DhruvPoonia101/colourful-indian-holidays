@@ -27,9 +27,16 @@ export const heroCopy = {
   eyebrow: "India, Nepal & Bhutan — Curated for the World",
   headline: "Private Journeys Across India, Nepal & Bhutan",
   subheadline:
-    "Private, tailor-made tours for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2008.",
+    "Private, tailor-made tours for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2007.",
   ctaLabel: "Plan My Journey",
 };
+
+export const heroFeatureBadges = [
+  { icon: "shield", label: "Trusted by Travellers Worldwide" },
+  { icon: "users", label: "Private Tours" },
+  { icon: "chat", label: "English-Speaking Drivers" },
+  { icon: "home", label: "Heritage Hotels" },
+] as const;
 
 export const trustStats = [
   { icon: "users", value: "7900+", label: "Happy Travellers" },

@@ -86,12 +86,12 @@ export const maharashtraBeachesRelatedDestinations: CityCard[] = [
     imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   },
   {
-    name: "Delhi",
-    tagline: "India's Capital",
-    description: "The most common international gateway before continuing on.",
-    href: "/destinations/delhi",
-    image: "/images/destinations/delhi-india-gate.webp",
-    imageAlt: "India Gate at dusk, Delhi",
+    name: "Maharashtra",
+    tagline: "Beyond Mumbai",
+    description: "The state's inland side — Ajanta and Ellora Caves, Pune and Shirdi.",
+    href: "/destinations/maharashtra",
+    image: "/images/destinations/maharashtra-ajanta-caves.webp",
+    imageAlt: "A rock-cut stupa hall inside the Ajanta Caves, Maharashtra",
   },
   {
     name: "Agra",

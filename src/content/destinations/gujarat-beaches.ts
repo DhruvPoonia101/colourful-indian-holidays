@@ -86,12 +86,12 @@ export const gujaratBeachesRelatedDestinations: CityCard[] = [
     imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   },
   {
-    name: "Delhi",
-    tagline: "India's Capital",
-    description: "The most common international gateway before continuing on.",
-    href: "/destinations/delhi",
-    image: "/images/destinations/delhi-india-gate.webp",
-    imageAlt: "India Gate at dusk, Delhi",
+    name: "Gujarat",
+    tagline: "Desert, Lions & a UNESCO City",
+    description: "The state's inland side — the Rann of Kutch, Ahmedabad and Gir National Park.",
+    href: "/destinations/gujarat",
+    image: "/images/destinations/kutch-mahotsav.webp",
+    imageAlt: "The Rann Utsav tent city at the White Rann of Kutch",
   },
   {
     name: "Agra",

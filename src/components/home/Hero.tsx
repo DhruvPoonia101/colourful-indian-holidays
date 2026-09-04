@@ -3,8 +3,16 @@
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { FiShield, FiUsers, FiMessageCircle, FiHome } from "react-icons/fi";
 import { SectionEyebrow } from "@/components/destinations/SectionEyebrow";
-import { heroCopy, heroSlides } from "@/content/home";
+import { heroCopy, heroFeatureBadges, heroSlides } from "@/content/home";
+
+const BADGE_ICONS = {
+  shield: FiShield,
+  users: FiUsers,
+  chat: FiMessageCircle,
+  home: FiHome,
+} as const;
 
 const ROTATE_MS = 3000;
 const CROSSFADE_EASE = [0.32, 0, 0.67, 0] as const;
@@ -108,6 +116,28 @@ export function Hero() {
         >
           {heroCopy.subheadline}
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.55 }}
+          className="mt-8 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4"
+        >
+          {heroFeatureBadges.map((badge) => {
+            const Icon = BADGE_ICONS[badge.icon];
+            return (
+              <div
+                key={badge.label}
+                className="rounded-2xl border border-ivory/15 bg-ivory/10 p-4 backdrop-blur-md"
+              >
+                <Icon aria-hidden="true" className="h-5 w-5 text-gold-light" />
+                <p className="mt-2.5 text-sm font-medium leading-snug text-ivory">
+                  {badge.label}
+                </p>
+              </div>
+            );
+          })}
+        </motion.div>
 
         <div className="mt-8 flex items-center gap-3">
           {heroSlides.map((slide, index) => (

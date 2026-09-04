@@ -237,52 +237,51 @@ export const moreIndiaDestinations: CityCard[] = [
     image: "/images/destinations/khajuraho-kandariya-mahadeva.webp",
     imageAlt: "Kandariya Mahadeva Temple at sunset, Khajuraho",
   },
+  {
+    name: "Gujarat",
+    tagline: "Desert, Lions & a UNESCO City",
+    description: "The Rann of Kutch, Ahmedabad's old city, and the lions of Gir National Park.",
+    href: "/destinations/gujarat",
+    image: "/images/destinations/kutch-mahotsav.webp",
+    imageAlt: "The Rann Utsav tent city at the White Rann of Kutch",
+  },
+  {
+    name: "Maharashtra",
+    tagline: "Beyond Mumbai",
+    description: "The UNESCO-listed Ajanta and Ellora Caves, Pune and the pilgrimage town of Shirdi.",
+    href: "/destinations/maharashtra",
+    image: "/images/destinations/maharashtra-ajanta-caves.webp",
+    imageAlt: "A rock-cut stupa hall inside the Ajanta Caves, Maharashtra",
+  },
+  {
+    name: "Sikkim",
+    tagline: "The Himalayas, Made Easy",
+    description: "Gangtok's Kanchenjunga views and a glacial lake at 12,000 feet.",
+    href: "/destinations/sikkim",
+    image: "/images/destinations/sikkim-tathagata-tsal.webp",
+    imageAlt: "The seated Buddha statue at Tathagata Tsal, Ravangla, Sikkim",
+  },
+  {
+    name: "Kolkata",
+    tagline: "India's Cultural Capital",
+    description: "West Bengal's colonial-era capital.",
+    href: "/destinations/kolkata",
+    image: "/images/destinations/kolkata-howrah-bridge.webp",
+    imageAlt: "Howrah Bridge lit up at night, Kolkata",
+  },
+  {
+    name: "Odisha",
+    tagline: "Temples in Stone",
+    description: "Puri's Jagannath Temple and the Sun Temple at Konark.",
+    href: "/destinations/odisha",
+    image: "/images/destinations/odisha-konark-sun-temple.webp",
+    imageAlt: "The Konark Sun Temple's chariot wheels, Odisha",
+  },
 ] as const;
 
 const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
 
-export const comingSoonIndiaDestinations: CityCard[] = [
-  {
-    name: "Gujarat",
-    tagline: "Coming Soon",
-    description: "Ahmedabad's heritage, the Rann of Kutch, and the lions of Gir.",
-    href: "/destinations/gujarat",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Gujarat",
-  },
-  {
-    name: "Maharashtra",
-    tagline: "Coming Soon",
-    description: "Beyond Mumbai — the mainland heart of Maharashtra state.",
-    href: "/destinations/maharashtra",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Maharashtra",
-  },
-  {
-    name: "Sikkim",
-    tagline: "Coming Soon",
-    description: "A small Himalayan state framed by Kanchenjunga.",
-    href: "/destinations/sikkim",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Sikkim",
-  },
-  {
-    name: "Kolkata",
-    tagline: "Coming Soon",
-    description: "West Bengal's colonial-era capital.",
-    href: "/destinations/kolkata",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Kolkata",
-  },
-  {
-    name: "Odisha",
-    tagline: "Coming Soon",
-    description: "Puri's Jagannath Temple and the Sun Temple at Konark.",
-    href: "/destinations/odisha",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Odisha",
-  },
-] as const;
+export const comingSoonIndiaDestinations: CityCard[] = [] as const;
 
 export const nepalDestinations: CityCard[] = [
   {

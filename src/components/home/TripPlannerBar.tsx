@@ -7,6 +7,7 @@ import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
 
 const DAYS_OPTIONS = ["3–5 Days", "6–9 Days", "10–14 Days", "15+ Days", "Not Sure Yet"];
+const TRAVELLERS_OPTIONS = ["1 Traveller", "2 Travellers", "3–4 Travellers", "5+ Travellers"];
 
 const todayISO = new Date().toISOString().split("T")[0];
 const twoYearsOutISO = new Date(new Date().setFullYear(new Date().getFullYear() + 2))
@@ -14,7 +15,7 @@ const twoYearsOutISO = new Date(new Date().setFullYear(new Date().getFullYear() 
   .split("T")[0];
 
 const fieldWrapClass =
-  "relative flex-1 rounded-full border border-ink-soft/10 bg-white/70 px-6 py-3.5 sm:px-7 sm:py-4";
+  "relative flex-1 rounded-full border border-ink-soft/10 bg-white/70 px-4 py-3.5 sm:px-5 sm:py-4 xl:px-7";
 
 const selectClass =
   "w-full appearance-none bg-transparent pr-6 text-base text-ink focus:outline-none disabled:text-ink-soft/60";
@@ -28,6 +29,7 @@ export function TripPlannerBar() {
   const [destination, setDestination] = useState("");
   const [travelDate, setTravelDate] = useState("");
   const [days, setDays] = useState("");
+  const [travellers, setTravellers] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -54,6 +56,7 @@ export function TripPlannerBar() {
           destination,
           travelDate,
           days,
+          travellers,
           email,
           companyWebsite: honeypot,
           formLoadedAt,
@@ -71,6 +74,7 @@ export function TripPlannerBar() {
       setDestination("");
       setTravelDate("");
       setDays("");
+      setTravellers("");
       setEmail("");
       setTurnstileToken("");
     } catch (err) {
@@ -80,10 +84,10 @@ export function TripPlannerBar() {
   };
 
   return (
-    <div className="relative z-20 mx-auto -mt-10 w-full max-w-7xl px-4 sm:-mt-14 sm:px-8">
+    <div className="relative z-20 mx-auto -mt-10 w-full max-w-[94rem] px-4 sm:-mt-14 sm:px-8">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 rounded-3xl border border-white/40 bg-white/60 p-5 shadow-xl backdrop-blur-xl sm:flex-row sm:items-center sm:gap-5 sm:p-6"
+        className="flex flex-col gap-4 rounded-3xl border border-white/40 bg-white/60 p-5 shadow-xl backdrop-blur-xl sm:flex-row sm:items-center sm:gap-3 sm:p-6 lg:gap-5"
       >
         <HoneypotField value={honeypot} onChange={setHoneypot} />
         <div className={`${fieldWrapClass} sm:flex-[1.5]`}>
@@ -161,6 +165,32 @@ export function TripPlannerBar() {
         </div>
 
         <div className={fieldWrapClass}>
+          <label htmlFor="tp-travellers" className="sr-only">
+            Number of persons
+          </label>
+          <select
+            id="tp-travellers"
+            required
+            value={travellers}
+            onChange={(event) => setTravellers(event.target.value)}
+            className={selectClass}
+          >
+            <option value="" disabled>
+              No of Persons
+            </option>
+            {TRAVELLERS_OPTIONS.map((label) => (
+              <option key={label} value={label}>
+                {label}
+              </option>
+            ))}
+          </select>
+          <FiChevronDown
+            aria-hidden="true"
+            className="pointer-events-none absolute right-6 top-1/2 h-5 w-5 -translate-y-1/2 text-ink-soft/70 sm:right-7"
+          />
+        </div>
+
+        <div className={fieldWrapClass}>
           <label htmlFor="tp-email" className="sr-only">
             Your email ID
           </label>
@@ -178,7 +208,7 @@ export function TripPlannerBar() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="min-h-12 shrink-0 rounded-full bg-gold px-8 py-4 text-base font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100"
+          className="min-h-12 shrink-0 rounded-full bg-gold px-6 py-4 text-base font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.03] hover:bg-gold-dark disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100 lg:px-8"
         >
           {status === "submitting" ? "Sending…" : "Plan My Journey"}
         </button>
