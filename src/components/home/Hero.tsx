@@ -112,7 +112,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-6 max-w-xl text-base leading-relaxed text-ivory/85 sm:text-lg"
+          className="mt-5 max-w-xl text-base leading-relaxed text-ivory/85 sm:text-lg"
         >
           {heroCopy.subheadline}
         </motion.p>
@@ -121,17 +121,17 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.55 }}
-          className="mt-8 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4"
+          className="mt-5 grid max-w-2xl grid-cols-2 gap-2.5 sm:grid-cols-4"
         >
           {heroFeatureBadges.map((badge) => {
             const Icon = BADGE_ICONS[badge.icon];
             return (
               <div
                 key={badge.label}
-                className="rounded-2xl border border-ivory/15 bg-ivory/10 p-4 backdrop-blur-md"
+                className="rounded-2xl border border-ivory/15 bg-ivory/10 p-3 backdrop-blur-md"
               >
                 <Icon aria-hidden="true" className="h-5 w-5 text-gold-light" />
-                <p className="mt-2.5 text-sm font-medium leading-snug text-ivory">
+                <p className="mt-2 text-sm font-medium leading-snug text-ivory">
                   {badge.label}
                 </p>
               </div>
@@ -139,7 +139,7 @@ export function Hero() {
           })}
         </motion.div>
 
-        <div className="mt-8 flex items-center gap-3">
+        <div className="mt-5 flex items-center gap-3">
           {heroSlides.map((slide, index) => (
             <button
               key={slide.src}
