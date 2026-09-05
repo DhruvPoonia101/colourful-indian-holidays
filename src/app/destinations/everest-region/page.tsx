@@ -11,13 +11,13 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  lumbiniAttractions,
-  lumbiniQuickFacts,
-  lumbiniGettingThere,
-  lumbiniHighlights,
-  lumbiniRelatedDestinations,
-  lumbiniFaqs,
-} from "@/content/destinations/lumbini";
+  everestRegionAttractions,
+  everestRegionQuickFacts,
+  everestRegionGettingThere,
+  everestRegionHighlights,
+  everestRegionRelatedDestinations,
+  everestRegionFaqs,
+} from "@/content/destinations/everest-region";
 import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
@@ -25,11 +25,11 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Lumbini | The Birthplace of the Buddha";
+const title = "Everest Region | Mountain Flights & the Everest Base Camp Trek";
 const description =
-  "Plan a trip to Lumbini — the Maya Devi Temple, the Ashoka Pillar and an international monastic zone at the birthplace of the Buddha, a UNESCO World Heritage Site in Nepal.";
-const pagePath = "/destinations/lumbini";
-const heroImage = "/images/destinations/lumbini-world-peace-pagoda.webp";
+  "See Everest with or without trekking — a scenic mountain flight from Kathmandu, or the classic Everest Base Camp trek through Sherpa villages in Nepal's Khumbu region.";
+const pagePath = "/destinations/everest-region";
+const heroImage = "/images/destinations/urs-festival-ajmer.webp";
 
 export const metadata: Metadata = {
   title,
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
-  { name: "Lumbini", path: pagePath },
+  { name: "Everest Region", path: pagePath },
 ];
 
-export default function LumbiniPage() {
+export default function EverestRegionPage() {
   return (
     <>
       <script
@@ -61,20 +61,20 @@ export default function LumbiniPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(lumbiniFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(everestRegionFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Lumbini",
+              name: "Everest Region",
               description,
               path: pagePath,
               image: heroImage,
-              latitude: 27.4833,
-              longitude: 83.2767,
-              containsPlaces: lumbiniAttractions.map((attraction) => ({
+              latitude: 27.9881,
+              longitude: 86.925,
+              containsPlaces: everestRegionAttractions.map((attraction) => ({
                 name: attraction.name,
                 path: attraction.href,
               })),
@@ -86,44 +86,44 @@ export default function LumbiniPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="The white World Peace Pagoda reflected in the lotus pond at Lumbini"
+          imageAlt="Photo coming soon — Everest Region"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Lumbini — The Birthplace of the Buddha"
-          subheadline="A UNESCO World Heritage site holding the exact spot of the Buddha's birth, ringed by monasteries built by Buddhist nations from across the world."
+          headline="Everest Region — See the World's Highest Peak"
+          subheadline="A scenic flight for a morning, or a classic trek for two weeks — two very different ways to see Everest, both starting in Kathmandu."
           primaryHref="/packages"
           primaryLabel="View Tour Packages"
-          whatsappMessage="Hi! I'd like to plan a trip to Lumbini with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to the Everest Region with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={lumbiniQuickFacts} quoteButtonPageName="Lumbini" />
+        <QuickFacts facts={everestRegionQuickFacts} quoteButtonPageName="Everest Region" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="The Birthplace of the Buddha" />
+              <SectionIntro eyebrow="Overview" heading="See the World's Highest Peak" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Lumbini holds a claim few other places on Earth can make: this is, by
-                  archaeological and historical consensus, the exact site where Siddhartha
-                  Gautama — who would become the Buddha — was born, around the 6th century BCE. At
-                  the centre of the site stands the Maya Devi Temple, built directly over the
-                  marker stone believed to mark the precise spot, alongside the Ashoka Pillar, a
-                  sandstone column erected in 249 BCE by the Indian emperor Ashoka whose
-                  inscription is the earliest surviving historical confirmation that this is
-                  indeed Lumbini. Nearby, the quiet Pushkarini Pond and Sacred Garden mark the spot
-                  where tradition holds that Buddha&apos;s mother bathed before giving birth.
+                  The Everest region — known locally as the Khumbu — is home to the highest point
+                  on Earth, and there are two genuinely different ways to experience it. Most of
+                  our clients choose the Everest mountain flight: a roughly one-hour scenic flight
+                  from Kathmandu that loops within view of Everest and its neighbouring peaks
+                  before returning the same morning, with no trekking, permits or particular
+                  fitness required. For travellers with the time and fitness for something more
+                  serious, the Everest Base Camp trek is the best-known trekking route in the
+                  world — a 12 to 14 day round trip from Lukla, climbing steadily through Sherpa
+                  villages to the foot of the mountain itself.
                 </p>
                 <p>
-                  What makes Lumbini unusual as a heritage site is the Monastic Zone that surrounds
-                  the sacred core — a planned complex where Buddhist nations including Myanmar,
-                  Thailand, Japan, China, Vietnam and Cambodia have each built a monastery in their
-                  own national architectural style, alongside a gleaming white World Peace Pagoda
-                  built by Japanese Buddhists. It&apos;s possible to walk between strikingly different
-                  temple traditions in a single afternoon, something almost no other pilgrimage
-                  site in the world allows. Sitting close to the Nepal–India border, Lumbini pairs
-                  naturally with Sarnath, Bodh Gaya and Kushinagar on a wider Buddhist heritage
-                  circuit, or as a quieter, more contemplative stop on a broader Nepal itinerary.
+                  Along the trek, Namche Bazaar serves as the region&apos;s main hub, a terraced
+                  market town built into a natural amphitheatre where trekkers pause to
+                  acclimatise, while Tengboche Monastery — the largest in the Khumbu — offers one
+                  of the route&apos;s most photographed views, framed against Everest and Ama
+                  Dablam. Most trekkers turn back at Kala Patthar, a viewpoint above base camp that
+                  actually offers a better look at Everest&apos;s summit than base camp itself.
+                  Whether by flight or on foot, this entire region sits within Sagarmatha National
+                  Park, a UNESCO World Heritage Site, and is inseparable from the Sherpa culture
+                  and mountaineering history that define it.
                 </p>
               </div>
             </Reveal>
@@ -133,20 +133,20 @@ export default function LumbiniPage() {
         <CityGrid
           eyebrow="Top Attractions"
           heading="What to See"
-          cities={lumbiniAttractions}
+          cities={everestRegionAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
           heading="Getting There"
-          items={lumbiniGettingThere}
+          items={everestRegionGettingThere}
         />
 
         <HighlightsStrip
           eyebrow="Why Visit"
           heading="What Makes This Different"
-          highlights={lumbiniHighlights}
+          highlights={everestRegionHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -154,14 +154,14 @@ export default function LumbiniPage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Best Time to Visit"
-                heading="October–March is Best"
+                heading="October–November & March–May are Best"
                 align="center"
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                The cooler months make walking between the sacred site and the Monastic Zone far
-                more comfortable, since Lumbini sits in the Terai lowlands, which get intensely hot
-                and humid from April through the summer monsoon.
+                These windows give the clearest mountain views and the most stable flying
+                conditions, for both the scenic flight and the trek. The summer monsoon
+                (June–September) brings poor visibility and a higher risk of flight delays.
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -176,7 +176,7 @@ export default function LumbiniPage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={lumbiniRelatedDestinations}
+          cities={everestRegionRelatedDestinations}
           topDivider
           showActions
         />
@@ -193,20 +193,20 @@ export default function LumbiniPage() {
           eyebrow="FAQ"
           heading="Common Questions"
           intro="Everything international travellers ask before booking — answered honestly."
-          faqs={lumbiniFaqs}
-          whatsappMessage="Hi! I have a question before booking my trip to Lumbini with Colourful Indian Holidays."
+          faqs={everestRegionFaqs}
+          whatsappMessage="Hi! I have a question before booking my trip to the Everest Region with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Journey to Lumbini Awaits."
+          headline="Your Journey to Everest Awaits."
           headlineItalic="When Will You Go?"
           subtext="Tell us how many days you have and what you'd like to see — we'll reply with a tailored itinerary and quote, usually within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a trip to Lumbini with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to the Everest Region with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

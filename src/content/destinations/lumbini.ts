@@ -4,8 +4,6 @@ import type { QuickFact } from "@/components/destinations/QuickFacts";
 import type { GettingThereItem } from "@/components/destinations/GettingThere";
 import type { FaqItem } from "@/lib/seo/faq-schema";
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const lumbiniAttractions: CityCard[] = [
   {
     name: "Maya Devi Temple",
@@ -13,8 +11,8 @@ export const lumbiniAttractions: CityCard[] = [
     description:
       "The temple built directly over the marker stone believed to pinpoint the precise spot where Siddhartha Gautama, the future Buddha, was born.",
     href: "/destinations/lumbini",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Maya Devi Temple",
+    image: "/images/destinations/lumbini-maya-devi-temple.webp",
+    imageAlt: "The white Maya Devi Temple building rising above the excavated brick ruins at Lumbini",
   },
   {
     name: "Ashoka Pillar",
@@ -22,26 +20,8 @@ export const lumbiniAttractions: CityCard[] = [
     description:
       "A sandstone pillar erected in 249 BCE by the Indian emperor Ashoka, its inscription the earliest surviving historical confirmation of Lumbini as the Buddha's birthplace.",
     href: "/destinations/lumbini",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Ashoka Pillar",
-  },
-  {
-    name: "Sacred Garden & Pushkarini Pond",
-    tagline: "Where Maya Devi Bathed",
-    description:
-      "A quiet pond and surrounding garden where, according to tradition, Buddha's mother bathed before giving birth and the infant Buddha was given his first ritual bath.",
-    href: "/destinations/lumbini",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Sacred Garden and Pushkarini Pond",
-  },
-  {
-    name: "The Monastic Zone",
-    tagline: "A World of Buddhist Architecture",
-    description:
-      "A planned zone of monasteries built by Buddhist countries including Myanmar, Thailand, Japan, China, Vietnam and Cambodia, each in its own national architectural style.",
-    href: "/destinations/lumbini",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Lumbini Monastic Zone",
+    image: "/images/destinations/lumbini-ashoka-pillar.webp",
+    imageAlt: "The ancient Ashoka Pillar at Lumbini, decorated with prayer flags",
   },
   {
     name: "Lumbini World Peace Pagoda",
@@ -49,8 +29,8 @@ export const lumbiniAttractions: CityCard[] = [
     description:
       "A gleaming white stupa at the edge of the monastic zone, one of over 80 peace pagodas built worldwide by the Japanese Nipponzan-Myohoji order.",
     href: "/destinations/lumbini",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Lumbini World Peace Pagoda",
+    image: "/images/destinations/lumbini-world-peace-pagoda.webp",
+    imageAlt: "The white World Peace Pagoda reflected in the lotus pond at Lumbini",
   },
 ] as const;
 
@@ -138,7 +118,7 @@ export const lumbiniFaqs: FaqItem[] = [
   {
     question: "How many days should we plan for Lumbini?",
     answer:
-      "1 to 2 days is enough to see the Maya Devi Temple, the Ashoka Pillar, the Sacred Garden and a good portion of the Monastic Zone at an unhurried pace.",
+      "1 to 2 days is enough to see the Maya Devi Temple, the Ashoka Pillar and the World Peace Pagoda at an unhurried pace, with time to explore the wider monastic zone.",
   },
   {
     question: "Can Lumbini be combined with India's Buddhist circuit?",
