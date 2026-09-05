@@ -11,13 +11,13 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  kathmanduAttractions,
-  kathmanduQuickFacts,
-  kathmanduGettingThere,
-  kathmanduHighlights,
-  kathmanduRelatedDestinations,
-  kathmanduFaqs,
-} from "@/content/destinations/kathmandu";
+  nagarkotAttractions,
+  nagarkotQuickFacts,
+  nagarkotGettingThere,
+  nagarkotHighlights,
+  nagarkotRelatedDestinations,
+  nagarkotFaqs,
+} from "@/content/destinations/nagarkot";
 import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
@@ -25,11 +25,11 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Kathmandu | Nepal's Temple-Filled Capital";
+const title = "Nagarkot | Sunrise Views Over the Himalayas Near Kathmandu";
 const description =
-  "Plan a trip to Kathmandu — Durbar Square, Swayambhunath, Boudhanath and Pashupatinath — the easiest international add-on to an India itinerary, a short flight from Delhi.";
-const pagePath = "/destinations/kathmandu";
-const heroImage = "/images/destinations/kathmandu-aerial-boudhanath-city.webp";
+  "Plan a trip to Nagarkot — sunrise and sunset Himalayan panoramas, easy ridge hikes to Changu Narayan and Dhulikhel, less than two hours from Kathmandu.";
+const pagePath = "/destinations/nagarkot";
+const heroImage = "/images/destinations/nagarkot-clouds-valley-view.webp";
 
 export const metadata: Metadata = {
   title,
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
-  { name: "Kathmandu", path: pagePath },
+  { name: "Nagarkot", path: pagePath },
 ];
 
-export default function KathmanduPage() {
+export default function NagarkotPage() {
   return (
     <>
       <script
@@ -61,20 +61,20 @@ export default function KathmanduPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(kathmanduFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(nagarkotFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Kathmandu",
+              name: "Nagarkot",
               description,
               path: pagePath,
               image: heroImage,
               latitude: 27.7172,
-              longitude: 85.324,
-              containsPlaces: kathmanduAttractions.map((attraction) => ({
+              longitude: 85.5202,
+              containsPlaces: nagarkotAttractions.map((attraction) => ({
                 name: attraction.name,
                 path: attraction.href,
               })),
@@ -86,47 +86,41 @@ export default function KathmanduPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Aerial view of Kathmandu with Boudhanath Stupa and the city skyline"
+          imageAlt="Clouds rolling through the valley below a Nagarkot ridge viewpoint"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Kathmandu — Nepal's Temple-Filled Capital"
-          subheadline="Seven UNESCO sites in one small valley, and the easiest international add-on to an India itinerary — a short flight from Delhi."
+          headline="Nagarkot — Sunrise Views Over the Himalayas"
+          subheadline="The widest Himalayan panorama within easy reach of Kathmandu — an easy overnight stop for sunrise and sunset views, less than two hours from the capital."
           primaryHref="/packages"
           primaryLabel="View Tour Packages"
-          whatsappMessage="Hi! I'd like to plan a trip to Kathmandu with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to Nagarkot with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={kathmanduQuickFacts} quoteButtonPageName="Kathmandu" />
+        <QuickFacts facts={nagarkotQuickFacts} quoteButtonPageName="Nagarkot" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Nepal's Temple-Filled Capital" />
+              <SectionIntro eyebrow="Overview" heading="Sunrise Views Over the Himalayas" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Kathmandu sits in a wide Himalayan valley that has been continuously settled for
-                  over a thousand years, and the density of heritage packed into that small area
-                  is hard to overstate — the Kathmandu Valley alone holds seven UNESCO World
-                  Heritage Sites, from royal palace squares to hilltop stupas. Durbar Square, once
-                  the seat of Nepal&apos;s monarchy, was badly damaged in the devastating 2015
-                  earthquake and has since been painstakingly restored, its wood-carved temples
-                  and courtyards once again open to visitors. A short distance away, the whitewashed
-                  dome of Swayambhunath — nicknamed the Monkey Temple for its resident troops of
-                  macaques — looks out over the entire valley, its painted Buddha eyes visible from
-                  well below the hill.
+                  Nagarkot sits on the eastern rim of the Kathmandu Valley, a ridge-top town that
+                  exists almost entirely for its view. On a clear morning, the panorama stretches
+                  from the Langtang range in the north to a distant glimpse of Everest itself,
+                  making it the widest Himalayan outlook reachable within a couple of hours of the
+                  capital — no trek, permit or multi-day commitment required. Most visitors drive
+                  up in the afternoon, settle into a ridge-facing hotel, and split their time
+                  between a sunset and the following sunrise from the Nagarkot View Tower, the
+                  highest point along the ridge.
                 </p>
                 <p>
-                  What makes Kathmandu distinctive is how closely Hinduism and Buddhism sit side
-                  by side, sometimes sharing the very same courtyards. Boudhanath, one of the
-                  largest stupas in the world, anchors a Tibetan Buddhist community that settled
-                  here after 1959, its prayer-flag-strung base ringed by monasteries and pilgrims
-                  walking slow clockwise circuits. Pashupatinath, on the other hand, is one of
-                  Hinduism&apos;s holiest sites and remains an active cremation ground on the banks
-                  of the Bagmati River — a solemn, unfiltered look at ritual life that few other
-                  cities allow visitors to witness so directly. Most travellers base themselves in
-                  Thamel, the tangle of narrow lanes packed with trekking shops and guesthouses,
-                  and use Kathmandu as a short, easy add-on to a longer India trip rather than a
-                  standalone destination requiring its own long-haul flight.
+                  Beyond the viewpoint itself, Nagarkot is also the starting point for two
+                  well-established hiking routes: a gentle half-day descent through pine forest and
+                  terraced farmland to Changu Narayan, a UNESCO-listed temple regarded as Nepal&apos;s
+                  oldest Hindu shrine, and a longer full-day ridge walk to the neighbouring hill
+                  town of Dhulikhel. Neither requires trekking gear or prior experience, which
+                  makes Nagarkot an easy way to add a genuine hill-country change of pace to a
+                  Kathmandu-based itinerary without extending the trip by more than a single night.
                 </p>
               </div>
             </Reveal>
@@ -136,20 +130,20 @@ export default function KathmanduPage() {
         <CityGrid
           eyebrow="Top Attractions"
           heading="What to See"
-          cities={kathmanduAttractions}
+          cities={nagarkotAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
           heading="Getting There"
-          items={kathmanduGettingThere}
+          items={nagarkotGettingThere}
         />
 
         <HighlightsStrip
           eyebrow="Why Visit"
           heading="What Makes This Different"
-          highlights={kathmanduHighlights}
+          highlights={nagarkotHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -157,14 +151,13 @@ export default function KathmanduPage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Best Time to Visit"
-                heading="October–November & March–April are Best"
+                heading="October–December & March–April are Best"
                 align="center"
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                These two windows offer the clearest mountain views and the most comfortable
-                temperatures, avoiding the summer monsoon (June–September) and the coldest winter
-                weeks (December–January).
+                These windows give the clearest skies, with the post-monsoon months of October and
+                November generally offering the most reliable Himalayan visibility of the year.
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -179,7 +172,7 @@ export default function KathmanduPage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={kathmanduRelatedDestinations}
+          cities={nagarkotRelatedDestinations}
           topDivider
           showActions
         />
@@ -196,20 +189,20 @@ export default function KathmanduPage() {
           eyebrow="FAQ"
           heading="Common Questions"
           intro="Everything international travellers ask before booking — answered honestly."
-          faqs={kathmanduFaqs}
-          whatsappMessage="Hi! I have a question before booking my trip to Kathmandu with Colourful Indian Holidays."
+          faqs={nagarkotFaqs}
+          whatsappMessage="Hi! I have a question before booking my trip to Nagarkot with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Journey to Kathmandu Awaits."
+          headline="Your Journey to Nagarkot Awaits."
           headlineItalic="When Will You Go?"
           subtext="Tell us how many days you have and what you'd like to see — we'll reply with a tailored itinerary and quote, usually within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a trip to Kathmandu with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to Nagarkot with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

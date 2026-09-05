@@ -4,8 +4,6 @@ import type { QuickFact } from "@/components/destinations/QuickFacts";
 import type { GettingThereItem } from "@/components/destinations/GettingThere";
 import type { FaqItem } from "@/lib/seo/faq-schema";
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const kathmanduAttractions: CityCard[] = [
   {
     name: "Kathmandu Durbar Square",
@@ -13,8 +11,8 @@ export const kathmanduAttractions: CityCard[] = [
     description:
       "A cluster of palaces, courtyards and temples that were the seat of Nepal's former royalty, badly damaged in the 2015 earthquake and since carefully restored.",
     href: "/destinations/kathmandu",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Kathmandu Durbar Square",
+    image: "/images/destinations/kathmandu-durbar-square.webp",
+    imageAlt: "Kathmandu Durbar Square, with its pagoda-roofed temples and daily street life",
   },
   {
     name: "Swayambhunath",
@@ -22,8 +20,8 @@ export const kathmanduAttractions: CityCard[] = [
     description:
       "An ancient hilltop stupa overlooking the Kathmandu Valley, its painted Buddha eyes visible for miles and its resident monkeys giving the site its popular nickname.",
     href: "/destinations/kathmandu",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Swayambhunath Stupa",
+    image: "/images/destinations/kathmandu-swayambhunath-monkey-temple.webp",
+    imageAlt: "Swayambhunath Stupa's golden spire and painted Buddha eyes, strung with prayer flags",
   },
   {
     name: "Boudhanath Stupa",
@@ -31,8 +29,8 @@ export const kathmanduAttractions: CityCard[] = [
     description:
       "The spiritual centre of Kathmandu's Tibetan Buddhist community, ringed by monasteries, prayer flags and pilgrims completing kora walks around its base.",
     href: "/destinations/kathmandu",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Boudhanath Stupa",
+    image: "/images/destinations/kathmandu-boudhanath-stupa-sunset.webp",
+    imageAlt: "Boudhanath Stupa at sunset, prayer flags streaming from its spire",
   },
   {
     name: "Pashupatinath Temple",
@@ -40,17 +38,8 @@ export const kathmanduAttractions: CityCard[] = [
     description:
       "A sprawling temple complex on the Bagmati River, among the most important Shiva temples in the world and still an active site for Hindu cremation rites.",
     href: "/destinations/kathmandu",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Pashupatinath Temple",
-  },
-  {
-    name: "Thamel",
-    tagline: "Kathmandu's Traveller Quarter",
-    description:
-      "A dense tangle of narrow lanes packed with trekking outfitters, handicraft shops, rooftop restaurants and guesthouses — the natural base for most visitors.",
-    href: "/destinations/kathmandu",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Thamel neighbourhood",
+    image: "/images/destinations/kathmandu-pashupatinath-temple.webp",
+    imageAlt: "Pashupatinath Temple's golden pagoda roofs above the Bagmati River complex",
   },
 ] as const;
 
@@ -117,20 +106,20 @@ export const kathmanduRelatedDestinations: CityCard[] = [
     imageAlt: "India Gate at dusk, Delhi",
   },
   {
-    name: "Varanasi",
-    tagline: "Spiritual India",
-    description: "A natural pairing for travellers drawn to Kathmandu's temple culture.",
-    href: "/destinations/varanasi",
-    image: "/images/destinations/varanasi-evening-ganges-aarti.webp",
-    imageAlt: "Evening Ganga Aarti ceremony in Varanasi",
+    name: "Chitwan",
+    tagline: "Jungle Safaris & Rhinos",
+    description: "The wildlife counterpart to Kathmandu's temples — a short flight or drive away.",
+    href: "/destinations/chitwan",
+    image: "/images/destinations/chitwan-elephant-safari-forest.webp",
+    imageAlt: "Elephants and their mahouts on a forest safari trail in Chitwan",
   },
   {
-    name: "Darjeeling",
-    tagline: "Himalayan Hill Station",
-    description: "Shares Kathmandu's Himalayan backdrop and Buddhist monastery culture.",
-    href: "/destinations/darjeeling",
-    image: "/images/destinations/Darjeeling.webp",
-    imageAlt: "Darjeeling hillside town wrapped in cloud",
+    name: "Pokhara",
+    tagline: "Lakeside Himalayan Views",
+    description: "The natural next stop on a Nepal trip — a short flight from Kathmandu.",
+    href: "/destinations/pokhara",
+    image: "/images/destinations/pokhara-phewa-lake-annapurna-reflection.webp",
+    imageAlt: "Phewa Lake with the Annapurna range reflected in the still water",
   },
 ] as const;
 

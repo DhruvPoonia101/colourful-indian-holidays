@@ -11,13 +11,13 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  kathmanduAttractions,
-  kathmanduQuickFacts,
-  kathmanduGettingThere,
-  kathmanduHighlights,
-  kathmanduRelatedDestinations,
-  kathmanduFaqs,
-} from "@/content/destinations/kathmandu";
+  chitwanAttractions,
+  chitwanQuickFacts,
+  chitwanGettingThere,
+  chitwanHighlights,
+  chitwanRelatedDestinations,
+  chitwanFaqs,
+} from "@/content/destinations/chitwan";
 import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
@@ -25,11 +25,11 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Kathmandu | Nepal's Temple-Filled Capital";
+const title = "Chitwan National Park | Jungle Safaris & One-Horned Rhinos";
 const description =
-  "Plan a trip to Kathmandu — Durbar Square, Swayambhunath, Boudhanath and Pashupatinath — the easiest international add-on to an India itinerary, a short flight from Delhi.";
-const pagePath = "/destinations/kathmandu";
-const heroImage = "/images/destinations/kathmandu-aerial-boudhanath-city.webp";
+  "Plan a Chitwan safari — jeep and canoe safaris tracking one-horned rhinos and Bengal tigers, plus Tharu village culture, in Nepal's UNESCO-listed lowland jungle.";
+const pagePath = "/destinations/chitwan";
+const heroImage = "/images/destinations/chitwan-elephants-grassland.webp";
 
 export const metadata: Metadata = {
   title,
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
-  { name: "Kathmandu", path: pagePath },
+  { name: "Chitwan", path: pagePath },
 ];
 
-export default function KathmanduPage() {
+export default function ChitwanPage() {
   return (
     <>
       <script
@@ -61,20 +61,20 @@ export default function KathmanduPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(kathmanduFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(chitwanFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Kathmandu",
+              name: "Chitwan",
               description,
               path: pagePath,
               image: heroImage,
-              latitude: 27.7172,
-              longitude: 85.324,
-              containsPlaces: kathmanduAttractions.map((attraction) => ({
+              latitude: 27.5291,
+              longitude: 84.3542,
+              containsPlaces: chitwanAttractions.map((attraction) => ({
                 name: attraction.name,
                 path: attraction.href,
               })),
@@ -86,47 +86,45 @@ export default function KathmanduPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Aerial view of Kathmandu with Boudhanath Stupa and the city skyline"
+          imageAlt="Elephants and their mahouts crossing a stream in Chitwan's grassland"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Kathmandu — Nepal's Temple-Filled Capital"
-          subheadline="Seven UNESCO sites in one small valley, and the easiest international add-on to an India itinerary — a short flight from Delhi."
+          headline="Chitwan — Jungle Safaris & One-Horned Rhinos"
+          subheadline="Sal forest, riverside grassland, and one of the last strongholds of the greater one-horned rhinoceros — a complete change of pace from Nepal's mountains and temples."
           primaryHref="/packages"
           primaryLabel="View Tour Packages"
-          whatsappMessage="Hi! I'd like to plan a trip to Kathmandu with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to Chitwan with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={kathmanduQuickFacts} quoteButtonPageName="Kathmandu" />
+        <QuickFacts facts={chitwanQuickFacts} quoteButtonPageName="Chitwan" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Nepal's Temple-Filled Capital" />
+              <SectionIntro eyebrow="Overview" heading="Jungle Safaris & One-Horned Rhinos" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Kathmandu sits in a wide Himalayan valley that has been continuously settled for
-                  over a thousand years, and the density of heritage packed into that small area
-                  is hard to overstate — the Kathmandu Valley alone holds seven UNESCO World
-                  Heritage Sites, from royal palace squares to hilltop stupas. Durbar Square, once
-                  the seat of Nepal&apos;s monarchy, was badly damaged in the devastating 2015
-                  earthquake and has since been painstakingly restored, its wood-carved temples
-                  and courtyards once again open to visitors. A short distance away, the whitewashed
-                  dome of Swayambhunath — nicknamed the Monkey Temple for its resident troops of
-                  macaques — looks out over the entire valley, its painted Buddha eyes visible from
-                  well below the hill.
+                  Chitwan National Park sits in Nepal&apos;s lowland Terai region, a world away
+                  from the mountain views and temple squares most visitors associate with the
+                  country. Dense sal forest gives way to tall elephant grass and the braided
+                  channels of the Rapti and Narayani rivers, and it&apos;s here that the greater
+                  one-horned rhinoceros — one of Asia&apos;s great conservation success stories —
+                  can still be reliably spotted from a jeep or a quiet dugout canoe. The park is
+                  also a growing stronghold for the Bengal tiger, alongside gharial and mugger
+                  crocodiles basking along the riverbanks and an exceptional range of birdlife,
+                  which is what draws serious birdwatchers to the nearby Bishazari Tal wetlands as
+                  much as the main safari routes.
                 </p>
                 <p>
-                  What makes Kathmandu distinctive is how closely Hinduism and Buddhism sit side
-                  by side, sometimes sharing the very same courtyards. Boudhanath, one of the
-                  largest stupas in the world, anchors a Tibetan Buddhist community that settled
-                  here after 1959, its prayer-flag-strung base ringed by monasteries and pilgrims
-                  walking slow clockwise circuits. Pashupatinath, on the other hand, is one of
-                  Hinduism&apos;s holiest sites and remains an active cremation ground on the banks
-                  of the Bagmati River — a solemn, unfiltered look at ritual life that few other
-                  cities allow visitors to witness so directly. Most travellers base themselves in
-                  Thamel, the tangle of narrow lanes packed with trekking shops and guesthouses,
-                  and use Kathmandu as a short, easy add-on to a longer India trip rather than a
-                  standalone destination requiring its own long-haul flight.
+                  Sauraha, the small town that serves as the park&apos;s main gateway, is built
+                  around this rhythm of jeep safaris, canoe rides and quiet mornings watching the
+                  Rapti River. It&apos;s also the best place to spend time with the Tharu
+                  community, the indigenous people native to this part of Nepal, whose villages,
+                  distinctive mud-and-thatch architecture and evening stick-dance performances
+                  offer a genuinely different cultural thread from the Hindu and Buddhist heritage
+                  further north. Reached by a short flight or a scenic drive from either Kathmandu
+                  or Pokhara, Chitwan works best as the third stop on a Nepal itinerary — the
+                  wildlife counterpart to the temples and the mountain views that come before it.
                 </p>
               </div>
             </Reveal>
@@ -136,20 +134,20 @@ export default function KathmanduPage() {
         <CityGrid
           eyebrow="Top Attractions"
           heading="What to See"
-          cities={kathmanduAttractions}
+          cities={chitwanAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
           heading="Getting There"
-          items={kathmanduGettingThere}
+          items={chitwanGettingThere}
         />
 
         <HighlightsStrip
           eyebrow="Why Visit"
           heading="What Makes This Different"
-          highlights={kathmanduHighlights}
+          highlights={chitwanHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -157,14 +155,14 @@ export default function KathmanduPage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Best Time to Visit"
-                heading="October–November & March–April are Best"
+                heading="October–March is Best"
                 align="center"
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                These two windows offer the clearest mountain views and the most comfortable
-                temperatures, avoiding the summer monsoon (June–September) and the coldest winter
-                weeks (December–January).
+                The dry season gives the clearest wildlife sightings, as shorter grass and lower
+                water levels bring animals closer to the rivers and safari routes. The monsoon
+                (June–September) makes much of the park difficult to access.
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -179,7 +177,7 @@ export default function KathmanduPage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={kathmanduRelatedDestinations}
+          cities={chitwanRelatedDestinations}
           topDivider
           showActions
         />
@@ -196,20 +194,20 @@ export default function KathmanduPage() {
           eyebrow="FAQ"
           heading="Common Questions"
           intro="Everything international travellers ask before booking — answered honestly."
-          faqs={kathmanduFaqs}
-          whatsappMessage="Hi! I have a question before booking my trip to Kathmandu with Colourful Indian Holidays."
+          faqs={chitwanFaqs}
+          whatsappMessage="Hi! I have a question before booking my trip to Chitwan with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Journey to Kathmandu Awaits."
+          headline="Your Journey to Chitwan Awaits."
           headlineItalic="When Will You Go?"
           subtext="Tell us how many days you have and what you'd like to see — we'll reply with a tailored itinerary and quote, usually within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a trip to Kathmandu with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to Chitwan with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

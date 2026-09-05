@@ -11,13 +11,13 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
-  kathmanduAttractions,
-  kathmanduQuickFacts,
-  kathmanduGettingThere,
-  kathmanduHighlights,
-  kathmanduRelatedDestinations,
-  kathmanduFaqs,
-} from "@/content/destinations/kathmandu";
+  pokharaAttractions,
+  pokharaQuickFacts,
+  pokharaGettingThere,
+  pokharaHighlights,
+  pokharaRelatedDestinations,
+  pokharaFaqs,
+} from "@/content/destinations/pokhara";
 import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
@@ -25,11 +25,11 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Kathmandu | Nepal's Temple-Filled Capital";
+const title = "Pokhara | Lakeside Views of the Annapurna Range";
 const description =
-  "Plan a trip to Kathmandu — Durbar Square, Swayambhunath, Boudhanath and Pashupatinath — the easiest international add-on to an India itinerary, a short flight from Delhi.";
-const pagePath = "/destinations/kathmandu";
-const heroImage = "/images/destinations/kathmandu-aerial-boudhanath-city.webp";
+  "Plan a trip to Pokhara — Phewa Lake, Sarangkot sunrise views, Davis Falls and paragliding over the Annapurna range — a short flight from Kathmandu.";
+const pagePath = "/destinations/pokhara";
+const heroImage = "/images/destinations/pokhara-valley-machapuchare-view.webp";
 
 export const metadata: Metadata = {
   title,
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
 const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Destinations", path: "/destinations" },
-  { name: "Kathmandu", path: pagePath },
+  { name: "Pokhara", path: pagePath },
 ];
 
-export default function KathmanduPage() {
+export default function PokharaPage() {
   return (
     <>
       <script
@@ -61,20 +61,20 @@ export default function KathmanduPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(kathmanduFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(pokharaFaqs)) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             touristDestinationJsonLd({
-              name: "Kathmandu",
+              name: "Pokhara",
               description,
               path: pagePath,
               image: heroImage,
-              latitude: 27.7172,
-              longitude: 85.324,
-              containsPlaces: kathmanduAttractions.map((attraction) => ({
+              latitude: 28.2096,
+              longitude: 83.9856,
+              containsPlaces: pokharaAttractions.map((attraction) => ({
                 name: attraction.name,
                 path: attraction.href,
               })),
@@ -86,47 +86,45 @@ export default function KathmanduPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Aerial view of Kathmandu with Boudhanath Stupa and the city skyline"
+          imageAlt="The green Pokhara valley with the Machapuchare peak rising behind it"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
-          headline="Kathmandu — Nepal's Temple-Filled Capital"
-          subheadline="Seven UNESCO sites in one small valley, and the easiest international add-on to an India itinerary — a short flight from Delhi."
+          headline="Pokhara — Lakeside Views of the Annapurna Range"
+          subheadline="A calm lake, close mountain views and a slower pace — the natural second stop on a Nepal trip, a short flight from Kathmandu."
           primaryHref="/packages"
           primaryLabel="View Tour Packages"
-          whatsappMessage="Hi! I'd like to plan a trip to Kathmandu with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to Pokhara with Colourful Indian Holidays."
         />
 
-        <QuickFacts facts={kathmanduQuickFacts} quoteButtonPageName="Kathmandu" />
+        <QuickFacts facts={pokharaQuickFacts} quoteButtonPageName="Pokhara" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Nepal's Temple-Filled Capital" />
+              <SectionIntro eyebrow="Overview" heading="Lakeside Views of the Annapurna Range" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Kathmandu sits in a wide Himalayan valley that has been continuously settled for
-                  over a thousand years, and the density of heritage packed into that small area
-                  is hard to overstate — the Kathmandu Valley alone holds seven UNESCO World
-                  Heritage Sites, from royal palace squares to hilltop stupas. Durbar Square, once
-                  the seat of Nepal&apos;s monarchy, was badly damaged in the devastating 2015
-                  earthquake and has since been painstakingly restored, its wood-carved temples
-                  and courtyards once again open to visitors. A short distance away, the whitewashed
-                  dome of Swayambhunath — nicknamed the Monkey Temple for its resident troops of
-                  macaques — looks out over the entire valley, its painted Buddha eyes visible from
-                  well below the hill.
+                  Pokhara sits in a wide valley at the foot of the Annapurna range, built around
+                  Phewa Lake, and offers something Kathmandu can&apos;t: close, unobstructed views
+                  of the Himalayas without any trekking required. On a clear morning, the water
+                  reflects the jagged outline of Machapuchare — the distinctive &ldquo;fishtail&rdquo;
+                  peak considered sacred and, unusually, never officially summited — alongside the
+                  wider Annapurna massif behind it. Most visitors head up to Sarangkot before dawn
+                  for the valley&apos;s best sunrise viewpoint, then spend the rest of the day at a
+                  slower pace: a stop at Davis Falls, where the water disappears underground into
+                  the connected Gupteshwor Cave system just below it, or a tandem paraglide flight
+                  launched from the hills above the lake.
                 </p>
                 <p>
-                  What makes Kathmandu distinctive is how closely Hinduism and Buddhism sit side
-                  by side, sometimes sharing the very same courtyards. Boudhanath, one of the
-                  largest stupas in the world, anchors a Tibetan Buddhist community that settled
-                  here after 1959, its prayer-flag-strung base ringed by monasteries and pilgrims
-                  walking slow clockwise circuits. Pashupatinath, on the other hand, is one of
-                  Hinduism&apos;s holiest sites and remains an active cremation ground on the banks
-                  of the Bagmati River — a solemn, unfiltered look at ritual life that few other
-                  cities allow visitors to witness so directly. Most travellers base themselves in
-                  Thamel, the tangle of narrow lanes packed with trekking shops and guesthouses,
-                  and use Kathmandu as a short, easy add-on to a longer India trip rather than a
-                  standalone destination requiring its own long-haul flight.
+                  Pokhara is also the starting point for two of Nepal&apos;s best-known treks, the
+                  Annapurna Base Camp and Annapurna Circuit routes, which draws a steady stream of
+                  trekkers through the city even if they don&apos;t plan to walk the trails
+                  themselves. For travellers who want a taste of adventure without committing to
+                  days on foot, the valley also offers paragliding launches with some of the best
+                  tandem flying conditions in the world, alongside easier half-day boating and cave
+                  visits. Reached by a short flight or a scenic drive from Kathmandu, Pokhara pairs
+                  naturally with the capital as the second stop on most Nepal itineraries, trading
+                  Kathmandu&apos;s temple-dense streets for open water and mountain air.
                 </p>
               </div>
             </Reveal>
@@ -136,20 +134,20 @@ export default function KathmanduPage() {
         <CityGrid
           eyebrow="Top Attractions"
           heading="What to See"
-          cities={kathmanduAttractions}
+          cities={pokharaAttractions}
           topDivider
         />
 
         <GettingThere
           eyebrow="Practical Info"
           heading="Getting There"
-          items={kathmanduGettingThere}
+          items={pokharaGettingThere}
         />
 
         <HighlightsStrip
           eyebrow="Why Visit"
           heading="What Makes This Different"
-          highlights={kathmanduHighlights}
+          highlights={pokharaHighlights}
         />
 
         <section className="border-t border-sand/70 py-10 text-center sm:py-14">
@@ -162,9 +160,9 @@ export default function KathmanduPage() {
                 headingSizeClassName="text-2xl sm:text-3xl"
               />
               <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                These two windows offer the clearest mountain views and the most comfortable
-                temperatures, avoiding the summer monsoon (June–September) and the coldest winter
-                weeks (December–January).
+                These two windows give the clearest mountain views, especially for sunrise from
+                Sarangkot, while avoiding the summer monsoon (June–September) and the coldest,
+                haziest winter weeks (December–January).
               </p>
               <div className="mt-7 flex justify-center">
                 <Button href="/best-time-to-visit" variant="gold">
@@ -179,7 +177,7 @@ export default function KathmanduPage() {
         <CityGrid
           eyebrow="Pair Your Trip"
           heading="Nearby & Related Destinations"
-          cities={kathmanduRelatedDestinations}
+          cities={pokharaRelatedDestinations}
           topDivider
           showActions
         />
@@ -196,20 +194,20 @@ export default function KathmanduPage() {
           eyebrow="FAQ"
           heading="Common Questions"
           intro="Everything international travellers ask before booking — answered honestly."
-          faqs={kathmanduFaqs}
-          whatsappMessage="Hi! I have a question before booking my trip to Kathmandu with Colourful Indian Holidays."
+          faqs={pokharaFaqs}
+          whatsappMessage="Hi! I have a question before booking my trip to Pokhara with Colourful Indian Holidays."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Journey to Kathmandu Awaits."
+          headline="Your Journey to Pokhara Awaits."
           headlineItalic="When Will You Go?"
           subtext="Tell us how many days you have and what you'd like to see — we'll reply with a tailored itinerary and quote, usually within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a trip to Kathmandu with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip to Pokhara with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
