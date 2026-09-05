@@ -29,7 +29,7 @@ const title = "Everest Region | Mountain Flights & the Everest Base Camp Trek";
 const description =
   "See Everest with or without trekking — a scenic mountain flight from Kathmandu, or the classic Everest Base Camp trek through Sherpa villages in Nepal's Khumbu region.";
 const pagePath = "/destinations/everest-region";
-const heroImage = "/images/destinations/urs-festival-ajmer.webp";
+const heroImage = "/images/destinations/everest-region-gokyo-lake.webp";
 
 export const metadata: Metadata = {
   title,
@@ -86,7 +86,7 @@ export default function EverestRegionPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Photo coming soon — Everest Region"
+          imageAlt="Turquoise Gokyo Lake ringed by snow peaks in the Everest region"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Everest Region — See the World's Highest Peak"

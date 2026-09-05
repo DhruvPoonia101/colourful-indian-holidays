@@ -329,8 +329,8 @@ export const nepalDestinations: CityCard[] = [
     tagline: "Flights & Treks to Everest",
     description: "Trekking routes toward the world's highest peak.",
     href: "/destinations/everest-region",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Everest Region",
+    image: "/images/destinations/everest-kala-patthar-view.webp",
+    imageAlt: "Mount Everest and the Khumbu Glacier seen from Kala Patthar",
   },
 ] as const;
 

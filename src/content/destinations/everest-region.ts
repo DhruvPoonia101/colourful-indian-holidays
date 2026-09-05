@@ -4,8 +4,6 @@ import type { QuickFact } from "@/components/destinations/QuickFacts";
 import type { GettingThereItem } from "@/components/destinations/GettingThere";
 import type { FaqItem } from "@/lib/seo/faq-schema";
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const everestRegionAttractions: CityCard[] = [
   {
     name: "Everest Mountain Flight",
@@ -13,17 +11,8 @@ export const everestRegionAttractions: CityCard[] = [
     description:
       "A roughly one-hour scenic flight from Kathmandu that passes within view of Everest and its neighbouring peaks — the way most of our clients experience this region.",
     href: "/destinations/everest-region",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Everest mountain flight",
-  },
-  {
-    name: "Everest Base Camp Trek",
-    tagline: "The Classic 12–14 Day Route",
-    description:
-      "The best-known trek in the world, climbing steadily through Sherpa villages to the foot of Everest itself — for travellers with the time and fitness for a serious trek.",
-    href: "/destinations/everest-region",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Everest Base Camp trekking trail",
+    image: "/images/destinations/everest-mountain-flight-plane.webp",
+    imageAlt: "A Yeti Airlines mountain flight passing the peaks of the Everest region",
   },
   {
     name: "Namche Bazaar",
@@ -31,17 +20,8 @@ export const everestRegionAttractions: CityCard[] = [
     description:
       "A terraced market town built into a natural amphitheatre in the hills, and the trek's main acclimatisation stop and cultural hub.",
     href: "/destinations/everest-region",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Namche Bazaar",
-  },
-  {
-    name: "Tengboche Monastery",
-    tagline: "The Khumbu's Most Famous Monastery",
-    description:
-      "The largest monastery in the Khumbu region, set on a ridge with one of the trek's most photographed backdrops of Everest and Ama Dablam.",
-    href: "/destinations/everest-region",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Tengboche Monastery",
+    image: "/images/destinations/everest-namche-bazaar.webp",
+    imageAlt: "Namche Bazaar's terraced houses and stupa built into the hillside",
   },
   {
     name: "Kala Patthar",
@@ -49,8 +29,8 @@ export const everestRegionAttractions: CityCard[] = [
     description:
       "A rocky outcrop above Everest Base Camp offering a far better view of Everest's summit than the base camp itself, and the turnaround point for most trekkers.",
     href: "/destinations/everest-region",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Kala Patthar viewpoint",
+    image: "/images/destinations/everest-kala-patthar-view.webp",
+    imageAlt: "Mount Everest and the Khumbu Glacier seen from Kala Patthar",
   },
 ] as const;
 
