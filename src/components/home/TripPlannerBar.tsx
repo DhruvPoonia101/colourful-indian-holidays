@@ -8,8 +8,20 @@ import { PRIMARY_COUNTRIES, OTHER_COUNTRIES } from "@/lib/countries";
 import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
 
-const DAYS_OPTIONS = ["3–5 Days", "6–9 Days", "10–14 Days", "15+ Days", "Not Sure Yet"];
-const TRAVELLERS_OPTIONS = ["1 Traveller", "2 Travellers", "3–4 Travellers", "5+ Travellers"];
+const DAYS_OPTIONS = [
+  "2 Days",
+  "3 Days",
+  "4 Days",
+  "5 Days",
+  "6 Days",
+  "7 Days",
+  "8 to 10 Days",
+  "11 to 13 Days",
+  "14 to 17 Days",
+  "18 to 22 Days",
+  "23+ Days",
+];
+const TRAVELLERS_OPTIONS = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "10+"];
 
 const todayISO = new Date().toISOString().split("T")[0];
 const twoYearsOutISO = new Date(new Date().setFullYear(new Date().getFullYear() + 2))

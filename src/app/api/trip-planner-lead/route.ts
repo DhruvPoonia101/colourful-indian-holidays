@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { BUSINESS } from "@/lib/seo/business";
+import { formatLocation, getApproxLocation } from "@/lib/geo";
 import {
   getClientIp,
   isHoneypotFilled,
@@ -67,6 +68,7 @@ export async function POST(request: Request) {
   }
 
   const resend = new Resend(apiKey);
+  const geo = await getApproxLocation(ip);
 
   try {
     const { error } = await resend.emails.send({
@@ -81,7 +83,8 @@ export async function POST(request: Request) {
         <p><strong>Trip Length:</strong> ${days}</p>
         <p><strong>No of Persons:</strong> ${travellers}</p>
         <p><strong>Traveller Email:</strong> ${email}</p>
-        <p style="margin-top:16px;color:#888;font-size:12px;">Submitted from the homepage hero trip planner.</p>
+        <p style="margin-top:16px;color:#888;font-size:12px;">IP Address: ${geo.ip} · Approx. Location: ${formatLocation(geo)}</p>
+        <p style="color:#888;font-size:12px;">Submitted from the homepage hero trip planner.</p>
       `,
     });
 
