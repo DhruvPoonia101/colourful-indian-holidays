@@ -4,8 +4,8 @@ import { FiArrowRight } from "react-icons/fi";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { Button } from "@/components/ui/Button";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { regions } from "@/content/home";
-import { whatsappUrl } from "@/lib/whatsapp";
 
 export function RegionHighlights() {
   return (
@@ -44,14 +44,11 @@ export function RegionHighlights() {
                     >
                       View Tour
                     </Link>
-                    <a
-                      href={whatsappUrl(`Hi! I'd like to enquire about a trip to ${region.name}.`)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 rounded-full bg-gold px-3 py-2 text-center text-xs font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark sm:text-sm"
-                    >
-                      Enquire Now
-                    </a>
+                    <GetQuoteButton
+                      pageName={region.name}
+                      triggerLabel="Enquire Now"
+                      triggerClassName="flex-1 rounded-full bg-gold px-3 py-2 text-center text-xs font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark sm:text-sm"
+                    />
                   </div>
                 </div>
               </div>

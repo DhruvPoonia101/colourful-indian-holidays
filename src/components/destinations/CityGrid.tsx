@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
-import { whatsappUrl } from "@/lib/whatsapp";
+import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 
 export type CityCard = {
   name: string;
@@ -103,14 +103,11 @@ export function CityGrid({
                       >
                         View Tour
                       </Link>
-                      <a
-                        href={whatsappUrl(`Hi! I'd like to enquire about the ${city.name}.`)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 rounded-full bg-gold px-4 py-2.5 text-center text-sm font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark"
-                      >
-                        Enquire Now
-                      </a>
+                      <GetQuoteButton
+                        pageName={city.name}
+                        triggerLabel="Enquire Now"
+                        triggerClassName="flex-1 rounded-full bg-gold px-4 py-2.5 text-center text-sm font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark"
+                      />
                     </div>
                   </div>
                 </div>
