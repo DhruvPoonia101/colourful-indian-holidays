@@ -379,13 +379,13 @@ export function TripPlannerBar() {
                       >
                         <option value="">Select Country</option>
                         {PRIMARY_COUNTRIES.map((name) => (
-                          <option key={name} value={name} className="text-ink">
+                          <option key={`primary-${name}`} value={name} className="text-ink">
                             {name}
                           </option>
                         ))}
                         <option disabled>──────────</option>
-                        {OTHER_COUNTRIES.map((name) => (
-                          <option key={name} value={name} className="text-ink">
+                        {OTHER_COUNTRIES.map((name, index) => (
+                          <option key={`other-${name}-${index}`} value={name} className="text-ink">
                             {name}
                           </option>
                         ))}
