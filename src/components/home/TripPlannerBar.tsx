@@ -1,8 +1,10 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { FiCalendar, FiChevronDown } from "react-icons/fi";
+import { AnimatePresence, motion } from "framer-motion";
+import { FiCalendar, FiChevronDown, FiSend, FiX } from "react-icons/fi";
 import { tripPlannerDestinations } from "@/lib/trip-planner-destinations";
+import { PRIMARY_COUNTRIES, OTHER_COUNTRIES } from "@/lib/countries";
 import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
 
@@ -22,10 +24,15 @@ const selectClass =
 
 const inputClass = "w-full bg-transparent pr-6 text-base text-ink focus:outline-none";
 
+const detailsFieldClass =
+  "w-full rounded-full border border-sand bg-white px-5 py-3 text-sm text-ink placeholder:text-ink-soft/60 focus:outline-none focus:ring-2 focus:ring-gold/40";
+
 type Status = "idle" | "submitting" | "success" | "error";
 
 export function TripPlannerBar() {
   const dateInputRef = useRef<HTMLInputElement>(null);
+
+  // Step 1 — itinerary basics.
   const [destination, setDestination] = useState("");
   const [travelDate, setTravelDate] = useState("");
   const [days, setDays] = useState("");
@@ -35,6 +42,21 @@ export function TripPlannerBar() {
   const [errorMessage, setErrorMessage] = useState("");
   const { honeypot, setHoneypot, formLoadedAt } = useHoneypot();
   const [turnstileToken, setTurnstileToken] = useState("");
+
+  // Step 2 — contact details, shown in a follow-up modal after step 1 succeeds.
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
+  const [fullName, setFullName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [country, setCountry] = useState("");
+  const [specialRequest, setSpecialRequest] = useState("");
+  const [detailsStatus, setDetailsStatus] = useState<Status>("idle");
+  const [detailsErrorMessage, setDetailsErrorMessage] = useState("");
+  const {
+    honeypot: detailsHoneypot,
+    setHoneypot: setDetailsHoneypot,
+    formLoadedAt: detailsFormLoadedAt,
+  } = useHoneypot();
+  const [detailsTurnstileToken, setDetailsTurnstileToken] = useState("");
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -70,16 +92,66 @@ export function TripPlannerBar() {
         throw new Error(data?.error ?? "Something went wrong.");
       }
 
+      // Step 1 is emailed and captured — now collect contact details in step 2
+      // rather than resetting the form, so we don't lose the itinerary context.
       setStatus("success");
-      setDestination("");
-      setTravelDate("");
-      setDays("");
-      setTravellers("");
-      setEmail("");
-      setTurnstileToken("");
+      setIsDetailsOpen(true);
     } catch (err) {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
+    }
+  };
+
+  const closeDetails = () => {
+    // If they close without submitting step 2, keep the step 1 "thanks" state
+    // but drop the modal — step 1's lead email has already gone out either way.
+    setIsDetailsOpen(false);
+    setDetailsStatus("idle");
+    setDetailsErrorMessage("");
+  };
+
+  const handleDetailsSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+
+    if (!detailsTurnstileToken) {
+      setDetailsStatus("error");
+      setDetailsErrorMessage("Please complete the verification check before sending.");
+      return;
+    }
+
+    setDetailsStatus("submitting");
+    setDetailsErrorMessage("");
+
+    try {
+      const response = await fetch("/api/trip-planner-details", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          destination,
+          travelDate,
+          days,
+          travellers,
+          email,
+          fullName,
+          phone,
+          country,
+          specialRequest,
+          companyWebsite: detailsHoneypot,
+          formLoadedAt: detailsFormLoadedAt,
+          turnstileToken: detailsTurnstileToken,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data?.error ?? "Something went wrong.");
+      }
+
+      setDetailsStatus("success");
+    } catch (err) {
+      setDetailsStatus("error");
+      setDetailsErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
     }
   };
 
@@ -218,7 +290,7 @@ export function TripPlannerBar() {
         <TurnstileWidget onVerify={setTurnstileToken} onExpire={() => setTurnstileToken("")} />
       </div>
 
-      {status === "success" && (
+      {status === "success" && !isDetailsOpen && (
         <p className="mt-2 text-center text-sm font-medium text-gold-dark sm:text-left">
           Thanks! We&apos;ve got your details and will email your itinerary shortly.
         </p>
@@ -226,6 +298,123 @@ export function TripPlannerBar() {
       {status === "error" && (
         <p className="mt-2 text-center text-sm font-medium text-maroon sm:text-left">{errorMessage}</p>
       )}
+
+      <AnimatePresence>
+        {isDetailsOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto bg-ink/60 px-4 py-8 backdrop-blur-sm sm:items-center"
+            onClick={detailsStatus === "success" ? closeDetails : undefined}
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 24, scale: 0.97 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 16, scale: 0.97 }}
+              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+              className="w-full max-w-md"
+              onClick={(event) => event.stopPropagation()}
+            >
+              <button
+                type="button"
+                onClick={closeDetails}
+                className="mb-3 flex w-full items-center justify-center gap-2 rounded-full border border-sand bg-cream px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-sand/40"
+              >
+                <FiX aria-hidden="true" className="h-4 w-4" />
+                Close
+              </button>
+
+              <div className="rounded-3xl bg-white p-6 shadow-xl sm:p-7">
+                {detailsStatus === "success" ? (
+                  <div className="py-6 text-center">
+                    <p className="font-display text-xl font-semibold text-ink">
+                      Thanks, {fullName || "there"}!
+                    </p>
+                    <p className="mt-2 text-sm text-ink-soft">
+                      We&apos;ve got your details and will reply within 24 hours.
+                    </p>
+                  </div>
+                ) : (
+                  <>
+                    <p className="mb-4 font-display text-lg font-semibold text-ink">
+                      Just a few more details
+                    </p>
+                    <form onSubmit={handleDetailsSubmit} className="flex flex-col gap-3">
+                      <HoneypotField value={detailsHoneypot} onChange={setDetailsHoneypot} />
+                      <input
+                        type="text"
+                        required
+                        placeholder="Full Name"
+                        value={fullName}
+                        onChange={(event) => setFullName(event.target.value)}
+                        className={detailsFieldClass}
+                      />
+                      <input
+                        type="tel"
+                        required
+                        placeholder="Phone / WhatsApp Number"
+                        value={phone}
+                        onChange={(event) => setPhone(event.target.value)}
+                        className={detailsFieldClass}
+                      />
+                      <select
+                        required
+                        value={country}
+                        onChange={(event) => setCountry(event.target.value)}
+                        className={`${detailsFieldClass} ${country ? "text-ink" : "text-ink-soft/60"}`}
+                      >
+                        <option value="">Select Country</option>
+                        {PRIMARY_COUNTRIES.map((name) => (
+                          <option key={name} value={name} className="text-ink">
+                            {name}
+                          </option>
+                        ))}
+                        <option disabled>──────────</option>
+                        {OTHER_COUNTRIES.map((name) => (
+                          <option key={name} value={name} className="text-ink">
+                            {name}
+                          </option>
+                        ))}
+                      </select>
+                      <textarea
+                        placeholder="Special Requests (optional)"
+                        rows={3}
+                        value={specialRequest}
+                        onChange={(event) => setSpecialRequest(event.target.value)}
+                        className="w-full rounded-2xl border border-sand bg-white px-5 py-3 text-sm text-ink placeholder:text-ink-soft/60 focus:outline-none focus:ring-2 focus:ring-gold/40"
+                      />
+
+                      <div className="flex justify-center">
+                        <TurnstileWidget
+                          onVerify={setDetailsTurnstileToken}
+                          onExpire={() => setDetailsTurnstileToken("")}
+                        />
+                      </div>
+
+                      <button
+                        type="submit"
+                        disabled={detailsStatus === "submitting"}
+                        className="mt-1 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory shadow-sm transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-gold-dark disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100"
+                      >
+                        {detailsStatus === "submitting" ? "Sending…" : "Submit Details"}
+                        <FiSend aria-hidden="true" className="h-4 w-4" />
+                      </button>
+
+                      {detailsStatus === "error" && (
+                        <p className="text-center text-sm font-medium text-maroon">
+                          {detailsErrorMessage}
+                        </p>
+                      )}
+                    </form>
+                  </>
+                )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

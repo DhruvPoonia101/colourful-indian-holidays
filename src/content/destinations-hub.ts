@@ -286,7 +286,7 @@ export const comingSoonIndiaDestinations: CityCard[] = [] as const;
 export const nepalDestinations: CityCard[] = [
   {
     name: "Kathmandu",
-    tagline: "Coming Soon",
+    tagline: "Nepal's Capital",
     description: "Nepal's capital, layered with temples and Himalayan history.",
     href: "/destinations/kathmandu",
     image: PLACEHOLDER,
