@@ -164,7 +164,7 @@ export default function PenchPage() {
                 park closes entirely during the monsoon, July through September.
               </p>
               <div className="mt-7 flex justify-center">
-                <Button href="/best-time-to-visit" variant="gold">
+                <Button href="/best-time-to-visit-india" variant="gold">
                   View the Full Travel Calendar
                   <FiArrowRight aria-hidden="true" className="h-4 w-4" />
                 </Button>

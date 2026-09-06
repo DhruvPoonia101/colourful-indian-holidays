@@ -142,7 +142,7 @@ export default function AndamanIslandsPage() {
                 Cool, dry conditions make this the best window for diving and beach time. The islands see heavy monsoon rain from June to September, when many boat trips and water activities are affected.
               </p>
               <div className="mt-7 flex justify-center">
-                <Button href="/best-time-to-visit" variant="gold">
+                <Button href="/best-time-to-visit-india" variant="gold">
                   View the Full Travel Calendar
                   <FiArrowRight aria-hidden="true" className="h-4 w-4" />
                 </Button>

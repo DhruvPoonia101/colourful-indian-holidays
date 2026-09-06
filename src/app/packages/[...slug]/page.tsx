@@ -11,7 +11,7 @@ export async function generateMetadata({
   const href = `/packages/${slug.join("/")}`;
   const label = NAV_LABELS[href] ?? titleCaseFromSlug(slug[slug.length - 1]);
   return {
-    title: `${label} | Colourful Indian Holidays`,
+    title: label,
     robots: { index: false, follow: true },
   };
 }

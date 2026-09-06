@@ -168,7 +168,7 @@ export default function SikkimPage() {
                 landslides that can disrupt mountain roads.
               </p>
               <div className="mt-7 flex justify-center">
-                <Button href="/best-time-to-visit" variant="gold">
+                <Button href="/best-time-to-visit-india" variant="gold">
                   View the Full Travel Calendar
                   <FiArrowRight aria-hidden="true" className="h-4 w-4" />
                 </Button>

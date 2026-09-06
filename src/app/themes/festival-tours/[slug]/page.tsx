@@ -9,7 +9,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   return {
-    title: `${titleCaseFromSlug(slug)} | Colourful Indian Holidays`,
+    title: titleCaseFromSlug(slug),
     robots: { index: false, follow: true },
   };
 }

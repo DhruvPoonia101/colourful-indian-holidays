@@ -26,7 +26,7 @@ const description =
   "Private, tailor-made tours across India, Nepal and Bhutan for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2008.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: `${title} | ${SITE_NAME}` },
   description,
   alternates: {
     canonical: SITE_URL,

@@ -10,7 +10,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const label = NAV_LABELS[`/themes/${slug}`] ?? titleCaseFromSlug(slug);
   return {
-    title: `${label} | Colourful Indian Holidays`,
+    title: label,
     robots: { index: false, follow: true },
   };
 }

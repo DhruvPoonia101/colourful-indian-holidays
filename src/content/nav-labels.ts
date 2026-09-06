@@ -90,18 +90,18 @@ export const NAV_LABELS: Record<string, string> = {
   "/car-rental/luxury-cars": "Luxury Cars",
   "/car-rental/coaches": "Coaches",
 
-  "/best-time-to-visit/january": "January",
-  "/best-time-to-visit/february": "February",
-  "/best-time-to-visit/march": "March",
-  "/best-time-to-visit/april": "April",
-  "/best-time-to-visit/may": "May",
-  "/best-time-to-visit/june": "June",
-  "/best-time-to-visit/july": "July",
-  "/best-time-to-visit/august": "August",
-  "/best-time-to-visit/september": "September",
-  "/best-time-to-visit/october": "October",
-  "/best-time-to-visit/november": "November",
-  "/best-time-to-visit/december": "December",
+  "/best-time-to-visit-india/january": "January",
+  "/best-time-to-visit-india/february": "February",
+  "/best-time-to-visit-india/march": "March",
+  "/best-time-to-visit-india/april": "April",
+  "/best-time-to-visit-india/may": "May",
+  "/best-time-to-visit-india/june": "June",
+  "/best-time-to-visit-india/july": "July",
+  "/best-time-to-visit-india/august": "August",
+  "/best-time-to-visit-india/september": "September",
+  "/best-time-to-visit-india/october": "October",
+  "/best-time-to-visit-india/november": "November",
+  "/best-time-to-visit-india/december": "December",
 
   "/travel-guide": "Travel Guide",
 };
@@ -115,9 +115,9 @@ export const CATEGORY_META: Record<string, { label: string; hubPath: string; hub
   packages: { label: "Tours & Packages", hubPath: "/packages", hubLabel: "All Tour Packages" },
   themes: { label: "Experiences", hubPath: "/themes", hubLabel: "All Experiences" },
   "car-rental": { label: "Car Rental", hubPath: "/car-rental", hubLabel: "View All Fleet" },
-  "best-time-to-visit": {
+  "best-time-to-visit-india": {
     label: "Travel by Month",
-    hubPath: "/best-time-to-visit",
+    hubPath: "/best-time-to-visit-india",
     hubLabel: "Full Travel Calendar",
   },
 };

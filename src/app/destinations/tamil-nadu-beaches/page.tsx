@@ -142,7 +142,7 @@ export default function TamilNaduBeachesPage() {
                 Cool, dry weather makes this the most comfortable season for the coast. March to June runs very hot and humid, while the July to October monsoon can bring heavy rain, particularly to the northeast coast.
               </p>
               <div className="mt-7 flex justify-center">
-                <Button href="/best-time-to-visit" variant="gold">
+                <Button href="/best-time-to-visit-india" variant="gold">
                   View the Full Travel Calendar
                   <FiArrowRight aria-hidden="true" className="h-4 w-4" />
                 </Button>

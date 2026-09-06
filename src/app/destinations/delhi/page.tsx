@@ -193,7 +193,7 @@ export default function DelhiPage() {
                 tend to offer the best balance of comfortable weather and clearer air.
               </p>
               <div className="mt-7 flex justify-center">
-                <Button href="/best-time-to-visit" variant="gold">
+                <Button href="/best-time-to-visit-india" variant="gold">
                   View the Full Travel Calendar
                   <FiArrowRight aria-hidden="true" className="h-4 w-4" />
                 </Button>

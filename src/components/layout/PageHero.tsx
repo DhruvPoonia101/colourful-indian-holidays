@@ -26,6 +26,15 @@ type PageHeroProps = {
    * priority over primaryHref for the primary button.
    */
   primaryQuoteButtonPageName?: string;
+  /**
+   * Overrides the section's height class. Defaults to `min-h-[65svh]`, which
+   * grows taller on pages with longer, more-wrapping headlines. Pass a fixed
+   * height (e.g. `h-[65svh]`) to keep the hero the same height regardless of
+   * title length — used by the Golden Triangle package pages so all 6 sit at
+   * an identical height and the Quick Facts strip peeks into view the same
+   * amount on every one.
+   */
+  heightClassName?: string;
 };
 
 const primaryButtonClassName =
@@ -42,6 +51,7 @@ export function PageHero({
   primaryLabel,
   whatsappMessage,
   primaryQuoteButtonPageName,
+  heightClassName = "min-h-[65svh]",
 }: PageHeroProps) {
   const hasCta =
     Boolean(primaryQuoteButtonPageName && primaryLabel) ||
@@ -49,7 +59,9 @@ export function PageHero({
     Boolean(whatsappMessage);
 
   return (
-    <section className="relative flex min-h-[65svh] w-full items-end overflow-hidden bg-ink text-ivory">
+    <section
+      className={`relative flex ${heightClassName} w-full items-end overflow-hidden bg-ink text-ivory`}
+    >
       <Image
         src={image}
         alt={imageAlt}

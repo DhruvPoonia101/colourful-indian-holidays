@@ -15,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   return {
-    title: `${labelForSlug(slug)} | Colourful Indian Holidays`,
+    title: labelForSlug(slug),
     robots: { index: false, follow: true },
   };
 }

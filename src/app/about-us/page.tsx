@@ -8,7 +8,7 @@ import { BUSINESS, SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "About Us | Colourful Indian Holidays";
+const title = "About Us";
 const description =
   "Founded in 2008 and based in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal and Bhutan for travellers from around the world.";
 const pagePath = "/about-us";

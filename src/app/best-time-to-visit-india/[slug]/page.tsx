@@ -8,9 +8,9 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const label = NAV_LABELS[`/best-time-to-visit/${slug}`] ?? titleCaseFromSlug(slug);
+  const label = NAV_LABELS[`/best-time-to-visit-india/${slug}`] ?? titleCaseFromSlug(slug);
   return {
-    title: `Best Time to Visit India in ${label} | Colourful Indian Holidays`,
+    title: `Best Time to Visit India in ${label}`,
     robots: { index: false, follow: true },
   };
 }
@@ -21,8 +21,8 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const label = NAV_LABELS[`/best-time-to-visit/${slug}`] ?? titleCaseFromSlug(slug);
-  const category = CATEGORY_META["best-time-to-visit"];
+  const label = NAV_LABELS[`/best-time-to-visit-india/${slug}`] ?? titleCaseFromSlug(slug);
+  const category = CATEGORY_META["best-time-to-visit-india"];
 
   return (
     <ComingSoonPage

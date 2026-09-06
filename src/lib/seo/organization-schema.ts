@@ -7,7 +7,7 @@ export function organizationJsonLd() {
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
     url: BUSINESS.url,
-    logo: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/images/logo/logo-horizontal.webp`,
     image: `${SITE_URL}/images/destinations/amber-fort-jaipur.webp`,
     telephone: BUSINESS.telephone,
     email: BUSINESS.email,
@@ -23,12 +23,14 @@ export function organizationJsonLd() {
       name: "India",
     },
     sameAs: BUSINESS.sameAs,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: BUSINESS.aggregateRating.ratingValue,
-      reviewCount: BUSINESS.aggregateRating.reviewCount,
-      bestRating: "5",
-    },
+    // aggregateRating intentionally omitted: the page visibly shows two
+    // separate, equally-prominent rating sources (Google 4.9/140+ and
+    // Tripadvisor 4.9/282+) rather than one canonical figure. Google's
+    // structured data guidelines expect a single aggregateRating that's
+    // unambiguously substantiated by the page's visible content — marking
+    // up just one of the two risks a manual action or the rating simply
+    // not showing. Reinstate this once there's one rating source the
+    // schema can point to cleanly (see FULLAUDITREPORT.md finding S1).
     contactPoint: {
       "@type": "ContactPoint",
       telephone: BUSINESS.telephone,

@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiCalendar, FiSend, FiX } from "react-icons/fi";
 import { HoneypotField } from "@/components/shared/Honeypot";
@@ -38,8 +39,7 @@ export function GetQuoteButton({
   triggerClassName?: string;
 }) {
   const dateInputRef = useRef<HTMLInputElement>(null);
-  const [isOpen, setIsOpen] = useState(false);
-  const [fullName, setFullName] = useState("");
+  const [isOpen, setIsOpen] = useState(false);  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [travelMonth, setTravelMonth] = useState("");
@@ -52,6 +52,22 @@ export function GetQuoteButton({
   const [honeypot, setHoneypot] = useState("");
   const [formLoadedAt, setFormLoadedAt] = useState(() => Date.now());
   const [turnstileToken, setTurnstileToken] = useState("");
+
+  // Portal target only exists client-side — this modal is rendered into
+  // document.body (see the return statement below) so it can never get
+  // trapped inside a transformed/overflow-hidden ancestor (e.g. a CityGrid
+  // card's hover transform, or a Reveal-wrapped section's Framer Motion
+  // transform), which otherwise breaks `position: fixed` positioning.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    // Deliberate exception: this is the standard, React-docs-endorsed way to
+    // delay a browser-only API (document, used by createPortal below) until
+    // after the first client render matches the server render — the initial
+    // false/false render avoids a hydration mismatch, and this single flip
+    // to true afterward is the intended, minimal use of the pattern.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
 
   const open = () => {
     setIsOpen(true);
@@ -138,7 +154,9 @@ export function GetQuoteButton({
         {triggerLabel}
       </button>
 
-      <AnimatePresence>
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -301,7 +319,9 @@ export function GetQuoteButton({
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence>,
+          document.body
+        )}
     </>
   );
 }

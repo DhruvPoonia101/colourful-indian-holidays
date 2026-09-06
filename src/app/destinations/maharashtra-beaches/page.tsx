@@ -142,7 +142,7 @@ export default function MaharashtraBeachesPage() {
                 Cool, dry weather makes this the most comfortable season. March to May runs hot and humid, and the June to September monsoon brings heavy rain to the Konkan coast.
               </p>
               <div className="mt-7 flex justify-center">
-                <Button href="/best-time-to-visit" variant="gold">
+                <Button href="/best-time-to-visit-india" variant="gold">
                   View the Full Travel Calendar
                   <FiArrowRight aria-hidden="true" className="h-4 w-4" />
                 </Button>

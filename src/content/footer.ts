@@ -5,7 +5,7 @@ export const footerExploreLinks = [
   { label: "Experiences", href: "/themes" },
   { label: "Popular Tours", href: "/packages" },
   { label: "Fleet & Car Rental", href: "/car-rental" },
-  { label: "Travel by Month", href: "/best-time-to-visit" },
+  { label: "Travel by Month", href: "/best-time-to-visit-india" },
 ] as const;
 
 export const sisterCompanies = [
