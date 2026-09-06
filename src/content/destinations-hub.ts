@@ -279,8 +279,6 @@ export const moreIndiaDestinations: CityCard[] = [
   },
 ] as const;
 
-const PLACEHOLDER = "/images/destinations/urs-festival-ajmer.webp";
-
 export const comingSoonIndiaDestinations: CityCard[] = [] as const;
 
 export const nepalDestinations: CityCard[] = [
@@ -337,34 +335,34 @@ export const nepalDestinations: CityCard[] = [
 export const bhutanDestinations: CityCard[] = [
   {
     name: "Thimphu",
-    tagline: "Coming Soon",
+    tagline: "No Traffic Lights, By Design",
     description: "Bhutan's capital, still without a single traffic light.",
     href: "/destinations/thimphu",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Thimphu",
+    image: "/images/destinations/thimphu-tashichho-dzong.webp",
+    imageAlt: "Tashichho Dzong's whitewashed walls and golden roofs against the hillside",
   },
   {
     name: "Paro",
-    tagline: "Coming Soon",
+    tagline: "Home of the Tiger's Nest",
     description: "Home to the iconic Tiger's Nest monastery.",
     href: "/destinations/paro",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Paro",
+    image: "/images/destinations/paro-taktsang-tigers-nest.webp",
+    imageAlt: "Paro Taktsang, the Tiger's Nest monastery, built into the cliff face",
   },
   {
     name: "Punakha",
-    tagline: "Coming Soon",
+    tagline: "Bhutan's Most Beautiful Dzong",
     description: "Bhutan's former capital and its most photographed dzong.",
     href: "/destinations/punakha",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Punakha",
+    image: "/images/destinations/punakha-dzong-river.webp",
+    imageAlt: "Punakha Dzong at the confluence of the Pho Chhu and Mo Chhu rivers",
   },
   {
     name: "Gangtey",
-    tagline: "Coming Soon",
+    tagline: "Valley of the Black-Necked Cranes",
     description: "A glacial valley known for wintering black-necked cranes.",
     href: "/destinations/gangtey",
-    image: PLACEHOLDER,
-    imageAlt: "Photo coming soon — Gangtey",
+    image: "/images/destinations/gangtey-black-necked-cranes.webp",
+    imageAlt: "A group of black-necked cranes wading in the Phobjikha Valley wetlands",
   },
 ] as const;
