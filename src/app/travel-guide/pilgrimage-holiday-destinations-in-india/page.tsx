@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
-import { ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
+import { ArticleByline, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
@@ -14,6 +14,7 @@ const description =
 const pagePath = "/travel-guide/pilgrimage-holiday-destinations-in-india";
 const heroImage = "/images/destinations/varanasi.webp";
 const datePublished = "2026-08-01";
+const dateModified = datePublished; // bump when this article is next revised
 
 export const metadata: Metadata = {
   title,
@@ -54,6 +55,7 @@ export default function PilgrimageGuidePage() {
               path: pagePath,
               image: heroImage,
               datePublished,
+              dateModified,
             })
           ),
         }}
@@ -67,6 +69,14 @@ export default function PilgrimageGuidePage() {
           eyebrow="Travel Guide"
           headline="Pilgrimage Holiday Destinations in India"
           subheadline="India is home to some of the world's oldest continuously practised pilgrimage traditions. Here's where they happen, and what to expect if you visit as a traveller rather than a pilgrim."
+        />
+
+        <ArticleByline
+          authorName="Narendra Poonia"
+          authorRole="Founder, Colourful Indian Holidays"
+          authorUrl="/about-us"
+          datePublished={datePublished}
+          dateModified={dateModified}
         />
 
         <ArticleBody>

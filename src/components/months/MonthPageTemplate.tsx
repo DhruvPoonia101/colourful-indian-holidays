@@ -3,6 +3,7 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { PageHero } from "@/components/layout/PageHero";
 import { QuickFacts } from "@/components/destinations/QuickFacts";
 import { CityGrid } from "@/components/destinations/CityGrid";
+import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
@@ -10,6 +11,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
+import { renderWithLinks } from "@/lib/render-with-links";
 import type { MonthContent } from "@/content/months/types";
 
 export function MonthPageTemplate({ content }: { content: MonthContent }) {
@@ -52,7 +54,7 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
               <SectionIntro eyebrow="Overview" heading={`What ${content.name} Is Like`} />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 {content.overview.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
+                  <p key={i}>{renderWithLinks(paragraph)}</p>
                 ))}
               </div>
             </Reveal>
@@ -63,22 +65,26 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro eyebrow="Region by Region" heading={`Where to Go in ${content.name}`} />
-              <div className="mt-8 overflow-hidden rounded-2xl border border-sand">
-                {content.regionBreakdown.map((row, i) => (
-                  <div
-                    key={row.region}
-                    className={`p-5 ${i % 2 === 0 ? "bg-white" : "bg-cream/50"} ${
-                      i !== 0 ? "border-t border-sand" : ""
-                    }`}
-                  >
+              <div className="mt-8 space-y-4">
+                {content.regionBreakdown.map((row) => (
+                  <div key={row.region} className="rounded-2xl border border-sand bg-white p-6">
                     <p className="font-display text-base font-semibold text-ink">{row.region}</p>
-                    <p className="mt-1 text-sm text-ink-soft">{row.note}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                      {renderWithLinks(row.note)}
+                    </p>
                   </div>
                 ))}
               </div>
             </Reveal>
           </div>
         </section>
+
+        <HighlightsStrip
+          eyebrow="Why Visit"
+          heading={`Why Come to India in ${content.name}`}
+          highlights={content.whyVisit}
+          topDivider
+        />
 
         {content.festivals.length > 0 && (
           <section className="border-t border-sand/70 py-10 sm:py-14">
@@ -92,7 +98,9 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
                   {content.festivals.map((f) => (
                     <div key={f.name} className="rounded-2xl border border-sand bg-white p-5">
                       <p className="font-display text-base font-semibold text-ink">{f.name}</p>
-                      <p className="mt-1 text-sm text-ink-soft">{f.note}</p>
+                      <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                        {renderWithLinks(f.note)}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -101,13 +109,73 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
           </section>
         )}
 
+        <section className="border-t border-sand/70 py-10 sm:py-14">
+          <div className="mx-auto max-w-4xl px-6 sm:px-8">
+            <Reveal>
+              <SectionIntro eyebrow="What to Pack" heading={`Packing for ${content.name}`} />
+              <p className="mt-6 text-base leading-relaxed text-ink-soft">
+                {renderWithLinks(content.packingIntro)}
+              </p>
+              <ul className="mt-6 grid list-disc gap-x-8 gap-y-2 pl-5 text-sm leading-relaxed text-ink-soft sm:grid-cols-2">
+                {content.packingList.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="border-t border-sand/70 py-10 sm:py-0">
+          <div className="mx-auto max-w-4xl px-6 sm:px-8 sm:pt-14">
+            <Reveal>
+              <p className="text-base leading-relaxed text-ink-soft">
+                {renderWithLinks(content.destinationsIntro)}
+              </p>
+            </Reveal>
+          </div>
+        </section>
+
         <CityGrid
           eyebrow="Where to Go"
           heading={`Best Destinations for ${content.name}`}
           cities={content.bestDestinations}
-          topDivider
           showActions
         />
+
+        <section className="border-t border-sand/70 py-10 sm:py-0">
+          <div className="mx-auto max-w-4xl px-6 sm:px-8 sm:pt-14">
+            <Reveal>
+              <SectionIntro
+                eyebrow="Suggested Itineraries"
+                heading={`Tours to Book for ${content.name}`}
+              />
+              <p className="mt-6 text-base leading-relaxed text-ink-soft">
+                {renderWithLinks(content.itineraryIntro)}
+              </p>
+            </Reveal>
+          </div>
+        </section>
+
+        <CityGrid
+          eyebrow="Ready-Made Routes"
+          heading="Popular Packages This Month"
+          cities={content.suggestedItineraries}
+          showActions
+        />
+
+        <section className="border-t border-sand/70 py-10 sm:py-14">
+          <div className="mx-auto max-w-4xl px-6 sm:px-8">
+            <Reveal>
+              <SectionIntro
+                eyebrow="Compare Months"
+                heading={`How ${content.name} Compares`}
+              />
+              <p className="mt-6 text-base leading-relaxed text-ink-soft">
+                {renderWithLinks(content.monthComparison)}
+              </p>
+            </Reveal>
+          </div>
+        </section>
 
         <section className="border-t border-sand/70 py-8">
           <div className="mx-auto flex max-w-4xl items-center justify-between px-6 sm:px-8">

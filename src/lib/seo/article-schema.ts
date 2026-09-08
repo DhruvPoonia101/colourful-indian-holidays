@@ -6,12 +6,15 @@ export function articleJsonLd({
   path,
   image,
   datePublished,
+  dateModified,
 }: {
   headline: string;
   description: string;
   path: string;
   image: string;
   datePublished: string;
+  /** Defaults to `datePublished` when the article hasn't been revised since. */
+  dateModified?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -20,10 +23,12 @@ export function articleJsonLd({
     description,
     image: `${SITE_URL}${image}`,
     datePublished,
+    dateModified: dateModified ?? datePublished,
     author: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: SITE_URL,
+      "@type": "Person",
+      name: "Narendra Poonia",
+      url: `${SITE_URL}/about-us`,
+      sameAs: ["https://www.linkedin.com/in/narendrapoonia/"],
     },
     publisher: {
       "@type": "Organization",

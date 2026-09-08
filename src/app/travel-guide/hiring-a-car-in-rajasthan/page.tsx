@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
-import { ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
+import { ArticleByline, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
@@ -15,6 +15,7 @@ const description =
 const pagePath = "/travel-guide/hiring-a-car-in-rajasthan";
 const heroImage = "/images/destinations/car-suv.webp";
 const datePublished = "2026-08-31";
+const dateModified = datePublished; // bump when this article is next revised
 
 export const metadata: Metadata = {
   title,
@@ -55,6 +56,7 @@ export default function HiringACarInRajasthanGuidePage() {
               path: pagePath,
               image: heroImage,
               datePublished,
+              dateModified,
             })
           ),
         }}
@@ -68,6 +70,14 @@ export default function HiringACarInRajasthanGuidePage() {
           eyebrow="Travel Guide"
           headline="Hiring a Car in Rajasthan: The Complete Guide"
           subheadline="Self-driving isn't the norm here, and it isn't the point. Everything international travellers need to know about private car and driver hire in Rajasthan."
+        />
+
+        <ArticleByline
+          authorName="Narendra Poonia"
+          authorRole="Founder, Colourful Indian Holidays"
+          authorUrl="/about-us"
+          datePublished={datePublished}
+          dateModified={dateModified}
         />
 
         <ArticleBody>

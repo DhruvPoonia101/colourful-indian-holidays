@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
-import { ArticleBody, ArticleH2, ArticleP } from "@/components/travel-guide/ArticleBody";
+import { ArticleByline, ArticleBody, ArticleH2, ArticleP } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
@@ -14,6 +14,7 @@ const description =
 const pagePath = "/travel-guide/20-best-tourist-places-to-visit-in-india";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-02";
+const dateModified = datePublished; // bump when this article is next revised
 
 export const metadata: Metadata = {
   title,
@@ -54,6 +55,7 @@ export default function TwentyBestPlacesGuidePage() {
               path: pagePath,
               image: heroImage,
               datePublished,
+              dateModified,
             })
           ),
         }}
@@ -67,6 +69,14 @@ export default function TwentyBestPlacesGuidePage() {
           eyebrow="Travel Guide"
           headline="20 Best Tourist Places to Visit in India"
           subheadline="A first-timer's shortlist of India's unmissable destinations — where to go, and why each place earns its spot on the list."
+        />
+
+        <ArticleByline
+          authorName="Narendra Poonia"
+          authorRole="Founder, Colourful Indian Holidays"
+          authorUrl="/about-us"
+          datePublished={datePublished}
+          dateModified={dateModified}
         />
 
         <ArticleBody>

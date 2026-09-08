@@ -14,6 +14,13 @@ export function organizationJsonLd() {
     foundingDate: String(BUSINESS.foundingYear),
     priceRange: "$$$",
     knowsLanguage: BUSINESS.languages,
+    founder: {
+      "@type": "Person",
+      name: "Narendra Poonia",
+      jobTitle: "Founder",
+      url: `${SITE_URL}/about-us`,
+      sameAs: ["https://www.linkedin.com/in/narendrapoonia/"],
+    },
     address: {
       "@type": "PostalAddress",
       ...BUSINESS.address,

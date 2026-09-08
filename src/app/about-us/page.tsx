@@ -5,7 +5,8 @@ import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { BUSINESS, SITE_NAME, SITE_URL } from "@/lib/seo/business";
-import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
+
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "About Us";
@@ -119,6 +120,41 @@ export default function AboutUsPage() {
                   a booking is legitimate before paying a deposit. Those are exactly the questions
                   we built this company to answer directly, in plain English, from a real Jaipur
                   office rather than a call centre reading from a script.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="border-t border-sand/70 py-14 sm:py-20">
+          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+            <Reveal>
+              <SectionIntro eyebrow="Meet the Founder" heading="Narendra Poonia" />
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
+                <p>
+                  Narendra Poonia founded Colourful Indian Holidays in {BUSINESS.foundingYear}{" "}
+                  and continues to run the agency from its Jaipur office today —{" "}
+                  {new Date().getFullYear() - BUSINESS.foundingYear}+ years building an
+                  IATO-registered business recognised by Rajasthan Tourism and the Ministry of
+                  Tourism, Government of India. Under his leadership, the company has grown from
+                  a small local operation into a full-service agency covering India, Nepal and
+                  Bhutan, while keeping every itinerary planned by a team based here in Jaipur
+                  rather than resold from a wholesaler.
+                </p>
+                <p>
+                  He&apos;s supported day to day by a small team of English-speaking guides and
+                  drivers based across Rajasthan and beyond, each vetted and worked with directly
+                  rather than subcontracted the day before a trip.
+                </p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/narendrapoonia/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"
+                  >
+                    Connect with Narendra on LinkedIn
+                  </a>
                 </p>
               </div>
             </Reveal>

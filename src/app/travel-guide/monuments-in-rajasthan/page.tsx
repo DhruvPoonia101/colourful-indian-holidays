@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
-import { ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
+import { ArticleByline, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
@@ -14,6 +14,7 @@ const description =
 const pagePath = "/travel-guide/monuments-in-rajasthan";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 const datePublished = "2026-08-01";
+const dateModified = datePublished; // bump when this article is next revised
 
 export const metadata: Metadata = {
   title,
@@ -54,6 +55,7 @@ export default function MonumentsGuidePage() {
               path: pagePath,
               image: heroImage,
               datePublished,
+              dateModified,
             })
           ),
         }}
@@ -67,6 +69,14 @@ export default function MonumentsGuidePage() {
           eyebrow="Travel Guide"
           headline="Monuments in Rajasthan: A Complete Guide"
           subheadline="Rajasthan has more surviving forts and palaces than anywhere else in India. Here are the ones actually worth building a trip around."
+        />
+
+        <ArticleByline
+          authorName="Narendra Poonia"
+          authorRole="Founder, Colourful Indian Holidays"
+          authorUrl="/about-us"
+          datePublished={datePublished}
+          dateModified={dateModified}
         />
 
         <ArticleBody>
