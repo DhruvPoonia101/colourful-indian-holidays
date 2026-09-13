@@ -10,7 +10,7 @@ export const ranthamboreAttractions: CityCard[] = [
     tagline: "The Main Event",
     description:
       "A jeep safari is the reason most travellers come to Ranthambore — patient, quiet drives through dry deciduous forest with a genuinely strong chance of a sighting.",
-    href: "/destinations/rajasthan/ranthambore",
+    href: "/destinations/ranthambore",
     image: "/images/destinations/tiger-safari-jeep.webp",
     imageAlt: "A Bengal tiger resting on a safari track surrounded by jeeps",
   },
@@ -19,7 +19,7 @@ export const ranthamboreAttractions: CityCard[] = [
     tagline: "A Fort Inside the Park",
     description:
       "A 10th-century hilltop fort within Ranthambore itself, UNESCO-listed as part of the Hill Forts of Rajasthan — most safari routes pass beneath its walls.",
-    href: "/destinations/rajasthan/ranthambore",
+    href: "/destinations/ranthambore",
     image: "/images/destinations/ranthambore-fort.webp",
     imageAlt: "Ranthambore Fort ramparts overlooking the national park",
   },
@@ -28,7 +28,7 @@ export const ranthamboreAttractions: CityCard[] = [
     tagline: "The Park's Best View",
     description:
       "A former hunting lodge on the shore of Padam Talao, the park's largest lake — one of the most scenic and reliable spots for a tiger sighting near water.",
-    href: "/destinations/rajasthan/ranthambore",
+    href: "/destinations/ranthambore",
     image: "/images/destinations/jogi-mahal.webp",
     imageAlt: "Jogi Mahal on the shore of Padam Talao, Ranthambore",
   },
@@ -37,7 +37,7 @@ export const ranthamboreAttractions: CityCard[] = [
     tagline: "Inside the Fort",
     description:
       "Ranthambore Fort is also home to the Trinetra Ganesh Temple, one of the few places in India where people send wedding invitations by post addressed directly to Lord Ganesh.",
-    href: "/destinations/rajasthan/ranthambore",
+    href: "/destinations/ranthambore",
     image: "/images/destinations/ranthambore-temple-interior.webp",
     imageAlt: "Ornately decorated temple idol, Ranthambore",
   },

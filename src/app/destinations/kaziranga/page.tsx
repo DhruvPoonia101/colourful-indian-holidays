@@ -91,7 +91,7 @@ export default function KazirangaPage() {
           eyebrow="Destination Guide"
           headline="Kaziranga — Home to the Great One-Horned Rhino"
           subheadline="A UNESCO World Heritage Site on the Brahmaputra floodplain, home to two-thirds of the world&apos;s one-horned rhinoceros population."
-          primaryHref="/packages/wildlife-tours"
+          primaryHref="/tours/wildlife-tours"
           primaryLabel="View Wildlife Safari Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Kaziranga with Colourful Indian Holidays."
         />

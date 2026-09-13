@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Luxury, tailor-made Rajasthan and India tour packages for international travellers. Private guides, heritage hotels and custom itineraries since 2008.",
+    "Luxury, tailor-made Rajasthan and India tour packages for international travellers. Private guides, heritage hotels and custom itineraries since 2007.",
   openGraph: {
     siteName: SITE_NAME,
     type: "website",

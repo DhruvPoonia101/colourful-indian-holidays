@@ -22,7 +22,7 @@ export const may: MonthContent = {
     "It's worth being specific about what this heat actually feels like on the ground, since raw temperature figures rarely convey it well. By late morning in Jaipur or Agra, direct sunlight carries real physical weight, and even short walks between air-conditioned spaces — a car, a monument interior, a restaurant — feel like a genuine undertaking rather than routine sightseeing. Locals adjust their entire daily rhythm around it, with much of ordinary life shifting to the early morning and late evening hours, and visitors who adopt the same pattern find May considerably more manageable than those who try to maintain a conventional full-day sightseeing schedule against it.",
     "That same heat is exactly what pushes travellers north and upward, and May rewards them generously for making the trip. [[Leh & Ladakh|/destinations/leh-ladakh]] is now fully open and arguably at its best, with clear skies, comfortable daytime temperatures and high mountain passes fully accessible after the winter closure finally lifts. If your trip includes any Himalayan component, May is one of the strongest months of the year to build it around, and the contrast with the plains below could hardly be more dramatic — travellers who fly from a 40°C Jaipur afternoon into Leh's cool mountain air often describe it as one of the most striking climate shifts of their entire trip.",
     "[[Himachal|/destinations/himachal]]'s hill stations, [[Darjeeling|/destinations/darjeeling]] and [[Sikkim|/destinations/sikkim]] are all in peak season too this month, offering a genuinely pleasant escape from the heat below without Ladakh's higher altitude or longer travel logistics. Manali and Shimla in particular see a real surge in domestic tourism this month, as Indian families specifically travel north to escape the same heat that international visitors are also avoiding — meaning May's hill-station crowds are a genuine phenomenon worth planning around with early hotel bookings, even though the weather itself is excellent.",
-    "Wildlife safaris in May sit at an interesting crossroads. [[Ranthambore|/destinations/rajasthan/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] continue to offer strong sighting odds as extreme heat concentrates animals around the last remaining water sources, and many serious wildlife photographers consider May, alongside April, the peak of the entire tiger-sighting calendar. The trade-off is real, though — safari drives themselves happen in genuine heat, typically scheduled for the earliest morning slot and a similarly early evening slot to avoid the most intense midday hours, with the midday break becoming mandatory rather than optional this time of year.",
+    "Wildlife safaris in May sit at an interesting crossroads. [[Ranthambore|/destinations/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] continue to offer strong sighting odds as extreme heat concentrates animals around the last remaining water sources, and many serious wildlife photographers consider May, alongside April, the peak of the entire tiger-sighting calendar. The trade-off is real, though — safari drives themselves happen in genuine heat, typically scheduled for the earliest morning slot and a similarly early evening slot to avoid the most intense midday hours, with the midday break becoming mandatory rather than optional this time of year.",
     "South India remains firmly outside its comfortable window through May, hot and humid ahead of the monsoon's arrival in [[Kerala|/destinations/kerala]] typically in the first week of June. It's not a month most itineraries prioritise for the southern coast, and travellers whose dates are fixed to May generally do better directing their attention toward the Himalayas or a wildlife-focused itinerary instead of the beaches and backwaters further south.",
     "For travellers weighing whether May is the right month for their specific trip, the honest answer depends heavily on what the itinerary actually includes. A Himalayan-focused trip — Ladakh, Himachal, Darjeeling or Sikkim — genuinely shines in May, arguably as much as any other month of the year. A plains-only Golden Triangle trip is considerably harder going, though workable with careful planning around the heat. The travellers who find May most rewarding tend to be exactly those who lean fully into the Himalayan side of the country rather than trying to force a conventional plains itinerary into a month that doesn't naturally suit it.",
     "Logistics matter more in May than in most months, particularly for a Ladakh-bound trip. Flights into Leh from Delhi run frequently by this point in the season, and the short hop between a scorching plains city and the cool mountain air is part of what makes a May itinerary spanning both halves of the country so striking. Travellers doing the overland route into Ladakh instead, via Manali or Srinagar, should note that road conditions can still be variable early in May, with the higher passes only recently cleared of winter snow, so a flexible schedule or a slightly later departure reduces the risk of delays.",
@@ -31,7 +31,7 @@ export const may: MonthContent = {
   regionBreakdown: [
     {
       region: "Rajasthan & the Golden Triangle",
-      note: "The year's hottest window — workable but genuinely demanding, with daytime highs regularly above 40°C in [[Jaipur|/destinations/rajasthan/jaipur]] and Agra; consider shifting dates toward autumn if your itinerary is flexible, or plan a strict early-and-late sightseeing schedule if not.",
+      note: "The year's hottest window — workable but genuinely demanding, with daytime highs regularly above 40°C in [[Jaipur|/destinations/jaipur]] and Agra; consider shifting dates toward autumn if your itinerary is flexible, or plan a strict early-and-late sightseeing schedule if not.",
     },
     {
       region: "Leh & Ladakh",
@@ -47,7 +47,7 @@ export const may: MonthContent = {
     },
     {
       region: "Wildlife Parks",
-      note: "Often excellent for sightings — extreme heat concentrates animals around remaining water sources at [[Ranthambore|/destinations/rajasthan/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]], though the safari drives themselves happen in genuine heat requiring an early-morning and early-evening schedule.",
+      note: "Often excellent for sightings — extreme heat concentrates animals around remaining water sources at [[Ranthambore|/destinations/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]], though the safari drives themselves happen in genuine heat requiring an early-morning and early-evening schedule.",
     },
     {
       region: "Srinagar & Kashmir",
@@ -139,7 +139,7 @@ export const may: MonthContent = {
       name: "Delhi – Agra – Jaipur – Ranthambore",
       tagline: "With a Tiger Safari · 8 Days",
       description: "Timed for one of the two strongest tiger-sighting windows of the entire year.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-ranthambore",
+      href: "/tours/golden-triangle-tour-ranthambore",
       image: "/images/destinations/ranthambore-tiger.webp",
       imageAlt: "A wild tiger at Ranthambore National Park",
     },
@@ -147,7 +147,7 @@ export const may: MonthContent = {
       name: "Wildlife Tours",
       tagline: "Tiger Safaris",
       description: "Our dedicated wildlife category, for travellers building a trip specifically around peak sighting conditions.",
-      href: "/packages/wildlife-tours",
+      href: "/tours/wildlife-tours",
       image: "/images/destinations/ranthambore-tiger.webp",
       imageAlt: "Wild tiger at Ranthambore National Park",
     },
@@ -155,7 +155,7 @@ export const may: MonthContent = {
       name: "Delhi – Agra – Jaipur (4 Days)",
       tagline: "The Fast-Track Route · 4 Days",
       description: "A tighter schedule that minimises time spent in the plains' most intense midday heat.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-4-days",
+      href: "/tours/golden-triangle-tour-classic",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },

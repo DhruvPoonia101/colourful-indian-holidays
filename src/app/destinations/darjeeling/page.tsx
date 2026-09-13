@@ -91,7 +91,7 @@ export default function DarjeelingPage() {
           eyebrow="Destination Guide"
           headline="Darjeeling — Tea, Cloud & the Himalayas"
           subheadline="Terraced tea gardens, a UNESCO-listed mountain railway, and sunrise views of Kanchenjunga — a cool-climate hill station with a character all its own."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Darjeeling with Colourful Indian Holidays."
         />

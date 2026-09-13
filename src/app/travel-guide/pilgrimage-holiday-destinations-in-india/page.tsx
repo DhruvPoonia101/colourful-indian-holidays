@@ -458,7 +458,7 @@ export default function PilgrimageGuidePage() {
               Rajasthan
             </Link>{" "}
             and the{" "}
-            <Link href="/packages/golden-triangle-tours" className="text-maroon underline">
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle
             </Link>
             , while Bodh Gaya and Tirupati are better suited to travellers with a specific

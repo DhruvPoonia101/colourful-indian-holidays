@@ -91,7 +91,7 @@ export default function HimachalPage() {
           eyebrow="Destination Guide"
           headline="Himachal Pradesh — Manali & Shimla"
           subheadline="Pine-forested mountains, colonial-era hill station charm, and some of North India's best adventure activities — a cool-season escape from the plains."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Himachal (Manali & Shimla) with Colourful Indian Holidays."
         />

@@ -91,7 +91,7 @@ export default function MaharashtraBeachesPage() {
           eyebrow="Destination Guide"
           headline="Maharashtra Beaches — An Easy Escape from Mumbai"
           subheadline="Alibaug&apos;s fort-dotted coastline and the quieter Konkan shore at Ganpatipule — a genuine weekend escape without leaving the state."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Maharashtra Beaches with Colourful Indian Holidays."
         />

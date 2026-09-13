@@ -91,7 +91,7 @@ export default function MaharashtraPage() {
           eyebrow="Destination Guide"
           headline="Maharashtra — Beyond Mumbai"
           subheadline="UNESCO rock-cut cave temples carved over centuries, Pune's Maratha-era heritage, and one of India's most-visited pilgrimage towns."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Maharashtra with Colourful Indian Holidays."
         />

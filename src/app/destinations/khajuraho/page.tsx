@@ -91,7 +91,7 @@ export default function KhajurahoPage() {
           eyebrow="Destination Guide"
           headline="Khajuraho — Central India's Sculpted Masterpiece"
           subheadline="A UNESCO World Heritage temple complex built by the Chandela dynasty, famous for some of the most intricately carved stone sculpture anywhere in India."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Khajuraho with Colourful Indian Holidays."
         />

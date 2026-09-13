@@ -91,7 +91,7 @@ export default function EverestRegionPage() {
           eyebrow="Destination Guide"
           headline="Everest Region — See the World's Highest Peak"
           subheadline="A scenic flight for a morning, or a classic trek for two weeks — two very different ways to see Everest, both starting in Kathmandu."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to the Everest Region with Colourful Indian Holidays."
         />

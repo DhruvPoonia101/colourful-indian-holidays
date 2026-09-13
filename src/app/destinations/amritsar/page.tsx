@@ -91,7 +91,7 @@ export default function AmritsarPage() {
           eyebrow="Destination Guide"
           headline="Amritsar — Sikhism's Spiritual Heart"
           subheadline="The gold-plated Harmandir Sahib, a daily border ceremony unlike anything else in India, and a city defined by Punjabi warmth and hospitality."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Amritsar with Colourful Indian Holidays."
         />

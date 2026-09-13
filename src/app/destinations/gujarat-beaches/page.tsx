@@ -91,7 +91,7 @@ export default function GujaratBeachesPage() {
           eyebrow="Destination Guide"
           headline="Gujarat Beaches — Quiet Coastline, Real History"
           subheadline="Portuguese colonial architecture in Diu, and one of Hinduism&apos;s most significant temples on the shore at Somnath — a genuinely different kind of Indian coast."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Gujarat Beaches with Colourful Indian Holidays."
         />

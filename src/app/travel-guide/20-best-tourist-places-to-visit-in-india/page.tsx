@@ -198,7 +198,7 @@ export default function TwentyBestPlacesGuidePage() {
           <ArticleH2>Rajasthan&apos;s Desert Cities</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link href="/destinations/rajasthan/jaipur" className="text-maroon underline">
+              <Link href="/destinations/jaipur" className="text-maroon underline">
                 7. Jaipur
               </Link>
             </span>{" "}
@@ -210,7 +210,7 @@ export default function TwentyBestPlacesGuidePage() {
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link href="/destinations/rajasthan/udaipur" className="text-maroon underline">
+              <Link href="/destinations/udaipur" className="text-maroon underline">
                 8. Udaipur
               </Link>
             </span>{" "}
@@ -222,7 +222,7 @@ export default function TwentyBestPlacesGuidePage() {
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link href="/destinations/rajasthan/jaisalmer" className="text-maroon underline">
+              <Link href="/destinations/jaisalmer" className="text-maroon underline">
                 9. Jaisalmer
               </Link>
             </span>{" "}
@@ -234,7 +234,7 @@ export default function TwentyBestPlacesGuidePage() {
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link href="/destinations/rajasthan/pushkar" className="text-maroon underline">
+              <Link href="/destinations/pushkar" className="text-maroon underline">
                 10. Pushkar
               </Link>
             </span>{" "}
@@ -246,7 +246,7 @@ export default function TwentyBestPlacesGuidePage() {
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link href="/destinations/rajasthan/ranthambore" className="text-maroon underline">
+              <Link href="/destinations/ranthambore" className="text-maroon underline">
                 11. Ranthambore National Park
               </Link>
             </span>{" "}

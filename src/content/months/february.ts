@@ -19,10 +19,10 @@ export const february: MonthContent = {
   ],
   overview: [
     "If there's a single month with the fewest weak spots anywhere in the country, it's February. [[Rajasthan|/destinations/rajasthan]], [[Delhi|/destinations/delhi]] and [[Agra|/destinations/agra]] hold on to most of January's cool, dry, low-haze conditions, with daytime temperatures climbing a few degrees into the low-to-mid twenties Celsius — comfortable rather than cold. Morning fog in Delhi becomes noticeably less common than in January, which also makes flight schedules more reliable, and the sense of a slow thaw across the whole country is genuinely tangible by the second half of the month.",
-    "The improvement over January is subtle but real. Nights in [[Jaisalmer|/destinations/rajasthan/jaisalmer]] rarely drop as low as they did a few weeks earlier, and by late February the coldest mornings of the year are firmly behind the desert. This makes February a favourite among travellers who love January's clarity but would rather not pack quite as heavy a jacket, or who found the idea of near-freezing desert mornings a step too far. The trade-off, such as it is, comes only in the form of continued high demand — February remains squarely inside peak season, and the calmer weather doesn't translate into calmer hotel availability.",
+    "The improvement over January is subtle but real. Nights in [[Jaisalmer|/destinations/jaisalmer]] rarely drop as low as they did a few weeks earlier, and by late February the coldest mornings of the year are firmly behind the desert. This makes February a favourite among travellers who love January's clarity but would rather not pack quite as heavy a jacket, or who found the idea of near-freezing desert mornings a step too far. The trade-off, such as it is, comes only in the form of continued high demand — February remains squarely inside peak season, and the calmer weather doesn't translate into calmer hotel availability.",
     "Further south and along the coasts, February is arguably at its peak: [[Kerala|/destinations/kerala]], [[Goa|/destinations/goa]] and [[Tamil Nadu Beaches|/destinations/tamil-nadu-beaches]] are warm, dry and humidity-free, ahead of the far more intense heat that builds from March onward. Daytime temperatures along the coast typically sit in the high twenties to low thirties, without the muggy, sticky quality that arrives once humidity climbs later in spring. Backwater houseboats, beach afternoons and coastal fort visits all work at close to their most comfortable this month, and it's genuinely one of the best windows of the entire year for South India specifically.",
     "It's also the month for two of Rajasthan's most colourful desert festivals, both of which reward travellers whose dates happen to align. The Jaisalmer Desert Festival, in particular, transforms the town for a few days into a celebration of Rajasthani desert culture — camel races, folk music, turban-tying competitions — that's genuinely worth timing a Jaisalmer stop around if your schedule allows it. These aren't staged tourist performances so much as long-running local traditions that happen to welcome visitors warmly.",
-    "Wildlife safaris continue to improve through February as the dry season deepens. [[Ranthambore|/destinations/rajasthan/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] both see thinning vegetation and reduced water availability start to concentrate animals more predictably than in January, which begins nudging tiger sighting odds upward — a trend that continues through March and peaks properly in April and May. February safaris sit in a genuinely comfortable middle ground: cool enough mornings for a pleasant open-jeep ride, with sighting conditions already noticeably better than at the start of the year.",
+    "Wildlife safaris continue to improve through February as the dry season deepens. [[Ranthambore|/destinations/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] both see thinning vegetation and reduced water availability start to concentrate animals more predictably than in January, which begins nudging tiger sighting odds upward — a trend that continues through March and peaks properly in April and May. February safaris sit in a genuinely comfortable middle ground: cool enough mornings for a pleasant open-jeep ride, with sighting conditions already noticeably better than at the start of the year.",
     "The one real trade-off across the entire month remains peak tourist season nationwide, so hotel rates stay elevated and popular sights are busy — a fair exchange for near-ideal weather almost everywhere at once, but worth planning around rather than being surprised by. Travellers who book two to three months ahead generally have the widest choice of heritage properties in Jaipur, Udaipur and Jaisalmer; those booking closer to the date can still travel comfortably, just with a narrower hotel shortlist.",
     "For travellers weighing a North-and-South combination trip, February is arguably the single easiest month of the year to plan one in. Domestic flight connections between Rajasthan or Delhi and Kerala's airports run frequently, and neither leg of the trip asks you to compromise on weather to accommodate the other — a genuinely rare alignment that makes February worth prioritising if a combined itinerary is on the table.",
     "The desert stretch of Rajasthan deserves particular mention this month. Jaisalmer, sitting deep in the Thar Desert, sees daytime temperatures that are genuinely pleasant for walking the fort's sandstone lanes without the punishing midday sun that arrives from April onward, while nights have shed most of January's near-freezing chill without yet losing their crispness entirely. It's this specific balance — warm enough by day, cool enough by night to still feel atmospheric around a desert campfire — that makes February one of the better months for an overnight camel safari and desert camp experience, alongside the added bonus of the Desert Festival itself if your dates align with it.",
@@ -34,7 +34,7 @@ export const february: MonthContent = {
   regionBreakdown: [
     {
       region: "Rajasthan & the Golden Triangle",
-      note: "Still cool and dry, warming gently from January's coldest mornings — many travellers rate February even higher than January for overall comfort, since the desert chill has softened without the midday heat yet building. [[Jaipur|/destinations/rajasthan/jaipur]] and [[Jodhpur|/destinations/rajasthan/jodhpur]] both sit in a genuinely comfortable stretch this month, and evening rooftop dinners overlooking either city's old town skyline are far more pleasant than they'd be a month earlier without a heavy jacket.",
+      note: "Still cool and dry, warming gently from January's coldest mornings — many travellers rate February even higher than January for overall comfort, since the desert chill has softened without the midday heat yet building. [[Jaipur|/destinations/jaipur]] and [[Jodhpur|/destinations/jodhpur]] both sit in a genuinely comfortable stretch this month, and evening rooftop dinners overlooking either city's old town skyline are far more pleasant than they'd be a month earlier without a heavy jacket.",
     },
     {
       region: "Kerala, Goa & Tamil Nadu",
@@ -46,7 +46,7 @@ export const february: MonthContent = {
     },
     {
       region: "Wildlife Parks",
-      note: "Good and steadily improving — vegetation continues to thin at [[Ranthambore|/destinations/rajasthan/ranthambore]], [[Sariska|/destinations/sariska]] and [[Bandhavgarh|/destinations/bandhavgarh]], bringing animals closer to shrinking water sources and nudging tiger sighting odds upward compared to January, a trend that will keep strengthening into March and April.",
+      note: "Good and steadily improving — vegetation continues to thin at [[Ranthambore|/destinations/ranthambore]], [[Sariska|/destinations/sariska]] and [[Bandhavgarh|/destinations/bandhavgarh]], bringing animals closer to shrinking water sources and nudging tiger sighting odds upward compared to January, a trend that will keep strengthening into March and April.",
     },
     {
       region: "Himalayas & Ladakh",
@@ -150,7 +150,7 @@ export const february: MonthContent = {
       name: "Delhi – Agra – Jaipur",
       tagline: "The Classic Golden Triangle · 6 Days",
       description: "Comfortable, dry conditions throughout — one of the two or three best months of the year for this route.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
+      href: "/tours/golden-triangle-tour-classic",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },
@@ -158,7 +158,7 @@ export const february: MonthContent = {
       name: "Delhi – Agra – Jaipur – Udaipur",
       tagline: "Extended with Rajasthan's Lake City · 9 Days",
       description: "Udaipur's lakes are especially pleasant this month, with mild, comfortable evenings on the water.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-udaipur",
+      href: "/tours/golden-triangle-tour-udaipur",
       image: "/images/destinations/udaipur-lake-palace.webp",
       imageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
     },
@@ -166,7 +166,7 @@ export const february: MonthContent = {
       name: "North India Tours",
       tagline: "Delhi & Beyond",
       description: "A longer route through the region during one of its most consistently comfortable stretches.",
-      href: "/packages/north-india-tours",
+      href: "/tours/north-india-tours",
       image: "/images/destinations/delhi-india-gate.webp",
       imageAlt: "India Gate at dusk, Delhi",
     },

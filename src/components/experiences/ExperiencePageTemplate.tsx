@@ -1,0 +1,186 @@
+import { PageHero } from "@/components/layout/PageHero";
+import { QuickFacts } from "@/components/destinations/QuickFacts";
+import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
+import { SectionIntro } from "@/components/destinations/SectionIntro";
+import { FAQSection } from "@/components/destinations/FAQSection";
+import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ItineraryTimeline } from "@/components/packages/ItineraryTimeline";
+import { InclusionsExclusions } from "@/components/packages/InclusionsExclusions";
+import { Reveal } from "@/components/ui/Reveal";
+import { Button } from "@/components/ui/Button";
+import { FiArrowRight } from "react-icons/fi";
+import { fleetCards } from "@/content/car-rental-hub";
+import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
+import { faqJsonLd } from "@/lib/seo/faq-schema";
+import { touristTripJsonLd } from "@/lib/seo/tourist-trip-schema";
+import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
+import type { ExperienceContent } from "@/content/experiences/types";
+
+/**
+ * Renders a multi-day Experience page (e.g. a honeymoon itinerary, or a
+ * standalone experience like Desert Safari). Deliberately does NOT link to
+ * /tours anywhere — breadcrumb, related cards, and CTAs all stay within
+ * /experiences and /destinations.
+ *
+ * @param category - Optional intermediate breadcrumb category (name + path)
+ * for pages that belong to a sub-hub, e.g. { name: "Honeymoon Tours", path:
+ * "/experiences/honeymoon-tours" }. Omit for standalone experience pages
+ * that sit directly under /experiences with no sub-category.
+ */
+export function ExperiencePageTemplate({
+  content,
+  category,
+}: {
+  content: ExperienceContent;
+  category?: { name: string; path: string };
+}) {
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: "Experiences", path: "/experiences" },
+    ...(category ? [category] : []),
+    { name: content.name, path: `/experiences/${content.slug}` },
+  ];
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd(breadcrumbs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(content.faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            touristTripJsonLd({
+              slug: content.slug,
+              name: content.name,
+              description: content.metaDescription,
+              image: content.heroImage,
+              durationDays: content.itinerary.length,
+              priceCurrency: content.priceCurrency,
+              itinerary: content.itinerary,
+              urlPath: `/experiences/${content.slug}`,
+            })
+          ),
+        }}
+      />
+
+      <main>
+        <PageHero
+          image={content.heroImage}
+          imageAlt={content.heroImageAlt}
+          breadcrumbs={breadcrumbs}
+          eyebrow={content.tagline}
+          headline={content.heroHeadline}
+          subheadline={content.heroSubheadline}
+          primaryLabel="Plan My Journey"
+          primaryQuoteButtonPageName={`${content.name} (Hero)`}
+          whatsappMessage={`Hi! I'd like to know more about the ${content.name}.`}
+          heightClassName={content.heroHeightClassName}
+        />
+
+        <QuickFacts facts={content.quickFacts} quoteButtonPageName={`${content.name} (Quick Facts)`} />
+
+        <ItineraryTimeline
+          eyebrow="Day By Day"
+          heading={`${content.name} Itinerary`}
+          intro={content.overview}
+          days={content.itinerary}
+          topDivider
+        />
+
+        <InclusionsExclusions
+          eyebrow="What's Covered"
+          heading="Inclusions & Exclusions"
+          inclusions={content.inclusions}
+          exclusions={content.exclusions}
+          topDivider
+        />
+
+        <HighlightsStrip
+          eyebrow="Why This Experience"
+          heading={`Why Choose ${content.name} With Us`}
+          highlights={content.highlights}
+          topDivider
+        />
+
+        {content.bestTimeToVisit && (
+          <section className="border-t border-sand/70 py-10 text-center sm:py-14">
+            <div className="mx-auto max-w-2xl px-6 sm:px-8">
+              <Reveal>
+                <SectionIntro
+                  eyebrow="Best Time to Visit"
+                  heading={content.bestTimeToVisit.heading}
+                  align="center"
+                  headingSizeClassName="text-2xl sm:text-3xl"
+                />
+                <p className="mt-4 text-base leading-relaxed text-ink-soft">
+                  {content.bestTimeToVisit.note}
+                </p>
+                <div className="mt-7 flex justify-center">
+                  <Button href="/best-time-to-visit-india" variant="gold">
+                    View the Full Travel Calendar
+                    <FiArrowRight aria-hidden="true" className="h-4 w-4" />
+                  </Button>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
+        {content.relatedDestinations && content.relatedDestinations.length > 0 && (
+          <CityGrid
+            eyebrow="On This Route"
+            heading="Related Destinations"
+            cities={content.relatedDestinations}
+            topDivider
+            showActions
+          />
+        )}
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Honeymoon Experiences"
+          cities={content.relatedExperiences}
+          topDivider
+          showActions
+        />
+
+        {content.showCarFleet && (
+          <CityGrid
+            eyebrow="Plan Your Trip"
+            heading="Getting Around by Private Car"
+            cities={fleetCards.slice(0, 3)}
+            topDivider
+            showActions
+          />
+        )}
+
+        <FAQSection
+          eyebrow="FAQ"
+          heading={`Common Questions About ${content.name}`}
+          faqs={content.faqs}
+          whatsappMessage={`Hi! I have a question about ${content.name}.`}
+          topDivider
+        />
+
+        <JourneyCTA
+          backgroundImage={content.heroImage}
+          eyebrow="Start Your Journey"
+          headline="Your Honeymoon Awaits."
+          headlineItalic="Let's Plan It Together."
+          subtext="Every honeymoon here is built privately around your dates and preferences — tell us what you have in mind and we'll reply within 24 hours."
+          primaryLabel="Plan My Journey"
+          primaryHref="/contact"
+          whatsappMessage={`Hi! I'd like to book ${content.name}.`}
+          trustBadges={DEFAULT_TRUST_BADGES}
+        />
+      </main>
+    </>
+  );
+}

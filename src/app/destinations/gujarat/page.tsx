@@ -91,7 +91,7 @@ export default function GujaratPage() {
           eyebrow="Destination Guide"
           headline="Gujarat — Desert, Lions & a UNESCO City"
           subheadline="A white salt desert under a full moon, the world's last wild Asiatic lions, and India's first UNESCO World Heritage City — a genuinely different side of West India."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Gujarat with Colourful Indian Holidays."
         />

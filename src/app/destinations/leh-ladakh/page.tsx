@@ -91,7 +91,7 @@ export default function LehLadakhPage() {
           eyebrow="Destination Guide"
           headline="Leh & Ladakh — India's High-Altitude Desert"
           subheadline="Turquoise lakes, sand dunes above 10,000 feet, and Buddhist monasteries older than most European cathedrals — Ladakh looks and feels like nowhere else in India."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Leh & Ladakh with Colourful Indian Holidays."
         />

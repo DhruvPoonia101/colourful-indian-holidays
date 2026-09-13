@@ -40,7 +40,7 @@ export const wildlifeDestinations: CityCard[] = [
     name: "Ranthambore",
     tagline: "Tiger Country",
     description: "One of India's best wild tiger-sighting parks, close to Jaipur.",
-    href: "/destinations/rajasthan/ranthambore",
+    href: "/destinations/ranthambore",
     image: "/images/destinations/ranthambore-tiger.webp",
     imageAlt: "Wild tiger at Ranthambore National Park",
   },

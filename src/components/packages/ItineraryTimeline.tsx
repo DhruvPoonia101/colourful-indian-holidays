@@ -1,9 +1,13 @@
+import Image from "next/image";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 
 export type ItineraryDay = {
   title: string;
   description: string;
+  /** Optional real photo for this day — shown as a thumbnail beside the description. */
+  image?: string;
+  imageAlt?: string;
 };
 
 export function ItineraryTimeline({
@@ -45,9 +49,22 @@ export function ItineraryTimeline({
                     <span className="mt-1 w-px flex-1 bg-sand" aria-hidden="true" />
                   )}
                 </div>
-                <div className="pb-2">
-                  <h3 className="font-display text-lg font-semibold text-ink">{day.title}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{day.description}</p>
+                <div className="flex min-w-0 flex-1 flex-col gap-4 pb-2 sm:flex-row sm:items-start">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-display text-lg font-semibold text-ink">{day.title}</h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{day.description}</p>
+                  </div>
+                  {day.image && (
+                    <div className="relative h-40 w-full shrink-0 overflow-hidden rounded-xl sm:h-28 sm:w-44">
+                      <Image
+                        src={day.image}
+                        alt={day.imageAlt ?? day.title}
+                        fill
+                        sizes="(min-width: 640px) 176px, 100vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </Reveal>

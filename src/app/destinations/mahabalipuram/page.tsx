@@ -91,7 +91,7 @@ export default function MahabalipuramPage() {
           eyebrow="Destination Guide"
           headline="Mahabalipuram — Stone Carved by the Sea"
           subheadline="A UNESCO World Heritage site of rock-cut temples and monuments, carved directly from granite outcrops on the edge of the Bay of Bengal."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Mahabalipuram with Colourful Indian Holidays."
         />

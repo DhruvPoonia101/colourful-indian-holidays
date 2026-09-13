@@ -91,7 +91,7 @@ export default function KathmanduPage() {
           eyebrow="Destination Guide"
           headline="Kathmandu — Nepal's Temple-Filled Capital"
           subheadline="Seven UNESCO sites in one small valley, and the easiest international add-on to an India itinerary — a short flight from Delhi."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Kathmandu with Colourful Indian Holidays."
         />

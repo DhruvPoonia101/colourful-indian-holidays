@@ -91,7 +91,7 @@ export default function ParoPage() {
           eyebrow="Destination Guide"
           headline="Paro — Home of the Tiger's Nest"
           subheadline="Bhutan's only international airport and the setting for its single most iconic sight — a clifftop monastery 900 metres above the valley floor."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Paro with Colourful Indian Holidays."
         />

@@ -105,7 +105,7 @@ export default function DelhiPage() {
           eyebrow="Destination Guide"
           headline="Delhi — India's Layered, Living Capital"
           subheadline="Mughal forts, colonial avenues and the busiest bazaars in North India — Delhi is where most international journeys through India begin."
-          primaryHref="/packages/golden-triangle-tours"
+          primaryHref="/tours/golden-triangle-tour"
           primaryLabel="View Golden Triangle Tours"
           whatsappMessage="Hi! I'd like to plan a Delhi trip with Colourful Indian Holidays."
         />

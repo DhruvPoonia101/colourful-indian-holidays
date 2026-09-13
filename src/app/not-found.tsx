@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const popularPages = [
   { name: "Rajasthan", href: "/destinations/rajasthan" },
   { name: "Delhi", href: "/destinations/delhi" },
-  { name: "Rajasthan Tours", href: "/packages/rajasthan-tours" },
+  { name: "Rajasthan Tours", href: "/tours/rajasthan-tours" },
   { name: "Car Rental", href: "/car-rental" },
   { name: "Travel Guide", href: "/travel-guide" },
   { name: "Contact Us", href: "/contact" },

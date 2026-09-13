@@ -91,7 +91,7 @@ export default function GoaPage() {
           eyebrow="Destination Guide"
           headline="Goa — Beaches, Heritage & a Different Pace"
           subheadline="Beach shacks and nightlife in the north, quieter upscale stays in the south, and 450 years of Portuguese heritage running through it all."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Goa with Colourful Indian Holidays."
         />

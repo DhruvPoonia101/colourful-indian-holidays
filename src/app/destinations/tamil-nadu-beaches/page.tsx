@@ -91,7 +91,7 @@ export default function TamilNaduBeachesPage() {
           eyebrow="Destination Guide"
           headline="Tamil Nadu Beaches — India's Southern Coastline"
           subheadline="From UNESCO-listed shore temples to India&apos;s longest urban beach, Tamil Nadu&apos;s coast pairs genuine history with the water."
-          primaryHref="/packages/south-india-tours"
+          primaryHref="/tours/south-india-tours"
           primaryLabel="View South India Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Tamil Nadu Beaches with Colourful Indian Holidays."
         />

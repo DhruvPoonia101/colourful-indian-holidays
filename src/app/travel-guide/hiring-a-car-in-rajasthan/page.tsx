@@ -139,7 +139,7 @@ export default function HiringACarInRajasthanGuidePage() {
             each day&apos;s schedule — which noticeably improves the back half of a longer trip
             compared with meeting a new driver at every stop. The vehicle and driver are arranged
             as part of your overall{" "}
-            <Link href="/packages" className="text-maroon underline">
+            <Link href="/tours" className="text-maroon underline">
               tour package
             </Link>
             , not booked separately once you land, which means your route, group size, and travel
@@ -293,7 +293,7 @@ export default function HiringACarInRajasthanGuidePage() {
             rather than a guarantee — actual travel time varies with the season, festival-related
             road closures, and how many stops you build into the day. This is exactly the kind of
             detail we factor in when building a{" "}
-            <Link href="/packages/rajasthan-tours" className="text-maroon underline">
+            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan itinerary
             </Link>
             , so the pacing between cities feels comfortable rather than rushed.
@@ -536,7 +536,7 @@ export default function HiringACarInRajasthanGuidePage() {
             </Link>{" "}
             pages. If you&apos;re still deciding between vehicles, or want one built directly into
             a full{" "}
-            <Link href="/packages/rajasthan-tours" className="text-maroon underline">
+            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan itinerary
             </Link>
             , tell us your group size and travel dates and we&apos;ll put together the right

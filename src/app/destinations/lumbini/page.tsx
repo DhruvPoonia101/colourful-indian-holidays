@@ -91,7 +91,7 @@ export default function LumbiniPage() {
           eyebrow="Destination Guide"
           headline="Lumbini — The Birthplace of the Buddha"
           subheadline="A UNESCO World Heritage site holding the exact spot of the Buddha's birth, ringed by monasteries built by Buddhist nations from across the world."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Lumbini with Colourful Indian Holidays."
         />

@@ -319,7 +319,7 @@ export default function MonumentsGuidePage() {
             Most of these monuments reward at least half a day each rather than a rushed hour —
             Amber Fort, Mehrangarh and Chittorgarh in particular have enough scale that a hurried
             visit means missing entire wings. If you&apos;re building a{" "}
-            <Link href="/packages/rajasthan-tours" className="text-maroon underline">
+            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan itinerary
             </Link>{" "}
             around these sites specifically, count on roughly 8 to 10 days to cover Jaipur,
@@ -409,7 +409,7 @@ export default function MonumentsGuidePage() {
               Rajasthan destination guide
             </Link>{" "}
             and our{" "}
-            <Link href="/packages/rajasthan-tours" className="text-maroon underline">
+            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan tour packages
             </Link>
             . Whether you want the essential Jaipur–Jodhpur–Udaipur circuit or a longer route

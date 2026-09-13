@@ -91,7 +91,7 @@ export default function ChitwanPage() {
           eyebrow="Destination Guide"
           headline="Chitwan — Jungle Safaris & One-Horned Rhinos"
           subheadline="Sal forest, riverside grassland, and one of the last strongholds of the greater one-horned rhinoceros — a complete change of pace from Nepal's mountains and temples."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Chitwan with Colourful Indian Holidays."
         />

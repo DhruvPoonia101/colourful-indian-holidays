@@ -91,7 +91,7 @@ export default function AndamanIslandsPage() {
           eyebrow="Destination Guide"
           headline="Andaman Islands — India's Tropical Frontier"
           subheadline="Remote, coral-fringed beaches in the Bay of Bengal, unlike anywhere else on the Indian mainland — plus a sobering piece of colonial history at Cellular Jail."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Andaman Islands with Colourful Indian Holidays."
         />

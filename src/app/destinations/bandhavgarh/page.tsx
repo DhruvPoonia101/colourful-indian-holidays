@@ -91,7 +91,7 @@ export default function BandhavgarhPage() {
           eyebrow="Destination Guide"
           headline="Bandhavgarh — India's Highest Tiger Density"
           subheadline="The park with the highest concentration of tigers anywhere in India, set around an ancient hilltop fort in Madhya Pradesh."
-          primaryHref="/packages/wildlife-tours"
+          primaryHref="/tours/wildlife-tours"
           primaryLabel="View Wildlife Safari Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Bandhavgarh with Colourful Indian Holidays."
         />

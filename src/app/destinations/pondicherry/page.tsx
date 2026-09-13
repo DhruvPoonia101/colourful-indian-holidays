@@ -91,7 +91,7 @@ export default function PondicherryPage() {
           eyebrow="Destination Guide"
           headline="Pondicherry — A French Corner of South India"
           subheadline="Mustard-yellow colonial villas, a boulder-lined seafront promenade, and a noticeably slower pace — a genuinely different side of Tamil Nadu."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Pondicherry with Colourful Indian Holidays."
         />

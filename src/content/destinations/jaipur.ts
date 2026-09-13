@@ -10,7 +10,7 @@ export const jaipurAttractions: CityCard[] = [
     tagline: "The Icon of Jaipur",
     description:
       "A hilltop fort-palace of pale yellow and pink sandstone overlooking Maota Lake, built from 1592 and expanded over generations — Jaipur's most-photographed monument.",
-    href: "/destinations/rajasthan/jaipur",
+    href: "/destinations/jaipur",
     image: "/images/destinations/amber-fort-jaipur.webp",
     imageAlt: "Amber Fort at sunset, Jaipur",
   },
@@ -19,7 +19,7 @@ export const jaipurAttractions: CityCard[] = [
     tagline: "Still a Royal Residence",
     description:
       "Jaipur's former royal family still occupies part of this palace complex, with museum wings covering Rajput weaponry, royal portraits and textiles open to visitors.",
-    href: "/destinations/rajasthan/jaipur",
+    href: "/destinations/jaipur",
     image: "/images/destinations/jaipur-city-palace.webp",
     imageAlt: "City Palace courtyard, Jaipur",
   },
@@ -28,7 +28,7 @@ export const jaipurAttractions: CityCard[] = [
     tagline: "Palace of Winds",
     description:
       "A five-storey honeycomb facade of 953 small windows, built in 1799 so royal women could watch street life below without being seen — startlingly shallow from behind.",
-    href: "/destinations/rajasthan/jaipur",
+    href: "/destinations/jaipur",
     image: "/images/destinations/jaipur-hawa-mahal.webp",
     imageAlt: "Hawa Mahal, the Palace of Winds, Jaipur",
   },
@@ -37,7 +37,7 @@ export const jaipurAttractions: CityCard[] = [
     tagline: "UNESCO World Heritage Site",
     description:
       "Nineteen stone and marble astronomical instruments built in the 1720s, still functional today — the largest sundial can tell local time to within two seconds.",
-    href: "/destinations/rajasthan/jaipur",
+    href: "/destinations/jaipur",
     image: "/images/destinations/jaipur-jantar-mantar.webp",
     imageAlt: "Jantar Mantar astronomical instruments, Jaipur",
   },
@@ -104,7 +104,7 @@ export const jaipurRelatedDestinations: CityCard[] = [
     name: "Ranthambore",
     tagline: "Tiger Country",
     description: "A tiger safari just a few hours from Jaipur, easily added to any itinerary.",
-    href: "/destinations/rajasthan/ranthambore",
+    href: "/destinations/ranthambore",
     image: "/images/destinations/ranthambore-tiger.webp",
     imageAlt: "Wild tiger at Ranthambore National Park",
   },

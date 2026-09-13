@@ -16,6 +16,10 @@ export type TouristTripInput = {
   startingPrice?: number;
   priceCurrency: string;
   itinerary: TripItineraryDay[];
+  /** Full site-relative path to this trip's page, e.g. "/tours/jaipur-city-tour"
+   * or "/experiences/udaipur-honeymoon". Defaults to "/tours/{slug}" for
+   * backward compatibility with existing tour package callers. */
+  urlPath?: string;
 };
 
 export function touristTripJsonLd(trip: TouristTripInput) {
@@ -47,7 +51,7 @@ export function touristTripJsonLd(trip: TouristTripInput) {
         description: "Price on request — contact us for a personalised quote.",
       },
       availability: "https://schema.org/InStock",
-      url: `${SITE_URL}/packages/${trip.slug}`,
+      url: `${SITE_URL}${trip.urlPath ?? `/tours/${trip.slug}`}`,
     },
     provider: {
       "@type": "TravelAgency",

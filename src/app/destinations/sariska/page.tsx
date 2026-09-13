@@ -91,7 +91,7 @@ export default function SariskaPage() {
           eyebrow="Destination Guide"
           headline="Sariska — Tiger Reserve on Rajasthan's Doorstep"
           subheadline="A tiger reintroduction success story set among ancient temple ruins, close enough to Jaipur and Delhi for an easy add-on."
-          primaryHref="/packages/wildlife-tours"
+          primaryHref="/tours/wildlife-tours"
           primaryLabel="View Wildlife Safari Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Sariska with Colourful Indian Holidays."
         />

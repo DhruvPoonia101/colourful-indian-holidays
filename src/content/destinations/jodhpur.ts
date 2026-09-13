@@ -10,7 +10,7 @@ export const jodhpurAttractions: CityCard[] = [
     tagline: "One of India's Best-Preserved Forts",
     description:
       "Rising 400 feet above the city on a sheer rocky outcrop, founded in 1459 and never successfully breached in battle — museum galleries cover Rajput weaponry, palanquins and royal portraits.",
-    href: "/destinations/rajasthan/jodhpur",
+    href: "/destinations/jodhpur",
     image: "/images/destinations/mehrangarh-fort-jodhpur.webp",
     imageAlt: "Mehrangarh Fort overlooking the blue city of Jodhpur",
   },
@@ -19,7 +19,7 @@ export const jodhpurAttractions: CityCard[] = [
     tagline: "The Taj Mahal of Marwar",
     description:
       "A white marble cenotaph with intricately carved lattice work, built in 1899 in memory of Maharaja Jaswant Singh II — a peaceful, quieter stop just below the fort.",
-    href: "/destinations/rajasthan/jodhpur",
+    href: "/destinations/jodhpur",
     image: "/images/destinations/jodhpur-jaswant-thada.webp",
     imageAlt: "Jaswant Thada, Jodhpur",
   },
@@ -28,7 +28,7 @@ export const jodhpurAttractions: CityCard[] = [
     tagline: "One of the World's Largest Private Residences",
     description:
       "Part royal residence, part luxury hotel and part museum, this early-20th-century palace remains home to Jodhpur's former royal family.",
-    href: "/destinations/rajasthan/jodhpur",
+    href: "/destinations/jodhpur",
     image: "/images/destinations/jodhpur-umaid-bhawan.webp",
     imageAlt: "Umaid Bhawan Palace, Jodhpur",
   },
@@ -37,7 +37,7 @@ export const jodhpurAttractions: CityCard[] = [
     tagline: "Old Town Wandering",
     description:
       "The indigo-washed lanes below Mehrangarh, originally a Brahmin caste marker and now a citywide aesthetic, are best explored on foot with time to get pleasantly lost.",
-    href: "/destinations/rajasthan/jodhpur",
+    href: "/destinations/jodhpur",
     image: "/images/destinations/jodhpur-blue-city-streets.webp",
     imageAlt: "Blue-painted old town streets, Jodhpur",
   },

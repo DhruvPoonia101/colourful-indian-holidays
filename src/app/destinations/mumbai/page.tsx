@@ -91,7 +91,7 @@ export default function MumbaiPage() {
           eyebrow="Destination Guide"
           headline="Mumbai — India's City of Dreams"
           subheadline="Colonial-era architecture, a sweeping coastal skyline, and the energy of India's financial and entertainment capital, all in one dense, fast-moving city."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Mumbai with Colourful Indian Holidays."
         />

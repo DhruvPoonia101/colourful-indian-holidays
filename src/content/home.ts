@@ -42,7 +42,7 @@ export const trustStats = [
   { icon: "users", value: "7900+", label: "Happy Travellers" },
   { icon: "globe", value: "30+", label: "Countries Served" },
   { icon: "shield", value: "18+", label: "Years of Experience" },
-  { icon: "headset", value: "8+", label: "Offices" },
+  { icon: "headset", value: "8+", label: "Offices, HQ Jaipur" },
 ] as const;
 
 export const associations = [
@@ -224,7 +224,7 @@ export const introCopy = {
   eyebrow: "Who We Are",
   heading: "Private Travel Planning Across the Indian Subcontinent",
   paragraphs: [
-    "Colourful Indian Holidays has been designing private, tailor-made journeys since 2008 — not fixed group tours, but itineraries built around your own dates, pace and interests. Rajasthan's forts and palaces remain our deepest expertise, but our reach now spans wildlife safaris at Ranthambore and Kaziranga, coastal escapes from Tamil Nadu to the Andaman Islands, and festival-timed trips built around events like the Pushkar Camel Fair and Kumbh Mela.",
+    "Colourful Indian Holidays has been designing private, tailor-made journeys since 2007 — not fixed group tours, but itineraries built around your own dates, pace and interests. Rajasthan's forts and palaces remain our deepest expertise, but our reach now spans wildlife safaris at Ranthambore and Kaziranga, coastal escapes from Tamil Nadu to the Andaman Islands, and festival-timed trips built around events like the Pushkar Camel Fair and Kumbh Mela.",
     "Every trip includes a private, English-speaking guide and driver, handpicked heritage and luxury hotels, and one point of contact from your first enquiry to the day you fly home. We also plan trips that extend beyond India — into Nepal and Bhutan — for travellers who want to see more of the subcontinent in a single journey.",
   ],
 } as const;

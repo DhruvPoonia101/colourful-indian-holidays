@@ -22,7 +22,7 @@ export const march: MonthContent = {
     "The shift happens gradually rather than all at once, which is worth understanding when picking your exact dates within the month. The first ten days of March often feel indistinguishable from late February — mornings still cool enough for a light jacket, afternoons warm but manageable. By the third week, the transformation is unmistakable, with afternoon temperatures in Jaipur and Agra regularly exceeding 30°C and the desert sun taking on real intensity by midday. Travellers booking a March trip do well to request the earliest dates the month allows if comfort is a priority, or to accept the trade-off if Holi's timing is the deciding factor instead.",
     "March is also when Holi, India's exuberant festival of colour, usually falls — a genuinely unmissable experience for travellers happy to get thoroughly covered in coloured powder, particularly in Rajasthan and around Mathura and Vrindavan, where celebrations run for several days and are considered among the most vivid in the country. The festival marks the arrival of spring and the triumph of good over evil in Hindu tradition, and while the exact date shifts each year with the lunar calendar, it reliably falls somewhere in March, making this the one month where checking the specific festival date before booking genuinely matters.",
     "Meanwhile, the Himalayan foothills — [[Himachal|/destinations/himachal]], [[Rishikesh & Haridwar|/destinations/rishikesh-haridwar]] and the lower hill stations — are just waking up from winter, with clearing mountain views and the first hints of spring, making March a good month to start shifting itineraries northward and upward as the plains begin to warm. Orchards in Himachal's valleys begin showing their first blossoms toward the end of the month, a preview of April's fuller bloom, and the crowds that fill these hill stations from May onward haven't yet arrived, giving March a genuinely quieter, more contemplative character in the mountains.",
-    "Wildlife safaris continue to improve through March as the dry season deepens further. [[Ranthambore|/destinations/rajasthan/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] often see excellent sighting conditions this month, as rising heat drives animals toward the diminishing water sources with increasing predictability — March sits comfortably within the strengthening trend that will peak in April and May, without yet requiring travellers to endure the most extreme midday heat those later months bring to an open safari jeep.",
+    "Wildlife safaris continue to improve through March as the dry season deepens further. [[Ranthambore|/destinations/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] often see excellent sighting conditions this month, as rising heat drives animals toward the diminishing water sources with increasing predictability — March sits comfortably within the strengthening trend that will peak in April and May, without yet requiring travellers to endure the most extreme midday heat those later months bring to an open safari jeep.",
     "South India, by contrast, is moving in the opposite direction from the Himalayan foothills. [[Kerala|/destinations/kerala]] and [[Tamil Nadu Beaches|/destinations/tamil-nadu-beaches]] are warming up and becoming increasingly humid this month, past the comfortable dry stretch of January and February. It's still workable, particularly early in the month, but this is the point in the calendar where South India starts to lose its edge as the more comfortable half of a combined itinerary — travellers prioritising coastal comfort increasingly look toward the September–February window instead once March arrives.",
     "For travellers whose trip is anchored around the Golden Triangle specifically, March poses a genuine scheduling question worth thinking through in advance: prioritise comfort by booking early in the month, or prioritise Holi by booking around its specific date even if that means warmer afternoons. Neither answer is wrong, but they lead to meaningfully different trips, and it's worth deciding which matters more before locking in dates rather than discovering the trade-off after arrival.",
     "Delhi in March follows a similar arc to Rajasthan, moving from comfortably mild at the start of the month to genuinely warm by the close of it. The city's parks and gardens, particularly around Lodhi Garden and Humayun's Tomb, are especially pleasant in the first two weeks, before the shade of a monument's courtyard becomes the more appealing option later in the month. Sightseeing days that mix indoor museum visits with outdoor monument walks tend to work best for late-March Delhi itineraries specifically.",
@@ -32,7 +32,7 @@ export const march: MonthContent = {
   regionBreakdown: [
     {
       region: "Rajasthan & the Golden Triangle",
-      note: "Comfortable early in the month, warming fast by late March — front-load outdoor sightseeing where possible, and consider requesting hotels with good air conditioning if travelling in the back half of the month. [[Jaipur|/destinations/rajasthan/jaipur]] and [[Agra|/destinations/agra]] both still work well through the first two to three weeks.",
+      note: "Comfortable early in the month, warming fast by late March — front-load outdoor sightseeing where possible, and consider requesting hotels with good air conditioning if travelling in the back half of the month. [[Jaipur|/destinations/jaipur]] and [[Agra|/destinations/agra]] both still work well through the first two to three weeks.",
     },
     {
       region: "Himachal & Rishikesh",
@@ -44,7 +44,7 @@ export const march: MonthContent = {
     },
     {
       region: "Wildlife Parks",
-      note: "Often excellent — rising heat drives animals toward water sources, improving sighting odds at [[Ranthambore|/destinations/rajasthan/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]], part of a strengthening trend that will continue through April and May.",
+      note: "Often excellent — rising heat drives animals toward water sources, improving sighting odds at [[Ranthambore|/destinations/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]], part of a strengthening trend that will continue through April and May.",
     },
     {
       region: "Himalayas & Ladakh",
@@ -148,7 +148,7 @@ export const march: MonthContent = {
       name: "Delhi – Agra – Jaipur",
       tagline: "The Classic Golden Triangle · 6 Days",
       description: "Best booked for the first half of March, before the desert heat builds toward the back end of the month.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
+      href: "/tours/golden-triangle-tour-classic",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },
@@ -156,7 +156,7 @@ export const march: MonthContent = {
       name: "Delhi – Agra – Jaipur (4 Days)",
       tagline: "The Fast-Track Route · 4 Days",
       description: "A tighter schedule that suits March well, minimising exposure to the month's warming afternoons.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-4-days",
+      href: "/tours/golden-triangle-tour-classic",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },
@@ -164,7 +164,7 @@ export const march: MonthContent = {
       name: "Rajasthan Tours",
       tagline: "Land of Kings",
       description: "A deeper look at the state timed for its Holi and Gangaur festival season.",
-      href: "/packages/rajasthan-tours",
+      href: "/tours/rajasthan-tours",
       image: "/images/destinations/amber-fort-jaipur.webp",
       imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
     },

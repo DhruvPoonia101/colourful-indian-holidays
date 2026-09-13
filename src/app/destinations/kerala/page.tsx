@@ -91,8 +91,8 @@ export default function KeralaPage() {
           eyebrow="Destination Guide"
           headline="Kerala — God's Own Country"
           subheadline="Palm-lined backwaters, misty tea gardens in the Western Ghats, and a coastline layered with centuries of trading history — a genuinely different side of India."
-          primaryHref="/packages"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/kerala-tours"
+          primaryLabel="View Kerala Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Kerala with Colourful Indian Holidays."
         />
 

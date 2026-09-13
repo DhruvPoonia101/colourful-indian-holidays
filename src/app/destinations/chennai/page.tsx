@@ -91,7 +91,7 @@ export default function ChennaiPage() {
           eyebrow="Destination Guide"
           headline="Chennai — Gateway to Tamil Nadu"
           subheadline="A sweeping urban beach, rock-cut UNESCO temples a short drive away, and South India's most practical starting point for a wider Tamil Nadu itinerary."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Chennai with Colourful Indian Holidays."
         />

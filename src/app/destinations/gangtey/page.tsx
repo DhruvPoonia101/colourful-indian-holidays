@@ -91,7 +91,7 @@ export default function GangteyPage() {
           eyebrow="Destination Guide"
           headline="Gangtey — Valley of the Black-Necked Cranes"
           subheadline="Bhutan's only glacial valley, and a rare winter home for endangered black-necked cranes — the quietest, least-visited stop on a Bhutan circuit."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Gangtey with Colourful Indian Holidays."
         />

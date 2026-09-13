@@ -20,8 +20,8 @@ import type { PackageContent } from "@/content/packages/types";
 export function PackagePageTemplate({ content }: { content: PackageContent }) {
   const breadcrumbs = [
     { name: "Home", path: "/" },
-    { name: "Tours & Packages", path: "/packages" },
-    { name: content.name, path: `/packages/${content.slug}` },
+    { name: "Tours & Packages", path: "/tours" },
+    { name: content.name, path: `/tours/${content.slug}` },
   ];
 
   return (
@@ -104,7 +104,7 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
                   {content.bestTimeToVisit.note}
                 </p>
                 <div className="mt-7 flex justify-center">
-                  <Button href="/best-time-to-visit" variant="gold">
+                  <Button href="/best-time-to-visit-india" variant="gold">
                     View the Full Travel Calendar
                     <FiArrowRight aria-hidden="true" className="h-4 w-4" />
                   </Button>

@@ -106,8 +106,8 @@ export default function AgraPage() {
           eyebrow="Destination Guide"
           headline="Agra — Home of the Taj Mahal"
           subheadline="One building draws most travellers to Agra, but Mughal forts, an abandoned imperial city, and centuries-old marble craftsmanship make it worth more than a rushed afternoon."
-          primaryHref="/packages/golden-triangle-tours"
-          primaryLabel="View Golden Triangle Tours"
+          primaryHref="/tours/taj-mahal-tours"
+          primaryLabel="View Taj Mahal Tours"
           whatsappMessage="Hi! I'd like to plan an Agra trip with Colourful Indian Holidays."
         />
 

@@ -47,14 +47,15 @@ export type PackageContent = {
   };
   /**
    * Optional "Related Destinations" grid linking to the individual
-   * destination guide pages covered by this itinerary (e.g. Delhi, Agra,
-   * Jaipur). Distinct from `relatedPackages`, which links to other tour
-   * packages rather than single-city destination pages.
+   * destination guide pages covered by this itinerary. Distinct from
+   * `relatedPackages`, which links to other tour packages rather than
+   * single-city destination pages.
    */
   relatedDestinations?: CityCard[];
   /**
    * When true, renders a "Getting Around by Private Car" cross-link using
-   * the site's car rental fleet cards, matching every destination page.
+   * the site's car rental fleet cards. Leave false/omitted for packages
+   * outside India, where the fleet isn't relevant.
    */
   showCarFleet?: boolean;
   faqs: FaqItem[];

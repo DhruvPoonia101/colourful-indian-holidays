@@ -91,7 +91,7 @@ export default function OdishaPage() {
           eyebrow="Destination Guide"
           headline="Odisha — Temples in Stone"
           subheadline="A UNESCO chariot-shaped sun temple, one of Hinduism's four most sacred sites, and a coastal lagoon home to Irrawaddy dolphins — a quieter side of India's temple heritage."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Odisha with Colourful Indian Holidays."
         />

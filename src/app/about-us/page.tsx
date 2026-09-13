@@ -11,7 +11,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "About Us";
 const description =
-  "Founded in 2008 and based in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal and Bhutan for travellers from around the world.";
+  "Founded in 2007 and based in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal and Bhutan for travellers from around the world.";
 const pagePath = "/about-us";
 
 export const metadata: Metadata = {
@@ -133,7 +133,8 @@ export default function AboutUsPage() {
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Narendra Poonia founded Colourful Indian Holidays in {BUSINESS.foundingYear}{" "}
-                  and continues to run the agency from its Jaipur office today —{" "}
+                  and continues to run the agency from its Jaipur headquarters today — now one of
+                  8+ offices across India — with{" "}
                   {new Date().getFullYear() - BUSINESS.foundingYear}+ years building an
                   IATO-registered business recognised by Rajasthan Tourism and the Ministry of
                   Tourism, Government of India. Under his leadership, the company has grown from

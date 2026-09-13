@@ -91,7 +91,7 @@ export default function MaduraiPage() {
           eyebrow="Destination Guide"
           headline="Madurai — Tamil Nadu's Temple City"
           subheadline="Towering, sculpture-covered gopurams, a living temple over 2,500 years in the making, and one of India's oldest continuously inhabited cities."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Madurai with Colourful Indian Holidays."
         />

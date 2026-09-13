@@ -91,7 +91,7 @@ export default function KolkataPage() {
           eyebrow="Destination Guide"
           headline="Kolkata — India's Cultural Capital"
           subheadline="Grand colonial architecture, a genuine literary and artistic tradition, and Bengali cuisine that stands apart from anywhere else in India."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Kolkata with Colourful Indian Holidays."
         />

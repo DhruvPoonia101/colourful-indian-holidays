@@ -91,7 +91,7 @@ export default function KanhaPage() {
           eyebrow="Destination Guide"
           headline="Kanha — The Jungle Book's Real-World Setting"
           subheadline="Sal forests, open meadows and one of India's best-managed tiger reserves — the landscape said to have inspired Rudyard Kipling's The Jungle Book."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Kanha National Park with Colourful Indian Holidays."
         />

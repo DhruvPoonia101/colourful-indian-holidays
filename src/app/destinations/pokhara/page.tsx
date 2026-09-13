@@ -91,7 +91,7 @@ export default function PokharaPage() {
           eyebrow="Destination Guide"
           headline="Pokhara — Lakeside Views of the Annapurna Range"
           subheadline="A calm lake, close mountain views and a slower pace — the natural second stop on a Nepal trip, a short flight from Kathmandu."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Pokhara with Colourful Indian Holidays."
         />

@@ -2,8 +2,8 @@ export const footerExploreLinks = [
   { label: "Destinations (India)", href: "/destinations" },
   { label: "Destinations (Nepal)", href: "/destinations/nepal" },
   { label: "Destinations (Bhutan)", href: "/destinations/bhutan" },
-  { label: "Experiences", href: "/themes" },
-  { label: "Popular Tours", href: "/packages" },
+  { label: "Experiences", href: "/experiences" },
+  { label: "Popular Tours", href: "/tours" },
   { label: "Fleet & Car Rental", href: "/car-rental" },
   { label: "Travel by Month", href: "/best-time-to-visit-india" },
 ] as const;

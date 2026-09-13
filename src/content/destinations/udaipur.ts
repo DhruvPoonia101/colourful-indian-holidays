@@ -10,7 +10,7 @@ export const udaipurAttractions: CityCard[] = [
     tagline: "The City's Signature View",
     description:
       "A white marble palace that appears to float on Lake Pichola, built in 1746 as a royal summer retreat and now a luxury hotel — best seen by boat at sunset.",
-    href: "/destinations/rajasthan/udaipur",
+    href: "/destinations/udaipur",
     image: "/images/destinations/udaipur-lake-palace.webp",
     imageAlt: "Lake Palace floating on Lake Pichola, Udaipur",
   },
@@ -19,7 +19,7 @@ export const udaipurAttractions: CityCard[] = [
     tagline: "400 Years in the Making",
     description:
       "Rajasthan's largest palace complex, built up over nearly four centuries by successive Mewar rulers, with architecture that visibly shifts as you move through its different eras.",
-    href: "/destinations/rajasthan/udaipur",
+    href: "/destinations/udaipur",
     image: "/images/destinations/udaipur-city-palace.webp",
     imageAlt: "City Palace, Udaipur",
   },
@@ -28,7 +28,7 @@ export const udaipurAttractions: CityCard[] = [
     tagline: "Ornately Carved",
     description:
       "A large Hindu temple a short walk from the City Palace, dedicated to Vishnu, known for its intricately carved exterior and central location in the old city.",
-    href: "/destinations/rajasthan/udaipur",
+    href: "/destinations/udaipur",
     image: "/images/destinations/udaipur-jagdish-temple.webp",
     imageAlt: "Jagdish Temple, Udaipur",
   },
@@ -37,7 +37,7 @@ export const udaipurAttractions: CityCard[] = [
     tagline: "Best at Sunset",
     description:
       "A sunset boat ride on Lake Pichola, passing close to the Lake Palace, is consistently one of the most-photographed evenings of a Rajasthan circuit.",
-    href: "/destinations/rajasthan/udaipur",
+    href: "/destinations/udaipur",
     image: "/images/destinations/udaipur-lake-pichola-boat.webp",
     imageAlt: "Boat ride on Lake Pichola, Udaipur",
   },
@@ -112,7 +112,7 @@ export const udaipurRelatedDestinations: CityCard[] = [
     name: "Ranthambore",
     tagline: "Tiger Country",
     description: "A tiger safari add-on, most easily combined via Jaipur.",
-    href: "/destinations/rajasthan/ranthambore",
+    href: "/destinations/ranthambore",
     image: "/images/destinations/ranthambore-tiger.webp",
     imageAlt: "Wild tiger at Ranthambore National Park",
   },

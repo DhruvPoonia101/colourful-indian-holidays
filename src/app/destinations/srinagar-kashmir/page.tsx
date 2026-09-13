@@ -91,7 +91,7 @@ export default function SrinagarKashmirPage() {
           eyebrow="Destination Guide"
           headline="Srinagar & Kashmir — The Valley of Gardens and Lakes"
           subheadline="Houseboats on Dal Lake, Mughal-era gardens, and alpine meadows framed by the Himalayas — often called the 'Paradise on Earth' for good reason."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Srinagar & Kashmir with Colourful Indian Holidays."
         />

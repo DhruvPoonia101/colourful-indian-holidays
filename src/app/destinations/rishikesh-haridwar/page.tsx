@@ -91,7 +91,7 @@ export default function RishikeshHaridwarPage() {
           eyebrow="Destination Guide"
           headline="Rishikesh & Haridwar — Where the Ganges Meets the Mountains"
           subheadline="Yoga, white-water rafting and riverside ashrams in Rishikesh, and the sacred ghats of Haridwar where the Ganges leaves the Himalayas and enters the plains."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Rishikesh & Haridwar with Colourful Indian Holidays."
         />

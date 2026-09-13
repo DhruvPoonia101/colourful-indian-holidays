@@ -91,7 +91,7 @@ export default function PenchPage() {
           eyebrow="Destination Guide"
           headline="Pench — The Original Jungle Book Setting"
           subheadline="Teak and bamboo forests widely considered the specific landscape Rudyard Kipling had in mind, with a healthy and growing tiger population."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Pench National Park with Colourful Indian Holidays."
         />

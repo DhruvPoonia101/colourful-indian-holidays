@@ -10,7 +10,7 @@ export const jaisalmerAttractions: CityCard[] = [
     tagline: "Camel Safari at Sunset",
     description:
       "Rolling desert dunes on the edge of the Thar Desert, a short drive from the city — the classic setting for a camel safari and sunset views over the sand.",
-    href: "/destinations/rajasthan/jaisalmer",
+    href: "/destinations/jaisalmer",
     image: "/images/destinations/jaisalmer-desert.webp",
     imageAlt: "Camel safari at sunset, Sam Sand Dunes near Jaisalmer",
   },
@@ -19,7 +19,7 @@ export const jaisalmerAttractions: CityCard[] = [
     tagline: "A Living Fort",
     description:
       "One of the very few 'living forts' left in the world — around a quarter of the old city's population still lives within its walls, in centuries-old havelis.",
-    href: "/destinations/rajasthan/jaisalmer",
+    href: "/destinations/jaisalmer",
     image: "/images/destinations/jaisalmer-fort.webp",
     imageAlt: "Jaisalmer Fort ramparts overlooking the old city",
   },
@@ -28,7 +28,7 @@ export const jaisalmerAttractions: CityCard[] = [
     tagline: "Merchant Mansions",
     description:
       "A cluster of ornately carved sandstone mansions built by wealthy merchant families in the 19th century, among the finest haveli architecture in Rajasthan.",
-    href: "/destinations/rajasthan/jaisalmer",
+    href: "/destinations/jaisalmer",
     image: "/images/destinations/jaisalmer-patwon-ki-haveli.webp",
     imageAlt: "Patwon Ki Haveli, Jaisalmer",
   },
@@ -37,7 +37,7 @@ export const jaisalmerAttractions: CityCard[] = [
     tagline: "A Desert Oasis",
     description:
       "An artificial lake built in the 14th century as the city's original water source, now ringed by small temples and shrines — a peaceful stop away from the fort.",
-    href: "/destinations/rajasthan/jaisalmer",
+    href: "/destinations/jaisalmer",
     image: "/images/destinations/jaisalmer-gadisar-lake.webp",
     imageAlt: "Gadisar Lake, Jaisalmer",
   },

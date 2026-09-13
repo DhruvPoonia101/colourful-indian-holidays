@@ -91,7 +91,7 @@ export default function ThimphuPage() {
           eyebrow="Destination Guide"
           headline="Thimphu — Bhutan's Capital"
           subheadline="The only national capital in the world without a single traffic light — a small, walkable city where dzongs, markets and monuments sit close together."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Thimphu with Colourful Indian Holidays."
         />

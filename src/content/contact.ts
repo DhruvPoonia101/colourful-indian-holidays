@@ -5,7 +5,7 @@ export const contactWhyPlanWithUs: Highlight[] = [
   {
     title: "18+ Years of Local Expertise",
     description:
-      "Founded in 2008 and based in Jaipur — every itinerary is built by people who live where you're travelling.",
+      "Founded in 2007 and based in Jaipur — every itinerary is built by people who live where you're travelling.",
   },
   {
     title: "Personalised, Not Fixed Packages",

@@ -55,7 +55,7 @@ export const navItems: NavItem[] = [
           { label: "Delhi", href: "/destinations/delhi" },
           { label: "Agra", href: "/destinations/agra" },
           { label: "Varanasi", href: "/destinations/varanasi" },
-          { label: "Ranthambore", href: "/destinations/rajasthan/ranthambore" },
+          { label: "Ranthambore", href: "/destinations/ranthambore" },
         ],
       },
       {
@@ -138,51 +138,48 @@ export const navItems: NavItem[] = [
   {
     type: "dropdown",
     label: "Tours & Packages",
-    activeMatch: "/packages",
+    activeMatch: "/tours",
     items: [],
     columns: [
       {
         heading: "India Tours",
         items: [
-          { label: "Golden Triangle Tours", href: "/packages/golden-triangle-tours" },
-          { label: "Rajasthan Tours", href: "/packages/rajasthan-tours" },
-          { label: "North India Tours", href: "/packages/north-india-tours" },
+          { label: "Golden Triangle Tour", href: "/tours/golden-triangle-tour" },
+          { label: "Rajasthan Tours", href: "/tours/rajasthan-tours" },
+          { label: "North India Tours", href: "/tours/north-india-tours" },
+          { label: "Taj Mahal Tours", href: "/tours/taj-mahal-tours" },
+          { label: "Kerala Tours", href: "/tours/kerala-tours" },
         ],
       },
       {
-        heading: "Popular Circuits",
-        items: [
-          {
-            label: "Delhi – Agra – Jaipur",
-            href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
-          },
-          {
-            label: "Delhi – Agra – Jaipur – Udaipur",
-            href: "/packages/golden-triangle-tours/delhi-agra-jaipur-udaipur",
-          },
-        ],
+        heading: "Nepal & Bhutan",
+        items: [{ label: "Nepal Tours", href: "/tours/nepal-tours" }],
       },
     ],
-    viewAllHref: "/packages",
+    viewAllHref: "/tours",
     viewAllLabel: "View All Tour Packages",
   },
   {
     type: "dropdown",
     label: "Experiences",
-    activeMatch: "/themes",
+    activeMatch: "/experiences",
     wide: true,
     items: [],
     columns: [
       {
         heading: "Wildlife & Nature",
-        items: [{ label: "Wildlife Tours", href: "/packages/wildlife-tours" }],
+        items: [{ label: "Wildlife Tours", href: "/tours/wildlife-tours" }],
       },
       {
         heading: "Special Interest",
-        items: [{ label: "Festival Tours", href: "/themes/festival-tours" }],
+        items: [
+          { label: "Festival Tours", href: "/experiences/festival-tours" },
+          { label: "Honeymoon Tours", href: "/experiences/honeymoon-tours" },
+          { label: "Desert Safari", href: "/experiences/desert-safari" },
+        ],
       },
     ],
-    viewAllHref: "/themes",
+    viewAllHref: "/experiences",
     viewAllLabel: "Explore All Experiences",
   },
   {

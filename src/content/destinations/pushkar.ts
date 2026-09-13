@@ -10,7 +10,7 @@ export const pushkarAttractions: CityCard[] = [
     tagline: "India's Most Colourful Fair",
     description:
       "Held each autumn, this is one of the world's largest camel fairs — tens of thousands of camels, traders and pilgrims fill the desert around the town for several days of trading and festivity.",
-    href: "/destinations/rajasthan/pushkar",
+    href: "/destinations/pushkar",
     image: "/images/destinations/pushkar.webp",
     imageAlt: "Traditional Rajasthani procession at the Pushkar Camel Fair",
   },
@@ -19,7 +19,7 @@ export const pushkarAttractions: CityCard[] = [
     tagline: "A Sacred Lake",
     description:
       "Ringed by more than 50 ghats, Pushkar Lake is said in Hindu mythology to have formed where a lotus petal fell from Lord Brahma's hand.",
-    href: "/destinations/rajasthan/pushkar",
+    href: "/destinations/pushkar",
     image: "/images/destinations/pushkar-lake-ghats.webp",
     imageAlt: "Pushkar Lake and its ghats",
   },
@@ -28,7 +28,7 @@ export const pushkarAttractions: CityCard[] = [
     tagline: "One of the Very Few",
     description:
       "Despite Brahma's prominence in Hindu cosmology, temples dedicated to him are exceptionally rare — this is one of the very few in India, and Pushkar's most significant religious site.",
-    href: "/destinations/rajasthan/pushkar",
+    href: "/destinations/pushkar",
     image: "/images/destinations/pushkar-brahma-temple.webp",
     imageAlt: "Brahma Temple, Pushkar",
   },
@@ -37,7 +37,7 @@ export const pushkarAttractions: CityCard[] = [
     tagline: "A Small-Town Market",
     description:
       "Narrow lanes of shops selling silver jewellery, leather goods and semi-precious stones — a relaxed, low-key contrast to the bazaars of Jaipur.",
-    href: "/destinations/rajasthan/pushkar",
+    href: "/destinations/pushkar",
     image: "/images/destinations/pushkar-bazaar.webp",
     imageAlt: "Sadar Bazaar, Pushkar",
   },

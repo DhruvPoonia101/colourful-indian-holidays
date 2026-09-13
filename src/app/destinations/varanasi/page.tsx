@@ -107,7 +107,7 @@ export default function VaranasiPage() {
           eyebrow="Destination Guide"
           headline="Varanasi — India's Most Sacred City"
           subheadline="One of the oldest continuously inhabited cities in the world, and the single most significant pilgrimage destination in India — still lived and practised daily along the Ganges."
-          primaryHref="/themes/varanasi-ganges"
+          primaryHref="/experiences/varanasi-ganges"
           primaryLabel="View Varanasi & Ganges Tours"
           whatsappMessage="Hi! I'd like to plan a Varanasi trip with Colourful Indian Holidays."
         />

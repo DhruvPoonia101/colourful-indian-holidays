@@ -22,7 +22,7 @@ export const april: MonthContent = {
     "The heat in the plains this month is dry rather than humid, which is worth understanding since it changes how it actually feels day to day. Unlike the sticky, oppressive heat that arrives with the monsoon months, April's heat in Rajasthan is the kind that intensifies through the middle of the day and drops away meaningfully once the sun sets, making early starts and evening sightseeing genuinely comfortable even as midday becomes something to actively plan around rather than push through. Travellers who structure their days accordingly — sightseeing before 11am and after 4pm, resting indoors in between — find April considerably more manageable than the raw temperature figures alone suggest.",
     "That's exactly where April earns its keep, though. [[Himachal|/destinations/himachal]]'s hill stations, [[Darjeeling|/destinations/darjeeling]] and [[Sikkim|/destinations/sikkim]] are in full spring bloom this month, with apple and rhododendron blossoms and comfortable daytime temperatures that make for genuinely pleasant hiking and sightseeing weather. If your trip includes any Himalayan component at all, April is one of the strongest months of the year to build it around, offering a real, tangible escape from the heat unfolding in the plains below.",
     "Toward the very end of the month, [[Leh & Ladakh|/destinations/leh-ladakh]]'s high mountain passes typically begin to reopen after the winter closure, opening up the very start of that region's short but spectacular season — though early arrivals should always confirm current road conditions, since exact reopening dates shift year to year with the snowmelt, and a late spring can push the opening back by a week or two beyond the usual timeline. Travellers hoping to be among the first into Ladakh each year should build genuine flexibility into their dates rather than committing to a fixed itinerary this early in the season.",
-    "Wildlife safaris reach a genuinely strong point in April, as the dry season deepens further still. Rising temperatures continue concentrating animals around shrinking water sources at [[Ranthambore|/destinations/rajasthan/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]], and many experienced safari guides consider April and May, together, the strongest window of the year for tiger sightings specifically — a genuine trade-off between comfort and probability that serious wildlife travellers are usually happy to make.",
+    "Wildlife safaris reach a genuinely strong point in April, as the dry season deepens further still. Rising temperatures continue concentrating animals around shrinking water sources at [[Ranthambore|/destinations/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]], and many experienced safari guides consider April and May, together, the strongest window of the year for tiger sightings specifically — a genuine trade-off between comfort and probability that serious wildlife travellers are usually happy to make.",
     "South India, by this point, has moved well past its comfortable season. [[Kerala|/destinations/kerala]] and [[Tamil Nadu Beaches|/destinations/tamil-nadu-beaches]] are both hot and increasingly humid, ahead of the pre-monsoon build-up that will intensify further into May and June. It's not the month to prioritise the southern coast, and most itineraries focused on Kerala specifically are better scheduled for the cooler months bookending the year instead.",
     "For travellers planning a longer trip that spans both a plains-based and Himalayan component, April rewards a specific structure: front-load the Golden Triangle or Rajasthan portion early in the month while temperatures are still climbing rather than fully peaked, then move north into Himachal, Darjeeling or Sikkim as the heat builds further — using the mountains as a genuine escape rather than an afterthought bolted onto the end of the trip.",
     "Delhi in April deserves a specific mention of its own, since it sits at an awkward midpoint between the capital's comfortable winter and its full summer intensity. Mornings remain workable for outdoor sightseeing around India Gate and the government quarter, but by early afternoon the combination of heat and the city's concrete-heavy urban environment makes indoor time genuinely appealing rather than merely sensible. Most April Delhi itineraries benefit from keeping the capital portion efficient — a day or two rather than a longer stay — before moving on to either Rajasthan's more atmospheric heat or the cooler mountains beyond.",
@@ -32,7 +32,7 @@ export const april: MonthContent = {
   regionBreakdown: [
     {
       region: "Rajasthan & the Golden Triangle",
-      note: "Hot by mid-month; still workable with an early start and shaded midday breaks, but not the season's easiest window. [[Jaipur|/destinations/rajasthan/jaipur]] and [[Agra|/destinations/agra]] both require a genuinely early-and-late sightseeing rhythm by this point in the year.",
+      note: "Hot by mid-month; still workable with an early start and shaded midday breaks, but not the season's easiest window. [[Jaipur|/destinations/jaipur]] and [[Agra|/destinations/agra]] both require a genuinely early-and-late sightseeing rhythm by this point in the year.",
     },
     {
       region: "Himachal (Manali & Shimla)",
@@ -52,7 +52,7 @@ export const april: MonthContent = {
     },
     {
       region: "Wildlife Parks",
-      note: "Excellent for tiger sightings at [[Ranthambore|/destinations/rajasthan/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] — many guides consider April one of the two strongest months of the year for sightings, as animals concentrate around dwindling water sources.",
+      note: "Excellent for tiger sightings at [[Ranthambore|/destinations/ranthambore]] and [[Bandhavgarh|/destinations/bandhavgarh]] — many guides consider April one of the two strongest months of the year for sightings, as animals concentrate around dwindling water sources.",
     },
   ],
   whyVisit: [
@@ -140,7 +140,7 @@ export const april: MonthContent = {
       name: "Delhi – Agra – Jaipur – Ranthambore",
       tagline: "With a Tiger Safari · 8 Days",
       description: "Timed for one of the strongest sighting windows of the entire year at Ranthambore.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-ranthambore",
+      href: "/tours/golden-triangle-tour-ranthambore",
       image: "/images/destinations/ranthambore-tiger.webp",
       imageAlt: "A wild tiger at Ranthambore National Park",
     },
@@ -148,7 +148,7 @@ export const april: MonthContent = {
       name: "Delhi – Agra – Jaipur",
       tagline: "The Classic Golden Triangle · 6 Days",
       description: "Best scheduled for the first half of April, with an early-and-late sightseeing rhythm.",
-      href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
+      href: "/tours/golden-triangle-tour-classic",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },
@@ -156,7 +156,7 @@ export const april: MonthContent = {
       name: "Wildlife Tours",
       tagline: "Tiger Safaris",
       description: "Our dedicated wildlife category, for travellers prioritising sighting odds above all else this month.",
-      href: "/packages/wildlife-tours",
+      href: "/tours/wildlife-tours",
       image: "/images/destinations/ranthambore-tiger.webp",
       imageAlt: "Wild tiger at Ranthambore National Park",
     },

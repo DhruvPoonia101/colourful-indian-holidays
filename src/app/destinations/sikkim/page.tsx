@@ -91,7 +91,7 @@ export default function SikkimPage() {
           eyebrow="Destination Guide"
           headline="Sikkim — The Himalayas, Made Easy"
           subheadline="Gangtok's Kanchenjunga views, a glacial lake at 12,000 feet, and active Buddhist monasteries — genuine Himalayan scenery without Ladakh's altitude demands."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Sikkim with Colourful Indian Holidays."
         />

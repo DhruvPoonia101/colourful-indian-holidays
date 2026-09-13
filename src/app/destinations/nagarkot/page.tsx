@@ -91,7 +91,7 @@ export default function NagarkotPage() {
           eyebrow="Destination Guide"
           headline="Nagarkot — Sunrise Views Over the Himalayas"
           subheadline="The widest Himalayan panorama within easy reach of Kathmandu — an easy overnight stop for sunrise and sunset views, less than two hours from the capital."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Nagarkot with Colourful Indian Holidays."
         />

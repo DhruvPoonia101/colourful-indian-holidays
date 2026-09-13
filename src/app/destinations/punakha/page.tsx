@@ -91,7 +91,7 @@ export default function PunakhaPage() {
           eyebrow="Destination Guide"
           headline="Punakha — Bhutan's Former Capital"
           subheadline="A riverside dzong widely considered the most beautiful in Bhutan, reached by a scenic drive over the Dochula Pass into the country's warmest valley."
-          primaryHref="/packages"
+          primaryHref="/tours"
           primaryLabel="View Tour Packages"
           whatsappMessage="Hi! I'd like to plan a trip to Punakha with Colourful Indian Holidays."
         />
