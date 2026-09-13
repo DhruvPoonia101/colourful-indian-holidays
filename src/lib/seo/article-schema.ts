@@ -26,9 +26,9 @@ export function articleJsonLd({
     dateModified: dateModified ?? datePublished,
     author: {
       "@type": "Person",
-      name: "Narendra Poonia",
-      url: `${SITE_URL}/about-us`,
-      sameAs: ["https://www.linkedin.com/in/narendrapoonia/"],
+      name: "Dhruv Poonia",
+      url: "https://www.linkedin.com/in/dhruv-poonia-4b4400288/",
+      sameAs: ["https://www.linkedin.com/in/dhruv-poonia-4b4400288/"],
     },
     publisher: {
       "@type": "Organization",

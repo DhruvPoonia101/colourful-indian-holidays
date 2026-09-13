@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
-import { ArticleByline, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
+import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
@@ -72,9 +72,9 @@ export default function PilgrimageGuidePage() {
         />
 
         <ArticleByline
-          authorName="Narendra Poonia"
-          authorRole="Founder, Colourful Indian Holidays"
-          authorUrl="/about-us"
+          authorName="Dhruv Poonia"
+          authorRole="Digital & Marketing Manager, Colourful Indian Holidays"
+          authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
         />
@@ -469,6 +469,18 @@ export default function PilgrimageGuidePage() {
             your dates and your interests.
           </ArticleP>
         </ArticleBody>
+
+        <AuthorBioCard
+          authorName="Dhruv Poonia"
+          authorInitials="DP"
+          authorRole="Digital & Marketing Manager, Colourful Indian Holidays"
+          authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
+          bioParagraphs={[
+              "Dhruv Poonia is the Digital & Marketing Manager for Colourful Indian Holidays, working alongside a family travel business that has arranged tours across India, Nepal and Bhutan since 2007. He also oversees the company's sister sites, Rajasthan Travel Agency and Palace on Wheels Tour.",
+              "He writes and maintains the destination guides, route information and travel advice published on this site, drawing on his day-to-day work planning itineraries for international travellers to keep every page accurate and current.",
+            ]}
+        />
+
 
         <JourneyCTA
           backgroundImage={heroImage}

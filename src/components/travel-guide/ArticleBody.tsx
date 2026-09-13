@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/ui/Reveal";
+import { FiCheckCircle } from "react-icons/fi";
 
 export function ArticleByline({
   authorName,
@@ -17,6 +18,7 @@ export function ArticleByline({
   const formatDate = (iso: string) =>
     new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
   const sameDate = datePublished === dateModified;
+  const isExternal = authorUrl.startsWith("http");
 
   return (
     <div className="border-b border-sand/70 py-5">
@@ -25,6 +27,7 @@ export function ArticleByline({
           By{" "}
           <a
             href={authorUrl}
+            {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"
           >
             {authorName}
@@ -32,6 +35,57 @@ export function ArticleByline({
           , {authorRole} · Published {formatDate(datePublished)}
           {!sameDate && ` · Updated ${formatDate(dateModified)}`}
         </p>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * A fuller author credibility card — initials avatar, verified-style badge
+ * with role, and 1-2 short bio paragraphs. Placed after the article body,
+ * separate from the shorter ArticleByline shown up top.
+ */
+export function AuthorBioCard({
+  authorName,
+  authorInitials,
+  authorRole,
+  authorUrl,
+  bioParagraphs,
+}: {
+  authorName: string;
+  authorInitials: string;
+  authorRole: string;
+  authorUrl: string;
+  bioParagraphs: string[];
+}) {
+  const isExternal = authorUrl.startsWith("http");
+
+  return (
+    <div className="border-t border-sand/70 bg-cream/60 py-10 sm:py-14">
+      <div className="mx-auto max-w-3xl px-6 sm:px-8">
+        <div className="flex items-center gap-4">
+          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-maroon text-lg font-semibold text-ivory">
+            {authorInitials}
+          </span>
+          <div>
+            <a
+              href={authorUrl}
+              {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              className="font-semibold text-ink hover:text-maroon"
+            >
+              {authorName}
+            </a>
+            <div className="mt-0.5 flex items-center gap-1.5 text-sm font-medium text-maroon">
+              <FiCheckCircle aria-hidden="true" className="h-4 w-4 shrink-0" />
+              {authorRole}
+            </div>
+          </div>
+        </div>
+        <div className="mt-5 space-y-3 text-sm leading-relaxed text-ink-soft">
+          {bioParagraphs.map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
