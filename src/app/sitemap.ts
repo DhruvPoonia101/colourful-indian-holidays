@@ -557,6 +557,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${SITE_URL}/tours/kashmir-ladakh-tours`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${SITE_URL}/tours/kerala-tours-classic`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
@@ -570,6 +576,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${SITE_URL}/tours/munnar-tour`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/tours/periyar-wildlife-tour`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/tours/kochi-tour`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/tours/kerala-beaches-tour`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.75,

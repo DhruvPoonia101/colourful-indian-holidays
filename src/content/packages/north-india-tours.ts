@@ -125,7 +125,7 @@ export const northIndiaTours: PackageContent = {
   ],
   relatedPackages: [
     {
-      name: "Golden Triangle Tours",
+      name: "Golden Triangle Tour",
       tagline: "Delhi – Agra – Jaipur",
       description: "The shorter 6-day version of this route, without Varanasi.",
       href: "/tours/golden-triangle-tour-classic",

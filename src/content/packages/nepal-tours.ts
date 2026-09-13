@@ -169,7 +169,7 @@ export const nepalTours: PackageContent = {
   ],
   relatedPackages: [
     {
-      name: "Golden Triangle Tours",
+      name: "Golden Triangle Tour",
       tagline: "Delhi – Agra – Jaipur",
       description: "Combine this trip with India's classic circuit for a fuller South Asia itinerary.",
       href: "/tours/golden-triangle-tour-classic",

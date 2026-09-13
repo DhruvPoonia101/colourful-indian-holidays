@@ -58,11 +58,18 @@ export const featuredPackages: CityCard[] = [
     image: "/images/destinations/alleppey-backwaters.webp",
     imageAlt: "A traditional houseboat on Alleppey's backwaters, Kerala",
   },
+  {
+    name: "Kashmir & Ladakh Tours",
+    tagline: "Paradise on Earth",
+    description: "Dal Lake's houseboats and Ladakh's high-altitude monasteries, in three different shapes.",
+    href: "/tours/kashmir-ladakh-tours",
+    image: "/images/destinations/Leh-4.webp",
+    imageAlt: "Pangong Lake with motorcycles parked on the shore, Ladakh",
+  },
 ] as const;
 
 export const morePackages: MoreDestination[] = [
   { name: "South India Tours", href: "/tours/south-india-tours" },
-  { name: "Kashmir & Ladakh Tours", href: "/tours/kashmir-ladakh-tours" },
   { name: "Bhutan Tours", href: "/tours/bhutan-tours" },
   { name: "India & Nepal Tours", href: "/tours/india-nepal-tours" },
   { name: "India, Nepal & Bhutan", href: "/tours/india-nepal-bhutan-tours" },

@@ -149,11 +149,16 @@ export const navItems: NavItem[] = [
           { label: "North India Tours", href: "/tours/north-india-tours" },
           { label: "Taj Mahal Tours", href: "/tours/taj-mahal-tours" },
           { label: "Kerala Tours", href: "/tours/kerala-tours" },
+          { label: "Kashmir & Ladakh Tours", href: "/tours/kashmir-ladakh-tours" },
         ],
       },
       {
         heading: "Nepal & Bhutan",
         items: [{ label: "Nepal Tours", href: "/tours/nepal-tours" }],
+      },
+      {
+        heading: "Wildlife & Nature",
+        items: [{ label: "Wildlife Tours", href: "/tours/wildlife-tours" }],
       },
     ],
     viewAllHref: "/tours",
@@ -166,10 +171,6 @@ export const navItems: NavItem[] = [
     wide: true,
     items: [],
     columns: [
-      {
-        heading: "Wildlife & Nature",
-        items: [{ label: "Wildlife Tours", href: "/tours/wildlife-tours" }],
-      },
       {
         heading: "Special Interest",
         items: [

@@ -37,21 +37,29 @@ export const wildlifeTours: PackageContent = {
       title: "Day 2 — Ranthambore Safaris",
       description:
         "Morning and afternoon jeep safaris into Ranthambore National Park, widely considered one of the best places on Earth to see wild Bengal tigers in their natural habitat, set against a striking backdrop of lakes, ravines and the ruined 10th-century Ranthambore Fort rising above the forest canopy. Each safari is led by a naturalist guide trained to read pug marks, alarm calls from deer and langurs, and other signs that improve your chances of a genuine sighting — not just a driver following a fixed loop. Beyond tigers, the park is also home to leopards, sloth bears, marsh crocodiles and over 300 recorded bird species.",
+      image: "/images/destinations/ranthambore-tiger.webp",
+      imageAlt: "A wild tiger at Ranthambore National Park",
     },
     {
       title: "Day 3 — Ranthambore to Jaipur",
       description:
         "One final early-morning safari to maximise your sighting chances before checking out, then a private, air-conditioned drive to Jaipur (around 3–4 hours). The afternoon is left free for rest after two intensive safari days, or an optional City Palace visit for travellers who'd like to shift gears from wildlife-spotting to Rajasthan's royal history and architecture. Many guests use this half-day to catch up on photo editing, laundry, or simply decompress before the second half of the safari circuit begins at Sariska the following day. It's a deliberately gentler day sandwiched between two more active ones, and a useful buffer if an earlier safari ran late.",
+      image: "/images/destinations/amber-fort-jaipur.webp",
+      imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
     },
     {
       title: "Day 4 — Jaipur to Sariska",
       description:
         "Drive to Sariska Tiger Reserve, a smaller and considerably less-visited park than Ranthambore, known for its landmark tiger reintroduction programme after the local population was locally extinct in the mid-2000s — a genuine conservation success story international visitors often find as compelling as the wildlife itself. The reserve is also scattered with ancient temple ruins and a historic hunting lodge within the forest, a reminder that this was once the private game reserve of the Alwar royal family. The lower visitor numbers here mean a noticeably quieter, less crowded safari experience than Ranthambore's more popular zones, which many guests actually prefer.",
+      image: "/images/destinations/sariska-fort.webp",
+      imageAlt: "Ruined fort within the forest at Sariska Tiger Reserve",
     },
     {
       title: "Day 5 — Sariska Safari, back to Jaipur",
       description:
         "A morning jeep safari through Sariska's mixed forest and grassland habitat, home to tigers, leopards, striped hyenas, and a healthy population of sambar and chital deer. Afterwards, return to Jaipur for the evening, with an optional Amber Fort visit worked in for anyone who hasn't seen Rajasthan's most iconic hilltop fort yet. This flexible half-day is a good opportunity to combine the trip's wildlife focus with at least one taste of Rajasthan's cultural sights, rather than a purely safari-only itinerary. Your guide can also arrange a farewell dinner recommendation for your last evening in Rajasthan, capping off the safari leg of the trip on a relaxed note.",
+      image: "/images/destinations/sariska-tiger.webp",
+      imageAlt: "A wild tiger at Sariska Tiger Reserve",
     },
     {
       title: "Day 6 — Departure",
@@ -91,6 +99,33 @@ export const wildlifeTours: PackageContent = {
         "Safaris are led by naturalist guides, not just drivers, who can read tracks and behaviour to improve sighting chances.",
     },
   ],
+  relatedDestinations: [
+    {
+      name: "Ranthambore",
+      tagline: "Tiger Country",
+      description: "A former royal hunting ground turned national park, with a ruined fort inside it.",
+      href: "/destinations/ranthambore",
+      image: "/images/destinations/ranthambore-tiger.webp",
+      imageAlt: "A wild tiger at Ranthambore National Park",
+    },
+    {
+      name: "Jaipur",
+      tagline: "The Pink City",
+      description: "Amber Fort, City Palace, Hawa Mahal and the bazaars of the old walled city.",
+      href: "/destinations/jaipur",
+      image: "/images/destinations/amber-fort-jaipur.webp",
+      imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
+    },
+    {
+      name: "Rajasthan",
+      tagline: "Land of Kings",
+      description: "Forts, palaces and desert citadels across six essential cities.",
+      href: "/destinations/rajasthan",
+      image: "/images/destinations/amber-fort-jaipur.webp",
+      imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
+    },
+  ],
+  showCarFleet: true,
   faqs: [
     {
       question: "Are tiger sightings guaranteed?",
@@ -107,8 +142,26 @@ export const wildlifeTours: PackageContent = {
       answer:
         "We quote every trip individually rather than publish a fixed price — the final cost depends on your travel dates, group size, hotel category, and whether you'd like a private (non-shared) safari jeep. Send us your dates and we'll reply with an exact quote.",
     },
+    {
+      question: "Why include Sariska if Ranthambore has better sighting odds?",
+      answer:
+        "Sariska's tiger reintroduction programme is a genuinely compelling conservation story on its own, and its lower visitor numbers give a noticeably quieter safari experience than Ranthambore's busier zones — many guests find the contrast between the two parks worthwhile even with different odds.",
+    },
+    {
+      question: "Can we extend this trip to Bandhavgarh or Kaziranga?",
+      answer:
+        "Yes — both are among India's other most-recommended parks, and we regularly help plan an extension once you've completed the Ranthambore and Sariska leg. Let us know your available days and interests.",
+    },
   ],
   relatedPackages: [
+    {
+      name: "Rajasthan Wildlife Safari",
+      tagline: "8 Days",
+      description: "Pair Ranthambore with Jaipur and Udaipur for a wider wildlife-and-heritage trip.",
+      href: "/tours/rajasthan-wildlife-safari",
+      image: "/images/destinations/udaipur-city-palace.webp",
+      imageAlt: "Udaipur City Palace overlooking Lake Pichola",
+    },
     {
       name: "Rajasthan Tours",
       tagline: "Land of Kings",
@@ -118,7 +171,7 @@ export const wildlifeTours: PackageContent = {
       imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
     },
     {
-      name: "Golden Triangle Tours",
+      name: "Golden Triangle Tour",
       tagline: "Delhi – Agra – Jaipur",
       description: "Add a wildlife extension onto the classic first-time route.",
       href: "/tours/golden-triangle-tour-classic",
