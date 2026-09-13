@@ -5,7 +5,7 @@ import { introCopy } from "@/content/home";
 export function IntroSection() {
   return (
     <section className="py-16 sm:py-20">
-      <div className="mx-auto max-w-3xl px-6 sm:px-8">
+      <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <Reveal>
           <SectionIntro eyebrow={introCopy.eyebrow} heading={introCopy.heading} align="center" />
           <div className="mt-6 space-y-4 text-left text-base leading-relaxed text-ink-soft">
