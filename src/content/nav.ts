@@ -150,6 +150,7 @@ export const navItems: NavItem[] = [
           { label: "Taj Mahal Tours", href: "/tours/taj-mahal-tours" },
           { label: "Kerala Tours", href: "/tours/kerala-tours" },
           { label: "Kashmir & Ladakh Tours", href: "/tours/kashmir-ladakh-tours" },
+          { label: "South India Tours", href: "/tours/south-india-tours" },
         ],
       },
       {

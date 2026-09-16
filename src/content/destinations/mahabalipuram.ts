@@ -84,8 +84,8 @@ export const mahabalipuramRelatedDestinations: CityCard[] = [
     tagline: "Gateway to Tamil Nadu",
     description: "The most common gateway before or after a Mahabalipuram day trip.",
     href: "/destinations/chennai",
-    image: "/images/destinations/chennai.webp",
-    imageAlt: "Shore Temple, Mahabalipuram, near Chennai",
+    image: "/images/destinations/marina-beach-chennai.webp",
+    imageAlt: "Sunset over Marina Beach, Chennai",
   },
   {
     name: "Pondicherry",

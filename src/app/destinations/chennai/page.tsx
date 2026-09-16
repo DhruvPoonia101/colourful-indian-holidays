@@ -29,7 +29,7 @@ const title = "Chennai | Marina Beach, Mahabalipuram & Tamil Culture";
 const description =
   "Plan a trip to Chennai — Marina Beach, the UNESCO rock-cut temples of Mahabalipuram, and South India's gateway to a wider Tamil Nadu itinerary.";
 const pagePath = "/destinations/chennai";
-const heroImage = "/images/destinations/chennai.webp";
+const heroImage = "/images/destinations/marina-beach-chennai.webp";
 
 export const metadata: Metadata = {
   title,
@@ -86,13 +86,13 @@ export default function ChennaiPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Shore Temple, Mahabalipuram, near Chennai"
+          imageAlt="Sunset over Marina Beach, Chennai"
           breadcrumbs={breadcrumbs}
           eyebrow="Destination Guide"
           headline="Chennai — Gateway to Tamil Nadu"
           subheadline="A sweeping urban beach, rock-cut UNESCO temples a short drive away, and South India's most practical starting point for a wider Tamil Nadu itinerary."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/south-india-tours"
+          primaryLabel="View South India Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Chennai with Colourful Indian Holidays."
         />
 

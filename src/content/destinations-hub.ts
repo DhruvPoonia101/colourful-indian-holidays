@@ -202,8 +202,8 @@ export const moreIndiaDestinations: CityCard[] = [
     tagline: "Gateway to Tamil Nadu",
     description: "A sweeping urban beach and South India's most practical starting point.",
     href: "/destinations/chennai",
-    image: "/images/destinations/chennai.webp",
-    imageAlt: "Shore Temple, Mahabalipuram, near Chennai",
+    image: "/images/destinations/marina-beach-chennai.webp",
+    imageAlt: "Sunset over Marina Beach, Chennai",
   },
   {
     name: "Mahabalipuram",

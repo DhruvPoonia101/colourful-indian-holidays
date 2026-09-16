@@ -93,8 +93,8 @@ export const maduraiRelatedDestinations: CityCard[] = [
     tagline: "Gateway to Tamil Nadu",
     description: "The most common gateway before or after a Madurai trip.",
     href: "/destinations/chennai",
-    image: "/images/destinations/chennai.webp",
-    imageAlt: "Chennai cityscape",
+    image: "/images/destinations/marina-beach-chennai.webp",
+    imageAlt: "Sunset over Marina Beach, Chennai",
   },
   {
     name: "Tamil Nadu Beaches",

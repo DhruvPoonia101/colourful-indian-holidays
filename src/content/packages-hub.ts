@@ -66,10 +66,17 @@ export const featuredPackages: CityCard[] = [
     image: "/images/destinations/Leh-4.webp",
     imageAlt: "Pangong Lake with motorcycles parked on the shore, Ladakh",
   },
+  {
+    name: "South India Tours",
+    tagline: "Temples, Coast & French Heritage",
+    description: "Dravidian temple architecture, rock-cut monuments and colonial heritage, in six different shapes.",
+    href: "/tours/south-india-tours",
+    image: "/images/destinations/chennai.webp",
+    imageAlt: "The Shore Temple, Mahabalipuram, near Chennai",
+  },
 ] as const;
 
 export const morePackages: MoreDestination[] = [
-  { name: "South India Tours", href: "/tours/south-india-tours" },
   { name: "Bhutan Tours", href: "/tours/bhutan-tours" },
   { name: "India & Nepal Tours", href: "/tours/india-nepal-tours" },
   { name: "India, Nepal & Bhutan", href: "/tours/india-nepal-bhutan-tours" },
