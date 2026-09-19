@@ -2,10 +2,17 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
-import { goaCarnivalHighlights, goaCarnivalFaqs } from "@/content/festivals/goa-carnival";
+import {
+  goaCarnivalOverview,
+  goaCarnivalHighlights,
+  goaCarnivalFaqs,
+  goaCarnivalRelatedDestinations,
+  goaCarnivalRelatedExperiences,
+} from "@/content/festivals/goa-carnival";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -13,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Goa Carnival | Festival Guide";
 const description =
-  "A Portuguese-heritage street carnival in Goa, with parades, live music, dance and colour — a distinctly different celebration from anywhere else in India, reflecting Goa&apos;s colonial history.";
+  "Four days of colourful street parades, decorated floats and live music before Lent — a Portuguese-era tradition that's become a genuinely Goan celebration in its own right.";
 const pagePath = "/experiences/goa-carnival";
 const heroImage = "/images/destinations/goa-carnival.webp";
 
@@ -54,30 +61,31 @@ export default function GoaCarnivalPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Goa Carnival — photo coming soon"
+          imageAlt="A carnival street parade with a decorated float"
           breadcrumbs={breadcrumbs}
           eyebrow="Festival Guide"
           headline="Goa Carnival"
-          subheadline="A Portuguese-heritage street carnival in Goa, with parades, live music, dance and colour — a distinctly different celebration from anywhere else in India, reflecting Goa&apos;s colonial history."
+          subheadline="Four days of colourful street parades, decorated floats and live music before Lent — a Portuguese-era tradition that's become a genuinely Goan celebration in its own right."
           whatsappMessage="Hi! I'd like to plan a trip around Goa Carnival with Colourful Indian Holidays."
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro eyebrow="Overview" heading="Goa Carnival" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
-                <p>Goa Carnival is a direct legacy of nearly 450 years of Portuguese rule, held in the days before Lent in the Christian calendar. It&apos;s unlike any other festival in India — street parades with floats, live music, dance troupes and costumed performers move through Goa&apos;s towns, echoing the carnival traditions of Portugal and Brazil.</p>
-                <p>The festival reflects Goa&apos;s distinct identity within India — a genuine blend of Indian and Portuguese-Catholic culture, expressed through music, food and celebration rather than the religious ritual that characterises most Indian festivals.</p>
+                {goaCarnivalOverview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">Where</p>
-                  <p className="mt-1.5 text-sm text-ink">Goa</p>
+                  <p className="mt-1.5 text-sm text-ink">Across Goa&apos;s towns, including Panjim</p>
                 </div>
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">When</p>
-                  <p className="mt-1.5 text-sm text-ink">February or March, just before Lent (exact dates shift yearly)</p>
+                  <p className="mt-1.5 text-sm text-ink">4 days, just before Lent (typically February)</p>
                 </div>
               </div>
             </Reveal>
@@ -88,6 +96,22 @@ export default function GoaCarnivalPage() {
           eyebrow="Why Visit"
           heading="What to Expect"
           highlights={goaCarnivalHighlights}
+        />
+
+        <CityGrid
+          eyebrow="Nearby"
+          heading="Related Destinations"
+          cities={goaCarnivalRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Experiences"
+          cities={goaCarnivalRelatedExperiences}
+          topDivider
+          showActions
         />
 
         <FAQSection

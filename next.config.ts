@@ -104,7 +104,6 @@ const nextConfig: NextConfig = {
       { source: "/destinations/gangtok", destination: "/destinations", permanent: true },
       { source: "/fair-festivals", destination: "/experiences/festival-tours", permanent: true },
       { source: "/destinations/aurangabad", destination: "/destinations", permanent: true },
-      { source: "/tours", destination: "/travel-guide", permanent: true },
       { source: "/fair-festivals/diwali", destination: "/experiences/diwali", permanent: true },
       { source: "/fair-festivals/goa-carnival", destination: "/experiences/goa-carnival", permanent: true },
       { source: "/rajasthan-tour-packages", destination: "/packages/rajasthan-tours", permanent: true },

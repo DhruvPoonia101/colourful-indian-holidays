@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
-import { pushkarFairHighlights, pushkarFairFaqs } from "@/content/festivals/pushkar-fair";
+import {
+  pushkarFairOverview,
+  pushkarFairHighlights,
+  pushkarFairFaqs,
+  pushkarFairRelatedDestinations,
+  pushkarFairRelatedExperiences,
+} from "@/content/festivals/pushkar-fair";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -13,9 +21,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Pushkar Fair | Festival Guide";
 const description =
-  "One of the world&apos;s largest camel and livestock fairs, held at Pushkar&apos;s sacred lake — thousands of camels and traders alongside folk music, competitions, and a genuinely vast temporary desert encampment.";
+  "One of the world's largest camel and livestock fairs, held at Pushkar's sacred lake — thousands of camels and traders alongside folk music, competitions, and a genuinely vast temporary desert encampment.";
 const pagePath = "/experiences/pushkar-fair";
-const heroImage = "/images/packages/jaipur-bikaner-jaisalmer-jodhpur-udaipur-pushkar.webp";
+const heroImage = "/images/destinations/pushkar.webp";
 
 export const metadata: Metadata = {
   title,
@@ -54,21 +62,22 @@ export default function PushkarFairPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Traditional Rajasthani performers at the Pushkar Camel Fair"
+          imageAlt="Traditional Rajasthani performers at the Pushkar Fair"
           breadcrumbs={breadcrumbs}
           eyebrow="Festival Guide"
           headline="Pushkar Fair"
-          subheadline="One of the world&apos;s largest camel and livestock fairs, held at Pushkar&apos;s sacred lake — thousands of camels and traders alongside folk music, competitions, and a genuinely vast temporary desert encampment."
+          subheadline="One of the world's largest camel and livestock fairs, held at Pushkar's sacred lake — thousands of camels and traders alongside folk music, competitions, and a genuinely vast temporary desert encampment."
           whatsappMessage="Hi! I'd like to plan a trip around Pushkar Fair with Colourful Indian Holidays."
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro eyebrow="Overview" heading="Pushkar Fair" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
-                <p>The Pushkar Fair is one of the largest camel and livestock fairs in the world, drawing tens of thousands of traders, herders and their animals to the desert outside Pushkar for several days each year. What began as a practical livestock trading event has grown into a major cultural festival, with camel races, traditional competitions, and folk music performances alongside the trading itself.</p>
-                <p>The fair coincides with a significant Hindu pilgrimage period at Pushkar&apos;s sacred lake, meaning visitors experience two distinct events at once — the working, dusty spectacle of the livestock fair, and the devotional atmosphere of pilgrims bathing in the lake at the same time.</p>
+                {pushkarFairOverview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
@@ -88,6 +97,43 @@ export default function PushkarFairPage() {
           eyebrow="Why Visit"
           heading="What to Expect"
           highlights={pushkarFairHighlights}
+        />
+
+        <div className="mx-auto max-w-7xl px-6 sm:px-8">
+          <div className="grid gap-6 overflow-hidden rounded-3xl sm:grid-cols-2">
+            <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-80">
+              <Image
+                src="/images/destinations/pushkar-brahma-temple.webp"
+                alt="The Brahma Temple, Pushkar"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-80">
+              <Image
+                src="/images/destinations/pushkar-lake-ghats.webp"
+                alt="Pushkar Lake and its ghats, Rajasthan"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <CityGrid
+          eyebrow="Nearby"
+          heading="Related Destinations"
+          cities={pushkarFairRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Experiences"
+          cities={pushkarFairRelatedExperiences}
+          topDivider
+          showActions
         />
 
         <FAQSection

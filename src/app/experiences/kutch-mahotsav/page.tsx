@@ -2,10 +2,17 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
-import { kutchMahotsavHighlights, kutchMahotsavFaqs } from "@/content/festivals/kutch-mahotsav";
+import {
+  kutchMahotsavOverview,
+  kutchMahotsavHighlights,
+  kutchMahotsavFaqs,
+  kutchMahotsavRelatedDestinations,
+  kutchMahotsavRelatedExperiences,
+} from "@/content/festivals/kutch-mahotsav";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -13,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Kutch Mahotsav (Rann Utsav) | Festival Guide";
 const description =
-  "A months-long desert festival on the white salt flats of the Rann of Kutch, featuring a tented desert camp, traditional Kutchi music and crafts, and one of India&apos;s most surreal landscapes.";
+  "A multi-month desert festival on the edge of the Great Rann of Kutch's white salt desert — a purpose-built tented camp, Kutchi craft traditions, and unforgettable full-moon nights on the salt flats.";
 const pagePath = "/experiences/kutch-mahotsav";
 const heroImage = "/images/destinations/kutch-mahotsav.webp";
 
@@ -36,7 +43,7 @@ const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Experiences", path: "/experiences" },
   { name: "Festival Tours", path: "/experiences/festival-tours" },
-  { name: "Kutch Mahotsav (Rann Utsav)", path: pagePath },
+  { name: "Kutch Mahotsav", path: pagePath },
 ];
 
 export default function KutchMahotsavPage() {
@@ -54,30 +61,31 @@ export default function KutchMahotsavPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Kutch Mahotsav, Rann of Kutch — photo coming soon"
+          imageAlt="The tented camp at Rann Utsav, on the edge of the Great Rann of Kutch"
           breadcrumbs={breadcrumbs}
           eyebrow="Festival Guide"
           headline="Kutch Mahotsav (Rann Utsav)"
-          subheadline="A months-long desert festival on the white salt flats of the Rann of Kutch, featuring a tented desert camp, traditional Kutchi music and crafts, and one of India&apos;s most surreal landscapes."
-          whatsappMessage="Hi! I'd like to plan a trip around Kutch Mahotsav (Rann Utsav) with Colourful Indian Holidays."
+          subheadline="A multi-month desert festival on the edge of the Great Rann of Kutch's white salt desert — a purpose-built tented camp, Kutchi craft traditions, and unforgettable full-moon nights on the salt flats."
+          whatsappMessage="Hi! I'd like to plan a trip around Kutch Mahotsav with Colourful Indian Holidays."
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Kutch Mahotsav (Rann Utsav)" />
+              <SectionIntro eyebrow="Overview" heading="Kutch Mahotsav" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
-                <p>The Rann of Kutch is one of India&apos;s most unusual landscapes — a vast white salt desert that floods seasonally and dries into a blinding, cracked-earth plain. Kutch Mahotsav, also known as Rann Utsav, turns the edge of this landscape into a months-long festival, with a purpose-built tented camp, cultural performances, and access to the salt flats themselves, especially striking under a full moon.</p>
-                <p>Beyond the landscape itself, the festival showcases the Kutch region&apos;s distinct craft traditions — embroidery, leatherwork, pottery and metalwork — alongside traditional Kutchi folk music and dance, giving visitors a cultural experience specific to this part of Gujarat rather than Rajasthan or elsewhere.</p>
+                {kutchMahotsavOverview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">Where</p>
-                  <p className="mt-1.5 text-sm text-ink">The Rann of Kutch, Gujarat</p>
+                  <p className="mt-1.5 text-sm text-ink">The Great Rann of Kutch, Gujarat</p>
                 </div>
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">When</p>
-                  <p className="mt-1.5 text-sm text-ink">November to February (a multi-month festival season)</p>
+                  <p className="mt-1.5 text-sm text-ink">November through February</p>
                 </div>
               </div>
             </Reveal>
@@ -90,24 +98,40 @@ export default function KutchMahotsavPage() {
           highlights={kutchMahotsavHighlights}
         />
 
+        <CityGrid
+          eyebrow="Nearby"
+          heading="Related Destinations"
+          cities={kutchMahotsavRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Experiences"
+          cities={kutchMahotsavRelatedExperiences}
+          topDivider
+          showActions
+        />
+
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
           intro="Everything international travellers ask before planning a trip around this festival."
           faqs={kutchMahotsavFaqs}
-          whatsappMessage="Hi! I have a question about planning a trip around Kutch Mahotsav (Rann Utsav)."
+          whatsappMessage="Hi! I have a question about planning a trip around Kutch Mahotsav."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Time Your Trip Around Kutch Mahotsav (Rann Utsav)."
+          headline="Time Your Trip Around Kutch Mahotsav."
           headlineItalic="When Will You Go?"
           subtext="Tell us your travel window and we'll build an itinerary around the festival, usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a trip around Kutch Mahotsav (Rann Utsav) with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip around Kutch Mahotsav with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

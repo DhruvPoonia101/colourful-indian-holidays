@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
-import { kumbhMelaHighlights, kumbhMelaFaqs } from "@/content/festivals/kumbh-mela";
+import {
+  kumbhMelaOverview,
+  kumbhMelaHighlights,
+  kumbhMelaFaqs,
+  kumbhMelaRelatedDestinations,
+  kumbhMelaRelatedExperiences,
+} from "@/content/festivals/kumbh-mela";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -13,9 +21,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Kumbh Mela | Festival Guide";
 const description =
-  "The largest peaceful religious gathering on Earth — tens of millions of pilgrims bathing at a sacred river confluence, rotating between four cities on a fixed astrological cycle.";
+  "The largest peaceful gathering of human beings anywhere on Earth — ritual bathing, Naga Sadhu processions, and a temporary tent city built to house tens of millions of pilgrims.";
 const pagePath = "/experiences/kumbh-mela";
-const heroImage = "/images/destinations/haridwar.webp";
+const heroImage = "/images/destinations/haridwar-2.webp";
 
 export const metadata: Metadata = {
   title,
@@ -54,30 +62,31 @@ export default function KumbhMelaPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Haridwar on the Ganges, one of the four Kumbh Mela host cities"
+          imageAlt="Har Ki Pauri ghat and the Ganges at Haridwar"
           breadcrumbs={breadcrumbs}
           eyebrow="Festival Guide"
           headline="Kumbh Mela"
-          subheadline="The largest peaceful religious gathering on Earth — tens of millions of pilgrims bathing at a sacred river confluence, rotating between four cities on a fixed astrological cycle."
+          subheadline="The largest peaceful gathering of human beings anywhere on Earth — ritual bathing, Naga Sadhu processions, and a temporary tent city built to house tens of millions of pilgrims."
           whatsappMessage="Hi! I'd like to plan a trip around Kumbh Mela with Colourful Indian Holidays."
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro eyebrow="Overview" heading="Kumbh Mela" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
-                <p>Kumbh Mela is held at four locations in rotation — Haridwar, Prayagraj, Ujjain and Nashik — with the exact site and timing determined by planetary positions considered auspicious in Hindu astrology. The scale is genuinely hard to grasp until you&apos;re there: tens of millions of pilgrims gather over the course of the festival, making it the largest peaceful human gathering anywhere in the world.</p>
-                <p>For international travellers, visiting Kumbh Mela is less about a single event and more about witnessing an entire temporary city built for the occasion, alongside processions of Naga Sadhus (ash-covered ascetic holy men) and the ritual bathing itself. It&apos;s an intense, crowded, unforgettable experience — and one that needs careful planning given the scale involved.</p>
+                {kumbhMelaOverview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">Where</p>
-                  <p className="mt-1.5 text-sm text-ink">Haridwar, Prayagraj, Ujjain & Nashik (rotating)</p>
+                  <p className="mt-1.5 text-sm text-ink">Rotates between Haridwar, Prayagraj, Ujjain and Nashik</p>
                 </div>
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">When</p>
-                  <p className="mt-1.5 text-sm text-ink">Rotates between four sites; the next major Haridwar gathering follows a 12-year cycle</p>
+                  <p className="mt-1.5 text-sm text-ink">Set by Hindu astrology; each city hosts roughly once every 12 years</p>
                 </div>
               </div>
             </Reveal>
@@ -88,6 +97,33 @@ export default function KumbhMelaPage() {
           eyebrow="Why Visit"
           heading="What to Expect"
           highlights={kumbhMelaHighlights}
+        />
+
+        <div className="mx-auto max-w-7xl px-6 sm:px-8">
+          <div className="relative h-64 w-full overflow-hidden rounded-3xl sm:h-96">
+            <Image
+              src="/images/destinations/haridwar.webp"
+              alt="A statue of Shiva on the Ganges riverfront, Haridwar"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        <CityGrid
+          eyebrow="Nearby"
+          heading="Related Destinations"
+          cities={kumbhMelaRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Experiences"
+          cities={kumbhMelaRelatedExperiences}
+          topDivider
+          showActions
         />
 
         <FAQSection

@@ -2,20 +2,27 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
-import { ursFestivalAjmerHighlights, ursFestivalAjmerFaqs } from "@/content/festivals/the-urs-festival-ajmer";
+import {
+  ursFestivalAjmerOverview,
+  ursFestivalAjmerHighlights,
+  ursFestivalAjmerFaqs,
+  ursFestivalAjmerRelatedDestinations,
+  ursFestivalAjmerRelatedExperiences,
+} from "@/content/festivals/the-urs-festival-ajmer";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Urs Festival, Ajmer | Festival Guide";
+const title = "The Urs Festival, Ajmer | Festival Guide";
 const description =
-  "A six-day Sufi festival at the Ajmer Sharif Dargah, marking the death anniversary of a 12th-century Sufi saint, and one of India&apos;s most significant Islamic pilgrimage gatherings.";
+  "Six days of devotional Sufi music and pilgrimage at Ajmer Sharif Dargah, marking the anniversary of Khwaja Moinuddin Chishti — one of South Asia's most significant Sufi shrines, open to visitors of all faiths.";
 const pagePath = "/experiences/the-urs-festival-ajmer";
-const heroImage = "/images/destinations/urs-festival-ajmer.webp";
+const heroImage = "/images/destinations/pushkar-lake-ghats.webp";
 
 export const metadata: Metadata = {
   title,
@@ -36,7 +43,7 @@ const breadcrumbs = [
   { name: "Home", path: "/" },
   { name: "Experiences", path: "/experiences" },
   { name: "Festival Tours", path: "/experiences/festival-tours" },
-  { name: "Urs Festival, Ajmer", path: pagePath },
+  { name: "The Urs Festival, Ajmer", path: pagePath },
 ];
 
 export default function UrsFestivalAjmerPage() {
@@ -54,21 +61,22 @@ export default function UrsFestivalAjmerPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Urs Festival, Ajmer — photo coming soon"
+          imageAlt="Pushkar Lake and its ghats, near Ajmer, Rajasthan"
           breadcrumbs={breadcrumbs}
           eyebrow="Festival Guide"
-          headline="Urs Festival, Ajmer"
-          subheadline="A six-day Sufi festival at the Ajmer Sharif Dargah, marking the death anniversary of a 12th-century Sufi saint, and one of India&apos;s most significant Islamic pilgrimage gatherings."
-          whatsappMessage="Hi! I'd like to plan a trip around Urs Festival, Ajmer with Colourful Indian Holidays."
+          headline="The Urs Festival, Ajmer"
+          subheadline="Six days of devotional Sufi music and pilgrimage at Ajmer Sharif Dargah, marking the anniversary of Khwaja Moinuddin Chishti — open to visitors of all faiths."
+          whatsappMessage="Hi! I'd like to plan a trip around the Urs Festival with Colourful Indian Holidays."
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Urs Festival, Ajmer" />
+              <SectionIntro eyebrow="Overview" heading="The Urs Festival, Ajmer" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
-                <p>The Urs Festival marks the death anniversary of Khwaja Moinuddin Chishti, the 12th-century Sufi saint whose shrine at Ajmer Sharif Dargah is one of the most visited Islamic pilgrimage sites in South Asia. In Sufi tradition, a saint&apos;s death is understood as union with the divine, which is why the anniversary is marked with celebration rather than mourning.</p>
-                <p>Over six days, the shrine and surrounding streets fill with pilgrims from across India and beyond, alongside qawwali (devotional Sufi music) performances that run through the night. Ajmer sits close to Pushkar, and the two are often combined on a Rajasthan itinerary regardless of festival timing.</p>
+                {ursFestivalAjmerOverview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
@@ -77,7 +85,7 @@ export default function UrsFestivalAjmerPage() {
                 </div>
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">When</p>
-                  <p className="mt-1.5 text-sm text-ink">Six days in the Islamic month of Rajab (dates shift yearly on the lunar calendar)</p>
+                  <p className="mt-1.5 text-sm text-ink">6 days, dates shift yearly on the Islamic lunar calendar</p>
                 </div>
               </div>
             </Reveal>
@@ -90,24 +98,40 @@ export default function UrsFestivalAjmerPage() {
           highlights={ursFestivalAjmerHighlights}
         />
 
+        <CityGrid
+          eyebrow="Nearby"
+          heading="Related Destinations"
+          cities={ursFestivalAjmerRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Experiences"
+          cities={ursFestivalAjmerRelatedExperiences}
+          topDivider
+          showActions
+        />
+
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
           intro="Everything international travellers ask before planning a trip around this festival."
           faqs={ursFestivalAjmerFaqs}
-          whatsappMessage="Hi! I have a question about planning a trip around Urs Festival, Ajmer."
+          whatsappMessage="Hi! I have a question about planning a trip around the Urs Festival."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Time Your Trip Around Urs Festival, Ajmer."
+          headline="Time Your Trip Around the Urs Festival."
           headlineItalic="When Will You Go?"
           subtext="Tell us your travel window and we'll build an itinerary around the festival, usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a trip around Urs Festival, Ajmer with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip around the Urs Festival with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>

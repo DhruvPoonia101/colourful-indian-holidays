@@ -20,11 +20,11 @@ export const featuredThemes: CityCard[] = [
   },
   {
     name: "Tiger Safari Tours",
-    tagline: "Wildlife & Nature",
-    description: "Ranthambore, Sariska, Bandhavgarh and Kaziranga's tiger and rhino safaris.",
+    tagline: "Bandhavgarh, Kanha & Pench",
+    description: "A dedicated Madhya Pradesh safari circuit through three of India's best tiger reserves.",
     href: "/experiences/tiger-safari-tours",
-    image: "/images/destinations/ranthambore-tiger.webp",
-    imageAlt: "Wild tiger at Ranthambore National Park",
+    image: "/images/destinations/bandhavgarh-tiger.webp",
+    imageAlt: "Two tigers at a waterhole, Bandhavgarh National Park",
   },
   {
     name: "Spiritual India",

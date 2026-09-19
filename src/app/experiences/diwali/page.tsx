@@ -1,19 +1,27 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
-import { diwaliHighlights, diwaliFaqs } from "@/content/festivals/diwali";
+import {
+  diwaliOverview,
+  diwaliHighlights,
+  diwaliFaqs,
+  diwaliRelatedDestinations,
+  diwaliRelatedExperiences,
+} from "@/content/festivals/diwali";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Diwali | Festival Guide";
+const title = "Diwali, the Festival of Lights | Festival Guide";
 const description =
-  "India&apos;s biggest festival — the Festival of Lights, celebrated nationwide with oil lamps, fireworks, and family gatherings, marking the triumph of light over darkness.";
+  "India's largest festival — diyas and string lights across homes, temples and cities, with Varanasi's ghats and Amritsar's Golden Temple offering two of the most striking public displays anywhere in the country.";
 const pagePath = "/experiences/diwali";
 const heroImage = "/images/destinations/diwali.webp";
 
@@ -54,30 +62,31 @@ export default function DiwaliPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Diwali celebrations — photo coming soon"
+          imageAlt="Diyas and a rangoli pattern lit for Diwali"
           breadcrumbs={breadcrumbs}
           eyebrow="Festival Guide"
-          headline="Diwali"
-          subheadline="India&apos;s biggest festival — the Festival of Lights, celebrated nationwide with oil lamps, fireworks, and family gatherings, marking the triumph of light over darkness."
+          headline="Diwali, the Festival of Lights"
+          subheadline="India's largest festival — diyas and string lights across homes, temples and cities, with Varanasi's ghats and Amritsar's Golden Temple offering two of the most striking public displays anywhere in the country."
           whatsappMessage="Hi! I'd like to plan a trip around Diwali with Colourful Indian Holidays."
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Diwali" />
+              <SectionIntro eyebrow="Overview" heading="Diwali, the Festival of Lights" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
-                <p>Diwali is India&apos;s largest and most widely celebrated festival, marking the symbolic victory of light over darkness and good over evil. Homes, streets and temples are lit with oil lamps (diyas) and string lights, and the festival is marked with fireworks, sweets, and family gatherings across the entire country.</p>
-                <p>While Diwali is celebrated nationwide, some cities offer especially memorable settings — the ghats of Varanasi lit with thousands of lamps, the Golden Temple in Amritsar illuminated and reflected in its pool, and Jaipur&apos;s markets strung with lights are all particularly striking ways to experience it.</p>
+                {diwaliOverview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">Where</p>
-                  <p className="mt-1.5 text-sm text-ink">Nationwide, most vividly in Jaipur, Varanasi, Amritsar and Delhi</p>
+                  <p className="mt-1.5 text-sm text-ink">Across India; Varanasi and Amritsar offer the most striking public displays</p>
                 </div>
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">When</p>
-                  <p className="mt-1.5 text-sm text-ink">October or November (exact date shifts yearly on the lunar calendar)</p>
+                  <p className="mt-1.5 text-sm text-ink">A 5-day period, typically October or November</p>
                 </div>
               </div>
             </Reveal>
@@ -88,6 +97,33 @@ export default function DiwaliPage() {
           eyebrow="Why Visit"
           heading="What to Expect"
           highlights={diwaliHighlights}
+        />
+
+        <div className="mx-auto max-w-7xl px-6 sm:px-8">
+          <div className="relative h-64 w-full overflow-hidden rounded-3xl sm:h-96">
+            <Image
+              src="/images/destinations/amritsar.webp"
+              alt="The Golden Temple reflected in its pool, Amritsar"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        <CityGrid
+          eyebrow="Nearby"
+          heading="Related Destinations"
+          cities={diwaliRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Experiences"
+          cities={diwaliRelatedExperiences}
+          topDivider
+          showActions
         />
 
         <FAQSection

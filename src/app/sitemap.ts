@@ -23,6 +23,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${SITE_URL}/destinations/nepal`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/destinations/bhutan`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${SITE_URL}/destinations/rajasthan`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
@@ -420,6 +432,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${SITE_URL}/experiences/desert-safari`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/experiences/tiger-safari-tours`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,

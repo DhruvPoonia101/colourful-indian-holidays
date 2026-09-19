@@ -2,18 +2,25 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
-import { teejFestivalHighlights, teejFestivalFaqs } from "@/content/festivals/teej-festival";
+import {
+  teejFestivalOverview,
+  teejFestivalHighlights,
+  teejFestivalFaqs,
+  teejFestivalRelatedDestinations,
+  teejFestivalRelatedExperiences,
+} from "@/content/festivals/teej-festival";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Teej Festival | Festival Guide";
+const title = "Jaipur Teej Festival | Festival Guide";
 const description =
-  "A monsoon festival celebrating the arrival of the rains, marked in Jaipur with a major procession of women in traditional dress, swings decorated with flowers, and folk songs.";
+  "A royal Rajasthani procession marking the arrival of the monsoon — decorated elephants and camels move through Jaipur's old city, with women celebrating in traditional green dress.";
 const pagePath = "/experiences/teej-festival";
 const heroImage = "/images/destinations/teej-festival.webp";
 
@@ -54,21 +61,22 @@ export default function TeejFestivalPage() {
       <main>
         <PageHero
           image={heroImage}
-          imageAlt="Teej Festival, Rajasthan — photo coming soon"
+          imageAlt="Women in traditional dress celebrating Teej"
           breadcrumbs={breadcrumbs}
           eyebrow="Festival Guide"
-          headline="Teej Festival"
-          subheadline="A monsoon festival celebrating the arrival of the rains, marked in Jaipur with a major procession of women in traditional dress, swings decorated with flowers, and folk songs."
-          whatsappMessage="Hi! I'd like to plan a trip around Teej Festival with Colourful Indian Holidays."
+          headline="Jaipur Teej Festival"
+          subheadline="A royal Rajasthani procession marking the arrival of the monsoon — decorated elephants and camels move through Jaipur's old city, with women celebrating in traditional green dress."
+          whatsappMessage="Hi! I'd like to plan a trip around the Teej Festival with Colourful Indian Holidays."
         />
 
         <section className="py-10 sm:py-14">
-          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
             <Reveal>
-              <SectionIntro eyebrow="Overview" heading="Teej Festival" />
+              <SectionIntro eyebrow="Overview" heading="Jaipur Teej Festival" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
-                <p>Teej marks the arrival of the monsoon and is celebrated across North India, but Jaipur&apos;s Teej procession is among the most elaborate — a formal parade through the old city featuring an idol of the goddess Parvati carried in a decorated palanquin, accompanied by elephants, camels, and traditional musicians.</p>
-                <p>The festival is especially associated with women, who dress in bright traditional clothing (often green, the colour of the monsoon) and sing traditional folk songs, with flower-decorated swings a common sight in courtyards and public spaces during the celebration.</p>
+                {teejFestivalOverview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
               <div className="mt-8 grid gap-6 sm:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
@@ -77,7 +85,7 @@ export default function TeejFestivalPage() {
                 </div>
                 <div className="rounded-2xl border border-sand bg-white p-5">
                   <p className="text-xs font-semibold uppercase tracking-wide text-gold-dark">When</p>
-                  <p className="mt-1.5 text-sm text-ink">Monsoon season (July–August, exact date shifts yearly)</p>
+                  <p className="mt-1.5 text-sm text-ink">July or August (dates shift yearly on the lunar calendar)</p>
                 </div>
               </div>
             </Reveal>
@@ -90,24 +98,40 @@ export default function TeejFestivalPage() {
           highlights={teejFestivalHighlights}
         />
 
+        <CityGrid
+          eyebrow="Nearby"
+          heading="Related Destinations"
+          cities={teejFestivalRelatedDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Explore More"
+          heading="Other Experiences"
+          cities={teejFestivalRelatedExperiences}
+          topDivider
+          showActions
+        />
+
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
           intro="Everything international travellers ask before planning a trip around this festival."
           faqs={teejFestivalFaqs}
-          whatsappMessage="Hi! I have a question about planning a trip around Teej Festival."
+          whatsappMessage="Hi! I have a question about planning a trip around the Teej Festival."
           topDivider
         />
 
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Time Your Trip Around Teej Festival."
+          headline="Time Your Trip Around the Teej Festival."
           headlineItalic="When Will You Go?"
           subtext="Tell us your travel window and we'll build an itinerary around the festival, usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
-          whatsappMessage="Hi! I'd like to plan a trip around Teej Festival with Colourful Indian Holidays."
+          whatsappMessage="Hi! I'd like to plan a trip around the Teej Festival with Colourful Indian Holidays."
           trustBadges={DEFAULT_TRUST_BADGES}
         />
       </main>
