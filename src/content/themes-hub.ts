@@ -12,11 +12,11 @@ export const featuredThemes: CityCard[] = [
   },
   {
     name: "Heritage Tours",
-    tagline: "Forts & Palaces",
-    description: "The palace hotels and fortified cities that define Rajasthan and North India.",
+    tagline: "Khajuraho & Varanasi",
+    description: "UNESCO temple carvings, the ghats of Varanasi, and Buddhist heritage at Sarnath.",
     href: "/experiences/heritage-tours",
-    image: "/images/destinations/mehrangarh-fort-jodhpur.webp",
-    imageAlt: "Mehrangarh Fort overlooking the blue city of Jodhpur",
+    image: "/images/destinations/khajuraho-western-group.webp",
+    imageAlt: "The Western Group temples at Khajuraho, Madhya Pradesh",
   },
   {
     name: "Tiger Safari Tours",
@@ -28,11 +28,11 @@ export const featuredThemes: CityCard[] = [
   },
   {
     name: "Spiritual India",
-    tagline: "Ganges & Beyond",
-    description: "The evening Ganga Aarti in Varanasi, and India's most significant pilgrimage sites.",
+    tagline: "Amritsar, Haridwar & Rishikesh",
+    description: "The Golden Temple's free community kitchen, and the living pilgrimage traditions of the Ganges.",
     href: "/experiences/spiritual-india",
-    image: "/images/destinations/varanasi-evening-ganges-aarti.webp",
-    imageAlt: "Evening Ganga Aarti ceremony in Varanasi",
+    image: "/images/destinations/amritsar.webp",
+    imageAlt: "The Golden Temple reflected in its pool, Amritsar",
   },
   {
     name: "Desert Safari",

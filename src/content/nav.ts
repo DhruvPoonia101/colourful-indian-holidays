@@ -179,6 +179,8 @@ export const navItems: NavItem[] = [
           { label: "Honeymoon Tours", href: "/experiences/honeymoon-tours" },
           { label: "Desert Safari", href: "/experiences/desert-safari" },
           { label: "Tiger Safari Tours", href: "/experiences/tiger-safari-tours" },
+          { label: "Heritage Tours", href: "/experiences/heritage-tours" },
+          { label: "Spiritual India", href: "/experiences/spiritual-india" },
         ],
       },
     ],

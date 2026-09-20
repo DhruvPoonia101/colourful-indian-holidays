@@ -443,6 +443,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/experiences/heritage-tours`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/experiences/spiritual-india`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/experiences/kumbh-mela`,
       lastModified: LAST_UPDATED,
       changeFrequency: "yearly",
