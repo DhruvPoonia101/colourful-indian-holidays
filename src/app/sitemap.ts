@@ -347,6 +347,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/travel-guide/top-cultural-festivals-in-india`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/places-to-visit-in-shekhawati`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/travel-guide/monuments-in-rajasthan`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
