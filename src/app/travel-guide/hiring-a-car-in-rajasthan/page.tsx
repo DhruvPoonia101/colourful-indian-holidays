@@ -254,28 +254,50 @@ export default function HiringACarInRajasthanGuidePage() {
           <ArticleUL>
             <li>
               <span className="font-semibold text-ink">Delhi to Jaipur:</span> roughly 280 km,
-              about 5–6 hours — the classic opening leg of a Golden Triangle itinerary
+              about 5–6 hours — the classic opening leg of a{" "}
+              <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+                Golden Triangle
+              </Link>{" "}
+              itinerary
             </li>
             <li>
               <span className="font-semibold text-ink">Jaipur to Agra:</span> roughly 240 km,
-              about 5 hours, connecting the Golden Triangle&apos;s Pink City to the Taj Mahal
+              about 5 hours, connecting the Golden Triangle&apos;s Pink City to the{" "}
+              <Link href="/tours/taj-mahal-tours" className="text-maroon underline">
+                Taj Mahal
+              </Link>
             </li>
             <li>
               <span className="font-semibold text-ink">Jaipur to Pushkar / Ajmer:</span> roughly
-              145 km, about 2.5–3 hours — a popular shorter add-on rather than a full travel day
+              145 km, about 2.5–3 hours — a popular shorter add-on rather than a full travel day,
+              and worth timing around the{" "}
+              <Link href="/experiences/pushkar-fair" className="text-maroon underline">
+                Pushkar Fair
+              </Link>{" "}
+              if your dates allow
             </li>
             <li>
               <span className="font-semibold text-ink">Jaipur to Jodhpur:</span> roughly 335 km,
-              about 5.5–6 hours, usually the longest single leg of a standard Rajasthan circuit
+              about 5.5–6 hours, usually the longest single leg of a standard{" "}
+              <Link href="/tours/jodhpur-tour" className="text-maroon underline">
+                Jodhpur
+              </Link>{" "}
+              circuit
             </li>
             <li>
               <span className="font-semibold text-ink">Jodhpur to Udaipur:</span> roughly 250 km,
               about 5 hours, often broken up with a stop at Ranakpur&apos;s Jain temples or
-              Kumbhalgarh Fort along the way
+              Kumbhalgarh Fort along the way to our{" "}
+              <Link href="/tours/udaipur-tour" className="text-maroon underline">
+                Udaipur Tour
+              </Link>
             </li>
             <li>
               <span className="font-semibold text-ink">Jodhpur to Jaisalmer:</span> roughly 285
-              km, about 5–6 hours, heading further into the Thar Desert
+              km, about 5–6 hours, heading further into the Thar Desert toward our{" "}
+              <Link href="/tours/jaisalmer-tour" className="text-maroon underline">
+                Jaisalmer Tour
+              </Link>
             </li>
             <li>
               <span className="font-semibold text-ink">Udaipur to Mount Abu:</span> roughly 165
@@ -285,7 +307,10 @@ export default function HiringACarInRajasthanGuidePage() {
             <li>
               <span className="font-semibold text-ink">Jaipur to Ranthambore National Park:</span>{" "}
               roughly 180 km, about 4 hours — usually timed to arrive in time for an afternoon
-              safari
+              safari on our{" "}
+              <Link href="/tours/ranthambore-tour" className="text-maroon underline">
+                Ranthambore Tour
+              </Link>
             </li>
           </ArticleUL>
           <ArticleP>

@@ -35,6 +35,22 @@ export const featuredThemes: CityCard[] = [
     imageAlt: "The Golden Temple reflected in its pool, Amritsar",
   },
   {
+    name: "Lumbini",
+    tagline: "The Birthplace of the Buddha",
+    description: "The Maya Devi Temple, the Ashoka Pillar, and a Monastic Zone built by Buddhist nations worldwide.",
+    href: "/experiences/lumbini",
+    image: "/images/destinations/lumbini-maya-devi-temple.webp",
+    imageAlt: "The Maya Devi Temple and ancient ruins, Lumbini, Nepal",
+  },
+  {
+    name: "Everest Region",
+    tagline: "Namche Bazaar & the Khumbu",
+    description: "A 6-day trek to Tengboche with genuine Everest views, without the full Base Camp commitment.",
+    href: "/experiences/everest-region",
+    image: "/images/destinations/everest-kala-patthar-view.webp",
+    imageAlt: "Everest and the Khumbu glacier, seen from Kala Patthar, Nepal",
+  },
+  {
     name: "Desert Safari",
     tagline: "The Thar Desert",
     description: "Camel safaris and overnight camping in the dunes outside Jaisalmer.",

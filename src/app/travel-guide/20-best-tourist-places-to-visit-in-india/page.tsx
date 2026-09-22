@@ -122,7 +122,11 @@ export default function TwentyBestPlacesGuidePage() {
             at sunrise to brilliant white at midday to warm gold at sunset. Agra Fort and the
             abandoned Mughal capital of Fatehpur Sikri sit nearby, both UNESCO-recognised in
             their own right, and reward a full day rather than a rushed photo stop before
-            continuing on to Rajasthan.
+            continuing on to Rajasthan. Our{" "}
+            <Link href="/tours/taj-mahal-tours" className="text-maroon underline">
+              Taj Mahal Tours
+            </Link>{" "}
+            cover several ways to build Agra into a wider itinerary.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -137,7 +141,11 @@ export default function TwentyBestPlacesGuidePage() {
             short drive from Humayun&apos;s Tomb, the architectural forerunner to the Taj Mahal,
             and the Qutub Minar, the tallest brick minaret in the world. Most international
             itineraries begin or end here, and it rewards two or three days on its own rather
-            than a same-day connection.
+            than a same-day connection — often as the opening leg of our{" "}
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+              Golden Triangle Tour
+            </Link>
+            .
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -151,7 +159,11 @@ export default function TwentyBestPlacesGuidePage() {
             background. The atmosphere itself — continuous prayer, pilgrims circling the water
             through the night — is what most visitors remember, more than any single view. A
             short walk away, Jallianwala Bagh and the daily Wagah Border ceremony add real
-            historical weight and genuine spectacle to an Amritsar stop.
+            historical weight and genuine spectacle to an Amritsar stop, covered in depth in our{" "}
+            <Link href="/experiences/spiritual-india" className="text-maroon underline">
+              Spiritual India
+            </Link>{" "}
+            itinerary.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -166,7 +178,11 @@ export default function TwentyBestPlacesGuidePage() {
             in the world — are genuinely unlike anywhere else on this list. Altitude means the
             region needs proper acclimatisation time built into any itinerary, but travellers who
             give it that time consistently name Ladakh the most memorable leg of their entire
-            trip.
+            trip — our{" "}
+            <Link href="/tours/ladakh-tour" className="text-maroon underline">
+              Ladakh Tour
+            </Link>{" "}
+            builds in the acclimatisation days needed to do it properly.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -179,7 +195,12 @@ export default function TwentyBestPlacesGuidePage() {
             green and mountainous where much of the rest of the country is not. A night aboard
             one of Srinagar&apos;s ornately carved houseboats is one of the more memorable
             overnight experiences available anywhere in India, and Gulmarg&apos;s pine forests
-            function as a ski destination in winter and a green retreat the rest of the year.
+            function as a ski destination in winter and a green retreat the rest of the year —
+            see our{" "}
+            <Link href="/experiences/kashmir-honeymoon" className="text-maroon underline">
+              Kashmir Honeymoon
+            </Link>{" "}
+            itinerary for a full 5-day route.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -192,7 +213,14 @@ export default function TwentyBestPlacesGuidePage() {
             1968 visit — and a nightly Ganga Aarti fire ceremony at Haridwar&apos;s Har Ki Pauri
             ghat, the point where the Ganges is believed to have first touched earth. Both towns
             are officially vegetarian and alcohol-free, reflecting their status as centres of
-            pilgrimage.
+            pilgrimage. If your dates align with early March, our{" "}
+            <Link
+              href="/experiences/international-yoga-festival-rishikesh"
+              className="text-maroon underline"
+            >
+              International Yoga Festival
+            </Link>{" "}
+            guide covers the week-long event in detail.
           </ArticleP>
 
           <ArticleH2>Rajasthan&apos;s Desert Cities</ArticleH2>
@@ -206,7 +234,11 @@ export default function TwentyBestPlacesGuidePage() {
             among the most photographed sights in the state. The fort&apos;s elephant approach
             and mirrored Sheesh Mahal, alongside the astronomical instruments of Jantar Mantar
             and the ornate façade of Hawa Mahal, give Jaipur enough depth for two full days
-            before continuing on to the rest of Rajasthan.
+            before continuing on to the rest of Rajasthan — all covered on our{" "}
+            <Link href="/tours/jaipur-city-tour" className="text-maroon underline">
+              Jaipur City Tour
+            </Link>
+            .
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -218,7 +250,11 @@ export default function TwentyBestPlacesGuidePage() {
             Rajasthan&apos;s softest, most romantic city — a deliberate change of register from
             the desert forts elsewhere in the state. Boat rides at sunset, the City Palace&apos;s
             sprawling courtyards, and a genuinely different, lake-centred rhythm make it a
-            favourite stop for honeymooners and first-time visitors alike.
+            favourite stop for honeymooners and first-time visitors alike, as covered in our{" "}
+            <Link href="/tours/udaipur-tour" className="text-maroon underline">
+              Udaipur Tour
+            </Link>
+            .
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -230,7 +266,11 @@ export default function TwentyBestPlacesGuidePage() {
             actually reside inside its honey-coloured sandstone walls, a genuine rarity among the
             world&apos;s major forts, with homes, shops and temples woven through its narrow
             lanes. Camel safaris into the surrounding dunes at sunset are a natural extension of
-            a Jaisalmer stop.
+            a{" "}
+            <Link href="/tours/jaisalmer-tour" className="text-maroon underline">
+              Jaisalmer
+            </Link>{" "}
+            stop.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -254,7 +294,11 @@ export default function TwentyBestPlacesGuidePage() {
             dry, open deciduous terrain, with the added novelty of safaris passing through the
             ruins of a 10th-century fort inside the park itself. Its proximity to Jaipur — just a
             few hours by road — makes it an easy addition to any Rajasthan circuit rather than a
-            separate trip.
+            separate trip, and our{" "}
+            <Link href="/tours/ranthambore-tour" className="text-maroon underline">
+              Ranthambore Tour
+            </Link>{" "}
+            builds in time for the fort alongside the safaris.
           </ArticleP>
 
           <ArticleH2>South India&apos;s Different India</ArticleH2>
@@ -269,7 +313,11 @@ export default function TwentyBestPlacesGuidePage() {
             distinctive overnight experiences available anywhere in India — a world away from
             Rajasthan&apos;s deserts or North India&apos;s plains. Munnar&apos;s misty tea
             estates and Fort Kochi&apos;s Chinese fishing nets and layered colonial history round
-            out a Kerala circuit with genuine variety.
+            out a Kerala circuit with genuine variety, covered in full on our{" "}
+            <Link href="/tours/kerala-tours-classic" className="text-maroon underline">
+              Kerala Tours
+            </Link>{" "}
+            classic circuit.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -281,7 +329,11 @@ export default function TwentyBestPlacesGuidePage() {
             outcrops on the Bay of Bengal, including the Shore Temple and the Five Rathas, an
             easy day trip from Chennai. Pallava dynasty sculptors carved many of these monuments
             straight into existing rock rather than building from quarried stone, a technique
-            genuinely rare to see up close.
+            genuinely rare to see up close — our{" "}
+            <Link href="/tours/mahabalipuram-tour" className="text-maroon underline">
+              Mahabalipuram Tour
+            </Link>{" "}
+            covers the site in depth for travellers who want more than a rushed day trip.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -293,7 +345,11 @@ export default function TwentyBestPlacesGuidePage() {
             with mustard-yellow colonial villas, a boulder-lined seafront Promenade, and a
             noticeably slower, café-oriented pace that stands apart from the rest of Tamil Nadu.
             Auroville, an experimental international township nearby, adds a genuinely unusual
-            philosophical dimension to a visit.
+            philosophical dimension to a visit — see our{" "}
+            <Link href="/tours/pondicherry-tour" className="text-maroon underline">
+              Pondicherry Tour
+            </Link>{" "}
+            for a full day devoted to Auroville alone.
           </ArticleP>
 
           <ArticleH2>Varanasi and the Eastern Hills</ArticleH2>
@@ -308,7 +364,11 @@ export default function TwentyBestPlacesGuidePage() {
             evening Ganga Aarti at Dashashwamedh Ghat happens tonight exactly as it has for
             generations, regardless of who&apos;s watching. A sunrise boat ride past the ghats
             shows a completely different, quieter mood from the evening ceremony&apos;s fire and
-            drums, and both are worth building real time around.
+            drums, and both are worth building real time around — our{" "}
+            <Link href="/experiences/heritage-tours" className="text-maroon underline">
+              Heritage Tours
+            </Link>{" "}
+            itinerary pairs Varanasi with Khajuraho and Sarnath in a single 5-day circuit.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -335,7 +395,12 @@ export default function TwentyBestPlacesGuidePage() {
             Goan cuisine blending Portuguese and Konkani influences, to a genuinely relaxed
             beach-town pace most travellers use to close out a longer trip. North Goa&apos;s
             beach shacks and nightlife and South Goa&apos;s quieter upscale resorts offer two
-            different holidays within one state.
+            different holidays within one state. If your dates line up with the four days before
+            Lent, our{" "}
+            <Link href="/experiences/goa-carnival" className="text-maroon underline">
+              Goa Carnival
+            </Link>{" "}
+            guide covers the street parades that take over the state each year.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -362,7 +427,12 @@ export default function TwentyBestPlacesGuidePage() {
             roughly 950 and 1050 CE, its surfaces covered in some of the most intricately carved
             stone sculpture anywhere in India — thousands of figures depicting deities, celestial
             beings and scenes from daily life. It sees considerably fewer visitors than the Taj
-            Mahal or Delhi&apos;s major monuments, making for a more contemplative visit.
+            Mahal or Delhi&apos;s major monuments, making for a more contemplative visit. It
+            pairs naturally with Varanasi on our{" "}
+            <Link href="/experiences/heritage-tours" className="text-maroon underline">
+              Heritage Tours
+            </Link>{" "}
+            itinerary, connected by a short domestic flight.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -374,7 +444,11 @@ export default function TwentyBestPlacesGuidePage() {
             coral reefs and Havelock Island&apos;s beaches feel closer to Southeast Asia than to
             mainland India. It&apos;s the one entry here that works best as a dedicated
             beach-and-diving trip rather than an add-on to a heritage-focused circuit, given the
-            flight time from most mainland gateways.
+            flight time from most mainland gateways — see our{" "}
+            <Link href="/experiences/andaman-beach-honeymoon" className="text-maroon underline">
+              Andaman Beach Honeymoon
+            </Link>{" "}
+            itinerary for a full 5-day route.
           </ArticleP>
 
           <ArticleH2>How to Actually See a Selection of These in One Trip</ArticleH2>
@@ -415,7 +489,11 @@ export default function TwentyBestPlacesGuidePage() {
             is the draw, Ranthambore pairs naturally with Rajasthan given the short distance from
             Jaipur, while Central India&apos;s tiger reserves — Bandhavgarh, Kanha and Pench —
             form their own dedicated circuit for travellers specifically prioritising safari time
-            over monuments.
+            over monuments, covered in full in our{" "}
+            <Link href="/experiences/tiger-safari-tours" className="text-maroon underline">
+              Tiger Safari Tours
+            </Link>{" "}
+            guide.
           </ArticleP>
           <ArticleP>
             Travellers drawn to mountains and genuinely different landscapes should weight their

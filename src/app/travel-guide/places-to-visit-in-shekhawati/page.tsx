@@ -185,7 +185,13 @@ export default function ShekhawatiGuidePage() {
             Because Mandawa sees more visitors than other Shekhawati towns, it also has better
             tourist infrastructure generally — more accommodation options, restaurants used to
             international visitors, and guides genuinely knowledgeable about the specific
-            history of individual buildings rather than generic commentary.
+            history of individual buildings rather than generic commentary. Most visitors reach
+            Mandawa directly from Jaipur, roughly 3 to 4 hours by road, making it an easy add-on
+            after our{" "}
+            <Link href="/tours/jaipur-city-tour" className="text-maroon underline">
+              Jaipur City Tour
+            </Link>
+            .
           </ArticleP>
 
           <ArticleH2>Nawalgarh — The Largest Concentration of Havelis</ArticleH2>
@@ -312,8 +318,15 @@ export default function ShekhawatiGuidePage() {
             <Link href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan
             </Link>{" "}
-            itinerary, either inserted between Delhi and Jaipur if you&apos;re arriving from the
-            capital, or as a detour before or after a longer Rajasthan circuit. It genuinely
+            itinerary, either inserted between Delhi and Jaipur on our{" "}
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+              Golden Triangle Tour
+            </Link>{" "}
+            if you&apos;re arriving from the capital, or as a detour before or after a longer{" "}
+            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+              Rajasthan circuit
+            </Link>
+            . It genuinely
             rewards travellers with a curiosity for art and social history more than those
             purely chasing forts and palaces, and it remains one of the least crowded regions on
             this list despite its scale and significance — a real advantage for anyone who finds

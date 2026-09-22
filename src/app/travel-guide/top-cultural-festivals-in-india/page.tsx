@@ -136,7 +136,11 @@ export default function TopCulturalFestivalsPage() {
             fair, and the two are genuinely different enough that we sometimes get asked whether
             they&apos;re the same festival — they aren&apos;t, though both happen within a
             similar winter window and can occasionally be combined if your dates and travel
-            time allow.
+            time allow, particularly as part of a wider{" "}
+            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+              Rajasthan tour
+            </Link>
+            .
           </ArticleP>
           <ArticleP>
             Further west in Gujarat, the{" "}
@@ -281,9 +285,18 @@ export default function TopCulturalFestivalsPage() {
             family celebrations, which remain the festival&apos;s core but are naturally less
             accessible to outside visitors. Varanasi&apos;s ghats, already among the most
             atmospheric settings in India, become especially striking during Diwali, lit with
-            thousands of lamps along the Ganges. Amritsar&apos;s Golden Temple takes on a
+            thousands of lamps along the Ganges — a highlight of our{" "}
+            <Link href="/experiences/heritage-tours" className="text-maroon underline">
+              Heritage Tours
+            </Link>{" "}
+            itinerary. Amritsar&apos;s Golden Temple takes on a
             similarly striking character, illuminated and reflected in its surrounding pool in
-            one of the most photographed Diwali scenes anywhere in the country. Jaipur and
+            one of the most photographed Diwali scenes anywhere in the country, and features in
+            our{" "}
+            <Link href="/experiences/spiritual-india" className="text-maroon underline">
+              Spiritual India
+            </Link>{" "}
+            itinerary alongside Haridwar and Rishikesh. Jaipur and
             Delhi also light up significantly during the festival, making either a reasonable
             alternative for travellers whose itinerary doesn&apos;t extend to Varanasi or
             Amritsar specifically.

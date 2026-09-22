@@ -133,7 +133,12 @@ export default function PilgrimageGuidePage() {
             <Link href="/destinations/varanasi" className="text-maroon underline">
               Varanasi destination guide
             </Link>{" "}
-            for more on the city beyond its pilgrimage sites.
+            for more on the city beyond its pilgrimage sites, or our{" "}
+            <Link href="/experiences/heritage-tours" className="text-maroon underline">
+              Heritage Tours
+            </Link>{" "}
+            itinerary, which pairs Varanasi with Khajuraho&apos;s temple carvings and Sarnath in
+            a single 5-day circuit.
           </ArticleP>
 
           <ArticleH2>Rishikesh &amp; Haridwar — Where the Ganges Begins</ArticleH2>
@@ -155,7 +160,24 @@ export default function PilgrimageGuidePage() {
             drawn to India&apos;s wellness and yoga traditions often extend their stay here beyond
             a simple day trip, since several ashrams and yoga centres in Rishikesh offer
             short courses and retreats that welcome foreign visitors without requiring any prior
-            experience.
+            experience. Our{" "}
+            <Link href="/experiences/spiritual-india" className="text-maroon underline">
+              Spiritual India
+            </Link>{" "}
+            itinerary pairs Rishikesh and Haridwar with Amritsar&apos;s Golden Temple, and if
+            your dates align with early March, the{" "}
+            <Link
+              href="/experiences/international-yoga-festival-rishikesh"
+              className="text-maroon underline"
+            >
+              International Yoga Festival
+            </Link>{" "}
+            fills the town with practitioners from dozens of countries. Haridwar is also one of
+            four rotating host cities for{" "}
+            <Link href="/experiences/kumbh-mela" className="text-maroon underline">
+              Kumbh Mela
+            </Link>
+            , worth knowing if your travel year happens to line up with an edition there.
           </ArticleP>
 
           <ArticleH2>Amritsar — The Golden Temple</ArticleH2>
@@ -180,7 +202,18 @@ export default function PilgrimageGuidePage() {
             flag-lowering display at the India–Pakistan border, performed with theatrical
             marching and crowd participation on both sides — is a popular late-afternoon add-on
             for travellers spending a full day in Amritsar, though it&apos;s a very different
-            kind of experience from the temple itself, more spectacle than spirituality.
+            kind of experience from the temple itself, more spectacle than spirituality. The
+            Golden Temple also makes a striking setting during{" "}
+            <Link href="/experiences/diwali" className="text-maroon underline">
+              Diwali
+            </Link>
+            , when it&apos;s illuminated and reflected in the Amrit Sarovar — one of the most
+            photographed Diwali scenes anywhere in India. See our{" "}
+            <Link href="/experiences/spiritual-india" className="text-maroon underline">
+              Spiritual India
+            </Link>{" "}
+            itinerary for a trip built specifically around Amritsar, Haridwar and Rishikesh
+            together.
           </ArticleP>
 
           <ArticleH2>Pushkar — Rajasthan&apos;s Holy Lake</ArticleH2>
@@ -200,7 +233,11 @@ export default function PilgrimageGuidePage() {
             rather than a destination requiring a special
             trip of its own — most travellers visit as a natural stop between Jaipur and Jodhpur
             or Udaipur rather than a dedicated pilgrimage journey. If your timing lines up with
-            the Pushkar Camel Fair, held each autumn, you&apos;ll see the town at its most
+            the{" "}
+            <Link href="/experiences/pushkar-fair" className="text-maroon underline">
+              Pushkar Fair
+            </Link>
+            , held each autumn, you&apos;ll see the town at its most
             colourful, with tens of thousands of camels, traders and pilgrims filling the
             surrounding desert for the event. Pushkar and Ajmer pair naturally with the forts and
             palaces covered in our{" "}
@@ -217,7 +254,11 @@ export default function PilgrimageGuidePage() {
             Muslims across the region and beyond. The dargah marks the tomb of the 12th-century
             Sufi saint, and in Sufi tradition, a saint&apos;s death anniversary — known as an Urs
             — is marked with celebration rather than mourning, since it&apos;s understood as the
-            saint&apos;s union with the divine. The annual Urs festival draws large crowds for
+            saint&apos;s union with the divine. The annual{" "}
+            <Link href="/experiences/the-urs-festival-ajmer" className="text-maroon underline">
+              Urs festival
+            </Link>{" "}
+            draws large crowds for
             six days of qawwali (devotional music) performances and prayer. Visitors of any
             background are welcome at the dargah year-round, not just during the Urs, and many
             travellers combine Ajmer with Pushkar as a single day trip from Jaipur, since the two
