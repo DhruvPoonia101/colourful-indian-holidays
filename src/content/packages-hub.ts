@@ -77,10 +77,58 @@ export const featuredPackages: CityCard[] = [
   {
     name: "Wildlife Tours",
     tagline: "Tiger Safaris",
-    description: "Ranthambore, Sariska, Bandhavgarh and Kaziranga's one-horned rhinos.",
+    description: "Ranthambore and Sariska's tiger reserves, paired with Jaipur's forts.",
     href: "/tours/wildlife-tours",
     image: "/images/destinations/ranthambore-tiger.webp",
     imageAlt: "Wild tiger at Ranthambore National Park",
+  },
+  {
+    name: "Kaziranga Tour",
+    tagline: "Rhino Safaris on the Brahmaputra",
+    description: "Home to roughly two-thirds of the world's remaining wild one-horned rhinoceroses.",
+    href: "/tours/kaziranga-tour",
+    image: "/images/destinations/kaziranga.webp",
+    imageAlt: "A one-horned rhinoceros crossing a safari track, Kaziranga National Park",
+  },
+  {
+    name: "Odisha Tour",
+    tagline: "The Sun Temple & the Golden Triangle of the East",
+    description: "Bhubaneswar's ancient temples, the Konark Sun Temple, and Chilika Lake's Irrawaddy dolphins.",
+    href: "/tours/odisha-tour",
+    image: "/images/destinations/odisha-konark-sun-temple.webp",
+    imageAlt: "The Konark Sun Temple, Odisha",
+  },
+  {
+    name: "Mumbai Tour",
+    tagline: "Colonial Landmarks & the Arabian Sea",
+    description: "The Gateway of India, a UNESCO railway terminus, and the rock-cut Elephanta Caves.",
+    href: "/tours/mumbai-tour",
+    image: "/images/destinations/Mumbai.webp",
+    imageAlt: "Chhatrapati Shivaji Maharaj Terminus, Mumbai",
+  },
+  {
+    name: "Gujarat Beaches Tour",
+    tagline: "Diu's Colonial Coast & Somnath's Sacred Shore",
+    description: "A Portuguese colonial island and one of Hinduism's most significant shore temples.",
+    href: "/tours/gujarat-beaches-tour",
+    image: "/images/destinations/gujarat-beaches.webp",
+    imageAlt: "A quiet stretch of Gujarat's coastline",
+  },
+  {
+    name: "Maharashtra Tour",
+    tagline: "Ajanta, Ellora & Shirdi",
+    description: "UNESCO rock-cut cave temples and one of India's most-visited pilgrimage towns, beyond Mumbai.",
+    href: "/tours/maharashtra-tour",
+    image: "/images/destinations/maharashtra-ajanta-caves.webp",
+    imageAlt: "The interior of a rock-cut cave temple at Ajanta, Maharashtra",
+  },
+  {
+    name: "Maharashtra Beaches Tour",
+    tagline: "Alibaug's Forts & the Konkan Coast",
+    description: "A fort-dotted coastline near Mumbai, and a quieter beach town further south at Ganpatipule.",
+    href: "/tours/maharashtra-beaches-tour",
+    image: "/images/destinations/alibaug-beach.webp",
+    imageAlt: "A beach in Alibaug, Maharashtra",
   },
   {
     name: "Nepal Tours",
@@ -171,6 +219,21 @@ export const featuredPackages: CityCard[] = [
     imageAlt: "The Shore Temple, Mahabalipuram, near Chennai",
   },
 ] as const;
+
+const homepagePackageOrder = [
+  "Golden Triangle Tour",
+  "Rajasthan Tours",
+  "Kerala Tours",
+  "Taj Mahal Tours",
+  "Kashmir & Ladakh Tours",
+  "South India Tours",
+  "Wildlife Tours",
+  "Nepal Tours",
+];
+
+export const homepagePackages: CityCard[] = homepagePackageOrder
+  .map((name) => featuredPackages.find((card) => card.name === name))
+  .filter((card): card is CityCard => card !== undefined);
 
 export const morePackages: MoreDestination[] = [
   { name: "3–5 Days", href: "/tours/3-5-day-tours" },

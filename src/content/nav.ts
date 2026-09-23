@@ -167,7 +167,10 @@ export const navItems: NavItem[] = [
       },
       {
         heading: "Wildlife & Nature",
-        items: [{ label: "Wildlife Tours", href: "/tours/wildlife-tours" }],
+        items: [
+          { label: "Wildlife Tours", href: "/tours/wildlife-tours" },
+          { label: "Kaziranga Tour", href: "/tours/kaziranga-tour" },
+        ],
       },
     ],
     viewAllHref: "/tours",

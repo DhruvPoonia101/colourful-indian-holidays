@@ -13,7 +13,7 @@ import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Button } from "@/components/ui/Button";
 import { featuredThemes } from "@/content/themes-hub";
-import { featuredPackages } from "@/content/packages-hub";
+import { homepagePackages } from "@/content/packages-hub";
 import { fleetCards } from "@/content/car-rental-hub";
 import { homeFaqs } from "@/content/home";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/organization-schema";
@@ -100,7 +100,7 @@ export default function Home() {
         <CityGrid
           eyebrow="Popular Tour Packages"
           heading="Where to Start"
-          cities={featuredPackages}
+          cities={homepagePackages}
           topDivider
           showActions
           columns={4}
