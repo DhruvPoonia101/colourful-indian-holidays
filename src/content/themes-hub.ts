@@ -19,6 +19,30 @@ export const featuredThemes: CityCard[] = [
     imageAlt: "The Western Group temples at Khajuraho, Madhya Pradesh",
   },
   {
+    name: "Palace & Fort Tours",
+    tagline: "Amber, Kumbhalgarh, Mehrangarh & Jaisalmer",
+    description: "Four fortress cities and a single architectural tradition, from hilltop siege forts to still-occupied palaces.",
+    href: "/experiences/palace-fort-tours",
+    image: "/images/destinations/mehrangarh-fort-jodhpur.webp",
+    imageAlt: "Mehrangarh Fort towering above Jodhpur's blue-washed old town",
+  },
+  {
+    name: "UNESCO Heritage Sites",
+    tagline: "Delhi, Agra, Ajanta, Ellora & Konark",
+    description: "Six UNESCO World Heritage Sites across four states, built around the designation itself rather than one region.",
+    href: "/experiences/unesco-heritage-sites",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "Taj Mahal at sunrise, Agra",
+  },
+  {
+    name: "Cultural Tours",
+    tagline: "Jaipur & Pushkar's Living Traditions",
+    description: "Bazaars, a puppet show, folk music and a hands-on block-printing workshop — culture as it's lived, not just sightseeing.",
+    href: "/experiences/cultural-tours",
+    image: "/images/destinations/jaipur-hawa-mahal.webp",
+    imageAlt: "Hawa Mahal and street life in Jaipur's old city",
+  },
+  {
     name: "Tiger Safari Tours",
     tagline: "Bandhavgarh, Kanha & Pench",
     description: "A dedicated Madhya Pradesh safari circuit through three of India's best tiger reserves.",
@@ -69,9 +93,6 @@ export const featuredThemes: CityCard[] = [
 ] as const;
 
 export const moreThemes: MoreDestination[] = [
-  { name: "Palace & Fort Tours", href: "/experiences/palace-fort-tours" },
-  { name: "UNESCO Heritage Sites", href: "/experiences/unesco-heritage-sites" },
-  { name: "Cultural Tours", href: "/experiences/cultural-tours" },
   { name: "Village Experiences", href: "/experiences/village-experiences" },
   { name: "Bird Watching", href: "/experiences/bird-watching" },
   { name: "Nature & Landscape", href: "/experiences/nature-landscape" },

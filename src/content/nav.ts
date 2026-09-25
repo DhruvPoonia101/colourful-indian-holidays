@@ -182,6 +182,7 @@ export const navItems: NavItem[] = [
     activeMatch: "/experiences",
     wide: true,
     items: [],
+    columnsPerRow: 2,
     columns: [
       {
         heading: "Special Interest",
@@ -191,6 +192,14 @@ export const navItems: NavItem[] = [
           { label: "Desert Safari", href: "/experiences/desert-safari" },
           { label: "Tiger Safari Tours", href: "/experiences/tiger-safari-tours" },
           { label: "Heritage Tours", href: "/experiences/heritage-tours" },
+          { label: "Palace & Fort Tours", href: "/experiences/palace-fort-tours" },
+        ],
+      },
+      {
+        heading: "More Experiences",
+        items: [
+          { label: "UNESCO Heritage Sites", href: "/experiences/unesco-heritage-sites" },
+          { label: "Cultural Tours", href: "/experiences/cultural-tours" },
           { label: "Spiritual India", href: "/experiences/spiritual-india" },
           { label: "Lumbini", href: "/experiences/lumbini" },
           { label: "Everest Region", href: "/experiences/everest-region" },

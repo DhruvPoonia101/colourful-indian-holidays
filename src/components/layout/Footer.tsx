@@ -13,6 +13,7 @@ import { FiMail, FiPhone } from "react-icons/fi";
 
 import {
   footerCompanyLinks,
+  footerCountryLinks,
   footerExploreLinks,
   sisterCompanies,
   socialLinks,
@@ -120,22 +121,25 @@ export function Footer() {
               ))}
             </ul>
 
-            {/* Sister Companies */}
+            {/* Plan From Abroad */}
             <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D5A93A]/75">
-              Sister Companies
+              Plan From Abroad
             </p>
 
-            <ul className="mt-3 flex flex-col gap-2 text-[13px]">
-              {sisterCompanies.map((company) => (
-                <li key={company.href}>
-                  <a
-                    href={company.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+            <ul className="mt-3 flex flex-wrap text-[13px]">
+              {footerCountryLinks.map((country, index) => (
+                <li key={country.href} className="flex items-center">
+                  {index > 0 && (
+                    <span className="mx-2 text-[#E9DCCB]/40" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
+                  <Link
+                    href={country.href}
                     className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
                   >
-                    {company.label}
-                  </a>
+                    {country.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -159,6 +163,26 @@ export function Footer() {
                   >
                     {link.label}
                   </Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* Sister Companies */}
+            <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D5A93A]/75">
+              Sister Companies
+            </p>
+
+            <ul className="mt-3 flex flex-col gap-2 text-[13px]">
+              {sisterCompanies.map((company) => (
+                <li key={company.href}>
+                  <a
+                    href={company.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
+                  >
+                    {company.label}
+                  </a>
                 </li>
               ))}
             </ul>

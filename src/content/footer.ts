@@ -8,6 +8,15 @@ export const footerExploreLinks = [
   { label: "Travel by Month", href: "/best-time-to-visit-india" },
 ] as const;
 
+export const footerCountryLinks = [
+  { label: "USA", href: "/india-tours-from-usa" },
+  { label: "UK", href: "/india-tours-from-uk" },
+  { label: "Australia", href: "/india-tours-from-australia" },
+  { label: "Canada", href: "/india-tours-from-canada" },
+  { label: "UAE", href: "/india-tours-from-uae" },
+  { label: "Germany", href: "/india-tours-from-germany" },
+] as const;
+
 export const sisterCompanies = [
   { label: "Palace on Wheels", href: "https://palaceonwheelstour.com" },
   { label: "Rajasthan Travel Agency", href: "https://rajasthantravelagency.com" },
@@ -15,6 +24,10 @@ export const sisterCompanies = [
 
 export const footerCompanyLinks = [
   { label: "About Us", href: "/about-us" },
+  { label: "Why Choose Us", href: "/why-choose-us" },
+  { label: "Awards & Recognition", href: "/awards-recognition" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/travel-guide" },
 ] as const;
 
