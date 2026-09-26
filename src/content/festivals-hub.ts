@@ -18,6 +18,14 @@ export const festivalCards: CityCard[] = [
     imageAlt: "Haridwar on the Ganges, one of the four Kumbh Mela host cities",
   },
   {
+    name: "The Urs Festival, Ajmer",
+    tagline: "Islamic calendar, roughly 6 days",
+    description: "A major Sufi pilgrimage at the shrine of Khwaja Moinuddin Chishti, drawing pilgrims of every faith.",
+    href: "/experiences/the-urs-festival-ajmer",
+    image: "/images/destinations/pushkar-lake-ghats.webp",
+    imageAlt: "Pushkar's lake ghats, near Ajmer",
+  },
+  {
     name: "International Yoga Festival, Rishikesh",
     tagline: "Early March",
     description: "A week of yoga, meditation and Ayurveda in the town known as the Yoga Capital of the World.",

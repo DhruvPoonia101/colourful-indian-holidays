@@ -99,6 +99,16 @@ export default function PilgrimageGuidePage() {
             experience these places as a respectful observer rather than an intruder on someone
             else&apos;s sacred moment.
           </ArticleP>
+          <ArticleP>
+            If you&apos;d rather browse this as a set of bookable itineraries than read through the
+            full guide first, our{" "}
+            <Link href="/experiences/pilgrimage-tours" className="text-maroon underline">
+              Pilgrimage Tours
+            </Link>{" "}
+            page rounds up Spiritual India, the Kumbh Mela, the Ajmer Urs, the Rishikesh Yoga
+            Festival and the Pushkar Fair as a single browsable landing page, each with a direct
+            enquiry option.
+          </ArticleP>
 
           <ArticleH2>Varanasi — The Ganges Ghats</ArticleH2>
           <ArticleP>
@@ -177,7 +187,46 @@ export default function PilgrimageGuidePage() {
             <Link href="/experiences/kumbh-mela" className="text-maroon underline">
               Kumbh Mela
             </Link>
-            , worth knowing if your travel year happens to line up with an edition there.
+            , worth knowing if your travel year happens to line up with an edition there. For
+            travellers curious about India&apos;s wider pilgrimage landscape,{" "}
+            <Link href="/destinations/rishikesh-haridwar" className="text-maroon underline">
+              our Rishikesh &amp; Haridwar destination guide
+            </Link>{" "}
+            covers the practical side of visiting in more depth — where to stay, how to get
+            around, and what else fills out a few days here.
+          </ArticleP>
+
+          <ArticleH2>The Char Dham Yatra — Uttarakhand&apos;s Four Himalayan Shrines</ArticleH2>
+          <ArticleP>
+            Most journeys to the Char Dham Yatra begin exactly where the section above leaves off
+            — Rishikesh and Haridwar are the traditional gateway towns, with Rishikesh in
+            particular serving as the yatra&apos;s main transit camp each season. The Char Dham
+            circuit itself is a different order of pilgrimage from anything else on this page:
+            four high-altitude Himalayan shrines — Yamunotri, Gangotri, Kedarnath and Badrinath —
+            reachable only during a roughly seven-month window each year, when winter snow closes
+            the mountain routes for the remainder. In 2026, the temples opened in their
+            traditional sequence between April 19 and April 23 and close again around
+            mid-November, ahead of the next winter.
+          </ArticleP>
+          <ArticleP>
+            The pilgrimage follows a fixed order: Yamunotri first (3,293m, reached via a 5 to 6km
+            trek from Janki Chatti, with ponies and palanquins available for those who don&apos;t
+            walk it), then Gangotri (3,100m, directly road-accessible via Uttarkashi), then
+            Kedarnath (3,583m, the most physically demanding of the four, requiring a 16 to 18km
+            uphill trek from Gaurikund, though a helicopter service also operates), and finally
+            Badrinath (3,133m, again road-accessible). The full circuit by road from Delhi covers
+            roughly 1,500 to 2,000km and typically takes 10 to 12 days.
+          </ArticleP>
+          <ArticleP>
+            This is worth being direct about: the Char Dham Yatra is overwhelmingly a domestic
+            Hindu pilgrimage rather than an international tourist circuit, and recent years have
+            added registration requirements — including biometric ID verification — that are
+            built around India&apos;s domestic identity system and aren&apos;t straightforwardly
+            set up for foreign nationals. We haven&apos;t built this into a standard package for
+            that reason. If you have a genuine, specific interest in the Char Dham Yatra as part
+            of a longer trip, it&apos;s worth a direct conversation with us about what&apos;s
+            realistically involved for your situation, rather than assuming it works the same way
+            as the other pilgrimage destinations on this page.
           </ArticleP>
 
           <ArticleH2>Amritsar — The Golden Temple</ArticleH2>
@@ -213,7 +262,11 @@ export default function PilgrimageGuidePage() {
               Spiritual India
             </Link>{" "}
             itinerary for a trip built specifically around Amritsar, Haridwar and Rishikesh
-            together.
+            together, or our{" "}
+            <Link href="/destinations/amritsar" className="text-maroon underline">
+              Amritsar destination guide
+            </Link>{" "}
+            for more on the city itself.
           </ArticleP>
 
           <ArticleH2>Pushkar — Rajasthan&apos;s Holy Lake</ArticleH2>
@@ -244,7 +297,11 @@ export default function PilgrimageGuidePage() {
             <Link href="/travel-guide/monuments-in-rajasthan" className="text-maroon underline">
               Rajasthan monuments guide
             </Link>
-            .
+            . See our{" "}
+            <Link href="/destinations/pushkar" className="text-maroon underline">
+              Pushkar destination guide
+            </Link>{" "}
+            for more on the town itself.
           </ArticleP>
 
           <ArticleH2>Ajmer — Ajmer Sharif Dargah</ArticleH2>
@@ -473,6 +530,18 @@ export default function PilgrimageGuidePage() {
             visitors of every background, and the ceremonies themselves are striking to witness
             regardless of your own beliefs. Respectful curiosity is generally met with genuine
             warmth.
+          </ArticleP>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              Can international travellers do the Char Dham Yatra?
+            </span>{" "}
+            Technically yes, but it&apos;s worth going in with the right expectations — the
+            registration process is built around India&apos;s domestic ID system, the terrain is
+            physically demanding at high altitude, and the circuit runs on a fixed seasonal
+            window (roughly late April to mid-November). It&apos;s a fundamentally different kind
+            of trip from the other destinations on this page, and one worth discussing with us
+            directly if you&apos;re genuinely interested rather than assuming it fits into a
+            standard itinerary.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">

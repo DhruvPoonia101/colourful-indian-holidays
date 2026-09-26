@@ -218,3 +218,38 @@ export const rajasthanFaqs: FaqItem[] = [
       "Rajasthan is part of India, so the standard Indian visa requirements apply — most international travellers can apply for an e-Visa online before arrival. Requirements vary by nationality, so we recommend checking the current rules for your passport before booking flights.",
   },
 ] as const;
+
+export const rajasthanExperiences = [
+  {
+    name: "Palace & Fort Tours",
+    tagline: "Amber, Kumbhalgarh, Mehrangarh & Jaisalmer",
+    description: "Four fortress cities and a single architectural tradition, from hilltop siege forts to still-occupied palaces.",
+    href: "/experiences/palace-fort-tours",
+    image: "/images/destinations/mehrangarh-fort-jodhpur.webp",
+    imageAlt: "Mehrangarh Fort towering above Jodhpur's blue-washed old town",
+  },
+  {
+    name: "Cultural Tours",
+    tagline: "Jaipur & Pushkar's Living Traditions",
+    description: "Bazaars, a puppet show, folk music and a hands-on block-printing workshop — culture as it's lived, not just sightseeing.",
+    href: "/experiences/cultural-tours",
+    image: "/images/destinations/jaipur-hawa-mahal.webp",
+    imageAlt: "Hawa Mahal and street life in Jaipur's old city",
+  },
+  {
+    name: "Desert Safari",
+    tagline: "The Thar Desert",
+    description: "Camel safaris and overnight camping in the dunes outside Jaisalmer.",
+    href: "/experiences/desert-safari",
+    image: "/images/destinations/jaisalmer-desert.webp",
+    imageAlt: "Camel caravan crossing the Thar Desert dunes near Jaisalmer",
+  },
+  {
+    name: "Rajasthan Palace Honeymoon",
+    tagline: "Two Palace Cities, Built for Two · 7 Days",
+    description: "Jaipur and Udaipur's palace hotels, framed specifically for couples.",
+    href: "/experiences/rajasthan-palace-honeymoon",
+    image: "/images/destinations/udaipur-lake-palace.webp",
+    imageAlt: "Lake Palace floating on Lake Pichola, Udaipur",
+  },
+] as const;

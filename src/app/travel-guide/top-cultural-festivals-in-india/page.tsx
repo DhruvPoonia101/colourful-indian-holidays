@@ -156,6 +156,11 @@ export default function TopCulturalFestivalsPage() {
             performances and craft traditions — embroidery, leatherwork, metalwork — showcased
             throughout. Because it runs for months rather than days, it&apos;s one of the most
             flexible festivals on this list to build into a trip on whatever schedule suits you.
+            See our{" "}
+            <Link href="/destinations/gujarat" className="text-maroon underline">
+              Gujarat destination guide
+            </Link>{" "}
+            for more on the wider state.
           </ArticleP>
 
           <ArticleH2>Holi — The Festival of Colours (Usually March)</ArticleH2>
@@ -198,7 +203,11 @@ export default function TopCulturalFestivalsPage() {
             towns, accompanied by live bands, costumed dance troupes and performers in vivid,
             feathered outfits reminiscent of Brazilian carnival traditions, giving Goa a street-
             party atmosphere genuinely distinct from the rest of India&apos;s more ritual-based
-            celebrations.
+            celebrations. See our{" "}
+            <Link href="/destinations/goa" className="text-maroon underline">
+              Goa destination guide
+            </Link>{" "}
+            for more on the state itself.
           </ArticleP>
           <ArticleP>
             Around the same period, Jaipur&apos;s{" "}
@@ -259,7 +268,11 @@ export default function TopCulturalFestivalsPage() {
             the festival closes with the Onam Sadhya, a traditional vegetarian feast running to
             well over twenty dishes served together on a single banana leaf. Because Onam spans
             ten days rather than one, it offers genuine flexibility that most single-day
-            festivals simply don&apos;t.
+            festivals simply don&apos;t. See our{" "}
+            <Link href="/destinations/kerala" className="text-maroon underline">
+              Kerala destination guide
+            </Link>{" "}
+            for more on planning a trip around it.
           </ArticleP>
 
           <ArticleH2>Autumn — Diwali (October–November)</ArticleH2>
@@ -420,7 +433,12 @@ export default function TopCulturalFestivalsPage() {
             Pushkar, the Camel Festival, Teej, Holi and the Elephant Festival — all happen
             within the same state. If you&apos;d like a trip built specifically around one of
             these dates, or a festival woven into a longer route you&apos;re already planning,
-            our team can put together an itinerary that fits your travel window.
+            our{" "}
+            <Link href="/experiences/festival-tours" className="text-maroon underline">
+              Festival Tours
+            </Link>{" "}
+            page rounds up every festival covered here in one place, or our team can put
+            together an itinerary that fits your travel window directly.
           </ArticleP>
         </ArticleBody>
 

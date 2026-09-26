@@ -11,6 +11,50 @@ export type GuideArticle = {
 
 export const guideArticles: GuideArticle[] = [
   {
+    title: "India Currency & Payments Guide: Cash, Cards & UPI Explained",
+    slug: "india-currency-payments-guide",
+    excerpt:
+      "How to handle money on an India trip — currency exchange, ATMs and card acceptance, the new UPI One World pilot for tourists, and customs declaration rules for bringing cash into the country.",
+    category: "Planning",
+    image: "/images/destinations/pushkar-bazaar.webp",
+    imageAlt: "Pushkar's market street, lit up in the evening",
+    datePublished: "2026-09-25",
+    published: true,
+  },
+  {
+    title: "India Health & Vaccination Guide: What to Know Before You Travel",
+    slug: "india-health-vaccination-guide",
+    excerpt:
+      "General health and vaccination guidance for international travellers to India — commonly recommended vaccines, food and water safety, malaria precautions, and when to see a travel health clinic.",
+    category: "Planning",
+    image: "/images/destinations/rishikesh-2.webp",
+    imageAlt: "The Lakshman Jhula suspension bridge over the Ganges, Rishikesh",
+    datePublished: "2026-09-25",
+    published: true,
+  },
+  {
+    title: "Getting Around India: Flights, Trains & Roads Explained",
+    slug: "getting-around-india",
+    excerpt:
+      "Domestic flights, Indian Railways' classes and booking system, and why private car and driver hire is the standard way international travellers get around India.",
+    category: "Planning",
+    image: "/images/destinations/darjeeling-himalayan-railway.webp",
+    imageAlt: "The Darjeeling Himalayan Railway's steam 'toy train', West Bengal",
+    datePublished: "2026-09-25",
+    published: true,
+  },
+  {
+    title: "India e-Visa Guide 2026: Types, Fees, Stay Limits & the New e-Arrival Card",
+    slug: "india-e-visa-guide",
+    excerpt:
+      "The 30-day, 1-year and 5-year e-Tourist visa options explained, how long you can actually stay by nationality, and the new e-Arrival Card every foreign traveller now needs.",
+    category: "Planning",
+    image: "/images/destinations/delhi-india-gate.webp",
+    imageAlt: "India Gate at dusk, Delhi",
+    datePublished: "2026-09-25",
+    published: true,
+  },
+  {
     title: "Hiring a Car in Rajasthan: A Complete Guide",
     slug: "hiring-a-car-in-rajasthan",
     excerpt:

@@ -365,6 +365,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/travel-guide/india-currency-payments-guide`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/india-health-vaccination-guide`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/getting-around-india`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/india-e-visa-guide`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
       url: `${SITE_URL}/travel-guide/hiring-a-car-in-rajasthan`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
@@ -456,6 +480,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
       {
       url: `${SITE_URL}/experiences/festival-tours`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/experiences/pilgrimage-tours`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
@@ -729,6 +759,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_UPDATED,
       changeFrequency: "weekly",
       priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/tours/wildlife-tiger-safari-tours`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/tours/hill-stations-tours`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
     {
       url: `${SITE_URL}/tours/himachal-tour`,

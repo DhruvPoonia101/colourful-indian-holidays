@@ -199,8 +199,16 @@ export const featuredPackages: CityCard[] = [
     tagline: "Paradise on Earth",
     description: "Dal Lake's houseboats and Ladakh's high-altitude monasteries, in three different shapes.",
     href: "/tours/kashmir-ladakh-tours",
-    image: "/images/destinations/Leh-4.webp",
-    imageAlt: "Pangong Lake with motorcycles parked on the shore, Ladakh",
+    image: "/images/destinations/Leh-3.webp",
+    imageAlt: "The Indus-Zanskar confluence near Leh, Ladakh",
+  },
+  {
+    name: "Wildlife & Tiger Safari Tours",
+    tagline: "70% of the World's Wild Tigers",
+    description: "Ranthambore, Bandhavgarh, Kaziranga's rhinos and Periyar's boat safaris, in five different shapes.",
+    href: "/tours/wildlife-tiger-safari-tours",
+    image: "/images/destinations/ranthambore-tiger.webp",
+    imageAlt: "A Bengal tiger resting on a safari track, Ranthambore",
   },
   {
     name: "Himachal Tour",

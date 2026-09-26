@@ -20,6 +20,7 @@ import {
   rajasthanHighlights,
   rajasthanPopularTours,
   rajasthanRelatedDestinations,
+  rajasthanExperiences,
   rajasthanFaqs,
 } from "@/content/destinations/rajasthan";
 import { fleetCards } from "@/content/car-rental-hub";
@@ -160,6 +161,27 @@ export default function RajasthanPage() {
                   the state most of our international travellers name as the highlight of their
                   entire India journey.
                 </p>
+                <p>
+                  For a closer look at the region&apos;s forts and monuments specifically, see our{" "}
+                  <Link href="/travel-guide/monuments-in-rajasthan" className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon">
+                    Monuments in Rajasthan guide
+                  </Link>
+                  , and for the practical side of getting between cities, our{" "}
+                  <Link href="/travel-guide/hiring-a-car-in-rajasthan" className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon">
+                    guide to hiring a car in Rajasthan
+                  </Link>
+                  . If Rajasthan is the only region on your itinerary rather than one stop on a
+                  wider India trip, our sister site,{" "}
+                  <a
+                    href="https://rajasthantravelagency.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"
+                  >
+                    Rajasthan Travel Agency
+                  </a>
+                  , specialises exclusively in the state and its circuits.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -182,6 +204,13 @@ export default function RajasthanPage() {
           eyebrow="Popular Tours"
           heading="Popular Rajasthan Tours"
           cities={rajasthanPopularTours}
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Experiences"
+          heading="Rajasthan Beyond a Standard Tour"
+          cities={rajasthanExperiences}
           showActions
         />
 

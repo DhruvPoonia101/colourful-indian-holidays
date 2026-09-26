@@ -11,6 +11,14 @@ export const featuredThemes: CityCard[] = [
     imageAlt: "Traditional Rajasthani performers at the Pushkar Camel Fair",
   },
   {
+    name: "Pilgrimage Tours",
+    tagline: "Sacred Sites & Living Faith",
+    description: "The Golden Temple, the Ganges at Haridwar and Rishikesh, Kumbh Mela, the Ajmer Urs and Pushkar's sacred lake.",
+    href: "/experiences/pilgrimage-tours",
+    image: "/images/destinations/amritsar.webp",
+    imageAlt: "The Golden Temple reflected in its pool, Amritsar",
+  },
+  {
     name: "Heritage Tours",
     tagline: "Khajuraho & Varanasi",
     description: "UNESCO temple carvings, the ghats of Varanasi, and Buddhist heritage at Sarnath.",

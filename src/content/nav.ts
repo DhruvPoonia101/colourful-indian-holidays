@@ -201,6 +201,7 @@ export const navItems: NavItem[] = [
           { label: "UNESCO Heritage Sites", href: "/experiences/unesco-heritage-sites" },
           { label: "Cultural Tours", href: "/experiences/cultural-tours" },
           { label: "Spiritual India", href: "/experiences/spiritual-india" },
+          { label: "Pilgrimage Tours", href: "/experiences/pilgrimage-tours" },
           { label: "Lumbini", href: "/experiences/lumbini" },
           { label: "Everest Region", href: "/experiences/everest-region" },
         ],
