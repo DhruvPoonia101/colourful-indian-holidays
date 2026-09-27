@@ -219,7 +219,7 @@ export const rajasthanFaqs: FaqItem[] = [
   },
 ] as const;
 
-export const rajasthanExperiences = [
+export const rajasthanExperiences: CityCard[] = [
   {
     name: "Palace & Fort Tours",
     tagline: "Amber, Kumbhalgarh, Mehrangarh & Jaisalmer",
