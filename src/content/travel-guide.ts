@@ -11,6 +11,50 @@ export type GuideArticle = {
 
 export const guideArticles: GuideArticle[] = [
   {
+    title: "Golden Triangle Itinerary: A 5 to 6 Day Plan for Delhi, Agra and Jaipur",
+    slug: "golden-triangle-itinerary-guide",
+    excerpt:
+      "A day-by-day Golden Triangle plan with real drive times, the Friday Taj Mahal closure, how to cut it to 4 or 5 days, and how to extend it.",
+    category: "India",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "Taj Mahal at sunrise, Agra",
+    datePublished: "2026-09-28",
+    published: true,
+  },
+  {
+    title: "Taj Mahal Visiting Guide: Tickets, Timings, Sunrise & Tips",
+    slug: "taj-mahal-visiting-guide",
+    excerpt:
+      "Ticket prices for foreign visitors, opening hours and the Friday closure, sunrise versus sunset, which gate to use, and the mistakes that spoil a Taj Mahal visit.",
+    category: "India",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "Taj Mahal at sunrise, Agra",
+    datePublished: "2026-09-28",
+    published: true,
+  },
+  {
+    title: "Rajasthan Itinerary: How to Plan 7, 10 and 12 Days",
+    slug: "rajasthan-itinerary-guide",
+    excerpt:
+      "Which Rajasthan cities to include at 7, 10 and 12 days, the real drive times between them, how many nights each deserves, and what to leave out.",
+    category: "Rajasthan",
+    image: "/images/destinations/amber-fort-jaipur.webp",
+    imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
+    datePublished: "2026-09-28",
+    published: true,
+  },
+  {
+    title: "Solo Travel in India: A Practical Guide for First-Timers",
+    slug: "solo-travel-india-guide",
+    excerpt:
+      "An honest guide to travelling alone in India — getting around, common scams, advice for solo women, emergency numbers, and how a private tour can work for one person.",
+    category: "Planning",
+    image: "/images/destinations/jaipur-hawa-mahal.webp",
+    imageAlt: "Hawa Mahal and street life in Jaipur's old city",
+    datePublished: "2026-09-28",
+    published: true,
+  },
+  {
     title: "India Currency & Payments Guide: Cash, Cards & UPI Explained",
     slug: "india-currency-payments-guide",
     excerpt:

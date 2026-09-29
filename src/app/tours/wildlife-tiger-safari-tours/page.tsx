@@ -95,7 +95,7 @@ const wildlifeTours = [
     description: "India's only major tiger reserve explored primarily by boat rather than jeep.",
     href: "/tours/periyar-wildlife-tour",
     image: "/images/destinations/thekkady.webp",
-    imageAlt: "Periyar Lake at Thekkady, Kerala",
+    imageAlt: "A backwaters houseboat near Thekkady, Kerala",
   },
 ];
 
