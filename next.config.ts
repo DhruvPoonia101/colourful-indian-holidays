@@ -186,30 +186,29 @@ const nextConfig: NextConfig = {
   // before this. Applied to every route.
   //
   // Content-Security-Policy is shipped in REPORT-ONLY mode deliberately,
-  // not as an enforcing policy. The source code here shows no Google Tag
-  // Manager script, no external analytics, and no third-party scripts of
-  // any kind — only a same-origin Google Maps iframe embed (see
-  // LocationMap.tsx) and self-hosted fonts/images. But a separate SEO
-  // audit run against the LIVE site claims GTM is present sitewide, which
-  // this source doesn't show — it may be added outside this repo (a
-  // Vercel dashboard integration, a manually-added snippet) or the audit
-  // may be mistaken (e.g. confusing it with Vercel's own Analytics/Speed
-  // Insights). Enforcing a CSP without knowing for certain risks silently
-  // breaking analytics on a live, revenue-generating site. Report-Only
-  // logs any violations to the browser console without blocking anything,
-  // so this can be verified in production first. Once confirmed nothing
-  // is being silently blocked, switch the header key below from
-  // "Content-Security-Policy-Report-Only" to "Content-Security-Policy"
-  // to actually enforce it.
+  // not as an enforcing policy, while it's verified against production.
+  // First Report-Only pass (29 Sep 2026) surfaced one real, confirmed
+  // finding: Cloudflare Turnstile (challenges.cloudflare.com) is used for
+  // spam protection on the Contact form, Get Quote button, and Trip
+  // Planner bar — see TurnstileWidget.tsx and spam-protection.ts. This is
+  // business-critical: an enforcing CSP without this allowance would have
+  // silently broken bot-protection on every real lead-capture form on the
+  // site. No Google Tag Manager violation appeared in that same pass —
+  // the GTM/Analytics allowances below are kept as a harmless precaution
+  // (an audit claimed GTM is present sitewide, but it isn't findable
+  // anywhere in this source tree), not because a violation confirmed it.
+  // Once a further Report-Only check in production comes back clean,
+  // switch the header key below from "Content-Security-Policy-Report-Only"
+  // to "Content-Security-Policy" to actually enforce it.
   async headers() {
     const csp = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https:",
       "font-src 'self' data:",
-      "frame-src https://maps.google.com https://www.google.com",
-      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com",
+      "frame-src https://maps.google.com https://www.google.com https://challenges.cloudflare.com",
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://challenges.cloudflare.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
