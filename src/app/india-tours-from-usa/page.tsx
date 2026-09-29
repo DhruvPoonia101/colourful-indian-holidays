@@ -22,6 +22,7 @@ import {
 } from "react-icons/fi";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
+import { organizationJsonLd } from "@/lib/seo/organization-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -244,6 +245,10 @@ export default function IndiaToursFromUsaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
       />
 
       <main>

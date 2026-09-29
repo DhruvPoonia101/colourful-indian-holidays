@@ -184,7 +184,37 @@ const nextConfig: NextConfig = {
   // Baseline security/hardening headers. Not a ranking factor, but closes
   // an audit gap (see FULLAUDITREPORT.md finding T4) — only HSTS was set
   // before this. Applied to every route.
+  //
+  // Content-Security-Policy is shipped in REPORT-ONLY mode deliberately,
+  // not as an enforcing policy. The source code here shows no Google Tag
+  // Manager script, no external analytics, and no third-party scripts of
+  // any kind — only a same-origin Google Maps iframe embed (see
+  // LocationMap.tsx) and self-hosted fonts/images. But a separate SEO
+  // audit run against the LIVE site claims GTM is present sitewide, which
+  // this source doesn't show — it may be added outside this repo (a
+  // Vercel dashboard integration, a manually-added snippet) or the audit
+  // may be mistaken (e.g. confusing it with Vercel's own Analytics/Speed
+  // Insights). Enforcing a CSP without knowing for certain risks silently
+  // breaking analytics on a live, revenue-generating site. Report-Only
+  // logs any violations to the browser console without blocking anything,
+  // so this can be verified in production first. Once confirmed nothing
+  // is being silently blocked, switch the header key below from
+  // "Content-Security-Policy-Report-Only" to "Content-Security-Policy"
+  // to actually enforce it.
   async headers() {
+    const csp = [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: https:",
+      "font-src 'self' data:",
+      "frame-src https://maps.google.com https://www.google.com",
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com",
+      "object-src 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+    ].join("; ");
+
     return [
       {
         source: "/:path*",
@@ -196,6 +226,7 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
+          { key: "Content-Security-Policy-Report-Only", value: csp },
         ],
       },
     ];

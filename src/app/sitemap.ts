@@ -71,12 +71,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/destinations/ranthambore`,
-      lastModified: LAST_UPDATED,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: `${SITE_URL}/destinations/delhi`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",

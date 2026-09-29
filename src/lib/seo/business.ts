@@ -38,11 +38,3 @@ export const BUSINESS = {
   languages: ["English", "French", "German", "Spanish"],
 } as const;
 
-export const HREFLANG_LOCALES = [
-  { hrefLang: "en", path: "/" },
-  { hrefLang: "en-GB", path: "/" },
-  { hrefLang: "en-AU", path: "/" },
-  { hrefLang: "en-CA", path: "/" },
-  { hrefLang: "en-AE", path: "/" },
-  { hrefLang: "x-default", path: "/" },
-] as const;

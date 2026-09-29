@@ -66,6 +66,25 @@ export function FAQSection({
           </Reveal>
 
           <div className="flex flex-col gap-4">
+            {/*
+              Accessibility- and crawler-visible full text of every FAQ,
+              always present in the DOM regardless of which accordion item
+              is open. sr-only hides it visually (redundant with the
+              interactive accordion below for sighted users) without
+              removing it from the DOM, so screen readers and text-
+              extraction pipelines that treat CSS-collapsed content as
+              hidden (many AI-ingestion boilerplate strippers do, even
+              though Google's own renderer credits accordion content
+              correctly) still get the complete, schema-matching Q&A text.
+            */}
+            <div className="sr-only">
+              {faqs.map((faq) => (
+                <div key={faq.question}>
+                  <h3>{faq.question}</h3>
+                  <p>{faq.answer}</p>
+                </div>
+              ))}
+            </div>
             {faqs.map((faq, index) => {
               const isOpen = openIndex === index;
               return (

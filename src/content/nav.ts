@@ -152,11 +152,14 @@ export const navItems: NavItem[] = [
           { label: "Kashmir & Ladakh Tours", href: "/tours/kashmir-ladakh-tours" },
           { label: "Himachal Tour", href: "/tours/himachal-tour" },
           { label: "South India Tours", href: "/tours/south-india-tours" },
+          { label: "Hill Station Tours", href: "/tours/hill-stations-tours" },
+          { label: "Goa & Beach Tours", href: "/tours/goa-and-beaches-tours" },
         ],
       },
       {
         heading: "Nepal & Bhutan",
         items: [
+          { label: "Nepal & Bhutan Tours — Compare All Routes", href: "/tours/nepal-and-bhutan-tours" },
           { label: "Nepal Tours", href: "/tours/nepal-tours" },
           { label: "Bhutan Tours", href: "/tours/bhutan-tours" },
           { label: "Nepal & Bhutan Tours", href: "/tours/nepal-bhutan-tours" },
@@ -168,6 +171,7 @@ export const navItems: NavItem[] = [
       {
         heading: "Wildlife & Nature",
         items: [
+          { label: "Wildlife & Tiger Safari Tours", href: "/tours/wildlife-tiger-safari-tours" },
           { label: "Wildlife Tours", href: "/tours/wildlife-tours" },
           { label: "Kaziranga Tour", href: "/tours/kaziranga-tour" },
         ],

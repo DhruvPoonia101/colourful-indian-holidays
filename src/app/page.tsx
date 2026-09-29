@@ -18,7 +18,7 @@ import { fleetCards } from "@/content/car-rental-hub";
 import { homeFaqs } from "@/content/home";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/organization-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
-import { HREFLANG_LOCALES, SITE_NAME, SITE_URL } from "@/lib/seo/business";
+import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Private India, Nepal & Bhutan Tours for International Travellers";
@@ -30,9 +30,6 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: SITE_URL,
-    languages: Object.fromEntries(
-      HREFLANG_LOCALES.map((locale) => [locale.hrefLang, `${SITE_URL}${locale.path}`])
-    ),
   },
   openGraph: {
     title: `${title} | ${SITE_NAME}`,

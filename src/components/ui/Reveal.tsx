@@ -14,7 +14,7 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
 
   return (
     <motion.div
-      initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 24 }}
+      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "0px" }}
       transition={{

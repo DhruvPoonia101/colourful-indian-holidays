@@ -25,7 +25,7 @@ export const DEFAULT_TRUST_BADGES: TrustBadge[] = [
     href: "https://share.google/7X4vOahXLHBf878Zv",
   },
   {
-    label: "5 Star Rating on Trip Advisor",
+    label: "4.9 Star Rating on Trip Advisor",
     href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
   },
 ];
