@@ -185,21 +185,20 @@ const nextConfig: NextConfig = {
   // an audit gap (see FULLAUDITREPORT.md finding T4) — only HSTS was set
   // before this. Applied to every route.
   //
-  // Content-Security-Policy is shipped in REPORT-ONLY mode deliberately,
-  // not as an enforcing policy, while it's verified against production.
-  // First Report-Only pass (29 Sep 2026) surfaced one real, confirmed
-  // finding: Cloudflare Turnstile (challenges.cloudflare.com) is used for
-  // spam protection on the Contact form, Get Quote button, and Trip
-  // Planner bar — see TurnstileWidget.tsx and spam-protection.ts. This is
-  // business-critical: an enforcing CSP without this allowance would have
-  // silently broken bot-protection on every real lead-capture form on the
-  // site. No Google Tag Manager violation appeared in that same pass —
-  // the GTM/Analytics allowances below are kept as a harmless precaution
-  // (an audit claimed GTM is present sitewide, but it isn't findable
-  // anywhere in this source tree), not because a violation confirmed it.
-  // Once a further Report-Only check in production comes back clean,
-  // switch the header key below from "Content-Security-Policy-Report-Only"
-  // to "Content-Security-Policy" to actually enforce it.
+  // Content-Security-Policy is now ENFORCING, not Report-Only. It shipped
+  // Report-Only first specifically to verify Cloudflare Turnstile
+  // (challenges.cloudflare.com), used for spam protection on the Contact
+  // form, Get Quote button, and Trip Planner bar — see TurnstileWidget.tsx
+  // and spam-protection.ts. Two full Report-Only passes came back clean:
+  // the second included manually testing multiple page types AND
+  // completing a real enquiry submission through to a Turnstile challenge
+  // (29 Sep 2026) — the single highest-risk interaction for this policy,
+  // since that's the point Turnstile's challenge actually has to run and
+  // verify, not just load. Zero violations logged on that pass. Kept the
+  // GTM/Analytics allowances as a harmless precaution even though no GTM
+  // violation was ever observed in either Report-Only pass — an audit
+  // claimed GTM is present sitewide, but it isn't findable anywhere in
+  // this source tree, so this is defensive, not confirmed-necessary.
   async headers() {
     const csp = [
       "default-src 'self'",
@@ -225,7 +224,7 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
           },
-          { key: "Content-Security-Policy-Report-Only", value: csp },
+          { key: "Content-Security-Policy", value: csp },
         ],
       },
     ];
