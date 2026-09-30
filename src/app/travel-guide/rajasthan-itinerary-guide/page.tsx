@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -128,6 +129,8 @@ export default function RajasthanItineraryGuidePage() {
           datePublished={datePublished}
           dateModified={dateModified}
         />
+
+        <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a Rajasthan itinerary with Colourful Indian Holidays." />
 
         <ArticleBody>
           <ArticleP>

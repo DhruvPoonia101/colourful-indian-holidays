@@ -5,6 +5,7 @@ import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { ItineraryTimeline } from "@/components/packages/ItineraryTimeline";
 import { InclusionsExclusions } from "@/components/packages/InclusionsExclusions";
 import { Reveal } from "@/components/ui/Reveal";
@@ -168,6 +169,8 @@ export function ExperiencePageTemplate({
           whatsappMessage={`Hi! I have a question about ${content.name}.`}
           topDivider
         />
+
+        <PlannedByLine />
 
         <JourneyCTA
           backgroundImage={content.heroImage}

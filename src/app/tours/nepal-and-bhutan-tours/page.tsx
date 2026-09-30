@@ -4,6 +4,7 @@ import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { Reveal } from "@/components/ui/Reveal";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -235,6 +236,8 @@ export default function NepalBhutanToursHubPage() {
           whatsappMessage="Hi! I have a question about a Nepal or Bhutan tour with Colourful Indian Holidays."
           topDivider
         />
+
+        <PlannedByLine />
 
         <JourneyCTA
           backgroundImage={heroImage}

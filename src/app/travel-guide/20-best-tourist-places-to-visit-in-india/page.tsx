@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -78,6 +79,8 @@ export default function TwentyBestPlacesGuidePage() {
           datePublished={datePublished}
           dateModified={dateModified}
         />
+
+        <ArticleTopCTA whatsappMessage="Hi! I'd like some advice on planning my first trip to India with Colourful Indian Holidays." />
 
         <ArticleBody>
           <ArticleP>

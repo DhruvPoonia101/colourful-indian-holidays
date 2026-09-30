@@ -3,6 +3,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { Reveal } from "@/components/ui/Reveal";
 import { rajasthanTourVariants, rajasthanCityTours } from "@/content/rajasthan-tours-hub";
 import { fleetCards } from "@/content/car-rental-hub";
@@ -91,6 +92,8 @@ export default function RajasthanToursHubPage() {
           topDivider
           showActions
         />
+
+        <PlannedByLine />
 
         <JourneyCTA
           backgroundImage={heroImage}

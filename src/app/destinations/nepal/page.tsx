@@ -3,6 +3,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { nepalDestinations } from "@/content/nepal-destinations-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -119,6 +120,8 @@ export default function NepalDestinationsHubPage() {
           whatsappMessage="Hi! I have a question about planning a trip to Nepal."
           topDivider
         />
+
+        <PlannedByLine />
 
         <JourneyCTA
           backgroundImage={heroImage}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -78,6 +79,8 @@ export default function MonumentsGuidePage() {
           datePublished={datePublished}
           dateModified={dateModified}
         />
+
+        <ArticleTopCTA whatsappMessage="Hi! I'd like to plan a Rajasthan trip focused on the forts and palaces with Colourful Indian Holidays." />
 
         <ArticleBody>
           <ArticleP>

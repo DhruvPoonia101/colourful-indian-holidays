@@ -4,6 +4,7 @@ import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { Reveal } from "@/components/ui/Reveal";
 import { goldenTriangleVariants } from "@/content/golden-triangle-hub";
 import { fleetCards } from "@/content/car-rental-hub";
@@ -182,6 +183,8 @@ export default function GoldenTriangleHubPage() {
           whatsappMessage="Hi! I have a question about a Golden Triangle tour with Colourful Indian Holidays."
           topDivider
         />
+
+        <PlannedByLine />
 
         <JourneyCTA
           backgroundImage={heroImage}

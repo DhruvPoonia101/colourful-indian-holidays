@@ -8,6 +8,7 @@ import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import {
@@ -206,6 +207,8 @@ export default function UdaipurPage() {
           whatsappMessage="Hi! I have a question before booking my Udaipur trip with Colourful Indian Holidays."
           topDivider
         />
+
+        <PlannedByLine />
 
         <JourneyCTA
           backgroundImage={heroImage}

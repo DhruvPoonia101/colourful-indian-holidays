@@ -205,24 +205,26 @@ export function Navbar() {
             </div>
 
             {/* =====================================================
-                CTA — FAR RIGHT
+                CTA — FAR RIGHT. Visible at every width now, not just
+                lg:. It previously lived inside a `hidden lg:flex`
+                wrapper, meaning the site's primary conversion button
+                was completely absent from the visible bar on every
+                phone and tablet — reachable only after opening the
+                hamburger menu. A compact version now shows alongside
+                the hamburger on small screens; the full-size desktop
+                version is unchanged at the lg: breakpoint.
             ===================================================== */}
-            <div
-              className="
-                hidden
-                shrink-0
-                items-center
-                lg:flex
-              "
-            >
+            <div className="ml-auto flex shrink-0 items-center lg:ml-0">
               <GetQuoteButton
                 pageName="Plan My Journey (Navbar)"
                 triggerLabel="Plan My Journey"
                 triggerClassName="
                   inline-flex items-center justify-center gap-2 whitespace-nowrap
-                  rounded-full bg-[#12233F] px-7 py-3 text-sm font-semibold
-                  tracking-wide text-ivory shadow-sm transition-all duration-200
-                  ease-out min-h-11 hover:scale-[1.04] hover:bg-[#1B335C]
+                  rounded-full bg-[#12233F] text-ivory shadow-sm transition-all
+                  duration-200 ease-out hover:scale-[1.04] hover:bg-[#1B335C]
+                  font-semibold tracking-wide
+                  px-4 py-2 text-xs min-h-9
+                  lg:px-7 lg:py-3 lg:text-sm lg:min-h-11
                 "
               />
             </div>
@@ -236,7 +238,7 @@ export function Navbar() {
               aria-label="Open menu"
               aria-expanded={isMobileMenuOpen}
               className="
-                ml-auto
+                ml-2
                 flex
                 h-11
                 w-11
