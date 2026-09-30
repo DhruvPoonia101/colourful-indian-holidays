@@ -198,7 +198,7 @@ export default function GoaPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What people actually want to know before visiting Goa."
           faqs={goaFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Goa with Colourful Indian Holidays."
           topDivider

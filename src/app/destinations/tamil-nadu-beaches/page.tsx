@@ -171,7 +171,7 @@ export default function TamilNaduBeachesPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The Tamil Nadu Beaches questions worth asking before you go."
           faqs={tamilNaduBeachesFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Tamil Nadu Beaches with Colourful Indian Holidays."
           topDivider

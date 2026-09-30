@@ -197,7 +197,7 @@ export default function RishikeshHaridwarPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The questions we hear most from travellers planning a trip to Rishikesh & Haridwar."
           faqs={rishikeshHaridwarFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Rishikesh & Haridwar with Colourful Indian Holidays."
           topDivider

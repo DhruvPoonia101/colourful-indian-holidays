@@ -202,7 +202,7 @@ export default function UdaipurPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Udaipur"
-          intro="Everything international travellers ask before booking an Udaipur trip — answered honestly."
+          intro="Straight answers to the questions Udaipur travellers actually ask."
           faqs={udaipurFaqs}
           whatsappMessage="Hi! I have a question before booking my Udaipur trip with Colourful Indian Holidays."
           topDivider

@@ -190,7 +190,7 @@ export default function GangteyPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Real questions from travellers, about Gangtey specifically."
           faqs={gangteyFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Gangtey with Colourful Indian Holidays."
           topDivider

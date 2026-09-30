@@ -197,7 +197,7 @@ export default function SikkimPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What people actually want to know before visiting Sikkim."
           faqs={sikkimFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Sikkim with Colourful Indian Holidays."
           topDivider

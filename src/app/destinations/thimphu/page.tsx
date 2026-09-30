@@ -191,7 +191,7 @@ export default function ThimphuPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What first-time visitors to Thimphu usually want to know."
           faqs={thimphuFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Thimphu with Colourful Indian Holidays."
           topDivider

@@ -165,7 +165,7 @@ export default function TajMahalVisitingGuidePage() {
             <li><span className="font-semibold text-ink">Bring:</span> your passport or another photo ID, and only what you need.</li>
           </ArticleUL>
 
-          <ArticleH2>Opening Hours and the Friday Closure</ArticleH2>
+          <ArticleH2>What Are the Taj Mahal&apos;s Opening Hours?</ArticleH2>
           <ArticleP>
             The monument opens about half an hour before sunrise and closes about half an hour
             before sunset, so the exact times change with the seasons. The ticket counters open
@@ -184,7 +184,7 @@ export default function TajMahalVisitingGuidePage() {
             routes we schedule the Agra stop around this before anything else.
           </ArticleP>
 
-          <ArticleH2>Tickets, Fees and Booking Online</ArticleH2>
+          <ArticleH2>How Much Are Tickets, and How Do You Book Online?</ArticleH2>
           <ArticleP>
             Ticket prices depend on nationality. Foreign visitors from outside the SAARC and
             BIMSTEC countries pay 1,100 rupees, which is roughly sixteen US dollars once the
@@ -203,7 +203,7 @@ export default function TajMahalVisitingGuidePage() {
             If you book a tour with us, tickets are handled for you, so you skip this step.
           </ArticleP>
 
-          <ArticleH2>Which Gate to Use</ArticleH2>
+          <ArticleH2>Which Gate Should You Use?</ArticleH2>
           <ArticleP>
             There are ticket counters at the Eastern and Western gates, and the queues for
             foreign and domestic visitors are separate, with signs to direct you. The southern
@@ -233,7 +233,7 @@ export default function TajMahalVisitingGuidePage() {
             build whole days around this principle.
           </ArticleP>
 
-          <ArticleH2>Night Viewing</ArticleH2>
+          <ArticleH2>Can You Visit the Taj Mahal at Night?</ArticleH2>
           <ArticleP>
             The Taj Mahal can be seen by moonlight, but only on a handful of nights around the
             full moon, in small, timed groups, and with tickets that must be bought in advance.
@@ -319,7 +319,7 @@ export default function TajMahalVisitingGuidePage() {
             rest, which is the main advantage of doing it early.
           </ArticleP>
 
-          <ArticleH2>Avoiding the Crowds</ArticleH2>
+          <ArticleH2>How Do You Avoid the Crowds?</ArticleH2>
           <ArticleP>
             No time of day is empty, but some are better than others. Arriving at opening is the
             most reliable way to have a calmer visit, and late afternoon is the next best. Because
@@ -356,7 +356,7 @@ export default function TajMahalVisitingGuidePage() {
             covers sensible precautions.
           </ArticleP>
 
-          <ArticleH2>Getting to Agra</ArticleH2>
+          <ArticleH2>How Do You Get to Agra?</ArticleH2>
           <ArticleP>
             Agra is roughly 230 km from Delhi, about three and a half to four hours by road along
             the expressway, and about 240 km from Jaipur, around five hours. Most travellers go by

@@ -202,7 +202,7 @@ export default function PushkarPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Pushkar"
-          intro="Everything international travellers ask before booking a Pushkar trip — answered honestly."
+          intro="What first-time visitors to Pushkar usually want to know."
           faqs={pushkarFaqs}
           whatsappMessage="Hi! I have a question before booking my Pushkar trip with Colourful Indian Holidays."
           topDivider

@@ -147,6 +147,15 @@ export default function RajasthanItineraryGuidePage() {
             .
           </ArticleP>
 
+          <ArticleH2>Rajasthan at a Glance</ArticleH2>
+          <ArticleUL>
+            <li><span className="font-semibold text-ink">Minimum for a real trip:</span> 7 days (Jaipur, Jodhpur, Udaipur).</li>
+            <li><span className="font-semibold text-ink">Longest single drive:</span> Jaipur to Jodhpur, about 335 km, 5.5 to 6 hours.</li>
+            <li><span className="font-semibold text-ink">Best season:</span> October to March.</li>
+            <li><span className="font-semibold text-ink">Nights per city:</span> at least 2, to avoid a one-night stop.</li>
+            <li><span className="font-semibold text-ink">Full-state loop:</span> 12 days, matching our Grand Rajasthan Circuit.</li>
+          </ArticleUL>
+
           <ArticleH2>The Cities, and What Each One Is For</ArticleH2>
           <ArticleP>
             Each major stop offers something different, which is worth knowing before you decide
@@ -321,7 +330,7 @@ export default function RajasthanItineraryGuidePage() {
             <li>Leaving Pushkar accommodation late when travelling around the Camel Fair.</li>
           </ArticleUL>
 
-          <ArticleH2>How Many Nights in Each City</ArticleH2>
+          <ArticleH2>How Many Nights Should You Spend in Each City?</ArticleH2>
           <ArticleP>
             This is our own suggestion rather than a rule, based on how the trips tend to feel.
             Give Jaipur two nights, since it has the most to see. Give Jodhpur one or two, and
@@ -332,7 +341,7 @@ export default function RajasthanItineraryGuidePage() {
             consecutive cities, because the daily packing and long drives add up quickly.
           </ArticleP>
 
-          <ArticleH2>Which Version Suits Which Traveller</ArticleH2>
+          <ArticleH2>Which Itinerary Suits Which Traveller?</ArticleH2>
           <ArticleP>
             The right length depends as much on who is travelling as on how many days you have.
             First-time visitors are usually best served by the seven-day route, which shows the
@@ -373,7 +382,7 @@ export default function RajasthanItineraryGuidePage() {
             and start fresh the next morning.
           </ArticleP>
 
-          <ArticleH2>When to Go</ArticleH2>
+          <ArticleH2>When Is the Best Time to Go?</ArticleH2>
           <ArticleP>
             October to March is the comfortable season across the state, with clear skies and
             pleasant days. Winter evenings in the desert can be surprisingly cold, so pack a

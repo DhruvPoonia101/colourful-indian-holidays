@@ -193,7 +193,7 @@ export default function MaharashtraPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The Maharashtra questions worth asking before you go."
           faqs={maharashtraFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Maharashtra with Colourful Indian Holidays."
           topDivider

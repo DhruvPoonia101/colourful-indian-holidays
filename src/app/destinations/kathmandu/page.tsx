@@ -196,7 +196,7 @@ export default function KathmanduPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What people actually want to know before visiting Kathmandu."
           faqs={kathmanduFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Kathmandu with Colourful Indian Holidays."
           topDivider

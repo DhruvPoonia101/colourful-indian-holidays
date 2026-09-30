@@ -227,7 +227,7 @@ export default function RanthamborePage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Ranthambore"
-          intro="Everything international travellers ask before booking a Ranthambore safari — answered honestly."
+          intro="Before you book Ranthambore, here's what other travellers have asked."
           faqs={ranthamboreFaqs}
           whatsappMessage="Hi! I have a question before booking my Ranthambore safari with Colourful Indian Holidays."
           topDivider

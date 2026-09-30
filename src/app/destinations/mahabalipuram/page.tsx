@@ -192,7 +192,7 @@ export default function MahabalipuramPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What people actually want to know before visiting Mahabalipuram."
           faqs={mahabalipuramFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Mahabalipuram with Colourful Indian Holidays."
           topDivider

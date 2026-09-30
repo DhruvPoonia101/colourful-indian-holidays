@@ -289,7 +289,7 @@ export default function RajasthanPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Rajasthan"
-          intro="Everything international travellers ask before booking a Rajasthan trip — answered honestly."
+          intro="Straight answers to the questions Rajasthan travellers actually ask."
           faqs={rajasthanFaqs}
           whatsappMessage="Hi! I have a question before booking my Rajasthan trip with Colourful Indian Holidays."
           topDivider

@@ -193,7 +193,7 @@ export default function PenchPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Real questions from travellers, about Pench specifically."
           faqs={penchFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Pench National Park with Colourful Indian Holidays."
           topDivider

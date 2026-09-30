@@ -192,7 +192,7 @@ export default function KhajurahoPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What first-time visitors to Khajuraho usually want to know."
           faqs={khajurahoFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Khajuraho with Colourful Indian Holidays."
           topDivider

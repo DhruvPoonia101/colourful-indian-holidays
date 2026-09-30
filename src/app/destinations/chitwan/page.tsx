@@ -194,7 +194,7 @@ export default function ChitwanPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What first-time visitors to Chitwan usually want to know."
           faqs={chitwanFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Chitwan with Colourful Indian Holidays."
           topDivider

@@ -225,7 +225,7 @@ export default function AgraPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Agra"
-          intro="Everything international travellers ask before booking an Agra trip — answered honestly."
+          intro="The questions we hear most from travellers planning a trip to Agra."
           faqs={agraFaqs}
           whatsappMessage="Hi! I have a question before booking my Agra trip with Colourful Indian Holidays."
           topDivider

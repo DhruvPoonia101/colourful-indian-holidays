@@ -194,7 +194,7 @@ export default function ChennaiPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The Chennai questions worth asking before you go."
           faqs={chennaiFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Chennai with Colourful Indian Holidays."
           topDivider

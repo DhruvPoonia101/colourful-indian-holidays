@@ -91,7 +91,7 @@ export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
         <FAQSection
           eyebrow="FAQ"
           heading={`Common Questions About the ${content.name}`}
-          intro="Everything international travellers ask before booking transport with us — answered honestly."
+          intro="What travellers usually ask before arranging transport with us."
           faqs={content.faqs}
           whatsappMessage={`Hi! I have a question about renting a ${content.name}.`}
           topDivider

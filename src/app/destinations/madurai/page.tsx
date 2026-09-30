@@ -195,7 +195,7 @@ export default function MaduraiPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Real questions from travellers, about Madurai specifically."
           faqs={maduraiFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Madurai with Colourful Indian Holidays."
           topDivider

@@ -192,7 +192,7 @@ export default function PondicherryPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="A few honest answers before you book Pondicherry."
           faqs={pondicherryFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Pondicherry with Colourful Indian Holidays."
           topDivider

@@ -206,7 +206,7 @@ export default function JaipurPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Jaipur"
-          intro="Everything international travellers ask before booking a Jaipur trip — answered honestly."
+          intro="Straight answers to the questions Jaipur travellers actually ask."
           faqs={jaipurFaqs}
           whatsappMessage="Hi! I have a question before booking my Jaipur trip with Colourful Indian Holidays."
           topDivider

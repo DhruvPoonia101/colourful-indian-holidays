@@ -209,7 +209,7 @@ export default function SrinagarKashmirPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="A few honest answers before you book Srinagar & Kashmir."
           faqs={srinagarKashmirFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Srinagar & Kashmir with Colourful Indian Holidays."
           topDivider

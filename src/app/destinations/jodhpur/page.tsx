@@ -202,7 +202,7 @@ export default function JodhpurPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Jodhpur"
-          intro="Everything international travellers ask before booking a Jodhpur trip — answered honestly."
+          intro="The questions we hear most from travellers planning a trip to Jodhpur."
           faqs={jodhpurFaqs}
           whatsappMessage="Hi! I have a question before booking my Jodhpur trip with Colourful Indian Holidays."
           topDivider

@@ -148,6 +148,15 @@ export default function GoldenTriangleItineraryGuidePage() {
             .
           </ArticleP>
 
+          <ArticleH2>The Golden Triangle at a Glance</ArticleH2>
+          <ArticleUL>
+            <li><span className="font-semibold text-ink">Ideal length:</span> 6 days (2 Delhi, 1 Agra, 2 Jaipur, plus departure).</li>
+            <li><span className="font-semibold text-ink">Shortest workable length:</span> 4 days, though it&apos;s a tight pace.</li>
+            <li><span className="font-semibold text-ink">Longest drive:</span> Jaipur to Delhi, about 280 km, 5 to 6 hours.</li>
+            <li><span className="font-semibold text-ink">The one rule:</span> never schedule the Taj Mahal on a Friday — it&apos;s closed.</li>
+            <li><span className="font-semibold text-ink">Best season:</span> October to March.</li>
+          </ArticleUL>
+
           <ArticleH2>The Three Cities in a Nutshell</ArticleH2>
           <ArticleP>
             <Link href="/destinations/delhi" className="text-maroon underline">Delhi</Link>{" "}
@@ -279,7 +288,7 @@ export default function GoldenTriangleItineraryGuidePage() {
             roads. If you are torn between adding a sight and keeping a gap, keep the gap.
           </ArticleP>
 
-          <ArticleH2>What Drives the Cost</ArticleH2>
+          <ArticleH2>What Drives the Cost of a Golden Triangle Tour?</ArticleH2>
           <ArticleP>
             We do not publish a single price here, because the same six days can cost very
             different amounts depending on choices you control. The biggest factors are the hotel
@@ -291,7 +300,7 @@ export default function GoldenTriangleItineraryGuidePage() {
             anywhere.
           </ArticleP>
 
-          <ArticleH2>How Far Ahead to Book</ArticleH2>
+          <ArticleH2>How Far Ahead Should You Book?</ArticleH2>
           <ArticleP>
             October to March is the busy season, and the better hotels in Agra and Jaipur fill up
             first. Two to three months ahead is a comfortable window, and earlier is wise if you
@@ -354,7 +363,7 @@ export default function GoldenTriangleItineraryGuidePage() {
             explains how to plan it.
           </ArticleP>
 
-          <ArticleH2>When to Go</ArticleH2>
+          <ArticleH2>When Is the Best Time to Go?</ArticleH2>
           <ArticleP>
             October to March is the comfortable window, with clear days and cool evenings. Winter
             mornings can be foggy, especially in December and January, which can hide the
@@ -375,7 +384,7 @@ export default function GoldenTriangleItineraryGuidePage() {
             <li>Leave the middle of the Taj day free. The best light is at the ends of the day.</li>
           </ArticleUL>
 
-          <ArticleH2>Which Version Suits You</ArticleH2>
+          <ArticleH2>Which Itinerary Length Suits You?</ArticleH2>
           <ArticleP>
             Families often prefer a slower version with fewer transfers, and our{" "}
             <Link href="/experiences/family-holidays" className="text-maroon underline">

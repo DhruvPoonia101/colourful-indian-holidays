@@ -193,7 +193,7 @@ export default function LumbiniPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The questions we hear most from travellers planning a trip to Lumbini."
           faqs={lumbiniFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Lumbini with Colourful Indian Holidays."
           topDivider

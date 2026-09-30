@@ -130,7 +130,7 @@ export default function Home() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking a trip with us — answered honestly."
+          intro="The questions travellers ask most before their first trip with us."
           faqs={homeFaqs}
           whatsappMessage="Hi! I have a question before booking a trip with Colourful Indian Holidays."
           topDivider

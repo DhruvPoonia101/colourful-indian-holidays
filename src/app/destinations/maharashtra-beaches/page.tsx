@@ -171,7 +171,7 @@ export default function MaharashtraBeachesPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="A few honest answers before you book Maharashtra Beaches."
           faqs={maharashtraBeachesFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Maharashtra Beaches with Colourful Indian Holidays."
           topDivider

@@ -35,8 +35,11 @@ export function touristTripJsonLd(trip: TouristTripInput) {
       itemListElement: trip.itinerary.map((day, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        name: day.title,
-        description: day.description,
+        item: {
+          "@type": "Thing",
+          name: day.title,
+          description: day.description,
+        },
       })),
     },
     offers: {

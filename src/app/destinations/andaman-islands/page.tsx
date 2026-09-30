@@ -171,7 +171,7 @@ export default function AndamanIslandsPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What people actually want to know before visiting Andaman Islands."
           faqs={andamanIslandsFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Andaman Islands with Colourful Indian Holidays."
           topDivider

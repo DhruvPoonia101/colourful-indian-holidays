@@ -130,7 +130,7 @@ export default function HiringACarInRajasthanGuidePage() {
             independence of self-driving would add.
           </ArticleP>
 
-          <ArticleH2>How Private Car and Driver Hire Actually Works</ArticleH2>
+          <ArticleH2>How Does Private Car and Driver Hire Actually Work?</ArticleH2>
           <ArticleP>
             When you hire a car in Rajasthan through a tour operator, you&apos;re not renting a
             vehicle and driving it yourself — you&apos;re booking a private, air-conditioned
@@ -419,7 +419,7 @@ export default function HiringACarInRajasthanGuidePage() {
             build into every route we plan.
           </ArticleP>
 
-          <ArticleH2>How Far in Advance to Book</ArticleH2>
+          <ArticleH2>How Far in Advance Should You Book?</ArticleH2>
           <ArticleP>
             Vehicle availability, particularly for larger Tempo Travellers and coaches, tends to
             tighten during peak season (October through March) and around major festivals like

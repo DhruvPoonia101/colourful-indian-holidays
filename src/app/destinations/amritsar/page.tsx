@@ -193,7 +193,7 @@ export default function AmritsarPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Real questions from travellers, about Amritsar specifically."
           faqs={amritsarFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Amritsar with Colourful Indian Holidays."
           topDivider

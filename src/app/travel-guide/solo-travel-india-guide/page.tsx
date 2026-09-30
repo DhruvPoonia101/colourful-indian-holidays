@@ -200,7 +200,7 @@ export default function SoloTravelIndiaGuidePage() {
             <li>Send a copy of your itinerary and hotel details to someone at home.</li>
           </ArticleUL>
 
-          <ArticleH2>Getting Around Safely on Your Own</ArticleH2>
+          <ArticleH2>How Do You Get Around Safely on Your Own?</ArticleH2>
           <ArticleP>
             For city transport, the safest habit is to use pre-booked drivers or ride-hailing apps
             rather than hailing a vehicle from the street, because the fare and route are
@@ -217,7 +217,7 @@ export default function SoloTravelIndiaGuidePage() {
             a 24-hour helpline on 139.
           </ArticleP>
 
-          <ArticleH2>Scams and Touts: What to Expect</ArticleH2>
+          <ArticleH2>What Scams and Touts Should You Expect?</ArticleH2>
           <ArticleP>
             Most people you meet in India are honest, but tourist areas attract a small number
             of people who make their living from visitors, and a solo traveller is an easy
@@ -299,7 +299,7 @@ export default function SoloTravelIndiaGuidePage() {
             you, and save a hotel or driver number as a fallback.
           </ArticleP>
 
-          <ArticleH2>Choosing Where to Stay</ArticleH2>
+          <ArticleH2>Where Should You Stay?</ArticleH2>
           <ArticleP>
             Where you sleep matters more when you are on your own, because the hotel is also
             your base, your safe space and your first line of help. Look for places with recent

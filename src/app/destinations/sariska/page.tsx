@@ -171,7 +171,7 @@ export default function SariskaPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Real questions from travellers, about Sariska specifically."
           faqs={sariskaFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Sariska with Colourful Indian Holidays."
           topDivider

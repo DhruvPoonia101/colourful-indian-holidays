@@ -227,7 +227,7 @@ export default function VaranasiPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Varanasi"
-          intro="Everything international travellers ask before booking a Varanasi trip — answered honestly."
+          intro="Before you book Varanasi, here's what other travellers have asked."
           faqs={varanasiFaqs}
           whatsappMessage="Hi! I have a question before booking my Varanasi trip with Colourful Indian Holidays."
           topDivider

@@ -202,7 +202,7 @@ export default function JaisalmerPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Jaisalmer"
-          intro="Everything international travellers ask before booking a Jaisalmer trip — answered honestly."
+          intro="Before you book Jaisalmer, here's what other travellers have asked."
           faqs={jaisalmerFaqs}
           whatsappMessage="Hi! I have a question before booking my Jaisalmer trip with Colourful Indian Holidays."
           topDivider

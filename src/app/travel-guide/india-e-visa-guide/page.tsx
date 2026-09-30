@@ -248,7 +248,7 @@ export default function IndiaEVisaGuidePage() {
             confirm your specific stay limit as part of the application itself.
           </ArticleP>
 
-          <ArticleH2>Applying for Your e-Visa: What You&apos;ll Need</ArticleH2>
+          <ArticleH2>What Do You Need to Apply for an e-Visa?</ArticleH2>
           <ArticleP>
             The entire application happens online, through India&apos;s official government e-Visa
             portal — never a third-party site claiming to offer a faster or guaranteed service.
@@ -271,7 +271,7 @@ export default function IndiaEVisaGuidePage() {
             for a port of entry that doesn&apos;t actually accept e-Visa arrivals.
           </ArticleP>
 
-          <ArticleH2>Which Airports and Seaports Accept e-Visa Entry</ArticleH2>
+          <ArticleH2>Which Airports and Seaports Accept the e-Visa?</ArticleH2>
           <ArticleP>
             e-Visa entry is accepted at a defined list of international airports — including
             Delhi, Mumbai, Chennai, Kolkata, Bengaluru, Hyderabad, Goa, Kochi, Ahmedabad, Amritsar,
@@ -312,7 +312,7 @@ export default function IndiaEVisaGuidePage() {
             for.
           </ArticleP>
 
-          <ArticleH2>Tracking Your Application</ArticleH2>
+          <ArticleH2>How Do You Track Your Application?</ArticleH2>
           <ArticleP>
             Most applications are approved within the stated 72-hour window, though the portal
             itself doesn&apos;t guarantee a fixed turnaround, and processing can extend to several

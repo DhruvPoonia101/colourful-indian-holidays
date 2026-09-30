@@ -194,7 +194,7 @@ export default function IndiaHealthVaccinationGuidePage() {
             situation, ideally well before you finalise travel dates.
           </ArticleP>
 
-          <ArticleH2>Vaccines Commonly Discussed for India Travel</ArticleH2>
+          <ArticleH2>What Vaccines Are Commonly Discussed for India Travel?</ArticleH2>
           <ArticleP>
             No vaccine is legally required to enter India, with one specific exception: travellers
             arriving from a country with risk of yellow fever transmission must show proof of
@@ -276,7 +276,7 @@ export default function IndiaHealthVaccinationGuidePage() {
             season for sightseeing across most of the country.
           </ArticleP>
 
-          <ArticleH2>Bringing Medication From Home</ArticleH2>
+          <ArticleH2>Can You Bring Medication From Home?</ArticleH2>
           <ArticleP>
             If you take regular prescription medication, bring enough for your entire trip plus a
             reasonable buffer, kept in its original, clearly labelled packaging rather than a pill

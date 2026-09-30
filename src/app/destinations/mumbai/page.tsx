@@ -197,7 +197,7 @@ export default function MumbaiPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="What first-time visitors to Mumbai usually want to know."
           faqs={mumbaiFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Mumbai with Colourful Indian Holidays."
           topDivider

@@ -197,7 +197,7 @@ export default function DarjeelingPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Straight answers to the questions Darjeeling travellers actually ask."
           faqs={darjeelingFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Darjeeling with Colourful Indian Holidays."
           topDivider

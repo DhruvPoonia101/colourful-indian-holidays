@@ -195,7 +195,7 @@ export default function KolkataPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Straight answers to the questions Kolkata travellers actually ask."
           faqs={kolkataFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Kolkata with Colourful Indian Holidays."
           topDivider

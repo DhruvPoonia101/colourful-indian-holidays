@@ -193,7 +193,7 @@ export default function EverestRegionPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The questions we hear most from travellers planning a trip to Everest Region."
           faqs={everestRegionFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to the Everest Region with Colourful Indian Holidays."
           topDivider

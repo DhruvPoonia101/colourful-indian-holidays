@@ -192,7 +192,7 @@ export default function PunakhaPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The Punakha questions worth asking before you go."
           faqs={punakhaFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Punakha with Colourful Indian Holidays."
           topDivider

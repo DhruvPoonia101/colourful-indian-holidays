@@ -191,7 +191,7 @@ export default function KanhaPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Real questions from travellers, about Kanha specifically."
           faqs={kanhaFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Kanha National Park with Colourful Indian Holidays."
           topDivider

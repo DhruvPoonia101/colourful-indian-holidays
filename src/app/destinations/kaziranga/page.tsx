@@ -171,7 +171,7 @@ export default function KazirangaPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="A few honest answers before you book Kaziranga."
           faqs={kazirangaFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Kaziranga with Colourful Indian Holidays."
           topDivider

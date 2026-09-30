@@ -193,7 +193,7 @@ export default function GujaratPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The Gujarat questions worth asking before you go."
           faqs={gujaratFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Gujarat with Colourful Indian Holidays."
           topDivider

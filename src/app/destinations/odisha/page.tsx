@@ -201,7 +201,7 @@ export default function OdishaPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="Before you book Odisha, here's what other travellers have asked."
           faqs={odishaFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Odisha with Colourful Indian Holidays."
           topDivider

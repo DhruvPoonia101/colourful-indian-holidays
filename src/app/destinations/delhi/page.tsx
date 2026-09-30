@@ -222,7 +222,7 @@ export default function DelhiPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Delhi"
-          intro="Everything international travellers ask before booking a Delhi trip — answered honestly."
+          intro="Before you book Delhi, here's what other travellers have asked."
           faqs={delhiFaqs}
           whatsappMessage="Hi! I have a question before booking my Delhi trip with Colourful Indian Holidays."
           topDivider

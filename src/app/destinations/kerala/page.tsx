@@ -197,7 +197,7 @@ export default function KeralaPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="The Kerala questions worth asking before you go."
           faqs={keralaFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Kerala with Colourful Indian Holidays."
           topDivider

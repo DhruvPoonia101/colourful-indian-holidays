@@ -150,7 +150,7 @@ export default function IndiaCurrencyPaymentsGuidePage() {
             trip, route by route and city by city.
           </ArticleP>
 
-          <ArticleH2>Currency Exchange: Where to Get the Best Rate</ArticleH2>
+          <ArticleH2>Where Should You Exchange Currency for the Best Rate?</ArticleH2>
           <ArticleP>
             You&apos;ll generally get a better exchange rate at a bank or an RBI-authorised money
             changer inside India than at your home country&apos;s airport before you leave, and
@@ -256,7 +256,7 @@ export default function IndiaCurrencyPaymentsGuidePage() {
             as a possible bonus rather than a primary plan.
           </ArticleP>
 
-          <ArticleH2>What Things Typically Cost</ArticleH2>
+          <ArticleH2>What Do Things Typically Cost in India?</ArticleH2>
           <ArticleP>
             India remains inexpensive by Western standards for day-to-day spending, though &quot;how
             much things cost&quot; varies enormously between a street-food meal and a five-star hotel

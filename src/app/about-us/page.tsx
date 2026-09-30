@@ -71,6 +71,23 @@ export default function AboutUsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            name: title,
+            description,
+            url: `${SITE_URL}${pagePath}`,
+            mainEntity: {
+              "@type": ["TravelAgency", "LocalBusiness"],
+              name: SITE_NAME,
+              url: SITE_URL,
+            },
+          }),
+        }}
+      />
 
       <main>
         <PageHero

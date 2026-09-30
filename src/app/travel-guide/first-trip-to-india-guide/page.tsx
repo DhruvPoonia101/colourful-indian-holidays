@@ -141,7 +141,16 @@ export default function FirstTripToIndiaGuidePage() {
             what this guide is for.
           </ArticleP>
 
-          <ArticleH2>How Long to Plan For</ArticleH2>
+          <ArticleH2>First Trip at a Glance</ArticleH2>
+          <ArticleUL>
+            <li><span className="font-semibold text-ink">Ideal length:</span> 10 to 12 days.</li>
+            <li><span className="font-semibold text-ink">Where to start:</span> the Golden Triangle — Delhi, Agra, Jaipur.</li>
+            <li><span className="font-semibold text-ink">Sort in advance:</span> visa, health check-in, first few nights&apos; hotels.</li>
+            <li><span className="font-semibold text-ink">Easiest setup:</span> a private driver and guide, at least for the first few days.</li>
+            <li><span className="font-semibold text-ink">Best season:</span> October to March.</li>
+          </ArticleUL>
+
+          <ArticleH2>How Many Days Should You Plan For?</ArticleH2>
           <ArticleP>
             Ten to twelve days is the comfortable range for a first visit — enough time for the
             classic Delhi-Agra-Jaipur circuit plus one region beyond it, without every day
@@ -263,7 +272,7 @@ export default function FirstTripToIndiaGuidePage() {
             covers the practical side of carrying and spending money once you are there.
           </ArticleP>
 
-          <ArticleH2>When to Go</ArticleH2>
+          <ArticleH2>When Is the Best Time to Go?</ArticleH2>
           <ArticleP>
             October to March is the comfortable season across most of the country — cooler
             temperatures, clearer skies, and the window most first-time visitors choose. Our{" "}

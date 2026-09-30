@@ -205,7 +205,7 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro={`Everything international travellers ask about visiting India in ${content.name}.`}
+          intro={`What travellers usually ask before planning a trip around ${content.name}.`}
           faqs={content.faqs}
           whatsappMessage={`Hi! I have a question about visiting India in ${content.name}.`}
           topDivider

@@ -171,7 +171,7 @@ export default function BandhavgarhPage() {
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions"
-          intro="Everything international travellers ask before booking — answered honestly."
+          intro="A few honest answers before you book Bandhavgarh."
           faqs={bandhavgarhFaqs}
           whatsappMessage="Hi! I have a question before booking my trip to Bandhavgarh with Colourful Indian Holidays."
           topDivider
