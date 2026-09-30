@@ -33,6 +33,21 @@ export function CityGrid({
    * unchanged). Defaults to 3 — the standard grid used across the site. */
   columns?: 3 | 4;
 }) {
+  // The grid lives inside a max-w-7xl (1280px) container with sm:px-8
+  // padding, so its real max content width is ~1216px regardless of the
+  // browser's actual viewport width — a wide desktop monitor doesn't make
+  // the cards any bigger. The previous "33vw" sizes hint was calculated
+  // against the full viewport instead of this capped container, so on any
+  // screen wider than ~1216px it told next/image the card would be larger
+  // than it actually renders, causing an oversized image variant to be
+  // fetched — confirmed by a PageSpeed Insights run showing ~530 KiB of
+  // avoidable image weight on desktop vs. only ~56 KiB on mobile, where
+  // viewport width is already close to the container's cap. Pinning this
+  // to the actual card pixel width at each breakpoint (1216px minus grid
+  // gaps, divided by the column count) fixes it correctly for both the
+  // 3- and 4-column layouts this component supports.
+  const lgCardWidth = columns === 4 ? "300px" : "400px";
+
   return (
     <section className={`py-10 sm:py-14 ${topDivider ? "border-t border-sand/70" : ""}`}>
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
@@ -57,7 +72,7 @@ export function CityGrid({
                       src={city.image}
                       alt={city.imageAlt}
                       fill
-                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      sizes={`(min-width: 1024px) ${lgCardWidth}, (min-width: 640px) 50vw, 100vw`}
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" />
@@ -82,7 +97,7 @@ export function CityGrid({
                     src={city.image}
                     alt={city.imageAlt}
                     fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    sizes={`(min-width: 1024px) ${lgCardWidth}, (min-width: 640px) 50vw, 100vw`}
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/40 to-transparent" />
