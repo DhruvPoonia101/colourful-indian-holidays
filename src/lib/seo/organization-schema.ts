@@ -25,6 +25,11 @@ export function organizationJsonLd() {
       "@type": "PostalAddress",
       ...BUSINESS.address,
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS.geo.latitude,
+      longitude: BUSINESS.geo.longitude,
+    },
     areaServed: {
       "@type": "Country",
       name: "India",

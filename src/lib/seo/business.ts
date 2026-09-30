@@ -16,6 +16,13 @@ export const BUSINESS = {
     postalCode: "302021",
     addressCountry: "IN",
   },
+  // Read directly off this business's own verified Google Business Profile
+  // pin (right-clicked on Google Maps, 29 Sep 2026) — not a geocoded
+  // approximation of the street address.
+  geo: {
+    latitude: 26.912165,
+    longitude: 75.740581,
+  },
   sameAs: [
     "https://www.instagram.com/colourful_indian_holidays",
     "https://www.facebook.com/ciholidays",
