@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/seo/business";
 // freshness signal and can train Google to stop trusting lastmod entirely
 // (see FULLAUDITREPORT.md finding T3). Bump this only when a meaningful
 // batch of these pages actually changes.
-const LAST_UPDATED = new Date("2026-09-06");
+const LAST_UPDATED = new Date("2026-09-30");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -372,6 +372,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${SITE_URL}/travel-guide/rajasthan-itinerary-guide`,
+      lastModified: LAST_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/first-trip-to-india-guide`,
       lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,

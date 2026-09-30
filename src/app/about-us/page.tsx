@@ -6,6 +6,7 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { BUSINESS, SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
+import { organizationJsonLd } from "@/lib/seo/organization-schema";
 
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -65,6 +66,10 @@ export default function AboutUsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd(breadcrumbs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
       />
 
       <main>

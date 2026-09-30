@@ -11,6 +11,17 @@ export type GuideArticle = {
 
 export const guideArticles: GuideArticle[] = [
   {
+    title: "First Trip to India: What to Know Before You Go",
+    slug: "first-trip-to-india-guide",
+    excerpt:
+      "A practical starting point for a first visit — how long to plan for, the visa and health basics, what to expect on the ground, and where to actually start.",
+    category: "Planning",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "Taj Mahal at sunrise, Agra",
+    datePublished: "2026-09-30",
+    published: true,
+  },
+  {
     title: "Golden Triangle Itinerary: A 5 to 6 Day Plan for Delhi, Agra and Jaipur",
     slug: "golden-triangle-itinerary-guide",
     excerpt:

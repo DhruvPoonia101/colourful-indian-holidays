@@ -34,6 +34,10 @@ export function articleJsonLd({
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/logo/logo-horizontal.webp`,
+      },
     },
     mainEntityOfPage: `${SITE_URL}${path}`,
   };

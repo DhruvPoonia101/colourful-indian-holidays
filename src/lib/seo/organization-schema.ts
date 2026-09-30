@@ -30,9 +30,30 @@ export function organizationJsonLd() {
       latitude: BUSINESS.geo.latitude,
       longitude: BUSINESS.geo.longitude,
     },
-    areaServed: {
-      "@type": "Country",
-      name: "India",
+    // Worldwide, not "India" — this organization serves international
+    // clients from anywhere; the destinations themselves (India, Nepal,
+    // Bhutan) are already correctly represented via TouristDestination
+    // schema on individual pages. Previously said "India" here while
+    // contactPoint.areaServed below said "Worldwide" — an internal
+    // inconsistency flagged by the audit's Local SEO pass. Reconciled
+    // toward "Worldwide" since that's what actually matches the business.
+    areaServed: "Worldwide",
+    // Confirmed directly by Dhruv (30 Sep 2026): the business operates
+    // 24 hours. Represented per schema.org's standard pattern for
+    // round-the-clock availability — all 7 days, 00:00 to 23:59.
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
     },
     sameAs: BUSINESS.sameAs,
     // aggregateRating intentionally omitted: the page visibly shows two
