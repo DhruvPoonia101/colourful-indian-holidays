@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -266,6 +267,12 @@ export default function MonumentsGuidePage() {
             dedicated day trip from any single base.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="See it as part of a longer route, not a detour."
+            href="/tours/grand-rajasthan-circuit"
+            linkLabel="View the Grand Rajasthan Circuit"
+          />
+
           <ArticleH2>Junagarh Fort, Bikaner</ArticleH2>
           <ArticleP>
             Unlike most of Rajasthan&apos;s forts, Junagarh wasn&apos;t built on a hilltop —
@@ -341,6 +348,12 @@ export default function MonumentsGuidePage() {
             historians alike, even though they&apos;re spread across very different parts of the
             state and were built by different Rajput dynasties at different points in history.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Cover these UNESCO sites without stitching the logistics together yourself."
+            href="/tours/rajasthan-culture-heritage-trail"
+            linkLabel="See our Rajasthan Culture & Heritage Trail"
+          />
 
           <ArticleH2>How Much Time to Allow, and When to Go</ArticleH2>
           <ArticleP>

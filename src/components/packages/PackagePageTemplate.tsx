@@ -15,6 +15,7 @@ import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristTripJsonLd } from "@/lib/seo/tourist-trip-schema";
+import { getStartingPrice, PRICE_DISCLAIMER } from "@/lib/pricing";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import type { PackageContent } from "@/content/packages/types";
 
@@ -24,6 +25,20 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
     { name: "Tours & Packages", path: "/tours" },
     { name: content.name, path: `/tours/${content.slug}` },
   ];
+
+  const startingPrice = getStartingPrice(content.itinerary.length);
+
+  // Feed the computed price into the existing "Starting From" quick-fact
+  // rather than leaving its old hardcoded "Price on Request" text in
+  // place — every package's content file still has that literal string
+  // written in its quickFacts array, and showing a real price in the new
+  // schema/disclaimer while this row still says something else would be
+  // a visible contradiction on the same page.
+  const quickFacts = content.quickFacts.map((fact) =>
+    fact.label === "Starting From"
+      ? { ...fact, value: `From $${startingPrice.toLocaleString("en-US")}` }
+      : fact
+  );
 
   return (
     <>
@@ -45,7 +60,8 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
               description: content.metaDescription,
               image: content.heroImage,
               durationDays: content.itinerary.length,
-              priceCurrency: content.priceCurrency,
+              startingPrice,
+              priceCurrency: "USD",
               itinerary: content.itinerary,
             })
           ),
@@ -66,7 +82,11 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
           heightClassName={content.heroHeightClassName}
         />
 
-        <QuickFacts facts={content.quickFacts} quoteButtonPageName={`${content.name} (Quick Facts)`} />
+        <QuickFacts
+          facts={quickFacts}
+          quoteButtonPageName={`${content.name} (Quick Facts)`}
+          priceDisclaimer={PRICE_DISCLAIMER}
+        />
 
         <ItineraryTimeline
           eyebrow="Day By Day"

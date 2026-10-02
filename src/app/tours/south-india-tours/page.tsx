@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -143,6 +144,11 @@ export default function SouthIndiaToursHubPage() {
           headline="South India, Six Ways"
           subheadline="Dravidian temples, rock-cut monuments, French colonial heritage and the Coromandel Coast — the difference between these routes is which side of Tamil Nadu you want to see most."
         />
+
+        {/* $200 is this hub's real cheapest linked variant (mahabalipuram-tour, 3 days / 2 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={200} />
 
         <CityGrid
           eyebrow="Choose Your Route"

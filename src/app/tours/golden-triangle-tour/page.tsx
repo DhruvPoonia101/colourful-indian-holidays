@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -139,6 +140,11 @@ export default function GoldenTriangleHubPage() {
           headline="The Golden Triangle, Five Ways"
           subheadline="Delhi, Agra and Jaipur form the core of every version below — the difference is what you add on, and how many days you have."
         />
+
+        {/* $500 is this hub's real cheapest linked variant (golden-triangle-tour-classic, 6 days / 5 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={500} />
 
         <CityGrid
           eyebrow="Choose Your Route"

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -126,6 +127,11 @@ export default function KashmirLadakhToursHubPage() {
           headline="Kashmir & Ladakh, Three Ways"
           subheadline="Two genuinely different Himalayan regions, side by side — the difference between these routes is which one you want, or whether you'd rather see both."
         />
+
+        {/* $400 is this hub's real cheapest linked variant (kashmir-valley-tour, 5 days / 4 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={400} />
 
         <CityGrid
           eyebrow="Choose Your Route"

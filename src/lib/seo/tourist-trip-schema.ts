@@ -11,8 +11,19 @@ export type TouristTripInput = {
   description: string;
   image: string;
   durationDays: number;
-  /** Omit when pricing is "on request" rather than a fixed public rate —
-   * never pass an unverified or estimated number here. */
+  /**
+   * A researched, competitively-benchmarked starting price, not an
+   * internally-confirmed exact rate. Computed centrally in
+   * PackagePageTemplate as (nights × a per-night baseline set from real
+   * competitor pricing data), not per-package guesswork — see the
+   * comment there for the research and the actual rate used. Explicitly
+   * authorized by the business owner (Dhruv, 30 Sep 2026) to replace the
+   * prior "Price on Request" default, on the understanding that this is
+   * an indicative figure for the customer-facing disclaimer to qualify,
+   * not a final internally-costed rate. Omit only for a package type
+   * this approach genuinely doesn't fit (e.g., custom multi-country
+   * combinations with no single typical duration).
+   */
   startingPrice?: number;
   priceCurrency: string;
   itinerary: TripItineraryDay[];
@@ -44,15 +55,30 @@ export function touristTripJsonLd(trip: TouristTripInput) {
     },
     offers: {
       "@type": "Offer",
-      // No fixed `price` — schema.org's convention for "price on request" is
-      // to state the currency without an amount, rather than publish a
-      // number that isn't a real, confirmed rate.
       priceCurrency: trip.priceCurrency,
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        priceCurrency: trip.priceCurrency,
-        description: "Price on request — contact us for a personalised quote.",
-      },
+      ...(trip.startingPrice
+        ? {
+            price: trip.startingPrice,
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: trip.startingPrice,
+              priceCurrency: trip.priceCurrency,
+              // Matches the on-page disclaimer shown next to this price —
+              // an indicative starting rate, not a fixed final quote.
+              description:
+                "Indicative starting price per person. Final quote varies by travel dates, group size and hotel category.",
+            },
+          }
+        : {
+            // No fixed `price` — schema.org's convention for "price on request" is
+            // to state the currency without an amount, rather than publish a
+            // number that isn't a real, confirmed rate.
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              priceCurrency: trip.priceCurrency,
+              description: "Price on request — contact us for a personalised quote.",
+            },
+          }),
       availability: "https://schema.org/InStock",
       url: `${SITE_URL}${trip.urlPath ?? `/tours/${trip.slug}`}`,
     },

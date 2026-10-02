@@ -10,12 +10,19 @@ export function QuickFacts({
   facts,
   quoteButtonPageName,
   quoteButtonVariant = "tour",
+  priceDisclaimer,
 }: {
   facts: QuickFact[];
   /** When provided, shows a "Get a Free Quote" button on the right side of the facts row. */
   quoteButtonPageName?: string;
   /** "tour" (default) asks for travel month + traveller count. "carRental" asks for route + date instead — use on vehicle pages. */
   quoteButtonVariant?: "tour" | "carRental";
+  /**
+   * Small caption shown below the facts row — used on tour package pages
+   * to qualify the "Starting From" price as indicative rather than final.
+   * Omit on pages with no price fact (destination pages, etc.).
+   */
+  priceDisclaimer?: string;
 }) {
   return (
     <section className="border-y border-sand bg-cream/60">
@@ -41,6 +48,11 @@ export function QuickFacts({
               </div>
             )}
           </div>
+          {priceDisclaimer && (
+            <p className="mt-6 text-center text-xs italic text-ink-soft/70 sm:text-left">
+              {priceDisclaimer}
+            </p>
+          )}
         </Reveal>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
@@ -64,6 +65,11 @@ export default function RajasthanToursHubPage() {
           headline="Rajasthan, Five Ways"
           subheadline="Six cities, one state — the difference between these routes is how many of them you see, and what you focus on along the way."
         />
+
+        {/* $300 is this hub's real cheapest linked variant (jaipur-city-tour, 4 days / 3 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={300} />
 
         <CityGrid
           eyebrow="Choose Your Route"

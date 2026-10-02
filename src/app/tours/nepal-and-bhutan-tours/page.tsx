@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -200,6 +201,11 @@ export default function NepalBhutanToursHubPage() {
           headline="Nepal & Bhutan, Five Ways"
           subheadline="Two Himalayan kingdoms, standalone or combined with India — the difference between these routes is which countries you want, and how they fit with the rest of your trip."
         />
+
+        {/* $700 is this hub's real cheapest linked variant (nepal-tours, 8 days / 7 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={700} />
 
         <CityGrid
           eyebrow="Choose Your Route"

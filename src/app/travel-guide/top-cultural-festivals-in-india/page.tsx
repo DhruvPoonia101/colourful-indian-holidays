@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -191,6 +192,12 @@ export default function TopCulturalFestivalsPage() {
             genuinely part of the appeal for most visitors, but worth being mentally prepared
             for rather than surprised by.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Time a trip around Holi or another festival specifically?"
+            href="/experiences/festival-tours"
+            linkLabel="See our Festival Tours"
+          />
 
           <ArticleH2>Late Winter into Spring (February–March)</ArticleH2>
           <ArticleP>

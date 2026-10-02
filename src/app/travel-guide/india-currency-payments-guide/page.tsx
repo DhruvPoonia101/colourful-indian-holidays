@@ -3,6 +3,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -311,6 +312,12 @@ export default function IndiaCurrencyPaymentsGuidePage() {
             purchases along the way. Your guide can also help point you toward the nearest reliable
             ATM or money changer wherever you are, rather than leaving you to search on your own.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="See how much of the day-to-day spending our packages already cover."
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="View a sample package's inclusions"
+          />
 
           <ArticleH2>Bringing It All Together</ArticleH2>
           <ArticleP>

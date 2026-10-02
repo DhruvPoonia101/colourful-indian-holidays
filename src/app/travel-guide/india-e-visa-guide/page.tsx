@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -366,6 +367,12 @@ export default function IndiaEVisaGuidePage() {
             since it&apos;s new enough that plenty of general travel advice circulating online hasn&apos;t
             caught up with it yet.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Once your visa is sorted, the fun part is planning the trip itself."
+            href="/travel-guide/first-trip-to-india-guide"
+            linkLabel="Read our First Trip to India guide"
+          />
 
           <ArticleH2>Bringing It All Together</ArticleH2>
           <ArticleP>

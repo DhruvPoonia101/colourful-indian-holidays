@@ -3,6 +3,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -349,6 +350,12 @@ export default function IndiaHealthVaccinationGuidePage() {
             professional is anything that requires medical judgment about your personal health,
             since that&apos;s simply not a call we&apos;re qualified to make on your behalf.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Tell us your route, and we'll build the itinerary around it."
+            href="/tours"
+            linkLabel="See our tour packages"
+          />
 
           <ArticleH2>Bringing It All Together</ArticleH2>
           <ArticleP>

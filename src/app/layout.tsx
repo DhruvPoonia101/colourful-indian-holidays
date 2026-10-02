@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { StickyWhatsAppButton } from "@/components/shared/StickyWhatsAppButton";
@@ -48,12 +48,28 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ivory text-ink font-sans">
+        {/* Google's own installation instructions for GTM-NK422MVG ask for
+            this <noscript> fallback immediately after the opening <body>
+            tag, for the small number of visitors browsing with JavaScript
+            disabled. @next/third-parties' GoogleTagManager component below
+            handles the main script (loaded via Next's optimized Script
+            strategy) but does not add this fallback automatically, so it's
+            kept here manually to match Google's instructions exactly. */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NK422MVG"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Navbar />
         {children}
         <Footer />
         <StickyWhatsAppButton />
         <Analytics />
         <GoogleAnalytics gaId="G-ZT2XFEVSBW" />
+        <GoogleTagManager gtmId="GTM-NK422MVG" />
       </body>
     </html>
   );

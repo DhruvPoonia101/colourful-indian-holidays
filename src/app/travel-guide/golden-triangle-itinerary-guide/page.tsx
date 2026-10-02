@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -212,6 +213,12 @@ export default function GoldenTriangleItineraryGuidePage() {
             covers tickets, timings and the best light.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="This is exactly our standard 6-day route, ready to book."
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="View the Classic Golden Triangle Tour"
+          />
+
           <ArticleH2>The Friday Rule</ArticleH2>
           <ArticleP>
             The Taj Mahal is closed to general visitors every Friday, and it is the single most
@@ -326,6 +333,12 @@ export default function GoldenTriangleItineraryGuidePage() {
             is simply to have seen the Taj Mahal and Jaipur, and who accept a tight pace. If you
             can find a fifth or sixth day, take it.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="If you can stretch to the full 6 days, it's worth it."
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="Compare it to our standard 6-day route"
+          />
 
           <ArticleH2>Should You Reverse the Direction?</ArticleH2>
           <ArticleP>

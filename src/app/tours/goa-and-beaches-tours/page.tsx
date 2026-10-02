@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -163,6 +164,11 @@ export default function GoaAndBeachesHubPage() {
           headline="Goa & India's Beaches, By Coast"
           subheadline="7,500 kilometres of coastline, genuinely different from region to region — the difference between these routes is which stretch of it you want to see."
         />
+
+        {/* $300 is this hub's real cheapest linked variant (maharashtra-beaches-tour, 4 days / 3 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={300} />
 
         <CityGrid
           eyebrow="Choose Your Route"

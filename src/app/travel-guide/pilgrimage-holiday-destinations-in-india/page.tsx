@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -403,6 +404,12 @@ export default function PilgrimageGuidePage() {
             spectators at a performance staged for them.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="A knowledgeable local guide makes this much easier to navigate respectfully."
+            href="/experiences/spiritual-india"
+            linkLabel="See our Spiritual India itinerary"
+          />
+
           <ArticleH2>Best Time to Visit These Sites</ArticleH2>
           <ArticleP>
             Timing varies by destination more than most first-time visitors expect. Varanasi and
@@ -456,6 +463,12 @@ export default function PilgrimageGuidePage() {
             Vaishno Devi, where arriving with a day already behind you changes how much you get
             out of the trek itself.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Let us handle the sequencing and logistics for you."
+            href="/experiences/pilgrimage-tours"
+            linkLabel="See our Pilgrimage Tours"
+          />
 
           <ArticleH2>Planning a Pilgrimage-Focused Trip</ArticleH2>
           <ArticleP>

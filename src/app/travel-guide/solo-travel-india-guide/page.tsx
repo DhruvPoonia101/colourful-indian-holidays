@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -191,6 +192,12 @@ export default function SoloTravelIndiaGuidePage() {
             which legs to arrange privately and which to do yourself.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="Prefer to have the first days fully arranged for you?"
+            href="/tours"
+            linkLabel="See our private tour packages"
+          />
+
           <ArticleH2>Arriving: Your First 48 Hours</ArticleH2>
           <ArticleUL>
             <li>Arrange airport pickup in advance, with the driver&apos;s name and a contact number sent to you before you fly, rather than negotiating at the arrivals hall.</li>
@@ -336,6 +343,12 @@ export default function SoloTravelIndiaGuidePage() {
             slower trip is usually a better trip, and it leaves room for the unplanned
             conversations that solo travellers most often remember afterwards.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="A well-paced private itinerary does this for you automatically."
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="See our Classic Golden Triangle Tour"
+          />
 
           <ArticleH2>Meeting People Without Joining a Group Tour</ArticleH2>
           <ArticleP>

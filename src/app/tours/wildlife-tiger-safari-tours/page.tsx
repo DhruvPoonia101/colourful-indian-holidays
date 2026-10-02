@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -192,6 +193,11 @@ export default function WildlifeTigerSafariHubPage() {
           headline="Wildlife & Tiger Safari Tours"
           subheadline="India holds roughly 70% of the world's wild tigers, spread across reserves with genuinely different landscapes — the difference between these routes is which one, and which animal, you're actually after."
         />
+
+        {/* $300 is this hub's real cheapest linked variant (kaziranga-tour, 4 days / 3 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={300} />
 
         <CityGrid
           eyebrow="Choose Your Route"

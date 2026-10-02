@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { CountryTrustStrip } from "@/components/shared/CountryTrustStrip";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { Testimonials } from "@/components/home/Testimonials";
+import { WhyBookDirect } from "@/components/shared/WhyBookDirect";
 import { FAQSection } from "@/components/destinations/FAQSection";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
@@ -261,6 +263,8 @@ export default function IndiaToursFromUsaPage() {
           subheadline="Private, tailor-made itineraries for US travellers, built around your dates — with straight answers on flights, visas and what to expect before you go."
         />
 
+        <CountryTrustStrip />
+
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-6xl px-6 text-center sm:px-8">
             <Reveal>
@@ -408,6 +412,8 @@ export default function IndiaToursFromUsaPage() {
         <div className="border-t border-sand/70">
           <Testimonials />
         </div>
+
+        <WhyBookDirect />
 
         <FAQSection
           eyebrow="FAQ"

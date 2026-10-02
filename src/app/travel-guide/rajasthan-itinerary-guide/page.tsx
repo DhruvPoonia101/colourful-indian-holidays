@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -228,6 +229,12 @@ export default function RajasthanItineraryGuidePage() {
             one of those.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="Prefer a ready-made itinerary close to this one?"
+            href="/tours/rajasthan-tours-classic"
+            linkLabel="See our Rajasthan Tours Classic package"
+          />
+
           <ArticleH2>A 10-Day Rajasthan Itinerary: Two Ways to Do It</ArticleH2>
           <ArticleP>
             At ten days you can slow down and add depth, but you still have to make a choice.
@@ -289,6 +296,12 @@ export default function RajasthanItineraryGuidePage() {
             </Link>{" "}
             covers the major ones in detail.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Want the full 12-day loop covered here as a set itinerary?"
+            href="/tours/grand-rajasthan-circuit"
+            linkLabel="See the Grand Rajasthan Circuit"
+          />
 
           <ArticleH2>Adding Ranthambore for Tigers</ArticleH2>
           <ArticleP>

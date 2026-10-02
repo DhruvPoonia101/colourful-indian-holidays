@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -203,6 +204,12 @@ export default function TajMahalVisitingGuidePage() {
             If you book a tour with us, tickets are handled for you, so you skip this step.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="Skip the ticket queue entirely."
+            href="/tours/taj-mahal-tours"
+            linkLabel="See our Taj Mahal Tours"
+          />
+
           <ArticleH2>Which Gate Should You Use?</ArticleH2>
           <ArticleP>
             There are ticket counters at the Eastern and Western gates, and the queues for
@@ -378,6 +385,12 @@ export default function TajMahalVisitingGuidePage() {
             far more relaxed, because you can see the monument at sunset one day and sunrise
             the next, without rushing either.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Rather not squeeze it into one rushed day?"
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="See our paced 6-day Golden Triangle route"
+          />
 
           <ArticleH2>Common Mistakes</ArticleH2>
           <ArticleUL>

@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -344,6 +345,12 @@ export default function HiringACarInRajasthanGuidePage() {
             conditions.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="This is exactly how every day runs on one of our set itineraries."
+            href="/tours/rajasthan-tours-classic"
+            linkLabel="See our Rajasthan Tours Classic package"
+          />
+
           <ArticleH2>Airport Transfers in Rajasthan</ArticleH2>
           <ArticleP>
             Most international visitors begin or end a Rajasthan trip with an airport transfer,
@@ -466,6 +473,12 @@ export default function HiringACarInRajasthanGuidePage() {
             flying in and out of — and we&apos;ll build the vehicle and route around that rather
             than assuming a simple there-and-back trip.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="This open-jaw, multi-city style is exactly how we build our longer circuits."
+            href="/tours/grand-rajasthan-circuit"
+            linkLabel="See the Grand Rajasthan Circuit"
+          />
 
           <ArticleH2>What to Pack for Long Car Journeys in Rajasthan</ArticleH2>
           <ArticleP>

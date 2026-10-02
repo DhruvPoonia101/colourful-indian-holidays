@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -256,6 +257,12 @@ export default function FirstTripToIndiaGuidePage() {
             travelling entirely independently from day one.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="This is exactly how our private tours work."
+            href="/tours"
+            linkLabel="See our tour packages"
+          />
+
           <ArticleH2>Money: A Realistic First-Trip Budget Shape</ArticleH2>
           <ArticleP>
             Rather than a single figure, it helps to know where the money in a first trip
@@ -330,6 +337,12 @@ export default function FirstTripToIndiaGuidePage() {
             that one visit right — the right day, the right time of day — matters more than almost
             any other single decision on a first trip.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="This is exactly the route we recommend most first-timers start with."
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="View the Classic Golden Triangle Tour"
+          />
 
           <ArticleH2>Bringing It All Together</ArticleH2>
           <ArticleP>

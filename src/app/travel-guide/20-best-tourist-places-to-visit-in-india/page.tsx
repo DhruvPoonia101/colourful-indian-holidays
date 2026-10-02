@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -225,6 +226,12 @@ export default function TwentyBestPlacesGuidePage() {
             </Link>{" "}
             guide covers the week-long event in detail.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="See these North India stops combined into one route."
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="View the Classic Golden Triangle Tour"
+          />
 
           <ArticleH2>Rajasthan&apos;s Desert Cities</ArticleH2>
           <ArticleP>
@@ -482,6 +489,12 @@ export default function TwentyBestPlacesGuidePage() {
             parks connect well to a North India trip via Delhi or Varanasi if you have the extra
             days.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="See the South India coastal circuit as a ready-made route."
+            href="/tours/south-india-tours-classic"
+            linkLabel="View our South India Tours Classic package"
+          />
 
           <ArticleH2>Matching These Places to What You Actually Want From a Trip</ArticleH2>
           <ArticleP>

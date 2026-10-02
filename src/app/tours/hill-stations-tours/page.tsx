@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
+import { TourHubStartingPrice } from "@/components/shared/TourHubStartingPrice";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -171,6 +172,11 @@ export default function HillStationsHubPage() {
           headline="India's Hill Stations, Three Ways"
           subheadline="Colonial Shimla, tea-country Darjeeling, and the Buddhist kingdom of Sikkim — three genuinely different Himalayan escapes from the heat of the plains."
         />
+
+        {/* $300 is this hub's real cheapest linked variant (darjeeling-tour, 4 days / 3 nights), computed via the
+            shared $100/night rate in src/lib/pricing.ts — not a separate
+            number invented for this hub page. */}
+        <TourHubStartingPrice price={300} />
 
         <CityGrid
           eyebrow="Choose Your Route"

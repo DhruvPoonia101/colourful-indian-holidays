@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -236,6 +237,12 @@ export default function ShekhawatiGuidePage() {
             town, packed into a genuinely small geographic footprint.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="Interested in genuine village and heritage experiences like this one?"
+            href="/experiences/village-experiences"
+            linkLabel="See our Village Experiences"
+          />
+
           <ArticleH2>Frequently Asked Questions</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
@@ -295,6 +302,13 @@ export default function ShekhawatiGuidePage() {
             nights genuinely allows for a more unhurried pace across several towns rather than
             rushing between them.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="Add Shekhawati onto a wider Rajasthan trip rather than planning it alone."
+            href="/tours/rajasthan-tours-classic"
+            linkLabel="See our Rajasthan Tours Classic package"
+          />
+
           <ArticleUL>
             <li>
               A private vehicle and driver is genuinely the practical way to see Shekhawati —

@@ -4,6 +4,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
+import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -293,6 +294,12 @@ export default function GettingAroundIndiaGuidePage() {
             offer.
           </ArticleP>
 
+          <ArticleMidCTA
+            text="Prefer not to plan the mode-mix yourself?"
+            href="/tours"
+            linkLabel="See our tour packages — transport is built in"
+          />
+
           <ArticleH2>Which Should You Choose? A Practical Framework</ArticleH2>
           <ArticleP>
             Rather than picking one mode for an entire trip, most well-planned itineraries mix all
@@ -315,6 +322,12 @@ export default function GettingAroundIndiaGuidePage() {
             distant region entirely, is where flying or an overnight train starts to make more
             sense than another full day on the road.
           </ArticleP>
+
+          <ArticleMidCTA
+            text="This is exactly the route on our standard package."
+            href="/tours/golden-triangle-tour-classic"
+            linkLabel="View the Classic Golden Triangle Tour"
+          />
 
           <ArticleH2>Airport Transfers & Arriving After a Long Flight</ArticleH2>
           <ArticleP>
