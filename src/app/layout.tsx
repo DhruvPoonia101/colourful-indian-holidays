@@ -5,6 +5,7 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { StickyWhatsAppButton } from "@/components/shared/StickyWhatsAppButton";
+import { ConversionTracking } from "@/components/shared/ConversionTracking";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import "./globals.css";
 
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        <ConversionTracking />
         <Navbar />
         {children}
         <Footer />

@@ -123,6 +123,18 @@ export function GetQuoteButton({
       }
 
       setStatus("success");
+
+      // Fires on an actual successful quote submission (after the API
+      // call succeeds), not merely on opening the modal or clicking the
+      // button — this is the real conversion signal for GTM/OpenAI Ads
+      // to listen for. Set up 30 Sep 2026.
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "quote_submitted",
+        form_type: variant,
+        page_name: pageName,
+      });
+
       setFullName("");
       setEmail("");
       setPhone("");

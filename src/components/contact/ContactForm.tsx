@@ -83,6 +83,16 @@ export function ContactForm() {
       }
 
       setStatus("success");
+
+      // Fires on an actual successful contact-form submission (after the
+      // API call succeeds), not merely on clicking the submit button —
+      // this is the real conversion signal for GTM/OpenAI Ads to listen
+      // for. Set up 30 Sep 2026.
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "contact_form_submitted",
+      });
+
       setFullName("");
       setEmail("");
       setPhone("");
