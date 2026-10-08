@@ -7,6 +7,7 @@ import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
+import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -41,6 +42,49 @@ const breadcrumbs = [
   { name: "Hiring a Car in Rajasthan", path: pagePath },
 ];
 
+const faqs: FaqItem[] = [
+  {
+    question: "Is it safe to hire a car with a private driver in Rajasthan?",
+    answer:
+      "Yes — chauffeur-driven hire is the standard, well-established way international visitors travel Rajasthan, and it's considerably safer than self-driving unfamiliar roads. Drivers are experienced on these specific routes and know how to navigate conditions that would be genuinely challenging for a first-time visitor.",
+  },
+  {
+    question: "How much does it cost to hire a car with driver in Rajasthan?",
+    answer:
+      "Cost depends on vehicle type, trip length, route, and season, so we don't publish a fixed rate — every quote is built around your specific itinerary so you know exactly what's included. Get in touch with your travel dates and group size for an accurate quote.",
+  },
+  {
+    question: "Can foreigners drive themselves in India?",
+    answer:
+      "Technically yes, with a valid International Driving Permit alongside a home licence, but we don't recommend self-driving for international visitors given the driving culture, road conditions, and insurance limitations involved — see the section above for the full reasoning.",
+  },
+  {
+    question: "What's the best vehicle for a family of four with luggage?",
+    answer:
+      "Most families of this size are comfortable in an SUV, which offers meaningfully more room than a sedan for both passengers and bags. Larger families or multi-generational groups usually move up to a Tempo Traveller.",
+  },
+  {
+    question: "Do we get the same driver for the whole trip?",
+    answer:
+      "Wherever possible, yes — we aim to keep the same driver with you across your entire itinerary rather than switching at every city, since a driver who already knows your pace and preferences genuinely improves the rest of the trip.",
+  },
+  {
+    question: "Is night driving common on a Rajasthan itinerary?",
+    answer:
+      "We generally avoid it where possible. Daytime driving is safer, more comfortable, and lets you actually see the landscape you're passing through — itineraries are planned with this in mind rather than scheduling long drives after dark.",
+  },
+  {
+    question: "Can we start and end our trip in different cities?",
+    answer:
+      "Yes — one-way, multi-city circuits are the standard way we build Rajasthan itineraries, not the exception. Tell us your entry and exit points and we'll route the trip accordingly rather than assuming a round trip back to your starting city.",
+  },
+  {
+    question: "Should we choose a car and driver or take the train between cities?",
+    answer:
+      "For most Rajasthan itineraries, a private car offers more flexibility and door-to-door convenience than rail, particularly since train stations sit outside historic city centres and timings are fixed. Trains can still be worth including for a specific leg or as an experience in their own right — we're happy to talk through both options for your route.",
+  },
+];
+
 export default function HiringACarInRajasthanGuidePage() {
   return (
     <>
@@ -62,6 +106,11 @@ export default function HiringACarInRajasthanGuidePage() {
             })
           ),
         }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <main>

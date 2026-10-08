@@ -8,6 +8,7 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
+import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -354,6 +355,15 @@ export default function FirstTripToIndiaGuidePage() {
             itinerary around them.
           </ArticleP>
         </ArticleBody>
+
+        <FAQSection
+          eyebrow="FAQ"
+          heading="Common Questions About a First Trip to India"
+          intro="Straight answers to the questions first-time visitors actually ask."
+          faqs={faqs}
+          whatsappMessage="Hi! I'm planning my first trip to India and would like some help."
+          topDivider
+        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

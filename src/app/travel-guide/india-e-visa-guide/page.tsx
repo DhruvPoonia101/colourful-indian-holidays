@@ -8,6 +8,7 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
+import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -386,6 +387,15 @@ export default function IndiaEVisaGuidePage() {
             through before they book.
           </ArticleP>
         </ArticleBody>
+
+        <FAQSection
+          eyebrow="FAQ"
+          heading="Common Questions About the India e-Visa"
+          intro="Straight answers to the questions travellers ask before applying."
+          faqs={faqs}
+          whatsappMessage="Hi! I have a question about visas before booking my trip with Colourful Indian Holidays."
+          topDivider
+        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

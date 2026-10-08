@@ -7,6 +7,7 @@ import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
+import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -51,6 +52,29 @@ const breadcrumbs = [
   { name: "Places to Visit in Shekhawati", path: pagePath },
 ];
 
+const faqs: FaqItem[] = [
+  {
+    question: "Is Shekhawati worth visiting if we've already seen Jaipur and Udaipur?",
+    answer:
+      "Genuinely yes, and arguably more so — Shekhawati offers a completely different kind of Rajasthan experience from palace and fort sightseeing, focused on wandering small towns and discovering painted buildings at your own pace rather than following a structured monument circuit. Travellers who've already done a first Rajasthan trip often find Shekhawati the most memorable addition on a return visit.",
+  },
+  {
+    question: "Can we go inside the havelis, or is it all exterior viewing?",
+    answer:
+      "It varies by building. Some havelis have been converted into museums, hotels or guesthouses specifically to welcome visitors inside, while many others remain privately owned family properties, often unoccupied for most of the year, where a caretaker may or may not allow entry depending on the day and their own discretion. A knowledgeable local guide makes a genuine difference here, since they'll know which havelis are reliably open and can often negotiate entry to buildings a solo visitor would simply walk past.",
+  },
+  {
+    question: "How long do the frescoes typically last, and are they actively being lost?",
+    answer:
+      "This is a genuine, ongoing concern. Well-maintained frescoes using the traditional fresco technique can last well over a century, as many in Shekhawati already have, but without active maintenance, exposure to desert sun, wind-driven sand and occasional monsoon rain gradually degrades the paint layer. Some havelis have lost entire sections of mural in the decades since their owning families moved away permanently, and conservation efforts — like those seen in Fatehpur — remain localised rather than comprehensive across the whole region, which is part of why visiting sooner rather than later is genuinely worth prioritising if this interests you.",
+  },
+  {
+    question: "Is Shekhawati suitable for a day trip, or does it need an overnight stay?",
+    answer:
+      "A single long day trip from Jaipur is technically possible given the three to four hour drive each way, but it makes for a rushed visit that only allows time for one town, realistically. An overnight stay in Mandawa, with a day or two of exploring the wider region, gives a genuinely fuller sense of what makes Shekhawati distinctive rather than a brief, single-town taste of it.",
+  },
+];
+
 export default function ShekhawatiGuidePage() {
   return (
     <>
@@ -72,6 +96,11 @@ export default function ShekhawatiGuidePage() {
             })
           ),
         }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <main>

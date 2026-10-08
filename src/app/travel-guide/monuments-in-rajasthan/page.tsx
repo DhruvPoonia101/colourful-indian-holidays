@@ -7,6 +7,7 @@ import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
+import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -40,6 +41,29 @@ const breadcrumbs = [
   { name: "Monuments in Rajasthan", path: pagePath },
 ];
 
+const faqs: FaqItem[] = [
+  {
+    question: "How many days do we need to see Rajasthan's major monuments properly?",
+    answer:
+      "Count on roughly 8–10 days to cover Jaipur, Jodhpur, Udaipur and Jaisalmer without back-to-back travel days, or 12–14 days if you want to add Chittorgarh, Kumbhalgarh, Bundi or Bikaner into the same trip. Rushing any of the major forts tends to mean missing entire wings, so we'd rather build in an extra day than cut one short.",
+  },
+  {
+    question: "Is a guide really necessary, or can we visit these forts independently?",
+    answer:
+      "You can visit independently, but the history behind these sites is dense and often not fully conveyed by on-site signage, particularly at less-visited forts like Chittorgarh or Bundi. Most travellers find a private guide turns a walk through empty rooms into something considerably more vivid — well worth it for sites of this scale and significance.",
+  },
+  {
+    question: "Which Rajasthan fort should we prioritise if we only have time for one or two?",
+    answer:
+      "Amber Fort and Mehrangarh are the two most consistently recommended for first-time visitors — both are extensively restored, well curated for international visitors, and represent Rajasthan's fort architecture at its most impressive. If you want something quieter and further off the standard circuit, Chittorgarh or Bundi are excellent second choices.",
+  },
+  {
+    question: "Are these monuments suitable for visitors with limited mobility?",
+    answer:
+      "It varies considerably by site. Amber Fort offers a jeep ride partway up, and City Palace in both Jaipur and Udaipur involve mostly level walking within the complex, but forts like Mehrangarh, Chittorgarh and Kumbhalgarh involve significant walking over uneven stone surfaces and some stairs. Let us know about any mobility considerations when planning your itinerary and we'll factor it into which sites and routes we recommend.",
+  },
+];
+
 export default function MonumentsGuidePage() {
   return (
     <>
@@ -61,6 +85,11 @@ export default function MonumentsGuidePage() {
             })
           ),
         }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <main>

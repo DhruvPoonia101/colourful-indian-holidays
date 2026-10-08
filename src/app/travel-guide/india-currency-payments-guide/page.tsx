@@ -7,6 +7,7 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
+import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -338,6 +339,15 @@ export default function IndiaCurrencyPaymentsGuidePage() {
             than how you&apos;re paying for them.
           </ArticleP>
         </ArticleBody>
+
+        <FAQSection
+          eyebrow="FAQ"
+          heading="Common Questions About Currency & Payments in India"
+          intro="Straight answers to the questions travellers ask about cash, cards and UPI."
+          faqs={faqs}
+          whatsappMessage="Hi! I have a question about payments before booking my trip with Colourful Indian Holidays."
+          topDivider
+        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

@@ -8,6 +8,7 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
+import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -438,6 +439,15 @@ export default function GoldenTriangleItineraryGuidePage() {
             them, with the Taj Mahal on the best possible day.
           </ArticleP>
         </ArticleBody>
+
+        <FAQSection
+          eyebrow="FAQ"
+          heading="Common Questions About the Golden Triangle Itinerary"
+          intro="Straight answers to the questions travellers ask about planning Delhi, Agra and Jaipur."
+          faqs={faqs}
+          whatsappMessage="Hi! I'd like help planning a Golden Triangle itinerary with Colourful Indian Holidays."
+          topDivider
+        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

@@ -8,6 +8,7 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
+import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -454,6 +455,15 @@ export default function RajasthanItineraryGuidePage() {
             asking you to fit an existing one.
           </ArticleP>
         </ArticleBody>
+
+        <FAQSection
+          eyebrow="FAQ"
+          heading="Common Questions About the Rajasthan Itinerary"
+          intro="Straight answers to the questions travellers ask about planning a Rajasthan trip."
+          faqs={faqs}
+          whatsappMessage="Hi! I'd like help planning a Rajasthan itinerary with Colourful Indian Holidays."
+          topDivider
+        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

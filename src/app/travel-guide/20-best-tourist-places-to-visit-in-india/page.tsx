@@ -7,6 +7,7 @@ import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
+import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -40,6 +41,39 @@ const breadcrumbs = [
   { name: "20 Best Tourist Places to Visit in India", path: pagePath },
 ];
 
+const faqs: FaqItem[] = [
+  {
+    question: "How many of these places should a first-time visitor plan to see?",
+    answer:
+      "4 to 6 is realistic for a two-week trip without feeling rushed — trying to cover more usually means less time at each stop and more days lost to travel between them. A 10-day trip comfortably covers the Golden Triangle plus one or two Rajasthan cities; two weeks or more allows a fuller Rajasthan circuit or a proper South India coastal trip.",
+  },
+  {
+    question: "What's the best starting point for a first India trip?",
+    answer:
+      "The Golden Triangle (Delhi, Agra, Jaipur) remains the most common and best-supported starting circuit, with well-established infrastructure, manageable travel times between each stop, and enough variety — Mughal monuments, colonial architecture, and Rajput forts — to give a genuine first impression of India's range.",
+  },
+  {
+    question: "Is it better to focus on one region or try to see a bit of everything?",
+    answer:
+      "One region done properly beats a scattered itinerary trying to touch North, South and the Himalayas in a single trip — the distances and different climates make a single well-connected circuit far more comfortable and memorable than a rushed tour spanning the whole country.",
+  },
+  {
+    question: "Which of these places pairs best with wildlife safaris?",
+    answer:
+      "Ranthambore fits naturally into a Rajasthan circuit given its proximity to Jaipur, while Kerala and Goa itineraries can extend into Central India's tiger reserves for travellers specifically prioritising wildlife over a purely heritage-focused trip.",
+  },
+  {
+    question: "What time of year suits most of these destinations?",
+    answer:
+      "October through March offers the most comfortable weather across the majority of this list — Rajasthan, the Golden Triangle, Varanasi and South India all see their most manageable temperatures in these months. Summer brings intense heat to the plains and deserts, while the Himalayan destinations have their own separate, narrower travel windows tied to snow and road access.",
+  },
+  {
+    question: "Should we book a private guide and driver, or travel independently?",
+    answer:
+      "Most of these destinations — particularly Rajasthan's forts, Varanasi's ghats, and Ladakh's high-altitude routes — are considerably richer with a private, English-speaking guide and driver rather than navigating independently. It's also the standard way international visitors travel most of this list, rather than an optional upgrade.",
+  },
+];
+
 export default function TwentyBestPlacesGuidePage() {
   return (
     <>
@@ -61,6 +95,11 @@ export default function TwentyBestPlacesGuidePage() {
             })
           ),
         }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <main>

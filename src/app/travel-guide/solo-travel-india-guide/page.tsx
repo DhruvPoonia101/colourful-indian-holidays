@@ -8,6 +8,7 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
+import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -394,6 +395,15 @@ export default function SoloTravelIndiaGuidePage() {
             open.
           </ArticleP>
         </ArticleBody>
+
+        <FAQSection
+          eyebrow="FAQ"
+          heading="Common Questions About Solo Travel in India"
+          intro="Straight answers to the questions solo travellers actually ask."
+          faqs={faqs}
+          whatsappMessage="Hi! I'm planning a solo trip to India and would like help with the first few days."
+          topDivider
+        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

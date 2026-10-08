@@ -8,6 +8,7 @@ export const tripPlannerDestinations: string[] = [
   "Taj Mahal & Rajasthan",
   "Golden Triangle & Kerala",
   "Triangle & Varanasi & Amritsar",
+  "16 Days Delhi – Agra – Rajasthan – Varanasi",
   "Golden Triangle & Goa",
   "Kerala & Back Waters",
   "South India Tamil Nadu",
