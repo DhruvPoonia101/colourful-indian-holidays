@@ -16,9 +16,9 @@ export const northIndiaHighlights: PackageContent = {
   slug: "north-india-highlights",
   name: "North India Highlights",
   tagline: "Delhi & Agra in 4 Days",
-  metaTitle: "North India Highlights Tour | Delhi & the Taj Mahal in 4 Days",
+  metaTitle: "North India Highlights Tour | Delhi & Taj Mahal, 4 Days",
   metaDescription:
-    "A condensed 4-day North India itinerary covering just Delhi and Agra — the Taj Mahal, Agra Fort and Delhi's Mughal and colonial landmarks — for travellers with very limited time.",
+    "A condensed 4-day North India itinerary covering Delhi and Agra — the Taj Mahal, Agra Fort and Delhi's Mughal landmarks — for limited time.",
   heroImage: "/images/destinations/agra-taj-mahal.webp",
   heroImageAlt: "Taj Mahal at sunrise, Agra",
   heroHeadline: "North India Highlights: Delhi & Agra",

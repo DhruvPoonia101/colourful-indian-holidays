@@ -12,7 +12,7 @@ export const kazirangaTour: PackageContent = {
   tagline: "Rhino Safaris on the Brahmaputra Floodplain",
   metaTitle: "Kaziranga Tour Package | One-Horned Rhino Safaris, Assam",
   metaDescription:
-    "A private 4-day Kaziranga tour — jeep safaris across two distinct ranges of India's premier one-horned rhinoceros sanctuary, on the Brahmaputra floodplain in Assam.",
+    "A private 4-day Kaziranga tour — jeep safaris across two ranges of India's premier one-horned rhino sanctuary on Assam's Brahmaputra floodplain.",
   heroImage: "/images/destinations/kaziranga.webp",
   heroImageAlt: "A one-horned rhinoceros crossing a safari track, Kaziranga National Park",
   heroHeadline: "Kaziranga: Rhino Safaris on the Brahmaputra Floodplain",

@@ -35,9 +35,9 @@ export const luxuryIndiaTours: ExperienceContent = {
   slug: "luxury-india-tours",
   name: "Luxury India Tours",
   tagline: "Delhi, Agra, Jaipur & Udaipur, Top-Tier Throughout · 10 Days",
-  metaTitle: "Luxury India Tour | Delhi, Agra, Jaipur & Udaipur, Palace Hotels & Private Guides",
+  metaTitle: "Luxury India Tours | Palace Hotels & Private Guides",
   metaDescription:
-    "A 10-day luxury India itinerary staying exclusively at heritage palace and 5-star hotels — private guides, exclusive-access sightseeing, and Udaipur's Lake Palace views throughout.",
+    "A 10-day luxury India itinerary at heritage palace and 5-star hotels — private guides, exclusive-access sightseeing and Udaipur's Lake Palace views.",
   heroImage: "/images/destinations/udaipur-lake-palace.webp",
   heroImageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
   heroHeadline: "Luxury India: The Golden Triangle & Udaipur, Elevated",

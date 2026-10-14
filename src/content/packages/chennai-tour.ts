@@ -10,9 +10,9 @@ export const chennaiTour: PackageContent = {
   slug: "chennai-tour",
   name: "Chennai City Tour",
   tagline: "Temples, Beaches & the Gateway to the South · 4 Days",
-  metaTitle: "Chennai Tour Package | Marina Beach, Temples & a Mahabalipuram Day Trip",
+  metaTitle: "Chennai Tour Package | Temples, Marina Beach & Mahabalipuram",
   metaDescription:
-    "A private 4-day Chennai tour — Marina Beach, Kapaleeshwarar Temple, Fort St. George, DakshinaChitra's living heritage village, and a full day trip to Mahabalipuram.",
+    "A private 4-day Chennai tour — Marina Beach, Kapaleeshwarar Temple, Fort St. George, DakshinaChitra and a full day trip to Mahabalipuram.",
   heroImage: "/images/destinations/marina-beach-chennai.webp",
   heroImageAlt: "Sunset over Marina Beach, Chennai",
   heroHeadline: "Chennai: Temples, Beaches & the Gateway South",

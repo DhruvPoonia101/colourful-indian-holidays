@@ -10,9 +10,9 @@ export const pushkarTour: PackageContent = {
   slug: "pushkar-tour",
   name: "Pushkar Tour",
   tagline: "The Holy Lake Town, Paired with Ajmer · 4 Days",
-  metaTitle: "Pushkar Tour Package | Brahma Temple, Sacred Lake & Ajmer Dargah",
+  metaTitle: "Pushkar Tour Package | Brahma Temple & Ajmer Dargah",
   metaDescription:
-    "A private 4-day Pushkar tour — the sacred lake and Brahma Temple, paired with a day trip to Ajmer's Sufi shrine, at a relaxed pace with a private guide throughout.",
+    "A private 4-day Pushkar tour — the sacred lake and Brahma Temple, plus a day trip to Ajmer's Sufi shrine, with a private guide throughout.",
   heroImage: "/images/destinations/pushkar-lake-ghats.webp",
   heroImageAlt: "Pushkar Lake and its ghats at dusk",
   heroHeadline: "Pushkar & Ajmer: The Holy Town, Properly Explored",

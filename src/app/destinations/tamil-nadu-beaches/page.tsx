@@ -26,7 +26,7 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Tamil Nadu Beaches | Mahabalipuram, Marina Beach & Kanyakumari";
+const title = "Tamil Nadu Beaches | Mahabalipuram & Kanyakumari";
 const description =
   "Plan a Tamil Nadu coastal trip — the Mahabalipuram Shore Temple, Chennai's Marina Beach and Kanyakumari, where three seas meet.";
 const pagePath = "/destinations/tamil-nadu-beaches";

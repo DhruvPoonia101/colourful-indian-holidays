@@ -25,7 +25,7 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * (e-Visa, Getting Around India) that the Golden Triangle pillar added.
  */
 
-const title = "Kerala Tour Packages | Backwaters, Munnar, Kochi & Wildlife, 6 Ways";
+const title = "Kerala Tour Packages | Backwaters, Munnar & Kochi";
 const description =
   "Private Kerala tour packages in six shapes — a classic circuit, Alleppey backwaters, Munnar's tea gardens, Periyar's wildlife, Fort Kochi, and Kerala's beaches.";
 const pagePath = "/tours/kerala-tours";

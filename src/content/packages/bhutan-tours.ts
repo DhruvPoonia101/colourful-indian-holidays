@@ -12,7 +12,7 @@ export const bhutanTours: PackageContent = {
   tagline: "Dzongs, Valleys & the Tiger's Nest",
   metaTitle: "Bhutan Tour Packages | Thimphu, Punakha, Gangtey & Paro",
   metaDescription:
-    "A private 8-day Bhutan tour through Thimphu, Punakha, Gangtey and Paro — fortress-monasteries, the Dochula Pass, a glacial crane valley, and the cliffside Tiger's Nest.",
+    "A private 8-day Bhutan tour through Thimphu, Punakha, Gangtey and Paro — fortress-monasteries, Dochula Pass, a crane valley and the Tiger's Nest.",
   heroImage: "/images/destinations/paro-taktsang-tigers-nest.webp",
   heroImageAlt: "Paro Taktsang, the Tiger's Nest Monastery, Bhutan",
   heroHeadline: "Bhutan: Dzongs, Valleys & the Tiger's Nest",

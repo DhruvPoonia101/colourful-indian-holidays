@@ -33,9 +33,9 @@ export const buddhistTours: ExperienceContent = {
   slug: "buddhist-tours",
   name: "Buddhist Tours",
   tagline: "Bodh Gaya & Sarnath, Two Holy Sites · 7 Days",
-  metaTitle: "Buddhist Circuit Tour India | Bodh Gaya's Mahabodhi Temple & Sarnath",
+  metaTitle: "Buddhist Circuit Tour India | Bodh Gaya & Sarnath",
   metaDescription:
-    "A 7-day Buddhist pilgrimage circuit — Bodh Gaya's Mahabodhi Temple and Bodhi Tree, its international monasteries, and Sarnath, where the Buddha's first sermon was delivered.",
+    "A 7-day Buddhist pilgrimage circuit — Bodh Gaya's Mahabodhi Temple and Bodhi Tree, international monasteries, and Sarnath, site of the first sermon.",
   heroImage: "/images/destinations/bodh-gaya-mahabodhi-temple.webp",
   heroImageAlt: "The Mahabodhi Temple, Bodh Gaya",
   heroHeadline: "Buddhist Tours: Bodh Gaya & Sarnath",

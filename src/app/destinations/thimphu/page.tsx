@@ -28,7 +28,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Thimphu | Bhutan's Capital, Without a Single Traffic Light";
 const description =
-  "Plan a trip to Thimphu — Tashichho Dzong, the Buddha Dordenma statue and the Motithang Takin Preserve in the only national capital in the world without traffic lights.";
+  "Plan a trip to Thimphu — Tashichho Dzong, the Buddha Dordenma and the Takin Preserve, in the only national capital without traffic lights.";
 const pagePath = "/destinations/thimphu";
 const heroImage = "/images/destinations/thimphu-tashichho-dzong.webp";
 

@@ -66,9 +66,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * (Heathrow-Delhi) is a longer-established, more stable route network.
  */
 
-const title = "India Tours from the USA | Private, Tailor-Made Itineraries";
+const title = "India Tours from the USA | Private, Tailor-Made Trips";
 const description =
-  "Private India tours for American travellers — flight routes, e-Visa and e-Arrival Card guidance for US citizens, and itineraries built around your dates by a Jaipur-based operator.";
+  "Private India tours for American travellers — flight routes, e-Visa and e-Arrival Card guidance for US citizens, and itineraries by a Jaipur-based operator.";
 const pagePath = "/india-tours-from-usa";
 
 export const metadata: Metadata = {

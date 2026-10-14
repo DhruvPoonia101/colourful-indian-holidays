@@ -17,9 +17,9 @@ import { homeFaqs } from "@/content/home";
  * conditions page rather than invented for this page specifically.
  */
 
-const title = "Frequently Asked Questions";
+const title = "Frequently Asked Questions | Colourful Indian Holidays";
 const description =
-  "Answers to what international travellers ask most before booking with us — private tours, visas, payment schedules, cancellation policy, guides and vehicles, and trip logistics.";
+  "Answers to what international travellers ask before booking — private tours, visas, payment schedules, cancellations, guides, vehicles and logistics.";
 const pagePath = "/faq";
 
 export const metadata: Metadata = {

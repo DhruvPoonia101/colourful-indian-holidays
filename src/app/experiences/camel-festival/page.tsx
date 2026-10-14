@@ -20,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Bikaner Camel Festival | Festival Guide";
 const description =
-  "A dedicated two-day cultural celebration of the camel in desert Rajasthan — decorated camel processions, races and competitions, and desert folk performances in Bikaner each January.";
+  "A two-day celebration of the camel in desert Rajasthan — decorated camel processions, races and folk performances in Bikaner each January.";
 const pagePath = "/experiences/camel-festival";
 const heroImage = "/images/destinations/jaisalmer-desert.webp";
 

@@ -10,7 +10,7 @@ export const kashmirHoneymoon: ExperienceContent = {
   slug: "kashmir-honeymoon",
   name: "Kashmir Honeymoon",
   tagline: "Dal Lake, Houseboats & Snow-Capped Peaks · 5 Days",
-  metaTitle: "Kashmir Honeymoon Package | Dal Lake Houseboat, Mughal Gardens & Gulmarg",
+  metaTitle: "Kashmir Honeymoon Package | Dal Lake Houseboat Stay",
   metaDescription:
     "A private 5-day Kashmir honeymoon — a Dal Lake houseboat stay, a private shikara ride, Srinagar's Mughal gardens, and a day trip to Gulmarg's alpine meadows.",
   heroImage: "/images/destinations/Srinagar-3.webp",

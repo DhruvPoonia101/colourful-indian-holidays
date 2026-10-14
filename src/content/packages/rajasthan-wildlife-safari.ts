@@ -10,9 +10,9 @@ export const rajasthanWildlifeSafari: PackageContent = {
   slug: "rajasthan-wildlife-safari",
   name: "Rajasthan Wildlife Safari",
   tagline: "Forts, Tigers & a Lake City · 8 Days",
-  metaTitle: "Rajasthan Wildlife Safari Tour | Jaipur, Ranthambore & Udaipur",
+  metaTitle: "Rajasthan Wildlife Tour | Jaipur, Ranthambore & Udaipur",
   metaDescription:
-    "An 8-day Rajasthan tour combining Jaipur's forts, two full days of tiger safaris at Ranthambore National Park, and Udaipur's lakes — wildlife and heritage in one trip.",
+    "An 8-day Rajasthan tour combining Jaipur's forts, two full days of tiger safaris at Ranthambore and Udaipur's lakes — wildlife and heritage in one trip.",
   heroImage: "/images/destinations/ranthambore-tiger.webp",
   heroImageAlt: "A wild tiger at Ranthambore National Park",
   heroHeadline: "Rajasthan for Wildlife: Jaipur, Ranthambore & Udaipur",

@@ -54,9 +54,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  *   component rather than inventing a nationality tag for any reviewer.
  */
 
-const title = "India Tours from Germany | Private, Tailor-Made Itineraries";
+const title = "India Tours from Germany | Private, Tailor-Made Trips";
 const description =
-  "Private India tours for German travellers — direct flight options from Frankfurt and Munich, e-Visa and e-Arrival Card guidance, and itineraries built around your dates.";
+  "Private India tours from Germany — direct flight options from Frankfurt and Munich, e-Visa and e-Arrival Card guidance, itineraries built around your dates.";
 const pagePath = "/india-tours-from-germany";
 
 export const metadata: Metadata = {

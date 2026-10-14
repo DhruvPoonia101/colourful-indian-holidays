@@ -21,7 +21,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Pushkar Fair | Festival Guide";
 const description =
-  "One of the world's largest camel and livestock fairs, held at Pushkar's sacred lake — thousands of camels and traders alongside folk music, competitions, and a genuinely vast temporary desert encampment.";
+  "One of the world's largest camel and livestock fairs at Pushkar's sacred lake — thousands of camels and traders, folk music and a vast desert encampment.";
 const pagePath = "/experiences/pushkar-fair";
 const heroImage = "/images/destinations/pushkar.webp";
 

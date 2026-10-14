@@ -13,9 +13,9 @@ import { organizationJsonLd } from "@/lib/seo/organization-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Contact Us | Plan Your India & Rajasthan Trip";
+const title = "Contact Colourful Indian Holidays | Plan Your India Trip";
 const description =
-  "Get in touch with Colourful Indian Holidays to start planning your private Rajasthan or India tour. WhatsApp, email, or send an enquiry — we typically reply within 2 hours.";
+  "Start planning your private India or Rajasthan tour with Colourful Indian Holidays — WhatsApp, email or an enquiry form. We typically reply within 2 hours.";
 const pagePath = "/contact";
 const heroImage = "/images/contact/contact-hero.webp";
 

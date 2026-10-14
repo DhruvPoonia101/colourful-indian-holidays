@@ -28,7 +28,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Jaipur Tour Packages | The Pink City, Rajasthan";
 const description =
-  "Plan a private Jaipur tour — Amber Fort, City Palace, Hawa Mahal and Jantar Mantar, with an English-speaking guide and private driver. The natural start of any Rajasthan itinerary.";
+  "A private Jaipur tour — Amber Fort, City Palace, Hawa Mahal and Jantar Mantar with an English-speaking guide and driver. The start of any Rajasthan trip.";
 const pagePath = "/destinations/jaipur";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 

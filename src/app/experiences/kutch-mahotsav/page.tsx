@@ -20,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Kutch Mahotsav (Rann Utsav) | Festival Guide";
 const description =
-  "A multi-month desert festival on the edge of the Great Rann of Kutch's white salt desert — a purpose-built tented camp, Kutchi craft traditions, and unforgettable full-moon nights on the salt flats.";
+  "A multi-month desert festival on the edge of the Great Rann of Kutch — a purpose-built tent camp, Kutchi crafts and full-moon nights on the salt flats.";
 const pagePath = "/experiences/kutch-mahotsav";
 const heroImage = "/images/destinations/kutch-mahotsav.webp";
 

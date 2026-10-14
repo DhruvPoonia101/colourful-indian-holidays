@@ -10,9 +10,9 @@ export const munnarTour: PackageContent = {
   slug: "munnar-tour",
   name: "Munnar Hill Station Tour",
   tagline: "Tea Gardens & Cool Mountain Air · 4 Days",
-  metaTitle: "Munnar Tour Package | Tea Plantations, Eravikulam National Park & Mattupetty",
+  metaTitle: "Munnar Tour Package | Tea Plantations & Mattupetty",
   metaDescription:
-    "A private 4-day Munnar tour — rolling tea plantations, a working tea factory, Eravikulam National Park's rare mountain goats, and a boat ride on Mattupetty Lake.",
+    "A private 4-day Munnar tour — rolling tea plantations, a tea factory visit, Eravikulam's mountain goats and a boat ride on Mattupetty Lake.",
   heroImage: "/images/destinations/munnar-tea-plantation.webp",
   heroImageAlt: "Rolling tea plantations in the mist, Munnar, Kerala",
   heroHeadline: "Munnar: Kerala's Cool Mountain Escape",

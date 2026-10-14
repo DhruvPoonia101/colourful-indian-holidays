@@ -25,7 +25,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * rather than reintroducing the risk on a new page.
  */
 
-const title = "Traveller Reviews & Testimonials";
+const title = "Colourful Indian Holidays Reviews & Testimonials";
 const description = `Real reviews from Google and Tripadvisor — ${BUSINESS.aggregateRating.ratingValue}★ from ${BUSINESS.aggregateRating.reviewCount}+ Tripadvisor reviews and ${BUSINESS.googleRating.ratingValue}★ from ${BUSINESS.googleRating.reviewCount}+ Google reviews.`;
 const pagePath = "/testimonials";
 

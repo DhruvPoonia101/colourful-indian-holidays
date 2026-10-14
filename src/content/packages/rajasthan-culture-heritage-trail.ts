@@ -10,7 +10,7 @@ export const rajasthanCultureHeritageTrail: PackageContent = {
   slug: "rajasthan-culture-heritage-trail",
   name: "Rajasthan Culture & Heritage Trail",
   tagline: "Forts, Havelis & Living Craft Traditions · 8 Days",
-  metaTitle: "Rajasthan Culture & Heritage Tour | Jodhpur, Jaisalmer & Udaipur",
+  metaTitle: "Rajasthan Heritage Tour | Jodhpur, Jaisalmer & Udaipur",
   metaDescription:
     "An 8-day Rajasthan heritage trail through Jodhpur, Jaisalmer and Udaipur — Mehrangarh Fort, Jaisalmer's ornate merchant havelis, and Udaipur's lakeside palaces.",
   heroImage: "/images/destinations/jaisalmer-patwon-ki-haveli.webp",

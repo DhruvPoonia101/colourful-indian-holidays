@@ -20,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Onam, Kerala | Festival Guide";
 const description =
-  "Kerala's biggest annual festival — ten days building to elaborate flower carpets, dramatic snake boat races on the backwaters, and a traditional multi-course feast served on a banana leaf.";
+  "Kerala's biggest festival — ten days building to flower carpets, snake boat races on the backwaters and a multi-course feast served on a banana leaf.";
 const pagePath = "/experiences/onam";
 const heroImage = "/images/destinations/onam.webp";
 

@@ -11,7 +11,7 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Nepal Destinations | Kathmandu, Pokhara, Chitwan & Everest Region";
+const title = "Nepal Destinations | Kathmandu, Pokhara, Chitwan & Everest";
 const description =
   "Every Nepal destination we plan private tours for — Kathmandu's temples, Pokhara's lakeside views, Chitwan's jungle safaris, and the Everest region.";
 const pagePath = "/destinations/nepal";

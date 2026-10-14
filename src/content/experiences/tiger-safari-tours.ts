@@ -15,7 +15,7 @@ export const tigerSafariTours: ExperienceContent = {
   slug: "tiger-safari-tours",
   name: "Tiger Safari Tours",
   tagline: "Bandhavgarh, Kanha & Pench · 7 Days",
-  metaTitle: "Tiger Safari Tour Package | Bandhavgarh, Kanha & Pench, Madhya Pradesh",
+  metaTitle: "Madhya Pradesh Tiger Safari | Bandhavgarh, Kanha & Pench",
   metaDescription:
     "A private 7-day tiger safari across Madhya Pradesh's three best parks — Bandhavgarh's high tiger density, Kanha's sal forests, and Pench's rolling terrain.",
   heroImage: "/images/destinations/bandhavgarh-tiger.webp",

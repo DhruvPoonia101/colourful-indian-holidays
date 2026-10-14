@@ -10,7 +10,7 @@ export const udaipurHoneymoon: ExperienceContent = {
   slug: "udaipur-honeymoon",
   name: "Udaipur Honeymoon",
   tagline: "The City of Lakes, Built for Two · 4 Days",
-  metaTitle: "Udaipur Honeymoon Package | Private Boat Ride, Palace Suite & Candlelit Dinner",
+  metaTitle: "Udaipur Honeymoon Package | Palace Suite & Boat Ride",
   metaDescription:
     "A private 4-day Udaipur honeymoon — a heritage palace suite, a private sunset boat ride on Lake Pichola, and a candlelit dinner overlooking the water.",
   heroImage: "/images/destinations/udaipur-lake-palace.webp",

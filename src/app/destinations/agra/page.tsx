@@ -26,9 +26,9 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Agra Tour Packages for International Travellers | Taj Mahal & the Golden Triangle";
+const title = "Agra Tour Packages | Taj Mahal & Golden Triangle";
 const description =
-  "Plan a private Agra trip — the Taj Mahal, Agra Fort and Fatehpur Sikri, with an English-speaking guide and driver. The essential middle stop on every Golden Triangle itinerary.";
+  "A private Agra trip — the Taj Mahal, Agra Fort and Fatehpur Sikri with an English-speaking guide and driver. The essential Golden Triangle stop.";
 const pagePath = "/destinations/agra";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 

@@ -10,9 +10,9 @@ export const jodhpurTour: PackageContent = {
   slug: "jodhpur-tour",
   name: "Jodhpur Tour",
   tagline: "The Blue City in Depth · 4 Days",
-  metaTitle: "Jodhpur Tour Package | Mehrangarh Fort, Jaswant Thada & the Old City",
+  metaTitle: "Jodhpur Tour Package | Mehrangarh Fort & the Blue City",
   metaDescription:
-    "A private 4-day Jodhpur city tour — Mehrangarh Fort, Jaswant Thada, Umaid Bhawan Palace and the blue-washed old city, at a relaxed pace with a private guide throughout.",
+    "A private 4-day Jodhpur city tour — Mehrangarh Fort, Jaswant Thada, Umaid Bhawan Palace and the blue-washed old city, with a private guide throughout.",
   heroImage: "/images/destinations/mehrangarh-fort-jodhpur.webp",
   heroImageAlt: "Mehrangarh Fort towering above Jodhpur's blue-washed old town",
   heroHeadline: "Jodhpur: The Blue City, Properly Explored",

@@ -14,7 +14,7 @@ import { renderWithLinks } from "@/lib/render-with-links";
 
 const title = "15+ Day Custom India, Nepal & Bhutan Itineraries, 2026";
 const description =
-  "Planning a trip of 15 days or more? We don't run a fixed 15+ day package, but build extended, fully custom itineraries across India, Nepal and Bhutan around your own dates.";
+  "Planning 15+ days? We build extended, fully custom itineraries across India, Nepal and Bhutan around your own dates, with private guides throughout.";
 const pagePath = "/tours/15-plus-day-tours";
 const heroImage = "/images/destinations/jaisalmer-desert.webp";
 

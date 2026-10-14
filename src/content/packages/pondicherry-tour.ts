@@ -10,7 +10,7 @@ export const pondicherryTour: PackageContent = {
   slug: "pondicherry-tour",
   name: "Pondicherry Tour",
   tagline: "The French Quarter · 4 Days",
-  metaTitle: "Pondicherry Tour Package | French Quarter, Auroville & the Promenade",
+  metaTitle: "Pondicherry Tour Package | French Quarter & Auroville",
   metaDescription:
     "A private 4-day Pondicherry tour — the French Quarter's colonial villas, a full day at Auroville's Matrimandir, the boulder-lined promenade, and Serenity Beach.",
   heroImage: "/images/destinations/pondicherry-french-quarter.webp",

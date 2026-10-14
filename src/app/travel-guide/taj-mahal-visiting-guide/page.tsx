@@ -8,7 +8,6 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
-import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -39,7 +38,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Taj Mahal Visiting Guide: Tickets, Timings, Sunrise & Tips";
 const description =
-  "A practical Taj Mahal guide — ticket prices for foreign visitors, opening hours and the Friday closure, sunrise versus sunset, which gate to use, and mistakes to avoid.";
+  "Taj Mahal guide — foreign visitor ticket prices, opening hours, the Friday closure, sunrise vs sunset, which gate to use and mistakes to avoid.";
 const pagePath = "/travel-guide/taj-mahal-visiting-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-28";
@@ -419,15 +418,6 @@ export default function TajMahalVisitingGuidePage() {
             dates and we will schedule the Taj Mahal visit for the best available day and time.
           </ArticleP>
         </ArticleBody>
-
-        <FAQSection
-          eyebrow="FAQ"
-          heading="Common Questions About Visiting the Taj Mahal"
-          intro="Straight answers to the questions travellers ask before their visit."
-          faqs={faqs}
-          whatsappMessage="Hi! I'd like help planning a Taj Mahal visit with Colourful Indian Holidays."
-          topDivider
-        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

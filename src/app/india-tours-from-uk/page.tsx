@@ -53,9 +53,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  *   since April 2026, applies to all foreign nationals equally).
  */
 
-const title = "India Tours from the UK | Private, Tailor-Made Itineraries";
+const title = "India Tours from the UK | Private, Tailor-Made Trips";
 const description =
-  "Private India tours for British travellers — Heathrow-Delhi flight options, e-Visa and e-Arrival Card guidance for UK citizens, and itineraries built around your dates.";
+  "Private India tours for UK travellers — Heathrow–Delhi flight options, e-Visa and e-Arrival Card guidance, itineraries built around your dates.";
 const pagePath = "/india-tours-from-uk";
 
 export const metadata: Metadata = {

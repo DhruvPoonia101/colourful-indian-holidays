@@ -26,9 +26,9 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * India links, and an FAQ section with schema.
  */
 
-const title = "South India Tour Packages | Chennai, Mahabalipuram, Madurai & Pondicherry";
+const title = "South India Tour Packages | Chennai, Madurai & Pondicherry";
 const description =
-  "Private South India tour packages in six shapes — a classic Tamil Nadu circuit, Chennai, Mahabalipuram's rock-cut monuments, Madurai's temples, Pondicherry, and the coast.";
+  "Private South India tour packages in six shapes — a Tamil Nadu circuit, Chennai, Mahabalipuram, Madurai, Pondicherry and the coast, planned around you.";
 const pagePath = "/tours/south-india-tours";
 const heroImage = "/images/destinations/chennai.webp";
 

@@ -18,7 +18,7 @@ export const himachalTour: PackageContent = {
   tagline: "Shimla & Manali in 6 Days",
   metaTitle: "Himachal Tour Package | Shimla & Manali, 6 Days",
   metaDescription:
-    "A private 6-day Himachal tour through Shimla and Manali — colonial hill-station architecture, the toy train, Hadimba Temple, and a high-altitude excursion toward Rohtang Pass.",
+    "A private 6-day Himachal tour through Shimla and Manali — colonial hill-station architecture, the toy train, Hadimba Temple and a Rohtang Pass excursion.",
   heroImage: "/images/destinations/shimla-town.webp",
   heroImageAlt: "Shimla town built into the Himalayan hillside",
   heroHeadline: "Himachal: Shimla & Manali",

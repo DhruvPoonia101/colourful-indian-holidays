@@ -46,7 +46,7 @@ export const birdWatching: ExperienceContent = {
   tagline: "Keoladeo National Park, Bharatpur · 6 Days",
   metaTitle: "Bird Watching Tour India | Keoladeo National Park, Bharatpur",
   metaDescription:
-    "A 6-day birding trip built around Keoladeo National Park, Bharatpur — a UNESCO World Heritage wetland with over 350 recorded bird species — combined with the Taj Mahal and Jaipur.",
+    "A 6-day birding trip built around Keoladeo National Park, Bharatpur — a UNESCO wetland with 350+ bird species — with the Taj Mahal and Jaipur.",
   heroImage: "/images/destinations/keoladeo-bharatpur-wetland.webp",
   heroImageAlt: "Misty wetland at dawn, Keoladeo National Park, Bharatpur",
   heroHeadline: "Bird Watching: Keoladeo National Park",

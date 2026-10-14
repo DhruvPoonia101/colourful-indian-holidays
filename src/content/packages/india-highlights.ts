@@ -18,9 +18,9 @@ export const indiaHighlights: PackageContent = {
   slug: "india-highlights",
   name: "India Highlights",
   tagline: "The Taj Mahal & Kerala's Backwaters",
-  metaTitle: "India Highlights Tour | Delhi, Agra, Kochi & Alleppey in 7 Days",
+  metaTitle: "India Highlights Tour | Taj Mahal & Kerala in 7 Days",
   metaDescription:
-    "A 7-day India itinerary pairing North and South — the Taj Mahal in Agra, followed by Kochi's colonial old town and a private houseboat cruise through Alleppey's backwaters.",
+    "A 7-day India itinerary pairing North and South — the Taj Mahal in Agra, then Fort Kochi's colonial old town and a private Alleppey houseboat cruise.",
   heroImage: "/images/destinations/agra-taj-mahal.webp",
   heroImageAlt: "Taj Mahal at sunrise, Agra",
   heroHeadline: "India Highlights: North & South in One Trip",

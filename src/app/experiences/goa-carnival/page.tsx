@@ -20,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Goa Carnival | Festival Guide";
 const description =
-  "Four days of colourful street parades, decorated floats and live music before Lent — a Portuguese-era tradition that's become a genuinely Goan celebration in its own right.";
+  "Four days of street parades, decorated floats and live music before Lent — a Portuguese-era tradition that's become a genuinely Goan celebration.";
 const pagePath = "/experiences/goa-carnival";
 const heroImage = "/images/destinations/goa-carnival.webp";
 

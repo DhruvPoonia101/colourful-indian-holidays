@@ -7,13 +7,12 @@ import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
-import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Pilgrimage Holiday Destinations in India | Travel Guide";
 const description =
-  "From the ghats of Varanasi to the Golden Temple in Amritsar — India's most significant pilgrimage sites, and what a visit to each actually involves for an international traveller.";
+  "From Varanasi's ghats to Amritsar's Golden Temple — India's most significant pilgrimage sites, and what a visit involves for an international traveller.";
 const pagePath = "/travel-guide/pilgrimage-holiday-destinations-in-india";
 const heroImage = "/images/destinations/varanasi.webp";
 const datePublished = "2026-08-01";
@@ -41,29 +40,6 @@ const breadcrumbs = [
   { name: "Pilgrimage Destinations", path: pagePath },
 ];
 
-const faqs: FaqItem[] = [
-  {
-    question: "Do non-Hindu or non-religious travellers visit these sites too?",
-    answer:
-      "Yes, regularly. Most of these sites — the Golden Temple especially — actively welcome visitors of every background, and the ceremonies themselves are striking to witness regardless of your own beliefs. Respectful curiosity is generally met with genuine warmth.",
-  },
-  {
-    question: "Can international travellers do the Char Dham Yatra?",
-    answer:
-      "Technically yes, but it's worth going in with the right expectations — the registration process is built around India's domestic ID system, the terrain is physically demanding at high altitude, and the circuit runs on a fixed seasonal window (roughly late April to mid-November). It's a fundamentally different kind of trip from the other destinations on this page, and one worth discussing with us directly if you're genuinely interested rather than assuming it fits into a standard itinerary.",
-  },
-  {
-    question: "Is it appropriate to photograph ceremonies like the Ganga aarti?",
-    answer:
-      "Generally yes for public ceremonies like the evening aarti at Varanasi or Haridwar, though always be mindful of people actively praying nearby. Cremation rites at Varanasi's ghats are a firm exception — never photograph these without explicit permission.",
-  },
-  {
-    question: "How many pilgrimage sites should we realistically add to a two-week India trip?",
-    answer:
-      "One or two integrated naturally into your route — Pushkar and Ajmer alongside Rajasthan, or Varanasi alongside a Golden Triangle extension — tends to work far better than trying to cover several sites spread across the country, which usually means sacrificing depth elsewhere in the itinerary.",
-  },
-];
-
 export default function PilgrimageGuidePage() {
   return (
     <>
@@ -85,11 +61,6 @@ export default function PilgrimageGuidePage() {
             })
           ),
         }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <main>

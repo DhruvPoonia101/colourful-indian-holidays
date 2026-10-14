@@ -12,7 +12,7 @@ export const goldenTriangleUdaipurTours: PackageContent = {
   tagline: "The Golden Triangle, Extended · 9 Days",
   metaTitle: "Delhi – Agra – Jaipur – Udaipur Tour Package | 9 Days",
   metaDescription:
-    "A private 9-day tour extending the classic Golden Triangle with Udaipur's lakes — Delhi, Agra, Jaipur and Udaipur, with a scenic detour via the Ranakpur Jain temples.",
+    "A private 9-day tour extending the Golden Triangle with Udaipur's lakes — Delhi, Agra, Jaipur and Udaipur, with a detour via the Ranakpur Jain temples.",
   heroImage: "/images/destinations/udaipur-lake-palace.webp",
   heroImageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
   heroHeadline: "Delhi – Agra – Jaipur – Udaipur: The Golden Triangle, Extended",

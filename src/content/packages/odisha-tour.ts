@@ -12,7 +12,7 @@ export const odishaTour: PackageContent = {
   tagline: "The Sun Temple & the Golden Triangle of the East",
   metaTitle: "Odisha Tour Package | Konark Sun Temple, Puri & Bhubaneswar",
   metaDescription:
-    "A private 5-day Odisha tour — Bhubaneswar's ancient temples, the UNESCO-listed Konark Sun Temple, Puri's Jagannath Temple, and Chilika Lake's Irrawaddy dolphins.",
+    "A private 5-day Odisha tour — Bhubaneswar's ancient temples, the UNESCO-listed Konark Sun Temple, Puri's Jagannath Temple and Chilika Lake's dolphins.",
   heroImage: "/images/destinations/odisha-konark-sun-temple.webp",
   heroImageAlt: "The Konark Sun Temple, Odisha",
   heroHeadline: "Odisha: The Sun Temple & the Golden Triangle of the East",

@@ -10,9 +10,9 @@ export const grandRajasthanCircuit: PackageContent = {
   slug: "grand-rajasthan-circuit",
   name: "Grand Rajasthan Circuit",
   tagline: "The Full State, Six Cities · 12 Days",
-  metaTitle: "Grand Rajasthan Tour Package | Jaipur, Jodhpur, Jaisalmer, Udaipur & Pushkar",
+  metaTitle: "Grand Rajasthan Tour | Jaipur, Jodhpur, Jaisalmer & Udaipur",
   metaDescription:
-    "A private 12-day Grand Rajasthan Circuit covering Jaipur, Jodhpur, Jaisalmer, Ranthambore, Udaipur and Pushkar — the most complete single-state itinerary we build.",
+    "A private 12-day Grand Rajasthan Circuit across Jaipur, Jodhpur, Jaisalmer, Ranthambore, Udaipur and Pushkar — our most complete single-state itinerary.",
   heroImage: "/images/destinations/jaisalmer-desert.webp",
   heroImageAlt: "Camel caravan crossing the Thar Desert dunes near Jaisalmer",
   heroHeadline: "The Grand Rajasthan Circuit: Six Cities, One State",

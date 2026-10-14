@@ -25,9 +25,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * lists all 11 of the site's real festival pages, not 10.
  */
 
-const title = "Festival Tours | Time Your India Trip Around a Real Celebration";
+const title = "Festival Tours India | Time Your Trip Around a Festival";
 const description =
-  "Plan your India trip around a real festival — the Pushkar Camel Fair, Kumbh Mela, Diwali, Goa Carnival, Onam and more, with guides on what to expect and when to go.";
+  "Plan your India trip around a real festival — Pushkar Camel Fair, Kumbh Mela, Diwali, Goa Carnival, Onam and more, with guides on when to go.";
 const pagePath = "/experiences/festival-tours";
 const heroImage = "/images/packages/jaipur-bikaner-jaisalmer-jodhpur-udaipur-pushkar.webp";
 

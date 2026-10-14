@@ -21,7 +21,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Kumbh Mela | Festival Guide";
 const description =
-  "The largest peaceful gathering of human beings anywhere on Earth — ritual bathing, Naga Sadhu processions, and a temporary tent city built to house tens of millions of pilgrims.";
+  "The largest peaceful gathering on Earth — ritual bathing, Naga Sadhu processions and a temporary tent city built for tens of millions of pilgrims.";
 const pagePath = "/experiences/kumbh-mela";
 const heroImage = "/images/destinations/haridwar-2.webp";
 

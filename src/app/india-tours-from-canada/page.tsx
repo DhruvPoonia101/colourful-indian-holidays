@@ -51,9 +51,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  *   Pacific time, both mentioned rather than picking one.
  */
 
-const title = "India Tours from Canada | Private, Tailor-Made Itineraries";
+const title = "India Tours from Canada | Private, Tailor-Made Trips";
 const description =
-  "Private India tours for Canadian travellers — flight options from Toronto and Vancouver, e-Visa and e-Arrival Card guidance, and itineraries built around your dates.";
+  "Private India tours for Canadians — flight options from Toronto and Vancouver, e-Visa and e-Arrival Card guidance, itineraries built around your dates.";
 const pagePath = "/india-tours-from-canada";
 
 export const metadata: Metadata = {

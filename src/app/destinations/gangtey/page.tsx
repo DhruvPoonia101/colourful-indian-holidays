@@ -28,7 +28,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Gangtey | Bhutan's Valley of the Black-Necked Cranes";
 const description =
-  "Plan a trip to Gangtey — the glacial Phobjikha Valley, Gangtey Monastery and the rare black-necked cranes that winter here, the quietest stop on a Bhutan circuit.";
+  "Plan a trip to Gangtey — the glacial Phobjikha Valley, Gangtey Monastery and the black-necked cranes that winter here, the quietest stop in Bhutan.";
 const pagePath = "/destinations/gangtey";
 const heroImage = "/images/destinations/gangtey-monastery-cranes-valley.webp";
 

@@ -32,7 +32,7 @@ export const raftingTours: ExperienceContent = {
   slug: "rafting-tours",
   name: "Rafting Tours",
   tagline: "White-Water Rafting on the Ganges, Rishikesh · 5 Days",
-  metaTitle: "Rishikesh River Rafting Tour | White-Water Rafting on the Ganges",
+  metaTitle: "Rishikesh Rafting Tour | White-Water on the Ganges",
   metaDescription:
     "A 5-day rafting-focused trip to Rishikesh, India's white-water capital — Grade II-III rapids on the Ganges, a riverside camping night, and a waterfall trek.",
   heroImage: "/images/destinations/rishikesh.webp",

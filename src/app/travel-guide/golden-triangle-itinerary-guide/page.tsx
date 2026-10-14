@@ -8,7 +8,6 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
-import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -25,9 +24,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * package has no live route, so it is not linked.
  */
 
-const title = "Golden Triangle Itinerary: A 5 to 6 Day Plan for Delhi, Agra and Jaipur";
+const title = "Golden Triangle Itinerary: 6-Day Delhi, Agra & Jaipur Plan";
 const description =
-  "A day-by-day Golden Triangle itinerary — Delhi, Agra and Jaipur in 6 days, how to compress it to 4 or 5, real drive times, the Friday Taj closure, and how to extend it.";
+  "A day-by-day Golden Triangle itinerary — Delhi, Agra and Jaipur in 6 days, how to cut it to 4 or 5, real drive times and the Friday Taj closure.";
 const pagePath = "/travel-guide/golden-triangle-itinerary-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-28";
@@ -439,15 +438,6 @@ export default function GoldenTriangleItineraryGuidePage() {
             them, with the Taj Mahal on the best possible day.
           </ArticleP>
         </ArticleBody>
-
-        <FAQSection
-          eyebrow="FAQ"
-          heading="Common Questions About the Golden Triangle Itinerary"
-          intro="Straight answers to the questions travellers ask about planning Delhi, Agra and Jaipur."
-          faqs={faqs}
-          whatsappMessage="Hi! I'd like help planning a Golden Triangle itinerary with Colourful Indian Holidays."
-          topDivider
-        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

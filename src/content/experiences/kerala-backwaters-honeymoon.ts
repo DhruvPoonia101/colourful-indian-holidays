@@ -10,7 +10,7 @@ export const keralaBackwatersHoneymoon: ExperienceContent = {
   slug: "kerala-backwaters-honeymoon",
   name: "Kerala Backwaters Honeymoon",
   tagline: "Houseboats, Tea Gardens & the Coast · 5 Days",
-  metaTitle: "Kerala Honeymoon Package | Private Houseboat, Munnar & Fort Kochi",
+  metaTitle: "Kerala Honeymoon Package | Houseboat, Munnar & Kochi",
   metaDescription:
     "A private 5-day Kerala honeymoon — a private houseboat cruise through Alleppey's backwaters, Fort Kochi's colonial lanes, and Munnar's misty tea gardens.",
   heroImage: "/images/destinations/alleppey-backwaters.webp",

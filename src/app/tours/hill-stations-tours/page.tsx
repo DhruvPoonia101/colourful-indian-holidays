@@ -36,7 +36,7 @@ import { renderWithLinks } from "@/lib/render-with-links";
 
 const title = "Hill Station Tours | Shimla, Manali, Darjeeling & Sikkim";
 const description =
-  "Private tours to India's Himalayan hill stations — Shimla and Manali in Himachal Pradesh, Darjeeling's tea gardens and toy train, and Sikkim's Buddhist monasteries and mountain lakes.";
+  "Private tours to India's Himalayan hill stations — Shimla and Manali, Darjeeling's tea gardens and toy train, and Sikkim's monasteries and mountain lakes.";
 const pagePath = "/tours/hill-stations-tours";
 const heroImage = "/images/destinations/shimla-town.webp";
 

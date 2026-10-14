@@ -10,9 +10,9 @@ export const goldenTriangleAjmerPushkarTours: PackageContent = {
   slug: "golden-triangle-tour-ajmer-pushkar",
   name: "Golden Triangle Tour with Ajmer & Pushkar",
   tagline: "The Golden Triangle, Extended to the Sacred Lake · 8 Days",
-  metaTitle: "Golden Triangle Tour with Ajmer & Pushkar | Delhi, Agra, Jaipur, Pushkar",
+  metaTitle: "Golden Triangle Tour with Pushkar | Delhi, Agra, Jaipur",
   metaDescription:
-    "The classic Golden Triangle plus Ajmer and Pushkar — a Sufi shrine visited by people of all faiths, and one of the few Brahma temples in the world, on the shores of a sacred lake.",
+    "The classic Golden Triangle plus Ajmer and Pushkar — a Sufi shrine open to all faiths and one of the world's few Brahma temples, on a sacred lake.",
   heroImage: "/images/destinations/amber-fort-jaipur.webp",
   heroImageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   heroHeadline: "Delhi – Agra – Jaipur – Ajmer – Pushkar",

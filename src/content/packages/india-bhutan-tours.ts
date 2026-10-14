@@ -19,7 +19,7 @@ export const indiaBhutanTours: PackageContent = {
   tagline: "The Golden Triangle & the Tiger's Nest",
   metaTitle: "India & Bhutan Tour Package | Delhi, Agra, Jaipur & Thimphu",
   metaDescription:
-    "A private 11-day circuit through India's Golden Triangle and Bhutan — the Taj Mahal, Jaipur's forts, Thimphu's dzongs, and the cliffside Tiger's Nest, on a direct Delhi–Paro flight.",
+    "A private 11-day Golden Triangle and Bhutan circuit — the Taj Mahal, Jaipur's forts, Thimphu's dzongs and the Tiger's Nest, via a direct Delhi–Paro flight.",
   heroImage: "/images/destinations/paro-taktsang-tigers-nest.webp",
   heroImageAlt: "Paro Taktsang, the Tiger's Nest Monastery, Bhutan",
   heroHeadline: "India & Bhutan: The Golden Triangle & the Tiger's Nest",

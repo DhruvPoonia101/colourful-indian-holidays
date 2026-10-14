@@ -3,7 +3,7 @@ import type { MonthContent } from "./types";
 export const june: MonthContent = {
   slug: "june",
   name: "June",
-  metaTitle: "Best Time to Visit India in June | Weather, Festivals & Where to Go",
+  metaTitle: "Best Time to Visit India in June | Weather & Festivals",
   metaDescription:
     "June marks the start of the monsoon in Kerala and the south, while Leh & Ladakh — sitting in a rain shadow — enters the best window of its short season.",
   heroImage: "/images/destinations/Leh-4.webp",

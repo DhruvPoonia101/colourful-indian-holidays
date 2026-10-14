@@ -25,9 +25,9 @@ export const familyHolidays: ExperienceContent = {
   slug: "family-holidays",
   name: "Family Holidays",
   tagline: "Delhi, Agra, Jaipur & Ranthambore for Families · 9 Days",
-  metaTitle: "India Family Holiday Package | Golden Triangle & Ranthambore Safari",
+  metaTitle: "India Family Holiday | Golden Triangle & Tiger Safari",
   metaDescription:
-    "A 9-day India itinerary built for families — shorter drive days, a hands-on puppet show, a jeep ride up to Amber Fort, and two full days of tiger safari at Ranthambore.",
+    "A 9-day India itinerary for families — shorter drives, a puppet show, a jeep ride up Amber Fort and two full days of tiger safari at Ranthambore.",
   heroImage: "/images/destinations/ranthambore-tiger.webp",
   heroImageAlt: "A Bengal tiger resting on a safari track, Ranthambore",
   heroHeadline: "Family Holidays: The Golden Triangle & Ranthambore",

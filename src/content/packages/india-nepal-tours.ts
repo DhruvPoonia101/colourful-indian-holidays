@@ -18,7 +18,7 @@ export const indiaNepalTours: PackageContent = {
   tagline: "The Golden Triangle & the Himalayas",
   metaTitle: "India & Nepal Tour Package | Delhi, Agra, Jaipur & Kathmandu",
   metaDescription:
-    "A private 11-day circuit through India's Golden Triangle and Nepal — the Taj Mahal, Jaipur's forts, Kathmandu's temples, and mountain views from Nagarkot and Pokhara.",
+    "A private 11-day Golden Triangle and Nepal circuit — the Taj Mahal, Jaipur's forts, Kathmandu's temples and Himalayan views from Nagarkot and Pokhara.",
   heroImage: "/images/destinations/agra-taj-mahal.webp",
   heroImageAlt: "Taj Mahal at sunrise, Agra",
   heroHeadline: "India & Nepal: The Golden Triangle & the Himalayas",

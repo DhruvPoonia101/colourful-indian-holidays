@@ -26,9 +26,9 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Ranthambore Tiger Safari Tours | Rajasthan's Best Wildlife Destination";
+const title = "Ranthambore Tiger Safari Tours | Rajasthan Wildlife";
 const description =
-  "Plan a private Ranthambore safari — one of India's best tiger-sighting parks, easily combined with a wider Rajasthan itinerary. Expert-guided jeep safaris with a private driver.";
+  "A private Ranthambore safari — one of India's best tiger-sighting parks, easily combined with Rajasthan. Guided jeep safaris with a private driver.";
 const pagePath = "/destinations/ranthambore";
 const heroImage = "/images/destinations/ranthambore-tiger.webp";
 

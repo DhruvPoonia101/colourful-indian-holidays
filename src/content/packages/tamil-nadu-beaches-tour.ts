@@ -14,9 +14,9 @@ export const tamilNaduBeachesTour: PackageContent = {
   slug: "tamil-nadu-beaches-tour",
   name: "Tamil Nadu Beaches Tour",
   tagline: "Rameswaram & Kanyakumari · 5 Days",
-  metaTitle: "Tamil Nadu Beaches Tour Package | Rameswaram, Dhanushkodi & Kanyakumari",
+  metaTitle: "Tamil Nadu Beaches Tour | Rameswaram & Kanyakumari",
   metaDescription:
-    "A private 5-day tour of Tamil Nadu's southern coast — the Ramanathaswamy Temple, Dhanushkodi's ghost town, and Kanyakumari, where three seas meet at India's southern tip.",
+    "A private 5-day Tamil Nadu coast tour — Ramanathaswamy Temple, Dhanushkodi's ghost town and Kanyakumari, where three seas meet at India's southern tip.",
   heroImage: "/images/destinations/kanyakumari-beach.webp",
   heroImageAlt: "The Vivekananda Rock Memorial and Thiruvalluvar Statue off Kanyakumari's coast",
   heroHeadline: "Tamil Nadu's Southern Coast: Rameswaram & Kanyakumari",

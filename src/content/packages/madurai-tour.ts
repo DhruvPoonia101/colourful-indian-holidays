@@ -14,7 +14,7 @@ export const maduraiTour: PackageContent = {
   slug: "madurai-tour",
   name: "Madurai Temple Tour",
   tagline: "The Meenakshi Amman Temple · 4 Days",
-  metaTitle: "Madurai Tour Package | Meenakshi Amman Temple & Thirumalai Nayakkar Palace",
+  metaTitle: "Madurai Tour Package | Meenakshi Temple & Palace",
   metaDescription:
     "A private 4-day Madurai tour — the Meenakshi Amman Temple's towering gopurams, Thirumalai Nayakkar Palace, the Teppakulam temple tank, and Thiruparankundram.",
   heroImage: "/images/destinations/madurai.webp",

@@ -28,7 +28,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Chitwan National Park | Jungle Safaris & One-Horned Rhinos";
 const description =
-  "Plan a Chitwan safari — jeep and canoe safaris tracking one-horned rhinos and Bengal tigers, plus Tharu village culture, in Nepal's UNESCO-listed lowland jungle.";
+  "Plan a Chitwan safari — jeep and canoe safaris tracking one-horned rhinos and Bengal tigers, plus Tharu village culture, in Nepal's UNESCO jungle.";
 const pagePath = "/destinations/chitwan";
 const heroImage = "/images/destinations/chitwan-elephants-grassland.webp";
 

@@ -38,9 +38,9 @@ export const trekkingTours: ExperienceContent = {
   slug: "trekking-tours",
   name: "Trekking Tours",
   tagline: "The Markha Valley Trek, Ladakh · 9 Days",
-  metaTitle: "Markha Valley Trek, Ladakh | 9-Day Guided Himalayan Trekking Tour",
+  metaTitle: "Markha Valley Trek, Ladakh | 9-Day Guided Himalayan Trek",
   metaDescription:
-    "A 9-day guided trek through Ladakh's Markha Valley — crossing Ganda La and Kongmaru La passes, Hemis National Park's high-altitude villages, and the ancient Silk Route.",
+    "A 9-day guided trek through Ladakh's Markha Valley — Ganda La and Kongmaru La passes, Hemis National Park's high villages and the ancient Silk Route.",
   heroImage: "/images/destinations/Leh-5.webp",
   heroImageAlt: "The Leh valley seen from above, with the Himalayas beyond",
   heroHeadline: "Trekking Tours: The Markha Valley, Ladakh",

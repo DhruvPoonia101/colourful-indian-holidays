@@ -26,9 +26,9 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Delhi Tour Packages for International Travellers | Gateway to India";
+const title = "Delhi Tour Packages | Red Fort, Qutub Minar & Old Delhi";
 const description =
-  "Plan a private Delhi tour — Red Fort, Qutub Minar, Humayun's Tomb and Old Delhi's bazaars, with an English-speaking guide and driver. The natural starting point for a Golden Triangle or Rajasthan trip.";
+  "A private Delhi tour — Red Fort, Qutub Minar, Humayun's Tomb and Old Delhi's bazaars, with a guide and driver. The start of any Golden Triangle trip.";
 const pagePath = "/destinations/delhi";
 const heroImage = "/images/destinations/delhi-india-gate.webp";
 

@@ -21,7 +21,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "International Yoga Festival, Rishikesh | Festival Guide";
 const description =
-  "A week of yoga, meditation and Ayurveda taught by instructors from around the world on the banks of the Ganges — held each year in the city widely regarded as the birthplace of modern yoga tourism.";
+  "A week of yoga, meditation and Ayurveda taught by instructors from around the world on the banks of the Ganges, held each year in Rishikesh.";
 const pagePath = "/experiences/international-yoga-festival-rishikesh";
 const heroImage = "/images/destinations/rishikesh-2.webp";
 

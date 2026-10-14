@@ -44,9 +44,9 @@ export const unescoHeritageSites: ExperienceContent = {
   slug: "unesco-heritage-sites",
   name: "UNESCO Heritage Sites",
   tagline: "India's World Heritage Highlights · 8 Days",
-  metaTitle: "India UNESCO World Heritage Tour | Taj Mahal, Ajanta, Ellora & Konark",
+  metaTitle: "India UNESCO World Heritage Tour | Taj, Ajanta & Konark",
   metaDescription:
-    "An 8-day tour built around India's UNESCO World Heritage List — Delhi's three listed monuments, the Taj Mahal, Ajanta and Ellora's rock-cut caves, and the Konark Sun Temple.",
+    "An 8-day tour of India's UNESCO World Heritage sites — Delhi's three listed monuments, the Taj Mahal, Ajanta and Ellora's caves and the Konark Sun Temple.",
   heroImage: "/images/destinations/agra-taj-mahal.webp",
   heroImageAlt: "Taj Mahal at sunrise, Agra",
   heroHeadline: "UNESCO Heritage Sites: India's World Heritage Highlights",

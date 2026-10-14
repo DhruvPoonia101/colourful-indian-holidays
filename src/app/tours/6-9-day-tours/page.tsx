@@ -12,9 +12,9 @@ import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import { renderWithLinks } from "@/lib/render-with-links";
 
-const title = "6–9 Day India Tours | Classic Circuits & Full Highlights, 2026";
+const title = "6–9 Day India Tours | Classic Circuits, 2026";
 const description =
-  "6 to 9 day India tour packages — the classic Golden Triangle, Rajasthan, Kerala and South India circuits, plus Nepal, Bhutan and wildlife safaris, built privately around your dates.";
+  "6 to 9 day India tour packages — Golden Triangle, Rajasthan, Kerala and South India circuits, plus Nepal, Bhutan and safaris, planned privately.";
 const pagePath = "/tours/6-9-day-tours";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 

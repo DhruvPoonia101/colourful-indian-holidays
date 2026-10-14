@@ -10,7 +10,7 @@ export const southIndiaToursClassic: PackageContent = {
   slug: "south-india-tours-classic",
   name: "South India Tours",
   tagline: "The Classic Circuit · 6 Days",
-  metaTitle: "South India Tour Package | Chennai, Mahabalipuram & Pondicherry",
+  metaTitle: "South India Tour | Chennai, Mahabalipuram & Pondicherry",
   metaDescription:
     "A private 6-day South India tour — Chennai's temples and beaches, Mahabalipuram's rock-cut monuments, and Pondicherry's French colonial quarter.",
   heroImage: "/images/destinations/chennai.webp",

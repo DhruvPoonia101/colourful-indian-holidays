@@ -28,7 +28,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Pench National Park | The Original Jungle Book Setting";
 const description =
-  "Plan a trip to Pench National Park — widely considered the reserve that most directly inspired Rudyard Kipling's The Jungle Book, with a healthy and growing tiger population.";
+  "Plan a trip to Pench National Park — widely seen as the reserve that inspired Kipling's The Jungle Book, with a healthy and growing tiger population.";
 const pagePath = "/destinations/pench";
 const heroImage = "/images/destinations/pench-tiger-safari.webp";
 

@@ -12,7 +12,7 @@ export const nepalTours: PackageContent = {
   tagline: "Temples, Mountains & the Jungle",
   metaTitle: "Nepal Tour Packages | Kathmandu, Pokhara, Nagarkot & Chitwan",
   metaDescription:
-    "A private 8-day Nepal tour through Kathmandu, Nagarkot, Pokhara and Chitwan — UNESCO temple squares, Himalayan sunrise views, and a jungle safari, all with a private guide.",
+    "A private 8-day Nepal tour through Kathmandu, Nagarkot, Pokhara and Chitwan — UNESCO temple squares, Himalayan sunrises and a jungle safari.",
   heroImage: "/images/destinations/pokhara-valley-machapuchare-view.webp",
   heroImageAlt: "Pokhara valley with Machapuchare mountain view, Nepal",
   heroHeadline: "Nepal: Temples, Mountains & the Jungle",

@@ -33,7 +33,7 @@ export const foodCookingTours: ExperienceContent = {
   slug: "food-cooking-tours",
   name: "Food & Cooking Tours",
   tagline: "Delhi's Street Food & Rajasthan's Royal Kitchens · 6 Days",
-  metaTitle: "India Food Tour | Delhi Street Food & Rajasthani Cooking Class",
+  metaTitle: "India Food Tour | Delhi Street Food & Cooking Class",
   metaDescription:
     "A 6-day culinary trip through Delhi and Rajasthan — Chandni Chowk's street food, a Rajasthani cooking class, and a spice market walk in Jaipur's old city.",
   heroImage: "/images/destinations/delhi-chandni-chowk-street-food.webp",

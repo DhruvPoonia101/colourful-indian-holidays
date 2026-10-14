@@ -23,9 +23,9 @@ export const varanasiGangesTours: ExperienceContent = {
   slug: "varanasi-ganges-tours",
   name: "Varanasi & Ganges Tours",
   tagline: "India's Spiritual Heart, in Full · 5 Days",
-  metaTitle: "Varanasi & Ganges Tour | Sunrise Boat Ride, Ganga Aarti & Sarnath",
+  metaTitle: "Varanasi & Ganges Tour | Sunrise Boat Ride & Ganga Aarti",
   metaDescription:
-    "A 5-day deep dive into Varanasi — a sunrise boat ride on the Ganges, the evening Ganga Aarti, Banarasi silk weaving, and a half-day at Sarnath, where the Buddha's teaching began.",
+    "A 5-day deep dive into Varanasi — a sunrise boat ride on the Ganges, the evening Ganga Aarti, Banarasi silk weaving and a half-day at Sarnath.",
   heroImage: "/images/destinations/varanasi.webp",
   heroImageAlt: "Boats along the ghats of Varanasi on the Ganges",
   heroHeadline: "Varanasi & Ganges: India's Spiritual Heart, in Full",

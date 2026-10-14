@@ -31,9 +31,9 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * sign in frame.
  */
 
-const title = "Wildlife & Tiger Safari Tours | Ranthambore, Bandhavgarh, Kaziranga & Periyar";
+const title = "India Tiger Safari Tours | Ranthambore, Kanha & Kaziranga";
 const description =
-  "Private wildlife tours across India's tiger reserves and national parks — Ranthambore, Bandhavgarh, Kanha and Pench, Kaziranga's rhinos, and Periyar's boat safaris.";
+  "Private wildlife tours across India's tiger reserves — Ranthambore, Bandhavgarh, Kanha, Pench, Kaziranga's rhinos and Periyar's boat safaris.";
 const pagePath = "/tours/wildlife-tiger-safari-tours";
 const heroImage = "/images/destinations/ranthambore-tiger.webp";
 

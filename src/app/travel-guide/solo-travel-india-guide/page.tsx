@@ -8,7 +8,6 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
-import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -33,7 +32,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Solo Travel in India: A Practical Guide for First-Timers";
 const description =
-  "An honest guide to travelling alone in India — how to get around, what scams to expect, advice for solo women, emergency numbers, and how a private tour can work for one person.";
+  "An honest guide to solo travel in India — getting around, common scams, advice for solo women, emergency numbers and how a private tour works for one.";
 const pagePath = "/travel-guide/solo-travel-india-guide";
 const heroImage = "/images/destinations/jaipur-hawa-mahal.webp";
 const datePublished = "2026-09-28";
@@ -395,15 +394,6 @@ export default function SoloTravelIndiaGuidePage() {
             open.
           </ArticleP>
         </ArticleBody>
-
-        <FAQSection
-          eyebrow="FAQ"
-          heading="Common Questions About Solo Travel in India"
-          intro="Straight answers to the questions solo travellers actually ask."
-          faqs={faqs}
-          whatsappMessage="Hi! I'm planning a solo trip to India and would like help with the first few days."
-          topDivider
-        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

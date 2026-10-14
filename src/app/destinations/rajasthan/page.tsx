@@ -31,9 +31,9 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Rajasthan Tour Packages for International Travellers | Forts, Palaces & Desert";
+const title = "Rajasthan Tour Packages | Forts, Palaces & Desert";
 const description =
-  "Plan a private Rajasthan tour across Jaipur, Udaipur, Jodhpur, Jaisalmer and Pushkar — heritage palace hotels, English-speaking guides, and custom itineraries for travellers from the USA, UK, Australia and beyond.";
+  "Plan a private Rajasthan tour across Jaipur, Udaipur, Jodhpur, Jaisalmer and Pushkar — palace hotels, English-speaking guides and custom itineraries.";
 const pagePath = "/destinations/rajasthan";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 

@@ -10,9 +10,9 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import { associations } from "@/content/home";
 
-const title = "Awards & Recognition";
+const title = "Awards & Recognition | Colourful Indian Holidays";
 const description =
-  "Colourful Indian Holidays is an IATO-registered agency recognised by Rajasthan Tourism and the Ministry of Tourism, Government of India, with a 4.9★ rating on both Tripadvisor and Google.";
+  "IATO-registered and recognised by Rajasthan Tourism and the Ministry of Tourism, with a 4.9★ rating on both Tripadvisor and Google.";
 const pagePath = "/awards-recognition";
 
 export const metadata: Metadata = {

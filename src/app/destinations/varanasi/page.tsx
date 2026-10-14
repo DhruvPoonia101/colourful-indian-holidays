@@ -26,9 +26,9 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Varanasi Tour Packages for International Travellers | The Ganges & Ganga Aarti";
+const title = "Varanasi Tour Packages | The Ganges & Ganga Aarti";
 const description =
-  "Plan a private Varanasi trip — the evening Ganga Aarti, a sunrise boat ride, Kashi Vishwanath Temple and Sarnath, with an English-speaking guide. India's most significant pilgrimage city.";
+  "A private Varanasi trip — the evening Ganga Aarti, a sunrise boat ride, Kashi Vishwanath Temple and Sarnath, with an English-speaking guide.";
 const pagePath = "/destinations/varanasi";
 const heroImage = "/images/destinations/varanasi-2.webp";
 const ctaImage = "/images/destinations/varanasi.webp";

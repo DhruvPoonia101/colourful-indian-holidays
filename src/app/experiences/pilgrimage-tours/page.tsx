@@ -33,9 +33,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * generic questions reused from another page.
  */
 
-const title = "Pilgrimage Tours | India's Sacred Sites & Living Faith Traditions";
+const title = "Pilgrimage Tours India | Sacred Sites & Faith Traditions";
 const description =
-  "Plan a trip around India's pilgrimage sites and religious festivals — the Golden Temple, Rishikesh and Haridwar on the Ganges, Kumbh Mela, the Ajmer Urs, and Pushkar's sacred lake.";
+  "Plan a trip around India's pilgrimage sites and festivals — the Golden Temple, Rishikesh and Haridwar, Kumbh Mela, the Ajmer Urs and Pushkar's sacred lake.";
 const pagePath = "/experiences/pilgrimage-tours";
 const heroImage = "/images/destinations/amritsar.webp";
 

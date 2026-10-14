@@ -17,7 +17,7 @@ export const keralaBeachesTour: PackageContent = {
   slug: "kerala-beaches-tour",
   name: "Kerala Beaches Tour",
   tagline: "Kovalam & Varkala · 4 Days",
-  metaTitle: "Kerala Beaches Tour Package | Kovalam Lighthouse Beach & Varkala Cliff",
+  metaTitle: "Kerala Beaches Tour | Kovalam & Varkala Cliff",
   metaDescription:
     "A private 4-day Kerala beaches tour — Kovalam's Lighthouse Beach, an Ayurvedic wellness treatment, and Varkala's dramatic cliffside coastline.",
   heroImage: "/images/destinations/alleppey-2.webp",

@@ -33,9 +33,9 @@ export const culturalTours: ExperienceContent = {
   slug: "cultural-tours",
   name: "Cultural Tours",
   tagline: "Jaipur & Pushkar's Living Traditions · 5 Days",
-  metaTitle: "Rajasthan Cultural Tour | Jaipur Bazaars, Puppet Shows & Pushkar",
+  metaTitle: "Rajasthan Cultural Tour | Jaipur Bazaars & Pushkar",
   metaDescription:
-    "A 5-day cultural tour of Jaipur and Pushkar built around living traditions rather than monuments — bustling bazaars, a puppet show, folk music, and a hands-on block-printing workshop.",
+    "A 5-day cultural tour of Jaipur and Pushkar built around living traditions — bazaars, a puppet show, folk music and a block-printing workshop.",
   heroImage: "/images/destinations/jaipur-hawa-mahal.webp",
   heroImageAlt: "Hawa Mahal and street life in Jaipur's old city",
   heroHeadline: "Cultural Tours: Rajasthan's Living Traditions",

@@ -35,9 +35,9 @@ export const yogaWellnessTours: ExperienceContent = {
   slug: "yoga-wellness-tours",
   name: "Yoga & Wellness Tours",
   tagline: "Rishikesh & Kerala's Ayurveda Coast · 8 Days",
-  metaTitle: "India Yoga & Wellness Retreat | Rishikesh Yoga & Kerala Ayurveda",
+  metaTitle: "India Yoga & Wellness Retreat | Rishikesh & Kerala",
   metaDescription:
-    "An 8-day wellness itinerary combining Rishikesh's yoga and ashram tradition with Kerala's Ayurvedic heritage — India's two most significant wellness traditions in one trip.",
+    "An 8-day wellness itinerary pairing Rishikesh's yoga and ashram tradition with Kerala's Ayurvedic heritage — India's two great wellness traditions.",
   heroImage: "/images/destinations/rishikesh-2.webp",
   heroImageAlt: "The Lakshman Jhula suspension bridge over the Ganges, Rishikesh",
   heroHeadline: "Yoga & Wellness Tours: Rishikesh & Kerala",

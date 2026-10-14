@@ -20,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Jaipur Teej Festival | Festival Guide";
 const description =
-  "A royal Rajasthani procession marking the arrival of the monsoon — decorated elephants and camels move through Jaipur's old city, with women celebrating in traditional green dress.";
+  "A royal Rajasthani procession marking the arrival of the monsoon — decorated elephants and camels through Jaipur's old city, women in traditional green.";
 const pagePath = "/experiences/teej-festival";
 const heroImage = "/images/destinations/teej-festival.webp";
 

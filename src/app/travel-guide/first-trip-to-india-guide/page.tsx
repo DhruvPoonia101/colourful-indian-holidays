@@ -8,7 +8,6 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
-import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -27,7 +26,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "First Trip to India: What to Know Before You Go";
 const description =
-  "A practical starting point for a first trip to India — how long to plan for, the visa and health basics, what to expect on the ground, and where to actually start.";
+  "A practical starting point for a first trip to India — how long to plan, visa and health basics, what to expect on the ground and where to start.";
 const pagePath = "/travel-guide/first-trip-to-india-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-30";
@@ -355,15 +354,6 @@ export default function FirstTripToIndiaGuidePage() {
             itinerary around them.
           </ArticleP>
         </ArticleBody>
-
-        <FAQSection
-          eyebrow="FAQ"
-          heading="Common Questions About a First Trip to India"
-          intro="Straight answers to the questions first-time visitors actually ask."
-          faqs={faqs}
-          whatsappMessage="Hi! I'm planning my first trip to India and would like some help."
-          topDivider
-        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

@@ -36,9 +36,9 @@ export const villageExperiences: ExperienceContent = {
   slug: "village-experiences",
   name: "Village Experiences",
   tagline: "Shekhawati's Painted Havelis & a Rural Homestay · 5 Days",
-  metaTitle: "Rajasthan Village Tour | Shekhawati Havelis & a Rural Homestay",
+  metaTitle: "Rajasthan Village Tour | Shekhawati Havelis & Homestay",
   metaDescription:
-    "A 5-day trip into rural Rajasthan — Shekhawati's painted haveli towns, an open-air fresco gallery, and a genuine village homestay away from the standard city circuit.",
+    "A 5-day trip into rural Rajasthan — Shekhawati's painted haveli towns, an open-air fresco gallery and a genuine village homestay off the city circuit.",
   heroImage: "/images/destinations/shekhawati-nawalgarh-haveli.webp",
   heroImageAlt: "A painted haveli courtyard in Shekhawati",
   heroHeadline: "Village Experiences: Shekhawati & Rural Rajasthan",

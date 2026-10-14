@@ -22,9 +22,9 @@ export const everestRegion: ExperienceContent = {
   slug: "everest-region",
   name: "Everest Region",
   tagline: "Namche Bazaar & the World's Highest Peak",
-  metaTitle: "Everest Region Tour | Namche Bazaar, Tengboche & the Khumbu, Nepal",
+  metaTitle: "Everest Region Tour | Namche Bazaar & Tengboche",
   metaDescription:
-    "A 6-day trek into Nepal's Khumbu region — Lukla, Namche Bazaar, and Tengboche Monastery, with genuine Everest views, without committing to the full 12-day Base Camp trek.",
+    "A 6-day trek into Nepal's Khumbu — Lukla, Namche Bazaar and Tengboche Monastery, with genuine Everest views, without the full 12-day Base Camp trek.",
   heroImage: "/images/destinations/everest-kala-patthar-view.webp",
   heroImageAlt: "Everest and the Khumbu glacier, seen from Kala Patthar, Nepal",
   heroHeadline: "Everest Region: Namche Bazaar & the Khumbu",

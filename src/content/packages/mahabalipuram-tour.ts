@@ -10,7 +10,7 @@ export const mahabalipuramTour: PackageContent = {
   slug: "mahabalipuram-tour",
   name: "Mahabalipuram Tour",
   tagline: "UNESCO Rock-Cut Monuments · 3 Days",
-  metaTitle: "Mahabalipuram Tour Package | Shore Temple, Five Rathas & a Stone-Carving Workshop",
+  metaTitle: "Mahabalipuram Tour | Shore Temple & Five Rathas",
   metaDescription:
     "A private 3-day Mahabalipuram tour — the Shore Temple, Five Rathas, Krishna's Butterball, a working stone-carving workshop, and the nearby Crocodile Bank.",
   heroImage: "/images/destinations/chennai.webp",

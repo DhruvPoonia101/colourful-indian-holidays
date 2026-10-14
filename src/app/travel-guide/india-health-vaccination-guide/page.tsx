@@ -7,7 +7,6 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
-import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -28,9 +27,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * shift over time.
  */
 
-const title = "India Health & Vaccination Guide: What to Know Before You Travel";
+const title = "Vaccinations for India: Health Guide for Travellers";
 const description =
-  "General health and vaccination guidance for international travellers to India — commonly recommended vaccines, food and water safety, malaria precautions, and when to see a travel health clinic. Not a substitute for medical advice.";
+  "Commonly recommended vaccines for India, food and water safety and malaria precautions for travellers. Not a substitute for medical advice.";
 const pagePath = "/travel-guide/india-health-vaccination-guide";
 const heroImage = "/images/destinations/rishikesh-2.webp";
 const datePublished = "2026-09-25";
@@ -377,15 +376,6 @@ export default function IndiaHealthVaccinationGuidePage() {
             have — is exactly where we come in.
           </ArticleP>
         </ArticleBody>
-
-        <FAQSection
-          eyebrow="FAQ"
-          heading="Common Questions About Health & Vaccinations"
-          intro="Straight answers to the questions travellers ask before they go."
-          faqs={faqs}
-          whatsappMessage="Hi! I have a question before booking my trip with Colourful Indian Holidays."
-          topDivider
-        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

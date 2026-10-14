@@ -20,7 +20,7 @@ export const maharashtraTour: PackageContent = {
   tagline: "Ajanta, Ellora & Shirdi",
   metaTitle: "Maharashtra Tour Package | Ajanta & Ellora Caves, Shirdi",
   metaDescription:
-    "A private 5-day Maharashtra tour beyond Mumbai — the UNESCO-listed Ajanta and Ellora cave temples near Aurangabad, and Shirdi, one of India's most-visited pilgrimage towns.",
+    "A private 5-day Maharashtra tour beyond Mumbai — the UNESCO-listed Ajanta and Ellora caves near Aurangabad, and the pilgrimage town of Shirdi.",
   heroImage: "/images/destinations/maharashtra-ajanta-caves.webp",
   heroImageAlt: "The interior of a rock-cut cave temple at Ajanta, Maharashtra",
   heroHeadline: "Maharashtra: Beyond Mumbai",

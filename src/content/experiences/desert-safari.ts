@@ -10,9 +10,9 @@ export const desertSafari: ExperienceContent = {
   slug: "desert-safari",
   name: "Desert Safari",
   tagline: "Camel Camps & the Thar Desert · 3 Days",
-  metaTitle: "Thar Desert Safari Package | Jaisalmer Camel Safari & Overnight Desert Camp",
+  metaTitle: "Thar Desert Safari | Jaisalmer Camel Safari & Camp",
   metaDescription:
-    "A 3-day Thar Desert safari from Jaisalmer — a sunset camel safari into the dunes, two nights at desert camps, a Bishnoi village visit, and an optional jeep dune-bashing excursion.",
+    "A 3-day Thar Desert safari from Jaisalmer — sunset camel safari, two nights at desert camps, a Bishnoi village visit and optional jeep dune-bashing.",
   heroImage: "/images/destinations/jaisalmer-desert.webp",
   heroImageAlt: "Camel caravan crossing the Thar Desert dunes near Jaisalmer",
   heroHeadline: "The Thar Desert: Camel Camps Under an Open Sky",

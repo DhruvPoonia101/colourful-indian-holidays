@@ -17,9 +17,9 @@ export const indiaNepalBhutanTours: PackageContent = {
   slug: "india-nepal-bhutan-tours",
   name: "India, Nepal & Bhutan Tours",
   tagline: "Three Countries, One Himalayan Journey",
-  metaTitle: "India, Nepal & Bhutan Tour Package | Delhi, Agra, Kathmandu & Thimphu",
+  metaTitle: "India, Nepal & Bhutan Tour | Taj Mahal to Tiger's Nest",
   metaDescription:
-    "A private 12-day circuit through India, Nepal and Bhutan — the Taj Mahal, Kathmandu's temples, Bhutan's dzongs, and the cliffside Tiger's Nest, in a single South Asia journey.",
+    "A private 12-day circuit through India, Nepal and Bhutan — the Taj Mahal, Kathmandu's temples, Bhutan's dzongs and the Tiger's Nest, in one journey.",
   heroImage: "/images/destinations/paro-taktsang-tigers-nest.webp",
   heroImageAlt: "Paro Taktsang, the Tiger's Nest Monastery, Bhutan",
   heroHeadline: "India, Nepal & Bhutan: Three Countries, One Journey",

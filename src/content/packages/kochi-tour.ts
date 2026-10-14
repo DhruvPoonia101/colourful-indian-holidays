@@ -10,9 +10,9 @@ export const kochiTour: PackageContent = {
   slug: "kochi-tour",
   name: "Kochi City Tour",
   tagline: "Fort Kochi & Colonial Heritage · 4 Days",
-  metaTitle: "Kochi Tour Package | Fort Kochi, Chinese Fishing Nets & Kathakali",
+  metaTitle: "Kochi Tour Package | Fort Kochi & Kathakali",
   metaDescription:
-    "A private 4-day Kochi tour — Fort Kochi's colonial lanes, the Chinese fishing nets, a traditional Kathakali performance, and a canal cruise through Kochi's own backwaters.",
+    "A private 4-day Kochi tour — Fort Kochi's colonial lanes, Chinese fishing nets, a Kathakali performance and a canal cruise through Kochi's backwaters.",
   heroImage: "/images/destinations/kochi-3.webp",
   heroImageAlt: "Chinese fishing nets at sunset, Fort Kochi, Kerala",
   heroHeadline: "Kochi: Colonial Heritage on the Arabian Sea",

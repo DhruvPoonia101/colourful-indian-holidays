@@ -10,9 +10,9 @@ export const udaipurTour: PackageContent = {
   slug: "udaipur-tour",
   name: "Udaipur Tour",
   tagline: "The City of Lakes in Depth · 4 Days",
-  metaTitle: "Udaipur Tour Package | City Palace, Lake Pichola & Jagdish Temple",
+  metaTitle: "Udaipur Tour Package | City Palace & Lake Pichola",
   metaDescription:
-    "A private 4-day Udaipur city tour — the City Palace, Lake Pichola by boat, Jagdish Temple and the Monsoon Palace at sunset, at a relaxed pace with a private guide throughout.",
+    "A private 4-day Udaipur city tour — City Palace, Lake Pichola by boat, Jagdish Temple and the Monsoon Palace at sunset, with a private guide.",
   heroImage: "/images/destinations/udaipur-lake-palace.webp",
   heroImageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
   heroHeadline: "Udaipur: The City of Lakes, Properly Explored",

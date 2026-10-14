@@ -10,9 +10,9 @@ export const heritageTours: ExperienceContent = {
   slug: "heritage-tours",
   name: "Heritage Tours",
   tagline: "Khajuraho & Varanasi · 5 Days",
-  metaTitle: "India Heritage Tour Package | Khajuraho Temples, Varanasi & Sarnath",
+  metaTitle: "India Heritage Tour | Khajuraho, Varanasi & Sarnath",
   metaDescription:
-    "A private 5-day heritage tour — Khajuraho's UNESCO-listed temple carvings, Varanasi's ghats and evening Ganga Aarti, and Sarnath, where the Buddha delivered his first sermon.",
+    "A private 5-day heritage tour — Khajuraho's UNESCO temple carvings, Varanasi's ghats and evening Ganga Aarti, and Sarnath, site of the first sermon.",
   heroImage: "/images/destinations/khajuraho-western-group.webp",
   heroImageAlt: "The Western Group temples at Khajuraho, Madhya Pradesh",
   heroHeadline: "Heritage Tours: Temples, Ghats & Buddhist Roots",

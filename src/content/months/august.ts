@@ -3,7 +3,7 @@ import type { MonthContent } from "./types";
 export const august: MonthContent = {
   slug: "august",
   name: "August",
-  metaTitle: "Best Time to Visit India in August | Weather, Festivals & Where to Go",
+  metaTitle: "Best Time to Visit India in August | Weather & Festivals",
   metaDescription:
     "August is deep monsoon season across most of India, with Independence Day and Teej among its highlights — Leh & Ladakh remains the clearest exception.",
   heroImage: "/images/destinations/Leh-4.webp",

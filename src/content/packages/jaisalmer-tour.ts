@@ -10,7 +10,7 @@ export const jaisalmerTour: PackageContent = {
   slug: "jaisalmer-tour",
   name: "Jaisalmer Tour",
   tagline: "The Golden City in Depth · 4 Days",
-  metaTitle: "Jaisalmer Tour Package | Jaisalmer Fort, Havelis & the Thar Desert",
+  metaTitle: "Jaisalmer Tour Package | Fort, Havelis & Thar Desert",
   metaDescription:
     "A private 4-day Jaisalmer city tour — the living fort, Patwon Ki Haveli's carved mansions, Gadisar Lake and a sunset camel ride into the Thar Desert.",
   heroImage: "/images/destinations/jaisalmer-fort.webp",

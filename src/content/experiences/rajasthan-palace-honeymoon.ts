@@ -10,9 +10,9 @@ export const rajasthanPalaceHoneymoon: ExperienceContent = {
   slug: "rajasthan-palace-honeymoon",
   name: "Rajasthan Palace Honeymoon",
   tagline: "Two Palace Cities, Built for Two · 7 Days",
-  metaTitle: "Rajasthan Palace Honeymoon | Jaipur & Udaipur Heritage Hotels",
+  metaTitle: "Rajasthan Palace Honeymoon | Jaipur & Udaipur Hotels",
   metaDescription:
-    "A private 7-day Rajasthan honeymoon through Jaipur and Udaipur — heritage palace hotels throughout, a private sunset boat ride, and candlelit dinners each evening.",
+    "A private 7-day Rajasthan honeymoon in Jaipur and Udaipur — heritage palace hotels throughout, a private sunset boat ride and candlelit dinners.",
   heroImage: "/images/destinations/amber-fort-jaipur.webp",
   heroImageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   heroHeadline: "Rajasthan for Two: Jaipur & Udaipur's Palace Hotels",

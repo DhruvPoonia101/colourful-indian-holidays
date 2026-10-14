@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const january: MonthContent = {
   slug: "january",
   name: "January",
-  metaTitle: "Best Time to Visit India in January | Weather, Festivals & Where to Go",
+  metaTitle: "Best Time to Visit India in January | Weather & Festivals",
   metaDescription:
-    "January is peak season for Rajasthan, Delhi, Agra and tiger safaris — cold, dry mornings and the clearest skies of the year. A full month-by-month guide to what to expect and where to go.",
+    "January is peak season for Rajasthan, Delhi, Agra and tiger safaris — cold, dry mornings and the clearest skies of the year. What to expect and where to go.",
   heroImage: "/images/destinations/amber-fort-jaipur.webp",
   heroImageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   heroHeadline: "Best Time to Visit India in January",

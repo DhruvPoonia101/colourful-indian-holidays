@@ -10,7 +10,7 @@ export const andamanBeachHoneymoon: ExperienceContent = {
   slug: "andaman-beach-honeymoon",
   name: "Andaman Beach Honeymoon",
   tagline: "White Sand & Turquoise Water · 5 Days",
-  metaTitle: "Andaman Islands Honeymoon Package | Havelock Island & Radhanagar Beach",
+  metaTitle: "Andaman Islands Honeymoon Package | Havelock Island",
   metaDescription:
     "A private 5-day Andaman honeymoon — Havelock Island, Radhanagar Beach, snorkelling on a coral reef, and a private candlelit dinner on the sand.",
   heroImage: "/images/destinations/radhanagar-beach.webp",

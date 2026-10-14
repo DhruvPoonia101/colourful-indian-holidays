@@ -7,13 +7,12 @@ import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
-import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Top Cultural Festivals in India | Travel Guide";
 const description =
-  "From the Pushkar Camel Fair to Diwali and the Kumbh Mela — the festivals worth timing an India trip around, organised by season, with what each one actually involves for a visitor.";
+  "From the Pushkar Camel Fair to Diwali and Kumbh Mela — the festivals worth timing an India trip around, by season, and what each involves for visitors.";
 const pagePath = "/travel-guide/top-cultural-festivals-in-india";
 const heroImage = "/images/destinations/pushkar.webp";
 const datePublished = "2026-09-20";
@@ -41,29 +40,6 @@ const breadcrumbs = [
   { name: "Top Cultural Festivals in India", path: pagePath },
 ];
 
-const faqs: FaqItem[] = [
-  {
-    question: "How far in advance do we need to plan a trip around a specific festival?",
-    answer:
-      "For most of the festivals above, three to six months is a sensible window — enough time to confirm exact dates once they're published for your travel year, and to book accommodation before prices rise. Kumbh Mela is the clear exception: given the crowd sizes involved and the years-ahead astrological calculation behind its timing, planning at least a year in advance is genuinely worthwhile if a specific edition is your priority.",
-  },
-  {
-    question: "Can we combine more than one festival in a single trip?",
-    answer:
-      "Sometimes, if the dates line up and the festivals sit reasonably close together — the Elephant Festival and Holi in Jaipur are a natural pair given they fall on consecutive days, and Pushkar Fair and the Camel Festival occasionally align closely enough to combine with extra travel time. As a general rule, though, we'd recommend building a trip around one festival properly rather than trying to chase several, since the travel time between festival locations usually eats into the time you'd otherwise spend actually experiencing each one.",
-  },
-  {
-    question: "Are these festivals safe and comfortable for solo travellers or families?",
-    answer:
-      "Generally yes, though crowd density varies enormously — a quiet morning at the Kutch Mahotsav tented camp is a completely different experience from being in the middle of a Holi street celebration or the peak days of Kumbh Mela. We can advise on which festivals suit a lower-key visit versus a full-immersion experience based on your travel style and who you're travelling with.",
-  },
-  {
-    question: "Do these festivals affect flight and hotel prices?",
-    answer:
-      "Yes, noticeably, in the towns and cities directly hosting a major festival. Hotel rates in Pushkar during the fair, in Varanasi and Amritsar around Diwali, and in any Kumbh Mela host city during the festival period can rise significantly compared to the rest of the year, and availability tightens well before the dates themselves. Booking as early as your travel plans allow is genuinely the best way to avoid both problems.",
-  },
-];
-
 export default function TopCulturalFestivalsPage() {
   return (
     <>
@@ -85,11 +61,6 @@ export default function TopCulturalFestivalsPage() {
             })
           ),
         }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <main>

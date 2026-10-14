@@ -15,7 +15,7 @@ export const mumbaiTour: PackageContent = {
   slug: "mumbai-tour",
   name: "Mumbai Tour",
   tagline: "Colonial Landmarks & the Arabian Sea",
-  metaTitle: "Mumbai Tour Package | Gateway of India, Elephanta Caves & Marine Drive",
+  metaTitle: "Mumbai Tour Package | Gateway of India & Elephanta",
   metaDescription:
     "A private 4-day Mumbai tour — the Gateway of India, a UNESCO-listed railway terminus, the rock-cut Elephanta Caves, and the sweeping curve of Marine Drive.",
   heroImage: "/images/destinations/Mumbai.webp",

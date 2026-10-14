@@ -15,9 +15,9 @@ export const nepalBhutanTours: PackageContent = {
   slug: "nepal-bhutan-tours",
   name: "Nepal & Bhutan Tours",
   tagline: "Two Himalayan Kingdoms in One Trip",
-  metaTitle: "Nepal & Bhutan Tour Package | Kathmandu, Pokhara, Thimphu & Paro",
+  metaTitle: "Nepal & Bhutan Tour Package | 12 Days, Kathmandu to Paro",
   metaDescription:
-    "A private 12-day circuit through Nepal and Bhutan — Kathmandu's temples, Pokhara's mountain lake, Bhutan's dzongs, and the cliffside Tiger's Nest, connected by a short flight.",
+    "A private 12-day Nepal and Bhutan circuit — Kathmandu's temples, Pokhara's mountain lake, Bhutan's dzongs and the Tiger's Nest, linked by a short flight.",
   heroImage: "/images/destinations/paro-taktsang-tigers-nest.webp",
   heroImageAlt: "Paro Taktsang, the Tiger's Nest Monastery, Bhutan",
   heroHeadline: "Nepal & Bhutan: Two Himalayan Kingdoms",

@@ -8,7 +8,6 @@ import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
-import { FAQSection } from "@/components/destinations/FAQSection";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -37,7 +36,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Getting Around India: Flights, Trains & Roads Explained";
 const description =
-  "Domestic flights, Indian Railways' classes and booking system, and why private car and driver hire is the standard way international travellers get around — a practical, honest comparison.";
+  "Domestic flights, Indian Railways classes and booking, and why a private car and driver is the standard way to get around — an honest comparison.";
 const pagePath = "/travel-guide/getting-around-india";
 const heroImage = "/images/destinations/darjeeling-himalayan-railway.webp";
 const datePublished = "2026-09-25";
@@ -376,15 +375,6 @@ export default function GettingAroundIndiaGuidePage() {
             itinerary, not as a separate booking you have to sort out yourself.
           </ArticleP>
         </ArticleBody>
-
-        <FAQSection
-          eyebrow="FAQ"
-          heading="Common Questions About Getting Around India"
-          intro="Straight answers to the questions travellers ask about flights, trains and road transport."
-          faqs={faqs}
-          whatsappMessage="Hi! I have a question about getting around India before booking my trip with Colourful Indian Holidays."
-          topDivider
-        />
 
         <AuthorBioCard
           authorName="Dhruv Poonia"

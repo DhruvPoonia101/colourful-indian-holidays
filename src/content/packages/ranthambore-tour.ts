@@ -10,7 +10,7 @@ export const ranthamboreTour: PackageContent = {
   slug: "ranthambore-tour",
   name: "Ranthambore Tour",
   tagline: "Tiger Country, Properly Explored · 4 Days",
-  metaTitle: "Ranthambore Tour Package | Tiger Safaris, Ruined Fort & Ganesh Temple",
+  metaTitle: "Ranthambore Tour Package | Tiger Safaris & Fort",
   metaDescription:
     "A private 4-day Ranthambore tour — five safari drives across two full days, the ruined fort standing within the park, and the Trinetra Ganesh Temple.",
   heroImage: "/images/destinations/ranthambore-tiger.webp",

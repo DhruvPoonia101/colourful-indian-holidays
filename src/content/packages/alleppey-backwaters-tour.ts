@@ -10,9 +10,9 @@ export const alleppeyBackwatersTour: PackageContent = {
   slug: "alleppey-backwaters-tour",
   name: "Alleppey Backwaters Tour",
   tagline: "Houseboats & Palm-Lined Canals · 4 Days",
-  metaTitle: "Alleppey Backwaters Tour Package | Houseboat Cruise & Kumarakom",
+  metaTitle: "Alleppey Backwaters Tour | Houseboat Cruise & Kumarakom",
   metaDescription:
-    "A private 4-day Alleppey backwaters tour — a private houseboat cruise, a canoe ride through narrow village canals, and a day trip to Kumarakom's bird sanctuary.",
+    "A private 4-day Alleppey backwaters tour — a private houseboat cruise, a village canal canoe ride and a Kumarakom bird sanctuary day trip.",
   heroImage: "/images/destinations/alleppey-backwaters.webp",
   heroImageAlt: "A traditional houseboat on Alleppey's backwaters, Kerala",
   heroHeadline: "Alleppey: The Backwaters, Properly Explored",

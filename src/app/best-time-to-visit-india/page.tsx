@@ -11,9 +11,9 @@ import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import { monthTable, regionGuide, regionCallouts, bestTimeFaqs } from "@/content/best-time-to-visit-india";
 
-const title = "Best Time to Visit India | A Month-by-Month & Region-by-Region Guide";
+const title = "Best Time to Visit India | Month-by-Month & Region Guide";
 const description =
-  "When to visit Rajasthan, Delhi, wildlife parks, the Himalayas and India's coastlines — a real month-by-month, region-by-region guide to planning your trip around the right season.";
+  "When to visit Rajasthan, Delhi, wildlife parks, the Himalayas and India's coasts — a month-by-month, region-by-region guide to picking the right season.";
 const pagePath = "/best-time-to-visit-india";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 

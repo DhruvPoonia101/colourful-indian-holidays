@@ -17,7 +17,7 @@ export const lumbini: ExperienceContent = {
   tagline: "The Birthplace of the Buddha",
   metaTitle: "Lumbini Tour | The Birthplace of the Buddha, Nepal",
   metaDescription:
-    "A 2-day visit to Lumbini, Nepal — the Maya Devi Temple marking the Buddha's exact birthplace, the Ashoka Pillar, and a Monastic Zone of temples built by Buddhist nations from around the world.",
+    "A 2-day visit to Lumbini, Nepal — the Maya Devi Temple at the Buddha's birthplace, the Ashoka Pillar and a Monastic Zone built by Buddhist nations.",
   heroImage: "/images/destinations/lumbini-maya-devi-temple.webp",
   heroImageAlt: "The Maya Devi Temple and ancient ruins, Lumbini, Nepal",
   heroHeadline: "Lumbini: The Birthplace of the Buddha",

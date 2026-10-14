@@ -25,7 +25,7 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * issue in place while touching this exact file anyway.
  */
 
-const title = "Kashmir & Ladakh Tour Packages | Dal Lake, Gulmarg & Pangong Lake";
+const title = "Kashmir & Ladakh Tour Packages | Dal Lake & Pangong Lake";
 const description =
   "Private Kashmir & Ladakh tour packages in three shapes — a complete combined circuit, a Kashmir-only valley tour, and a Ladakh-only high-altitude adventure.";
 const pagePath = "/tours/kashmir-ladakh-tours";

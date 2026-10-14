@@ -14,9 +14,9 @@ export const darjeelingTour: PackageContent = {
   slug: "darjeeling-tour",
   name: "Darjeeling Tour",
   tagline: "Tea Gardens & the Himalayan Railway",
-  metaTitle: "Darjeeling Tour Package | Tiger Hill, the Toy Train & Tea Gardens",
+  metaTitle: "Darjeeling Tour Package | Tiger Hill, Toy Train & Tea",
   metaDescription:
-    "A private 4-day Darjeeling tour — sunrise over the Himalayas from Tiger Hill, a ride on the UNESCO-listed Darjeeling Himalayan Railway, and a visit to a working tea garden.",
+    "A private 4-day Darjeeling tour — Himalayan sunrise from Tiger Hill, the UNESCO-listed toy train and a visit to a working tea garden.",
   heroImage: "/images/destinations/Darjeeling.webp",
   heroImageAlt: "Darjeeling town on the hillside, West Bengal",
   heroHeadline: "Darjeeling: Tea Gardens & the Himalayan Railway",

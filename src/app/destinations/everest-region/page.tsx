@@ -26,9 +26,9 @@ import { touristDestinationJsonLd } from "@/lib/seo/place-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Everest Region | Mountain Flights & the Everest Base Camp Trek";
+const title = "Everest Region | Mountain Flights & Base Camp Trek";
 const description =
-  "See Everest with or without trekking — a scenic mountain flight from Kathmandu, or the classic Everest Base Camp trek through Sherpa villages in Nepal's Khumbu region.";
+  "See Everest with or without trekking — a scenic mountain flight from Kathmandu, or the classic Base Camp trek through Sherpa villages in the Khumbu.";
 const pagePath = "/destinations/everest-region";
 const heroImage = "/images/destinations/everest-region-gokyo-lake.webp";
 

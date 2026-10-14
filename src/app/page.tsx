@@ -21,9 +21,9 @@ import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Private India, Nepal & Bhutan Tours for International Travellers";
+const title = "Private Tours of India";
 const description =
-  "Private, tailor-made tours across India, Nepal and Bhutan for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2007.";
+  "Private, tailor-made tours across India, Nepal and Bhutan for international travellers — palace stays, safaris and custom itineraries since 2007.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | ${SITE_NAME}` },

@@ -12,7 +12,7 @@ export const tajMahalTours: PackageContent = {
   tagline: "Agra, Properly Explored · 3 Days",
   metaTitle: "Taj Mahal Tour Package | Agra Fort & Fatehpur Sikri",
   metaDescription:
-    "A private 3-day Taj Mahal tour — sunrise at the Taj, Agra Fort, and the abandoned Mughal city of Fatehpur Sikri, at a relaxed pace with a private guide throughout.",
+    "A private 3-day Taj Mahal tour — sunrise at the Taj, Agra Fort and abandoned Fatehpur Sikri, at a relaxed pace with a private guide throughout.",
   heroImage: "/images/destinations/agra-taj-mahal.webp",
   heroImageAlt: "Taj Mahal at sunrise, Agra",
   heroHeadline: "Agra: The Taj Mahal, Properly Explored",

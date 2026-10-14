@@ -29,9 +29,9 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * guides, and an FAQ section with schema (none of it existed before).
  */
 
-const title = "Golden Triangle Tour Packages | Delhi, Agra & Jaipur, 5 Ways";
+const title = "Golden Triangle Tour Packages | Delhi, Agra & Jaipur";
 const description =
-  "India's classic Delhi–Agra–Jaipur circuit, in five lengths — from the standard 6-day route to versions extended with Udaipur, Varanasi, a Ranthambore tiger safari, or Ajmer and Pushkar.";
+  "India's classic Delhi–Agra–Jaipur circuit in five private versions — the 6-day standard route, or extended with Udaipur, Varanasi, Ranthambore or Pushkar.";
 const pagePath = "/tours/golden-triangle-tour";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 

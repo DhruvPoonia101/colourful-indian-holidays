@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const december: MonthContent = {
   slug: "december",
   name: "December",
-  metaTitle: "Best Time to Visit India in December | Weather, Festivals & Where to Go",
+  metaTitle: "Best Time to Visit India in December | Weather & Festivals",
   metaDescription:
-    "December brings cold nights to Rajasthan and the Golden Triangle, warm dry days on the South Indian coast, and the busiest hotel rates of the year around Christmas and New Year.",
+    "December means cold nights in Rajasthan and the Golden Triangle, warm dry days on the southern coast, and the busiest hotel rates around Christmas.",
   heroImage: "/images/destinations/tamil-nadu-beaches.webp",
   heroImageAlt: "Aerial view of the Tamil Nadu coastline with fishing boats",
   heroHeadline: "Best Time to Visit India in December",

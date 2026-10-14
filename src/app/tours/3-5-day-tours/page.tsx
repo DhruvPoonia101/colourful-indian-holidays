@@ -14,7 +14,7 @@ import { renderWithLinks } from "@/lib/render-with-links";
 
 const title = "3–5 Day India Tours | Short Trips & Long Weekends, 2026";
 const description =
-  "3 to 5 day India tour packages for short trips and long weekends — single-city deep dives like Agra and Jaipur, plus short wildlife, beach and hill-station breaks, built privately around your dates.";
+  "3 to 5 day India tour packages — Agra and Jaipur city breaks plus short wildlife, beach and hill-station trips, built privately around your dates.";
 const pagePath = "/tours/3-5-day-tours";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 

@@ -10,7 +10,7 @@ export const tajMahalHoneymoon: ExperienceContent = {
   slug: "taj-mahal-honeymoon",
   name: "Taj Mahal Honeymoon",
   tagline: "A Monument Built for Love · 3 Days",
-  metaTitle: "Taj Mahal Honeymoon Package | Sunrise Visit & Private Candlelit Dinner",
+  metaTitle: "Taj Mahal Honeymoon Package | Sunrise & Candlelit Dinner",
   metaDescription:
     "A private 3-day Taj Mahal honeymoon — sunrise at the world's most famous monument to love, a heritage haveli stay, and a candlelit dinner with a Taj view.",
   heroImage: "/images/destinations/agra-taj-mahal.webp",

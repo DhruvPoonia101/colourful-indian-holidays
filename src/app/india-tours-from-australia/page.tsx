@@ -55,9 +55,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  *   east-coast figure.
  */
 
-const title = "India Tours from Australia | Private, Tailor-Made Itineraries";
+const title = "India Tours from Australia | Private, Tailor-Made Trips";
 const description =
-  "Private India tours for Australian travellers — direct flight options from Melbourne and Sydney, e-Visa and e-Arrival Card guidance, and itineraries built around your dates.";
+  "Private India tours for Australians — direct flight options from Sydney and Melbourne, e-Visa and e-Arrival Card help, itineraries built around your dates.";
 const pagePath = "/india-tours-from-australia";
 
 export const metadata: Metadata = {

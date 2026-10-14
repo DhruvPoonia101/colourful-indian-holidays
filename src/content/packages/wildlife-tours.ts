@@ -10,9 +10,9 @@ export const wildlifeTours: PackageContent = {
   slug: "wildlife-tours",
   name: "Wildlife Tours",
   tagline: "Tiger Safaris",
-  metaTitle: "India Wildlife & Tiger Safari Tour Packages | Ranthambore & Sariska",
+  metaTitle: "Rajasthan Tiger Safari Tour | Ranthambore & Sariska",
   metaDescription:
-    "A private 6-day wildlife tour combining Ranthambore and Sariska tiger reserves with Jaipur — jeep safaris, forest landscapes, and Rajasthan's two best-known parks.",
+    "A private 6-day wildlife tour combining Ranthambore and Sariska tiger reserves with Jaipur — jeep safaris and Rajasthan's two best-known parks.",
   heroImage: "/images/destinations/ranthambore-tiger.webp",
   heroImageAlt: "Wild tiger at Ranthambore National Park",
   heroHeadline: "Tiger Safaris: Ranthambore & Sariska",

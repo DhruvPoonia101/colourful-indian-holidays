@@ -15,9 +15,9 @@ export const periyarWildlifeTour: PackageContent = {
   slug: "periyar-wildlife-tour",
   name: "Periyar Wildlife Tour",
   tagline: "Thekkady's Tiger Reserve · 4 Days",
-  metaTitle: "Periyar Wildlife Tour Package | Boat Safari, Spice Plantations & Bamboo Rafting",
+  metaTitle: "Periyar Wildlife Tour | Boat Safari & Spice Plantations",
   metaDescription:
-    "A private 4-day Periyar wildlife tour — a boat safari on Periyar Lake, a spice plantation walk, bamboo rafting into the reserve, and a tribal village visit near Thekkady.",
+    "A private 4-day Periyar wildlife tour — a lake boat safari, a spice plantation walk, bamboo rafting into the reserve and a tribal village visit.",
   heroImage: "/images/destinations/thekkady.webp",
   heroImageAlt: "A traditional houseboat on a palm-lined waterway near Thekkady, Kerala",
   heroHeadline: "Periyar: India's Only Wildlife Reserve Explored by Boat",

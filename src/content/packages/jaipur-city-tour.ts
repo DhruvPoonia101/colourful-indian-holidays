@@ -10,9 +10,9 @@ export const jaipurCityTour: PackageContent = {
   slug: "jaipur-city-tour",
   name: "Jaipur City Tour",
   tagline: "The Pink City in Depth · 4 Days",
-  metaTitle: "Jaipur City Tour Package | Amber Fort, City Palace & Hawa Mahal",
+  metaTitle: "Jaipur City Tour Package | Amber Fort & City Palace",
   metaDescription:
-    "A private 4-day Jaipur city tour — Amber Fort, City Palace, Hawa Mahal, Jantar Mantar and the old city's bazaars, at a relaxed pace with a private guide throughout.",
+    "A private 4-day Jaipur city tour — Amber Fort, City Palace, Hawa Mahal, Jantar Mantar and old-city bazaars, with a private guide throughout.",
   heroImage: "/images/destinations/amber-fort-jaipur.webp",
   heroImageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   heroHeadline: "Jaipur: The Pink City, Properly Explored",

@@ -10,7 +10,7 @@ export const spiritualIndia: ExperienceContent = {
   slug: "spiritual-india",
   name: "Spiritual India",
   tagline: "Amritsar, Haridwar & Rishikesh · 5 Days",
-  metaTitle: "Spiritual India Tour Package | Golden Temple, Haridwar & Rishikesh",
+  metaTitle: "Spiritual India Tour | Golden Temple, Haridwar & Rishikesh",
   metaDescription:
     "A private 5-day spiritual India tour — the Golden Temple in Amritsar, the evening Ganga Aarti at Haridwar, and the ashrams and Ganges of Rishikesh.",
   heroImage: "/images/destinations/amritsar.webp",

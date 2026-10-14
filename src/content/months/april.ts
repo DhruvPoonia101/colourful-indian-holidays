@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const april: MonthContent = {
   slug: "april",
   name: "April",
-  metaTitle: "Best Time to Visit India in April | Weather, Festivals & Where to Go",
+  metaTitle: "Best Time to Visit India in April | Weather & Festivals",
   metaDescription:
-    "April brings serious heat to Rajasthan and Delhi, while Himachal, Darjeeling and Sikkim come into full spring bloom — and Ladakh's high passes begin to reopen late in the month.",
+    "April brings serious heat to Rajasthan and Delhi, while Himachal, Darjeeling and Sikkim bloom in spring — and Ladakh's high passes begin to reopen.",
   heroImage: "/images/destinations/Darjeeling.webp",
   heroImageAlt: "Darjeeling hillside town wrapped in cloud",
   heroHeadline: "Best Time to Visit India in April",

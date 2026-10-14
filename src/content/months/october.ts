@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const october: MonthContent = {
   slug: "october",
   name: "October",
-  metaTitle: "Best Time to Visit India in October | Weather, Festivals & Where to Go",
+  metaTitle: "Best Time to Visit India in October | Weather & Festivals",
   metaDescription:
-    "October is when the classic India travel season begins — clear skies, comfortable temperatures, reopening wildlife parks, and Navratri and Dussehra celebrations nationwide.",
+    "October opens the classic India travel season — clear skies, comfortable temperatures, reopening wildlife parks and Navratri and Dussehra celebrations.",
   heroImage: "/images/destinations/amber-fort-jaipur.webp",
   heroImageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   heroHeadline: "Best Time to Visit India in October",

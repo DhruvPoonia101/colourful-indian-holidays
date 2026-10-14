@@ -31,9 +31,9 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * project without issue) are pre-existing, already-live package images.
  */
 
-const title = "Nepal & Bhutan Tours | Kathmandu, Pokhara, Chitwan, Paro & Thimphu";
+const title = "Nepal & Bhutan Tours | Kathmandu, Pokhara & Paro";
 const description =
-  "Private tours to Nepal and Bhutan, standalone or combined with India — Kathmandu's temples, Pokhara's Himalayan views, Chitwan's jungle safari, and Bhutan's Tiger's Nest monastery.";
+  "Private tours of Nepal and Bhutan, standalone or with India — Kathmandu's temples, Pokhara's views, Chitwan's jungle safari and Bhutan's Tiger's Nest.";
 const pagePath = "/tours/nepal-and-bhutan-tours";
 const heroImage = "/images/destinations/pokhara-valley-machapuchare-view.webp";
 

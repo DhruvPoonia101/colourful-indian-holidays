@@ -59,9 +59,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  *   which country they're flying from).
  */
 
-const title = "India Tours from the UAE | Private, Tailor-Made Itineraries";
+const title = "India Tours from the UAE | Private, Tailor-Made Trips";
 const description =
-  "Private India tours for travellers flying from the UAE — short flight times from Dubai and Abu Dhabi, visa guidance by nationality, and itineraries built around your dates.";
+  "Private India tours from the UAE — short flights from Dubai and Abu Dhabi, visa guidance by nationality, and itineraries built around your dates.";
 const pagePath = "/india-tours-from-uae";
 
 export const metadata: Metadata = {

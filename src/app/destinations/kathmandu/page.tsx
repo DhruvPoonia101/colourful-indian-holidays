@@ -28,7 +28,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Kathmandu | Nepal's Temple-Filled Capital";
 const description =
-  "Plan a trip to Kathmandu — Durbar Square, Swayambhunath, Boudhanath and Pashupatinath — the easiest international add-on to an India itinerary, a short flight from Delhi.";
+  "Plan a trip to Kathmandu — Durbar Square, Swayambhunath, Boudhanath and Pashupatinath — the easiest add-on to an India trip, a short flight from Delhi.";
 const pagePath = "/destinations/kathmandu";
 const heroImage = "/images/destinations/kathmandu-aerial-boudhanath-city.webp";
 

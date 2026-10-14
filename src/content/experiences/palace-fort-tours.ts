@@ -43,9 +43,9 @@ export const palaceFortTours: ExperienceContent = {
   slug: "palace-fort-tours",
   name: "Palace & Fort Tours",
   tagline: "Four Signature Fortress Cities · 8 Days",
-  metaTitle: "Rajasthan Palace & Fort Tour | Amber, Kumbhalgarh, Mehrangarh & Jaisalmer",
+  metaTitle: "Rajasthan Palace & Fort Tour | Amber to Jaisalmer",
   metaDescription:
-    "An 8-day tour built purely around Rajasthan's Rajput forts and palaces — Amber Fort, Kumbhalgarh's 'Great Wall of India', Mehrangarh, and the living fort of Jaisalmer.",
+    "An 8-day tour built around Rajasthan's Rajput forts and palaces — Amber Fort, Kumbhalgarh's 'Great Wall of India', Mehrangarh and Jaisalmer's living fort.",
   heroImage: "/images/destinations/mehrangarh-fort-jodhpur.webp",
   heroImageAlt: "Mehrangarh Fort towering above Jodhpur's blue-washed old town",
   heroHeadline: "Palace & Fort Tours: Rajasthan's Rajput Strongholds",

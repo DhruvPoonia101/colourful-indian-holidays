@@ -20,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Jaipur Elephant Festival | Festival Guide";
 const description =
-  "Held on the eve of Holi in Jaipur — elephants painted with intricate traditional patterns, folk music and dance, and a festive lead-in to the following day's colour celebrations.";
+  "Held on the eve of Holi in Jaipur — elephants painted with traditional patterns, folk music and dance, and a festive lead-in to the colour celebrations.";
 const pagePath = "/experiences/elephant-festival";
 const heroImage = "/images/destinations/elephant-festival.webp";
 

@@ -12,7 +12,7 @@ export const goldenTriangleRanthamboreTours: PackageContent = {
   tagline: "The Golden Triangle, With a Tiger Safari · 8 Days",
   metaTitle: "Delhi – Agra – Jaipur – Ranthambore Tour Package | 8 Days",
   metaDescription:
-    "A private 8-day tour combining the classic Golden Triangle with a Ranthambore tiger safari — Delhi, Agra, Jaipur and two safari drives in one of India's best tiger reserves.",
+    "A private 8-day tour combining the Golden Triangle with a Ranthambore tiger safari — Delhi, Agra, Jaipur and two safari drives in a top tiger reserve.",
   heroImage: "/images/destinations/ranthambore-tiger.webp",
   heroImageAlt: "A wild tiger at Ranthambore National Park",
   heroHeadline: "Delhi – Agra – Jaipur – Ranthambore: The Golden Triangle, With a Tiger Safari",

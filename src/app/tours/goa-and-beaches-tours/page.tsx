@@ -34,9 +34,9 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * alleppey-2.webp, andaman-islands.webp) visually verified before reuse.
  */
 
-const title = "Goa & Beach Tours | Goa, Maharashtra, Tamil Nadu, Kerala & Andaman";
+const title = "Goa & India Beach Tours | Kerala, Tamil Nadu & Andaman";
 const description =
-  "Private beach tours across India's coastline — Goa's Portuguese-era beaches, Maharashtra's Konkan coast, Tamil Nadu's southern tip, Kerala's coast, and the Andaman Islands.";
+  "Private beach tours across India's coast — Goa's Portuguese-era beaches, the Konkan, Tamil Nadu's southern tip, Kerala and the Andaman Islands.";
 const pagePath = "/tours/goa-and-beaches-tours";
 const heroImage = "/images/destinations/Goa.webp";
 

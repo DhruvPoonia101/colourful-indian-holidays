@@ -1,23 +1,28 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { StickyWhatsAppButton } from "@/components/shared/StickyWhatsAppButton";
+import { TawkChat } from "@/components/shared/TawkChat";
 import { ConversionTracking } from "@/components/shared/ConversionTracking";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+// Self-hosted (latin subset, variable weight) so dev/build never depend on
+// reaching fonts.gstatic.com, and production has no third-party font request.
+const playfair = localFont({
+  src: "./fonts/playfair-display-latin-wght-normal.woff2",
   variable: "--font-playfair",
-  subsets: ["latin"],
+  weight: "400 900",
   display: "swap",
 });
 
-const inter = Inter({
+const inter = localFont({
+  src: "./fonts/inter-latin-wght-normal.woff2",
   variable: "--font-inter",
-  subsets: ["latin"],
+  weight: "100 900",
   display: "swap",
 });
 
@@ -25,7 +30,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: `${SITE_NAME} | Luxury Rajasthan & India Tours`,
-    template: `%s | ${SITE_NAME}`,
+    template: "%s",
   },
   description:
     "Luxury, tailor-made Rajasthan and India tour packages for international travellers. Private guides, heritage hotels and custom itineraries since 2007.",
@@ -69,6 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <Footer />
         <StickyWhatsAppButton />
+        <TawkChat />
         <Analytics />
         <GoogleAnalytics gaId="G-ZT2XFEVSBW" />
         <GoogleTagManager gtmId="GTM-NK422MVG" />

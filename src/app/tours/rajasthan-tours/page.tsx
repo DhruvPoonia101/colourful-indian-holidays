@@ -13,9 +13,9 @@ import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import { renderWithLinks } from "@/lib/render-with-links";
 
-const title = "Rajasthan Tour Packages | Jaipur, Jodhpur, Udaipur & Beyond, 5 Ways";
+const title = "Rajasthan Tour Packages | Jaipur, Jodhpur & Udaipur";
 const description =
-  "Private Rajasthan tour packages in five shapes — a classic circuit, a focused Jaipur city tour, a heritage trail, a wildlife safari route, and the full six-city Grand Circuit.";
+  "Private Rajasthan tour packages in five shapes — a classic circuit, a Jaipur city tour, a heritage trail, a wildlife route and the six-city Grand Circuit.";
 const pagePath = "/tours/rajasthan-tours";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 

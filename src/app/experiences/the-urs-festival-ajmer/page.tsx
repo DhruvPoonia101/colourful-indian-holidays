@@ -20,7 +20,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "The Urs Festival, Ajmer | Festival Guide";
 const description =
-  "Six days of devotional Sufi music and pilgrimage at Ajmer Sharif Dargah, marking the anniversary of Khwaja Moinuddin Chishti — one of South Asia's most significant Sufi shrines, open to visitors of all faiths.";
+  "Six days of devotional Sufi music and pilgrimage at Ajmer Sharif Dargah, honouring Khwaja Moinuddin Chishti — open to visitors of all faiths.";
 const pagePath = "/experiences/the-urs-festival-ajmer";
 const heroImage = "/images/destinations/pushkar-lake-ghats.webp";
 

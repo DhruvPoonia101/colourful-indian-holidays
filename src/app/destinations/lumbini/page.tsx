@@ -28,7 +28,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Lumbini | The Birthplace of the Buddha";
 const description =
-  "Plan a trip to Lumbini — the Maya Devi Temple, the Ashoka Pillar and an international monastic zone at the birthplace of the Buddha, a UNESCO World Heritage Site in Nepal.";
+  "Plan a trip to Lumbini — the Maya Devi Temple, Ashoka Pillar and monastic zone at the Buddha's birthplace, a UNESCO World Heritage Site in Nepal.";
 const pagePath = "/destinations/lumbini";
 const heroImage = "/images/destinations/lumbini-world-peace-pagoda.webp";
 

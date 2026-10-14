@@ -19,7 +19,7 @@ export const goldenTriangleVaranasiTours: PackageContent = {
   tagline: "The Golden Triangle, Extended to the Ganges · 9 Days",
   metaTitle: "Delhi – Agra – Jaipur – Varanasi Tour Package | 9 Days",
   metaDescription:
-    "A private 9-day tour extending the classic Golden Triangle to Varanasi — Delhi, Agra, Jaipur and the ghats of the Ganges, ending on a spiritual note rather than another fort.",
+    "A private 9-day tour taking the Golden Triangle on to Varanasi — Delhi, Agra, Jaipur and the Ganges ghats, ending on a spiritual note, not another fort.",
   heroImage: "/images/destinations/varanasi-evening-ganges-aarti.webp",
   heroImageAlt: "Evening Ganga Aarti ceremony in Varanasi",
   heroHeadline: "Delhi – Agra – Jaipur – Varanasi: The Golden Triangle, Extended to the Ganges",

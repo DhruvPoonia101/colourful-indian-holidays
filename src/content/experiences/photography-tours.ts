@@ -25,9 +25,9 @@ export const photographyTours: ExperienceContent = {
   slug: "photography-tours",
   name: "Photography Tours",
   tagline: "Jaipur, Jaisalmer & Varanasi, Timed for the Light · 7 Days",
-  metaTitle: "India Photography Tour | Jaipur, Jaisalmer Desert & Varanasi, Timed for Light",
+  metaTitle: "India Photography Tour | Jaipur, Jaisalmer & Varanasi",
   metaDescription:
-    "A 7-day photography-paced itinerary through Jaipur, Jaisalmer's Thar Desert and Varanasi's ghats — golden hour arrivals, sunrise starts, and buffer time built in for a second attempt at a shot.",
+    "A 7-day photography-paced itinerary through Jaipur, Jaisalmer's Thar Desert and Varanasi's ghats — golden-hour arrivals, sunrise starts and buffer time.",
   heroImage: "/images/destinations/jaisalmer-desert.webp",
   heroImageAlt: "Camel caravan crossing the Thar Desert dunes near Jaisalmer",
   heroHeadline: "Photography Tours: Jaipur, Jaisalmer & Varanasi",

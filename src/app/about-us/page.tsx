@@ -10,9 +10,9 @@ import { organizationJsonLd } from "@/lib/seo/organization-schema";
 
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "About Us";
+const title = "About Colourful Indian Holidays | IATO-Registered Since 2007";
 const description =
-  "Founded in 2007 and based in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal and Bhutan for travellers from around the world.";
+  "Founded in 2007 in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal and Bhutan for travellers worldwide.";
 const pagePath = "/about-us";
 
 export const metadata: Metadata = {

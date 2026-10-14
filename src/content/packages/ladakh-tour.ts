@@ -10,7 +10,7 @@ export const ladakhTour: PackageContent = {
   slug: "ladakh-tour",
   name: "Ladakh Tour",
   tagline: "Leh, Monasteries & Pangong Lake · 6 Days",
-  metaTitle: "Ladakh Tour Package | Leh, Nubra Valley, Pangong Lake & Khardung La",
+  metaTitle: "Ladakh Tour Package | Leh, Nubra Valley & Pangong Lake",
   metaDescription:
     "A private 6-day Ladakh tour — Leh's monasteries, a Khardung La crossing into the Nubra Valley, and a day trip to the turquoise waters of Pangong Lake.",
   heroImage: "/images/destinations/Leh-4.webp",

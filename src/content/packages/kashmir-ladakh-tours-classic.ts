@@ -10,9 +10,9 @@ export const kashmirLadakhToursClassic: PackageContent = {
   slug: "kashmir-ladakh-tours-classic",
   name: "Kashmir & Ladakh Tour",
   tagline: "The Complete Circuit · 9 Days",
-  metaTitle: "Kashmir & Ladakh Tour Package | Dal Lake, Gulmarg, Pangong Lake & Nubra Valley",
+  metaTitle: "Kashmir & Ladakh Tour | Dal Lake, Gulmarg & Pangong Lake",
   metaDescription:
-    "A private 9-day Kashmir and Ladakh tour — Srinagar's houseboats, Gulmarg's meadows, Leh's monasteries, Pangong Lake, and the Nubra Valley's high mountain passes.",
+    "A private 9-day Kashmir and Ladakh tour — Srinagar's houseboats, Gulmarg, Leh's monasteries, Pangong Lake and the Nubra Valley's high passes.",
   heroImage: "/images/destinations/Leh-4.webp",
   heroImageAlt: "Pangong Lake with motorcycles parked on the shore, Ladakh",
   heroHeadline: "Kashmir & Ladakh: Two Himalayan Worlds, One Trip",

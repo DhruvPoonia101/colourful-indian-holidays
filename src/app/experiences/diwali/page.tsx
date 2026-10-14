@@ -21,7 +21,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Diwali, the Festival of Lights | Festival Guide";
 const description =
-  "India's largest festival — diyas and string lights across homes, temples and cities, with Varanasi's ghats and Amritsar's Golden Temple offering two of the most striking public displays anywhere in the country.";
+  "India's largest festival — diyas and lights across homes and temples, with Varanasi's ghats and Amritsar's Golden Temple among the most striking displays.";
 const pagePath = "/experiences/diwali";
 const heroImage = "/images/destinations/diwali.webp";
 

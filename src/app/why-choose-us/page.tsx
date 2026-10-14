@@ -16,9 +16,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * are. No card titles or copy are duplicated from about-us/page.tsx.
  */
 
-const title = "Why Choose Us";
+const title = "Why Choose Colourful Indian Holidays | Private India Tours";
 const description =
-  "Private, tailor-made India tours vs. a fixed group departure vs. planning it yourself — a direct comparison, plus how our booking, pricing and support actually work.";
+  "Private tailor-made India tours vs a fixed group departure vs planning it yourself — a direct comparison, plus how our booking, pricing and support work.";
 const pagePath = "/why-choose-us";
 
 export const metadata: Metadata = {

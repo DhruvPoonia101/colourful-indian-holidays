@@ -10,9 +10,9 @@ export const kolkataTour: PackageContent = {
   slug: "kolkata-tour",
   name: "Kolkata Tour",
   tagline: "Colonial Grandeur & the Hooghly River",
-  metaTitle: "Kolkata Tour Package | Victoria Memorial, Howrah Bridge & Kumartuli",
+  metaTitle: "Kolkata Tour Package | Victoria Memorial & Howrah Bridge",
   metaDescription:
-    "A private 4-day Kolkata tour — the Victoria Memorial, a ride on India's last working tram system, Howrah Bridge at sunset, and the potters' quarter of Kumartuli.",
+    "A private 4-day Kolkata tour — Victoria Memorial, India's last working tram system, Howrah Bridge at sunset and the potters' quarter of Kumartuli.",
   heroImage: "/images/destinations/kolkata-victoria-memorial.webp",
   heroImageAlt: "The Victoria Memorial, Kolkata",
   heroHeadline: "Kolkata: Colonial Grandeur & the Hooghly River",
