@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
@@ -164,11 +166,11 @@ export default function RajasthanPage() {
                 </p>
                 <p>
                   For a closer look at the region&apos;s forts and monuments specifically, see our{" "}
-                  <Link prefetch={false} href="/travel-guide/monuments-in-rajasthan" className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon">
+                  <Link href="/travel-guide/monuments-in-rajasthan" className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon">
                     Monuments in Rajasthan guide
                   </Link>
                   , and for the practical side of getting between cities, our{" "}
-                  <Link prefetch={false} href="/travel-guide/hiring-a-car-in-rajasthan" className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon">
+                  <Link href="/travel-guide/hiring-a-car-in-rajasthan" className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon">
                     guide to hiring a car in Rajasthan
                   </Link>
                   . If Rajasthan is the only region on your itinerary rather than one stop on a
@@ -225,7 +227,6 @@ export default function RajasthanPage() {
           <p className="text-sm text-ink-soft">
             Prefer to arrange your own vehicle?{" "}
             <Link
-              prefetch={false}
               href="/car-rental"
               className="font-semibold text-maroon underline-offset-4 hover:underline"
             >
@@ -255,7 +256,6 @@ export default function RajasthanPage() {
                 September monsoon brings occasional rain, greener landscapes, and noticeably
                 fewer crowds.{" "}
                 <Link
-                  prefetch={false}
                   href="/best-time-to-visit-india/november"
                   className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"
                 >
@@ -288,6 +288,8 @@ export default function RajasthanPage() {
           showActions
         />
 
+        <RelatedGuides guides={guidesFor("/destinations/rajasthan")} />
+
         <FAQSection
           eyebrow="FAQ"
           heading="Common Questions About Rajasthan"
@@ -301,7 +303,6 @@ export default function RajasthanPage() {
           <p className="text-sm text-ink-soft">
             Want more tips before you go?{" "}
             <Link
-              prefetch={false}
               href="/travel-guide"
               className="font-semibold text-maroon underline-offset-4 hover:underline"
             >

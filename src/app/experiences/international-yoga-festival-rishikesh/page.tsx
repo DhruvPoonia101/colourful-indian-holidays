@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
@@ -105,7 +107,6 @@ export default function InternationalYogaFestivalRishikeshPage() {
               src="/images/destinations/rishikesh-3.webp"
               alt="The evening Ganga Aarti fire ceremony, Rishikesh"
               fill
-              sizes="(min-width: 1280px) 1216px, 100vw"
               className="object-cover"
             />
           </div>
@@ -126,6 +127,8 @@ export default function InternationalYogaFestivalRishikeshPage() {
           topDivider
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/experiences/international-yoga-festival-rishikesh")} />
 
         <FAQSection
           eyebrow="FAQ"

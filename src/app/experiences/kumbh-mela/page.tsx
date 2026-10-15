@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
@@ -105,7 +107,6 @@ export default function KumbhMelaPage() {
               src="/images/destinations/haridwar.webp"
               alt="A statue of Shiva on the Ganges riverfront, Haridwar"
               fill
-              sizes="(min-width: 1280px) 1216px, 100vw"
               className="object-cover"
             />
           </div>
@@ -126,6 +127,8 @@ export default function KumbhMelaPage() {
           topDivider
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/experiences/kumbh-mela")} />
 
         <FAQSection
           eyebrow="FAQ"

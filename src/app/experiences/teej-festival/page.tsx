@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
@@ -113,6 +115,8 @@ export default function TeejFestivalPage() {
           topDivider
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/experiences/teej-festival")} />
 
         <FAQSection
           eyebrow="FAQ"

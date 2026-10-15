@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
 import { PageHero } from "@/components/layout/PageHero";
@@ -186,6 +188,8 @@ export default function GangteyPage() {
           topDivider
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/destinations/gangtey")} />
 
         <FAQSection
           eyebrow="FAQ"

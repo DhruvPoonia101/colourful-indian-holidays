@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
@@ -120,6 +122,8 @@ export default function ThreeToFiveDayToursPage() {
           cities={threeToFiveDayTours}
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/tours/3-5-day-tours")} />
 
         <FAQSection
           eyebrow="Common Questions"

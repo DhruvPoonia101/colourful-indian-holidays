@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
@@ -133,7 +135,7 @@ export default function FestivalToursPage() {
                   worthwhile — accommodation near major festivals fills up months ahead, and
                   several of these events (the Ajmer Urs, several Rajasthan festivals) also
                   overlap naturally with our{" "}
-                  <Link prefetch={false} href="/experiences/pilgrimage-tours" className="text-maroon underline">
+                  <Link href="/experiences/pilgrimage-tours" className="text-maroon underline">
                     Pilgrimage Tours
                   </Link>{" "}
                   page, since religious pilgrimage and festival timing are closely linked for
@@ -146,7 +148,7 @@ export default function FestivalToursPage() {
                   building a trip solely around four days in one town. For a deeper look at how
                   each of these festivals fits into the wider year and where they overlap with
                   other travel plans, see our{" "}
-                  <Link prefetch={false} href="/travel-guide/top-cultural-festivals-in-india" className="text-maroon underline">
+                  <Link href="/travel-guide/top-cultural-festivals-in-india" className="text-maroon underline">
                     full guide to India&apos;s cultural festivals
                   </Link>
                   . Tell us which festival interests you and roughly when, and we&apos;ll build
@@ -156,6 +158,8 @@ export default function FestivalToursPage() {
             </Reveal>
           </div>
         </section>
+
+        <RelatedGuides guides={guidesFor("/experiences/festival-tours")} />
 
         <FAQSection
           eyebrow="FAQ"

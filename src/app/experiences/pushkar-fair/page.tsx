@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
@@ -106,7 +108,6 @@ export default function PushkarFairPage() {
                 src="/images/destinations/pushkar-brahma-temple.webp"
                 alt="The Brahma Temple, Pushkar"
                 fill
-                sizes="(min-width: 1280px) 600px, (min-width: 640px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -115,7 +116,6 @@ export default function PushkarFairPage() {
                 src="/images/destinations/pushkar-lake-ghats.webp"
                 alt="Pushkar Lake and its ghats, Rajasthan"
                 fill
-                sizes="(min-width: 1280px) 600px, (min-width: 640px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -137,6 +137,8 @@ export default function PushkarFairPage() {
           topDivider
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/experiences/pushkar-fair")} />
 
         <FAQSection
           eyebrow="FAQ"

@@ -11,6 +11,8 @@ import { InclusionsExclusions } from "@/components/packages/InclusionsExclusions
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { FiArrowRight } from "react-icons/fi";
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
@@ -161,6 +163,8 @@ export function ExperiencePageTemplate({
             showActions
           />
         )}
+
+        <RelatedGuides guides={guidesFor(`/experiences/${content.slug}`)} />
 
         <FAQSection
           eyebrow="FAQ"

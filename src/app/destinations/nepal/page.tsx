@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
@@ -112,6 +114,8 @@ export default function NepalDestinationsHubPage() {
           cities={nepalDestinations}
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/destinations/nepal")} />
 
         <FAQSection
           eyebrow="FAQ"

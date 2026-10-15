@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
@@ -119,6 +121,8 @@ export default function FifteenPlusDayToursPage() {
           cities={tenToFourteenDayTours}
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/tours/15-plus-day-tours")} />
 
         <FAQSection
           eyebrow="Common Questions"

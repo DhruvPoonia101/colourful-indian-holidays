@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
@@ -142,7 +144,6 @@ export default function PilgrimageToursPage() {
                   destinations across India — including the Char Dham Yatra in the high
                   Himalaya — see our{" "}
                   <Link
-                    prefetch={false}
                     href="/travel-guide/pilgrimage-holiday-destinations-in-india"
                     className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"
                   >
@@ -154,6 +155,8 @@ export default function PilgrimageToursPage() {
             </Reveal>
           </div>
         </section>
+
+        <RelatedGuides guides={guidesFor("/experiences/pilgrimage-tours")} />
 
         <FAQSection
           eyebrow="FAQ"

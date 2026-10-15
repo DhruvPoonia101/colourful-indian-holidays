@@ -1051,12 +1051,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/tours/gujarat-beaches-tour`,
-      lastModified: getLastModified("/tours/gujarat-beaches-tour"),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: `${SITE_URL}/tours/maharashtra-tour`,
       lastModified: getLastModified("/tours/maharashtra-tour"),
       changeFrequency: "monthly",

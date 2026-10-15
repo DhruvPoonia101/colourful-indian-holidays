@@ -1,3 +1,5 @@
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/layout/PageHero";
@@ -105,7 +107,6 @@ export default function DiwaliPage() {
               src="/images/destinations/amritsar.webp"
               alt="The Golden Temple reflected in its pool, Amritsar"
               fill
-              sizes="(min-width: 1280px) 1216px, 100vw"
               className="object-cover"
             />
           </div>
@@ -126,6 +127,8 @@ export default function DiwaliPage() {
           topDivider
           showActions
         />
+
+        <RelatedGuides guides={guidesFor("/experiences/diwali")} />
 
         <FAQSection
           eyebrow="FAQ"
