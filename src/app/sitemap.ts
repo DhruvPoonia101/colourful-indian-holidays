@@ -469,6 +469,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${SITE_URL}/india-travel-agent`,
+      lastModified: getLastModified("/india-travel-agent"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/india-tours-from-usa`,
       lastModified: getLastModified("/india-tours-from-usa"),
       changeFrequency: "monthly",

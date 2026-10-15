@@ -25,6 +25,7 @@ export const sisterCompanies = [
 export const footerCompanyLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Why Choose Us", href: "/why-choose-us" },
+  { label: "India Travel Agent", href: "/india-travel-agent" },
   { label: "Awards & Recognition", href: "/awards-recognition" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "FAQ", href: "/faq" },

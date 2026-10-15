@@ -12,6 +12,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { FiArrowRight } from "react-icons/fi";
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { ReviewsStrip } from "@/components/shared/ReviewsStrip";
 import { guidesFor } from "@/content/related-guides";
 import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -38,6 +39,8 @@ export function ExperiencePageTemplate({
   content: ExperienceContent;
   category?: { name: string; path: string };
 }) {
+  const isHoneymoon = content.slug.includes("honeymoon");
+
   const breadcrumbs = [
     { name: "Home", path: "/" },
     { name: "Experiences", path: "/experiences" },
@@ -112,6 +115,10 @@ export function ExperiencePageTemplate({
           topDivider
         />
 
+        {content.reviews && content.reviews.length > 0 && (
+          <ReviewsStrip reviews={content.reviews} topDivider />
+        )}
+
         {content.bestTimeToVisit && (
           <section className="border-t border-sand/70 py-10 text-center sm:py-14">
             <div className="mx-auto max-w-2xl px-6 sm:px-8">
@@ -148,7 +155,7 @@ export function ExperiencePageTemplate({
 
         <CityGrid
           eyebrow="Explore More"
-          heading="Other Honeymoon Experiences"
+          heading={isHoneymoon ? "Other Honeymoon Experiences" : "Explore More Experiences"}
           cities={content.relatedExperiences}
           topDivider
           showActions
@@ -179,9 +186,13 @@ export function ExperiencePageTemplate({
         <JourneyCTA
           backgroundImage={content.heroImage}
           eyebrow="Start Your Journey"
-          headline="Your Honeymoon Awaits."
+          headline={isHoneymoon ? "Your Honeymoon Awaits." : "Your India Journey Awaits."}
           headlineItalic="Let's Plan It Together."
-          subtext="Every honeymoon here is built privately around your dates and preferences — tell us what you have in mind and we'll reply within 24 hours."
+          subtext={
+            isHoneymoon
+              ? "Every honeymoon here is built privately around your dates and preferences — tell us what you have in mind and we'll reply within 24 hours."
+              : "Every journey here is built privately around your dates and preferences — tell us what you have in mind and we'll reply within 24 hours."
+          }
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage={`Hi! I'd like to book ${content.name}.`}

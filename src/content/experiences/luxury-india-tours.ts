@@ -1,4 +1,5 @@
 import type { ExperienceContent } from "./types";
+import { reviewsBy } from "@/content/reviews";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
@@ -37,7 +38,7 @@ export const luxuryIndiaTours: ExperienceContent = {
   tagline: "Delhi, Agra, Jaipur & Udaipur, Top-Tier Throughout · 10 Days",
   metaTitle: "Luxury India Tours | Palace Hotels & Private Guides",
   metaDescription:
-    "A 10-day luxury India itinerary at heritage palace and 5-star hotels — private guides, exclusive-access sightseeing and Udaipur's Lake Palace views.",
+    "A 10-day luxury India tour at heritage palace and 5-star hotels — private guides, exclusive access and Udaipur's Lake Palace. Quote within 24 hours.",
   heroImage: "/images/destinations/udaipur-lake-palace.webp",
   heroImageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
   heroHeadline: "Luxury India: The Golden Triangle & Udaipur, Elevated",
@@ -174,7 +175,23 @@ export const luxuryIndiaTours: ExperienceContent = {
     },
   ],
   showCarFleet: true,
+  reviews: reviewsBy(["Sanjiv Shah", "David Bernat"]),
   faqs: [
+    {
+      question: "How much does a luxury India tour cost?",
+      answer:
+        "We quote this itinerary on request rather than listing a fixed price, because the cost depends on four things that differ for every traveller: the hotel tier and the specific heritage palace or 5-star properties, your travel dates (October to March is peak season), the number of travellers, and the private guiding and extras you choose. Send us your dates and group size and we reply with a detailed, itemised quote within 24 hours.",
+    },
+    {
+      question: "Is Colourful Indian Holidays a registered agency?",
+      answer:
+        "Yes. We are an IATO-registered agency recognised by Rajasthan Tourism and the Ministry of Tourism, Government of India, based in Jaipur and planning private journeys since 2007. Our guests rate us 4.9 out of 5 on Google (140+ reviews) and on Tripadvisor (282+ reviews).",
+    },
+    {
+      question: "How much deposit do I pay to book a luxury India tour?",
+      answer:
+        "A 30% advance of the total tour cost secures your hotel bookings. Some luxury properties require a non-refundable deposit at the time of booking, which we flag before you confirm. The full payment and cancellation terms are on our Terms & Conditions page.",
+    },
     {
       question: "What makes this different from your standard Golden Triangle tour?",
       answer:
