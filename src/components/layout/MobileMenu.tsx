@@ -77,6 +77,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     return (
                       <li key={item.label}>
                         <Link
+                          prefetch={false}
                           href={item.href}
                           onClick={onClose}
                           className="block py-3.5 text-sm font-medium text-ink"
@@ -127,6 +128,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                       {column.items.map((link) => (
                                         <li key={link.href}>
                                           <Link
+                                            prefetch={false}
                                             href={link.href}
                                             onClick={onClose}
                                             className="block rounded-lg px-2 py-2 text-sm text-ink-soft transition-colors hover:bg-cream hover:text-maroon"
@@ -144,6 +146,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                 {item.items.map((link) => (
                                   <li key={link.href}>
                                     <Link
+                                      prefetch={false}
                                       href={link.href}
                                       onClick={onClose}
                                       className="block rounded-lg px-2 py-2 text-sm text-ink-soft transition-colors hover:bg-cream hover:text-maroon"
@@ -160,6 +163,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             )}
                             {item.viewAllHref && (
                               <Link
+                                prefetch={false}
                                 href={item.viewAllHref}
                                 onClick={onClose}
                                 className="mb-3 ml-3 inline-block text-sm font-semibold text-maroon"

@@ -192,7 +192,7 @@ export default function ShekhawatiGuidePage() {
             history of individual buildings rather than generic commentary. Most visitors reach
             Mandawa directly from Jaipur, roughly 3 to 4 hours by road, making it an easy add-on
             after our{" "}
-            <Link href="/tours/jaipur-city-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/jaipur-city-tour" className="text-maroon underline">
               Jaipur City Tour
             </Link>
             .
@@ -332,15 +332,15 @@ export default function ShekhawatiGuidePage() {
           </ArticleUL>
           <ArticleP>
             Shekhawati works well as a two or three-day addition to a wider{" "}
-            <Link href="/destinations/rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan
             </Link>{" "}
             itinerary, either inserted between Delhi and Jaipur on our{" "}
-            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle Tour
             </Link>{" "}
             if you&apos;re arriving from the capital, or as a detour before or after a longer{" "}
-            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan circuit
             </Link>
             . It genuinely

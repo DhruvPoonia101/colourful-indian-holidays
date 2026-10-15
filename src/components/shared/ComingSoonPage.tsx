@@ -49,7 +49,7 @@ export function ComingSoonPage({
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button href={hubPath}>{hubLabel}</Button>
-              <Button href="/contact" variant="outlineDark">
+              <Button href="/contact" variant="outlineDark" prefetch>
                 Contact Us
               </Button>
             </div>

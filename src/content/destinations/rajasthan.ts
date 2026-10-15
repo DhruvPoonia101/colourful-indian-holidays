@@ -57,18 +57,18 @@ export const rajasthanCities: CityCard[] = [
 ] as const;
 
 export const rajasthanMoreDestinations: MoreDestination[] = [
-  { name: "Bikaner", href: "/destinations/rajasthan/bikaner" },
-  { name: "Chittorgarh", href: "/destinations/rajasthan/chittorgarh" },
-  { name: "Kumbhalgarh", href: "/destinations/rajasthan/kumbhalgarh" },
-  { name: "Bundi", href: "/destinations/rajasthan/bundi" },
-  { name: "Ajmer", href: "/destinations/rajasthan/ajmer" },
-  { name: "Mount Abu", href: "/destinations/rajasthan/mount-abu" },
-  { name: "Mandawa", href: "/destinations/rajasthan/mandawa" },
-  { name: "Shekhawati", href: "/destinations/rajasthan/shekhawati" },
-  { name: "Alwar", href: "/destinations/rajasthan/alwar" },
-  { name: "Bharatpur", href: "/destinations/rajasthan/bharatpur" },
-  { name: "Osian", href: "/destinations/rajasthan/osian" },
-  { name: "Neemrana", href: "/destinations/rajasthan/neemrana" },
+  { name: "Bikaner" },
+  { name: "Chittorgarh" },
+  { name: "Kumbhalgarh" },
+  { name: "Bundi" },
+  { name: "Ajmer" },
+  { name: "Mount Abu" },
+  { name: "Mandawa" },
+  { name: "Shekhawati" },
+  { name: "Alwar" },
+  { name: "Bharatpur" },
+  { name: "Osian" },
+  { name: "Neemrana" },
 ] as const;
 
 export const rajasthanHighlights: Highlight[] = [

@@ -123,7 +123,7 @@ export default function MonumentsGuidePage() {
             genuinely unusual for structures this old. For an international traveller planning a
             first trip through India, that density of well-preserved, still-standing history is
             one of the strongest reasons{" "}
-            <Link href="/destinations/rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan
             </Link>{" "}
             tends to anchor the whole itinerary rather
@@ -149,7 +149,7 @@ export default function MonumentsGuidePage() {
             rather than climbing the ramp on foot, which is worth doing if you want to save your
             energy for the walk inside, since the fort itself is considerably larger than it
             first appears from below. Amber Fort anchors our{" "}
-            <Link href="/tours/jaipur-city-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/jaipur-city-tour" className="text-maroon underline">
               Jaipur City Tour
             </Link>
             , alongside the other Jaipur sites covered below.
@@ -190,7 +190,7 @@ export default function MonumentsGuidePage() {
             caste but now used more widely across the old city, is at its most striking from the
             fort&apos;s upper ramparts in the late afternoon. Mehrangarh is the centrepiece of
             our{" "}
-            <Link href="/tours/jodhpur-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/jodhpur-tour" className="text-maroon underline">
               Jodhpur Tour
             </Link>
             , which covers the fort alongside the rest of the blue city below it.
@@ -211,7 +211,7 @@ export default function MonumentsGuidePage() {
             genuinely lived-in, its long-term structural stability has become a real conservation
             concern in recent decades, and UNESCO has flagged it as at-risk — worth knowing if
             you&apos;re curious why some areas may be under restoration during your visit. Our{" "}
-            <Link href="/tours/jaisalmer-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/jaisalmer-tour" className="text-maroon underline">
               Jaisalmer Tour
             </Link>{" "}
             covers the fort in depth, along with the city&apos;s havelis and the desert dunes
@@ -233,7 +233,7 @@ export default function MonumentsGuidePage() {
             against the darkening lake. Udaipur is often described as the most romantic city in
             Rajasthan, and the view back toward the City Palace from the water is a large part of
             why that reputation holds up. Our{" "}
-            <Link href="/tours/udaipur-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/udaipur-tour" className="text-maroon underline">
               Udaipur Tour
             </Link>{" "}
             covers both palaces alongside the city&apos;s other lakes and viewpoints.
@@ -312,7 +312,7 @@ export default function MonumentsGuidePage() {
             Mahal — are notable for their extensive use of gold leaf and mirror work, some of
             the most elaborate in Rajasthan. Bikaner sits in the state&apos;s northwest, further
             off the classic Jaipur–Jodhpur–Udaipur triangle, and is more commonly paired with the{" "}
-            <Link href="/experiences/camel-festival" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/camel-festival" className="text-maroon underline">
               Bikaner Camel Festival
             </Link>{" "}
             season or a dedicated desert-focused itinerary.
@@ -349,13 +349,13 @@ export default function MonumentsGuidePage() {
             temples, including one dedicated to Ganesh that remains an active pilgrimage site,
             drawing devotees from well beyond Ranthambore itself, particularly during Ganesh
             Chaturthi. Our{" "}
-            <Link href="/tours/ranthambore-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/ranthambore-tour" className="text-maroon underline">
               Ranthambore Tour
             </Link>{" "}
             builds in time for the fort alongside the safaris, adding a historical dimension to a
             stop most visitors otherwise treat purely as a nature experience — and if tiger
             sightings specifically are your priority, our{" "}
-            <Link href="/experiences/tiger-safari-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/tiger-safari-tours" className="text-maroon underline">
               Tiger Safari Tours
             </Link>{" "}
             guide covers how Ranthambore compares to Madhya Pradesh&apos;s reserves.
@@ -389,7 +389,7 @@ export default function MonumentsGuidePage() {
             Most of these monuments reward at least half a day each rather than a rushed hour —
             Amber Fort, Mehrangarh and Chittorgarh in particular have enough scale that a hurried
             visit means missing entire wings. If you&apos;re building a{" "}
-            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan itinerary
             </Link>{" "}
             around these sites specifically, count on roughly 8 to 10 days to cover Jaipur,
@@ -475,15 +475,15 @@ export default function MonumentsGuidePage() {
 
           <ArticleP>
             All of these sites are covered across our{" "}
-            <Link href="/destinations/rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan destination guide
             </Link>{" "}
             and our{" "}
-            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan tour packages
             </Link>
             . If Jaipur is your entry point into India, it&apos;s also worth considering our{" "}
-            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle Tour
             </Link>
             , which pairs Amber Fort and the City Palace with Agra&apos;s Taj Mahal and Delhi in
@@ -492,7 +492,7 @@ export default function MonumentsGuidePage() {
             how many days you have and we&apos;ll build a route around the monuments that matter
             most to you, with a private guide at every stop. If you&apos;d also like to add
             Rajasthan&apos;s pilgrimage sites — Pushkar and Ajmer among them — see our guide to{" "}
-            <Link href="/travel-guide/pilgrimage-holiday-destinations-in-india" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/pilgrimage-holiday-destinations-in-india" className="text-maroon underline">
               India&apos;s pilgrimage destinations
             </Link>
             .

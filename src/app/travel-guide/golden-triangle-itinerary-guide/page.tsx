@@ -143,7 +143,7 @@ export default function GoldenTriangleItineraryGuidePage() {
             one is mostly planning: how many days, which order, and where the long drives fall.
             This guide sets out a day-by-day plan and explains the choices behind it. For the
             full range of fixed routes we run, see our{" "}
-            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle tour packages
             </Link>
             .
@@ -160,14 +160,14 @@ export default function GoldenTriangleItineraryGuidePage() {
 
           <ArticleH2>The Three Cities in a Nutshell</ArticleH2>
           <ArticleP>
-            <Link href="/destinations/delhi" className="text-maroon underline">Delhi</Link>{" "}
+            <Link prefetch={false} href="/destinations/delhi" className="text-maroon underline">Delhi</Link>{" "}
             is where most international flights land, and it layers Mughal monuments over
             colonial avenues: Humayun&apos;s Tomb, Old Delhi&apos;s mosque and bazaars, and the wide
             boulevards of New Delhi.{" "}
-            <Link href="/destinations/agra" className="text-maroon underline">Agra</Link>{" "}
+            <Link prefetch={false} href="/destinations/agra" className="text-maroon underline">Agra</Link>{" "}
             exists on the map largely because of the Taj Mahal, though Agra Fort, the
             red-sandstone Mughal stronghold beside the river, deserves a visit of its own.{" "}
-            <Link href="/destinations/jaipur" className="text-maroon underline">Jaipur</Link>{" "}
+            <Link prefetch={false} href="/destinations/jaipur" className="text-maroon underline">Jaipur</Link>{" "}
             is the Pink City, named for the terracotta wash applied to its old buildings in 1876
             for a visiting British prince, and it is where the trip turns from Mughal India to
             the forts and palaces of Rajasthan.
@@ -182,7 +182,7 @@ export default function GoldenTriangleItineraryGuidePage() {
           <ArticleP>
             None of these is a short hop, and that shapes everything. Each transfer eats a large
             part of a day, so the itinerary has to leave room around it. Our{" "}
-            <Link href="/travel-guide/getting-around-india" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/getting-around-india" className="text-maroon underline">
               guide to getting around India
             </Link>{" "}
             compares driving with trains and flights if you want to weigh the options.
@@ -191,7 +191,7 @@ export default function GoldenTriangleItineraryGuidePage() {
           <ArticleH2>The 6-Day Golden Triangle, Day by Day</ArticleH2>
           <ArticleP>
             Six days is the length we recommend, and it is the basis of our{" "}
-            <Link href="/tours/golden-triangle-tour-classic" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour-classic" className="text-maroon underline">
               Golden Triangle Classic
             </Link>
             . It gives Delhi a proper day, keeps Agra to one night, and gives Jaipur the time it
@@ -207,7 +207,7 @@ export default function GoldenTriangleItineraryGuidePage() {
           </ArticleUL>
           <ArticleP>
             For the Taj Mahal specifically, our{" "}
-            <Link href="/travel-guide/taj-mahal-visiting-guide" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/taj-mahal-visiting-guide" className="text-maroon underline">
               Taj Mahal visiting guide
             </Link>{" "}
             covers tickets, timings and the best light.
@@ -270,7 +270,7 @@ export default function GoldenTriangleItineraryGuidePage() {
             shops by drivers or guides who earn a commission. There is nothing wrong with buying
             something you like, but decide in advance whether you want a shopping stop at all,
             and say no politely to stops you did not ask for. Our{" "}
-            <Link href="/travel-guide/solo-travel-india-guide" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/solo-travel-india-guide" className="text-maroon underline">
               solo travel guide
             </Link>{" "}
             explains the common patterns in more detail.
@@ -353,24 +353,24 @@ export default function GoldenTriangleItineraryGuidePage() {
           <ArticleP>
             The Golden Triangle is a core that extends naturally, and each of the additions
             below is available as a fixed route. Adding{" "}
-            <Link href="/tours/golden-triangle-tour-ranthambore" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour-ranthambore" className="text-maroon underline">
               Ranthambore
             </Link>{" "}
             brings in a tiger reserve. Adding{" "}
-            <Link href="/tours/golden-triangle-tour-udaipur" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour-udaipur" className="text-maroon underline">
               Udaipur
             </Link>{" "}
             gives you lakes and palaces at a slower pace. Adding{" "}
-            <Link href="/tours/golden-triangle-tour-varanasi" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour-varanasi" className="text-maroon underline">
               Varanasi
             </Link>{" "}
             takes the trip toward the Ganges, and adding{" "}
-            <Link href="/tours/golden-triangle-tour-ajmer-pushkar" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour-ajmer-pushkar" className="text-maroon underline">
               Ajmer and Pushkar
             </Link>{" "}
             adds Rajasthan&apos;s religious side. If you would rather see the whole of Rajasthan,
             our{" "}
-            <Link href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
               Rajasthan itinerary guide
             </Link>{" "}
             explains how to plan it.
@@ -382,7 +382,7 @@ export default function GoldenTriangleItineraryGuidePage() {
             mornings can be foggy, especially in December and January, which can hide the
             Taj Mahal at dawn, so keep a backup plan for the Agra morning. Summer is very hot
             and most travellers avoid it. Our{" "}
-            <Link href="/best-time-to-visit-india" className="text-maroon underline">
+            <Link prefetch={false} href="/best-time-to-visit-india" className="text-maroon underline">
               best-time-to-visit guide
             </Link>{" "}
             has the month-by-month picture.
@@ -390,7 +390,7 @@ export default function GoldenTriangleItineraryGuidePage() {
 
           <ArticleH2>Getting the Details Right</ArticleH2>
           <ArticleUL>
-            <li>Sort your visa early. Our <Link href="/travel-guide/india-e-visa-guide" className="text-maroon underline">e-Visa guide</Link> explains the process, including the newer arrival card.</li>
+            <li>Sort your visa early. Our <Link prefetch={false} href="/travel-guide/india-e-visa-guide" className="text-maroon underline">e-Visa guide</Link> explains the process, including the newer arrival card.</li>
             <li>Arrange airport pickup so you are not negotiating a taxi after a long flight.</li>
             <li>Book the Agra hotel with the Taj in mind. A room with a view is a real upgrade for one night.</li>
             <li>Keep the first day light. Jet lag and Delhi&apos;s intensity are easier after a proper sleep.</li>
@@ -400,22 +400,22 @@ export default function GoldenTriangleItineraryGuidePage() {
           <ArticleH2>Which Itinerary Length Suits You?</ArticleH2>
           <ArticleP>
             Families often prefer a slower version with fewer transfers, and our{" "}
-            <Link href="/experiences/family-holidays" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/family-holidays" className="text-maroon underline">
               Family Holidays
             </Link>{" "}
             itinerary is built that way. If you are interested in the monuments themselves, our{" "}
-            <Link href="/experiences/unesco-heritage-sites" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/unesco-heritage-sites" className="text-maroon underline">
               UNESCO Heritage Sites
             </Link>{" "}
             route goes deeper, and our{" "}
-            <Link href="/experiences/palace-fort-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/palace-fort-tours" className="text-maroon underline">
               Palace and Fort Tours
             </Link>{" "}
             focus on Rajasthan&apos;s forts. Travellers coming from the United States, the United
             Kingdom or Australia will find country-specific planning notes in our{" "}
-            <Link href="/india-tours-from-usa" className="text-maroon underline">USA</Link>,{" "}
-            <Link href="/india-tours-from-uk" className="text-maroon underline">UK</Link> and{" "}
-            <Link href="/india-tours-from-australia" className="text-maroon underline">Australia</Link>{" "}
+            <Link prefetch={false} href="/india-tours-from-usa" className="text-maroon underline">USA</Link>,{" "}
+            <Link prefetch={false} href="/india-tours-from-uk" className="text-maroon underline">UK</Link> and{" "}
+            <Link prefetch={false} href="/india-tours-from-australia" className="text-maroon underline">Australia</Link>{" "}
             guides.
           </ArticleP>
 

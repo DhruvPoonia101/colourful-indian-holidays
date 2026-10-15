@@ -81,8 +81,8 @@ export function Hero() {
               src={heroSlides[activeIndex].src}
               alt={heroSlides[activeIndex].alt}
               fill
-              priority={activeIndex <= 1}
-              fetchPriority={activeIndex <= 1 ? "high" : "auto"}
+              priority={activeIndex === 0}
+              fetchPriority={activeIndex === 0 ? "high" : "auto"}
               sizes="100vw"
               className="object-cover"
               style={{ objectPosition: heroSlides[activeIndex].focalPoint }}

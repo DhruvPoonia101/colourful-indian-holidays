@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { ComingSoonPage } from "@/components/shared/ComingSoonPage";
+import { COMING_SOON_SLUGS } from "@/content/coming-soon";
 import { NAV_LABELS, CATEGORY_META, titleCaseFromSlug } from "@/content/nav-labels";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return COMING_SOON_SLUGS.experiences.map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({
   params,

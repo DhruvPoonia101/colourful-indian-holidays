@@ -16,7 +16,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
                 </span>
               ) : (
                 <>
-                  <Link href={item.path} className="transition-colors hover:text-gold-light">
+                  <Link prefetch={false} href={item.path} className="transition-colors hover:text-gold-light">
                     {item.name}
                   </Link>
                   <FiChevronRight aria-hidden="true" className="h-3.5 w-3.5" />

@@ -143,7 +143,7 @@ export default function HiringACarInRajasthanGuidePage() {
             each day&apos;s schedule — which noticeably improves the back half of a longer trip
             compared with meeting a new driver at every stop. The vehicle and driver are arranged
             as part of your overall{" "}
-            <Link href="/tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours" className="text-maroon underline">
               tour package
             </Link>
             , not booked separately once you land, which means your route, group size, and travel
@@ -169,7 +169,7 @@ export default function HiringACarInRajasthanGuidePage() {
           <ArticleH2>Sedan Rental in Rajasthan — Couples &amp; Solo Travellers</ArticleH2>
           <ArticleP>
             A{" "}
-            <Link href="/car-rental/sedan" className="text-maroon underline">
+            <Link prefetch={false} href="/car-rental/sedan" className="text-maroon underline">
               private sedan with driver
             </Link>{" "}
             is the standard choice for couples and solo travellers moving between cities, seating
@@ -184,7 +184,7 @@ export default function HiringACarInRajasthanGuidePage() {
           <ArticleH2>SUV Rental in Rajasthan — Small Families &amp; Longer Routes</ArticleH2>
           <ArticleP>
             An{" "}
-            <Link href="/car-rental/suv" className="text-maroon underline">
+            <Link prefetch={false} href="/car-rental/suv" className="text-maroon underline">
               SUV with driver
             </Link>{" "}
             gives you meaningfully more room than a sedan, seating up to six, along with higher
@@ -199,7 +199,7 @@ export default function HiringACarInRajasthanGuidePage() {
           <ArticleH2>Tempo Traveller Rental — Families &amp; Small Groups</ArticleH2>
           <ArticleP>
             A{" "}
-            <Link href="/car-rental/tempo-traveller" className="text-maroon underline">
+            <Link prefetch={false} href="/car-rental/tempo-traveller" className="text-maroon underline">
               Tempo Traveller
             </Link>{" "}
             is a purpose-built minibus seating up to eleven, with a dedicated luggage hold
@@ -215,7 +215,7 @@ export default function HiringACarInRajasthanGuidePage() {
           <ArticleH2>Luxury Car Rental in Rajasthan — Honeymoons &amp; Special Occasions</ArticleH2>
           <ArticleP>
             Our{" "}
-            <Link href="/car-rental/luxury-cars" className="text-maroon underline">
+            <Link prefetch={false} href="/car-rental/luxury-cars" className="text-maroon underline">
               luxury car
             </Link>{" "}
             option pairs a premium vehicle with a more experienced, formally presented driver,
@@ -230,7 +230,7 @@ export default function HiringACarInRajasthanGuidePage() {
           <ArticleH2>Coach &amp; Bus Rental — Corporate Groups &amp; Large Reunions</ArticleH2>
           <ArticleP>
             For groups of thirteen or more,{" "}
-            <Link href="/car-rental/coaches" className="text-maroon underline">
+            <Link prefetch={false} href="/car-rental/coaches" className="text-maroon underline">
               a full-size, air-conditioned coach
             </Link>{" "}
             is the practical choice — corporate incentive trips, large extended-family reunions,
@@ -259,7 +259,7 @@ export default function HiringACarInRajasthanGuidePage() {
             <li>
               <span className="font-semibold text-ink">Delhi to Jaipur:</span> roughly 280 km,
               about 5–6 hours — the classic opening leg of a{" "}
-              <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+              <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
                 Golden Triangle
               </Link>{" "}
               itinerary
@@ -267,7 +267,7 @@ export default function HiringACarInRajasthanGuidePage() {
             <li>
               <span className="font-semibold text-ink">Jaipur to Agra:</span> roughly 240 km,
               about 5 hours, connecting the Golden Triangle&apos;s Pink City to the{" "}
-              <Link href="/tours/taj-mahal-tours" className="text-maroon underline">
+              <Link prefetch={false} href="/tours/taj-mahal-tours" className="text-maroon underline">
                 Taj Mahal
               </Link>
             </li>
@@ -275,7 +275,7 @@ export default function HiringACarInRajasthanGuidePage() {
               <span className="font-semibold text-ink">Jaipur to Pushkar / Ajmer:</span> roughly
               145 km, about 2.5–3 hours — a popular shorter add-on rather than a full travel day,
               and worth timing around the{" "}
-              <Link href="/experiences/pushkar-fair" className="text-maroon underline">
+              <Link prefetch={false} href="/experiences/pushkar-fair" className="text-maroon underline">
                 Pushkar Fair
               </Link>{" "}
               if your dates allow
@@ -283,7 +283,7 @@ export default function HiringACarInRajasthanGuidePage() {
             <li>
               <span className="font-semibold text-ink">Jaipur to Jodhpur:</span> roughly 335 km,
               about 5.5–6 hours, usually the longest single leg of a standard{" "}
-              <Link href="/tours/jodhpur-tour" className="text-maroon underline">
+              <Link prefetch={false} href="/tours/jodhpur-tour" className="text-maroon underline">
                 Jodhpur
               </Link>{" "}
               circuit
@@ -292,14 +292,14 @@ export default function HiringACarInRajasthanGuidePage() {
               <span className="font-semibold text-ink">Jodhpur to Udaipur:</span> roughly 250 km,
               about 5 hours, often broken up with a stop at Ranakpur&apos;s Jain temples or
               Kumbhalgarh Fort along the way to our{" "}
-              <Link href="/tours/udaipur-tour" className="text-maroon underline">
+              <Link prefetch={false} href="/tours/udaipur-tour" className="text-maroon underline">
                 Udaipur Tour
               </Link>
             </li>
             <li>
               <span className="font-semibold text-ink">Jodhpur to Jaisalmer:</span> roughly 285
               km, about 5–6 hours, heading further into the Thar Desert toward our{" "}
-              <Link href="/tours/jaisalmer-tour" className="text-maroon underline">
+              <Link prefetch={false} href="/tours/jaisalmer-tour" className="text-maroon underline">
                 Jaisalmer Tour
               </Link>
             </li>
@@ -312,7 +312,7 @@ export default function HiringACarInRajasthanGuidePage() {
               <span className="font-semibold text-ink">Jaipur to Ranthambore National Park:</span>{" "}
               roughly 180 km, about 4 hours — usually timed to arrive in time for an afternoon
               safari on our{" "}
-              <Link href="/tours/ranthambore-tour" className="text-maroon underline">
+              <Link prefetch={false} href="/tours/ranthambore-tour" className="text-maroon underline">
                 Ranthambore Tour
               </Link>
             </li>
@@ -322,7 +322,7 @@ export default function HiringACarInRajasthanGuidePage() {
             rather than a guarantee — actual travel time varies with the season, festival-related
             road closures, and how many stops you build into the day. This is exactly the kind of
             detail we factor in when building a{" "}
-            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan itinerary
             </Link>
             , so the pacing between cities feels comfortable rather than rushed.
@@ -572,12 +572,12 @@ export default function HiringACarInRajasthanGuidePage() {
             Udaipur and Jaisalmer become part of what makes the trip memorable rather than simply
             the time it takes to get there. Full details on capacity, luggage space, and example
             vehicle models for each option are on our{" "}
-            <Link href="/car-rental" className="text-maroon underline">
+            <Link prefetch={false} href="/car-rental" className="text-maroon underline">
               Car Rental
             </Link>{" "}
             pages. If you&apos;re still deciding between vehicles, or want one built directly into
             a full{" "}
-            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan itinerary
             </Link>
             , tell us your group size and travel dates and we&apos;ll put together the right

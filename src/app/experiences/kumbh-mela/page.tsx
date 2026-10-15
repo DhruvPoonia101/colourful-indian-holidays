@@ -105,6 +105,7 @@ export default function KumbhMelaPage() {
               src="/images/destinations/haridwar.webp"
               alt="A statue of Shiva on the Ganges riverfront, Haridwar"
               fill
+              sizes="(min-width: 1280px) 1216px, 100vw"
               className="object-cover"
             />
           </div>

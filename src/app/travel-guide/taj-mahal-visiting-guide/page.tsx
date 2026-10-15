@@ -179,7 +179,7 @@ export default function TajMahalVisitingGuidePage() {
             is closed to general visitors every Friday, when the mosque within the complex is
             used for prayers. If you are building a trip around Agra, put your Taj visit on any
             other day and make Friday a travel day or a day for other sights. On our{" "}
-            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle
             </Link>{" "}
             routes we schedule the Agra stop around this before anything else.
@@ -234,7 +234,7 @@ export default function TajMahalVisitingGuidePage() {
             marble and the crowd starting to thin. Midday is the least pleasant for light and
             heat, and the harshest for photographs. A sensible plan is to visit at one end of
             the day and spend the middle of it elsewhere. Our{" "}
-            <Link href="/experiences/photography-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/photography-tours" className="text-maroon underline">
               Photography Tours
             </Link>{" "}
             build whole days around this principle.
@@ -284,19 +284,19 @@ export default function TajMahalVisitingGuidePage() {
             Most visitors give Agra one night, and that is enough for the Taj Mahal and Agra
             Fort, the Mughal fortress that stands on the same river. If you want to see the
             monument from your room, choose a hotel with a Taj view; our{" "}
-            <Link href="/experiences/luxury-india-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/luxury-india-tours" className="text-maroon underline">
               Luxury India Tours
             </Link>{" "}
             include one deliberately. For couples, our{" "}
-            <Link href="/experiences/taj-mahal-honeymoon" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/taj-mahal-honeymoon" className="text-maroon underline">
               Taj Mahal Honeymoon
             </Link>{" "}
             builds a trip around it, and our{" "}
-            <Link href="/destinations/agra" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/agra" className="text-maroon underline">
               Agra destination guide
             </Link>{" "}
             covers the city itself. Our{" "}
-            <Link href="/tours/taj-mahal-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/taj-mahal-tours" className="text-maroon underline">
               Taj Mahal Tours
             </Link>{" "}
             page shows the fixed itineraries we run.
@@ -357,7 +357,7 @@ export default function TajMahalVisitingGuidePage() {
             and the mausoleum stairs are narrow, which may be a consideration if anyone in your
             group has mobility difficulties. If you are unsure how the heat or a long day will
             affect you, our{" "}
-            <Link href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
               health and vaccination guide
             </Link>{" "}
             covers sensible precautions.
@@ -369,7 +369,7 @@ export default function TajMahalVisitingGuidePage() {
             the expressway, and about 240 km from Jaipur, around five hours. Most travellers go by
             private car, which lets you time the arrival for the light, and some take a fast train
             from Delhi and stay overnight. Our{" "}
-            <Link href="/travel-guide/getting-around-india" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/getting-around-india" className="text-maroon underline">
               guide to getting around India
             </Link>{" "}
             compares the options in more detail.
@@ -407,11 +407,11 @@ export default function TajMahalVisitingGuidePage() {
             Most travellers see the Taj Mahal as part of the classic Delhi, Agra and Jaipur
             circuit, and it is usually the first big sight of the trip. If you are visiting
             from overseas, our{" "}
-            <Link href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
               e-Visa guide
             </Link>{" "}
             explains the paperwork, and our{" "}
-            <Link href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
               Rajasthan itinerary guide
             </Link>{" "}
             shows how to extend the trip beyond Agra. Whatever route you choose, tell us your

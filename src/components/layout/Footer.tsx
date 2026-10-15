@@ -55,6 +55,7 @@ export function Footer() {
           <div>
             {/* Logo */}
             <Link
+              prefetch={false}
               href="/"
               aria-label={`${SITE_NAME} — Home`}
               className="inline-flex items-center rounded-2xl bg-[#F8F1E7] px-5 py-4 shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-0.5"
@@ -112,6 +113,7 @@ export function Footer() {
               {footerExploreLinks.map((link) => (
                 <li key={link.href}>
                   <Link
+                    prefetch={false}
                     href={link.href}
                     className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
                   >
@@ -135,6 +137,7 @@ export function Footer() {
                     </span>
                   )}
                   <Link
+                    prefetch={false}
                     href={country.href}
                     className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
                   >
@@ -158,6 +161,7 @@ export function Footer() {
               {footerCompanyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
+                    prefetch={false}
                     href={link.href}
                     className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
                   >
@@ -275,6 +279,7 @@ export function Footer() {
             {/* Privacy Policy / Terms & Conditions — centered */}
             <p className="text-[11px] leading-5 text-[#E9DCCB]/45">
               <Link
+                prefetch={false}
                 href="/privacy-policy"
                 className="transition-colors hover:text-[#D5A93A]"
               >
@@ -282,6 +287,7 @@ export function Footer() {
               </Link>
               {" · "}
               <Link
+                prefetch={false}
                 href="/cancellation-policy-and-terms-and-conditions"
                 className="transition-colors hover:text-[#D5A93A]"
               >

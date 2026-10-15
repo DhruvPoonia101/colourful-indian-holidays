@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import { ComingSoonPage } from "@/components/shared/ComingSoonPage";
+import { COMING_SOON_SLUGS } from "@/content/coming-soon";
 import { guideArticles } from "@/content/travel-guide";
 import { titleCaseFromSlug } from "@/content/nav-labels";
 
 function labelForSlug(slug: string): string {
   const match = guideArticles.find((article) => article.slug === slug);
   return match?.title ?? titleCaseFromSlug(slug);
+}
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return COMING_SOON_SLUGS["travel-guide"].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({

@@ -105,6 +105,7 @@ export default function DiwaliPage() {
               src="/images/destinations/amritsar.webp"
               alt="The Golden Temple reflected in its pool, Amritsar"
               fill
+              sizes="(min-width: 1280px) 1216px, 100vw"
               className="object-cover"
             />
           </div>

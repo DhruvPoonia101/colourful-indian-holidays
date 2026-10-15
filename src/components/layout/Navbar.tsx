@@ -103,6 +103,7 @@ export function Navbar() {
                 LOGO — FAR LEFT
             ===================================================== */}
             <Link
+              prefetch={false}
               href="/"
               aria-label="Colourful Indian Holidays — Home"
               className="
@@ -177,6 +178,7 @@ export function Navbar() {
 
                   return (
                     <Link
+                      prefetch={false}
                       key={item.label}
                       href={item.href}
                       className={`

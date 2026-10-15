@@ -22,6 +22,7 @@ export function renderWithLinks(text: string): ReactNode[] {
     const [, label, href] = match;
     nodes.push(
       <Link
+        prefetch={false}
         key={`link-${key++}`}
         href={href}
         className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"

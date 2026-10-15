@@ -93,7 +93,7 @@ export function PageHero({
               />
             ) : (
               primaryHref &&
-              primaryLabel && <Button href={primaryHref}>{primaryLabel}</Button>
+              primaryLabel && <Button href={primaryHref} prefetch>{primaryLabel}</Button>
             )}
             {whatsappMessage && (
               <Button href={whatsappUrl(whatsappMessage)} external variant="outline">

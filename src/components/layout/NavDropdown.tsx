@@ -174,6 +174,7 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
                     {column.items.map((link) => (
                       <li key={link.href}>
                         <Link
+                          prefetch={false}
                           href={link.href}
                           role="menuitem"
                           tabIndex={open ? 0 : -1}
@@ -198,6 +199,7 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
                   {item.durationRow.items.map((link) => (
                     <li key={link.href}>
                       <Link
+                        prefetch={false}
                         href={link.href}
                         role="menuitem"
                         tabIndex={open ? 0 : -1}
@@ -217,6 +219,7 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
             <div className="grid grid-cols-3 gap-2">
               {item.items.map((link) => (
                 <Link
+                  prefetch={false}
                   key={link.href}
                   href={link.href}
                   role="menuitem"
@@ -233,6 +236,7 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
               {item.items.map((link) => (
                 <li key={link.href}>
                   <Link
+                    prefetch={false}
                     href={link.href}
                     role="menuitem"
                     tabIndex={open ? 0 : -1}
@@ -253,6 +257,7 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
 
         {item.viewAllHref && hasColumns && (
           <Link
+            prefetch={false}
             href={item.viewAllHref}
             role="menuitem"
             tabIndex={open ? 0 : -1}
@@ -269,6 +274,7 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
 
         {item.viewAllHref && !hasColumns && (
           <Link
+            prefetch={false}
             href={item.viewAllHref}
             role="menuitem"
             tabIndex={open ? 0 : -1}

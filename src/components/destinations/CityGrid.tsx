@@ -65,6 +65,7 @@ export function CityGrid({
               return (
                 <Reveal key={city.name} delay={index * 0.05}>
                   <Link
+                    prefetch={false}
                     href={city.href}
                     className="group relative block h-96 overflow-hidden rounded-2xl shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl"
                   >
@@ -102,7 +103,7 @@ export function CityGrid({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/40 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-6">
-                    <Link href={city.href}>
+                    <Link prefetch={false} href={city.href}>
                       <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-light">
                         {city.tagline}
                       </p>
@@ -113,6 +114,7 @@ export function CityGrid({
                     </Link>
                     <div className="mt-4 flex gap-3">
                       <Link
+                        prefetch={false}
                         href={city.href}
                         className="flex-1 rounded-full border border-ivory/70 px-4 py-2.5 text-center text-sm font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-ivory/10"
                       >

@@ -125,6 +125,7 @@ export default function BestTimeHubPage() {
                       >
                         <td className="px-5 py-4 align-top">
                           <Link
+                            prefetch={false}
                             href={`/best-time-to-visit-india/${row.slug}`}
                             className="font-display text-base font-semibold text-ink hover:text-maroon"
                           >
@@ -201,6 +202,7 @@ export default function BestTimeHubPage() {
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 {monthTable.map((row) => (
                   <Link
+                    prefetch={false}
                     key={row.month}
                     href={`/best-time-to-visit-india/${row.slug}`}
                     className="rounded-full border border-sand bg-white px-5 py-2 text-sm font-medium text-ink transition-all duration-200 hover:scale-105 hover:border-maroon hover:text-maroon"

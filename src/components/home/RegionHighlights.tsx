@@ -31,7 +31,7 @@ export function RegionHighlights() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/40 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-5">
-                  <Link href={region.href}>
+                  <Link prefetch={false} href={region.href}>
                     <h3 className="font-display text-xl font-semibold text-ivory">
                       {region.name}
                     </h3>
@@ -39,6 +39,7 @@ export function RegionHighlights() {
                   </Link>
                   <div className="mt-4 flex gap-2.5">
                     <Link
+                      prefetch={false}
                       href={region.href}
                       className="flex-1 rounded-full border border-ivory/70 px-3 py-2 text-center text-xs font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-ivory/10 sm:text-sm"
                     >

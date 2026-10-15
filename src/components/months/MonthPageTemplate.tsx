@@ -180,6 +180,7 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
         <section className="border-t border-sand/70 py-8">
           <div className="mx-auto flex max-w-4xl items-center justify-between px-6 sm:px-8">
             <Link
+              prefetch={false}
               href={`/best-time-to-visit-india/${content.prevMonth.slug}`}
               className="group flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-maroon"
             >
@@ -187,12 +188,14 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
               {content.prevMonth.name}
             </Link>
             <Link
+              prefetch={false}
               href="/best-time-to-visit-india"
               className="text-sm font-semibold text-ink-soft transition-colors hover:text-maroon"
             >
               Full Travel Calendar
             </Link>
             <Link
+              prefetch={false}
               href={`/best-time-to-visit-india/${content.nextMonth.slug}`}
               className="group flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-maroon"
             >

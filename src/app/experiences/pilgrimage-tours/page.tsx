@@ -142,6 +142,7 @@ export default function PilgrimageToursPage() {
                   destinations across India — including the Char Dham Yatra in the high
                   Himalaya — see our{" "}
                   <Link
+                    prefetch={false}
                     href="/travel-guide/pilgrimage-holiday-destinations-in-india"
                     className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"
                   >

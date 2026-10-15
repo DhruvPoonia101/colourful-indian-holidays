@@ -25,6 +25,7 @@ export function ArticleMidCTA({
       <p className="text-sm text-ink-soft">
         {text}{" "}
         <Link
+          prefetch={false}
           href={href}
           className="inline-flex items-center gap-1 font-semibold text-maroon underline decoration-maroon/30 underline-offset-2 hover:decoration-maroon"
         >

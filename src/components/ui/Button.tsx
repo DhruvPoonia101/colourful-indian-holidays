@@ -8,6 +8,9 @@ type ButtonProps = {
   size?: "md" | "sm";
   className?: string;
   external?: boolean;
+  // Off by default: viewport prefetch of every button multiplies CDN/ISR
+  // reads. Only primary CTAs (hero, contact) opt back in.
+  prefetch?: boolean;
 };
 
 const base =
@@ -34,6 +37,7 @@ export function Button({
   size = "md",
   className = "",
   external = false,
+  prefetch = false,
 }: ButtonProps) {
   const classes = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
 
@@ -46,7 +50,7 @@ export function Button({
   }
 
   return (
-    <Link href={href} className={classes}>
+    <Link href={href} prefetch={prefetch ? undefined : false} className={classes}>
       {children}
     </Link>
   );

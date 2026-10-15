@@ -7,7 +7,9 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export type MoreDestination = {
   name: string;
-  href: string;
+  // Omit for places without their own page yet — rendered as a plain label
+  // rather than a link to a 404.
+  href?: string;
 };
 
 export function MoreDestinationsList({
@@ -48,15 +50,25 @@ export function MoreDestinationsList({
         >
           <div className="min-h-0 overflow-hidden">
             <div className="mt-8 flex flex-wrap justify-center gap-3 px-6 sm:px-8">
-              {destinations.map((destination) => (
-                <Link
-                  key={destination.href}
-                  href={destination.href}
-                  className="rounded-full border border-sand bg-white px-5 py-2 text-sm font-medium text-ink transition-all duration-200 hover:scale-105 hover:border-maroon hover:text-maroon"
-                >
-                  {destination.name}
-                </Link>
-              ))}
+              {destinations.map((destination) =>
+                destination.href ? (
+                  <Link
+                    prefetch={false}
+                    key={destination.name}
+                    href={destination.href}
+                    className="rounded-full border border-sand bg-white px-5 py-2 text-sm font-medium text-ink transition-all duration-200 hover:scale-105 hover:border-maroon hover:text-maroon"
+                  >
+                    {destination.name}
+                  </Link>
+                ) : (
+                  <span
+                    key={destination.name}
+                    className="rounded-full border border-sand bg-white px-5 py-2 text-sm font-medium text-ink"
+                  >
+                    {destination.name}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </div>

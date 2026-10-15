@@ -113,7 +113,7 @@ export default function TopCulturalFestivalsPage() {
             Winter is India&apos;s most comfortable travel season generally — cool, dry, and
             considerably easier on visitors than the heat of April through June — and it happens
             to host several of the country&apos;s largest festivals. The{" "}
-            <Link href="/experiences/pushkar-fair" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/pushkar-fair" className="text-maroon underline">
               Pushkar Fair
             </Link>{" "}
             is the standout: one of the largest camel and livestock fairs anywhere in the world,
@@ -128,7 +128,7 @@ export default function TopCulturalFestivalsPage() {
           </ArticleP>
           <ArticleP>
             A few hours away in Bikaner, the{" "}
-            <Link href="/experiences/camel-festival" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/camel-festival" className="text-maroon underline">
               Camel Festival
             </Link>{" "}
             takes a more purely celebratory approach. Where Pushkar&apos;s fair grew organically
@@ -141,14 +141,14 @@ export default function TopCulturalFestivalsPage() {
             they&apos;re the same festival — they aren&apos;t, though both happen within a
             similar winter window and can occasionally be combined if your dates and travel
             time allow, particularly as part of a wider{" "}
-            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan tour
             </Link>
             .
           </ArticleP>
           <ArticleP>
             Further west in Gujarat, the{" "}
-            <Link href="/experiences/kutch-mahotsav" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/kutch-mahotsav" className="text-maroon underline">
               Kutch Mahotsav
             </Link>{" "}
             (also widely known as the Rann Utsav) takes a completely different approach to
@@ -161,7 +161,7 @@ export default function TopCulturalFestivalsPage() {
             throughout. Because it runs for months rather than days, it&apos;s one of the most
             flexible festivals on this list to build into a trip on whatever schedule suits you.
             See our{" "}
-            <Link href="/destinations/gujarat" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/gujarat" className="text-maroon underline">
               Gujarat destination guide
             </Link>{" "}
             for more on the wider state.
@@ -203,7 +203,7 @@ export default function TopCulturalFestivalsPage() {
           <ArticleP>
             As winter turns to spring, the festival calendar shifts character entirely, moving
             away from the desert and toward the coast and the Himalayan foothills.{" "}
-            <Link href="/experiences/goa-carnival" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/goa-carnival" className="text-maroon underline">
               Goa Carnival
             </Link>{" "}
             runs for four days just before the start of Lent on the Christian calendar, a
@@ -214,14 +214,14 @@ export default function TopCulturalFestivalsPage() {
             feathered outfits reminiscent of Brazilian carnival traditions, giving Goa a street-
             party atmosphere genuinely distinct from the rest of India&apos;s more ritual-based
             celebrations. See our{" "}
-            <Link href="/destinations/goa" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/goa" className="text-maroon underline">
               Goa destination guide
             </Link>{" "}
             for more on the state itself.
           </ArticleP>
           <ArticleP>
             Around the same period, Jaipur&apos;s{" "}
-            <Link href="/experiences/elephant-festival" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/elephant-festival" className="text-maroon underline">
               Elephant Festival
             </Link>{" "}
             is held on the eve of Holi, adding a distinctly Rajasthani royal tradition to a
@@ -231,6 +231,7 @@ export default function TopCulturalFestivalsPage() {
             adorned for ceremonial occasions — and because it falls the evening before Holi
             itself, many visitors experience both events back to back on the same trip. The{" "}
             <Link
+              prefetch={false}
               href="/experiences/international-yoga-festival-rishikesh"
               className="text-maroon underline"
             >
@@ -250,7 +251,7 @@ export default function TopCulturalFestivalsPage() {
             regions — but two genuinely significant festivals fall in this window regardless,
             and both are worth knowing about even if you ultimately choose a different season
             for the bulk of your trip. Rajasthan&apos;s{" "}
-            <Link href="/experiences/teej-festival" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/teej-festival" className="text-maroon underline">
               Teej Festival
             </Link>{" "}
             marks the arrival of the monsoon itself, with a royal procession — historically
@@ -265,7 +266,7 @@ export default function TopCulturalFestivalsPage() {
           </ArticleP>
           <ArticleP>
             In Kerala, the ten-day{" "}
-            <Link href="/experiences/onam" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/onam" className="text-maroon underline">
               Onam
             </Link>{" "}
             harvest festival builds gradually toward its climax rather than concentrating
@@ -279,7 +280,7 @@ export default function TopCulturalFestivalsPage() {
             well over twenty dishes served together on a single banana leaf. Because Onam spans
             ten days rather than one, it offers genuine flexibility that most single-day
             festivals simply don&apos;t. See our{" "}
-            <Link href="/destinations/kerala" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/kerala" className="text-maroon underline">
               Kerala destination guide
             </Link>{" "}
             for more on planning a trip around it.
@@ -287,7 +288,7 @@ export default function TopCulturalFestivalsPage() {
 
           <ArticleH2>Autumn — Diwali (October–November)</ArticleH2>
           <ArticleP>
-            <Link href="/experiences/diwali" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/diwali" className="text-maroon underline">
               Diwali
             </Link>
             , the festival of lights, is India&apos;s largest and most widely celebrated
@@ -309,14 +310,14 @@ export default function TopCulturalFestivalsPage() {
             accessible to outside visitors. Varanasi&apos;s ghats, already among the most
             atmospheric settings in India, become especially striking during Diwali, lit with
             thousands of lamps along the Ganges — a highlight of our{" "}
-            <Link href="/experiences/heritage-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/heritage-tours" className="text-maroon underline">
               Heritage Tours
             </Link>{" "}
             itinerary. Amritsar&apos;s Golden Temple takes on a
             similarly striking character, illuminated and reflected in its surrounding pool in
             one of the most photographed Diwali scenes anywhere in the country, and features in
             our{" "}
-            <Link href="/experiences/spiritual-india" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/spiritual-india" className="text-maroon underline">
               Spiritual India
             </Link>{" "}
             itinerary alongside Haridwar and Rishikesh. Jaipur and
@@ -329,7 +330,7 @@ export default function TopCulturalFestivalsPage() {
           <ArticleP>
             A handful of festivals don&apos;t fit a neat annual calendar at all, and understanding
             why matters for planning around them.{" "}
-            <Link href="/experiences/kumbh-mela" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/kumbh-mela" className="text-maroon underline">
               Kumbh Mela
             </Link>{" "}
             is widely considered the largest peaceful gathering of human beings anywhere on
@@ -346,7 +347,7 @@ export default function TopCulturalFestivalsPage() {
           </ArticleP>
           <ArticleP>
             On a smaller but no less significant scale,{" "}
-            <Link href="/experiences/the-urs-festival-ajmer" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/the-urs-festival-ajmer" className="text-maroon underline">
               the Urs Festival at Ajmer Sharif Dargah
             </Link>{" "}
             marks the death anniversary of the 12th-century Sufi saint Khwaja Moinuddin Chishti,
@@ -436,7 +437,7 @@ export default function TopCulturalFestivalsPage() {
           </ArticleUL>
           <ArticleP>
             Most of these festivals can be built into a wider{" "}
-            <Link href="/destinations/rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan
             </Link>{" "}
             or North India itinerary without much extra travel, since several of the biggest —
@@ -444,7 +445,7 @@ export default function TopCulturalFestivalsPage() {
             within the same state. If you&apos;d like a trip built specifically around one of
             these dates, or a festival woven into a longer route you&apos;re already planning,
             our{" "}
-            <Link href="/experiences/festival-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/festival-tours" className="text-maroon underline">
               Festival Tours
             </Link>{" "}
             page rounds up every festival covered here in one place, or our team can put

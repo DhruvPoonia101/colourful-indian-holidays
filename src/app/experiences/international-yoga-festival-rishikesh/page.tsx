@@ -105,6 +105,7 @@ export default function InternationalYogaFestivalRishikeshPage() {
               src="/images/destinations/rishikesh-3.webp"
               alt="The evening Ganga Aarti fire ceremony, Rishikesh"
               fill
+              sizes="(min-width: 1280px) 1216px, 100vw"
               className="object-cover"
             />
           </div>

@@ -142,7 +142,7 @@ export default function RajasthanItineraryGuidePage() {
             and 12 days, using the real distances between the major stops, so you can decide
             what to include and what to leave for another visit. For a broader overview of the
             state, see our{" "}
-            <Link href="/destinations/rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan destination guide
             </Link>
             .
@@ -160,19 +160,19 @@ export default function RajasthanItineraryGuidePage() {
           <ArticleH2>The Cities, and What Each One Is For</ArticleH2>
           <ArticleP>
             Each major stop offers something different, which is worth knowing before you decide
-            which to keep. <Link href="/destinations/jaipur" className="text-maroon underline">Jaipur</Link>{" "}
+            which to keep. <Link prefetch={false} href="/destinations/jaipur" className="text-maroon underline">Jaipur</Link>{" "}
             is the capital and the natural starting point, with Amber Fort, the City Palace,
             the Hawa Mahal and the Jantar Mantar observatory, a UNESCO World Heritage Site.{" "}
-            <Link href="/destinations/jodhpur" className="text-maroon underline">Jodhpur</Link>{" "}
+            <Link prefetch={false} href="/destinations/jodhpur" className="text-maroon underline">Jodhpur</Link>{" "}
             is the Blue City, dominated by the enormous Mehrangarh Fort above its old town.{" "}
-            <Link href="/destinations/jaisalmer" className="text-maroon underline">Jaisalmer</Link>{" "}
+            <Link prefetch={false} href="/destinations/jaisalmer" className="text-maroon underline">Jaisalmer</Link>{" "}
             is a sandstone fort city on the edge of the Thar Desert, where people still live
             inside the fort walls, and where a camel safari and a night in the dunes are the
             main draw.{" "}
-            <Link href="/destinations/udaipur" className="text-maroon underline">Udaipur</Link>{" "}
+            <Link prefetch={false} href="/destinations/udaipur" className="text-maroon underline">Udaipur</Link>{" "}
             is the lake city, known for the City Palace above Lake Pichola and a slower, more
             romantic pace than the rest of the state.{" "}
-            <Link href="/destinations/pushkar" className="text-maroon underline">Pushkar</Link>{" "}
+            <Link prefetch={false} href="/destinations/pushkar" className="text-maroon underline">Pushkar</Link>{" "}
             is a small, holy lake town with a bazaar, a Brahma temple and, in November, one of
             the world&apos;s largest camel fairs. Ranthambore, a tiger reserve, is the wildlife
             add-on.
@@ -195,7 +195,7 @@ export default function RajasthanItineraryGuidePage() {
           <ArticleP>
             Jaipur to Udaipur is also a long day by road, and a short flight is a common
             alternative for travellers who would rather not spend a whole day driving. Our{" "}
-            <Link href="/travel-guide/hiring-a-car-in-rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/hiring-a-car-in-rajasthan" className="text-maroon underline">
               guide to hiring a car in Rajasthan
             </Link>{" "}
             explains how the driving side works in more detail.
@@ -218,11 +218,11 @@ export default function RajasthanItineraryGuidePage() {
           </ArticleUL>
           <ArticleP>
             This is close to our{" "}
-            <Link href="/tours/rajasthan-highlights" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-highlights" className="text-maroon underline">
               Rajasthan Highlights
             </Link>{" "}
             route, and our{" "}
-            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan Tours
             </Link>{" "}
             page shows the range of fixed itineraries we offer if you would rather start from
@@ -279,7 +279,7 @@ export default function RajasthanItineraryGuidePage() {
           <ArticleP>
             Twelve days is enough to cover the whole state without feeling rushed, and it is the
             length of our{" "}
-            <Link href="/tours/grand-rajasthan-circuit" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/grand-rajasthan-circuit" className="text-maroon underline">
               Grand Rajasthan Circuit
             </Link>
             . It runs Jaipur, Ranthambore, Jodhpur, Jaisalmer, Udaipur and Pushkar, and finishes
@@ -287,11 +287,11 @@ export default function RajasthanItineraryGuidePage() {
             the lake city in one trip, and it puts the wildlife stop in the middle of the
             trip as a break from forts and palaces. If forts and palaces are your main interest,
             our{" "}
-            <Link href="/experiences/palace-fort-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/palace-fort-tours" className="text-maroon underline">
               Palace and Fort Tours
             </Link>{" "}
             focus on them across four cities, and our{" "}
-            <Link href="/travel-guide/monuments-in-rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/monuments-in-rajasthan" className="text-maroon underline">
               monuments guide
             </Link>{" "}
             covers the major ones in detail.
@@ -309,11 +309,11 @@ export default function RajasthanItineraryGuidePage() {
             add wildlife to a Rajasthan trip. It needs at least two nights if you want two
             safaris, since a single drive rarely does it justice, and it works best placed
             between Jaipur and the rest of the loop rather than tacked onto the end. Our{" "}
-            <Link href="/tours/rajasthan-wildlife-safari" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/rajasthan-wildlife-safari" className="text-maroon underline">
               Rajasthan Wildlife Safari
             </Link>{" "}
             builds this into an eight-day route, and our{" "}
-            <Link href="/tours/wildlife-tiger-safari-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/tours/wildlife-tiger-safari-tours" className="text-maroon underline">
               wildlife and tiger safari guide
             </Link>{" "}
             compares Ranthambore with India&apos;s other reserves. No safari can guarantee a
@@ -362,21 +362,21 @@ export default function RajasthanItineraryGuidePage() {
             much driving. Repeat visitors often go straight to the desert or to Ranthambore,
             since they have already seen the main forts. Families tend to prefer fewer, longer
             stays, and our{" "}
-            <Link href="/experiences/family-holidays" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/family-holidays" className="text-maroon underline">
               Family Holidays
             </Link>{" "}
             itinerary is built around that idea. Photographers should look at our{" "}
-            <Link href="/experiences/photography-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/photography-tours" className="text-maroon underline">
               Photography Tours
             </Link>
             , which time visits around the light, and travellers who want a higher level of
             comfort should see our{" "}
-            <Link href="/experiences/luxury-india-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/luxury-india-tours" className="text-maroon underline">
               Luxury India Tours
             </Link>
             . For a hands-on look at Rajasthani craft and performance in and around Jaipur,
             see our{" "}
-            <Link href="/experiences/cultural-tours" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/cultural-tours" className="text-maroon underline">
               Cultural Tours
             </Link>
             .
@@ -402,11 +402,11 @@ export default function RajasthanItineraryGuidePage() {
             warm layer. Summer is very hot and most travellers avoid it. If your dates allow, it
             is worth timing the trip around a festival: the Pushkar Camel Fair in the autumn
             is the best known, and our{" "}
-            <Link href="/experiences/pushkar-fair" className="text-maroon underline">
+            <Link prefetch={false} href="/experiences/pushkar-fair" className="text-maroon underline">
               Pushkar Fair guide
             </Link>{" "}
             explains how to plan for it, since accommodation there fills up months ahead. Our{" "}
-            <Link href="/best-time-to-visit-india" className="text-maroon underline">
+            <Link prefetch={false} href="/best-time-to-visit-india" className="text-maroon underline">
               best-time-to-visit guide
             </Link>{" "}
             has the month-by-month picture.
@@ -428,7 +428,7 @@ export default function RajasthanItineraryGuidePage() {
             only about 280 km, which is why many travellers add Agra at the start and treat the
             whole thing as a longer North India route. Getting between Rajasthan and the rest
             of India often means a domestic flight, and our{" "}
-            <Link href="/travel-guide/getting-around-india" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/getting-around-india" className="text-maroon underline">
               guide to getting around India
             </Link>{" "}
             explains how to decide between flights, trains and road transport for the long

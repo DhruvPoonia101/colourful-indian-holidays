@@ -274,7 +274,7 @@ export default function GettingAroundIndiaGuidePage() {
             holder. We&apos;ve written a full breakdown of how this works specifically for Rajasthan —
             vehicle types, realistic city-to-city drive times, and what a day on the road looks
             like — in our{" "}
-            <Link href="/travel-guide/hiring-a-car-in-rajasthan" className="text-maroon underline">
+            <Link prefetch={false} href="/travel-guide/hiring-a-car-in-rajasthan" className="text-maroon underline">
               Hiring a Car in Rajasthan guide
             </Link>
             , and the same model applies across every region we operate in, not just Rajasthan.
