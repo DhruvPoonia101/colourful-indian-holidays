@@ -57,17 +57,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  // Time-trap: this one CAN fire on a real person (autofill, a familiar
-  // form, a fast typist on a desktop keyboard). It must never return the
-  // silent { ok: true } above — that showed the sender a success message
-  // while the enquiry was discarded. A visible, retryable error costs a
-  // bot nothing and costs us no leads: the retry is always slow enough.
-  if (isSubmittedTooFast(formLoadedAt)) {
-    return NextResponse.json(
-      { error: "That came through a little too quickly for us to process. Please press send again." },
-      { status: 400 }
-    );
-  }
+  // Time-trap: NEVER rejects. A real visitor must never see an error or have
+  // to resend (autofill and fast typists legitimately beat any threshold), so
+  // a fast submission is still processed and emailed — it is only tagged in
+  // the subject so a suspected bot is easy to spot in the inbox. Turnstile
+  // (required client-side and verified below) is the actual bot gate.
+  const fastTag = isSubmittedTooFast(formLoadedAt) ? "[Check: very fast submit] " : "";
 
   const ip = getClientIp(request);
   if (isRateLimited(ip)) {
@@ -109,7 +104,7 @@ export async function POST(request: Request) {
       from: `Colourful Indian Holidays <${BUSINESS.email}>`,
       to: BUSINESS.email,
       replyTo: email || undefined,
-      subject: `Trip Planner — Contact Details Received (${fullName})`,
+      subject: `${fastTag}Trip Planner — Contact Details Received (${fullName})`,
       html: `
         <h2>Trip planner — step 2 details</h2>
         <p><strong>Name:</strong> ${fullName}</p>
