@@ -47,8 +47,22 @@ export async function POST(request: Request) {
 
   // Bots that auto-fill every field trip the honeypot or submit too fast.
   // Return a generic success without sending an email — no signal for the bot to adapt to.
-  if (isHoneypotFilled(companyWebsite) || isSubmittedTooFast(formLoadedAt)) {
+  // Honeypot: only a bot fills a field it cannot see, so answer as though
+  // the submission worked rather than telling the bot it was caught.
+  if (isHoneypotFilled(companyWebsite)) {
     return NextResponse.json({ ok: true });
+  }
+
+  // Time-trap: this one CAN fire on a real person (autofill, a familiar
+  // form, a fast typist on a desktop keyboard). It must never return the
+  // silent { ok: true } above — that showed the sender a success message
+  // while the enquiry was discarded. A visible, retryable error costs a
+  // bot nothing and costs us no leads: the retry is always slow enough.
+  if (isSubmittedTooFast(formLoadedAt)) {
+    return NextResponse.json(
+      { error: "That came through a little too quickly for us to process. Please press send again." },
+      { status: 400 }
+    );
   }
 
   const ip = getClientIp(request);

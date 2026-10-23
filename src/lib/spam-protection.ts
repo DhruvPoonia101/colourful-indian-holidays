@@ -7,6 +7,16 @@
  *    auto-fill every input on a page trip it.
  * 2. Time-trap — rejects submissions that arrive faster than a human could
  *    plausibly fill the form. Bots submit near-instantly.
+ *
+ *    This one can fire on a real person, unlike the honeypot, so it must
+ *    never silently swallow a lead. It previously shared the honeypot's
+ *    "pretend it worked" response, which meant a fast submitter saw a
+ *    success message while nothing was sent — a lead lost with no trace.
+ *    The Get-a-Quote modal was worst hit because it restarts this clock on
+ *    every open (not page load), so filling five short fields on a desktop
+ *    keyboard routinely beat the old 3s threshold while the same form on a
+ *    phone never did. Callers now separate the two: the honeypot stays
+ *    silent, the time-trap returns a visible, retryable error.
  * 3. Rate limiting — caps how many submissions a single IP can make in a
  *    rolling window. Best-effort only: Vercel serverless functions don't
  *    share memory across instances, so this catches bursts hitting the same
@@ -63,7 +73,15 @@ const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
 const RATE_LIMIT_MAX_REQUESTS = 5;
 
-const MIN_SUBMIT_MS = 3000; // real humans take at least a few seconds to fill any of these forms
+/**
+ * Lower bound on a plausible human fill time. Bots submit in well under
+ * 100ms, so this still catches them; 3000ms did not, because a person using
+ * browser autofill or a familiar form on a physical keyboard can genuinely
+ * beat three seconds. Cloudflare Turnstile is the real bot defence here —
+ * this is a cheap backstop, and it is tuned to avoid false positives rather
+ * than to catch the last few percent.
+ */
+const MIN_SUBMIT_MS = 1200;
 
 /** Extracts the best-guess client IP from a Next.js Request on Vercel. */
 export function getClientIp(request: Request): string {
