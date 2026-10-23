@@ -11,9 +11,12 @@ export const BUSINESS = {
   // mailto: link, the JSON-LD Organization/TravelAgency schema, and the
   // `to:` recipient of all four lead-capture API routes read from here —
   // so this one line is the only place the address needs changing.
-  // Distinct from the Resend `from:` sender identity used by those routes
-  // (enquiries@colourfulindianholidays.com), which is a sending address
-  // tied to the verified domain, not an inbox.
+  // Also used as the Resend `from:` sender identity on those routes. That
+  // works because the whole colourfulindianholidays.com domain is verified
+  // in Resend, so any address on it can send. Note the side effect: lead
+  // emails arrive from the same address they are sent to, so an inbox will
+  // show them as being from you. `replyTo` is still set to the enquirer, so
+  // hitting Reply goes to the customer, not to this mailbox.
   email: "mail@colourfulindianholidays.com",
   foundingYear: 2007,
   address: {
