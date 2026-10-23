@@ -6,6 +6,8 @@ import { CityGrid } from "@/components/destinations/CityGrid";
 import { Testimonials } from "@/components/home/Testimonials";
 import { WhyBookDirect } from "@/components/shared/WhyBookDirect";
 import { FAQSection } from "@/components/destinations/FAQSection";
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import {
@@ -55,7 +57,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "India Tours from the UK | Private, Tailor-Made Trips";
 const description =
-  "Private India tours for UK travellers — Heathrow–Delhi flight options, e-Visa and e-Arrival Card guidance, itineraries built around your dates.";
+  "Bespoke, private India holidays for UK travellers — Heathrow–Delhi flight options, e-Visa and e-Arrival Card guidance, built around your dates.";
 const pagePath = "/india-tours-from-uk";
 
 export const metadata: Metadata = {
@@ -255,7 +257,7 @@ export default function IndiaToursFromUkPage() {
                 flight from the UK is genuinely one of the more comfortable long-hauls available —
                 multiple daily options from Heathrow, and a manageable time difference once you
                 land. As a Jaipur-based, IATO-registered agency, every itinerary we build is
-                private and tailor-made around your own dates and interests, with a private
+                private, bespoke and tailor-made around your own dates and interests, with a private
                 air-conditioned vehicle and English-speaking guide throughout — and for many UK
                 travellers, a Rajasthan or Golden Triangle trip is easily combined with Kerala, a
                 wildlife safari, or a Nepal and Bhutan extension for one longer, more complete
@@ -396,6 +398,8 @@ export default function IndiaToursFromUkPage() {
         </div>
 
         <WhyBookDirect />
+
+        <RelatedGuides guides={guidesFor("/india-tours-from-uk")} />
 
         <FAQSection
           eyebrow="FAQ"

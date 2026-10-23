@@ -99,7 +99,7 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
         // Always opens rather than toggles: a real mouse click fires `mouseenter`
         // just before `click`, so a toggle would immediately flip it back closed.
         onClick={() => setOpen(true)}
-        className={`flex items-center gap-1 whitespace-nowrap border-b-2 text-sm font-medium transition-colors focus-visible:outline-none ${
+        className={`flex items-center gap-1 whitespace-nowrap border-b-2 text-[13.5px] font-medium transition-colors focus-visible:outline-none 2xl:text-[15px] ${
           isActive
             ? "border-gold text-gold-dark"
             : "border-transparent text-ink/80 hover:text-maroon focus-visible:text-maroon"
@@ -174,7 +174,6 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
                     {column.items.map((link) => (
                       <li key={link.href}>
                         <Link
-                          prefetch={false}
                           href={link.href}
                           role="menuitem"
                           tabIndex={open ? 0 : -1}
@@ -199,7 +198,6 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
                   {item.durationRow.items.map((link) => (
                     <li key={link.href}>
                       <Link
-                        prefetch={false}
                         href={link.href}
                         role="menuitem"
                         tabIndex={open ? 0 : -1}
@@ -219,7 +217,6 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
             <div className="grid grid-cols-3 gap-2">
               {item.items.map((link) => (
                 <Link
-                  prefetch={false}
                   key={link.href}
                   href={link.href}
                   role="menuitem"
@@ -236,7 +233,6 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
               {item.items.map((link) => (
                 <li key={link.href}>
                   <Link
-                    prefetch={false}
                     href={link.href}
                     role="menuitem"
                     tabIndex={open ? 0 : -1}
@@ -257,7 +253,6 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
 
         {item.viewAllHref && hasColumns && (
           <Link
-            prefetch={false}
             href={item.viewAllHref}
             role="menuitem"
             tabIndex={open ? 0 : -1}
@@ -274,7 +269,6 @@ export function NavDropdown({ item }: { item: NavDropdownItem }) {
 
         {item.viewAllHref && !hasColumns && (
           <Link
-            prefetch={false}
             href={item.viewAllHref}
             role="menuitem"
             tabIndex={open ? 0 : -1}

@@ -75,7 +75,7 @@ export function ContactInfoCard() {
             className="flex origin-left items-center gap-3.5 transition-transform duration-200 ease-out hover:scale-105"
           >
             <FiMail aria-hidden="true" className="h-5 w-5 shrink-0 text-maroon" />
-            <span className="text-sm text-ink transition-colors hover:text-maroon">
+            <span className="break-all text-sm text-ink transition-colors hover:text-maroon">
               {BUSINESS.email}
             </span>
           </a>

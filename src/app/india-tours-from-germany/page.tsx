@@ -6,6 +6,8 @@ import { CityGrid } from "@/components/destinations/CityGrid";
 import { Testimonials } from "@/components/home/Testimonials";
 import { WhyBookDirect } from "@/components/shared/WhyBookDirect";
 import { FAQSection } from "@/components/destinations/FAQSection";
+import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { guidesFor } from "@/content/related-guides";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { Reveal } from "@/components/ui/Reveal";
 import {
@@ -397,6 +399,8 @@ export default function IndiaToursFromGermanyPage() {
         </div>
 
         <WhyBookDirect />
+
+        <RelatedGuides guides={guidesFor("/india-tours-from-germany")} />
 
         <FAQSection
           eyebrow="FAQ"

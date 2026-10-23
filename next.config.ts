@@ -218,6 +218,7 @@ const nextConfig: NextConfig = {
       { source: "/tours/kerala-in-10-days", destination: "/tours/kerala-tours", permanent: true },
       { source: "/tours/paradise-of-hills-valley", destination: "/tours/hill-stations-tours", permanent: true },
       { source: "/tours/06-days-magical-himalaya", destination: "/tours/hill-stations-tours", permanent: true },
+      { source: "/tours/gujarat-beaches-tour", destination: "/destinations/gujarat-beaches", permanent: true },
       { source: "/wildlife-attractions/kanha-national-park", destination: "/destinations/kanha", permanent: true },
       { source: "/wildlife-attractions/ranthambore-national-park", destination: "/destinations/ranthambore", permanent: true },
     ];

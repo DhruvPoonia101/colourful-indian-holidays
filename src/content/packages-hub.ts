@@ -107,14 +107,6 @@ export const featuredPackages: CityCard[] = [
     imageAlt: "Chhatrapati Shivaji Maharaj Terminus, Mumbai",
   },
   {
-    name: "Gujarat Beaches Tour",
-    tagline: "Diu's Colonial Coast & Somnath's Sacred Shore",
-    description: "A Portuguese colonial island and one of Hinduism's most significant shore temples.",
-    href: "/tours/gujarat-beaches-tour",
-    image: "/images/destinations/gujarat-beaches.webp",
-    imageAlt: "A quiet stretch of Gujarat's coastline",
-  },
-  {
     name: "Maharashtra Tour",
     tagline: "Ajanta, Ellora & Shirdi",
     description: "UNESCO rock-cut cave temples and one of India's most-visited pilgrimage towns, beyond Mumbai.",

@@ -11,6 +11,39 @@ import { MobileMenu } from "@/components/layout/MobileMenu";
 import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { navItems } from "@/content/nav";
 
+/**
+ * RESPONSIVE SIZING — why the breakpoints are where they are.
+ *
+ * The bar holds three things that all refuse to shrink: the logo, eight
+ * whitespace-nowrap nav items, and the CTA. Measured at the previous
+ * settings (logo 205px, 8 items at 765px, 7 gaps of 32px, CTA 175px,
+ * px-16 padding) the row needed 1497px of width before anything could be
+ * drawn. A flex row cannot shrink below that, so on every viewport under
+ * ~1500px the overflow was simply clipped by the fixed wrapper:
+ *
+ *   - 1024–1279px: "Travel Guide", "Contact Us" and the whole CTA sat
+ *     off-screen (the desktop nav turned on at lg, which is 1024px).
+ *   - 1280–1499px (1366×768 and 1440×900 laptops): the CTA was cut in
+ *     half, reading "Plan My Jou…".
+ *   - Under 400px (iPhone SE/12 mini/14/15, Galaxy S-series — the logo at
+ *     190px plus the CTA plus the 44px button needed exactly 400px): the
+ *     hamburger button itself was off-screen, so those phones had no way
+ *     to open the menu at all.
+ *
+ * Because the wrapper is `position: fixed`, none of this produced a
+ * horizontal scrollbar — the page looked fine while the controls were
+ * unreachable, which is why it only showed up on some screens.
+ *
+ * The fix is three size tiers that each measure under their own viewport:
+ *   - base → xl (under 1280px): hamburger. Fits 320px with room to spare.
+ *   - xl (1280px+): compact desktop nav, measured at ~1182px.
+ *   - 2xl (1536px+): full-size nav, measured at ~1393px.
+ *
+ * The desktop nav deliberately starts at xl rather than lg: eight
+ * top-level items cannot fit 1024px without shrinking the text to an
+ * unreadable size, so tablets and small laptops get the hamburger.
+ */
+
 export function Navbar() {
   const pathname = usePathname();
 
@@ -43,6 +76,25 @@ export function Navbar() {
       document.body.style.overflow = "";
     };
   }, [isMobileMenuOpen]);
+
+  // The mobile menu only exists below xl. If the viewport grows past that
+  // while the panel is open (phone rotated, desktop window resized), the
+  // panel unmounts but `overflow: hidden` would otherwise stay stuck on
+  // <body>, leaving the page unscrollable.
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 1280px)");
+
+    const handleChange = (event: MediaQueryListEvent | MediaQueryList) => {
+      if (event.matches) setIsMobileMenuOpen(false);
+    };
+
+    handleChange(mql);
+    mql.addEventListener("change", handleChange);
+
+    return () => {
+      mql.removeEventListener("change", handleChange);
+    };
+  }, []);
 
   useLayoutEffect(() => {
     const node = headerRef.current;
@@ -92,18 +144,27 @@ export function Navbar() {
               h-[76px]
               w-full
               items-center
-              px-6
-              sm:px-8
-              lg:px-12
-              xl:px-16
+              gap-2
+              px-3
+              min-[380px]:px-4
+              sm:gap-3
+              sm:px-6
+              xl:gap-4
+              xl:px-6
+              2xl:px-10
             "
           >
 
             {/* =====================================================
                 LOGO — FAR LEFT
+
+                Scales down with the viewport instead of holding a
+                fixed 190px on a 320px-wide phone. `shrink-0` is kept
+                so it never distorts, but the widths themselves are
+                now responsive, which is what frees up the room the
+                hamburger needs.
             ===================================================== */}
             <Link
-              prefetch={false}
               href="/"
               aria-label="Colourful Indian Holidays — Home"
               className="
@@ -121,13 +182,15 @@ export function Navbar() {
                 width={900}
                 height={386}
                 priority
-                sizes="220px"
+                sizes="(min-width: 1536px) 205px, (min-width: 1280px) 175px, (min-width: 640px) 185px, 160px"
                 className="
                   h-auto
-                  w-[190px]
+                  w-[140px]
                   object-contain
-                  sm:w-[200px]
-                  lg:w-[205px]
+                  min-[380px]:w-[160px]
+                  sm:w-[185px]
+                  xl:w-[175px]
+                  2xl:w-[205px]
                 "
               />
             </Link>
@@ -135,24 +198,27 @@ export function Navbar() {
             {/* =====================================================
                 DESKTOP NAVIGATION
 
-                The nav sits in the center area while the CTA
-                remains pushed completely to the right.
+                Starts at xl (1280px), not lg (1024px) — see the note
+                at the top of this file. `min-w-0` lets the centre
+                column actually give way under pressure instead of
+                forcing the row wider than the screen.
             ===================================================== */}
             <div
               className="
                 hidden
+                min-w-0
                 flex-1
                 items-center
                 justify-center
-                lg:flex
+                xl:flex
               "
             >
               <div
                 className="
                   flex
                   items-center
-                  gap-7
-                  xl:gap-8
+                  gap-4
+                  2xl:gap-6
                 "
               >
                 {navItems.map((item) => {
@@ -178,7 +244,6 @@ export function Navbar() {
 
                   return (
                     <Link
-                      prefetch={false}
                       key={item.label}
                       href={item.href}
                       className={`
@@ -187,10 +252,11 @@ export function Navbar() {
                         whitespace-nowrap
                         border-b-2
                         py-1
-                        text-[15px]
+                        text-[13.5px]
                         font-medium
                         transition-colors
                         duration-200
+                        2xl:text-[15px]
 
                         ${
                           isActive
@@ -207,32 +273,45 @@ export function Navbar() {
             </div>
 
             {/* =====================================================
-                CTA — FAR RIGHT. Visible at every width now, not just
-                lg:. It previously lived inside a `hidden lg:flex`
-                wrapper, meaning the site's primary conversion button
-                was completely absent from the visible bar on every
-                phone and tablet — reachable only after opening the
-                hamburger menu. A compact version now shows alongside
-                the hamburger on small screens; the full-size desktop
-                version is unchanged at the lg: breakpoint.
+                CTA — FAR RIGHT. Visible at every width, including
+                phones, so the site's primary conversion button is
+                never hidden behind the hamburger.
+
+                Below xl it carries the short "Get Quote" label: the
+                full "Plan My Journey" wording is ~120px of
+                unbreakable text, which was a third of the reason the
+                hamburger fell off the edge of a 360px phone. Both
+                labels open the same modal — only one is ever
+                rendered visibly, so there is still a single trigger.
             ===================================================== */}
-            <div className="ml-auto flex shrink-0 items-center lg:ml-0">
+            <div className="ml-auto flex shrink-0 items-center xl:ml-0">
               <GetQuoteButton
                 pageName="Plan My Journey (Navbar)"
-                triggerLabel="Plan My Journey"
+                triggerLabel={
+                  <>
+                    <span className="xl:hidden">Get Quote</span>
+                    <span className="hidden xl:inline">Plan My Journey</span>
+                  </>
+                }
                 triggerClassName="
                   inline-flex items-center justify-center gap-2 whitespace-nowrap
                   rounded-full bg-[#12233F] text-ivory shadow-sm transition-all
                   duration-200 ease-out hover:scale-[1.04] hover:bg-[#1B335C]
                   font-semibold tracking-wide
-                  px-4 py-2 text-xs min-h-9
-                  lg:px-7 lg:py-3 lg:text-sm lg:min-h-11
+                  px-3 py-2 text-[11px] min-h-9
+                  min-[380px]:px-4 min-[380px]:text-xs
+                  xl:px-5 xl:py-2.5 xl:text-[13px] xl:min-h-10
+                  2xl:px-7 2xl:py-3 2xl:text-sm 2xl:min-h-11
                 "
               />
             </div>
 
             {/* =====================================================
                 MOBILE MENU BUTTON
+
+                Stays a 44×44 tap target (the accessibility minimum)
+                at every size — the room it needs is found by
+                shrinking the logo and the CTA instead.
             ===================================================== */}
             <button
               type="button"
@@ -240,7 +319,7 @@ export function Navbar() {
               aria-label="Open menu"
               aria-expanded={isMobileMenuOpen}
               className="
-                ml-2
+                -mr-1
                 flex
                 h-11
                 w-11
@@ -248,7 +327,7 @@ export function Navbar() {
                 items-center
                 justify-center
                 text-ink
-                lg:hidden
+                xl:hidden
               "
             >
               <FiMenu

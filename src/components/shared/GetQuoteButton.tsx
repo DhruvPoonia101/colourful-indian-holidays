@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiCalendar, FiSend, FiX } from "react-icons/fi";
@@ -30,10 +30,13 @@ export function GetQuoteButton({
   /** "tour" (default) asks for travel month + traveller count — used on destination
    * and package pages. "carRental" asks for route + a specific date instead. */
   variant?: "tour" | "carRental";
-  /** Text shown on the button that opens the modal. Defaults to "Get a Free Quote" —
+  /** Content shown on the button that opens the modal. Defaults to "Get a Free Quote" —
    * override for other entry points (e.g. the navbar's "Plan My Journey" button) that
-   * should open the same modal under different wording. */
-  triggerLabel?: string;
+   * should open the same modal under different wording. Accepts a node, not just a
+   * string, so a caller can swap the wording by breakpoint (the navbar shows a short
+   * "Get Quote" on phones and the full label from xl up) without mounting a second
+   * trigger — and therefore a second copy of this modal — just to change the text. */
+  triggerLabel?: ReactNode;
   /** Full className for the trigger button, overriding the default gold pill style.
    * Use this to match the trigger to its surrounding context (e.g. the navbar). */
   triggerClassName?: string;

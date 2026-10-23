@@ -40,7 +40,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             onClick={onClose}
-            className="fixed inset-0 z-50 bg-ink/50 lg:hidden"
+            className="fixed inset-0 z-50 bg-ink/50 xl:hidden"
             aria-hidden="true"
           />
         )}
@@ -56,7 +56,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           role="dialog"
           aria-modal="true"
           aria-label="Site menu"
-          className="fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col bg-ivory lg:hidden"
+          className="fixed inset-y-0 right-0 z-50 flex w-full max-w-sm flex-col bg-ivory xl:hidden"
           >
             <div className="flex items-center justify-between border-b border-sand px-5 py-4">
               <span className="font-display text-lg font-semibold text-maroon">Menu</span>
@@ -77,7 +77,6 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     return (
                       <li key={item.label}>
                         <Link
-                          prefetch={false}
                           href={item.href}
                           onClick={onClose}
                           className="block py-3.5 text-sm font-medium text-ink"
@@ -128,7 +127,6 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                       {column.items.map((link) => (
                                         <li key={link.href}>
                                           <Link
-                                            prefetch={false}
                                             href={link.href}
                                             onClick={onClose}
                                             className="block rounded-lg px-2 py-2 text-sm text-ink-soft transition-colors hover:bg-cream hover:text-maroon"
@@ -146,7 +144,6 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                                 {item.items.map((link) => (
                                   <li key={link.href}>
                                     <Link
-                                      prefetch={false}
                                       href={link.href}
                                       onClick={onClose}
                                       className="block rounded-lg px-2 py-2 text-sm text-ink-soft transition-colors hover:bg-cream hover:text-maroon"
@@ -163,7 +160,6 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                             )}
                             {item.viewAllHref && (
                               <Link
-                                prefetch={false}
                                 href={item.viewAllHref}
                                 onClick={onClose}
                                 className="mb-3 ml-3 inline-block text-sm font-semibold text-maroon"

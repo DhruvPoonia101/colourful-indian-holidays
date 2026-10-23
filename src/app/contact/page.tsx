@@ -76,10 +76,10 @@ export default function ContactPage() {
         {/* 2. Contact Info + Enquiry Form, side by side (merged: options + office/company info) */}
         <section id="enquiry-form" className="border-t border-sand/70 py-10 sm:py-14">
           <div className="mx-auto grid max-w-6xl gap-8 px-6 sm:px-8 lg:grid-cols-[380px_1fr] lg:gap-12">
-            <div className="lg:order-1">
+            <div className="min-w-0 lg:order-1">
               <ContactInfoCard />
             </div>
-            <div className="lg:order-2">
+            <div className="min-w-0 lg:order-2">
               <ContactForm />
             </div>
           </div>
