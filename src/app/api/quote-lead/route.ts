@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { BUSINESS } from "@/lib/seo/business";
 import { formatLocation, getApproxLocation } from "@/lib/geo";
+import { saveLead } from "@/lib/leads-store";
 import {
   getClientIp,
   isHoneypotFilled,
@@ -66,7 +67,8 @@ export async function POST(request: Request) {
   // a fast submission is still processed and emailed — it is only tagged in
   // the subject so a suspected bot is easy to spot in the inbox. Turnstile
   // (required client-side and verified below) is the actual bot gate.
-  const fastTag = isSubmittedTooFast(formLoadedAt) ? "[Check: very fast submit] " : "";
+  const isFast = isSubmittedTooFast(formLoadedAt);
+  const fastTag = isFast ? "[Check: very fast submit] " : "";
 
   const ip = getClientIp(request);
   if (isRateLimited(ip)) {
@@ -99,17 +101,41 @@ export async function POST(request: Request) {
     );
   }
 
+  const geo = await getApproxLocation(ip);
+
+  // Store first, email second: the database row is the permanent record and
+  // the email is the alert. The enquiry counts as received if EITHER worked,
+  // so a Resend hiccup (or a Supabase one) never makes a visitor retry.
+  const saved = await saveLead({
+    source: "quote",
+    fullName,
+    email,
+    phone,
+    destination: route,
+    travelDate: date,
+    travelMonth,
+    travellers,
+    message,
+    pageName,
+    pageUrl,
+    extra: { formType: formType ?? "tour" },
+    ip: geo.ip,
+    approxLocation: formatLocation(geo),
+    flaggedFast: isFast,
+  });
+
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.error("RESEND_API_KEY is not set — quote request was not emailed.");
-    return NextResponse.json(
-      { error: "Email sending isn't configured yet. Please try WhatsApp or call us instead." },
-      { status: 500 }
-    );
+    return saved
+      ? NextResponse.json({ ok: true })
+      : NextResponse.json(
+          { error: "Email sending isn't configured yet. Please try WhatsApp or call us instead." },
+          { status: 500 }
+        );
   }
 
   const resend = new Resend(apiKey);
-  const geo = await getApproxLocation(ip);
 
   try {
     const { error } = await resend.emails.send({
@@ -136,12 +162,14 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error("Resend error:", error);
+      if (saved) return NextResponse.json({ ok: true });
       return NextResponse.json({ error: "Couldn't send that just now — please try again." }, { status: 502 });
     }
 
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Quote lead send failed:", err);
+    if (saved) return NextResponse.json({ ok: true });
     return NextResponse.json({ error: "Couldn't send that just now — please try again." }, { status: 500 });
   }
 }
