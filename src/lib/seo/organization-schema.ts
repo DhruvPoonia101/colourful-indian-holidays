@@ -1,10 +1,23 @@
-import { BUSINESS, SITE_NAME, SITE_URL } from "./business";
+import {
+  BUSINESS,
+  BUSINESS_DESCRIPTOR,
+  ORGANIZATION_ID,
+  SITE_NAME,
+  SITE_NAME_US_SPELLING,
+  SITE_URL,
+} from "./business";
 
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": ["TravelAgency", "LocalBusiness"],
+    "@id": ORGANIZATION_ID,
     name: BUSINESS.name,
+    // The US spelling people search for. Helps engines (and AI answers) tie
+    // "Colorful Indian Holidays" to this company rather than to Holi or
+    // generic "colourful India" content.
+    alternateName: [SITE_NAME_US_SPELLING],
+    description: `${BUSINESS_DESCRIPTOR}. Tailor-made private tours with your own guide, driver and hand-picked hotels.`,
     legalName: BUSINESS.legalName,
     url: BUSINESS.url,
     logo: `${SITE_URL}/images/logo/logo-horizontal.webp`,
@@ -55,6 +68,12 @@ export function organizationJsonLd() {
       opens: "00:00",
       closes: "23:59",
     },
+    // Accreditation stated on the site's trust badges (IATO membership page).
+    memberOf: {
+      "@type": "Organization",
+      name: "Indian Association of Tour Operators (IATO)",
+      url: "https://iato.in",
+    },
     sameAs: BUSINESS.sameAs,
     // aggregateRating intentionally omitted: the page visibly shows two
     // separate, equally-prominent rating sources (Google 4.9/140+ and
@@ -79,7 +98,10 @@ export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
     name: SITE_NAME,
+    alternateName: SITE_NAME_US_SPELLING,
     url: SITE_URL,
+    publisher: { "@id": ORGANIZATION_ID },
   };
 }

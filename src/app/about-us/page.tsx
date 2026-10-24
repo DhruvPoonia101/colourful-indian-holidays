@@ -105,7 +105,9 @@ export default function AboutUsPage() {
               <SectionIntro eyebrow="Our Story" heading="Built From Rajasthan, For the World" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
-                  Colourful Indian Holidays was founded in {BUSINESS.foundingYear} in Jaipur,
+                  Colourful Indian Holidays (also spelled Colorful Indian Holidays) is a
+                  Jaipur-based private tour operator for India, Nepal and Bhutan. It was
+                  founded in {BUSINESS.foundingYear} in Jaipur,
                   built on a simple idea: the best way to show someone India is to
                   plan their trip the way we&apos;d plan it for a friend — privately, around
                   their own dates and interests, not squeezed into someone else&apos;s fixed

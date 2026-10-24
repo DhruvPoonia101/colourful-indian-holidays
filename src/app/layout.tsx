@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Luxury, tailor-made Rajasthan and India tour packages for international travellers. Private guides, heritage hotels and custom itineraries since 2007.",
+    "Jaipur-based private tour operator for India, Nepal and Bhutan since 2007. Tailor-made tours with private guides and heritage hotels.",
   openGraph: {
     siteName: SITE_NAME,
     type: "website",

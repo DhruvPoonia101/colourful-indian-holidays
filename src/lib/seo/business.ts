@@ -1,5 +1,15 @@
 export const SITE_URL = "https://colourfulindianholidays.com";
 export const SITE_NAME = "Colourful Indian Holidays";
+/** US spelling — what a large share of the target audience actually types. */
+export const SITE_NAME_US_SPELLING = "Colorful Indian Holidays";
+/** One consistent line describing the business. Reused in schema, the
+ * homepage, About and llms.txt so search and AI engines see the same words
+ * everywhere (the brand name alone is generic and collides with Holi and
+ * "colourful India" festival content). */
+export const BUSINESS_DESCRIPTOR =
+  "Jaipur-based private tour operator for India, Nepal and Bhutan since 2007";
+/** Stable @id so every page's schema refers to the same organisation. */
+export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 
 export const BUSINESS = {
   name: SITE_NAME,

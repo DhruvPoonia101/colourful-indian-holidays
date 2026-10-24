@@ -1,6 +1,6 @@
 import type { PackageContent } from "@/content/packages/types";
 import { getStartingPrice } from "@/lib/pricing";
-import { BUSINESS, SITE_URL } from "./business";
+import { BUSINESS, ORGANIZATION_ID, SITE_URL } from "./business";
 
 export type TripItineraryDay = {
   title: string;
@@ -87,6 +87,7 @@ export function touristTripJsonLd(trip: TouristTripInput) {
     },
     provider: {
       "@type": "TravelAgency",
+      "@id": ORGANIZATION_ID,
       name: BUSINESS.name,
       url: BUSINESS.url,
     },
@@ -168,6 +169,7 @@ export function touristTripCollectionJsonLd(hub: {
           },
           provider: {
             "@type": "TravelAgency",
+            "@id": ORGANIZATION_ID,
             name: BUSINESS.name,
             url: BUSINESS.url,
           },
