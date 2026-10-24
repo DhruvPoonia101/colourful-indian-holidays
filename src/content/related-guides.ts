@@ -87,6 +87,7 @@ const G = {
 } satisfies Record<string, GuideLink>;
 
 const RULES: Array<{ test: RegExp; guides: GuideLink[] }> = [
+  { test: /private-tours-of-india/, guides: [G.firstTrip, G.around, G.eVisa] },
   { test: /india-tours-from/, guides: [G.firstTrip, G.eVisa, G.health] },
   { test: /golden-triangle|taj-mahal|agra|delhi|india-highlights|north-india/, guides: [G.goldenTriangle, G.taj, G.eVisa] },
   { test: /shekhawati|mandawa|nawalgarh/, guides: [G.shekhawati, G.rajasthan, G.monuments] },

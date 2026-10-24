@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleFAQ } from "@/components/travel-guide/ArticleFAQ";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -198,22 +199,22 @@ export default function IndiaEVisaGuidePage() {
           <ArticleP>
             On the 1-year and 5-year e-Tourist visas, most nationalities are limited to 90 days of
             continuous stay per visit. A small group of nationalities — citizens of the{" "}
-            <Link prefetch={false} href="/india-tours-from-usa" className="text-maroon underline">
+            <Link href="/india-tours-from-usa" className="text-maroon underline">
               United States
             </Link>
             ,{" "}
-            <Link prefetch={false} href="/india-tours-from-uk" className="text-maroon underline">
+            <Link href="/india-tours-from-uk" className="text-maroon underline">
               United Kingdom
             </Link>
             , and Canada, along with Japan — get an extended allowance of up to 180 days per
             visit. This isn&apos;t a minor technicality if you&apos;re planning a longer stay: an American,
             British or Canadian traveller can realistically plan a 3-month trip on a single visa
             entry, while an{" "}
-            <Link prefetch={false} href="/india-tours-from-australia" className="text-maroon underline">
+            <Link href="/india-tours-from-australia" className="text-maroon underline">
               Australian
             </Link>
             ,{" "}
-            <Link prefetch={false} href="/india-tours-from-germany" className="text-maroon underline">
+            <Link href="/india-tours-from-germany" className="text-maroon underline">
               German
             </Link>
             , or most other nationality&apos;s traveller planning the same length of stay would need to
@@ -223,7 +224,7 @@ export default function IndiaEVisaGuidePage() {
           </ArticleP>
           <ArticleP>
             Travellers flying from the{" "}
-            <Link prefetch={false} href="/india-tours-from-uae" className="text-maroon underline">
+            <Link href="/india-tours-from-uae" className="text-maroon underline">
               UAE
             </Link>{" "}
             specifically should note that your visa requirement is set by your own passport&apos;s
@@ -385,6 +386,8 @@ export default function IndiaEVisaGuidePage() {
             — it&apos;s exactly the kind of practical detail we help international travellers work
             through before they book.
           </ArticleP>
+
+          <ArticleFAQ faqs={faqs} />
         </ArticleBody>
 
         <AuthorBioCard

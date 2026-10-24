@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleFAQ } from "@/components/travel-guide/ArticleFAQ";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -133,7 +134,7 @@ export default function FirstTripToIndiaGuidePage() {
           <ArticleP>
             Most guides to a first trip to India are lists of monuments. This one isn&apos;t. If
             you want to know what to see, our{" "}
-            <Link prefetch={false} href="/travel-guide/20-best-tourist-places-to-visit-in-india" className="text-maroon underline">
+            <Link href="/travel-guide/20-best-tourist-places-to-visit-in-india" className="text-maroon underline">
               20 Best Tourist Places in India
             </Link>{" "}
             covers that ground well. What that kind of list doesn&apos;t cover is everything
@@ -159,11 +160,11 @@ export default function FirstTripToIndiaGuidePage() {
             than five or six days rarely does India justice; the distances between places worth
             seeing are genuinely large, and a rushed first trip tends to leave people wanting to
             come back rather than feeling satisfied. Our{" "}
-            <Link prefetch={false} href="/travel-guide/golden-triangle-itinerary-guide" className="text-maroon underline">
+            <Link href="/travel-guide/golden-triangle-itinerary-guide" className="text-maroon underline">
               Golden Triangle itinerary guide
             </Link>{" "}
             and{" "}
-            <Link prefetch={false} href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
+            <Link href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
               Rajasthan itinerary guide
             </Link>{" "}
             both set out real day-by-day plans at different lengths if you want to see how the
@@ -175,7 +176,7 @@ export default function FirstTripToIndiaGuidePage() {
             <li>
               <strong>Your visa.</strong> Most nationalities need an e-Visa arranged in advance;
               our{" "}
-              <Link prefetch={false} href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
+              <Link href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
                 e-Visa guide
               </Link>{" "}
               covers the types, fees and the newer e-Arrival Card by nationality.
@@ -183,7 +184,7 @@ export default function FirstTripToIndiaGuidePage() {
             <li>
               <strong>Health preparation.</strong> A conversation with your own doctor or a travel
               clinic several weeks ahead is worth having; our{" "}
-              <Link prefetch={false} href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
+              <Link href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
                 health and vaccination guide
               </Link>{" "}
               sets out what&apos;s generally discussed.
@@ -191,7 +192,7 @@ export default function FirstTripToIndiaGuidePage() {
             <li>
               <strong>Money.</strong> A mix of cards and cash, and knowing what to expect at ATMs
               and with UPI; our{" "}
-              <Link prefetch={false} href="/travel-guide/india-currency-payments-guide" className="text-maroon underline">
+              <Link href="/travel-guide/india-currency-payments-guide" className="text-maroon underline">
                 currency and payments guide
               </Link>{" "}
               covers this in detail.
@@ -222,7 +223,7 @@ export default function FirstTripToIndiaGuidePage() {
             you arrive rather than improvising. A private car and driver is the easiest option for
             a first visit — no station transfers, no negotiating fares, and the ability to stop
             along the way. Trains suit travellers who want to do more independently. Our{" "}
-            <Link prefetch={false} href="/travel-guide/getting-around-india" className="text-maroon underline">
+            <Link href="/travel-guide/getting-around-india" className="text-maroon underline">
               guide to getting around India
             </Link>{" "}
             compares flights, trains and road transport properly.
@@ -237,7 +238,7 @@ export default function FirstTripToIndiaGuidePage() {
             between: a private arrangement for the first few days and the main circuit, with more
             independence added once they&apos;ve got a feel for the country. If you&apos;re
             travelling alone specifically, our{" "}
-            <Link prefetch={false} href="/travel-guide/solo-travel-india-guide" className="text-maroon underline">
+            <Link href="/travel-guide/solo-travel-india-guide" className="text-maroon underline">
               solo travel guide
             </Link>{" "}
             goes deeper into that decision.
@@ -273,7 +274,7 @@ export default function FirstTripToIndiaGuidePage() {
             best sense of a place without stretching the budget the way a five-star stay would.
             Meals, entry fees and shopping are the genuinely variable part of the trip, and easy
             to keep modest if that matters to you. Our{" "}
-            <Link prefetch={false} href="/travel-guide/india-currency-payments-guide" className="text-maroon underline">
+            <Link href="/travel-guide/india-currency-payments-guide" className="text-maroon underline">
               currency and payments guide
             </Link>{" "}
             covers the practical side of carrying and spending money once you are there.
@@ -283,7 +284,7 @@ export default function FirstTripToIndiaGuidePage() {
           <ArticleP>
             October to March is the comfortable season across most of the country — cooler
             temperatures, clearer skies, and the window most first-time visitors choose. Our{" "}
-            <Link prefetch={false} href="/best-time-to-visit-india" className="text-maroon underline">
+            <Link href="/best-time-to-visit-india" className="text-maroon underline">
               best-time-to-visit guide
             </Link>{" "}
             breaks this down by month if your dates are flexible.
@@ -330,7 +331,7 @@ export default function FirstTripToIndiaGuidePage() {
             and the Taj Mahal, and Jaipur. It&apos;s well-travelled for a reason — reliable
             infrastructure, manageable distances, and a genuine cross-section of Mughal and
             Rajput India in one trip. Our{" "}
-            <Link prefetch={false} href="/travel-guide/taj-mahal-visiting-guide" className="text-maroon underline">
+            <Link href="/travel-guide/taj-mahal-visiting-guide" className="text-maroon underline">
               Taj Mahal visiting guide
             </Link>{" "}
             is worth reading regardless of how the rest of your itinerary shapes up, since getting
@@ -353,6 +354,8 @@ export default function FirstTripToIndiaGuidePage() {
             us your dates and how much you&apos;d like arranged, and we&apos;ll build the
             itinerary around them.
           </ArticleP>
+
+          <ArticleFAQ faqs={faqs} />
         </ArticleBody>
 
         <AuthorBioCard

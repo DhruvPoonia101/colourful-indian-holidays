@@ -10,6 +10,11 @@ import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { Reveal } from "@/components/ui/Reveal";
 import { fleetCards } from "@/content/car-rental-hub";
+import { wildlifeTours as wildlifeToursPackage } from "@/content/packages/wildlife-tours";
+import { rajasthanWildlifeSafari } from "@/content/packages/rajasthan-wildlife-safari";
+import { kazirangaTour } from "@/content/packages/kaziranga-tour";
+import { periyarWildlifeTour } from "@/content/packages/periyar-wildlife-tour";
+import { packageToTripSummary, touristTripCollectionJsonLd } from "@/lib/seo/tourist-trip-schema";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -174,6 +179,10 @@ const faqs: FaqItem[] = [
   },
 ];
 
+/** Every tour this hub links to, as real package data — so the hub's schema
+ * names, durations and indicative prices always match the trip pages. */
+const hubTrips = [wildlifeToursPackage, rajasthanWildlifeSafari, kazirangaTour, periyarWildlifeTour].map(packageToTripSummary);
+
 export default function WildlifeTigerSafariHubPage() {
   return (
     <>
@@ -184,6 +193,19 @@ export default function WildlifeTigerSafariHubPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            touristTripCollectionJsonLd({
+              name: title,
+              description,
+              path: pagePath,
+              trips: hubTrips,
+            })
+          ),
+        }}
       />
 
       <main>

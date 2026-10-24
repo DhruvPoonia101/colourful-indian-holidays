@@ -11,6 +11,12 @@ import { PlannedByLine } from "@/components/shared/PlannedByLine";
 import { Reveal } from "@/components/ui/Reveal";
 import { goldenTriangleVariants } from "@/content/golden-triangle-hub";
 import { fleetCards } from "@/content/car-rental-hub";
+import { goldenTriangleTours } from "@/content/packages/golden-triangle-tour-classic";
+import { goldenTriangleUdaipurTours } from "@/content/packages/golden-triangle-tour-udaipur";
+import { goldenTriangleVaranasiTours } from "@/content/packages/golden-triangle-tour-varanasi";
+import { goldenTriangleRanthamboreTours } from "@/content/packages/golden-triangle-tour-ranthambore";
+import { goldenTriangleAjmerPushkarTours } from "@/content/packages/golden-triangle-tour-ajmer-pushkar";
+import { packageToTripSummary, touristTripCollectionJsonLd } from "@/lib/seo/tourist-trip-schema";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
@@ -121,6 +127,10 @@ const faqs: FaqItem[] = [
   },
 ];
 
+/** Every tour this hub links to, as real package data — so the hub's schema
+ * names, durations and indicative prices always match the trip pages. */
+const hubTrips = [goldenTriangleTours, goldenTriangleUdaipurTours, goldenTriangleVaranasiTours, goldenTriangleRanthamboreTours, goldenTriangleAjmerPushkarTours].map(packageToTripSummary);
+
 export default function GoldenTriangleHubPage() {
   return (
     <>
@@ -131,6 +141,19 @@ export default function GoldenTriangleHubPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            touristTripCollectionJsonLd({
+              name: title,
+              description,
+              path: pagePath,
+              trips: hubTrips,
+            })
+          ),
+        }}
       />
 
       <main>

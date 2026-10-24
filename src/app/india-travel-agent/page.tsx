@@ -292,6 +292,10 @@ export default function IndiaTravelAgentPage() {
                 Comparing private, group and do-it-yourself travel instead? See{" "}
                 <Link href="/why-choose-us" className="font-medium text-maroon underline underline-offset-2">
                   why travellers choose a private tour
+                </Link>{" "}
+                or browse our{" "}
+                <Link href="/private-tours-of-india" className="font-medium text-maroon underline underline-offset-2">
+                  private tours of India
                 </Link>
                 .
               </p>

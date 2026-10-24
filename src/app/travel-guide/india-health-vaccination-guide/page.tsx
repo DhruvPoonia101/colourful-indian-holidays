@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleFAQ } from "@/components/travel-guide/ArticleFAQ";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -375,6 +376,8 @@ export default function IndiaHealthVaccinationGuidePage() {
             part of planning — where to go, what to see, and how to fit it all into the time you
             have — is exactly where we come in.
           </ArticleP>
+
+          <ArticleFAQ faqs={faqs} />
         </ArticleBody>
 
         <AuthorBioCard

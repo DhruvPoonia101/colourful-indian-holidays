@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleFAQ } from "@/components/travel-guide/ArticleFAQ";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -274,7 +275,7 @@ export default function GettingAroundIndiaGuidePage() {
             holder. We&apos;ve written a full breakdown of how this works specifically for Rajasthan —
             vehicle types, realistic city-to-city drive times, and what a day on the road looks
             like — in our{" "}
-            <Link prefetch={false} href="/travel-guide/hiring-a-car-in-rajasthan" className="text-maroon underline">
+            <Link href="/travel-guide/hiring-a-car-in-rajasthan" className="text-maroon underline">
               Hiring a Car in Rajasthan guide
             </Link>
             , and the same model applies across every region we operate in, not just Rajasthan.
@@ -374,6 +375,8 @@ export default function GettingAroundIndiaGuidePage() {
             much time you have, and we&apos;ll build the transport plan around them as part of a full
             itinerary, not as a separate booking you have to sort out yourself.
           </ArticleP>
+
+          <ArticleFAQ faqs={faqs} />
         </ArticleBody>
 
         <AuthorBioCard

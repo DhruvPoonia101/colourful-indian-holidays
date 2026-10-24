@@ -475,6 +475,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/private-tours-of-india`,
+      lastModified: getLastModified("/private-tours-of-india"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/india-tours-from-usa`,
       lastModified: getLastModified("/india-tours-from-usa"),
       changeFrequency: "monthly",

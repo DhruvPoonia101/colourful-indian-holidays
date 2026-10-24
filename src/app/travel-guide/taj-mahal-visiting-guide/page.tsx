@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleFAQ } from "@/components/travel-guide/ArticleFAQ";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -30,6 +31,14 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * - Night viewing runs on a handful of nights around the full moon and
  *   must be booked at least a day ahead; this changes, so it is described
  *   in general terms and the reader is told to confirm.
+ * - OPENING HOURS (re-verified 25 Oct 2026 on tajmahal.gov.in): "Visiting
+ *   hours: 30 Minutes before Sunrise upto 30 Minutes before Sunset"; closed
+ *   only on Fridays; night viewing on five nights a month (full-moon night
+ *   plus two before and two after), 20:00-23:59 in 8 batches of max 50
+ *   people, tickets via the ASI portal. The clock times in TIMINGS_BY_SEASON
+ *   are NOT official figures: they apply that rule to Agra's sunrise/sunset
+ *   (NOAA solar formula, 27.18N 78.04E) and are shown as "about" values,
+ *   because the real time moves by a minute or two every day.
  * Prices and rules change: the article states figures "as of our latest
  * check" and sends readers to the official sites to confirm. Deliberately
  * NOT stated: ticket validity period (sources conflict), any Ramadan
@@ -38,11 +47,11 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Taj Mahal Visiting Guide: Tickets, Timings, Sunrise & Tips";
 const description =
-  "Taj Mahal guide — foreign visitor ticket prices, opening hours, the Friday closure, sunrise vs sunset, which gate to use and mistakes to avoid.";
+  "Taj Mahal timings: open 30 minutes before sunrise to 30 minutes before sunset, closed Fridays. Foreigner ticket prices, night viewing, best gate and tips.";
 const pagePath = "/travel-guide/taj-mahal-visiting-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-28";
-const dateModified = datePublished;
+const dateModified = "2026-10-25";
 
 export const metadata: Metadata = {
   title,
@@ -66,7 +75,96 @@ const breadcrumbs = [
   { name: "Taj Mahal Visiting Guide", path: pagePath },
 ];
 
+
+/**
+ * Opening-time estimates by season. Official rule: opens 30 min before
+ * sunrise, closes 30 min before sunset. Clock times are that rule applied to
+ * Agra's sunrise/sunset, rounded to 5 minutes and labelled "about".
+ */
+const TIMINGS_BY_SEASON = [
+  { months: "December – January", opens: "6:35 AM", closes: "5:05 PM" },
+  { months: "February – March", opens: "6:10 AM", closes: "5:45 PM" },
+  { months: "April – May", opens: "5:10 AM", closes: "6:20 PM" },
+  { months: "June – July", opens: "4:55 AM", closes: "6:45 PM" },
+  { months: "August – September", opens: "5:25 AM", closes: "6:10 PM" },
+  { months: "October – November", opens: "5:55 AM", closes: "5:10 PM" },
+];
+
+function TajTimingsAnswer() {
+  return (
+    <section
+      aria-labelledby="taj-timings-heading"
+      className="rounded-2xl border border-gold/40 bg-cream/70 p-5 sm:p-7"
+    >
+      <h2
+        id="taj-timings-heading"
+        className="font-display text-2xl font-semibold text-ink sm:text-3xl"
+      >
+        Taj Mahal Timings: Quick Answer
+      </h2>
+      <p className="mt-3 text-base leading-relaxed text-ink">
+        The Taj Mahal is open Saturday to Thursday, from 30 minutes before sunrise until 30
+        minutes before sunset &mdash; about 6:30 AM to 5:00 PM in winter and about 5:00 AM to
+        6:45 PM in summer. It is closed every Friday. Night viewing runs on five nights around
+        each full moon, from 8:00 PM to midnight.
+      </p>
+
+      <p className="mt-5 text-sm font-medium text-ink">Approximate opening and closing times by month</p>
+      <div className="mt-2 overflow-x-auto">
+        <table className="w-full border-collapse text-left text-sm sm:text-base">
+          <caption className="sr-only">
+            Approximate Taj Mahal opening and closing times by month (all times are approximate)
+          </caption>
+          <thead>
+            <tr className="border-b border-sand text-ink">
+              <th scope="col" className="py-2 pr-2 font-semibold sm:pr-4">Months</th>
+              <th scope="col" className="py-2 pr-2 font-semibold sm:pr-4">Opens</th>
+              <th scope="col" className="py-2 font-semibold">Closes</th>
+            </tr>
+          </thead>
+          <tbody className="text-ink-soft">
+            {TIMINGS_BY_SEASON.map((row) => (
+              <tr key={row.months} className="border-b border-sand/60 last:border-0">
+                <th scope="row" className="py-2 pr-2 font-medium text-ink sm:pr-4">{row.months}</th>
+                <td className="py-2 pr-2 sm:pr-4">{row.opens}</td>
+                <td className="py-2">{row.closes}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink-soft sm:text-base">
+        <li>
+          <span className="font-semibold text-ink">Closed:</span> every Friday. Every other day
+          of the week it is open.
+        </li>
+        <li>
+          <span className="font-semibold text-ink">Why &ldquo;about&rdquo;:</span> the official
+          rule is tied to sunrise and sunset, so the real time shifts by a minute or two every
+          day. The times above apply that rule to Agra and can be off by 10&ndash;15 minutes.
+        </li>
+        <li>
+          <span className="font-semibold text-ink">Ticket counters:</span> open one hour before
+          sunrise and close about 45 minutes before sunset, so buy online and arrive early.
+        </li>
+        <li>
+          <span className="font-semibold text-ink">Night viewing:</span> five nights a month
+          (the full-moon night plus two nights either side), 8:00 PM to midnight, in half-hour
+          batches of up to 50 people. Book through the official Archaeological Survey of India
+          portal, ideally a day or more ahead.
+        </li>
+      </ul>
+    </section>
+  );
+}
+
 const faqs: FaqItem[] = [
+  {
+    question: "What time does the Taj Mahal open and close?",
+    answer:
+      "The Taj Mahal opens 30 minutes before sunrise and closes 30 minutes before sunset, Saturday to Thursday. That is roughly 6:30 AM to 5:00 PM in winter and 5:00 AM to 6:45 PM in summer, so the exact time moves through the year. It is closed every Friday.",
+  },
   {
     question: "What day is the Taj Mahal closed?",
     answer:
@@ -90,7 +188,7 @@ const faqs: FaqItem[] = [
   {
     question: "Can I visit the Taj Mahal at night?",
     answer:
-      "Night viewing is offered only on a small number of nights around the full moon, in limited groups, and must be booked in advance. The schedule changes, so check the official site and book as early as you can rather than counting on it.",
+      "Yes, on five nights a month: the full-moon night and the two nights either side. Entry is from 8:00 PM to midnight in half-hour batches of up to 50 people, and tickets are booked in advance through the official Archaeological Survey of India portal. Dates and rules can change, so confirm on the official site and book early.",
   },
   {
     question: "Should I book a guide?",
@@ -147,6 +245,8 @@ export default function TajMahalVisitingGuidePage() {
         <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a Taj Mahal visit with Colourful Indian Holidays." />
 
         <ArticleBody>
+          <TajTimingsAnswer />
+
           <ArticleP>
             The Taj Mahal is the reason many people plan a trip to India, and it is easy to get
             a few small things wrong: arriving on a Friday when it is closed, queuing at the
@@ -179,7 +279,7 @@ export default function TajMahalVisitingGuidePage() {
             is closed to general visitors every Friday, when the mosque within the complex is
             used for prayers. If you are building a trip around Agra, put your Taj visit on any
             other day and make Friday a travel day or a day for other sights. On our{" "}
-            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle
             </Link>{" "}
             routes we schedule the Agra stop around this before anything else.
@@ -234,7 +334,7 @@ export default function TajMahalVisitingGuidePage() {
             marble and the crowd starting to thin. Midday is the least pleasant for light and
             heat, and the harshest for photographs. A sensible plan is to visit at one end of
             the day and spend the middle of it elsewhere. Our{" "}
-            <Link prefetch={false} href="/experiences/photography-tours" className="text-maroon underline">
+            <Link href="/experiences/photography-tours" className="text-maroon underline">
               Photography Tours
             </Link>{" "}
             build whole days around this principle.
@@ -284,19 +384,19 @@ export default function TajMahalVisitingGuidePage() {
             Most visitors give Agra one night, and that is enough for the Taj Mahal and Agra
             Fort, the Mughal fortress that stands on the same river. If you want to see the
             monument from your room, choose a hotel with a Taj view; our{" "}
-            <Link prefetch={false} href="/experiences/luxury-india-tours" className="text-maroon underline">
+            <Link href="/experiences/luxury-india-tours" className="text-maroon underline">
               Luxury India Tours
             </Link>{" "}
             include one deliberately. For couples, our{" "}
-            <Link prefetch={false} href="/experiences/taj-mahal-honeymoon" className="text-maroon underline">
+            <Link href="/experiences/taj-mahal-honeymoon" className="text-maroon underline">
               Taj Mahal Honeymoon
             </Link>{" "}
             builds a trip around it, and our{" "}
-            <Link prefetch={false} href="/destinations/agra" className="text-maroon underline">
+            <Link href="/destinations/agra" className="text-maroon underline">
               Agra destination guide
             </Link>{" "}
             covers the city itself. Our{" "}
-            <Link prefetch={false} href="/tours/taj-mahal-tours" className="text-maroon underline">
+            <Link href="/tours/taj-mahal-tours" className="text-maroon underline">
               Taj Mahal Tours
             </Link>{" "}
             page shows the fixed itineraries we run.
@@ -357,7 +457,7 @@ export default function TajMahalVisitingGuidePage() {
             and the mausoleum stairs are narrow, which may be a consideration if anyone in your
             group has mobility difficulties. If you are unsure how the heat or a long day will
             affect you, our{" "}
-            <Link prefetch={false} href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
+            <Link href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
               health and vaccination guide
             </Link>{" "}
             covers sensible precautions.
@@ -369,7 +469,7 @@ export default function TajMahalVisitingGuidePage() {
             the expressway, and about 240 km from Jaipur, around five hours. Most travellers go by
             private car, which lets you time the arrival for the light, and some take a fast train
             from Delhi and stay overnight. Our{" "}
-            <Link prefetch={false} href="/travel-guide/getting-around-india" className="text-maroon underline">
+            <Link href="/travel-guide/getting-around-india" className="text-maroon underline">
               guide to getting around India
             </Link>{" "}
             compares the options in more detail.
@@ -407,16 +507,18 @@ export default function TajMahalVisitingGuidePage() {
             Most travellers see the Taj Mahal as part of the classic Delhi, Agra and Jaipur
             circuit, and it is usually the first big sight of the trip. If you are visiting
             from overseas, our{" "}
-            <Link prefetch={false} href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
+            <Link href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
               e-Visa guide
             </Link>{" "}
             explains the paperwork, and our{" "}
-            <Link prefetch={false} href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
+            <Link href="/travel-guide/rajasthan-itinerary-guide" className="text-maroon underline">
               Rajasthan itinerary guide
             </Link>{" "}
             shows how to extend the trip beyond Agra. Whatever route you choose, tell us your
             dates and we will schedule the Taj Mahal visit for the best available day and time.
           </ArticleP>
+
+          <ArticleFAQ faqs={faqs} />
         </ArticleBody>
 
         <AuthorBioCard

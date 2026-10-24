@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ArticleFAQ } from "@/components/travel-guide/ArticleFAQ";
 import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -185,7 +186,7 @@ export default function SoloTravelIndiaGuidePage() {
             privately, with airport pickup, a driver and hotels already booked, so you arrive
             into a plan rather than a puzzle. Then, once you are oriented, add independent legs
             where they make sense, such as taking a train between cities. Our{" "}
-            <Link prefetch={false} href="/travel-guide/getting-around-india" className="text-maroon underline">
+            <Link href="/travel-guide/getting-around-india" className="text-maroon underline">
               guide to getting around India
             </Link>{" "}
             explains how flights, trains and road transport compare, which helps you decide
@@ -270,11 +271,11 @@ export default function SoloTravelIndiaGuidePage() {
             originals in the hotel safe when you can. Split your cash and cards between two
             places, so losing one bag does not leave you stranded, and avoid handling large
             amounts of cash in public. Our{" "}
-            <Link prefetch={false} href="/travel-guide/india-currency-payments-guide" className="text-maroon underline">
+            <Link href="/travel-guide/india-currency-payments-guide" className="text-maroon underline">
               currency and payments guide
             </Link>{" "}
             covers ATMs, cards and what to carry in more detail, and our{" "}
-            <Link prefetch={false} href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
+            <Link href="/travel-guide/india-e-visa-guide" className="text-maroon underline">
               e-Visa guide
             </Link>{" "}
             explains the paperwork you will need at immigration.
@@ -286,7 +287,7 @@ export default function SoloTravelIndiaGuidePage() {
             help, which makes preparation more important, not less. Take out travel insurance
             with medical cover before you fly, see a doctor or travel clinic several weeks
             ahead, and keep the address of your hotel in a form a driver can read. Our{" "}
-            <Link prefetch={false} href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
+            <Link href="/travel-guide/india-health-vaccination-guide" className="text-maroon underline">
               health and vaccination guide
             </Link>{" "}
             covers what to discuss with your doctor and how to manage food and water sensibly.
@@ -356,11 +357,11 @@ export default function SoloTravelIndiaGuidePage() {
             small numbers of people together make it easy to meet others naturally: cooking
             classes, yoga and meditation sessions, guided walks and homestays. A retreat-style
             trip such as our{" "}
-            <Link prefetch={false} href="/experiences/yoga-wellness-tours" className="text-maroon underline">
+            <Link href="/experiences/yoga-wellness-tours" className="text-maroon underline">
               Yoga and Wellness itinerary
             </Link>{" "}
             or a craft-focused one such as{" "}
-            <Link prefetch={false} href="/experiences/cultural-tours" className="text-maroon underline">
+            <Link href="/experiences/cultural-tours" className="text-maroon underline">
               Cultural Tours
             </Link>{" "}
             suits solo travellers because the activity itself provides the company. A good local
@@ -371,7 +372,7 @@ export default function SoloTravelIndiaGuidePage() {
           <ArticleH2>Where to Start if This Is Your First Trip</ArticleH2>
           <ArticleP>
             For a first solo visit, the classic{" "}
-            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle
             </Link>{" "}
             circuit of Delhi, Agra and Jaipur is the most forgiving choice: the routes are
@@ -393,6 +394,8 @@ export default function SoloTravelIndiaGuidePage() {
             much you would like arranged, and we will suggest what to pre-book and what to leave
             open.
           </ArticleP>
+
+          <ArticleFAQ faqs={faqs} />
         </ArticleBody>
 
         <AuthorBioCard

@@ -1,3 +1,5 @@
+import type { PackageContent } from "@/content/packages/types";
+import { getStartingPrice } from "@/lib/pricing";
 import { BUSINESS, SITE_URL } from "./business";
 
 export type TripItineraryDay = {
@@ -39,6 +41,7 @@ export function touristTripJsonLd(trip: TouristTripInput) {
     "@type": "TouristTrip",
     name: trip.name,
     description: trip.description,
+    url: `${SITE_URL}${trip.urlPath ?? `/tours/${trip.slug}`}`,
     image: `${SITE_URL}${trip.image}`,
     touristType: "International Travellers",
     itinerary: {
@@ -86,6 +89,90 @@ export function touristTripJsonLd(trip: TouristTripInput) {
       "@type": "TravelAgency",
       name: BUSINESS.name,
       url: BUSINESS.url,
+    },
+  };
+}
+
+
+export type TripSummary = {
+  name: string;
+  description: string;
+  image: string;
+  /** Site-relative path of the trip's own page, e.g. "/tours/kochi-tour". */
+  path: string;
+  durationDays: number;
+  startingPrice: number;
+  priceCurrency: string;
+};
+
+/** Reduces a full package to the fields a hub page's schema needs. The price
+ * comes from the same shared per-night rate the package page itself uses, so
+ * hub and leaf can never publish different numbers for the same trip. */
+export function packageToTripSummary(content: PackageContent): TripSummary {
+  return {
+    name: content.name,
+    description: content.metaDescription,
+    image: content.heroImage,
+    path: `/tours/${content.slug}`,
+    durationDays: content.itinerary.length,
+    startingPrice: getStartingPrice(content.itinerary.length),
+    priceCurrency: "USD",
+  };
+}
+
+/**
+ * Schema for a tour HUB page (Golden Triangle, Kerala, Wildlife…): a
+ * CollectionPage whose main entity is an ItemList of TouristTrip entries,
+ * one per tour the hub links to. The full day-by-day itinerary stays on each
+ * trip's own page (which already carries a complete TouristTrip); the hub
+ * only declares which trips exist, their length, indicative price and URL,
+ * so search engines and AI answer engines can see the set as one family.
+ */
+export function touristTripCollectionJsonLd(hub: {
+  name: string;
+  description: string;
+  path: string;
+  trips: TripSummary[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: hub.name,
+    description: hub.description,
+    url: `${SITE_URL}${hub.path}`,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: hub.trips.length,
+      itemListElement: hub.trips.map((trip, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "TouristTrip",
+          name: trip.name,
+          description: trip.description,
+          url: `${SITE_URL}${trip.path}`,
+          image: `${SITE_URL}${trip.image}`,
+          touristType: "International Travellers",
+          offers: {
+            "@type": "Offer",
+            price: trip.startingPrice,
+            priceCurrency: trip.priceCurrency,
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: trip.startingPrice,
+              priceCurrency: trip.priceCurrency,
+              description: `Indicative starting price per person for ${trip.durationDays} days. Final quote varies by travel dates, group size and hotel category.`,
+            },
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}${trip.path}`,
+          },
+          provider: {
+            "@type": "TravelAgency",
+            name: BUSINESS.name,
+            url: BUSINESS.url,
+          },
+        },
+      })),
     },
   };
 }
