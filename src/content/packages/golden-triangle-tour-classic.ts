@@ -10,9 +10,9 @@ export const goldenTriangleTours: PackageContent = {
   slug: "golden-triangle-tour-classic",
   name: "Golden Triangle Tour",
   tagline: "The Classic Golden Triangle · 6 Days",
-  metaTitle: "Delhi – Agra – Jaipur Tour Package | Classic Golden Triangle",
+  metaTitle: "6 Day Golden Triangle Tour | Delhi, Agra & Jaipur",
   metaDescription:
-    "A private 6-day Golden Triangle tour of Delhi, Agra and Jaipur — the classic first-time introduction to India, with the Taj Mahal at sunrise.",
+    "A private 6-day, 5-night Golden Triangle tour of Delhi, Agra and Jaipur — the classic first-time introduction to India, with the Taj Mahal at sunrise.",
   heroImage: "/images/destinations/agra-taj-mahal.webp",
   heroImageAlt: "Taj Mahal at sunrise, Agra",
   heroHeadline: "Delhi – Agra – Jaipur: The Classic Golden Triangle",

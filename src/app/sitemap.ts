@@ -433,6 +433,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${SITE_URL}/travel-guide/10-days-in-india-itinerary`,
+      lastModified: getLastModified("/travel-guide/10-days-in-india-itinerary"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/2-weeks-in-india-itinerary`,
+      lastModified: getLastModified("/travel-guide/2-weeks-in-india-itinerary"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/travel-guide/is-india-safe-for-tourists`,
       lastModified: getLastModified("/travel-guide/is-india-safe-for-tourists"),
       changeFrequency: "monthly",

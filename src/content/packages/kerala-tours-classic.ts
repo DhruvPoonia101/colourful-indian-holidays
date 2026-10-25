@@ -10,9 +10,9 @@ export const keralaToursClassic: PackageContent = {
   slug: "kerala-tours-classic",
   name: "Kerala Tours",
   tagline: "The Classic Circuit · 6 Days",
-  metaTitle: "Kerala Tour Package | Kochi, Alleppey Backwaters & Munnar",
+  metaTitle: "6 Day Kerala Tour Package | Kochi, Alleppey & Munnar",
   metaDescription:
-    "A private 6-day Kerala tour — Fort Kochi's colonial lanes, a houseboat cruise through Alleppey's backwaters, and Munnar's misty tea plantations.",
+    "A private 6-day Kerala itinerary — Fort Kochi's colonial lanes, a houseboat cruise through Alleppey's backwaters, and Munnar's misty tea plantations.",
   heroImage: "/images/destinations/alleppey-backwaters.webp",
   heroImageAlt: "A traditional houseboat on Alleppey's backwaters, Kerala",
   heroHeadline: "Kerala: Kochi, Backwaters & Tea Gardens",

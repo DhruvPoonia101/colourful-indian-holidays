@@ -44,10 +44,10 @@ export const guideArticles: GuideArticle[] = [
     published: true,
   },
   {
-    title: "Rajasthan Itinerary: How to Plan 7, 10 and 12 Days",
+    title: "Rajasthan Itinerary: How to Plan 7, 10, 12 and 14 Days",
     slug: "rajasthan-itinerary-guide",
     excerpt:
-      "Which Rajasthan cities to include at 7, 10 and 12 days, the real drive times between them, how many nights each deserves, and what to leave out.",
+      "Which Rajasthan cities to include at 7, 10, 12 and 14 days, the real drive times between them, how many nights each deserves, and what to leave out.",
     category: "Rajasthan",
     image: "/images/destinations/amber-fort-jaipur.webp",
     imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
@@ -84,6 +84,28 @@ export const guideArticles: GuideArticle[] = [
     category: "Planning",
     image: "/images/destinations/amber-fort-jaipur.webp",
     imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "10 Days in India: Itinerary for First-Timers",
+    slug: "10-days-in-india-itinerary",
+    excerpt:
+      "Three realistic 10-day India routes, day by day: Golden Triangle with Rajasthan's lakes, Kerala or Varanasi, with costs and what to leave out.",
+    category: "Planning",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "The Taj Mahal framed by a sandstone archway, Agra",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "2 Weeks in India: 14-Day Itinerary for First-Timers",
+    slug: "2-weeks-in-india-itinerary",
+    excerpt:
+      "Three realistic 14-day India routes, day by day: Rajasthan and the Taj Mahal, Rajasthan with Kerala, or India with Nepal or Bhutan.",
+    category: "Planning",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "The Taj Mahal framed by a sandstone archway, Agra",
     datePublished: "2026-10-25",
     published: true,
   },

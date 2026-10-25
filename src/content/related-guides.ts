@@ -34,6 +34,16 @@ const G = {
     label: "How Much Does a Private Tour of India Cost?",
     blurb: "Starting prices by trip length and hotel category, and what changes them.",
   },
+  tenDays: {
+    href: "/travel-guide/10-days-in-india-itinerary",
+    label: "10 Days in India: Itinerary for First-Timers",
+    blurb: "Three realistic 10-day routes, day by day.",
+  },
+  twoWeeks: {
+    href: "/travel-guide/2-weeks-in-india-itinerary",
+    label: "2 Weeks in India: 14-Day Itinerary",
+    blurb: "Rajasthan, Kerala or the Himalaya in 14 days.",
+  },
   safety: {
     href: "/travel-guide/is-india-safe-for-tourists",
     label: "Is India Safe for Tourists? An Honest Answer",
@@ -56,7 +66,7 @@ const G = {
   },
   rajasthan: {
     href: "/travel-guide/rajasthan-itinerary-guide",
-    label: "Rajasthan Itinerary: How to Plan 7, 10 and 12 Days",
+    label: "Rajasthan Itinerary: How to Plan 7, 10, 12 and 14 Days",
     blurb: "Which cities to include at each length, with realistic pacing.",
   },
   monuments: {
@@ -97,6 +107,9 @@ const G = {
 } satisfies Record<string, GuideLink>;
 
 const RULES: Array<{ test: RegExp; guides: GuideLink[] }> = [
+  { test: /10-14-day-tours/, guides: [G.tenDays, G.twoWeeks, G.cost] },
+  { test: /6-9-day-tours/, guides: [G.tenDays, G.cost, G.firstTrip] },
+  { test: /15-plus-day-tours/, guides: [G.twoWeeks, G.cost, G.firstTrip] },
   { test: /private-tours-of-india/, guides: [G.cost, G.firstTrip, G.eVisa] },
   { test: /india-tours-from/, guides: [G.cost, G.firstTrip, G.eVisa] },
   { test: /golden-triangle|taj-mahal|agra|delhi|india-highlights|north-india/, guides: [G.goldenTriangle, G.taj, G.eVisa] },

@@ -22,11 +22,13 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * times (no verified figure on the site), entry fees, hotel names and
  * prices. Nights-per-city advice is presented as our suggestion, not a
  * fact. The 12-day route mirrors the real Grand Rajasthan Circuit package.
+ * The 14-day route is that same loop with two added days; it is presented
+ * as a route we can arrange, not as a fixed package.
  */
 
-const title = "Rajasthan Itinerary: How to Plan 7, 10 and 12 Days";
+const title = "Rajasthan Itinerary: How to Plan 7, 10, 12 and 14 Days";
 const description =
-  "A practical Rajasthan itinerary guide — which cities suit 7, 10 and 12 days, real drive times, how many nights each deserves and what to leave out.";
+  "A practical Rajasthan itinerary guide — which cities suit 7, 10, 12 and 14 days, real drive times, how many nights each deserves and what to leave out.";
 const pagePath = "/travel-guide/rajasthan-itinerary-guide";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 const datePublished = "2026-09-28";
@@ -58,7 +60,7 @@ const faqs: FaqItem[] = [
   {
     question: "How many days do you need in Rajasthan?",
     answer:
-      "Seven days covers Jaipur, Jodhpur and Udaipur without rushing. Ten days lets you add Pushkar and either Jaisalmer or more time elsewhere. Twelve days is enough for the full state loop including Ranthambore, Jaisalmer and Pushkar. Below six days, stay with one or two cities rather than trying to cover the state.",
+      "Seven days covers Jaipur, Jodhpur and Udaipur without rushing. Ten days lets you add Pushkar and either Jaisalmer or more time elsewhere. Twelve days is enough for the full state loop including Ranthambore, Jaisalmer and Pushkar, and fourteen days lets you slow it down with extra nights in Jaipur and Udaipur. Below six days, stay with one or two cities rather than trying to cover the state.",
   },
   {
     question: "What is the best order to visit Rajasthan?",
@@ -120,7 +122,7 @@ export default function RajasthanItineraryGuidePage() {
           imageAlt="Amber Fort at sunset, Jaipur, Rajasthan"
           breadcrumbs={breadcrumbs}
           eyebrow="Travel Guide"
-          headline="Rajasthan Itinerary: How to Plan 7, 10 and 12 Days"
+          headline="Rajasthan Itinerary: How to Plan 7, 10, 12 and 14 Days"
           subheadline="Which cities to include at each length, how far apart they really are, and where to spend your nights."
         />
 
@@ -139,8 +141,8 @@ export default function RajasthanItineraryGuidePage() {
             Rajasthan is a big state, and the most common planning mistake is trying to see too
             much of it. The cities that make the trip famous are separated by long drives, so
             every city you add costs a travel day, and a trip that looks generous on a map can
-            turn into a blur of hotel check-ins. This guide sets out what is realistic at 7, 10
-            and 12 days, using the real distances between the major stops, so you can decide
+            turn into a blur of hotel check-ins. This guide sets out what is realistic at 7, 10,
+            12 and 14 days, using the real distances between the major stops, so you can decide
             what to include and what to leave for another visit. For a broader overview of the
             state, see our{" "}
             <Link href="/destinations/rajasthan" className="text-maroon underline">
@@ -155,7 +157,7 @@ export default function RajasthanItineraryGuidePage() {
             <li><span className="font-semibold text-ink">Longest single drive:</span> Jaipur to Jodhpur, about 335 km, 5.5 to 6 hours.</li>
             <li><span className="font-semibold text-ink">Best season:</span> October to March.</li>
             <li><span className="font-semibold text-ink">Nights per city:</span> at least 2, to avoid a one-night stop.</li>
-            <li><span className="font-semibold text-ink">Full-state loop:</span> 12 days, matching our Grand Rajasthan Circuit.</li>
+            <li><span className="font-semibold text-ink">Full-state loop:</span> 12 days, matching our Grand Rajasthan Circuit; 14 days if you want it unhurried.</li>
           </ArticleUL>
 
           <ArticleH2>The Cities, and What Each One Is For</ArticleH2>
@@ -303,6 +305,28 @@ export default function RajasthanItineraryGuidePage() {
             href="/tours/grand-rajasthan-circuit"
             linkLabel="See the Grand Rajasthan Circuit"
           />
+
+          <ArticleH2>A 14-Day Rajasthan Itinerary: The Loop, Unhurried</ArticleH2>
+          <ArticleP>
+            Searching for a Rajasthan itinerary for 14 days usually means one of two things:
+            wanting the full loop without rushing, or adding Rajasthan to a longer India trip. For
+            the first, take the 12-day loop above and add two days where they help most: a third
+            night in Jaipur, so the pink city gets a full day beyond Amber Fort, the City
+            Palace and Hawa Mahal, and a third night in Udaipur for the day trip to
+            Kumbhalgarh Fort or a free day by the lake. Every stop then gets at least two nights,
+            and the two longest drives, Jaipur to Jodhpur (5.5 to 6 hours) and Jodhpur to
+            Jaisalmer (5 to 6 hours), are each followed by a full day in place rather than a
+            quick hotel check-in. We arrange this as a private tour built around your dates, since
+            it is a longer version of our{" "}
+            <Link href="/tours/grand-rajasthan-circuit" className="text-maroon underline">
+              Grand Rajasthan Circuit
+            </Link>{" "}
+            rather than a separate fixed package. For the second, see our{" "}
+            <Link href="/travel-guide/2-weeks-in-india-itinerary" className="text-maroon underline">
+              2 weeks in India itinerary
+            </Link>
+            , which pairs the Taj Mahal with Rajasthan or Kerala.
+          </ArticleP>
 
           <ArticleH2>Adding Ranthambore for Tigers</ArticleH2>
           <ArticleP>
