@@ -2,8 +2,8 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Pricing is shown as "Price on Request" rather than a fixed number, so no
- * price verification is needed. Itinerary/inclusion details are still drafted
+ * The Starting From price is computed at render time from src/lib/pricing.ts,
+ * so the value below is only a placeholder. Itinerary/inclusion details are still drafted
  * content Dhruv should review for accuracy.
  */
 export const goldenTriangleShortTours: PackageContent = {
@@ -23,7 +23,7 @@ export const goldenTriangleShortTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "4 Days / 3 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "Price on Request" },
+    { label: "Starting From", value: "Indicative price" },
     { label: "Best Season", value: "Oct – Mar" },
   ],
   priceCurrency: "INR",
@@ -139,7 +139,7 @@ export const goldenTriangleShortTours: PackageContent = {
       name: "Delhi – Agra – Jaipur",
       tagline: "The Classic Golden Triangle · 6 Days",
       description: "The standard, more comfortable pace for the same three cities.",
-      href: "/tours/golden-triangle-tour",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },
@@ -147,7 +147,7 @@ export const goldenTriangleShortTours: PackageContent = {
       name: "Delhi – Agra – Jaipur – Ranthambore",
       tagline: "With a Tiger Safari · 8 Days",
       description: "A longer version adding a wildlife safari between Agra and Jaipur.",
-      href: "/tours/golden-triangle-tour-ranthambore",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-ranthambore",
       image: "/images/destinations/ranthambore-tiger.webp",
       imageAlt: "A wild tiger at Ranthambore National Park",
     },
@@ -155,7 +155,7 @@ export const goldenTriangleShortTours: PackageContent = {
       name: "Taj Mahal Tours",
       tagline: "Agra's Icon",
       description: "A dedicated look at the Taj Mahal and Agra, for even shorter trips.",
-      href: "/tours/taj-mahal-tours",
+      href: "/packages/taj-mahal-tours",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },

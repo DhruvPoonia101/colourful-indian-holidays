@@ -2,8 +2,8 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Pricing is shown as "Price on Request" rather than a fixed number, so no
- * price verification is needed. Itinerary/inclusion details are still drafted
+ * The Starting From price is computed at render time from src/lib/pricing.ts,
+ * so the value below is only a placeholder. Itinerary/inclusion details are still drafted
  * content Dhruv should review for accuracy.
  *
  * NOTE FOR DHRUV: this covers the same four cities as /tours/north-india-tours
@@ -30,7 +30,7 @@ export const goldenTriangleVaranasiTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "9 Days / 8 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "Price on Request" },
+    { label: "Starting From", value: "Indicative price" },
     { label: "Best Season", value: "Oct – Mar" },
   ],
   priceCurrency: "INR",

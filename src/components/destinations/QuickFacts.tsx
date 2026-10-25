@@ -1,9 +1,14 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
+import { Price } from "@/components/shared/Price";
+import { CurrencyControl } from "@/components/shared/CurrencyControl";
 
 export type QuickFact = {
   label: string;
   value: string;
+  /** When set, the fact is shown as a USD price the visitor can convert to
+   * their own currency; `value` is then only the no-conversion fallback. */
+  price?: { usd: number; prefix?: string; suffix?: string };
 };
 
 export function QuickFacts({
@@ -36,7 +41,11 @@ export function QuickFacts({
                     {fact.label}
                   </p>
                   <p className="mt-1.5 font-display text-lg font-semibold text-ink sm:text-xl">
-                    {fact.value}
+                    {fact.price ? (
+                      <Price usd={fact.price.usd} prefix={fact.price.prefix} suffix={fact.price.suffix} />
+                    ) : (
+                      fact.value
+                    )}
                   </p>
                 </div>
               ))}
@@ -49,9 +58,12 @@ export function QuickFacts({
             )}
           </div>
           {priceDisclaimer && (
-            <p className="mt-6 text-center text-xs italic text-ink-soft/70 sm:text-left">
-              {priceDisclaimer}
-            </p>
+            <div className="mt-6 flex flex-col items-center gap-3 sm:items-start">
+              <p className="text-center text-xs italic text-ink-soft/70 sm:text-left">
+                {priceDisclaimer}
+              </p>
+              {facts.some((f) => f.price) && <CurrencyControl />}
+            </div>
           )}
         </Reveal>
       </div>

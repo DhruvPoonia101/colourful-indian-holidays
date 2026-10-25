@@ -19,7 +19,9 @@ import { grandRajasthanCircuit } from "@/content/packages/grand-rajasthan-circui
 import { guidesFor } from "@/content/related-guides";
 import { reviewsBy } from "@/content/reviews";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
-import { PRICE_DISCLAIMER, PRICE_PER_NIGHT_USD, getStartingPrice } from "@/lib/pricing";
+import { Price } from "@/components/shared/Price";
+import { CurrencyControl } from "@/components/shared/CurrencyControl";
+import { PRICE_DISCLAIMER, PRICE_PER_NIGHT_USD, getPackageStartingPrice } from "@/lib/pricing";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
@@ -107,7 +109,7 @@ const pricedTours = [
     name: content.name,
     path: `/tours/${content.slug}`,
     days: content.itinerary.length,
-    from: getStartingPrice(content.itinerary.length),
+    from: getPackageStartingPrice(content.slug, content.itinerary.length),
     summary: packageToTripSummary(content),
   }))
   .sort((a, b) => a.days - b.days);
@@ -328,13 +330,16 @@ export default function PrivateToursOfIndiaPage() {
                           </Link>
                         </th>
                         <td className="px-3 py-3 sm:px-5">{tour.days}</td>
-                        <td className="px-3 py-3 sm:px-5">${tour.from.toLocaleString("en-US")}</td>
+                        <td className="px-3 py-3 sm:px-5">
+                          <Price usd={tour.from} />
+                        </td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
               <p className="mt-3 text-center text-xs italic text-ink-soft/70">{PRICE_DISCLAIMER}</p>
+              <CurrencyControl center className="mt-3" />
             </Reveal>
           </div>
         </section>

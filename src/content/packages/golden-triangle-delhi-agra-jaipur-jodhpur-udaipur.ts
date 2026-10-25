@@ -2,8 +2,8 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Pricing is shown as "Price on Request" rather than a fixed number, so no
- * price verification is needed. Itinerary/inclusion details are still drafted
+ * The Starting From price is computed at render time from src/lib/pricing.ts,
+ * so the value below is only a placeholder. Itinerary/inclusion details are still drafted
  * content Dhruv should review for accuracy.
  */
 export const goldenTriangleJodhpurUdaipurTours: PackageContent = {
@@ -23,7 +23,7 @@ export const goldenTriangleJodhpurUdaipurTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "11 Days / 10 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "Price on Request" },
+    { label: "Starting From", value: "Indicative price" },
     { label: "Best Season", value: "Oct – Mar" },
   ],
   priceCurrency: "INR",
@@ -175,7 +175,7 @@ export const goldenTriangleJodhpurUdaipurTours: PackageContent = {
       name: "Delhi – Agra – Jaipur – Udaipur",
       tagline: "Extended with Rajasthan's Lake City · 9 Days",
       description: "A shorter version of this route, without the Jodhpur leg.",
-      href: "/tours/golden-triangle-tour-udaipur",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-udaipur",
       image: "/images/destinations/udaipur-lake-palace.webp",
       imageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
     },
@@ -183,7 +183,7 @@ export const goldenTriangleJodhpurUdaipurTours: PackageContent = {
       name: "Rajasthan Tours",
       tagline: "Land of Kings",
       description: "Our full Rajasthan category, for even deeper or differently-paced routes.",
-      href: "/tours/rajasthan-tours",
+      href: "/packages/rajasthan-tours",
       image: "/images/destinations/amber-fort-jaipur.webp",
       imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
     },
@@ -191,7 +191,7 @@ export const goldenTriangleJodhpurUdaipurTours: PackageContent = {
       name: "Delhi – Agra – Jaipur",
       tagline: "The Classic Golden Triangle · 6 Days",
       description: "The shorter, classic version of this route's first three cities.",
-      href: "/tours/golden-triangle-tour",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },

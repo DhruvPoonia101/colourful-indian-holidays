@@ -2,8 +2,8 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Pricing is shown as "Price on Request" rather than a fixed number, so no
- * price verification is needed. Itinerary/inclusion details are still drafted
+ * The Starting From price is computed at render time from src/lib/pricing.ts,
+ * so the value below is only a placeholder. Itinerary/inclusion details are still drafted
  * content Dhruv should review for accuracy.
  *
  * No genuine Gateway of India or Elephanta Caves photo exists in the asset
@@ -28,7 +28,7 @@ export const mumbaiTour: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "4 Days / 3 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "Price on Request" },
+    { label: "Starting From", value: "Indicative price" },
     { label: "Best Season", value: "Nov – Feb" },
   ],
   priceCurrency: "INR",

@@ -1,5 +1,5 @@
 import type { PackageContent } from "@/content/packages/types";
-import { getStartingPrice } from "@/lib/pricing";
+import { getPackageStartingPrice } from "@/lib/pricing";
 import { BUSINESS, ORGANIZATION_ID, SITE_URL } from "./business";
 
 export type TripItineraryDay = {
@@ -116,7 +116,7 @@ export function packageToTripSummary(content: PackageContent): TripSummary {
     image: content.heroImage,
     path: `/tours/${content.slug}`,
     durationDays: content.itinerary.length,
-    startingPrice: getStartingPrice(content.itinerary.length),
+    startingPrice: getPackageStartingPrice(content.slug, content.itinerary.length),
     priceCurrency: "USD",
   };
 }

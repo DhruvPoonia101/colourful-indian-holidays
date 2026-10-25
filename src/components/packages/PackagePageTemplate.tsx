@@ -17,7 +17,7 @@ import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristTripJsonLd } from "@/lib/seo/tourist-trip-schema";
-import { getStartingPrice, PRICE_DISCLAIMER } from "@/lib/pricing";
+import { formatFromPrice, fromPriceParts, getPackageStartingPrice, PRICE_DISCLAIMER } from "@/lib/pricing";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import type { PackageContent } from "@/content/packages/types";
 
@@ -28,7 +28,7 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
     { name: content.name, path: `/tours/${content.slug}` },
   ];
 
-  const startingPrice = getStartingPrice(content.itinerary.length);
+  const startingPrice = getPackageStartingPrice(content.slug, content.itinerary.length);
 
   // Feed the computed price into the existing "Starting From" quick-fact
   // rather than leaving its old hardcoded "Price on Request" text in
@@ -38,7 +38,11 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
   // a visible contradiction on the same page.
   const quickFacts = content.quickFacts.map((fact) =>
     fact.label === "Starting From"
-      ? { ...fact, value: `From $${startingPrice.toLocaleString("en-US")}` }
+      ? {
+          ...fact,
+          value: formatFromPrice(startingPrice, content.itinerary.length),
+          price: { usd: startingPrice, ...fromPriceParts(content.itinerary.length) },
+        }
       : fact
   );
 

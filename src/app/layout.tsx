@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { CurrencyProvider } from "@/components/shared/CurrencyProvider";
 import { StickyWhatsAppButton } from "@/components/shared/StickyWhatsAppButton";
 import { TawkChat } from "@/components/shared/TawkChat";
 import { ConversionTracking } from "@/components/shared/ConversionTracking";
@@ -70,9 +71,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           />
         </noscript>
         <ConversionTracking />
-        <Navbar />
-        {children}
-        <Footer />
+        <CurrencyProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </CurrencyProvider>
         <StickyWhatsAppButton />
         <TawkChat />
         <Analytics />

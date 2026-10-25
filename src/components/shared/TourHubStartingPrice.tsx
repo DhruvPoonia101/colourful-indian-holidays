@@ -1,4 +1,6 @@
 import { PRICE_DISCLAIMER } from "@/lib/pricing";
+import { Price } from "@/components/shared/Price";
+import { CurrencyControl } from "@/components/shared/CurrencyControl";
 
 /**
  * A small "Tours from $X" strip for the 9 tour pillar hub pages (Golden
@@ -17,9 +19,12 @@ export function TourHubStartingPrice({ price }: { price: number }) {
     <div className="border-b border-sand/70 bg-cream/40">
       <div className="mx-auto max-w-6xl px-6 py-4 text-center sm:px-8">
         <p className="text-sm text-ink-soft">
-          <span className="font-semibold text-ink">Tours from ${price.toLocaleString("en-US")} per person</span>
+          <span className="font-semibold text-ink">
+            <Price usd={price} prefix="Tours from " suffix=" per person" />
+          </span>
         </p>
         <p className="mt-1 text-xs italic text-ink-soft/70">{PRICE_DISCLAIMER}</p>
+        <CurrencyControl center className="mt-3" />
       </div>
     </div>
   );

@@ -2,8 +2,8 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Pricing is shown as "Price on Request" rather than a fixed number, so no
- * price verification is needed. Itinerary/inclusion details are still drafted
+ * The Starting From price is computed at render time from src/lib/pricing.ts,
+ * so the value below is only a placeholder. Itinerary/inclusion details are still drafted
  * content Dhruv should review for accuracy.
  */
 export const goldenTriangleRanthamboreTours: PackageContent = {
@@ -23,7 +23,7 @@ export const goldenTriangleRanthamboreTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "8 Days / 7 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "Price on Request" },
+    { label: "Starting From", value: "Indicative price" },
     { label: "Best Season", value: "Oct – Apr" },
   ],
   priceCurrency: "INR",
@@ -160,7 +160,7 @@ export const goldenTriangleRanthamboreTours: PackageContent = {
       name: "Delhi – Agra – Jaipur",
       tagline: "The Classic Golden Triangle · 6 Days",
       description: "The shorter, classic version of this route without the safari extension.",
-      href: "/tours/golden-triangle-tour",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },
@@ -168,7 +168,7 @@ export const goldenTriangleRanthamboreTours: PackageContent = {
       name: "Wildlife Tours",
       tagline: "Tiger Safaris",
       description: "More tiger reserves across India, for a dedicated wildlife itinerary.",
-      href: "/tours/wildlife-tours",
+      href: "/packages/wildlife-tours",
       image: "/images/destinations/ranthambore-tiger.webp",
       imageAlt: "Wild tiger at Ranthambore National Park",
     },
@@ -176,7 +176,7 @@ export const goldenTriangleRanthamboreTours: PackageContent = {
       name: "Delhi – Agra – Jaipur – Udaipur",
       tagline: "Extended with Rajasthan's Lake City · 9 Days",
       description: "A different extension of the classic route, adding Udaipur instead.",
-      href: "/tours/golden-triangle-tour-udaipur",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-udaipur",
       image: "/images/destinations/udaipur-lake-palace.webp",
       imageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
     },

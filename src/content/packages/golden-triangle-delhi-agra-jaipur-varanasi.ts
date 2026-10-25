@@ -2,8 +2,8 @@ import type { PackageContent } from "./types";
 
 /**
  * DRAFT CONTENT — written without confirmed business input.
- * Pricing is shown as "Price on Request" rather than a fixed number, so no
- * price verification is needed. Itinerary/inclusion details are still drafted
+ * The Starting From price is computed at render time from src/lib/pricing.ts,
+ * so the value below is only a placeholder. Itinerary/inclusion details are still drafted
  * content Dhruv should review for accuracy.
  *
  * NOTE FOR DHRUV: this covers the same four cities as /packages/north-india-tours
@@ -30,7 +30,7 @@ export const goldenTriangleVaranasiTours: PackageContent = {
   quickFacts: [
     { label: "Duration", value: "9 Days / 8 Nights" },
     { label: "Group Size", value: "Private, any size" },
-    { label: "Starting From", value: "Price on Request" },
+    { label: "Starting From", value: "Indicative price" },
     { label: "Best Season", value: "Oct – Mar" },
   ],
   priceCurrency: "INR",
@@ -180,7 +180,7 @@ export const goldenTriangleVaranasiTours: PackageContent = {
       name: "Delhi – Agra – Jaipur",
       tagline: "The Classic Golden Triangle · 6 Days",
       description: "The shorter, classic version of this route, without Varanasi.",
-      href: "/tours/golden-triangle-tour",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur",
       image: "/images/destinations/agra-taj-mahal.webp",
       imageAlt: "Taj Mahal at sunrise, Agra",
     },
@@ -188,7 +188,7 @@ export const goldenTriangleVaranasiTours: PackageContent = {
       name: "Delhi – Agra – Jaipur – Udaipur",
       tagline: "Extended with Rajasthan's Lake City · 9 Days",
       description: "A different extension of the classic route, adding Udaipur instead.",
-      href: "/tours/golden-triangle-tour-udaipur",
+      href: "/packages/golden-triangle-tours/delhi-agra-jaipur-udaipur",
       image: "/images/destinations/udaipur-lake-palace.webp",
       imageAlt: "The Lake Palace floating on Lake Pichola, Udaipur",
     },
@@ -196,7 +196,7 @@ export const goldenTriangleVaranasiTours: PackageContent = {
       name: "North India Tours",
       tagline: "Delhi & Beyond",
       description: "Our broader North India category, covering the same region.",
-      href: "/tours/north-india-tours",
+      href: "/packages/north-india-tours",
       image: "/images/destinations/delhi-india-gate.webp",
       imageAlt: "India Gate at dusk, Delhi",
     },

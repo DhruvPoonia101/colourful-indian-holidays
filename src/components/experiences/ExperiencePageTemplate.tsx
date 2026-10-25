@@ -18,6 +18,7 @@ import { fleetCards } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { touristTripJsonLd } from "@/lib/seo/tourist-trip-schema";
+import { formatFromPrice, fromPriceParts, getExperienceStartingPrice, PRICE_DISCLAIMER } from "@/lib/pricing";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import type { ExperienceContent } from "@/content/experiences/types";
 
@@ -40,6 +41,17 @@ export function ExperiencePageTemplate({
   category?: { name: string; path: string };
 }) {
   const isHoneymoon = content.slug.includes("honeymoon");
+
+  const startingPrice = getExperienceStartingPrice(content.slug, content.itinerary.length);
+  const quickFacts = content.quickFacts.map((fact) =>
+    fact.label === "Starting From"
+      ? {
+          ...fact,
+          value: formatFromPrice(startingPrice, content.itinerary.length),
+          price: { usd: startingPrice, ...fromPriceParts(content.itinerary.length) },
+        }
+      : fact
+  );
 
   const breadcrumbs = [
     { name: "Home", path: "/" },
@@ -68,7 +80,8 @@ export function ExperiencePageTemplate({
               description: content.metaDescription,
               image: content.heroImage,
               durationDays: content.itinerary.length,
-              priceCurrency: content.priceCurrency,
+              startingPrice,
+              priceCurrency: "USD",
               itinerary: content.itinerary,
               urlPath: `/experiences/${content.slug}`,
             })
@@ -90,7 +103,11 @@ export function ExperiencePageTemplate({
           heightClassName={content.heroHeightClassName}
         />
 
-        <QuickFacts facts={content.quickFacts} quoteButtonPageName={`${content.name} (Quick Facts)`} />
+        <QuickFacts
+          facts={quickFacts}
+          quoteButtonPageName={`${content.name} (Quick Facts)`}
+          priceDisclaimer={PRICE_DISCLAIMER}
+        />
 
         <ItineraryTimeline
           eyebrow="Day By Day"
