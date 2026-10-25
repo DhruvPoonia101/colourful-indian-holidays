@@ -77,6 +77,17 @@ export const guideArticles: GuideArticle[] = [
     published: true,
   },
   {
+    title: "How Much Does a Private Tour of India Cost?",
+    slug: "how-much-does-a-private-tour-of-india-cost",
+    excerpt:
+      "Starting prices for a private tour of India by trip length and hotel category, what is included, what costs extra and what changes the price.",
+    category: "Planning",
+    image: "/images/destinations/amber-fort-jaipur.webp",
+    imageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
     title: "Is India Safe for Tourists? An Honest Answer",
     slug: "is-india-safe-for-tourists",
     excerpt:

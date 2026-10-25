@@ -29,6 +29,11 @@ const G = {
     label: "India Health & Vaccination Guide",
     blurb: "General health and vaccination guidance before you travel.",
   },
+  cost: {
+    href: "/travel-guide/how-much-does-a-private-tour-of-india-cost",
+    label: "How Much Does a Private Tour of India Cost?",
+    blurb: "Starting prices by trip length and hotel category, and what changes them.",
+  },
   safety: {
     href: "/travel-guide/is-india-safe-for-tourists",
     label: "Is India Safe for Tourists? An Honest Answer",
@@ -92,8 +97,8 @@ const G = {
 } satisfies Record<string, GuideLink>;
 
 const RULES: Array<{ test: RegExp; guides: GuideLink[] }> = [
-  { test: /private-tours-of-india/, guides: [G.firstTrip, G.around, G.eVisa] },
-  { test: /india-tours-from/, guides: [G.firstTrip, G.safety, G.eVisa] },
+  { test: /private-tours-of-india/, guides: [G.cost, G.firstTrip, G.eVisa] },
+  { test: /india-tours-from/, guides: [G.cost, G.firstTrip, G.eVisa] },
   { test: /golden-triangle|taj-mahal|agra|delhi|india-highlights|north-india/, guides: [G.goldenTriangle, G.taj, G.eVisa] },
   { test: /shekhawati|mandawa|nawalgarh/, guides: [G.shekhawati, G.rajasthan, G.monuments] },
   { test: /palace|fort|camel|desert|heritage|cultural/, guides: [G.monuments, G.shekhawati, G.rajasthan] },

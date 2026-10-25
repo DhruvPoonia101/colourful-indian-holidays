@@ -340,6 +340,16 @@ export default function PrivateToursOfIndiaPage() {
               </div>
               <p className="mt-3 text-center text-xs italic text-ink-soft/70">{PRICE_DISCLAIMER}</p>
               <CurrencyControl center className="mt-3" />
+              <p className="mt-4 text-center text-sm text-ink-soft">
+                Want the full breakdown? Read{" "}
+                <Link
+                  href="/travel-guide/how-much-does-a-private-tour-of-india-cost"
+                  className="font-medium text-maroon underline underline-offset-2"
+                >
+                  how much a private tour of India costs
+                </Link>
+                .
+              </p>
             </Reveal>
           </div>
         </section>

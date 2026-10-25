@@ -427,6 +427,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/travel-guide/how-much-does-a-private-tour-of-india-cost`,
+      lastModified: getLastModified("/travel-guide/how-much-does-a-private-tour-of-india-cost"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${SITE_URL}/travel-guide/is-india-safe-for-tourists`,
       lastModified: getLastModified("/travel-guide/is-india-safe-for-tourists"),
       changeFrequency: "monthly",
