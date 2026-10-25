@@ -33,15 +33,7 @@ export function CurrencyControl({ className = "", center = false }: { className?
       </div>
       {currency !== "USD" && (
         <p className={`text-xs italic text-ink-soft/70 ${center ? "text-center" : "text-center sm:text-left"}`}>
-          Approximate conversion from USD{live ? " at today's rate" : ""}; your final quote is confirmed in INR or USD.{" "}
-          <a
-            href="https://www.exchangerate-api.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            Rates by Exchange Rate API
-          </a>
+          Approximate conversion from USD{live ? " at today's rate" : ""}; your final quote is confirmed in INR or USD.
         </p>
       )}
     </div>
