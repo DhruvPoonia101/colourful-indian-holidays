@@ -18,7 +18,7 @@ export function RegionHighlights() {
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {regions.map((region, index) => (
             <Reveal key={region.name} delay={index * 0.05}>
               <div className="group relative h-96 overflow-hidden rounded-2xl">
@@ -26,29 +26,31 @@ export function RegionHighlights() {
                   src={region.image}
                   alt={region.alt}
                   fill
-                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/40 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-5">
-                  <Link prefetch={false} href={region.href}>
-                    <h3 className="font-display text-xl font-semibold text-ivory">
+                <div className="absolute inset-x-0 bottom-0 p-6">
+                  <Link href={region.href}>
+                    <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gold-light">
+                      {region.tagline}
+                    </p>
+                    <h3 className="mt-1 font-display text-2xl font-semibold text-ivory">
                       {region.name}
                     </h3>
-                    <p className="mt-1 text-sm text-ivory/80">{region.description}</p>
+                    <p className="mt-2 text-sm text-ivory/80">{region.description}</p>
                   </Link>
                   <div className="mt-4 flex gap-2.5">
                     <Link
-                      prefetch={false}
                       href={region.href}
-                      className="flex-1 rounded-full border border-ivory/70 px-3 py-2 text-center text-xs font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-ivory/10 sm:text-sm"
+                      className="flex-1 rounded-full border border-ivory/70 px-4 py-2.5 text-center text-sm font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-ivory/10"
                     >
                       View Tour
                     </Link>
                     <GetQuoteButton
                       pageName={region.name}
                       triggerLabel="Enquire Now"
-                      triggerClassName="flex-1 rounded-full bg-gold px-3 py-2 text-center text-xs font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark sm:text-sm"
+                      triggerClassName="flex-1 rounded-full bg-gold px-4 py-2.5 text-center text-sm font-semibold text-ivory transition-all duration-200 hover:scale-[1.02] hover:bg-gold-dark"
                     />
                   </div>
                 </div>

@@ -101,31 +101,51 @@ export const associations = [
 export const regions = [
   {
     name: "Rajasthan",
+    tagline: "Land of Kings",
     description: "Forts, palaces and desert citadels across the land of kings.",
     href: "/destinations/rajasthan",
     image: "/images/destinations/amber-fort-jaipur.webp",
     alt: "Amber Fort, Jaipur, Rajasthan",
   },
   {
+    name: "Delhi",
+    tagline: "India's Capital",
+    description: "Mughal forts, colonial avenues, and the gateway to North India.",
+    href: "/destinations/delhi",
+    image: "/images/destinations/delhi-india-gate.webp",
+    alt: "India Gate, Delhi",
+  },
+  {
     name: "Agra",
+    tagline: "Home of the Taj Mahal",
     description: "Home of the Taj Mahal, and the heart of the Golden Triangle.",
     href: "/destinations/agra",
     image: "/images/destinations/agra-taj-mahal.webp",
     alt: "Taj Mahal at sunrise, Agra",
   },
   {
-    name: "Kaziranga",
-    description: "Home to two-thirds of the world's one-horned rhinoceros population.",
-    href: "/destinations/kaziranga",
-    image: "/images/destinations/kaziranga.webp",
-    alt: "One-horned rhino and safari jeeps at Kaziranga National Park",
-  },
-  {
     name: "Varanasi & Spiritual India",
+    tagline: "Spiritual India",
     description: "Ancient ghats and sacred rituals on the banks of the Ganges.",
     href: "/destinations/varanasi",
     image: "/images/destinations/varanasi.webp",
     alt: "Ganga aarti ceremony at the ghats of Varanasi",
+  },
+  {
+    name: "Ranthambore",
+    tagline: "Tiger Country",
+    description: "One of India's best wild tiger-sighting parks, close to Jaipur.",
+    href: "/destinations/ranthambore",
+    image: "/images/destinations/ranthambore-tiger.webp",
+    alt: "Tiger at Ranthambore National Park",
+  },
+  {
+    name: "Kaziranga",
+    tagline: "Rhino Country",
+    description: "Home to two-thirds of the world's one-horned rhinoceros population.",
+    href: "/destinations/kaziranga",
+    image: "/images/destinations/kaziranga.webp",
+    alt: "One-horned rhino and safari jeeps at Kaziranga National Park",
   },
 ] as const;
 

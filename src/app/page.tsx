@@ -56,6 +56,21 @@ export const metadata: Metadata = {
   },
 };
 
+// The homepage shows six cards (3 x 2) for regions, experiences and tour
+// packages, and three for car rental, in the same large 3-column card style
+// as the Destinations page. The full lists live on
+// /experiences, /tours and /car-rental, which each section links to.
+const HOME_EXPERIENCES = [
+  "Luxury India Tours",
+  "Family Holidays",
+  "Festival Tours",
+  "Yoga & Wellness Tours",
+  "Pilgrimage Tours",
+  "Photography Tours",
+]
+  .map((name) => featuredThemes.find((card) => card.name === name))
+  .filter((card): card is (typeof featuredThemes)[number] => card !== undefined);
+
 export default function Home() {
   return (
     <>
@@ -84,10 +99,9 @@ export default function Home() {
         <CityGrid
           eyebrow="Popular Experiences"
           heading="What Kind of Trip Are You Looking For?"
-          cities={featuredThemes}
+          cities={HOME_EXPERIENCES}
           topDivider
           showActions
-          columns={4}
         />
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/experiences" variant="gold">
@@ -99,10 +113,9 @@ export default function Home() {
         <CityGrid
           eyebrow="Popular Tour Packages"
           heading="Where to Start"
-          cities={homepagePackages}
+          cities={homepagePackages.slice(0, 6)}
           topDivider
           showActions
-          columns={4}
         />
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/tours" variant="gold">
@@ -114,10 +127,9 @@ export default function Home() {
         <CityGrid
           eyebrow="Car Rental"
           heading="Private Vehicles, Always With a Driver"
-          cities={fleetCards.slice(0, 4)}
+          cities={fleetCards.slice(0, 3)}
           topDivider
           showActions
-          columns={4}
         />
         <div className="flex justify-center pb-16 sm:pb-20">
           <Button href="/car-rental" variant="gold">
