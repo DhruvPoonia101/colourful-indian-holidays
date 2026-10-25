@@ -433,6 +433,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${SITE_URL}/travel-guide/bhutan-visa-fee-and-best-time-to-visit`,
+      lastModified: getLastModified("/travel-guide/bhutan-visa-fee-and-best-time-to-visit"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/nepal-visa-and-best-time-to-visit`,
+      lastModified: getLastModified("/travel-guide/nepal-visa-and-best-time-to-visit"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${SITE_URL}/travel-guide/10-days-in-india-itinerary`,
       lastModified: getLastModified("/travel-guide/10-days-in-india-itinerary"),
       changeFrequency: "monthly",

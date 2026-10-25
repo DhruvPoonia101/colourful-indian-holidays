@@ -88,6 +88,28 @@ export const guideArticles: GuideArticle[] = [
     published: true,
   },
   {
+    title: "Bhutan Travel Guide: Visa, the US$100 Fee and Best Time to Go",
+    slug: "bhutan-visa-fee-and-best-time-to-visit",
+    excerpt:
+      "The Bhutan visa, the US$100 per night Sustainable Development Fee, children's rates, the best months to visit and what a Bhutan tour costs.",
+    category: "Planning",
+    image: "/images/destinations/paro-taktsang-tigers-nest.webp",
+    imageAlt: "Paro Taktsang, the Tiger's Nest Monastery, Bhutan",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "Nepal Travel Guide: Visa Fees and Best Time to Visit",
+    slug: "nepal-visa-and-best-time-to-visit",
+    excerpt:
+      "Nepal visa on arrival fees, how to speed up entry, the best months for trekking and wildlife and what a Nepal tour costs.",
+    category: "Planning",
+    image: "/images/destinations/kathmandu-boudhanath-stupa-sunset.webp",
+    imageAlt: "Boudhanath stupa at sunset, Kathmandu, Nepal",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
     title: "10 Days in India: Itinerary for First-Timers",
     slug: "10-days-in-india-itinerary",
     excerpt:

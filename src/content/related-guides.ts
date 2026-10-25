@@ -44,6 +44,16 @@ const G = {
     label: "2 Weeks in India: 14-Day Itinerary",
     blurb: "Rajasthan, Kerala or the Himalaya in 14 days.",
   },
+  bhutan: {
+    href: "/travel-guide/bhutan-visa-fee-and-best-time-to-visit",
+    label: "Bhutan Travel Guide: Visa, Fees and Best Time",
+    blurb: "The US$40 visa, the US$100 nightly fee and the best months.",
+  },
+  nepal: {
+    href: "/travel-guide/nepal-visa-and-best-time-to-visit",
+    label: "Nepal Travel Guide: Visa and Best Time",
+    blurb: "Visa on arrival fees, entry tips and the best months.",
+  },
   safety: {
     href: "/travel-guide/is-india-safe-for-tourists",
     label: "Is India Safe for Tourists? An Honest Answer",
@@ -120,7 +130,9 @@ const RULES: Array<{ test: RegExp; guides: GuideLink[] }> = [
   { test: /pilgrim|varanasi|amritsar|rishikesh|haridwar|spiritual/, guides: [G.pilgrimage, G.firstTrip, G.health] },
   { test: /solo|women|female/, guides: [G.solo, G.safety, G.firstTrip] },
   { test: /kerala|south-india|goa|tamil|beach|backwater|munnar|kochi|madurai|pondicherry|chennai|andaman|periyar/, guides: [G.around, G.health, G.firstTrip] },
-  { test: /nepal|bhutan|himalaya|himachal|kashmir|ladakh|darjeeling|sikkim|hill|kaziranga|north-east/, guides: [G.eVisa, G.health, G.around] },
+  { test: /bhutan|thimphu|paro|punakha|gangtey/, guides: [G.bhutan, G.nepal, G.eVisa] },
+  { test: /nepal|kathmandu|pokhara|chitwan|everest|lumbini/, guides: [G.nepal, G.bhutan, G.eVisa] },
+  { test: /himalaya|himachal|kashmir|ladakh|darjeeling|sikkim|hill|kaziranga|north-east/, guides: [G.eVisa, G.health, G.around] },
   { test: /tiger|wildlife|safari|bird|kanha|bandhavgarh|pench|sariska/, guides: [G.health, G.around, G.firstTrip] },
   { test: /honeymoon|romantic|couple/, guides: [G.taj, G.firstTrip, G.currency] },
 ];
