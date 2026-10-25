@@ -1,6 +1,7 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
@@ -109,6 +110,87 @@ export default function KazirangaPage() {
                 <p>Kaziranga National Park, in the northeastern state of Assam, is genuinely unlike any other wildlife destination in India — a UNESCO World Heritage Site built around the Brahmaputra River&apos;s floodplain, and home to roughly two-thirds of the world&apos;s entire population of the great one-horned rhinoceros.</p>
                 <p>The park&apos;s safaris come in two distinct forms — jeep safaris covering more ground, and elephant-back safaris that move quietly enough through the tall grassland to get remarkably close to rhinos grazing in the open. Kaziranga is also a tiger reserve, though the rhino is unquestionably the park&apos;s signature sight.</p>
               </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="border-t border-sand/70 py-10 sm:py-14">
+          <div className="mx-auto max-w-4xl px-6 sm:px-8">
+            <Reveal>
+              <SectionIntro eyebrow="Safari Guide" heading="Guided Rhino Safari in Kaziranga: How It Works" />
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
+                <p className="text-ink">
+                  A guided rhino safari in Kaziranga is a jeep drive of about two hours through
+                  one of the park&apos;s four ranges, with a naturalist guide, in the morning or
+                  the afternoon. The best months are November to April, and every visitor needs
+                  a safari permit.
+                </p>
+                <p>
+                  Each range feels different, so most visitors book more than one. Jeep safaris
+                  run in all four. Early-morning elephant-back rides, about an hour long, are
+                  offered only in the Central and Western ranges.
+                </p>
+              </div>
+
+              <div className="mt-6 overflow-x-auto rounded-2xl border border-sand bg-white">
+                <table className="w-full border-collapse text-left text-sm sm:text-base">
+                  <caption className="sr-only">Kaziranga safari ranges and the safari types offered in each</caption>
+                  <thead>
+                    <tr className="border-b border-sand text-ink">
+                      <th scope="col" className="px-3 py-3 font-semibold sm:px-5">Range</th>
+                      <th scope="col" className="px-3 py-3 font-semibold sm:px-5">Safari types</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-ink-soft">
+                    <tr className="border-b border-sand/60">
+                      <th scope="row" className="px-3 py-3 font-medium text-ink sm:px-5">Central (Kohora)</th>
+                      <td className="px-3 py-3 sm:px-5">Jeep and elephant-back</td>
+                    </tr>
+                    <tr className="border-b border-sand/60">
+                      <th scope="row" className="px-3 py-3 font-medium text-ink sm:px-5">Western (Bagori)</th>
+                      <td className="px-3 py-3 sm:px-5">Jeep and elephant-back</td>
+                    </tr>
+                    <tr className="border-b border-sand/60">
+                      <th scope="row" className="px-3 py-3 font-medium text-ink sm:px-5">Eastern (Agaratoli)</th>
+                      <td className="px-3 py-3 sm:px-5">Jeep</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" className="px-3 py-3 font-medium text-ink sm:px-5">Burapahar</th>
+                      <td className="px-3 py-3 sm:px-5">Jeep</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <ul className="mt-6 list-disc space-y-2 pl-5 text-base leading-relaxed text-ink-soft">
+                <li>
+                  <span className="font-semibold text-ink">Timings:</span> morning and
+                  afternoon slots, set by the park and shifting with the season. Elephant rides
+                  go in the early morning. We confirm your exact slots when we book.
+                </li>
+                <li>
+                  <span className="font-semibold text-ink">Permits:</span> required for every
+                  safari and tied to ID, so foreign visitors need their passport details at
+                  booking. Slots are limited and fill early in peak months.
+                </li>
+                <li>
+                  <span className="font-semibold text-ink">Season:</span> the park is closed in
+                  the monsoon, when the Brahmaputra floods the reserve. Plan for November to
+                  April, with December to February the coolest.
+                </li>
+                <li>
+                  <span className="font-semibold text-ink">Our tour:</span> the{" "}
+                  <Link href="/tours/kaziranga-tour" className="font-medium text-maroon underline underline-offset-2">
+                    4-day Kaziranga tour
+                  </Link>{" "}
+                  includes four jeep safaris across the Central and Western ranges with a
+                  naturalist guide, and safari permit fees. For more reserves, see our{" "}
+                  <Link href="/tours/wildlife-tiger-safari-tours" className="font-medium text-maroon underline underline-offset-2">
+                    India wildlife and tiger safari tours
+                  </Link>
+                  .
+                </li>
+              </ul>
             </Reveal>
           </div>
         </section>

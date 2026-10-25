@@ -1,6 +1,7 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
@@ -100,6 +101,34 @@ export default function ThimphuPage() {
         />
 
         <QuickFacts facts={thimphuQuickFacts} quoteButtonPageName="Thimphu" />
+
+        <section className="border-b border-sand/70 py-8 sm:py-10">
+          <div className="mx-auto max-w-4xl px-6 sm:px-8">
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
+                What Is the Capital of Bhutan?
+              </h2>
+              <p className="mt-3 text-base leading-relaxed text-ink">
+                Thimphu is the capital of Bhutan. It is also the country&apos;s largest city,
+                in a valley about an hour&apos;s drive from Paro Airport.{" "}
+                <span lang="hi">भूटान की राजधानी थिम्पू (Thimphu) है।</span> Punakha was the
+                capital until the mid-1950s and is still home to the country&apos;s most
+                celebrated dzong.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+                Planning to see it? Our{" "}
+                <Link href="/tours/bhutan-tours" className="font-medium text-maroon underline underline-offset-2">
+                  private Bhutan tours
+                </Link>{" "}
+                start in Thimphu, and you can read about{" "}
+                <Link href="/destinations/punakha" className="font-medium text-maroon underline underline-offset-2">
+                  Punakha, the former capital
+                </Link>
+                .
+              </p>
+            </Reveal>
+          </div>
+        </section>
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

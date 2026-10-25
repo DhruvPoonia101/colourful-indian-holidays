@@ -3,7 +3,7 @@ import type { MonthContent } from "./types";
 export const july: MonthContent = {
   slug: "july",
   name: "July",
-  metaTitle: "Best Time to Visit India in July | Weather & Festivals",
+  metaTitle: "India in July: Weather by Region & Best Time to Go",
   metaDescription:
     "July is peak monsoon across most of India, but Leh & Ladakh remains dry and fully open — the strongest single reason to travel this month.",
   heroImage: "/images/destinations/Leh-4.webp",

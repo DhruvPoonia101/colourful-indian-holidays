@@ -3,7 +3,7 @@ import type { MonthContent } from "./types";
 export const march: MonthContent = {
   slug: "march",
   name: "March",
-  metaTitle: "Best Time to Visit India in March | Weather & Festivals",
+  metaTitle: "India in March: Weather by Region & Best Time to Go",
   metaDescription:
     "March brings Holi and the last comfortable weeks in Rajasthan and Delhi before the heat builds, while the Himalayan foothills start their spring season.",
   heroImage: "/images/destinations/shimla-town.webp",

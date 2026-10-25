@@ -3,6 +3,7 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { PageHero } from "@/components/layout/PageHero";
 import { QuickFacts } from "@/components/destinations/QuickFacts";
 import { CityGrid } from "@/components/destinations/CityGrid";
+import { WeatherByRegion } from "@/components/months/WeatherByRegion";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { FAQSection } from "@/components/destinations/FAQSection";
@@ -47,6 +48,8 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
           facts={content.quickFacts}
           quoteButtonPageName={`Best Time to Visit — ${content.name}`}
         />
+
+        <WeatherByRegion slug={content.slug} name={content.name} />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-4xl px-6 sm:px-8">
@@ -180,7 +183,6 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
         <section className="border-t border-sand/70 py-8">
           <div className="mx-auto flex max-w-4xl items-center justify-between px-6 sm:px-8">
             <Link
-              prefetch={false}
               href={`/best-time-to-visit-india/${content.prevMonth.slug}`}
               className="group flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-maroon"
             >
@@ -188,14 +190,12 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
               {content.prevMonth.name}
             </Link>
             <Link
-              prefetch={false}
               href="/best-time-to-visit-india"
               className="text-sm font-semibold text-ink-soft transition-colors hover:text-maroon"
             >
               Full Travel Calendar
             </Link>
             <Link
-              prefetch={false}
               href={`/best-time-to-visit-india/${content.nextMonth.slug}`}
               className="group flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-maroon"
             >

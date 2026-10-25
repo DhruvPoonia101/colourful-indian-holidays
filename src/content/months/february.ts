@@ -3,7 +3,7 @@ import type { MonthContent } from "./types";
 export const february: MonthContent = {
   slug: "february",
   name: "February",
-  metaTitle: "Best Time to Visit India in February | Weather & Festivals",
+  metaTitle: "India in February: Weather by Region & Best Time to Go",
   metaDescription:
     "February keeps January's cool, dry weather across Rajasthan while Kerala and South India warm up — arguably the best all-round month to visit India.",
   heroImage: "/images/destinations/alleppey-backwaters.webp",

@@ -125,6 +125,11 @@ export const thimphuRelatedDestinations: CityCard[] = [
 
 export const thimphuFaqs: FaqItem[] = [
   {
+    question: "What is the capital of Bhutan?",
+    answer:
+      "Thimphu is the capital of Bhutan and its largest city. Punakha was the capital until the mid-1950s. Most Bhutan trips fly into Paro and drive about an hour to Thimphu.",
+  },
+  {
     question: "How many days should we plan for Thimphu?",
     answer:
       "2 days is enough to see Tashichho Dzong, the Buddha Dordenma statue, the Memorial Chorten and the Takin Preserve at a comfortable pace.",

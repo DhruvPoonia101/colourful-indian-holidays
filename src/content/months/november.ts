@@ -3,7 +3,7 @@ import type { MonthContent } from "./types";
 export const november: MonthContent = {
   slug: "november",
   name: "November",
-  metaTitle: "Best Time to Visit India in November | Weather & Festivals",
+  metaTitle: "India in November: Weather by Region & Best Time to Go",
   metaDescription:
     "November is peak season for Rajasthan and the Golden Triangle — comfortable, dry weather, Diwali's festival of lights, and the famous Pushkar Camel Fair.",
   heroImage: "/images/destinations/amber-fort-jaipur.webp",

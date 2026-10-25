@@ -3,7 +3,7 @@ import type { MonthContent } from "./types";
 export const september: MonthContent = {
   slug: "september",
   name: "September",
-  metaTitle: "Best Time to Visit India in September | Weather & Festivals",
+  metaTitle: "India in September: Weather by Region & Best Time to Go",
   metaDescription:
     "September is the monsoon's retreat — Kerala's backwaters turn lush, Onam and Ganesh Chaturthi bring colour, and it's the ideal month to book for October.",
   heroImage: "/images/destinations/alleppey-backwaters.webp",

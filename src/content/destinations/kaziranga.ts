@@ -100,6 +100,11 @@ export const kazirangaRelatedDestinations: CityCard[] = [
 
 export const kazirangaFaqs: FaqItem[] = [
   {
+    question: "How does a guided rhino safari in Kaziranga work?",
+    answer:
+      "A jeep safari lasts about two hours and runs in the morning or the afternoon, with a naturalist guide, through one of the park's four ranges: Central (Kohora), Western (Bagori), Eastern (Agaratoli) or Burapahar. Early-morning elephant-back rides, about an hour long, are offered only in the Central and Western ranges. A safari permit is required, and the best months are November to April.",
+  },
+  {
     question: "How likely am I to see a rhino at Kaziranga?",
     answer:
       "Very likely — with roughly two-thirds of the world's one-horned rhino population here, sightings on a safari are close to guaranteed, unlike many other wildlife encounters.",
