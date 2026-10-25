@@ -27,7 +27,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "First Trip to India: What to Know Before You Go";
 const description =
-  "A practical starting point for a first trip to India — how long to plan, visa and health basics, what to expect on the ground and where to start.";
+  "A practical starting point for a first trip to India: travel tips on how long to plan, visa and health basics, safety, what to expect on the ground and where to start.";
 const pagePath = "/travel-guide/first-trip-to-india-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-30";
@@ -324,6 +324,13 @@ export default function FirstTripToIndiaGuidePage() {
             <li>Skipping the visa or health preparation until the last minute.</li>
             <li>Assuming a single Golden Triangle trip needs to cover everything — it doesn&apos;t; most repeat visitors come back for Rajasthan, Kerala or the Himalaya on a second trip.</li>
           </ArticleUL>
+          <ArticleP>
+            Worried about safety on a first trip? Our{" "}
+            <Link href="/travel-guide/is-india-safe-for-tourists" className="text-maroon underline">
+              honest guide to whether India is safe for tourists
+            </Link>{" "}
+            covers the common scams, women&apos;s safety and emergency numbers.
+          </ArticleP>
 
           <ArticleH2>Where to Actually Start</ArticleH2>
           <ArticleP>

@@ -427,6 +427,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${SITE_URL}/travel-guide/is-india-safe-for-tourists`,
+      lastModified: getLastModified("/travel-guide/is-india-safe-for-tourists"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/travel-guide/india-health-vaccination-guide`,
       lastModified: getLastModified("/travel-guide/india-health-vaccination-guide"),
       changeFrequency: "monthly",

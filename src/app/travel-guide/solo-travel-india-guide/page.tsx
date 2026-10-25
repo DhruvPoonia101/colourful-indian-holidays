@@ -31,9 +31,9 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * it if it is not something you can actually arrange.
  */
 
-const title = "Solo Travel in India: A Practical Guide for First-Timers";
+const title = "Solo Travel in India, Including Solo Female: A Practical Guide";
 const description =
-  "An honest guide to solo travel in India — getting around, common scams, advice for solo women, emergency numbers and how a private tour works for one.";
+  "An honest guide to solo travel in India, including solo female travel: getting around, common scams, advice for women, emergency numbers and how a private tour works for one.";
 const pagePath = "/travel-guide/solo-travel-india-guide";
 const heroImage = "/images/destinations/jaipur-hawa-mahal.webp";
 const datePublished = "2026-09-28";
@@ -73,7 +73,7 @@ const faqs: FaqItem[] = [
       "Per person, yes, if you travel privately. A car and driver costs the same whether one person or three share it, and hotel rooms are usually priced per room, so a solo traveller carries the full cost. Combining private transfers with cheaper independent legs, such as trains for longer distances, brings the total down.",
   },
   {
-    question: "Is it safe for a woman to travel India alone?",
+    question: "Is India safe for solo female travellers?",
     answer:
       "Many solo women travel India successfully, and many also report unwanted attention such as staring, photo requests and sometimes harassment. Sensible habits help: arrive in daylight, use pre-booked or app-based transport, choose reviewed accommodation, and trust your instincts about situations. Check your own government's current travel advice before you go.",
   },
@@ -244,7 +244,7 @@ export default function SoloTravelIndiaGuidePage() {
             having your day pre-arranged with a driver and guide you trust removes most of the
             opportunities altogether.
           </ArticleP>
-          <ArticleH2>Advice for Solo Women Travellers</ArticleH2>
+          <ArticleH2>Solo Female Travel in India: Advice for Women</ArticleH2>
           <ArticleP>
             Many women travel India alone and have excellent trips, and many also report
             unwanted attention: staring, requests for photographs, comments, and in some
@@ -261,7 +261,11 @@ export default function SoloTravelIndiaGuidePage() {
             the cost of your comfort. Avoid quiet, isolated places at night and be cautious
             about accepting invitations from people you have only just met. The national
             women-in-distress helpline is 1091, and 181 is also used in many states. In an
-            emergency, call 112.
+            emergency, call 112. For the wider picture, see our{" "}
+            <Link href="/travel-guide/is-india-safe-for-tourists" className="text-maroon underline">
+              guide to whether India is safe for tourists
+            </Link>
+            .
           </ArticleP>
 
           <ArticleH2>Money, Phone and Documents</ArticleH2>

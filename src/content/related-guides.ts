@@ -29,6 +29,11 @@ const G = {
     label: "India Health & Vaccination Guide",
     blurb: "General health and vaccination guidance before you travel.",
   },
+  safety: {
+    href: "/travel-guide/is-india-safe-for-tourists",
+    label: "Is India Safe for Tourists? An Honest Answer",
+    blurb: "Common scams, women's safety, emergency numbers and how to prepare.",
+  },
   around: {
     href: "/travel-guide/getting-around-india",
     label: "Getting Around India: Flights, Trains & Roads",
@@ -88,21 +93,21 @@ const G = {
 
 const RULES: Array<{ test: RegExp; guides: GuideLink[] }> = [
   { test: /private-tours-of-india/, guides: [G.firstTrip, G.around, G.eVisa] },
-  { test: /india-tours-from/, guides: [G.firstTrip, G.eVisa, G.health] },
+  { test: /india-tours-from/, guides: [G.firstTrip, G.safety, G.eVisa] },
   { test: /golden-triangle|taj-mahal|agra|delhi|india-highlights|north-india/, guides: [G.goldenTriangle, G.taj, G.eVisa] },
   { test: /shekhawati|mandawa|nawalgarh/, guides: [G.shekhawati, G.rajasthan, G.monuments] },
   { test: /palace|fort|camel|desert|heritage|cultural/, guides: [G.monuments, G.shekhawati, G.rajasthan] },
   { test: /rajasthan|jaipur|jodhpur|jaisalmer|udaipur|pushkar|bikaner|ranthambore|desert|palace|fort|camel/, guides: [G.rajasthan, G.monuments, G.rajCar] },
   { test: /festival|diwali|holi|onam|teej|kumbh|mahotsav|carnival|pongal/, guides: [G.festivals, G.firstTrip, G.eVisa] },
   { test: /pilgrim|varanasi|amritsar|rishikesh|haridwar|spiritual/, guides: [G.pilgrimage, G.firstTrip, G.health] },
-  { test: /solo|women|female/, guides: [G.solo, G.firstTrip, G.health] },
+  { test: /solo|women|female/, guides: [G.solo, G.safety, G.firstTrip] },
   { test: /kerala|south-india|goa|tamil|beach|backwater|munnar|kochi|madurai|pondicherry|chennai|andaman|periyar/, guides: [G.around, G.health, G.firstTrip] },
   { test: /nepal|bhutan|himalaya|himachal|kashmir|ladakh|darjeeling|sikkim|hill|kaziranga|north-east/, guides: [G.eVisa, G.health, G.around] },
   { test: /tiger|wildlife|safari|bird|kanha|bandhavgarh|pench|sariska/, guides: [G.health, G.around, G.firstTrip] },
   { test: /honeymoon|romantic|couple/, guides: [G.taj, G.firstTrip, G.currency] },
 ];
 
-const DEFAULT_GUIDES: GuideLink[] = [G.firstTrip, G.eVisa, G.solo];
+const DEFAULT_GUIDES: GuideLink[] = [G.firstTrip, G.eVisa, G.safety];
 
 /** Three relevant guides for a page path or slug (never links to itself). */
 export function guidesFor(pathOrSlug: string): GuideLink[] {

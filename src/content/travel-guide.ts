@@ -77,6 +77,17 @@ export const guideArticles: GuideArticle[] = [
     published: true,
   },
   {
+    title: "Is India Safe for Tourists? An Honest Answer",
+    slug: "is-india-safe-for-tourists",
+    excerpt:
+      "An honest answer from a Jaipur tour operator: what actually goes wrong for tourists in India, common scams, women's safety, emergency numbers and how a private trip helps.",
+    category: "Planning",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "The Taj Mahal framed by a sandstone archway, Agra",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
     title: "India Health & Vaccination Guide: What to Know Before You Travel",
     slug: "india-health-vaccination-guide",
     excerpt:
