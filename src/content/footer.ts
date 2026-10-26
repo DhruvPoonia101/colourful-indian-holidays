@@ -33,6 +33,11 @@ export const footerCompanyLinks = [
   { label: "Blog", href: "/travel-guide" },
 ] as const;
 
+export const footerToolLinks = [
+  { label: "Trip Cost Calculator", href: "/tools/trip-cost-calculator" },
+  { label: "When to Go Planner", href: "/tools/when-to-go-planner" },
+] as const;
+
 export const footerLegalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms & Conditions", href: "/cancellation-policy-and-terms-and-conditions" },

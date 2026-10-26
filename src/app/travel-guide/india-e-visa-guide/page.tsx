@@ -152,6 +152,14 @@ export default function IndiaEVisaGuidePage() {
             with your visa but is just as mandatory.
           </ArticleP>
 
+          <ArticleP>
+            Travelling from the United States? Our dedicated guide to the{" "}
+            <Link href="/travel-guide/india-visa-for-us-citizens" className="text-maroon underline">
+              India visa for US citizens
+            </Link>{" "}
+            covers the fees, the 180-day stay allowance and the step-by-step application for American passport holders.
+          </ArticleP>
+
           <ArticleH2>The Three e-Tourist Visa Options</ArticleH2>
           <ArticleP>
             India&apos;s e-Tourist visa comes in three durations, and the right one depends on how

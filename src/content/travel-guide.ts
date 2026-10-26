@@ -88,6 +88,72 @@ export const guideArticles: GuideArticle[] = [
     published: true,
   },
   {
+    title: "What to Pack for India: A Practical Packing List",
+    slug: "what-to-pack-for-india",
+    excerpt:
+      "What to pack by season, temple-friendly dress, shoes, plug adapter, power bank and a small medical kit.",
+    category: "Planning",
+    image: "/images/destinations/jaipur-spice-market.webp",
+    imageAlt: "A spice market in Jaipur, Rajasthan",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "Tipping in India: How Much to Tip Drivers, Guides and Hotels",
+    slug: "tipping-in-india",
+    excerpt:
+      "Typical rupee tips for drivers, guides, restaurants, hotel staff and spas, plus practical tips on small notes.",
+    category: "Planning",
+    image: "/images/destinations/jaipur-city-palace.webp",
+    imageAlt: "City Palace, Jaipur, Rajasthan",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "India Etiquette for Tourists: Temples, Dress, Photos and Customs",
+    slug: "india-etiquette-for-tourists",
+    excerpt:
+      "What to wear at temples, removing shoes, using your right hand, asking before photographing people and other customs.",
+    category: "Planning",
+    image: "/images/destinations/kashi-vishwanath-temple.webp",
+    imageAlt: "Kashi Vishwanath Temple, Varanasi",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "SIM Card, eSIM and WiFi in India for Tourists",
+    slug: "sim-card-and-wifi-in-india",
+    excerpt:
+      "International eSIM, an Airtel SIM at the airport or a Jio SIM compared, with costs, documents and coverage.",
+    category: "Planning",
+    image: "/images/destinations/delhi-india-gate.webp",
+    imageAlt: "India Gate at dusk, Delhi",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "India Visa for US Citizens (2026): e-Visa Fees, Stay & How to Apply",
+    slug: "india-visa-for-us-citizens",
+    excerpt:
+      "Do US citizens need a visa for India? e-Tourist visa fees, 30-day vs 1-year, how long you can stay, how to apply and the e-Arrival Card.",
+    category: "Planning",
+    image: "/images/destinations/delhi-india-gate.webp",
+    imageAlt: "India Gate at dusk, Delhi",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
+    title: "Which Tiger Reserve in India, and When Should You Go?",
+    slug: "which-tiger-reserve-in-india-and-when-to-go",
+    excerpt:
+      "Ranthambore, Bandhavgarh, Kanha, Pench and Kaziranga compared: best months, park closures, permits and which reserve suits your trip.",
+    category: "Planning",
+    image: "/images/destinations/ranthambore-tiger.webp",
+    imageAlt: "A Bengal tiger resting on a safari track, Ranthambore",
+    datePublished: "2026-10-25",
+    published: true,
+  },
+  {
     title: "Bhutan Travel Guide: Visa, the US$100 Fee and Best Time to Go",
     slug: "bhutan-visa-fee-and-best-time-to-visit",
     excerpt:

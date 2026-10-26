@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FiChevronDown, FiMail, FiPhone, FiX } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
+import { NavCurrencySelect } from "@/components/shared/NavCurrencySelect";
 import { BUSINESS } from "@/lib/seo/business";
 import { whatsappUrl } from "@/lib/whatsapp";
 import { navItems } from "@/content/nav";
@@ -71,6 +72,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
 
             <div className="flex-1 overflow-y-auto px-5 py-4">
+              <NavCurrencySelect
+                showLabel
+                className="justify-between border-b border-sand pb-3 sm:hidden"
+              />
               <ul className="flex flex-col divide-y divide-sand">
                 {navItems.map((item) => {
                   if (item.type === "link") {

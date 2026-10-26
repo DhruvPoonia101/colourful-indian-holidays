@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function DarjeelingPage() {
           eyebrow="Destination Guide"
           headline="Darjeeling — Tea, Cloud & the Himalayas"
           subheadline="Terraced tea gardens, a UNESCO-listed mountain railway, and sunrise views of Kanchenjunga — a cool-climate hill station with a character all its own."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/darjeeling-tour"
+          primaryLabel="View Darjeeling Tour"
           whatsappMessage="Hi! I'd like to plan a trip to Darjeeling with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={darjeelingQuickFacts} quoteButtonPageName="Darjeeling" />
+
+
+        <TourLinkCallout page="/destinations/darjeeling" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

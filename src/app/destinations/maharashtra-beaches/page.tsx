@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function MaharashtraBeachesPage() {
           eyebrow="Destination Guide"
           headline="Maharashtra Beaches — An Easy Escape from Mumbai"
           subheadline="Alibaug&apos;s fort-dotted coastline and the quieter Konkan shore at Ganpatipule — a genuine weekend escape without leaving the state."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/maharashtra-beaches-tour"
+          primaryLabel="View Maharashtra Beaches Tour"
           whatsappMessage="Hi! I'd like to plan a trip to Maharashtra Beaches with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={maharashtraBeachesQuickFacts} quoteButtonPageName="Maharashtra Beaches" />
+
+
+        <TourLinkCallout page="/destinations/maharashtra-beaches" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function GujaratBeachesPage() {
           eyebrow="Destination Guide"
           headline="Gujarat Beaches — Quiet Coastline, Real History"
           subheadline="Portuguese colonial architecture in Diu, and one of Hinduism&apos;s most significant temples on the shore at Somnath — a genuinely different kind of Indian coast."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/goa-and-beaches-tours"
+          primaryLabel="View India Beach Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Gujarat Beaches with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={gujaratBeachesQuickFacts} quoteButtonPageName="Gujarat Beaches" />
+
+
+        <TourLinkCallout page="/destinations/gujarat-beaches" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

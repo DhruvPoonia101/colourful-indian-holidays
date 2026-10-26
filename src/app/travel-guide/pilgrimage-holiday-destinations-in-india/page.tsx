@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
@@ -84,6 +85,8 @@ export default function PilgrimageGuidePage() {
         <ArticleTopCTA whatsappMessage="Hi! I'd like to plan a trip covering India's pilgrimage destinations with Colourful Indian Holidays." />
 
         <ArticleBody>
+          <TourLinkCallout page="/travel-guide/pilgrimage-holiday-destinations-in-india" bare />
+
           <ArticleP>
             India&apos;s pilgrimage sites aren&apos;t museum pieces — they&apos;re still in
             daily use, which is exactly what makes them remarkable to visit. You&apos;re not
@@ -106,7 +109,7 @@ export default function PilgrimageGuidePage() {
           <ArticleP>
             If you&apos;d rather browse this as a set of bookable itineraries than read through the
             full guide first, our{" "}
-            <Link prefetch={false} href="/experiences/pilgrimage-tours" className="text-maroon underline">
+            <Link href="/experiences/pilgrimage-tours" className="text-maroon underline">
               Pilgrimage Tours
             </Link>{" "}
             page rounds up Spiritual India, the Kumbh Mela, the Ajmer Urs, the Rishikesh Yoga
@@ -144,11 +147,11 @@ export default function PilgrimageGuidePage() {
             ghats, and leave surprised by how much the city itself — its narrow lanes, its
             centuries-old silk-weaving tradition, and its role as a centre of Sanskrit learning —
             adds beyond the pilgrimage sites alone. See our full{" "}
-            <Link prefetch={false} href="/destinations/varanasi" className="text-maroon underline">
+            <Link href="/destinations/varanasi" className="text-maroon underline">
               Varanasi destination guide
             </Link>{" "}
             for more on the city beyond its pilgrimage sites, or our{" "}
-            <Link prefetch={false} href="/experiences/heritage-tours" className="text-maroon underline">
+            <Link href="/experiences/heritage-tours" className="text-maroon underline">
               Heritage Tours
             </Link>{" "}
             itinerary, which pairs Varanasi with Khajuraho&apos;s temple carvings and Sarnath in
@@ -175,13 +178,12 @@ export default function PilgrimageGuidePage() {
             a simple day trip, since several ashrams and yoga centres in Rishikesh offer
             short courses and retreats that welcome foreign visitors without requiring any prior
             experience. Our{" "}
-            <Link prefetch={false} href="/experiences/spiritual-india" className="text-maroon underline">
+            <Link href="/experiences/spiritual-india" className="text-maroon underline">
               Spiritual India
             </Link>{" "}
             itinerary pairs Rishikesh and Haridwar with Amritsar&apos;s Golden Temple, and if
             your dates align with early March, the{" "}
             <Link
-              prefetch={false}
               href="/experiences/international-yoga-festival-rishikesh"
               className="text-maroon underline"
             >
@@ -189,12 +191,12 @@ export default function PilgrimageGuidePage() {
             </Link>{" "}
             fills the town with practitioners from dozens of countries. Haridwar is also one of
             four rotating host cities for{" "}
-            <Link prefetch={false} href="/experiences/kumbh-mela" className="text-maroon underline">
+            <Link href="/experiences/kumbh-mela" className="text-maroon underline">
               Kumbh Mela
             </Link>
             , worth knowing if your travel year happens to line up with an edition there. For
             travellers curious about India&apos;s wider pilgrimage landscape,{" "}
-            <Link prefetch={false} href="/destinations/rishikesh-haridwar" className="text-maroon underline">
+            <Link href="/destinations/rishikesh-haridwar" className="text-maroon underline">
               our Rishikesh &amp; Haridwar destination guide
             </Link>{" "}
             covers the practical side of visiting in more depth — where to stay, how to get
@@ -258,17 +260,17 @@ export default function PilgrimageGuidePage() {
             for travellers spending a full day in Amritsar, though it&apos;s a very different
             kind of experience from the temple itself, more spectacle than spirituality. The
             Golden Temple also makes a striking setting during{" "}
-            <Link prefetch={false} href="/experiences/diwali" className="text-maroon underline">
+            <Link href="/experiences/diwali" className="text-maroon underline">
               Diwali
             </Link>
             , when it&apos;s illuminated and reflected in the Amrit Sarovar — one of the most
             photographed Diwali scenes anywhere in India. See our{" "}
-            <Link prefetch={false} href="/experiences/spiritual-india" className="text-maroon underline">
+            <Link href="/experiences/spiritual-india" className="text-maroon underline">
               Spiritual India
             </Link>{" "}
             itinerary for a trip built specifically around Amritsar, Haridwar and Rishikesh
             together, or our{" "}
-            <Link prefetch={false} href="/destinations/amritsar" className="text-maroon underline">
+            <Link href="/destinations/amritsar" className="text-maroon underline">
               Amritsar destination guide
             </Link>{" "}
             for more on the city itself.
@@ -285,25 +287,25 @@ export default function PilgrimageGuidePage() {
             carries such deep religious significance despite its modest size. It&apos;s a
             smaller, more low-key pilgrimage stop than Varanasi or Amritsar, which makes it an
             easy add-on to a{" "}
-            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
+            <Link href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan itinerary
             </Link>{" "}
             rather than a destination requiring a special
             trip of its own — most travellers visit as a natural stop between Jaipur and Jodhpur
             or Udaipur rather than a dedicated pilgrimage journey. If your timing lines up with
             the{" "}
-            <Link prefetch={false} href="/experiences/pushkar-fair" className="text-maroon underline">
+            <Link href="/experiences/pushkar-fair" className="text-maroon underline">
               Pushkar Fair
             </Link>
             , held each autumn, you&apos;ll see the town at its most
             colourful, with tens of thousands of camels, traders and pilgrims filling the
             surrounding desert for the event. Pushkar and Ajmer pair naturally with the forts and
             palaces covered in our{" "}
-            <Link prefetch={false} href="/travel-guide/monuments-in-rajasthan" className="text-maroon underline">
+            <Link href="/travel-guide/monuments-in-rajasthan" className="text-maroon underline">
               Rajasthan monuments guide
             </Link>
             . See our{" "}
-            <Link prefetch={false} href="/destinations/pushkar" className="text-maroon underline">
+            <Link href="/destinations/pushkar" className="text-maroon underline">
               Pushkar destination guide
             </Link>{" "}
             for more on the town itself.
@@ -317,7 +319,7 @@ export default function PilgrimageGuidePage() {
             Sufi saint, and in Sufi tradition, a saint&apos;s death anniversary — known as an Urs
             — is marked with celebration rather than mourning, since it&apos;s understood as the
             saint&apos;s union with the divine. The annual{" "}
-            <Link prefetch={false} href="/experiences/the-urs-festival-ajmer" className="text-maroon underline">
+            <Link href="/experiences/the-urs-festival-ajmer" className="text-maroon underline">
               Urs festival
             </Link>{" "}
             draws large crowds for
@@ -581,11 +583,11 @@ export default function PilgrimageGuidePage() {
           <ArticleP>
             Varanasi, Rishikesh &amp; Haridwar, Amritsar, and Pushkar can all be combined into a
             single wider India itinerary alongside{" "}
-            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
+            <Link href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan
             </Link>{" "}
             and the{" "}
-            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle
             </Link>
             , while Bodh Gaya and Tirupati are better suited to travellers with a specific

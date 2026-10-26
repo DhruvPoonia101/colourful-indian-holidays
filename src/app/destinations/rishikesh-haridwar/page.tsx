@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function RishikeshHaridwarPage() {
           eyebrow="Destination Guide"
           headline="Rishikesh & Haridwar — Where the Ganges Meets the Mountains"
           subheadline="Yoga, white-water rafting and riverside ashrams in Rishikesh, and the sacred ghats of Haridwar where the Ganges leaves the Himalayas and enters the plains."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/experiences/spiritual-india"
+          primaryLabel="View Spiritual India Tour"
           whatsappMessage="Hi! I'd like to plan a trip to Rishikesh & Haridwar with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={rishikeshHaridwarQuickFacts} quoteButtonPageName="Rishikesh & Haridwar" />
+
+
+        <TourLinkCallout page="/destinations/rishikesh-haridwar" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

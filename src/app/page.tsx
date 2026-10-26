@@ -13,6 +13,7 @@ import { FAQSection } from "@/components/destinations/FAQSection";
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
 import { HOMEPAGE_GUIDES } from "@/content/related-guides";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
+import { ToolsStrip } from "@/components/home/ToolsStrip";
 import { Button } from "@/components/ui/Button";
 import { featuredThemes } from "@/content/themes-hub";
 import { homepagePackages } from "@/content/packages-hub";
@@ -123,6 +124,8 @@ export default function Home() {
             <FiArrowRight aria-hidden="true" className="h-4 w-4" />
           </Button>
         </div>
+
+        <ToolsStrip />
 
         <CityGrid
           eyebrow="Car Rental"

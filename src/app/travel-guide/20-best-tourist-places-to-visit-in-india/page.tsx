@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP } from "@/components/travel-guide/ArticleBody";
@@ -7,7 +8,6 @@ import { ArticleTopCTA } from "@/components/travel-guide/ArticleTopCTA";
 import { ArticleMidCTA } from "@/components/travel-guide/ArticleMidCTA";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { articleJsonLd } from "@/lib/seo/article-schema";
-import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
@@ -41,39 +41,6 @@ const breadcrumbs = [
   { name: "20 Best Tourist Places to Visit in India", path: pagePath },
 ];
 
-const faqs: FaqItem[] = [
-  {
-    question: "How many of these places should a first-time visitor plan to see?",
-    answer:
-      "4 to 6 is realistic for a two-week trip without feeling rushed — trying to cover more usually means less time at each stop and more days lost to travel between them. A 10-day trip comfortably covers the Golden Triangle plus one or two Rajasthan cities; two weeks or more allows a fuller Rajasthan circuit or a proper South India coastal trip.",
-  },
-  {
-    question: "What's the best starting point for a first India trip?",
-    answer:
-      "The Golden Triangle (Delhi, Agra, Jaipur) remains the most common and best-supported starting circuit, with well-established infrastructure, manageable travel times between each stop, and enough variety — Mughal monuments, colonial architecture, and Rajput forts — to give a genuine first impression of India's range.",
-  },
-  {
-    question: "Is it better to focus on one region or try to see a bit of everything?",
-    answer:
-      "One region done properly beats a scattered itinerary trying to touch North, South and the Himalayas in a single trip — the distances and different climates make a single well-connected circuit far more comfortable and memorable than a rushed tour spanning the whole country.",
-  },
-  {
-    question: "Which of these places pairs best with wildlife safaris?",
-    answer:
-      "Ranthambore fits naturally into a Rajasthan circuit given its proximity to Jaipur, while Kerala and Goa itineraries can extend into Central India's tiger reserves for travellers specifically prioritising wildlife over a purely heritage-focused trip.",
-  },
-  {
-    question: "What time of year suits most of these destinations?",
-    answer:
-      "October through March offers the most comfortable weather across the majority of this list — Rajasthan, the Golden Triangle, Varanasi and South India all see their most manageable temperatures in these months. Summer brings intense heat to the plains and deserts, while the Himalayan destinations have their own separate, narrower travel windows tied to snow and road access.",
-  },
-  {
-    question: "Should we book a private guide and driver, or travel independently?",
-    answer:
-      "Most of these destinations — particularly Rajasthan's forts, Varanasi's ghats, and Ladakh's high-altitude routes — are considerably richer with a private, English-speaking guide and driver rather than navigating independently. It's also the standard way international visitors travel most of this list, rather than an optional upgrade.",
-  },
-];
-
 export default function TwentyBestPlacesGuidePage() {
   return (
     <>
@@ -97,11 +64,6 @@ export default function TwentyBestPlacesGuidePage() {
         }}
       />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
-      />
-
       <main>
         <PageHero
           image={heroImage}
@@ -123,6 +85,8 @@ export default function TwentyBestPlacesGuidePage() {
         <ArticleTopCTA whatsappMessage="Hi! I'd like some advice on planning my first trip to India with Colourful Indian Holidays." />
 
         <ArticleBody>
+          <TourLinkCallout page="/travel-guide/20-best-tourist-places-to-visit-in-india" bare />
+
           <ArticleP>
             India is large enough, and varied enough, that no single trip covers all of it — and
             that&apos;s precisely what makes a first visit so difficult to plan and so rewarding
@@ -154,7 +118,7 @@ export default function TwentyBestPlacesGuidePage() {
           <ArticleH2>North India&apos;s Essential Stops</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/agra" className="text-maroon underline">
+              <Link href="/destinations/agra" className="text-maroon underline">
                 1. The Taj Mahal, Agra
               </Link>
             </span>{" "}
@@ -166,14 +130,14 @@ export default function TwentyBestPlacesGuidePage() {
             abandoned Mughal capital of Fatehpur Sikri sit nearby, both UNESCO-recognised in
             their own right, and reward a full day rather than a rushed photo stop before
             continuing on to Rajasthan. Our{" "}
-            <Link prefetch={false} href="/tours/taj-mahal-tours" className="text-maroon underline">
+            <Link href="/tours/taj-mahal-tours" className="text-maroon underline">
               Taj Mahal Tours
             </Link>{" "}
             cover several ways to build Agra into a wider itinerary.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/delhi" className="text-maroon underline">
+              <Link href="/destinations/delhi" className="text-maroon underline">
                 2. Delhi
               </Link>
             </span>{" "}
@@ -185,14 +149,14 @@ export default function TwentyBestPlacesGuidePage() {
             and the Qutub Minar, the tallest brick minaret in the world. Most international
             itineraries begin or end here, and it rewards two or three days on its own rather
             than a same-day connection — often as the opening leg of our{" "}
-            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle Tour
             </Link>
             .
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/amritsar" className="text-maroon underline">
+              <Link href="/destinations/amritsar" className="text-maroon underline">
                 3. The Golden Temple, Amritsar
               </Link>
             </span>{" "}
@@ -203,14 +167,14 @@ export default function TwentyBestPlacesGuidePage() {
             through the night — is what most visitors remember, more than any single view. A
             short walk away, Jallianwala Bagh and the daily Wagah Border ceremony add real
             historical weight and genuine spectacle to an Amritsar stop, covered in depth in our{" "}
-            <Link prefetch={false} href="/experiences/spiritual-india" className="text-maroon underline">
+            <Link href="/experiences/spiritual-india" className="text-maroon underline">
               Spiritual India
             </Link>{" "}
             itinerary.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/leh-ladakh" className="text-maroon underline">
+              <Link href="/destinations/leh-ladakh" className="text-maroon underline">
                 4. Leh &amp; Ladakh
               </Link>
             </span>{" "}
@@ -222,14 +186,14 @@ export default function TwentyBestPlacesGuidePage() {
             region needs proper acclimatisation time built into any itinerary, but travellers who
             give it that time consistently name Ladakh the most memorable leg of their entire
             trip — our{" "}
-            <Link prefetch={false} href="/tours/ladakh-tour" className="text-maroon underline">
+            <Link href="/tours/ladakh-tour" className="text-maroon underline">
               Ladakh Tour
             </Link>{" "}
             builds in the acclimatisation days needed to do it properly.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/srinagar-kashmir" className="text-maroon underline">
+              <Link href="/destinations/srinagar-kashmir" className="text-maroon underline">
                 5. Srinagar &amp; Kashmir
               </Link>
             </span>{" "}
@@ -240,14 +204,14 @@ export default function TwentyBestPlacesGuidePage() {
             overnight experiences available anywhere in India, and Gulmarg&apos;s pine forests
             function as a ski destination in winter and a green retreat the rest of the year —
             see our{" "}
-            <Link prefetch={false} href="/experiences/kashmir-honeymoon" className="text-maroon underline">
+            <Link href="/experiences/kashmir-honeymoon" className="text-maroon underline">
               Kashmir Honeymoon
             </Link>{" "}
             itinerary for a full 5-day route.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/rishikesh-haridwar" className="text-maroon underline">
+              <Link href="/destinations/rishikesh-haridwar" className="text-maroon underline">
                 6. Rishikesh &amp; Haridwar
               </Link>
             </span>{" "}
@@ -258,7 +222,6 @@ export default function TwentyBestPlacesGuidePage() {
             are officially vegetarian and alcohol-free, reflecting their status as centres of
             pilgrimage. If your dates align with early March, our{" "}
             <Link
-              prefetch={false}
               href="/experiences/international-yoga-festival-rishikesh"
               className="text-maroon underline"
             >
@@ -276,7 +239,7 @@ export default function TwentyBestPlacesGuidePage() {
           <ArticleH2>Rajasthan&apos;s Desert Cities</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/jaipur" className="text-maroon underline">
+              <Link href="/destinations/jaipur" className="text-maroon underline">
                 7. Jaipur
               </Link>
             </span>{" "}
@@ -285,14 +248,14 @@ export default function TwentyBestPlacesGuidePage() {
             and mirrored Sheesh Mahal, alongside the astronomical instruments of Jantar Mantar
             and the ornate façade of Hawa Mahal, give Jaipur enough depth for two full days
             before continuing on to the rest of Rajasthan — all covered on our{" "}
-            <Link prefetch={false} href="/tours/jaipur-city-tour" className="text-maroon underline">
+            <Link href="/tours/jaipur-city-tour" className="text-maroon underline">
               Jaipur City Tour
             </Link>
             .
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/udaipur" className="text-maroon underline">
+              <Link href="/destinations/udaipur" className="text-maroon underline">
                 8. Udaipur
               </Link>
             </span>{" "}
@@ -301,14 +264,14 @@ export default function TwentyBestPlacesGuidePage() {
             the desert forts elsewhere in the state. Boat rides at sunset, the City Palace&apos;s
             sprawling courtyards, and a genuinely different, lake-centred rhythm make it a
             favourite stop for honeymooners and first-time visitors alike, as covered in our{" "}
-            <Link prefetch={false} href="/tours/udaipur-tour" className="text-maroon underline">
+            <Link href="/tours/udaipur-tour" className="text-maroon underline">
               Udaipur Tour
             </Link>
             .
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/jaisalmer" className="text-maroon underline">
+              <Link href="/destinations/jaisalmer" className="text-maroon underline">
                 9. Jaisalmer
               </Link>
             </span>{" "}
@@ -317,14 +280,14 @@ export default function TwentyBestPlacesGuidePage() {
             world&apos;s major forts, with homes, shops and temples woven through its narrow
             lanes. Camel safaris into the surrounding dunes at sunset are a natural extension of
             a{" "}
-            <Link prefetch={false} href="/tours/jaisalmer-tour" className="text-maroon underline">
+            <Link href="/tours/jaisalmer-tour" className="text-maroon underline">
               Jaisalmer
             </Link>{" "}
             stop.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/pushkar" className="text-maroon underline">
+              <Link href="/destinations/pushkar" className="text-maroon underline">
                 10. Pushkar
               </Link>
             </span>{" "}
@@ -336,7 +299,7 @@ export default function TwentyBestPlacesGuidePage() {
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/ranthambore" className="text-maroon underline">
+              <Link href="/destinations/ranthambore" className="text-maroon underline">
                 11. Ranthambore National Park
               </Link>
             </span>{" "}
@@ -345,7 +308,7 @@ export default function TwentyBestPlacesGuidePage() {
             ruins of a 10th-century fort inside the park itself. Its proximity to Jaipur — just a
             few hours by road — makes it an easy addition to any Rajasthan circuit rather than a
             separate trip, and our{" "}
-            <Link prefetch={false} href="/tours/ranthambore-tour" className="text-maroon underline">
+            <Link href="/tours/ranthambore-tour" className="text-maroon underline">
               Ranthambore Tour
             </Link>{" "}
             builds in time for the fort alongside the safaris.
@@ -354,7 +317,7 @@ export default function TwentyBestPlacesGuidePage() {
           <ArticleH2>South India&apos;s Different India</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/kerala" className="text-maroon underline">
+              <Link href="/destinations/kerala" className="text-maroon underline">
                 12. Kerala Backwaters
               </Link>
             </span>{" "}
@@ -364,14 +327,14 @@ export default function TwentyBestPlacesGuidePage() {
             Rajasthan&apos;s deserts or North India&apos;s plains. Munnar&apos;s misty tea
             estates and Fort Kochi&apos;s Chinese fishing nets and layered colonial history round
             out a Kerala circuit with genuine variety, covered in full on our{" "}
-            <Link prefetch={false} href="/tours/kerala-tours-classic" className="text-maroon underline">
+            <Link href="/tours/kerala-tours-classic" className="text-maroon underline">
               Kerala Tours
             </Link>{" "}
             classic circuit.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/mahabalipuram" className="text-maroon underline">
+              <Link href="/destinations/mahabalipuram" className="text-maroon underline">
                 13. Mahabalipuram
               </Link>
             </span>{" "}
@@ -380,14 +343,14 @@ export default function TwentyBestPlacesGuidePage() {
             easy day trip from Chennai. Pallava dynasty sculptors carved many of these monuments
             straight into existing rock rather than building from quarried stone, a technique
             genuinely rare to see up close — our{" "}
-            <Link prefetch={false} href="/tours/mahabalipuram-tour" className="text-maroon underline">
+            <Link href="/tours/mahabalipuram-tour" className="text-maroon underline">
               Mahabalipuram Tour
             </Link>{" "}
             covers the site in depth for travellers who want more than a rushed day trip.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/pondicherry" className="text-maroon underline">
+              <Link href="/destinations/pondicherry" className="text-maroon underline">
                 14. Pondicherry
               </Link>
             </span>{" "}
@@ -396,7 +359,7 @@ export default function TwentyBestPlacesGuidePage() {
             noticeably slower, café-oriented pace that stands apart from the rest of Tamil Nadu.
             Auroville, an experimental international township nearby, adds a genuinely unusual
             philosophical dimension to a visit — see our{" "}
-            <Link prefetch={false} href="/tours/pondicherry-tour" className="text-maroon underline">
+            <Link href="/tours/pondicherry-tour" className="text-maroon underline">
               Pondicherry Tour
             </Link>{" "}
             for a full day devoted to Auroville alone.
@@ -405,7 +368,7 @@ export default function TwentyBestPlacesGuidePage() {
           <ArticleH2>Varanasi and the Eastern Hills</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/varanasi" className="text-maroon underline">
+              <Link href="/destinations/varanasi" className="text-maroon underline">
                 15. Varanasi
               </Link>
             </span>{" "}
@@ -415,14 +378,14 @@ export default function TwentyBestPlacesGuidePage() {
             generations, regardless of who&apos;s watching. A sunrise boat ride past the ghats
             shows a completely different, quieter mood from the evening ceremony&apos;s fire and
             drums, and both are worth building real time around — our{" "}
-            <Link prefetch={false} href="/experiences/heritage-tours" className="text-maroon underline">
+            <Link href="/experiences/heritage-tours" className="text-maroon underline">
               Heritage Tours
             </Link>{" "}
             itinerary pairs Varanasi with Khajuraho and Sarnath in a single 5-day circuit.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/darjeeling" className="text-maroon underline">
+              <Link href="/destinations/darjeeling" className="text-maroon underline">
                 16. Darjeeling
               </Link>
             </span>{" "}
@@ -436,7 +399,7 @@ export default function TwentyBestPlacesGuidePage() {
           <ArticleH2>The West Coast</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/goa" className="text-maroon underline">
+              <Link href="/destinations/goa" className="text-maroon underline">
                 17. Goa
               </Link>
             </span>{" "}
@@ -447,14 +410,14 @@ export default function TwentyBestPlacesGuidePage() {
             beach shacks and nightlife and South Goa&apos;s quieter upscale resorts offer two
             different holidays within one state. If your dates line up with the four days before
             Lent, our{" "}
-            <Link prefetch={false} href="/experiences/goa-carnival" className="text-maroon underline">
+            <Link href="/experiences/goa-carnival" className="text-maroon underline">
               Goa Carnival
             </Link>{" "}
             guide covers the street parades that take over the state each year.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/mumbai" className="text-maroon underline">
+              <Link href="/destinations/mumbai" className="text-maroon underline">
                 18. Mumbai
               </Link>
             </span>{" "}
@@ -469,7 +432,7 @@ export default function TwentyBestPlacesGuidePage() {
           <ArticleH2>Central India and the Islands</ArticleH2>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/khajuraho" className="text-maroon underline">
+              <Link href="/destinations/khajuraho" className="text-maroon underline">
                 19. Khajuraho
               </Link>
             </span>{" "}
@@ -479,14 +442,14 @@ export default function TwentyBestPlacesGuidePage() {
             beings and scenes from daily life. It sees considerably fewer visitors than the Taj
             Mahal or Delhi&apos;s major monuments, making for a more contemplative visit. It
             pairs naturally with Varanasi on our{" "}
-            <Link prefetch={false} href="/experiences/heritage-tours" className="text-maroon underline">
+            <Link href="/experiences/heritage-tours" className="text-maroon underline">
               Heritage Tours
             </Link>{" "}
             itinerary, connected by a short domestic flight.
           </ArticleP>
           <ArticleP>
             <span className="font-semibold text-ink">
-              <Link prefetch={false} href="/destinations/andaman-islands" className="text-maroon underline">
+              <Link href="/destinations/andaman-islands" className="text-maroon underline">
                 20. Andaman Islands
               </Link>
             </span>{" "}
@@ -495,7 +458,7 @@ export default function TwentyBestPlacesGuidePage() {
             mainland India. It&apos;s the one entry here that works best as a dedicated
             beach-and-diving trip rather than an add-on to a heritage-focused circuit, given the
             flight time from most mainland gateways — see our{" "}
-            <Link prefetch={false} href="/experiences/andaman-beach-honeymoon" className="text-maroon underline">
+            <Link href="/experiences/andaman-beach-honeymoon" className="text-maroon underline">
               Andaman Beach Honeymoon
             </Link>{" "}
             itinerary for a full 5-day route.
@@ -546,7 +509,7 @@ export default function TwentyBestPlacesGuidePage() {
             Jaipur, while Central India&apos;s tiger reserves — Bandhavgarh, Kanha and Pench —
             form their own dedicated circuit for travellers specifically prioritising safari time
             over monuments, covered in full in our{" "}
-            <Link prefetch={false} href="/experiences/tiger-safari-tours" className="text-maroon underline">
+            <Link href="/experiences/tiger-safari-tours" className="text-maroon underline">
               Tiger Safari Tours
             </Link>{" "}
             guide.

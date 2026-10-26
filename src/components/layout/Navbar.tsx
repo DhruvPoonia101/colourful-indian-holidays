@@ -9,6 +9,7 @@ import { FiMenu } from "react-icons/fi";
 import { NavDropdown } from "@/components/layout/NavDropdown";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
+import { NavCurrencySelect } from "@/components/shared/NavCurrencySelect";
 import { navItems } from "@/content/nav";
 
 /**
@@ -149,8 +150,8 @@ export function Navbar() {
               min-[380px]:px-4
               sm:gap-3
               sm:px-6
-              xl:gap-4
-              xl:px-6
+              xl:gap-3
+              xl:px-5
               2xl:px-10
             "
           >
@@ -217,7 +218,8 @@ export function Navbar() {
                 className="
                   flex
                   items-center
-                  gap-4
+                  gap-3
+                  min-[1400px]:gap-4
                   2xl:gap-6
                 "
               >
@@ -284,7 +286,8 @@ export function Navbar() {
                 labels open the same modal — only one is ever
                 rendered visibly, so there is still a single trigger.
             ===================================================== */}
-            <div className="ml-auto flex shrink-0 items-center xl:ml-0">
+            <div className="ml-auto flex shrink-0 items-center gap-2 xl:ml-0 xl:gap-3">
+              <NavCurrencySelect className="hidden sm:flex" />
               <GetQuoteButton
                 pageName="Plan My Journey (Navbar)"
                 triggerLabel={

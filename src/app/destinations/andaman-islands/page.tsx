@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function AndamanIslandsPage() {
           eyebrow="Destination Guide"
           headline="Andaman Islands — India's Tropical Frontier"
           subheadline="Remote, coral-fringed beaches in the Bay of Bengal, unlike anywhere else on the Indian mainland — plus a sobering piece of colonial history at Cellular Jail."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/experiences/andaman-beach-honeymoon"
+          primaryLabel="View Andaman Beach Holiday"
           whatsappMessage="Hi! I'd like to plan a trip to Andaman Islands with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={andamanIslandsQuickFacts} quoteButtonPageName="Andaman Islands" />
+
+
+        <TourLinkCallout page="/destinations/andaman-islands" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

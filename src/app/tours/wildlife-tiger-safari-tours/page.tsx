@@ -38,9 +38,9 @@ import { renderWithLinks } from "@/lib/render-with-links";
  * sign in frame.
  */
 
-const title = "India Tiger Safari Tours | Ranthambore, Kanha & Kaziranga";
+const title = "India Tiger Safari Tours | Ranthambore, Bandhavgarh & Kanha";
 const description =
-  "Private wildlife tours across India's tiger reserves — Ranthambore, Bandhavgarh, Kanha, Pench, Kaziranga's rhinos and Periyar's boat safaris.";
+  "Private India tiger safari tours: Ranthambore, Bandhavgarh, Kanha and Pench compared, plus Kaziranga's rhinos and Periyar's boat safaris. Choose your park and month.";
 const pagePath = "/tours/wildlife-tiger-safari-tours";
 const heroImage = "/images/destinations/ranthambore-tiger.webp";
 
@@ -148,7 +148,7 @@ const overview = [
   "Ranthambore is the reserve most first-time visitors reach first, both because of its fame and its location — close enough to Jaipur to combine naturally with a Rajasthan itinerary, with the added novelty of a ruined 10th-century fort standing inside the park boundary itself, visible from several safari routes. [[Sariska|/destinations/sariska]], a couple of hours further into Rajasthan, offers a quieter alternative with lower visitor numbers, following a genuine tiger reintroduction programme after the park's original tigers were lost to poaching in the mid-2000s.",
   "Madhya Pradesh's reserves — [[Bandhavgarh|/destinations/bandhavgarh]], Kanha and Pench — are widely considered India's strongest for an actual tiger sighting, with Bandhavgarh in particular holding one of the highest tiger densities of any reserve in the country. Kanha, meanwhile, is often credited as the landscape that inspired Rudyard Kipling's Jungle Book, and Pench sits close enough to combine both reserves in one trip. These three run as a dedicated route distinct from the Rajasthan reserves above, since combining Rajasthan and Madhya Pradesh's parks in one trip usually adds more travel time than sightseeing time.",
   "[[Kaziranga|/destinations/kaziranga]], a UNESCO World Heritage Site on the Brahmaputra floodplain in Assam, is a genuinely different kind of wildlife trip — grassland and wetland rather than forest, elephant-back or jeep safaris rather than the same format repeated, and the one-horned rhinoceros as the headline species rather than tigers, alongside wild elephants, water buffalo and over 500 recorded bird species. It's a considerable distance from India's other major reserves, so it works best either as its own dedicated trip or combined with a wider Northeast India itinerary rather than tacked onto a Rajasthan or Madhya Pradesh route. Periyar, near Thekkady in Kerala, is different again — one of the few tiger reserves explored primarily by boat, gliding across Periyar Lake watching for elephants and other wildlife along the shoreline, and easily combined with a wider Kerala circuit.",
-  "Every route here runs with a private vehicle and driver for transfers, with safari vehicles and permits arranged separately as part of your itinerary — tiger reserve safaris require advance permit bookings that fill up during peak season, so earlier booking genuinely matters more here than on a standard sightseeing itinerary. See our [[car rental fleet|/car-rental]] for the range of vehicles we use for transfers between parks and cities. Tell us which reserve or region interests you most, and how it fits with the rest of your trip, and we'll build the itinerary and permits around it.",
+  "Every route here runs with a private vehicle and driver for transfers, with safari vehicles and permits arranged separately as part of your itinerary — tiger reserve safaris require advance permit bookings that fill up during peak season, so earlier booking genuinely matters more here than on a standard sightseeing itinerary. See our [[car rental fleet|/car-rental]] for the range of vehicles we use for transfers between parks and cities. Tell us which reserve or region interests you most, and how it fits with the rest of your trip, and we'll build the itinerary and permits around it. Not sure which park or month? Our [[tiger reserve guide|/travel-guide/which-tiger-reserve-in-india-and-when-to-go]] compares them side by side.",
 ];
 
 const faqs: FaqItem[] = [
@@ -175,7 +175,7 @@ const faqs: FaqItem[] = [
   {
     question: "What's the best time of year for a tiger safari?",
     answer:
-      "November through April is the main safari season across most reserves, with the hotter, drier months (March-April) often producing better sightings as animals gather near remaining water sources. Most parks close for some or all of the June-to-September monsoon.",
+      "March to June gives the highest chance of a sighting, as tigers gather near remaining water, but it is very hot, so drives run at dawn and dusk. November to February is cooler with better light, though thicker foliage can hide tigers. Core zones in most northern and central reserves close for the monsoon, roughly July to September, and reopen around 1 October. Exact dates vary by park and year, and we confirm them for your trip.",
   },
 ];
 

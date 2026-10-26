@@ -15,6 +15,7 @@ import {
   footerCompanyLinks,
   footerCountryLinks,
   footerExploreLinks,
+  footerToolLinks,
   sisterCompanies,
   socialLinks,
 } from "@/content/footer";
@@ -55,7 +56,6 @@ export function Footer() {
           <div>
             {/* Logo */}
             <Link
-              prefetch={false}
               href="/"
               aria-label={`${SITE_NAME} — Home`}
               className="inline-flex items-center rounded-2xl bg-[#F8F1E7] px-5 py-4 shadow-[0_8px_30px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-0.5"
@@ -113,7 +113,6 @@ export function Footer() {
               {footerExploreLinks.map((link) => (
                 <li key={link.href}>
                   <Link
-                    prefetch={false}
                     href={link.href}
                     className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
                   >
@@ -137,7 +136,6 @@ export function Footer() {
                     </span>
                   )}
                   <Link
-                    prefetch={false}
                     href={country.href}
                     className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
                   >
@@ -161,11 +159,28 @@ export function Footer() {
               {footerCompanyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
-                    prefetch={false}
                     href={link.href}
                     className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
                   >
                     {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* Free Tools */}
+            <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D5A93A]/75">
+              Free Tools
+            </p>
+
+            <ul className="mt-3 flex flex-col gap-2 text-[13px]">
+              {footerToolLinks.map((tool) => (
+                <li key={tool.href}>
+                  <Link
+                    href={tool.href}
+                    className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
+                  >
+                    {tool.label}
                   </Link>
                 </li>
               ))}
@@ -279,7 +294,6 @@ export function Footer() {
             {/* Privacy Policy / Terms & Conditions — centered */}
             <p className="text-[11px] leading-5 text-[#E9DCCB]/45">
               <Link
-                prefetch={false}
                 href="/privacy-policy"
                 className="transition-colors hover:text-[#D5A93A]"
               >
@@ -287,7 +301,6 @@ export function Footer() {
               </Link>
               {" · "}
               <Link
-                prefetch={false}
                 href="/cancellation-policy-and-terms-and-conditions"
                 className="transition-colors hover:text-[#D5A93A]"
               >

@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -95,12 +96,15 @@ export default function ThimphuPage() {
           eyebrow="Destination Guide"
           headline="Thimphu — Bhutan's Capital"
           subheadline="The only national capital in the world without a single traffic light — a small, walkable city where dzongs, markets and monuments sit close together."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/bhutan-tours"
+          primaryLabel="View Bhutan Tours"
           whatsappMessage="Hi! I'd like to plan a trip to Thimphu with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={thimphuQuickFacts} quoteButtonPageName="Thimphu" />
+
+
+        <TourLinkCallout page="/destinations/thimphu" />
 
         <section className="border-b border-sand/70 py-8 sm:py-10">
           <div className="mx-auto max-w-4xl px-6 sm:px-8">

@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function MaharashtraPage() {
           eyebrow="Destination Guide"
           headline="Maharashtra — Beyond Mumbai"
           subheadline="UNESCO rock-cut cave temples carved over centuries, Pune's Maratha-era heritage, and one of India's most-visited pilgrimage towns."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/maharashtra-tour"
+          primaryLabel="View Maharashtra Tour"
           whatsappMessage="Hi! I'd like to plan a trip to Maharashtra with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={maharashtraQuickFacts} quoteButtonPageName="Maharashtra" />
+
+
+        <TourLinkCallout page="/destinations/maharashtra" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

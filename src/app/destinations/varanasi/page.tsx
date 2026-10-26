@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -110,12 +111,15 @@ export default function VaranasiPage() {
           eyebrow="Destination Guide"
           headline="Varanasi — India's Most Sacred City"
           subheadline="One of the oldest continuously inhabited cities in the world, and the single most significant pilgrimage destination in India — still lived and practised daily along the Ganges."
-          primaryHref="/experiences/varanasi-ganges"
-          primaryLabel="View Varanasi & Ganges Tours"
+          primaryHref="/tours/golden-triangle-tour-varanasi"
+          primaryLabel="View Golden Triangle with Varanasi"
           whatsappMessage="Hi! I'd like to plan a Varanasi trip with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={varanasiQuickFacts} quoteButtonPageName="Varanasi" />
+
+
+        <TourLinkCallout page="/destinations/varanasi" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

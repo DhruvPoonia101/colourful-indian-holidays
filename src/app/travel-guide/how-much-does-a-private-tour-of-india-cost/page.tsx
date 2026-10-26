@@ -197,7 +197,8 @@ export default function CostGuidePage() {
             That is for two people sharing, with your own driver and guide, and it excludes flights.
             A 7-day trip therefore starts from about <Price usd={row(7).comfort} />, and a 14-day trip
             from about <Price usd={row(14).comfort} />. Peak season and higher hotel categories cost
-            more. The rest of this guide shows how the numbers work.
+            more. The rest of this guide shows how the numbers work. To price your own route,
+            try our <Link href="/tools/trip-cost-calculator" className="text-maroon underline">trip cost calculator</Link>.
           </ArticleP>
 
           <ArticleH2>Private Tour of India: Starting Prices by Trip Length</ArticleH2>

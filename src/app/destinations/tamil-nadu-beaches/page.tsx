@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -100,6 +101,9 @@ export default function TamilNaduBeachesPage() {
         />
 
         <QuickFacts facts={tamilNaduBeachesQuickFacts} quoteButtonPageName="Tamil Nadu Beaches" />
+
+
+        <TourLinkCallout page="/destinations/tamil-nadu-beaches" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

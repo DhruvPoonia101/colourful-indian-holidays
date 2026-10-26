@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import Link from "next/link";
 import { PageHero } from "@/components/layout/PageHero";
 import { ArticleByline, AuthorBioCard, ArticleBody, ArticleH2, ArticleP, ArticleUL } from "@/components/travel-guide/ArticleBody";
@@ -95,6 +96,8 @@ export default function ShekhawatiGuidePage() {
         <ArticleTopCTA whatsappMessage="Hi! I'd like to plan a trip that includes Shekhawati with Colourful Indian Holidays." />
 
         <ArticleBody>
+          <TourLinkCallout page="/travel-guide/places-to-visit-in-shekhawati" bare />
+
           <ArticleP>
             Ask most first-time visitors to name a region of Rajasthan and you&apos;ll hear
             Jaipur, Udaipur, Jodhpur, Jaisalmer — the cities that anchor almost every standard
@@ -192,7 +195,7 @@ export default function ShekhawatiGuidePage() {
             history of individual buildings rather than generic commentary. Most visitors reach
             Mandawa directly from Jaipur, roughly 3 to 4 hours by road, making it an easy add-on
             after our{" "}
-            <Link prefetch={false} href="/tours/jaipur-city-tour" className="text-maroon underline">
+            <Link href="/tours/jaipur-city-tour" className="text-maroon underline">
               Jaipur City Tour
             </Link>
             .
@@ -332,15 +335,15 @@ export default function ShekhawatiGuidePage() {
           </ArticleUL>
           <ArticleP>
             Shekhawati works well as a two or three-day addition to a wider{" "}
-            <Link prefetch={false} href="/destinations/rajasthan" className="text-maroon underline">
+            <Link href="/destinations/rajasthan" className="text-maroon underline">
               Rajasthan
             </Link>{" "}
             itinerary, either inserted between Delhi and Jaipur on our{" "}
-            <Link prefetch={false} href="/tours/golden-triangle-tour" className="text-maroon underline">
+            <Link href="/tours/golden-triangle-tour" className="text-maroon underline">
               Golden Triangle Tour
             </Link>{" "}
             if you&apos;re arriving from the capital, or as a detour before or after a longer{" "}
-            <Link prefetch={false} href="/tours/rajasthan-tours" className="text-maroon underline">
+            <Link href="/tours/rajasthan-tours" className="text-maroon underline">
               Rajasthan circuit
             </Link>
             . It genuinely

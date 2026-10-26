@@ -54,6 +54,36 @@ const G = {
     label: "Nepal Travel Guide: Visa and Best Time",
     blurb: "Visa on arrival fees, entry tips and the best months.",
   },
+  pack: {
+    href: "/travel-guide/what-to-pack-for-india",
+    label: "What to Pack for India",
+    blurb: "Clothing by season, temple dress, adapters and extras.",
+  },
+  tip: {
+    href: "/travel-guide/tipping-in-india",
+    label: "Tipping in India",
+    blurb: "Typical rupee tips for drivers, guides and hotels.",
+  },
+  etiquette: {
+    href: "/travel-guide/india-etiquette-for-tourists",
+    label: "India Etiquette for Tourists",
+    blurb: "Temples, dress, photos and everyday customs.",
+  },
+  sim: {
+    href: "/travel-guide/sim-card-and-wifi-in-india",
+    label: "SIM Card, eSIM and WiFi in India",
+    blurb: "Your options for mobile data and what each costs.",
+  },
+  usVisa: {
+    href: "/travel-guide/india-visa-for-us-citizens",
+    label: "India Visa for US Citizens (2026)",
+    blurb: "e-Visa fees, stay limits and how to apply from the US.",
+  },
+  tigers: {
+    href: "/travel-guide/which-tiger-reserve-in-india-and-when-to-go",
+    label: "Which Tiger Reserve in India, and When to Go",
+    blurb: "Ranthambore, Bandhavgarh, Kanha and Pench compared by month.",
+  },
   safety: {
     href: "/travel-guide/is-india-safe-for-tourists",
     label: "Is India Safe for Tourists? An Honest Answer",
@@ -117,6 +147,9 @@ const G = {
 } satisfies Record<string, GuideLink>;
 
 const RULES: Array<{ test: RegExp; guides: GuideLink[] }> = [
+  { test: /what-to-pack|tipping|etiquette|sim-card/, guides: [G.pack, G.tip, G.etiquette, G.sim] },
+  { test: /india-tours-from-usa/, guides: [G.usVisa, G.cost, G.firstTrip] },
+  { test: /tiger|wildlife|bandhavgarh|kanha|pench|ranthambore|sariska/, guides: [G.tigers, G.rajasthan, G.health] },
   { test: /10-14-day-tours/, guides: [G.tenDays, G.twoWeeks, G.cost] },
   { test: /6-9-day-tours/, guides: [G.tenDays, G.cost, G.firstTrip] },
   { test: /15-plus-day-tours/, guides: [G.twoWeeks, G.cost, G.firstTrip] },

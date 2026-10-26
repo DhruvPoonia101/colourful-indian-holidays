@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { GetQuoteButton } from "@/components/shared/GetQuoteButton";
 import { Price } from "@/components/shared/Price";
@@ -63,6 +64,14 @@ export function QuickFacts({
                 {priceDisclaimer}
               </p>
               {facts.some((f) => f.price) && <CurrencyControl />}
+              {facts.some((f) => f.price) && (
+                <Link
+                  href="/tools/trip-cost-calculator"
+                  className="text-center text-sm font-semibold text-maroon underline underline-offset-2 sm:text-left"
+                >
+                  Price your own route with our trip cost calculator
+                </Link>
+              )}
             </div>
           )}
         </Reveal>

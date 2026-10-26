@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function KolkataPage() {
           eyebrow="Destination Guide"
           headline="Kolkata — India's Cultural Capital"
           subheadline="Grand colonial architecture, a genuine literary and artistic tradition, and Bengali cuisine that stands apart from anywhere else in India."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/tours/kolkata-tour"
+          primaryLabel="View Kolkata Tour"
           whatsappMessage="Hi! I'd like to plan a trip to Kolkata with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={kolkataQuickFacts} quoteButtonPageName="Kolkata" />
+
+
+        <TourLinkCallout page="/destinations/kolkata" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">

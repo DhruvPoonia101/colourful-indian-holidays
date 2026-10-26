@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PRICE_DISCLAIMER } from "@/lib/pricing";
 import { Price } from "@/components/shared/Price";
 import { CurrencyControl } from "@/components/shared/CurrencyControl";
@@ -25,6 +26,11 @@ export function TourHubStartingPrice({ price }: { price: number }) {
         </p>
         <p className="mt-1 text-xs italic text-ink-soft/70">{PRICE_DISCLAIMER}</p>
         <CurrencyControl center className="mt-3" />
+        <p className="mt-3 text-sm">
+          <Link href="/tools/trip-cost-calculator" className="font-semibold text-maroon underline underline-offset-2">
+            Price your own route with our trip cost calculator
+          </Link>
+        </p>
       </div>
     </div>
   );

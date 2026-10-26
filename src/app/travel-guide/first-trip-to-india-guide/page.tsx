@@ -332,6 +332,14 @@ export default function FirstTripToIndiaGuidePage() {
             covers the common scams, women&apos;s safety and emergency numbers.
           </ArticleP>
 
+          <ArticleP>
+            Once you have booked, our practical guides cover{" "}
+            <Link href="/travel-guide/what-to-pack-for-india" className="text-maroon underline">what to pack</Link>,{" "}
+            <Link href="/travel-guide/tipping-in-india" className="text-maroon underline">tipping</Link>,{" "}
+            <Link href="/travel-guide/india-etiquette-for-tourists" className="text-maroon underline">etiquette</Link> and{" "}
+            <Link href="/travel-guide/sim-card-and-wifi-in-india" className="text-maroon underline">staying connected</Link>.
+          </ArticleP>
+
           <ArticleH2>Where to Actually Start</ArticleH2>
           <ArticleP>
             For nearly every first-time visitor, the answer is the classic circuit: Delhi, Agra

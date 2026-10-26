@@ -1,4 +1,5 @@
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
+import { TourLinkCallout } from "@/components/shared/TourLinkCallout";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
 import { FiArrowRight } from "react-icons/fi";
@@ -94,12 +95,15 @@ export default function AmritsarPage() {
           eyebrow="Destination Guide"
           headline="Amritsar — Sikhism's Spiritual Heart"
           subheadline="The gold-plated Harmandir Sahib, a daily border ceremony unlike anything else in India, and a city defined by Punjabi warmth and hospitality."
-          primaryHref="/tours"
-          primaryLabel="View Tour Packages"
+          primaryHref="/experiences/spiritual-india"
+          primaryLabel="View Spiritual India Tour"
           whatsappMessage="Hi! I'd like to plan a trip to Amritsar with Colourful Indian Holidays."
         />
 
         <QuickFacts facts={amritsarQuickFacts} quoteButtonPageName="Amritsar" />
+
+
+        <TourLinkCallout page="/destinations/amritsar" />
 
         <section className="py-10 sm:py-14">
           <div className="mx-auto max-w-7xl px-6 sm:px-8">
