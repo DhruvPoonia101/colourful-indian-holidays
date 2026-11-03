@@ -185,26 +185,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-
-            {/* Sister Companies */}
-            <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D5A93A]/75">
-              Sister Companies
-            </p>
-
-            <ul className="mt-3 flex flex-col gap-2 text-[13px]">
-              {sisterCompanies.map((company) => (
-                <li key={company.href}>
-                  <a
-                    href={company.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
-                  >
-                    {company.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* =======================================================
@@ -277,6 +257,26 @@ export function Footer() {
             <p className="mt-4 text-[11px] leading-5 text-[#E9DCCB]/50">
               Languages spoken: {BUSINESS.languages.join(", ")}
             </p>
+
+            {/* Sister Companies */}
+            <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D5A93A]/75">
+              Sister Companies
+            </p>
+
+            <ul className="mt-3 flex flex-col gap-2 text-[13px]">
+              {sisterCompanies.map((company) => (
+                <li key={company.href}>
+                  <a
+                    href={company.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#E9DCCB]/75 transition-colors duration-200 hover:text-[#D5A93A]"
+                  >
+                    {company.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

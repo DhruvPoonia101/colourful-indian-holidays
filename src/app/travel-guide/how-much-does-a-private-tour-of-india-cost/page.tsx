@@ -262,6 +262,12 @@ export default function CostGuidePage() {
           </ArticleP>
 
           <ArticleH2>What Is Included in the Price?</ArticleH2>
+          <ArticleP>
+            For a fuller list, with how Bhutan and multi-country trips differ, read{" "}
+            <Link href="/travel-guide/whats-included-in-a-private-tour-of-india" className="text-maroon underline">what is included in a private tour of India</Link>.
+            To compare operators, use our{" "}
+            <Link href="/travel-guide/how-to-choose-a-tour-operator-in-india" className="text-maroon underline">operator checklist</Link>.
+          </ArticleP>
           <ArticleUL>
             {included.map((item) => (
               <li key={item}>{item}</li>

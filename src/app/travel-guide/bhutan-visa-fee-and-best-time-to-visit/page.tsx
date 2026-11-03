@@ -23,8 +23,8 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  * Paro Tsechu, cranes). Children's age bands differ slightly between
  * sources (under 5 vs under 6); we state under 6 and say we confirm at quote.
  * Official government sites were not reachable when written, so re-check
- * before changing any figure. Our tour price includes SDF and visa (see
- * bhutan-tours.ts inclusions); price uses RATE_PER_NIGHT_USD.bhutan.
+ * before changing any figure. Our tour price includes the SDF but not the visa fee (see
+ * bhutan-tours.ts inclusions and exclusions); price uses RATE_PER_NIGHT_USD.bhutan.
  */
 
 const title = 'Bhutan Travel Guide: Visa, the US$100 Fee and Best Time to Go';
@@ -69,7 +69,7 @@ const faqs: FaqItem[] = [
   {
     question: "Is the SDF included in your Bhutan tour price?",
     answer:
-      "Yes. Our Bhutan tour prices include the Sustainable Development Fee and the visa fee for the nights on the itinerary, so the price you are quoted is the price you pay in Bhutan, apart from personal spending and optional extras.",
+      "Yes. Our Bhutan tour prices include the Sustainable Development Fee for the nights on the itinerary. The US$40 visa fee is listed as extra on our tour pages and is arranged in advance through your licensed operator, and personal spending and optional extras are paid by you.",
   },
   {
     question: "Do children pay the SDF?",
@@ -183,7 +183,7 @@ export default function GuidePage() {
                 </tr>
                 <tr>
                   <th scope="row" className="px-3 py-3 font-medium text-ink sm:px-5">Our Bhutan tour</th>
-                  <td className="px-3 py-3 sm:px-5">From about <Price usd={7 * RATE_PER_NIGHT_USD.bhutan} /> per person for 7 nights, fee and visa included</td>
+                  <td className="px-3 py-3 sm:px-5">From about <Price usd={7 * RATE_PER_NIGHT_USD.bhutan} /> per person for 7 nights, with the daily fee included</td>
                 </tr>
               </tbody>
             </table>
@@ -219,7 +219,7 @@ export default function GuidePage() {
           </ArticleUL>
 
           <ArticleMidCTA
-            text="Want an all-in price for your dates, fee and visa included?"
+            text="Want an all-in price for your dates, with the daily fee included?"
             href="/tours/bhutan-tours"
             linkLabel="See our Bhutan tour"
           />
@@ -228,7 +228,7 @@ export default function GuidePage() {
           <ArticleP>
             Our{" "}<Link href="/tours/bhutan-tours" className="text-maroon underline">8-day Bhutan tour</Link>{" "}starts from about{" "}
             <Price usd={7 * RATE_PER_NIGHT_USD.bhutan} /> per person for 7 nights, two sharing, flights
-            excluded. That price includes the SDF and visa fee, your licensed guide, driver, hotels and meals on
+            excluded. That price includes the SDF, your licensed guide, driver, hotels and meals on
             the itinerary, which is why it sits well above our India rates: US$700 of that total is the SDF alone. Higher hotel
             categories and festival dates cost more.
           </ArticleP>

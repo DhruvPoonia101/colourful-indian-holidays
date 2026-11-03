@@ -113,7 +113,7 @@ export default function ToolPage() {
             <li><span className="font-semibold text-ink">Per night, per person:</span> each place has a starting nightly rate, and the calculator multiplies it by your nights.</li>
             <li><span className="font-semibold text-ink">Two sharing:</span> prices assume two people share a room. Solo travellers pay a single supplement.</li>
             <li><span className="font-semibold text-ink">Flights excluded:</span> international and domestic flights are priced separately.</li>
-            <li><span className="font-semibold text-ink">Bhutan:</span> the rate includes the government fee and visa. Read our <Link href="/travel-guide/bhutan-visa-fee-and-best-time-to-visit" className="text-maroon underline">Bhutan guide</Link>.</li>
+            <li><span className="font-semibold text-ink">Bhutan:</span> the rate includes the daily government fee but not the visa. Read our <Link href="/travel-guide/bhutan-visa-fee-and-best-time-to-visit" className="text-maroon underline">Bhutan guide</Link>.</li>
           </ArticleUL>
           <ArticleP>
             Travelling in peak season (October to March) or in a higher hotel category costs more. For what is included and what changes the price, read our <Link href="/travel-guide/how-much-does-a-private-tour-of-india-cost" className="text-maroon underline">full cost guide</Link>.

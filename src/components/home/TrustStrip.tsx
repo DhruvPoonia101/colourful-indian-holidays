@@ -28,18 +28,21 @@ export function TrustStrip() {
             {trustStats.map((stat) => {
               const Icon = STAT_ICONS[stat.icon];
               return (
+                // A <div> inside <dl> may only hold <dt> + <dd> (in that order).
+                // flex-col-reverse keeps the value + icon visually above the label.
                 <div
                   key={stat.label}
-                  className="rounded-2xl border border-sand bg-white px-5 py-8 text-center shadow-sm transition-transform duration-200 hover:scale-[1.03]"
+                  className="flex flex-col-reverse rounded-2xl border border-sand bg-white px-5 py-8 text-center shadow-sm transition-transform duration-200 hover:scale-[1.03]"
                 >
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cream">
-                    <Icon aria-hidden="true" className="h-6 w-6 text-gold-dark" />
-                  </div>
-                  <dt className="sr-only">{stat.label}</dt>
-                  <dd className="mt-5 font-display text-3xl font-bold text-gold-dark sm:text-4xl">
-                    {stat.value}
+                  <dt className="mt-2 text-sm font-medium text-ink">{stat.label}</dt>
+                  <dd>
+                    <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cream">
+                      <Icon aria-hidden="true" className="h-6 w-6 text-gold-dark" />
+                    </span>
+                    <span className="mt-5 block font-display text-3xl font-bold text-gold-dark sm:text-4xl">
+                      {stat.value}
+                    </span>
                   </dd>
-                  <p className="mt-2 text-sm font-medium text-ink">{stat.label}</p>
                 </div>
               );
             })}

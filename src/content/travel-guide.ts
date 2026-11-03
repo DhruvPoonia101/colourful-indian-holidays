@@ -187,6 +187,72 @@ export const guideArticles: GuideArticle[] = [
     published: true,
   },
   {
+    title: "3 Weeks in India: 21-Day Itinerary for First-Timers",
+    slug: "3-weeks-in-india-itinerary",
+    excerpt:
+      "Two realistic 21-day India routes, day by day: the Golden Triangle, Rajasthan, Varanasi and Kerala, or India with Nepal and Bhutan.",
+    category: "Planning",
+    image: "/images/destinations/varanasi-evening-ganges-aarti.webp",
+    imageAlt: "The evening Ganga aarti at Varanasi",
+    datePublished: "2026-10-26",
+    published: true,
+  },
+  {
+    title: "Golden Triangle vs Rajasthan: Which Trip Is Right for You?",
+    slug: "golden-triangle-vs-rajasthan",
+    excerpt:
+      "How the Golden Triangle and Rajasthan differ in cities, driving, cost and season, and which suits 5 to 7 days, 8 to 9 days or 10 days and more.",
+    category: "Planning",
+    image: "/images/destinations/amber-fort-jaipur.webp",
+    imageAlt: "Amber Fort above Maota Lake, Jaipur",
+    datePublished: "2026-10-26",
+    published: true,
+  },
+  {
+    title: "How to Choose a Private Tour Operator in India: A Checklist",
+    slug: "how-to-choose-a-tour-operator-in-india",
+    excerpt:
+      "What Ministry of Tourism recognition and IATO membership mean, how to check reviews, what a quote must include and the warning signs.",
+    category: "Planning",
+    image: "/images/destinations/jaipur-city-palace.webp",
+    imageAlt: "The City Palace, Jaipur",
+    datePublished: "2026-10-26",
+    published: true,
+  },
+  {
+    title: "What's Included in a Private Tour of India? (And What Isn't)",
+    slug: "whats-included-in-a-private-tour-of-india",
+    excerpt:
+      "What a private tour of India includes and excludes, how Bhutan and multi-country trips differ and how to compare two quotes.",
+    category: "Planning",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "The Taj Mahal at sunrise, Agra",
+    datePublished: "2026-10-26",
+    published: true,
+  },
+  {
+    title: "India Festivals 2027: Dates for Holi, Diwali, Pushkar & More",
+    slug: "india-festivals-2027-calendar",
+    excerpt:
+      "India festival dates for 2027 in date order, with which are worth a trip and how to plan around them.",
+    category: "Planning",
+    image: "/images/destinations/diwali.webp",
+    imageAlt: "Diwali lamps lit at dusk in India",
+    datePublished: "2026-10-26",
+    published: true,
+  },
+  {
+    title: "India, Nepal & Bhutan Combined: How to Plan the Trip",
+    slug: "india-nepal-bhutan-combined-tour-guide",
+    excerpt:
+      "Four combined routes with prices, how the flights and visas work, the best months and how many nights to spend in each country.",
+    category: "Planning",
+    image: "/images/destinations/paro-taktsang-tigers-nest.webp",
+    imageAlt: "Tiger's Nest Monastery above the Paro valley, Bhutan",
+    datePublished: "2026-10-26",
+    published: true,
+  },
+  {
     title: "2 Weeks in India: 14-Day Itinerary for First-Timers",
     slug: "2-weeks-in-india-itinerary",
     excerpt:

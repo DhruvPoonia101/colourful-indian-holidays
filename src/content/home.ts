@@ -1,4 +1,5 @@
 import type { FaqItem } from "@/lib/seo/faq-schema";
+import { BUSINESS } from "@/lib/seo/business";
 
 export const heroSlides = [
   {
@@ -41,7 +42,7 @@ export const heroFeatureBadges = [
 export const trustStats = [
   { icon: "users", value: "7900+", label: "Happy Travellers" },
   { icon: "globe", value: "30+", label: "Countries Served" },
-  { icon: "shield", value: "18+", label: "Years of Experience" },
+  { icon: "shield", value: `${new Date().getFullYear() - BUSINESS.foundingYear}+`, label: "Years of Experience" },
   { icon: "headset", value: "8+", label: "Offices, HQ Jaipur" },
 ] as const;
 

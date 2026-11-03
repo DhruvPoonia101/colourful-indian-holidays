@@ -505,6 +505,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${SITE_URL}/travel-guide/3-weeks-in-india-itinerary`,
+      lastModified: getLastModified("/travel-guide/3-weeks-in-india-itinerary"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/golden-triangle-vs-rajasthan`,
+      lastModified: getLastModified("/travel-guide/golden-triangle-vs-rajasthan"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/how-to-choose-a-tour-operator-in-india`,
+      lastModified: getLastModified("/travel-guide/how-to-choose-a-tour-operator-in-india"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/whats-included-in-a-private-tour-of-india`,
+      lastModified: getLastModified("/travel-guide/whats-included-in-a-private-tour-of-india"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/india-festivals-2027-calendar`,
+      lastModified: getLastModified("/travel-guide/india-festivals-2027-calendar"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/travel-guide/india-nepal-bhutan-combined-tour-guide`,
+      lastModified: getLastModified("/travel-guide/india-nepal-bhutan-combined-tour-guide"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/travel-guide/is-india-safe-for-tourists`,
       lastModified: getLastModified("/travel-guide/is-india-safe-for-tourists"),
       changeFrequency: "monthly",

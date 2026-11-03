@@ -340,6 +340,13 @@ export default function FirstTripToIndiaGuidePage() {
             <Link href="/travel-guide/sim-card-and-wifi-in-india" className="text-maroon underline">staying connected</Link>.
           </ArticleP>
 
+          <ArticleP>
+            Not sure which route to pick? Compare the{" "}
+            <Link href="/travel-guide/golden-triangle-vs-rajasthan" className="text-maroon underline">Golden Triangle and Rajasthan</Link>,
+            and read how to{" "}
+            <Link href="/travel-guide/how-to-choose-a-tour-operator-in-india" className="text-maroon underline">choose a tour operator</Link>.
+          </ArticleP>
+
           <ArticleH2>Where to Actually Start</ArticleH2>
           <ArticleP>
             For nearly every first-time visitor, the answer is the classic circuit: Delhi, Agra

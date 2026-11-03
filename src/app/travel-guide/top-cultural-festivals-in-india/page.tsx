@@ -101,6 +101,11 @@ export default function TopCulturalFestivalsPage() {
             host it once or twice in their lifetime.
           </ArticleP>
           <ArticleP>
+            Planning for next year? See our{" "}
+            <Link href="/travel-guide/india-festivals-2027-calendar" className="text-maroon underline">India festivals 2027 calendar</Link>{" "}
+            for exact dates.
+          </ArticleP>
+          <ArticleP>
             Below is a season-by-season guide to the festivals we get asked about most often by
             international travellers, organised the way we&apos;d actually plan a trip around
             them rather than as a simple alphabetical list. For each one, we&apos;ve tried to be

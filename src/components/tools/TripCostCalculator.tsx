@@ -13,7 +13,7 @@ const ROWS: ZoneRow[] = [
   { zone: "india", label: "India, 3-4 star", note: "Comfortable hotels, private car and guide" },
   { zone: "luxury", label: "India, 5-star & palace", note: "Heritage palaces and luxury hotels" },
   { zone: "nepal", label: "Nepal", note: "Kathmandu, Pokhara, Chitwan" },
-  { zone: "bhutan", label: "Bhutan", note: "Includes the government fee and visa" },
+  { zone: "bhutan", label: "Bhutan", note: "Includes the daily government fee" },
   { zone: "kashmir", label: "Kashmir", note: "Srinagar and the valley" },
   { zone: "ladakh", label: "Ladakh", note: "Leh and the high plateau" },
 ];

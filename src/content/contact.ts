@@ -1,11 +1,11 @@
 import type { Highlight } from "@/components/destinations/HighlightsStrip";
 import type { FaqItem } from "@/lib/seo/faq-schema";
+import { BUSINESS } from "@/lib/seo/business";
 
 export const contactWhyPlanWithUs: Highlight[] = [
   {
-    title: "18+ Years of Local Expertise",
-    description:
-      "Founded in 2007 and based in Jaipur — every itinerary is built by people who live where you're travelling.",
+    title: `${new Date().getFullYear() - BUSINESS.foundingYear}+ Years of Local Expertise`,
+    description: `Founded in ${BUSINESS.foundingYear} and based in Jaipur — every itinerary is built by people who live where you're travelling.`,
   },
   {
     title: "Personalised, Not Fixed Packages",

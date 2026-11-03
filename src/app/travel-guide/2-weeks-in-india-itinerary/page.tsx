@@ -185,7 +185,8 @@ export default function TwoWeeksIndiaPage() {
             </span>{" "}
             Two weeks lets you do Rajasthan properly, or pair the north with Kerala. Below are three
             routes, day by day. Short on time? See our{" "}
-            <Link href="/travel-guide/10-days-in-india-itinerary" className="text-maroon underline">10-day India itinerary</Link>.
+            <Link href="/travel-guide/10-days-in-india-itinerary" className="text-maroon underline">10-day India itinerary</Link>. With more time, see our{" "}
+            <Link href="/travel-guide/3-weeks-in-india-itinerary" className="text-maroon underline">3-week itinerary</Link>.
           </ArticleP>
 
           <ArticleH2>Which 14-Day Route Should You Choose?</ArticleH2>
