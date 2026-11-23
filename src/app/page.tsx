@@ -26,7 +26,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Private Tours of India";
 const description =
-  "Jaipur-based private tour operator for India, Nepal and Bhutan since 2007. Tailor-made trips with your own guide and driver, palace stays and safaris.";
+  "Private tours of India, Nepal, Bhutan and Sri Lanka from a Jaipur operator in business since 2007. Your own guide and driver, palace stays and safaris.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} | ${SITE_NAME}` },
@@ -162,7 +162,7 @@ export default function Home() {
         <JourneyCTA
           backgroundImage="/images/destinations/amber-fort-jaipur.webp"
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
           primaryLabel="Plan My Journey"

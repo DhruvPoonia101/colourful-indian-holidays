@@ -39,7 +39,7 @@ const bookingFaqs: FaqItem[] = [
   homeFaqs[0], // Do you offer private tours, or do we join a group?
   homeFaqs[1], // How far in advance should I book?
   homeFaqs[5], // How do I actually start planning a trip with you?
-  homeFaqs[3], // Can you combine India with Nepal and Bhutan in one trip?
+  homeFaqs[3], // Can you combine India with Nepal, Bhutan or Sri Lanka in one trip?
   {
     question: "Can you build a completely custom itinerary, not one of your existing packages?",
     answer:
@@ -115,9 +115,9 @@ const logisticsFaqs: FaqItem[] = [
       "October through March is the most comfortable window for most of North India and Rajasthan, though the right season genuinely depends on which region you're visiting — Kerala, Kashmir and the Himalayas each run on their own calendar. See our Best Time to Visit guide for a full month-by-month breakdown.",
   },
   {
-    question: "Do you only operate in India, or also Nepal and Bhutan?",
+    question: "Do you only operate in India, or also Nepal, Bhutan and Sri Lanka?",
     answer:
-      "Both — alongside our India itineraries, we regularly build trips into Nepal and Bhutan, either as standalone journeys or combined with an India leg for travellers who want to see more of the wider region in one trip.",
+      "All four — alongside our India itineraries, we build private trips into Nepal, Bhutan and Sri Lanka, either as standalone journeys or combined with an India leg for travellers who want to see more of the wider region in one trip.",
   },
   {
     question: "Can you accommodate dietary restrictions or mobility needs?",

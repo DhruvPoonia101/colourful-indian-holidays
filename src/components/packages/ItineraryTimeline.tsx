@@ -8,6 +8,12 @@ export type ItineraryDay = {
   /** Optional real photo for this day — shown as a thumbnail beside the description. */
   image?: string;
   imageAlt?: string;
+  /** Optional practical details, shown as a small line under the description. */
+  stay?: string;
+  drive?: string;
+  meals?: string;
+  /** Optional one-line practical tip for the day. */
+  tip?: string;
 };
 
 export function ItineraryTimeline({
@@ -53,6 +59,34 @@ export function ItineraryTimeline({
                   <div className="min-w-0 flex-1">
                     <h3 className="font-display text-lg font-semibold text-ink">{day.title}</h3>
                     <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">{day.description}</p>
+                    {(day.stay || day.drive || day.meals) && (
+                      <dl className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5 text-xs text-ink-soft">
+                        {day.stay && (
+                          <div className="flex gap-1">
+                            <dt className="font-semibold text-ink">Overnight:</dt>
+                            <dd>{day.stay}</dd>
+                          </div>
+                        )}
+                        {day.drive && (
+                          <div className="flex gap-1">
+                            <dt className="font-semibold text-ink">Travel:</dt>
+                            <dd>{day.drive}</dd>
+                          </div>
+                        )}
+                        {day.meals && (
+                          <div className="flex gap-1">
+                            <dt className="font-semibold text-ink">Meals:</dt>
+                            <dd>{day.meals}</dd>
+                          </div>
+                        )}
+                      </dl>
+                    )}
+                    {day.tip && (
+                      <p className="mt-2 rounded-lg bg-cream/70 px-3 py-2 text-xs leading-relaxed text-ink-soft">
+                        <span className="font-semibold text-ink">Good to know: </span>
+                        {day.tip}
+                      </p>
+                    )}
                   </div>
                   {day.image && (
                     <div className="relative h-40 w-full shrink-0 overflow-hidden rounded-xl sm:h-28 sm:w-44">

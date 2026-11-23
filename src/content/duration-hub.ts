@@ -391,6 +391,14 @@ export const sixToNineDayTours: CityCard[] = [
     image: "/images/destinations/delhi-india-gate.webp",
     imageAlt: "India Gate at dusk, Delhi",
   },
+  {
+    name: "Sri Lanka Tours",
+    tagline: "8 Days / 7 Nights",
+    description: "Rock Fortresses, Tea Hills & Leopards",
+    href: "/tours/sri-lanka-tours",
+    image: "/images/destinations/sigiriya-rock-fortress.webp",
+    imageAlt: "Sigiriya Lion Rock rising above the forest, Sri Lanka",
+  },
 ];
 
 export const tenToFourteenDayTours: CityCard[] = [
@@ -433,5 +441,29 @@ export const tenToFourteenDayTours: CityCard[] = [
     href: "/tours/nepal-bhutan-tours",
     image: "/images/destinations/paro-taktsang-tigers-nest.webp",
     imageAlt: "Paro Taktsang, the Tiger's Nest Monastery, Bhutan",
+  },
+  {
+    name: "India & Sri Lanka Tours",
+    tagline: "12 Days / 11 Nights",
+    description: "The Golden Triangle & Sri Lanka's Highlights",
+    href: "/tours/india-sri-lanka-tours",
+    image: "/images/destinations/agra-taj-mahal.webp",
+    imageAlt: "Taj Mahal at sunrise, Agra",
+  },
+  {
+    name: "Kerala & Sri Lanka Tours",
+    tagline: "12 Days / 11 Nights",
+    description: "Backwaters, Tea Hills & the Lion Rock",
+    href: "/tours/kerala-sri-lanka-tours",
+    image: "/images/destinations/alleppey-backwaters.webp",
+    imageAlt: "A traditional houseboat on Alleppey's backwaters, Kerala",
+  },
+  {
+    name: "Sri Lanka Grand Tour",
+    tagline: "14 Days / 13 Nights",
+    description: "Ancient Cities, Tea Country, Safari & Beaches",
+    href: "/tours/sri-lanka-grand-tour",
+    image: "/images/destinations/sigiriya-from-pidurangala.webp",
+    imageAlt: "Sigiriya rock seen across the surrounding wetlands",
   },
 ];

@@ -232,7 +232,7 @@ export default function BestTimeHubPage() {
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Tell us your travel window and where you'd like to go — we'll build an itinerary around the right season, usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"

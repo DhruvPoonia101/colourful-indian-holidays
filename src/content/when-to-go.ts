@@ -17,6 +17,11 @@ import { CLIMATE } from "@/content/months/climate";
  *   monsoon wet, winter cold and quiet).
  * - Nepal: Intrepid Travel's best-time guide (October-November and March-April
  *   best, monsoon June-August).
+ * - Sri Lanka: Intrepid Travel's best-time guide (south/west coasts and hill
+ *   country best December-March; south-west monsoon May-August; east coast
+ *   good May-August; October one of the wettest months). Rated for the
+ *   classic route (Cultural Triangle, hill country, south coast); the east
+ *   coast is called out in the notes.
  * They are guidance, not forecasts: weather varies year to year and by place.
  */
 
@@ -162,6 +167,28 @@ export const PLANNERS: Planner[] = [
     ],
     tourHref: "/tours/nepal-tours",
     tourLabel: "See our Nepal tour",
+  },
+  {
+    id: "sri-lanka",
+    label: "Sri Lanka",
+    intro: "December to April suits the classic route through the hill country and the south and west coasts; the east coast is best from May to September.",
+    ratings: [3, 3, 3, 2, 1, 1, 2, 2, 1, 1, 1, 3],
+    notes: [
+      "Dry and sunny on the west and south coasts and in the hills. Peak season, so book early.",
+      "Among the best months island-wide for the classic route, with clear mornings in tea country.",
+      "Still dry in the south and west, and hot in the Cultural Triangle. Good wildlife viewing as waterholes shrink.",
+      "Hotter, with afternoon showers building. Sinhala and Tamil New Year falls in mid-April.",
+      "The south-west monsoon arrives on the west and south coasts. The east coast and Cultural Triangle are drier.",
+      "Wet on the west and south coasts and in the western hills; the east coast (Trincomalee, Arugam Bay) is at its best.",
+      "Rain on the west coast, but the Cultural Triangle and east coast are good. Kandy's Esala Perahera is usually July or August.",
+      "Similar to July: a good month for the east coast and the Esala Perahera in Kandy if it falls in August.",
+      "Monsoon easing in the south-west. Parts of Yala have closed for a few weeks in the dry season (mid-September to mid-October in 2026).",
+      "Usually one of the wettest months across much of the island, with lower prices and fewer visitors.",
+      "The north-east monsoon brings rain to the north and east; the west coast dries out towards the end of the month.",
+      "The dry season returns to the west, south and hill country. Busy over Christmas and New Year.",
+    ],
+    tourHref: "/tours/sri-lanka-tours",
+    tourLabel: "See our Sri Lanka tour",
   },
 ];
 

@@ -4,13 +4,14 @@ import { CityGrid } from "@/components/destinations/CityGrid";
 import { MoreDestinationsList } from "@/components/destinations/MoreDestinationsList";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { featuredPackages, morePackages } from "@/content/packages-hub";
+import { allTourGroups } from "@/content/all-tours";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "Tour Packages | Private India, Nepal & Bhutan Itineraries";
+const title = "Tour Packages | Private India, Nepal, Bhutan & Sri Lanka Tours";
 const description =
-  "Every tour category we build privately — Golden Triangle, Rajasthan, wildlife safaris, South India, Nepal, Bhutan and more, tailored to your dates.";
+  "Every private tour we run — Golden Triangle, Rajasthan, wildlife safaris, Kerala, the Himalayas, Nepal, Bhutan and Sri Lanka — with day-by-day itineraries and starting prices.";
 const pagePath = "/tours";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 
@@ -64,10 +65,21 @@ export default function PackagesHubPage() {
           toggleLabel="Explore More Tour Categories"
         />
 
+        {allTourGroups.map((group) => (
+          <CityGrid
+            key={group.id}
+            eyebrow={group.eyebrow}
+            heading={group.heading}
+            cities={group.tours}
+            topDivider
+            showActions
+          />
+        ))}
+
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
           primaryLabel="Plan My Journey"

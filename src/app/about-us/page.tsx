@@ -12,7 +12,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "About Colourful Indian Holidays | IATO-Registered Since 2007";
 const description =
-  "Founded in 2007 in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal and Bhutan for travellers worldwide.";
+  "Founded in 2007 in Jaipur, Colourful Indian Holidays designs private, tailor-made journeys across India, Nepal, Bhutan and Sri Lanka for travellers worldwide.";
 const pagePath = "/about-us";
 
 export const metadata: Metadata = {
@@ -96,7 +96,7 @@ export default function AboutUsPage() {
           breadcrumbs={breadcrumbs}
           eyebrow="About Us"
           headline={`${SITE_NAME}, Since ${BUSINESS.foundingYear}`}
-          subheadline="A Jaipur-based team designing private journeys across India, Nepal and Bhutan for travellers from around the world."
+          subheadline="A Jaipur-based team designing private journeys across India, Nepal, Bhutan and Sri Lanka for travellers from around the world."
         />
 
         <section className="py-14 sm:py-20">
@@ -106,7 +106,7 @@ export default function AboutUsPage() {
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Colourful Indian Holidays (also spelled Colorful Indian Holidays) is a
-                  Jaipur-based private tour operator for India, Nepal and Bhutan. It was
+                  Jaipur-based private tour operator for India, Nepal, Bhutan and Sri Lanka. It was
                   founded in {BUSINESS.foundingYear} in Jaipur,
                   built on a simple idea: the best way to show someone India is to
                   plan their trip the way we&apos;d plan it for a friend — privately, around
@@ -119,7 +119,7 @@ export default function AboutUsPage() {
                 </p>
                 <p>
                   Since then, we&apos;ve grown into a full-service travel company covering
-                  the Golden Triangle, wider India, Nepal and Bhutan — but the
+                  the Golden Triangle, wider India, Nepal, Bhutan and Sri Lanka — but the
                   approach hasn&apos;t changed. Every itinerary is still built by people based
                   here, who know the roads, the hotels, and the guides personally, rather than
                   assembled from a template or resold from a wholesaler. When you ask us about
@@ -162,8 +162,8 @@ export default function AboutUsPage() {
                   {new Date().getFullYear() - BUSINESS.foundingYear}+ years building an
                   IATO-registered business recognised by Rajasthan Tourism and the Ministry of
                   Tourism, Government of India. Under his leadership, the company has grown from
-                  a small local operation into a full-service agency covering India, Nepal and
-                  Bhutan, while keeping every itinerary planned by a team based here in Jaipur
+                  a small local operation into a full-service agency covering India, Nepal,
+                  Bhutan and Sri Lanka, while keeping every itinerary planned by a team based here in Jaipur
                   rather than resold from a wholesaler.
                 </p>
                 <p>
@@ -234,7 +234,7 @@ export default function AboutUsPage() {
         <JourneyCTA
           backgroundImage="/images/about/about-hero.webp"
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
           primaryLabel="Plan My Journey"

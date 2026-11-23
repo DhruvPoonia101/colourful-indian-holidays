@@ -49,7 +49,7 @@ export function ComingSoonPage({
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button href={hubPath}>{hubLabel}</Button>
-              <Button href="/contact" variant="outlineDark" prefetch>
+              <Button href="/contact" variant="outlineDark">
                 Contact Us
               </Button>
             </div>
@@ -60,7 +60,7 @@ export function ComingSoonPage({
       <JourneyCTA
         backgroundImage="/images/destinations/amber-fort-jaipur.webp"
         eyebrow="Start Your Journey"
-        headline="Your India, Nepal & Bhutan Journey Awaits."
+        headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
         headlineItalic="Where Will You Begin?"
         subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
         primaryLabel="Plan My Journey"

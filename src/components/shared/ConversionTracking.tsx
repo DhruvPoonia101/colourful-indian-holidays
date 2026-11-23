@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { trackCustom } from "@/lib/openai-pixel";
 
 /**
  * Pushes a dataLayer event whenever a visitor clicks any WhatsApp or
@@ -36,12 +37,14 @@ export function ConversionTracking() {
           link_url: href,
           page_path: window.location.pathname,
         });
+        trackCustom("whatsapp_click"); // OpenAI Ads
       } else if (href.startsWith("tel:")) {
         window.dataLayer.push({
           event: "call_click",
           link_url: href,
           page_path: window.location.pathname,
         });
+        trackCustom("call_click"); // OpenAI Ads
       }
     }
 

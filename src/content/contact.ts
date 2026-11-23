@@ -58,6 +58,6 @@ export const contactFaqs: FaqItem[] = [
   {
     question: "Do you book flights, or only local travel within India?",
     answer:
-      "Our focus is on private, in-country travel — hotels, guides, drivers and experiences across India, Nepal and Bhutan. We don't book international flights, but we're happy to advise on arrival and departure timing once your itinerary is set.",
+      "Our focus is on private, in-country travel — hotels, guides, drivers and experiences across India, Nepal, Bhutan and Sri Lanka. We don't book international flights, but we're happy to advise on arrival and departure timing once your itinerary is set.",
   },
 ] as const;

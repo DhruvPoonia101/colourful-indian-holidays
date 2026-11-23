@@ -5,7 +5,7 @@ const TOOLS = [
   {
     href: "/tools/trip-cost-calculator",
     title: "Trip Cost Calculator",
-    text: "Choose your nights in India, Nepal or Bhutan and see a starting price per person, in your own currency.",
+    text: "Choose your nights in India, Nepal, Bhutan or Sri Lanka and see a starting price per person, in your own currency.",
     cta: "Price your trip",
   },
   {

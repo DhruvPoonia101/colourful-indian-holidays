@@ -14,12 +14,13 @@ const ROWS: ZoneRow[] = [
   { zone: "luxury", label: "India, 5-star & palace", note: "Heritage palaces and luxury hotels" },
   { zone: "nepal", label: "Nepal", note: "Kathmandu, Pokhara, Chitwan" },
   { zone: "bhutan", label: "Bhutan", note: "Includes the daily government fee" },
+  { zone: "srilanka", label: "Sri Lanka", note: "Sigiriya, Kandy, Ella, Yala, Galle" },
   { zone: "kashmir", label: "Kashmir", note: "Srinagar and the valley" },
   { zone: "ladakh", label: "Ladakh", note: "Leh and the high plateau" },
 ];
 
 type Nights = Record<PriceZone, number>;
-const ZERO: Nights = { india: 0, luxury: 0, nepal: 0, bhutan: 0, kashmir: 0, ladakh: 0 };
+const ZERO: Nights = { india: 0, luxury: 0, nepal: 0, bhutan: 0, kashmir: 0, ladakh: 0, srilanka: 0 };
 
 /** Presets use the night counts of our real trips (see PACKAGE_SPLITS). */
 const PRESETS: { label: string; nights: Nights }[] = [
@@ -28,6 +29,8 @@ const PRESETS: { label: string; nights: Nights }[] = [
   { label: "India + Nepal · 5 + 5", nights: { ...ZERO, india: 5, nepal: 5 } },
   { label: "India + Bhutan · 5 + 5", nights: { ...ZERO, india: 5, bhutan: 5 } },
   { label: "Bhutan · 7 nights", nights: { ...ZERO, bhutan: 7 } },
+  { label: "Sri Lanka · 7 nights", nights: { ...ZERO, srilanka: 7 } },
+  { label: "India + Sri Lanka · 5 + 6", nights: { ...ZERO, india: 5, srilanka: 6 } },
 ];
 
 const MAX_NIGHTS = 30;

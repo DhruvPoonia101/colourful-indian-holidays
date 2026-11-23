@@ -67,7 +67,7 @@ export default function ThemesHubPage() {
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
           primaryLabel="Plan My Journey"

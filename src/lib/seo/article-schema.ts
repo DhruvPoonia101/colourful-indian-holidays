@@ -37,11 +37,12 @@ export function articleJsonLd({
       },
       // Grounded in what the author bylines/bio cards sitewide already say
       // he writes and maintains (destination guides, itineraries, travel
-      // advice for India/Nepal/Bhutan) — not an invented topic list.
+      // advice for India/Nepal/Bhutan/Sri Lanka) — not an invented topic list.
       knowsAbout: [
         "India travel",
         "Nepal travel",
         "Bhutan travel",
+        "Sri Lanka travel",
         "Rajasthan tourism",
         "Heritage and palace tours",
       ],

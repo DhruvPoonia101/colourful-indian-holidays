@@ -25,8 +25,8 @@ export const heroSlides = [
 ] as const;
 
 export const heroCopy = {
-  eyebrow: "India, Nepal & Bhutan — Curated for the World",
-  headline: "Private Journeys Across India, Nepal & Bhutan",
+  eyebrow: "India, Nepal, Bhutan & Sri Lanka — Curated for the World",
+  headline: "Private Journeys Across India, Nepal, Bhutan & Sri Lanka",
   subheadline:
     "Private, tailor-made tours for international travellers — heritage palaces, wildlife safaris, coastal escapes and festival-timed itineraries, with English-speaking guides since 2007.",
   ctaLabel: "Plan My Journey",
@@ -268,9 +268,9 @@ export const homeFaqs: FaqItem[] = [
       "Most international travellers can apply for the Indian e-Visa online before departure. Requirements vary by nationality, so we recommend confirming current rules for your passport before booking flights — we're happy to advise on this as part of planning your trip.",
   },
   {
-    question: "Can you combine India with Nepal and Bhutan in one trip?",
+    question: "Can you combine India with Nepal, Bhutan or Sri Lanka in one trip?",
     answer:
-      "Yes, this is one of the most common ways we build a longer itinerary — combining Rajasthan or North India with Nepal and Bhutan, since all three countries connect well by air. Tell us how much time you have and we'll build a route around it.",
+      "Yes, this is one of the most common ways we build a longer itinerary — combining Rajasthan or North India with Nepal and Bhutan, or the Golden Triangle or Kerala with Sri Lanka, since all of them connect well by air. Tell us how much time you have and we'll build a route around it.",
   },
   {
     question: "What's included in your tour pricing?",

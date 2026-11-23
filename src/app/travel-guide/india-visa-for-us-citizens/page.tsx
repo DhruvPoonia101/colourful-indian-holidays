@@ -281,7 +281,7 @@ export default function GuidePage() {
           authorRole="Digital & Marketing Manager, Colourful Indian Holidays"
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           bioParagraphs={[
-            "Dhruv Poonia is the Digital & Marketing Manager for Colourful Indian Holidays, working alongside a family travel business that has arranged tours across India, Nepal and Bhutan since 2007. He also oversees the company's sister sites, Rajasthan Travel Agency and Palace on Wheels Tour.",
+            "Dhruv Poonia is the Digital & Marketing Manager for Colourful Indian Holidays, working alongside a family travel business, founded in 2007, that arranges private tours across India, Nepal, Bhutan and Sri Lanka. He also oversees the company's sister sites, Rajasthan Travel Agency and Palace on Wheels Tour.",
             "He writes and maintains the destination guides, route information and travel advice published on this site, drawing on his day-to-day work planning itineraries for international travellers to keep every page accurate and current.",
           ]}
         />

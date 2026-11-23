@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FiCalendar, FiSend, FiX } from "react-icons/fi";
 import { HoneypotField } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
+import { trackLead } from "@/lib/openai-pixel";
 
 const TRAVEL_MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -137,6 +138,7 @@ export function GetQuoteButton({
         form_type: variant,
         page_name: pageName,
       });
+      trackLead(); // OpenAI Ads: lead_created
 
       setFullName("");
       setEmail("");

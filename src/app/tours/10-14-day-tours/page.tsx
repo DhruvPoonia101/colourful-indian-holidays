@@ -14,7 +14,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import { renderWithLinks } from "@/lib/render-with-links";
 
-const title = "10–14 Day India, Nepal & Bhutan Tours | 2026";
+const title = "10–14 Day India, Nepal, Bhutan & Sri Lanka Tours";
 const description =
   "10 to 14 day tour packages combining India with Nepal and Bhutan, or all six Rajasthan cities — grand private circuits built around your dates.";
 const pagePath = "/tours/10-14-day-tours";

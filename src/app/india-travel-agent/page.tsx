@@ -228,7 +228,7 @@ export default function IndiaTravelAgentPage() {
           breadcrumbs={breadcrumbs}
           eyebrow="Jaipur-Based · IATO-Registered"
           headline="Your Travel Agent for India"
-          subheadline="A local, registered agency that plans, books and runs your trip — private tours across India, Nepal and Bhutan for international travellers since 2007."
+          subheadline="A local, registered agency that plans, books and runs your trip — private tours across India, Nepal, Bhutan and Sri Lanka for international travellers, in business since 2007."
           primaryLabel="Plan My Journey"
           primaryQuoteButtonPageName="Travel Agent for India (Hero)"
           whatsappMessage="Hi! I'm looking for a travel agent for my India trip."

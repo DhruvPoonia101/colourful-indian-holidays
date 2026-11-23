@@ -8,14 +8,18 @@ import {
   beachDestinations,
   himalayanDestinations,
   moreIndiaDestinations,
+  rajasthanCityDestinations,
+  nepalDestinations,
+  bhutanDestinations,
 } from "@/content/destinations-hub";
+import { sriLankaDestinations } from "@/content/sri-lanka-destinations-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
-const title = "India Destinations | Rajasthan, Delhi, Wildlife & Beaches";
+const title = "Destinations | India, Nepal, Bhutan & Sri Lanka Private Tours";
 const description =
-  "Every destination we plan private tours for — Rajasthan, Delhi, Agra, Varanasi, tiger reserves and coastlines from Tamil Nadu to the Andaman Islands.";
+  "Every destination we plan private tours for — Rajasthan, Delhi, Agra, tiger reserves and India's coasts, plus Kathmandu, Bhutan's Paro and Thimphu, and Sri Lanka's Sigiriya, Kandy and Ella.";
 const pagePath = "/destinations";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 
@@ -54,13 +58,21 @@ export default function DestinationsHubPage() {
           breadcrumbs={breadcrumbs}
           eyebrow="Destinations"
           headline="Everywhere We Plan Private Journeys"
-          subheadline="From Rajasthan's forts to tiger safaris and India's coastlines — every destination we build private itineraries for."
+          subheadline="From Rajasthan's forts and India's tiger reserves to Kathmandu, Bhutan's dzongs and Sri Lanka's Lion Rock — every destination we build private itineraries for."
         />
 
         <CityGrid
           eyebrow="Flagship Destinations"
           heading="Where Most Journeys Begin"
           cities={flagshipDestinations}
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Rajasthan"
+          heading="Rajasthan's Royal Cities"
+          cities={rajasthanCityDestinations}
+          topDivider
           showActions
         />
 
@@ -96,10 +108,34 @@ export default function DestinationsHubPage() {
           showActions
         />
 
+        <CityGrid
+          eyebrow="Nepal"
+          heading="Nepal Destinations"
+          cities={nepalDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Bhutan"
+          heading="Bhutan Destinations"
+          cities={bhutanDestinations}
+          topDivider
+          showActions
+        />
+
+        <CityGrid
+          eyebrow="Sri Lanka"
+          heading="Sri Lanka Destinations"
+          cities={sriLankaDestinations}
+          topDivider
+          showActions
+        />
+
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
           primaryLabel="Plan My Journey"

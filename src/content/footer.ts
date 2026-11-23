@@ -2,6 +2,7 @@ export const footerExploreLinks = [
   { label: "Destinations (India)", href: "/destinations" },
   { label: "Destinations (Nepal)", href: "/destinations/nepal" },
   { label: "Destinations (Bhutan)", href: "/destinations/bhutan" },
+  { label: "Destinations (Sri Lanka)", href: "/destinations/sri-lanka" },
   { label: "Experiences", href: "/experiences" },
   { label: "Popular Tours", href: "/tours" },
   { label: "Fleet & Car Rental", href: "/car-rental" },

@@ -67,7 +67,7 @@ export default function CarRentalHubPage() {
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Tell us your group size and itinerary, and we'll match you with the right vehicle — usually with a reply within 24 hours."
           primaryLabel="Plan My Journey"

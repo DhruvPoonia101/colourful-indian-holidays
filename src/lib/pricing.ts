@@ -42,8 +42,14 @@ export const PRICE_PER_NIGHT_USD = 100;
  *   packages at roughly $40-55/night (e.g. 5N Ladakh 3-star with private cab
  *   INR 21,999), so these sit well above them to cover a guide, better hotels
  *   and margin. No international-operator benchmark was found for either.
+ * - srilanka $130: set on 23 Nov 2026 from a competitor check. Seven private
+ *   Sri Lanka tours on TourRadar's private-tour list (7-12 days, chauffeur
+ *   and hotels) worked out to about $89-185 per person per night, median
+ *   about $147 (e.g. "Glimpse of Sri Lanka in 7 Days" $818 = $136/night;
+ *   "Amazing Sri Lanka in 7 Days" $778 = $130/night). $130 sits in the
+ *   lower-middle of that range, like the India rate does for India.
  */
-export type PriceZone = "india" | "luxury" | "bhutan" | "nepal" | "kashmir" | "ladakh";
+export type PriceZone = "india" | "luxury" | "bhutan" | "nepal" | "kashmir" | "ladakh" | "srilanka";
 
 export const RATE_PER_NIGHT_USD: Record<PriceZone, number> = {
   india: PRICE_PER_NIGHT_USD,
@@ -52,6 +58,7 @@ export const RATE_PER_NIGHT_USD: Record<PriceZone, number> = {
   nepal: 120,
   kashmir: 100,
   ladakh: 120,
+  srilanka: 130,
 };
 
 /** Nights spent in each zone. Anything not listed is plain India comfort. */
@@ -69,6 +76,10 @@ const PACKAGE_SPLITS: Record<string, NightSplit> = {
   "kashmir-ladakh-tours-classic": { kashmir: 3, ladakh: 5 },
   "kashmir-valley-tour": { kashmir: 4 },
   "ladakh-tour": { ladakh: 5 },
+  "sri-lanka-tours": { srilanka: 7 },
+  "sri-lanka-grand-tour": { srilanka: 13 },
+  "india-sri-lanka-tours": { india: 5, srilanka: 6 },
+  "kerala-sri-lanka-tours": { india: 5, srilanka: 6 },
 };
 
 /** Experiences that are not plain India comfort: the whole trip is priced at
@@ -104,8 +115,8 @@ export function getStartingPrice(itineraryDays: number): number {
   return nightsFor(itineraryDays) * PRICE_PER_NIGHT_USD;
 }
 
-/** Starting price for a /tours/ package, honouring Bhutan, Nepal, Kashmir and
- * Ladakh rates and multi-country night splits. */
+/** Starting price for a /tours/ package, honouring Bhutan, Nepal, Sri Lanka, Kashmir
+ * and Ladakh rates and multi-country night splits. */
 export function getPackageStartingPrice(slug: string, itineraryDays: number): number {
   const split = PACKAGE_SPLITS[slug];
   return split ? priceFromSplit(split) : getStartingPrice(itineraryDays);

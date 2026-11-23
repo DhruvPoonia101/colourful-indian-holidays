@@ -23,9 +23,9 @@ function alsoGood(ratings: readonly Rating[]): string {
  * Editorial guidance from climate averages, park seasons and published
  * best-time guides; not forecasts. */
 
-const title = "When to Go: Best Time to Visit India, Kerala, Bhutan and Nepal";
+const title = "When to Go: Best Time to Visit India, Nepal, Bhutan and Sri Lanka";
 const description =
-  "A free planner for the best month to visit India, Kerala, tiger reserves, Bhutan and Nepal, with typical weather and what to expect each month.";
+  "A free planner for the best month to visit India, Kerala, tiger reserves, Bhutan, Nepal and Sri Lanka, with typical weather and what to expect each month.";
 const pagePath = "/tools/when-to-go-planner";
 const heroImage = "/images/destinations/jaipur-hawa-mahal.webp";
 
@@ -142,7 +142,7 @@ export default function ToolPage() {
           <ArticleH2>How the Ratings Work</ArticleH2>
           <ArticleP>
             For the Golden Triangle and Rajasthan we use the published average temperature and rainfall for Delhi and Jaipur, and for Kerala the
-            averages for Kochi. For tiger safaris we use park seasons and closures. For Bhutan and Nepal we use published best-time guides. The ratings
+            averages for Kochi. For tiger safaris we use park seasons and closures. For Bhutan, Nepal and Sri Lanka we use published best-time guides. The ratings
             are guidance, not forecasts, and conditions vary by year and place. See our <Link href="/travel-guide/which-tiger-reserve-in-india-and-when-to-go" className="text-maroon underline">tiger reserve guide</Link>, 
             <Link href="/travel-guide/bhutan-visa-fee-and-best-time-to-visit" className="text-maroon underline">Bhutan guide</Link> and <Link href="/travel-guide/nepal-visa-and-best-time-to-visit" className="text-maroon underline">Nepal guide</Link> for the detail.
             Ready to price a trip? Use our <Link href="/tools/trip-cost-calculator" className="text-maroon underline">trip cost calculator</Link>.

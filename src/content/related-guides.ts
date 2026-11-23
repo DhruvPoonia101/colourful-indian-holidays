@@ -79,6 +79,21 @@ const G = {
     label: "Bhutan Travel Guide: Visa, Fees and Best Time",
     blurb: "The US$40 visa, the US$100 nightly fee and the best months.",
   },
+  slItin: {
+    href: "/travel-guide/sri-lanka-itinerary",
+    label: "Sri Lanka Itinerary: 7, 10 and 14 Days",
+    blurb: "Three day-by-day routes with drive times and costs.",
+  },
+  slTrain: {
+    href: "/travel-guide/kandy-to-ella-train",
+    label: "Kandy to Ella Train Guide (2026)",
+    blurb: "What's running after the cyclone, seats and tips.",
+  },
+  sriLanka: {
+    href: "/travel-guide/sri-lanka-visa-and-best-time-to-visit",
+    label: "Sri Lanka Travel Guide: Visa and Best Time",
+    blurb: "The free tourist ETA, the best months by region and tour costs.",
+  },
   nepal: {
     href: "/travel-guide/nepal-visa-and-best-time-to-visit",
     label: "Nepal Travel Guide: Visa and Best Time",
@@ -177,6 +192,10 @@ const G = {
 } satisfies Record<string, GuideLink>;
 
 const RULES: Array<{ test: RegExp; guides: GuideLink[] }> = [
+  // Sri Lanka first: its slugs (kerala-sri-lanka, yala safaris) would otherwise
+  // fall into the Kerala or wildlife rules below.
+  { test: /kandy|\/ella|nuwara-eliya/, guides: [G.slTrain, G.slItin, G.sriLanka] },
+  { test: /sri-lanka|colombo|sigiriya|\/yala|\/galle/, guides: [G.slItin, G.sriLanka, G.slTrain] },
   { test: /what-to-pack|tipping|etiquette|sim-card/, guides: [G.pack, G.tip, G.etiquette, G.sim] },
   { test: /india-tours-from-usa/, guides: [G.usVisa, G.cost, G.firstTrip] },
   { test: /tiger|wildlife|bandhavgarh|kanha|pench|ranthambore|sariska/, guides: [G.tigers, G.rajasthan, G.health] },

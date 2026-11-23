@@ -279,6 +279,49 @@ export const moreIndiaDestinations: CityCard[] = [
   },
 ] as const;
 
+export const rajasthanCityDestinations: CityCard[] = [
+  {
+    name: "Jaipur",
+    tagline: "The Pink City",
+    description: "Amber Fort, the City Palace and the bazaars of Rajasthan's capital.",
+    href: "/destinations/jaipur",
+    image: "/images/destinations/amber-fort-jaipur.webp",
+    imageAlt: "Amber Fort at sunset, Jaipur",
+  },
+  {
+    name: "Udaipur",
+    tagline: "The City of Lakes",
+    description: "Palaces on Lake Pichola and the romance of Mewar's old capital.",
+    href: "/destinations/udaipur",
+    image: "/images/destinations/udaipur-lake-palace.webp",
+    imageAlt: "Lake Palace floating on Lake Pichola, Udaipur",
+  },
+  {
+    name: "Jodhpur",
+    tagline: "The Blue City",
+    description: "Mehrangarh Fort towering over a sea of blue-washed houses.",
+    href: "/destinations/jodhpur",
+    image: "/images/destinations/mehrangarh-fort-jodhpur.webp",
+    imageAlt: "Mehrangarh Fort overlooking the blue city of Jodhpur",
+  },
+  {
+    name: "Jaisalmer",
+    tagline: "The Golden City",
+    description: "A living sandstone fort and camel safaris in the Thar Desert.",
+    href: "/destinations/jaisalmer",
+    image: "/images/destinations/jaisalmer-desert.webp",
+    imageAlt: "Camel safari at sunset, Sam Sand Dunes near Jaisalmer",
+  },
+  {
+    name: "Pushkar",
+    tagline: "The Holy Lake Town",
+    description: "Ghats around a sacred lake and the famous Pushkar Camel Fair.",
+    href: "/destinations/pushkar",
+    image: "/images/destinations/pushkar.webp",
+    imageAlt: "Traditional Rajasthani procession at the Pushkar Camel Fair",
+  },
+] as const;
+
 export const comingSoonIndiaDestinations: CityCard[] = [] as const;
 
 export const nepalDestinations: CityCard[] = [

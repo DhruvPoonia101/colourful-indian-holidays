@@ -165,6 +165,39 @@ export const guideArticles: GuideArticle[] = [
     published: true,
   },
   {
+    title: "Sri Lanka Itinerary: 7, 10 and 14 Days (Day by Day)",
+    slug: "sri-lanka-itinerary",
+    excerpt:
+      "Three tested Sri Lanka routes, day by day, with drive times, where to stay, what each costs and how to fit the hill-country train in.",
+    category: "Planning",
+    image: "/images/destinations/sigiriya-rock-fortress.webp",
+    imageAlt: "Sigiriya Lion Rock rising above the forest, Sri Lanka",
+    datePublished: "2026-11-23",
+    published: true,
+  },
+  {
+    title: "Kandy to Ella Train Guide (2026): What's Running, Seats & Tips",
+    slug: "kandy-to-ella-train",
+    excerpt:
+      "Since Cyclone Ditwah, trains start at Nanu Oya, not Kandy. What's open, how to book reserved seats, which class and side to pick, and when Kandy reopens.",
+    category: "Planning",
+    image: "/images/destinations/kandy-ella-train-tea-hills.webp",
+    imageAlt: "The hill-country train crossing a viaduct through tea country near Ella",
+    datePublished: "2026-11-23",
+    published: true,
+  },
+  {
+    title: "Sri Lanka Travel Guide: Visa (ETA) and Best Time to Visit",
+    slug: "sri-lanka-visa-and-best-time-to-visit",
+    excerpt:
+      "Sri Lanka's tourist ETA is now free for 40 countries. Who qualifies, how to apply, the best months by region and what a private Sri Lanka tour costs.",
+    category: "Planning",
+    image: "/images/destinations/sigiriya-from-pidurangala.webp",
+    imageAlt: "Sigiriya rock seen across the surrounding wetlands, Sri Lanka",
+    datePublished: "2026-11-23",
+    published: true,
+  },
+  {
     title: "Nepal Travel Guide: Visa Fees and Best Time to Visit",
     slug: "nepal-visa-and-best-time-to-visit",
     excerpt:

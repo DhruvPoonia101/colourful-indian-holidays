@@ -14,9 +14,9 @@ import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import { renderWithLinks } from "@/lib/render-with-links";
 
-const title = "15+ Day Custom India, Nepal & Bhutan Itineraries, 2026";
+const title = "15+ Day Custom India, Nepal, Bhutan & Sri Lanka Itineraries";
 const description =
-  "Planning 15+ days? We build extended, fully custom itineraries across India, Nepal and Bhutan around your own dates, with private guides throughout.";
+  "Planning 15+ days? We build extended, fully custom itineraries across India, Nepal, Bhutan and Sri Lanka around your own dates, with private guides throughout.";
 const pagePath = "/tours/15-plus-day-tours";
 const heroImage = "/images/destinations/jaisalmer-desert.webp";
 
@@ -104,7 +104,7 @@ export default function FifteenPlusDayToursPage() {
             <Reveal>
               <SectionIntro
                 eyebrow="Built Around You"
-                heading="Planning a 15+ Day India, Nepal & Bhutan Itinerary"
+                heading="Planning a 15+ Day India, Nepal, Bhutan or Sri Lanka Itinerary"
               />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 {overview.map((paragraph, i) => (
@@ -138,7 +138,7 @@ export default function FifteenPlusDayToursPage() {
           eyebrow="Start Your Journey"
           headline="Have More Than Two Weeks?"
           headlineItalic="Let's Build It Together."
-          subtext="Send us your rough dates and what you'd like to cover — we'll put together a custom 15+ day itinerary across India, Nepal and Bhutan and reply within 24 hours."
+          subtext="Send us your rough dates and what you'd like to cover — we'll put together a custom 15+ day itinerary across India, Nepal, Bhutan or Sri Lanka and reply within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'm planning a trip of 15+ days and would like a custom itinerary from Colourful Indian Holidays."

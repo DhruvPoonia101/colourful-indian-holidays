@@ -17,7 +17,7 @@ import { TripCostCalculator } from "@/components/tools/TripCostCalculator";
 
 const title = "Trip Cost Calculator: How Much Will Your India Trip Cost?";
 const description =
-  "Free India, Nepal and Bhutan trip cost calculator. Choose your nights by region and see a starting price per person, in your own currency.";
+  "Free India, Nepal, Bhutan and Sri Lanka trip cost calculator. Choose your nights by region and see a starting price per person, in your own currency.";
 const pagePath = "/tools/trip-cost-calculator";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 
@@ -76,7 +76,7 @@ const faqs: FaqItem[] = [
 const appJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "India, Nepal and Bhutan Trip Cost Calculator",
+  name: "India, Nepal, Bhutan and Sri Lanka Trip Cost Calculator",
   url: `${SITE_URL}${pagePath}`,
   applicationCategory: "TravelApplication",
   operatingSystem: "Any",

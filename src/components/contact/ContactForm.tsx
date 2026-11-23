@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FiSend } from "react-icons/fi";
 import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
+import { trackLead } from "@/lib/openai-pixel";
 
 const TRAVEL_MONTHS = [
   "January",
@@ -92,6 +93,7 @@ export function ContactForm() {
       window.dataLayer.push({
         event: "contact_form_submitted",
       });
+      trackLead(); // OpenAI Ads: lead_created
 
       setFullName("");
       setEmail("");

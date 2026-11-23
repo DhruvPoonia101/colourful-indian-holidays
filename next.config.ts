@@ -281,12 +281,12 @@ const nextConfig: NextConfig = {
   async headers() {
     const csp = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://*.tawk.to https://cdn.jsdelivr.net",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com https://*.tawk.to https://cdn.jsdelivr.net https://bzrcdn.openai.com",
       "style-src 'self' 'unsafe-inline' https://*.tawk.to https://cdn.jsdelivr.net https://fonts.googleapis.com",
       "img-src 'self' data: blob: https:",
       "font-src 'self' data: https://*.tawk.to https://cdn.jsdelivr.net https://fonts.gstatic.com",
       "frame-src https://maps.google.com https://www.google.com https://challenges.cloudflare.com https://*.tawk.to",
-      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://challenges.cloudflare.com https://*.tawk.to wss://*.tawk.to",
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://challenges.cloudflare.com https://*.tawk.to wss://*.tawk.to https://bzr.openai.com https://bzrcdn.openai.com",
       "media-src 'self' https://*.tawk.to",
       "object-src 'none'",
       "base-uri 'self'",

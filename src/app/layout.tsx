@@ -8,6 +8,7 @@ import { CurrencyProvider } from "@/components/shared/CurrencyProvider";
 import { StickyWhatsAppButton } from "@/components/shared/StickyWhatsAppButton";
 import { TawkChat } from "@/components/shared/TawkChat";
 import { ConversionTracking } from "@/components/shared/ConversionTracking";
+import { OpenAIPixel } from "@/components/shared/OpenAIPixel";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import "./globals.css";
 
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Jaipur-based private tour operator for India, Nepal and Bhutan since 2007. Tailor-made tours with private guides and heritage hotels.",
+    "Private tours of India, Nepal, Bhutan and Sri Lanka from a Jaipur-based operator in business since 2007. Tailor-made tours with private guides and heritage hotels.",
   openGraph: {
     siteName: SITE_NAME,
     type: "website",
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <StickyWhatsAppButton />
         <TawkChat />
         <Analytics />
+        <OpenAIPixel />
         <GoogleAnalytics gaId="G-ZT2XFEVSBW" />
         <GoogleTagManager gtmId="GTM-NK422MVG" />
       </body>

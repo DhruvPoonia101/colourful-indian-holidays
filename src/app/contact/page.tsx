@@ -114,7 +114,7 @@ export default function ContactPage() {
         <JourneyCTA
           backgroundImage="/images/contact/contact-hero.webp"
           eyebrow="Start Your Journey"
-          headline="Your India, Nepal & Bhutan Journey Awaits."
+          headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
           subtext="Every trip starts with a conversation — tell us what you're picturing, and we'll take it from there."
           primaryLabel="Plan My Journey"

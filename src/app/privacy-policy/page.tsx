@@ -117,6 +117,18 @@ export default function PrivacyPolicyPage() {
       </section>
 
       <section>
+        <H3>Advertising Measurement</H3>
+        <P>
+          If you arrive from an advertisement on ChatGPT, we use the OpenAI Ads measurement pixel
+          to record whether your visit led to an enquiry, such as submitting a quote request or
+          contact form, or tapping our WhatsApp or phone link. The pixel stores an ad-click
+          reference in a first-party cookie. Information you type into our forms may be hashed
+          in your browser before it is used to match an enquiry to an ad. We use this only to
+          measure and improve our advertising, and we do not sell your personal information.
+        </P>
+      </section>
+
+      <section>
         <H3>How We Use Collected Information</H3>
         <P>{SITE_NAME} collects and uses personal information for the following purposes:</P>
         <UL>

@@ -214,6 +214,11 @@ export const regionGuide = [
     season: "October – December & March – May",
     note: "Same two windows as Nepal — clearest mountain views, most comfortable trekking.",
   },
+  {
+    region: "Sri Lanka (Hill Country, South & West Coasts)",
+    season: "December – April",
+    note: "The east coast runs on the opposite calendar, at its best from May to September.",
+  },
 ] as const;
 
 export const bestTimeFaqs: FaqItem[] = [

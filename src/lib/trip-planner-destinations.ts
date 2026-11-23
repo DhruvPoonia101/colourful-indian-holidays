@@ -13,5 +13,7 @@ export const tripPlannerDestinations: string[] = [
   "Kerala & Back Waters",
   "South India Tamil Nadu",
   "India & Nepal",
+  "Sri Lanka",
+  "India & Sri Lanka",
   "Delhi – Agra Same Day",
 ];

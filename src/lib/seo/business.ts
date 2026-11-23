@@ -7,7 +7,7 @@ export const SITE_NAME_US_SPELLING = "Colorful Indian Holidays";
  * everywhere (the brand name alone is generic and collides with Holi and
  * "colourful India" festival content). */
 export const BUSINESS_DESCRIPTOR =
-  "Jaipur-based private tour operator for India, Nepal and Bhutan since 2007";
+  "Jaipur-based private tour operator for India, Nepal, Bhutan and Sri Lanka, in business since 2007";
 /** Stable @id so every page's schema refers to the same organisation. */
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 
@@ -30,7 +30,7 @@ export const BUSINESS = {
   email: "mail@colourfulindianholidays.com",
   foundingYear: 2007,
   address: {
-    streetAddress: "UG-36, Crown Plaza, Vaishali Nagar, Near Nursery Circle",
+    streetAddress: "Upper Ground Floor, Crown Plaza, 2E, Amrapali Circle, Block C, Vaishali Nagar",
     addressLocality: "Jaipur",
     addressRegion: "Rajasthan",
     postalCode: "302021",

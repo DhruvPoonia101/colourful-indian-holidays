@@ -45,7 +45,8 @@ export const navItems: NavItem[] = [
     type: "dropdown",
     label: "Destinations",
     activeMatch: "/destinations",
-    columnsPerRow: 4,
+    columnsPerRow: 5,
+    wide: true,
     items: [],
     columns: [
       {
@@ -131,6 +132,19 @@ export const navItems: NavItem[] = [
           { label: "Gangtey", href: "/destinations/gangtey" },
         ],
       },
+      {
+        heading: "Sri Lanka",
+        items: [
+          { label: "All of Sri Lanka", href: "/destinations/sri-lanka" },
+          { label: "Colombo", href: "/destinations/colombo" },
+          { label: "Kandy", href: "/destinations/kandy" },
+          { label: "Sigiriya", href: "/destinations/sigiriya" },
+          { label: "Nuwara Eliya", href: "/destinations/nuwara-eliya" },
+          { label: "Ella", href: "/destinations/ella" },
+          { label: "Yala", href: "/destinations/yala" },
+          { label: "Galle", href: "/destinations/galle" },
+        ],
+      },
     ],
     viewAllHref: "/destinations",
     viewAllLabel: "View All Destinations",
@@ -166,6 +180,15 @@ export const navItems: NavItem[] = [
           { label: "India & Nepal Tours", href: "/tours/india-nepal-tours" },
           { label: "India & Bhutan Tours", href: "/tours/india-bhutan-tours" },
           { label: "India, Nepal & Bhutan Tours", href: "/tours/india-nepal-bhutan-tours" },
+        ],
+      },
+      {
+        heading: "Sri Lanka",
+        items: [
+          { label: "Sri Lanka Tours", href: "/tours/sri-lanka-tours" },
+          { label: "Sri Lanka Grand Tour", href: "/tours/sri-lanka-grand-tour" },
+          { label: "India & Sri Lanka Tours", href: "/tours/india-sri-lanka-tours" },
+          { label: "Kerala & Sri Lanka Tours", href: "/tours/kerala-sri-lanka-tours" },
         ],
       },
       {

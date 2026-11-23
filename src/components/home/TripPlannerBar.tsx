@@ -7,6 +7,7 @@ import { tripPlannerDestinations } from "@/lib/trip-planner-destinations";
 import { PRIMARY_COUNTRIES, OTHER_COUNTRIES } from "@/lib/countries";
 import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
+import { trackLead } from "@/lib/openai-pixel";
 
 const DAYS_OPTIONS = [
   "2 Days",
@@ -108,6 +109,9 @@ export function TripPlannerBar() {
       // rather than resetting the form, so we don't lose the itinerary context.
       setStatus("success");
       setIsDetailsOpen(true);
+      // OpenAI Ads: one lead per trip-planner journey, counted when step 1
+      // (trip + email) is accepted. Step 2 only enriches the same lead.
+      trackLead();
     } catch (err) {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
