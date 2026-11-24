@@ -11,7 +11,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Tour Packages | Private India, Nepal, Bhutan & Sri Lanka Tours";
 const description =
-  "Every private tour we run — Golden Triangle, Rajasthan, wildlife safaris, Kerala, the Himalayas, Nepal, Bhutan and Sri Lanka — with day-by-day itineraries and starting prices.";
+  "Every private tour we run: Golden Triangle, Rajasthan, safaris, Kerala, the Himalayas, Nepal, Bhutan and Sri Lanka, with day-by-day plans and prices.";
 const pagePath = "/tours";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 

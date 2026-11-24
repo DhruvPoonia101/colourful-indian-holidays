@@ -151,7 +151,7 @@ export function TripCostCalculator() {
       <CurrencyControl className="mt-4" center />
 
       <p className="mt-4 text-xs italic text-ink-soft/80">
-        Per person, two sharing, flights excluded. {PRICE_DISCLAIMER.replace(/^\*/, "")} Solo travellers usually pay a single supplement, so
+        {PRICE_DISCLAIMER.replace(/^\*/, "")} Solo travellers usually pay a single supplement, so
         ask us for a quote.
       </p>
 

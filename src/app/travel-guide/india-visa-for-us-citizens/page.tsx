@@ -133,6 +133,7 @@ export default function GuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-10-25"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I have a visa question before booking a trip to India with Colourful Indian Holidays." />

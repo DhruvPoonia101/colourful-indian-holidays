@@ -30,7 +30,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Kandy to Ella Train Guide (2026): What's Running, Seats & Tips";
 const description =
-  "Is the Kandy to Ella train running? Since Cyclone Ditwah trains start at Nanu Oya. What's open, how to book reserved seats, which class and side to choose, and when Kandy reopens.";
+  "Is the Kandy to Ella train running? Since Cyclone Ditwah it starts at Nanu Oya. What's open, booking seats, which class and side, and when Kandy reopens.";
 const pagePath = "/travel-guide/kandy-to-ella-train";
 const heroImage = "/images/destinations/kandy-ella-train-tea-hills.webp";
 const datePublished = "2026-11-23";
@@ -133,6 +133,7 @@ export default function GuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-11-23"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a Sri Lanka trip with the Ella train." />

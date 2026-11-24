@@ -15,7 +15,11 @@ import { RATE_PER_NIGHT_USD } from "@/lib/pricing";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 /**
- * Facts here were checked on 25 Oct 2026 against: Lonely Planet's Nepal
+ * Re-checked 24 Nov 2026 against the Nepal Tourism Board's official tourist
+ * visa page (ntb.gov.np): fees US$30/50/125 multiple entry, visa on arrival
+ * at TIA, Pokhara, Bhairahawa and land entry points, online form at
+ * nepaliport.immigration.gov.np, children under 10 free except US citizens.
+ * Originally checked on 25 Oct 2026 against: Lonely Planet's Nepal
  * visa guide (updated Nov 2025: US$30/50/125 on arrival; arrival card online
  * up to 15 days ahead at nepaliport.immigration.gov.np; cash USD at land
  * borders; children under 10 free with exceptions), Wikipedia's Visa policy
@@ -33,7 +37,8 @@ const description =
 const pagePath = "/travel-guide/nepal-visa-and-best-time-to-visit";
 const heroImage = "/images/destinations/kathmandu-boudhanath-stupa-sunset.webp";
 const datePublished = "2026-10-25";
-const dateModified = datePublished;
+const dateModified = "2026-11-24";
+const factsCheckedOn = "2026-11-24";
 
 export const metadata: Metadata = {
   title,
@@ -134,6 +139,7 @@ export default function GuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn={factsCheckedOn}
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a Nepal tour with Colourful Indian Holidays." />
@@ -195,12 +201,14 @@ export default function GuidePage() {
             advance, you must enter Nepal within six months of the issue date, and the 15, 30 or
             90 days start on arrival. Your passport should be valid for at least six months, and the maximum
             stay is 150 days in a calendar year. Indian citizens do not need a visa, and a short list of
-            nationalities must apply in advance, so check yours with the embassy.
+            nationalities must apply in advance, so check yours with the embassy. Fees and entry points
+            are listed on the{" "}
+            <a href="https://ntb.gov.np/plan-your-trip/before-you-come/tourist-visa" className="text-maroon underline" target="_blank" rel="noopener noreferrer">Nepal Tourism Board&apos;s official visa page</a>.
           </ArticleP>
           <ArticleUL>
-            <li><span className="font-semibold text-ink">Save time:</span> complete the arrival card and photo online up to 15 days before you fly. Without it, the airport process can take over an hour.</li>
+            <li><span className="font-semibold text-ink">Save time:</span> complete the arrival card and photo online on the{" "}<a href="https://nepaliport.immigration.gov.np/" className="text-maroon underline" target="_blank" rel="noopener noreferrer">Department of Immigration site</a> up to 15 days before you fly. Without it, the airport process can take over an hour.</li>
             <li><span className="font-semibold text-ink">Bring cash:</span> pay in US dollars in small bills, particularly at land crossings, where you also need passport photos.</li>
-            <li><span className="font-semibold text-ink">Children:</span> Lonely Planet reports that children under 10 do not pay for tourist visas, with exceptions for some nationalities, so confirm for your group.</li>
+            <li><span className="font-semibold text-ink">Children:</span> the Nepal Tourism Board says children under 10 get a free tourist visa, except US citizens, so confirm for your group.</li>
           </ArticleUL>
           <ArticleP>
             Fees and procedures are summarised from{" "}

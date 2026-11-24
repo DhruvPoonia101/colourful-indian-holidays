@@ -345,8 +345,12 @@ export function Navbar() {
       {/* =========================================================
           SPACER FOR FIXED NAVBAR
       ========================================================= */}
+      {/* Default 77px matches the rendered header at every breakpoint, so the
+          server HTML reserves the space and nothing shifts on hydration
+          (it was 0 until measured, causing a 0.094 CLS sitewide). */}
       <div
-        style={{ height: headerHeight }}
+        className="h-[77px]"
+        style={headerHeight ? { height: headerHeight } : undefined}
         aria-hidden="true"
       />
 

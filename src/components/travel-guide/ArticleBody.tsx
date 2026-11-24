@@ -1,5 +1,17 @@
+import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { FiCheckCircle } from "react-icons/fi";
+
+/**
+ * Operations reviewer named on every guide that carries time-sensitive facts
+ * (visa rules, government fees, prices, train schedules). Shown with the
+ * "last checked" date so readers know who signs off on those facts.
+ */
+const FACTS_REVIEWER = {
+  name: "Narendra Poonia",
+  role: "Founder, Colourful Indian Holidays",
+  url: "/about-us#founder",
+};
 
 export function ArticleByline({
   authorName,
@@ -7,6 +19,7 @@ export function ArticleByline({
   authorUrl,
   datePublished,
   dateModified,
+  factsCheckedOn,
 }: {
   authorName: string;
   authorRole: string;
@@ -14,6 +27,12 @@ export function ArticleByline({
   datePublished: string;
   /** Same as datePublished when the article hasn't been revised since. */
   dateModified: string;
+  /**
+   * ISO date the time-sensitive facts (visa rules, fees, prices, schedules)
+   * were last checked against their sources. Only pass a date when a check
+   * actually happened; re-check quarterly or when a rule changes.
+   */
+  factsCheckedOn?: string;
 }) {
   const formatDate = (iso: string) =>
     new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
@@ -35,6 +54,23 @@ export function ArticleByline({
           , {authorRole} · Published {formatDate(datePublished)}
           {!sameDate && ` · Updated ${formatDate(dateModified)}`}
         </p>
+        {factsCheckedOn && (
+          <p className="mt-1 text-xs text-ink-soft">
+            Fees, rules and prices reviewed by{" "}
+            <Link
+              href={FACTS_REVIEWER.url}
+              className="font-semibold text-maroon underline decoration-maroon/30 underline-offset-4 hover:decoration-maroon"
+            >
+              {FACTS_REVIEWER.name}
+            </Link>
+            , {FACTS_REVIEWER.role}, and last checked{" "}
+            <time dateTime={factsCheckedOn} className="font-semibold text-ink">
+              {formatDate(factsCheckedOn)}
+            </time>{" "}
+            against the official and published sources linked in the article. They can change at short
+            notice, so confirm before you book or travel.
+          </p>
+        )}
       </div>
     </div>
   );

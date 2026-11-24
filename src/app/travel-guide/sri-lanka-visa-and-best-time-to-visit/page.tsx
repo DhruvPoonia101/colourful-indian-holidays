@@ -140,6 +140,7 @@ export default function GuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-11-23"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a Sri Lanka tour with Colourful Indian Holidays." />

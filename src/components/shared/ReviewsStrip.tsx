@@ -51,7 +51,7 @@ export function ReviewsStrip({
                 key={review.name}
                 className="flex flex-col rounded-2xl bg-white p-6 shadow-sm sm:p-8"
               >
-                <div className="flex items-center gap-1 text-gold-dark" aria-label={`${review.rating} out of 5 stars`}>
+                <div className="flex items-center gap-1 text-gold-dark" role="img" aria-label={`${review.rating} out of 5 stars`}>
                   {Array.from({ length: review.rating }).map((_, i) => (
                     <FaStar key={i} aria-hidden="true" className="h-4 w-4" />
                   ))}

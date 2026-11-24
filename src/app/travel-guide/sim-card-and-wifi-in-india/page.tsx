@@ -122,6 +122,7 @@ export default function GuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-10-25"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I have a question about mobile data on my India trip with Colourful Indian Holidays." />

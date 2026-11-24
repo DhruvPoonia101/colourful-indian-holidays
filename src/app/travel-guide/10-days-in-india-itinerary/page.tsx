@@ -27,7 +27,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "10 Days in India: Itinerary for First-Timers";
 const description =
-  "Three realistic 10-day India itineraries for first-timers, day by day: Golden Triangle with Rajasthan's lakes, Golden Triangle with Kerala, or with Varanasi, plus costs and tips.";
+  "Three 10-day India itineraries for first-timers, day by day: the Golden Triangle with Rajasthan, Kerala or Varanasi, plus costs and tips.";
 const pagePath = "/travel-guide/10-days-in-india-itinerary";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-10-25";

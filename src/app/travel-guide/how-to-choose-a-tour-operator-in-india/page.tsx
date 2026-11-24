@@ -25,7 +25,7 @@ import { BUSINESS } from "@/lib/seo/business";
 
 const title = "How to Choose a Private Tour Operator in India: A Checklist";
 const description =
-  "How to choose a tour operator for India: what Ministry of Tourism recognition and IATO membership mean, how to check reviews, what a quote must include and red flags.";
+  "How to choose a tour operator for India: what Ministry of Tourism recognition and IATO membership mean, checking reviews, quotes and red flags.";
 const pagePath = "/travel-guide/how-to-choose-a-tour-operator-in-india";
 const heroImage = "/images/destinations/jaipur-city-palace.webp";
 const datePublished = "2026-10-26";

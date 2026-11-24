@@ -27,7 +27,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "First Trip to India: What to Know Before You Go";
 const description =
-  "A practical starting point for a first trip to India: travel tips on how long to plan, visa and health basics, safety, what to expect on the ground and where to start.";
+  "A practical start for a first trip to India: how long to plan, visa and health basics, safety, what to expect on the ground and where to begin.";
 const pagePath = "/travel-guide/first-trip-to-india-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-30";

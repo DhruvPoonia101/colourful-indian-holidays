@@ -27,7 +27,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "India Festivals 2027: Dates for Holi, Diwali, Pushkar & More";
 const description =
-  "India festival dates for 2027 in date order: Holi 22 March, Dussehra 9 October, Diwali 29 October, Pushkar around 14 November, plus the Nashik Kumbh and planning tips.";
+  "India festival dates for 2027 in order: Holi 22 March, Dussehra 9 October, Diwali 29 October, Pushkar around 14 November and the Nashik Kumbh.";
 const pagePath = "/travel-guide/india-festivals-2027-calendar";
 const heroImage = "/images/destinations/diwali.webp";
 const datePublished = "2026-10-26";
@@ -112,6 +112,7 @@ export default function Page() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-10-26"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like to plan a trip around an Indian festival in 2027 with Colourful Indian Holidays." />

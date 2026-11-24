@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
@@ -150,7 +151,7 @@ export default function AboutUsPage() {
           </div>
         </section>
 
-        <section className="border-t border-sand/70 py-14 sm:py-20">
+        <section id="founder" className="scroll-mt-24 border-t border-sand/70 py-14 sm:py-20">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro eyebrow="Meet the Founder" heading="Narendra Poonia" />
@@ -169,7 +170,12 @@ export default function AboutUsPage() {
                 <p>
                   He&apos;s supported day to day by a small team of English-speaking guides and
                   drivers based across Rajasthan and beyond, each vetted and worked with directly
-                  rather than subcontracted the day before a trip.
+                  rather than subcontracted the day before a trip. He also reviews the visa rules,
+                  government fees and prices in our{" "}
+                  <Link href="/travel-guide" className="text-maroon underline">
+                    travel guides
+                  </Link>{" "}
+                  before they are published or updated.
                 </p>
                 <p>
                   <a

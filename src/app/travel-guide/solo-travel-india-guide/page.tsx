@@ -33,7 +33,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Solo Travel in India, Including Solo Female: A Practical Guide";
 const description =
-  "An honest guide to solo travel in India, including solo female travel: getting around, common scams, advice for women, emergency numbers and how a private tour works for one.";
+  "An honest guide to solo travel in India, including for women: getting around, common scams, emergency numbers and how a private tour works for one.";
 const pagePath = "/travel-guide/solo-travel-india-guide";
 const heroImage = "/images/destinations/jaipur-hawa-mahal.webp";
 const datePublished = "2026-09-28";

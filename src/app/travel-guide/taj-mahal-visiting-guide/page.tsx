@@ -240,6 +240,7 @@ export default function TajMahalVisitingGuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-09-28"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a Taj Mahal visit with Colourful Indian Holidays." />

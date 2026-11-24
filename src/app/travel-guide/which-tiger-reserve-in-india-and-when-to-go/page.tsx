@@ -27,7 +27,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "Which Tiger Reserve in India, and When Should You Go?";
 const description =
-  "Which tiger reserve to choose and the best month for a tiger safari in India: Ranthambore, Bandhavgarh, Kanha, Pench and Kaziranga compared, with closures and permits.";
+  "Which tiger reserve to choose and the best month for a safari: Ranthambore, Bandhavgarh, Kanha, Pench and Kaziranga compared, with closures and permits.";
 const pagePath = "/travel-guide/which-tiger-reserve-in-india-and-when-to-go";
 const heroImage = "/images/destinations/ranthambore-tiger.webp";
 const datePublished = "2026-10-25";
@@ -132,6 +132,7 @@ export default function GuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-10-25"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a tiger safari in India with Colourful Indian Holidays." />

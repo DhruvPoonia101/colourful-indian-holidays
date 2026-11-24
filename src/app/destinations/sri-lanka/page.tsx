@@ -21,7 +21,7 @@ const eightDayFrom = getPackageStartingPrice("sri-lanka-tours", 8).toLocaleStrin
 
 const title = "Sri Lanka Destinations | Sigiriya, Kandy, Ella, Yala & Galle";
 const description =
-  "Every Sri Lanka destination we plan private tours for — the Sigiriya rock fortress, Kandy's Temple of the Tooth, Ella and the tea country, Yala's leopards and Galle Fort.";
+  "Sri Lanka destinations for private tours: the Sigiriya rock fortress, Kandy's Temple of the Tooth, Ella's tea country, Yala's leopards and Galle Fort.";
 const pagePath = "/destinations/sri-lanka";
 const heroImage = "/images/destinations/sigiriya-rock-fortress.webp";
 

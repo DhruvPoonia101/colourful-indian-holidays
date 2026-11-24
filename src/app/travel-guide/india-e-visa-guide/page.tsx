@@ -136,6 +136,7 @@ export default function IndiaEVisaGuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-09-25"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I have a question about visas before booking my trip with Colourful Indian Holidays." />
@@ -260,8 +261,9 @@ export default function IndiaEVisaGuidePage() {
 
           <ArticleH2>What Do You Need to Apply for an e-Visa?</ArticleH2>
           <ArticleP>
-            The entire application happens online, through India&apos;s official government e-Visa
-            portal — never a third-party site claiming to offer a faster or guaranteed service.
+            The entire application happens online, through India&apos;s{" "}
+            <a href="https://indianvisaonline.gov.in/evisa/" className="text-maroon underline" target="_blank" rel="noopener noreferrer">official government e-Visa portal</a>{" "}
+            — never a third-party site claiming to offer a faster or guaranteed service.
             You&apos;ll need:
           </ArticleP>
           <ArticleUL>
@@ -353,7 +355,7 @@ export default function IndiaEVisaGuidePage() {
             free digital e-Arrival Card within 72 hours before landing. This is genuinely separate
             from your e-Visa; holding a valid visa does not exempt you from also filing this. The
             form replaces the paper disembarkation card once handed out on flights, takes a few
-            minutes to complete through the Bureau of Immigration&apos;s portal or the Su-Swagatam
+            minutes to complete through the{" "}<a href="https://indianvisaonline.gov.in/" className="text-maroon underline" target="_blank" rel="noopener noreferrer">official Indian Visa Online / Bureau of Immigration portal</a>{" "}or the Su-Swagatam
             mobile app, and covers your passport details, flight information, purpose of visit,
             and accommodation address. Once submitted, you&apos;ll receive a QR code to present at
             check-in and immigration. Families or groups of up to five people travelling together

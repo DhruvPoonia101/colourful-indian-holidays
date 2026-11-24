@@ -35,7 +35,7 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 
 const title = "How Much Does a Private Tour of India Cost?";
 const description =
-  "What a private tour of India costs per person: prices by trip length for 3-4 star and palace hotels, what is included, what changes the price and what to budget on top.";
+  "What a private tour of India costs per person: prices by trip length for 3–4 star and palace hotels, what's included and what to budget on top.";
 const pagePath = "/travel-guide/how-much-does-a-private-tour-of-india-cost";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 const datePublished = "2026-10-25";
@@ -183,6 +183,7 @@ export default function CostGuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-10-25"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like a price for a private tour of India with Colourful Indian Holidays." />
@@ -191,12 +192,12 @@ export default function CostGuidePage() {
           <ArticleP>
             <span className="font-semibold text-ink">
               A private tour of India starts from about <Price usd={COMFORT} /> per person per night with
-              3-4 star hotels, and from about <Price usd={LUXURY} /> per night with 5-star and palace
+              3-4 star hotels, and from about <Price usd={LUXURY} /> per person per night with 5-star and palace
               hotels.
             </span>{" "}
             That is for two people sharing, with your own driver and guide, and it excludes flights.
-            A 7-day trip therefore starts from about <Price usd={row(7).comfort} />, and a 14-day trip
-            from about <Price usd={row(14).comfort} />. Peak season and higher hotel categories cost
+            A 7-day trip (6 hotel nights) therefore starts from about <Price usd={row(7).comfort} /> per
+            person, and a 14-day trip (13 nights) from about <Price usd={row(14).comfort} /> per person. Peak season and higher hotel categories cost
             more. The rest of this guide shows how the numbers work. To price your own route,
             try our <Link href="/tools/trip-cost-calculator" className="text-maroon underline">trip cost calculator</Link>.
           </ArticleP>
@@ -213,8 +214,8 @@ export default function CostGuidePage() {
               <thead>
                 <tr className="border-b border-sand text-ink">
                   <th scope="col" className="px-3 py-3 font-semibold sm:px-5">Trip length</th>
-                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">3-4 star hotels</th>
-                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">5-star and palace</th>
+                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">3-4 star hotels (per person)</th>
+                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">5-star and palace (per person)</th>
                 </tr>
               </thead>
               <tbody className="text-ink-soft">
@@ -314,7 +315,7 @@ export default function CostGuidePage() {
                 <tr className="border-b border-sand text-ink">
                   <th scope="col" className="px-3 py-3 font-semibold sm:px-5">Private tour</th>
                   <th scope="col" className="px-3 py-3 font-semibold sm:px-5">Days</th>
-                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">From, per person</th>
+                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">From, per person (two sharing)</th>
                 </tr>
               </thead>
               <tbody className="text-ink-soft">

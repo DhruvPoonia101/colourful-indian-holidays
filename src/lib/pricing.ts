@@ -32,7 +32,7 @@ export const PRICE_PER_NIGHT_USD = 100;
  * - luxury $250: Top Indian Holidays prices 5-star/palace trips at
  *   $250-600+/day and 7-day palace Golden Triangle at $3,170-5,130.
  * - bhutan $300: Bhutan's Sustainable Development Fee alone is $100 per
- *   person per night (confirmed through 31 Aug 2027, littlebhutan.com), and
+ *   person per night (extended to 31 Dec 2029 by the Department of Tourism, 1 Nov 2026), and
  *   private trips run $250-450/day all-in (littlebhutan.com), $265-360 for
  *   comfortable (Druk Asia).
  * - nepal $120: private Nepal trips run about $107-200/night (Luxury Holidays
@@ -95,7 +95,7 @@ const EXPERIENCE_ZONE: Record<string, PriceZone> = {
 };
 
 export const PRICE_DISCLAIMER =
-  "*Indicative price in USD. Final quote provided in INR or USD based on your preference. Price varies by travel dates, group size and hotel category.";
+  "*Indicative starting price in USD per person, based on two people sharing, for the number of hotel nights shown; international flights excluded. Final quote provided in INR or USD based on your preference. Price varies by travel dates, group size and hotel category.";
 
 function nightsFor(itineraryDays: number): number {
   return Math.max(itineraryDays - 1, 1);
@@ -128,17 +128,17 @@ export function getExperienceStartingPrice(slug: string, itineraryDays: number):
   return nightsFor(itineraryDays) * RATE_PER_NIGHT_USD[zone];
 }
 
-/** Pieces of "From $2,100 for 7 nights", so the amount can be swapped for a
+/** Pieces of "From $2,100 per person, 7 nights", so the amount can be swapped for a
  * converted one: prefix + amount + suffix. */
 export function fromPriceParts(itineraryDays: number): { prefix: string; suffix: string } {
   const nights = nightsFor(itineraryDays);
-  return { prefix: "From ", suffix: ` for ${nights} ${nights === 1 ? "night" : "nights"}` };
+  return { prefix: "From ", suffix: ` per person, ${nights} ${nights === 1 ? "night" : "nights"}` };
 }
 
-/** "From $2,100 for 7 nights" — the wording shown in the Starting From fact. */
+/** "From $2,100 per person, 7 nights" — the wording shown in the Starting From fact. */
 export function formatFromPrice(price: number, itineraryDays: number): string {
   const nights = nightsFor(itineraryDays);
-  return `From $${price.toLocaleString("en-US")} for ${nights} ${nights === 1 ? "night" : "nights"}`;
+  return `From $${price.toLocaleString("en-US")} per person, ${nights} ${nights === 1 ? "night" : "nights"}`;
 }
 
 export function formatStartingPrice(itineraryDays: number): string {

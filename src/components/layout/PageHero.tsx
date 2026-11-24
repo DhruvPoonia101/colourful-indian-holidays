@@ -67,6 +67,7 @@ export function PageHero({
         alt={imageAlt}
         fill
         priority
+        fetchPriority="high"
         sizes="100vw"
         className="object-cover"
       />
@@ -93,7 +94,7 @@ export function PageHero({
               />
             ) : (
               primaryHref &&
-              primaryLabel && <Button href={primaryHref} prefetch>{primaryLabel}</Button>
+              primaryLabel && <Button href={primaryHref}>{primaryLabel}</Button>
             )}
             {whatsappMessage && (
               <Button href={whatsappUrl(whatsappMessage)} external variant="outline">
