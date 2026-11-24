@@ -195,7 +195,7 @@ const faqs: FaqItem[] = [
   {
     question: "Can you book Palace on Wheels and other luxury trains?",
     answer:
-      "Yes. Palace on Wheels is our sister company's luxury train, and we are an authorised booking agent for it. We can book it on its own or combine it with a private hotel-and-driver itinerary before or after the train journey.",
+      "Yes. We are an authorised booking agent for the Palace on Wheels, the luxury train run by RTDC and Indian Railways, through our sister site Palace on Wheels Tour (palaceonwheelstour.com). We can book it on its own or combine it with a private hotel-and-driver itinerary before or after the train journey.",
   },
   {
     question: "Where are you based, and which languages do you speak?",

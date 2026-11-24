@@ -31,7 +31,7 @@ const description =
 const pagePath = "/travel-guide/first-trip-to-india-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-30";
-const dateModified = datePublished;
+const dateModified = "2026-11-24";
 
 export const metadata: Metadata = {
   title,
@@ -131,6 +131,14 @@ export default function FirstTripToIndiaGuidePage() {
         <ArticleTopCTA whatsappMessage="Hi! I'm planning my first trip to India and would like some help." />
 
         <ArticleBody>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              For a first trip to India, plan 10 to 12 days between October and March, start with the
+              Golden Triangle of Delhi, Agra and Jaipur, sort your e-Visa before you fly, and use a
+              private driver and guide for at least the first few days.
+            </span>
+          </ArticleP>
+
           <ArticleP>
             Most guides to a first trip to India are lists of monuments. This one isn&apos;t. If
             you want to know what to see, our{" "}

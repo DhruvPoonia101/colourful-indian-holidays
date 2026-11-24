@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const may: MonthContent = {
   slug: "may",
   name: "May",
-  metaTitle: "India in May: Weather by Region & Best Time to Go",
+  metaTitle: "India Weather in May: Temperatures & Where to Go",
   metaDescription:
-    "May is the hottest month across the Indian plains, making it the peak season for Himalayan hill stations and Leh & Ladakh instead.",
+    "India weather in May: 27–43°C in Delhi and Rajasthan, the hottest month on the plains, but 5–20°C in Ladakh, peak season in the Himalaya.",
   heroImage: "/images/destinations/Leh-4.webp",
   heroImageAlt: "Motorbikes parked beside Pangong Lake, Ladakh",
   heroHeadline: "Best Time to Visit India in May",

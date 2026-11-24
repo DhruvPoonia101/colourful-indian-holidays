@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { TripPhotos } from "@/components/shared/TripPhotos";
+import { tripPhotos } from "@/content/trip-photos";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
@@ -10,6 +13,7 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { organizationJsonLd } from "@/lib/seo/organization-schema";
 
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
+import { BUSINESS_DESCRIPTOR } from "@/lib/seo/business";
 
 const title = "About Colourful Indian Holidays | IATO-Registered Since 2007";
 const description =
@@ -100,6 +104,69 @@ export default function AboutUsPage() {
           subheadline="A Jaipur-based team designing private journeys across India, Nepal, Bhutan and Sri Lanka for travellers from around the world."
         />
 
+        {/* Company facts in one scannable block, so search and AI engines (and
+            buyers) get the core entity facts without reading the whole story.
+            Every value comes from BUSINESS / trust-badges, the same source the
+            schema uses. Office locations beyond Jaipur are not listed by choice. */}
+        <section className="pt-14 sm:pt-20" aria-labelledby="company-facts">
+          <div className="mx-auto max-w-3xl px-6 sm:px-8">
+            <h2 id="company-facts" className="font-display text-2xl font-semibold text-ink sm:text-3xl">
+              Colourful Indian Holidays at a Glance
+            </h2>
+            <p className="mt-3 text-base leading-relaxed text-ink-soft">
+              <span className="font-semibold text-ink">Colourful Indian Holidays</span> is a{" "}
+              {BUSINESS_DESCRIPTOR}, founded by Narendra Poonia.
+            </p>
+            <dl className="mt-5 divide-y divide-sand/70 overflow-hidden rounded-2xl border border-sand bg-white text-sm sm:text-base">
+              {[
+                ["Name", "Colourful Indian Holidays (US spelling: Colorful Indian Holidays)"],
+                ["Founded", `${BUSINESS.foundingYear}, in Jaipur, Rajasthan`],
+                ["Founder", "Narendra Poonia"],
+                ["Headquarters", `${BUSINESS.address.streetAddress}, ${BUSINESS.address.addressLocality}, ${BUSINESS.address.addressRegion} ${BUSINESS.address.postalCode}, India`],
+                ["Offices", "Headquartered in Jaipur, with 8+ offices across India"],
+                ["Countries we plan", "India, Nepal, Bhutan and Sri Lanka"],
+                ["Trip style", "Private, tailor-made tours with your own car, driver and guide"],
+                ["Languages", BUSINESS.languages.join(", ")],
+                ["Contact", `${BUSINESS.telephone} · ${BUSINESS.email}`],
+              ].map(([term, value]) => (
+                <div key={term} className="grid gap-1 px-4 py-3 sm:grid-cols-[180px_1fr] sm:gap-4 sm:px-5">
+                  <dt className="font-semibold text-ink">{term}</dt>
+                  <dd className="text-ink-soft">{value}</dd>
+                </div>
+              ))}
+              <div className="grid gap-1 px-4 py-3 sm:grid-cols-[180px_1fr] sm:gap-4 sm:px-5">
+                <dt className="font-semibold text-ink">Registrations</dt>
+                <dd className="text-ink-soft">
+                  {DEFAULT_TRUST_BADGES.filter((b) => b.href && /iato|tourism\.gov/.test(b.href)).map((b, i) => (
+                    <span key={b.label}>
+                      {i > 0 && " · "}
+                      <a href={b.href} target="_blank" rel="noopener noreferrer" className="text-maroon underline">
+                        {b.label}
+                      </a>
+                    </span>
+                  ))}
+                  {" · "}
+                  <Link href="/awards-recognition" className="text-maroon underline">
+                    Rajasthan Tourism recognition
+                  </Link>
+                </dd>
+              </div>
+              <div className="grid gap-1 px-4 py-3 sm:grid-cols-[180px_1fr] sm:gap-4 sm:px-5">
+                <dt className="font-semibold text-ink">Reviews</dt>
+                <dd className="text-ink-soft">
+                  <a href={BUSINESS.sameAs.find((u) => u.includes("tripadvisor"))} target="_blank" rel="noopener noreferrer" className="text-maroon underline">
+                    {BUSINESS.aggregateRating.ratingValue} on Tripadvisor ({BUSINESS.aggregateRating.reviewCount} reviews)
+                  </a>
+                  {" · "}
+                  <a href={BUSINESS.googleRating.mapsUrl} target="_blank" rel="noopener noreferrer" className="text-maroon underline">
+                    {BUSINESS.googleRating.ratingValue} on Google ({BUSINESS.googleRating.reviewCount} reviews)
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
         <section className="py-14 sm:py-20">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
@@ -151,10 +218,28 @@ export default function AboutUsPage() {
           </div>
         </section>
 
+        <TripPhotos
+          heading="Our Guests and Team on the Road"
+          intro="Real photos from our trips and our work, not stock images: Narendra with guests in Udaipur, on a riverside walk and with overseas partners, and our guests on safari, in Jaipur and across Rajasthan."
+          photos={[tripPhotos.udaipurGroup, tripPhotos.hawaMahal, tripPhotos.jeepSafari, tripPhotos.tradeFairBuyer, tripPhotos.palaceSteps, tripPhotos.riverside]}
+        />
+
         <section id="founder" className="scroll-mt-24 border-t border-sand/70 py-14 sm:py-20">
           <div className="mx-auto max-w-3xl px-6 sm:px-8">
             <Reveal>
               <SectionIntro eyebrow="Meet the Founder" heading="Narendra Poonia" />
+              <figure className="mt-6 overflow-hidden rounded-2xl border border-sand bg-white">
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={tripPhotos.tradeFair.src}
+                    alt={tripPhotos.tradeFair.alt}
+                    fill
+                    sizes="(min-width: 768px) 720px, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="px-4 py-3 text-sm text-ink-soft">{tripPhotos.tradeFair.caption}</figcaption>
+              </figure>
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft">
                 <p>
                   Narendra Poonia founded Colourful Indian Holidays in {BUSINESS.foundingYear}{" "}

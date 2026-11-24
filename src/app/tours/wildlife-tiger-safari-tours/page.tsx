@@ -1,3 +1,5 @@
+import { TripPhotos } from "@/components/shared/TripPhotos";
+import { tripPhotos } from "@/content/trip-photos";
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
@@ -257,6 +259,11 @@ export default function WildlifeTigerSafariHubPage() {
           cities={fleetCards.slice(0, 3)}
           topDivider
           showActions
+        />
+
+        <TripPhotos
+          heading="Our Guests on Safari"
+          photos={[tripPhotos.jeepSafari, tripPhotos.riverside]}
         />
 
         <RelatedGuides guides={guidesFor("/tours/wildlife-tiger-safari-tours")} />

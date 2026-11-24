@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const june: MonthContent = {
   slug: "june",
   name: "June",
-  metaTitle: "India in June: Weather by Region & Best Time to Go",
+  metaTitle: "India Weather in June: Temperatures & Where to Go",
   metaDescription:
-    "June marks the start of the monsoon in Kerala and the south, while Leh & Ladakh — sitting in a rain shadow — enters the best window of its short season.",
+    "India weather in June: monsoon rain reaches Kerala (24–32°C) while Ladakh stays dry at 8–24°C, the best window of its short season.",
   heroImage: "/images/destinations/Leh-4.webp",
   heroImageAlt: "Motorbikes parked beside Pangong Lake, Ladakh",
   heroHeadline: "Best Time to Visit India in June",

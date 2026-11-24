@@ -51,7 +51,7 @@ const description =
 const pagePath = "/travel-guide/taj-mahal-visiting-guide";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-09-28";
-const dateModified = "2026-10-25";
+const dateModified = "2026-11-24";
 
 export const metadata: Metadata = {
   title,
@@ -106,7 +106,8 @@ function TajTimingsAnswer() {
         The Taj Mahal is open Saturday to Thursday, from 30 minutes before sunrise until 30
         minutes before sunset &mdash; about 6:30 AM to 5:00 PM in winter and about 5:00 AM to
         6:45 PM in summer. It is closed every Friday. Night viewing runs on five nights around
-        each full moon, from 8:00 PM to midnight.
+        each full moon, from 8:00 PM to midnight. Source:{" "}
+        <a href="https://tajmahal.gov.in/visiting-hours.aspx" className="text-maroon underline" target="_blank" rel="noopener noreferrer">official Taj Mahal visiting hours</a>.
       </p>
 
       <p className="mt-5 text-sm font-medium text-ink">Approximate opening and closing times by month</p>
@@ -240,7 +241,7 @@ export default function TajMahalVisitingGuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
-          factsCheckedOn="2026-09-28"
+          factsCheckedOn="2026-11-24"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like help planning a Taj Mahal visit with Colourful Indian Holidays." />
@@ -296,8 +297,9 @@ export default function TajMahalVisitingGuidePage() {
             free.
           </ArticleP>
           <ArticleP>
-            You can buy tickets at the gates, but booking online through the official Taj Mahal
-            website or the Archaeological Survey of India&apos;s ticketing portal is quicker and
+            You can buy tickets at the gates, but booking online through the{" "}
+            <a href="https://tajmahal.gov.in/ticketing.aspx" className="text-maroon underline" target="_blank" rel="noopener noreferrer">official Taj Mahal website</a>{" "}
+            or the Archaeological Survey of India&apos;s ticketing portal is quicker and
             carries a small discount for foreign visitors. Stick to the official channels;
             third-party sellers often charge considerably more and sell nothing you cannot get
             directly. The foreigner ticket also includes a bottle of water, shoe covers and a

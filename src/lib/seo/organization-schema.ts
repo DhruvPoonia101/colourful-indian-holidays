@@ -31,6 +31,7 @@ export function organizationJsonLd() {
       "@type": "Person",
       name: "Narendra Poonia",
       jobTitle: "Founder",
+      image: `${SITE_URL}/images/trips/colourful-indian-holidays-travel-trade-fair.webp`,
       url: `${SITE_URL}/about-us`,
       sameAs: ["https://www.linkedin.com/in/narendrapoonia/"],
     },

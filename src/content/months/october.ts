@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const october: MonthContent = {
   slug: "october",
   name: "October",
-  metaTitle: "India in October: Weather by Region & Best Time to Go",
+  metaTitle: "India Weather in October: Temperatures & Where to Go",
   metaDescription:
-    "October opens the classic India travel season — clear skies, comfortable temperatures, reopening wildlife parks and Navratri and Dussehra celebrations.",
+    "India weather in October: 18–32°C in Delhi and Rajasthan, 23–32°C in the south, rain easing. The classic travel season begins: where to go.",
   heroImage: "/images/destinations/amber-fort-jaipur.webp",
   heroImageAlt: "Amber Fort at sunset, Jaipur, Rajasthan",
   heroHeadline: "Best Time to Visit India in October",

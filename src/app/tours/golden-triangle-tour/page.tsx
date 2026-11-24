@@ -1,3 +1,5 @@
+import { TripPhotos } from "@/components/shared/TripPhotos";
+import { tripPhotos } from "@/content/trip-photos";
 import { RelatedGuides } from "@/components/shared/RelatedGuides";
 import { guidesFor } from "@/content/related-guides";
 import type { Metadata } from "next";
@@ -22,6 +24,10 @@ import { faqJsonLd, type FaqItem } from "@/lib/seo/faq-schema";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/business";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import { renderWithLinks } from "@/lib/render-with-links";
+import Link from "next/link";
+import { Price } from "@/components/shared/Price";
+import { PRICE_DISCLAIMER, RATE_PER_NIGHT_USD, getPackageStartingPrice } from "@/lib/pricing";
+import type { PackageContent } from "@/content/packages/types";
 
 /**
  * Expanded from a thin 76-line listing page (hero + variant grid + CTA,
@@ -127,6 +133,70 @@ const faqs: FaqItem[] = [
   },
 ];
 
+/**
+ * "Which route suits me?" chooser. Days, nights and prices are computed from
+ * the real package data and src/lib/pricing.ts, so this table can never
+ * disagree with the individual tour pages. Comfort = 3-4 star and heritage
+ * hotels at RATE_PER_NIGHT_USD.india; luxury = 5-star and palace hotels at
+ * RATE_PER_NIGHT_USD.luxury (the same two tiers as the cost guide).
+ */
+const routeChoices: { pkg: PackageContent; route: string; bestFor: string }[] = [
+  {
+    pkg: goldenTriangleTours,
+    route: "Delhi, Agra, Jaipur",
+    bestFor: "A first trip with about a week; the essentials without rushing",
+  },
+  {
+    pkg: goldenTriangleRanthamboreTours,
+    route: "Delhi, Agra, Ranthambore, Jaipur",
+    bestFor: "A real chance of seeing a wild tiger (October to June; the park closes in the monsoon)",
+  },
+  {
+    pkg: goldenTriangleAjmerPushkarTours,
+    route: "Delhi, Agra, Jaipur, Ajmer, Pushkar",
+    bestFor: "Living religious sites and a small, walkable lake town",
+  },
+  {
+    pkg: goldenTriangleUdaipurTours,
+    route: "Delhi, Agra, Jaipur, Ranakpur, Udaipur",
+    bestFor: "A slower finish by the lakes; couples and honeymooners",
+  },
+  {
+    pkg: goldenTriangleVaranasiTours,
+    route: "Delhi, Agra, Jaipur, then fly to Varanasi",
+    bestFor: "The Ganges ghats and evening aarti; spiritual India",
+  },
+];
+
+const routeRows = routeChoices.map(({ pkg, route, bestFor }) => {
+  const days = pkg.itinerary.length;
+  const nights = days - 1;
+  return {
+    name: pkg.name,
+    href: `/tours/${pkg.slug}`,
+    route,
+    bestFor,
+    days,
+    nights,
+    comfort: getPackageStartingPrice(pkg.slug, days),
+    luxury: nights * RATE_PER_NIGHT_USD.luxury,
+  };
+});
+
+const cheapestRoute = Math.min(...routeRows.map((r) => r.comfort));
+
+/** Typical door-to-door drive times used on our itineraries. */
+const driveTimes = [
+  { leg: "Delhi to Agra", time: "3 to 4 hours", note: "Yamuna Expressway" },
+  { leg: "Agra to Jaipur", time: "4 to 6 hours", note: "About an hour more with a Fatehpur Sikri or Abhaneri stop" },
+  { leg: "Jaipur to Delhi (or Delhi airport)", time: "4 to 6 hours", note: "Allow extra time for an evening flight" },
+  { leg: "Agra to Ranthambore", time: "4 to 5 hours", note: "Ranthambore route only" },
+  { leg: "Ranthambore to Jaipur", time: "About 4 hours", note: "Ranthambore route only" },
+  { leg: "Jaipur to Ajmer and Pushkar", time: "2.5 to 3 hours", note: "Ajmer & Pushkar route only" },
+  { leg: "To Udaipur via Ranakpur", time: "6 to 7 hours", note: "Including the Ranakpur temple stop; a flight is possible" },
+  { leg: "Jaipur to Varanasi", time: "Flight", note: "Too far to drive on this route" },
+];
+
 /** Every tour this hub links to, as real package data — so the hub's schema
  * names, durations and indicative prices always match the trip pages. */
 const hubTrips = [goldenTriangleTours, goldenTriangleUdaipurTours, goldenTriangleVaranasiTours, goldenTriangleRanthamboreTours, goldenTriangleAjmerPushkarTours].map(packageToTripSummary);
@@ -169,13 +239,148 @@ export default function GoldenTriangleHubPage() {
         {/* $500 is this hub's real cheapest linked variant (golden-triangle-tour-classic, 6 days / 5 nights), computed via the
             shared $100/night rate in src/lib/pricing.ts — not a separate
             number invented for this hub page. */}
-        <TourHubStartingPrice price={500} />
+        {/* Cheapest linked variant, computed from the package data (see routeRows). */}
+        <TourHubStartingPrice price={cheapestRoute} />
 
         <CityGrid
           eyebrow="Choose Your Route"
           heading="Golden Triangle Tour Packages"
           cities={goldenTriangleVariants}
           showActions
+        />
+
+        <section className="border-t border-sand/70 py-10 sm:py-14" aria-labelledby="route-chooser">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8">
+            <Reveal>
+              <SectionIntro eyebrow="Compare the Routes" heading="Which Golden Triangle Route Suits Me?" />
+              <p id="route-chooser" className="mt-4 max-w-3xl text-base leading-relaxed text-ink-soft">
+                <span className="font-semibold text-ink">
+                  Pick the classic 6-day route for a first look at Delhi, Agra and Jaipur, or add 2 to 3
+                  days for tigers, Pushkar, Udaipur or Varanasi.
+                </span>{" "}
+                Prices are per person, two people sharing, for the hotel nights shown, with a private car,
+                driver and guide. What changes the final price: your dates, hotel category and group size.
+              </p>
+              <div className="mt-8 overflow-x-auto rounded-2xl border border-sand bg-white">
+                <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+                  <caption className="sr-only">
+                    Golden Triangle routes compared by length, cities, who they suit and starting price per person
+                  </caption>
+                  <thead>
+                    <tr className="border-b border-sand text-ink">
+                      <th scope="col" className="px-4 py-3 font-semibold">Route</th>
+                      <th scope="col" className="px-4 py-3 font-semibold">Length</th>
+                      <th scope="col" className="px-4 py-3 font-semibold">Best if you want</th>
+                      <th scope="col" className="px-4 py-3 font-semibold">From, 3–4 star hotels</th>
+                      <th scope="col" className="px-4 py-3 font-semibold">From, 5-star and palace hotels</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-ink-soft">
+                    {routeRows.map((r) => (
+                      <tr key={r.href} className="border-b border-sand/60 last:border-0">
+                        <th scope="row" className="px-4 py-3 align-top font-medium text-ink">
+                          <Link href={r.href} className="text-maroon underline decoration-maroon/30 underline-offset-2 hover:decoration-maroon">
+                            {r.name}
+                          </Link>
+                          <span className="mt-1 block text-xs font-normal text-ink-soft">{r.route}</span>
+                        </th>
+                        <td className="px-4 py-3 align-top whitespace-nowrap">
+                          {r.days} days / {r.nights} nights
+                        </td>
+                        <td className="px-4 py-3 align-top">{r.bestFor}</td>
+                        <td className="px-4 py-3 align-top whitespace-nowrap font-semibold text-ink">
+                          <Price usd={r.comfort} />
+                        </td>
+                        <td className="px-4 py-3 align-top whitespace-nowrap">
+                          <Price usd={r.luxury} />
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-xs italic text-ink-soft/80">{PRICE_DISCLAIMER}</p>
+
+              <div className="mt-8 grid gap-6 md:grid-cols-2">
+                <div className="rounded-2xl border border-sand bg-white p-5">
+                  <h3 className="font-display text-lg font-semibold text-ink">Included on every route</h3>
+                  <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-ink-soft">
+                    <li>Hotel nights as listed, twin-sharing, with daily breakfast</li>
+                    <li>Private air-conditioned car and driver for all transfers and sightseeing</li>
+                    <li>English-speaking guide</li>
+                    <li>Monument entry fees as per the itinerary</li>
+                    <li>Hotel and transport taxes</li>
+                  </ul>
+                </div>
+                <div className="rounded-2xl border border-sand bg-white p-5">
+                  <h3 className="font-display text-lg font-semibold text-ink">Not included</h3>
+                  <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm text-ink-soft">
+                    <li>International and domestic flights (including Jaipur to Varanasi), booked on request</li>
+                    <li>Visa fees</li>
+                    <li>Lunches and dinners unless noted</li>
+                    <li>Camera fees at monuments, tips, personal expenses and travel insurance</li>
+                  </ul>
+                  <p className="mt-3 text-xs text-ink-soft/80">
+                    Each tour page lists its inclusions in full. The Ranthambore route also includes four
+                    jeep or canter safari drives and park entry fees.
+                  </p>
+                </div>
+              </div>
+
+              <h3 className="mt-10 font-display text-xl font-semibold text-ink">How Long Are the Drives?</h3>
+              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-soft">
+                The core loop is about 720 km by road, with each leg about 4 to 6 hours of driving (
+                <a
+                  href="https://en.wikipedia.org/wiki/Golden_Triangle_(India)"
+                  className="text-maroon underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Golden Triangle overview
+                </a>
+                ). These are the typical times we plan with; traffic, winter fog and stops add time.
+              </p>
+              <div className="mt-4 overflow-x-auto rounded-2xl border border-sand bg-white">
+                <table className="w-full min-w-[560px] border-collapse text-left text-sm">
+                  <caption className="sr-only">Typical drive times on Golden Triangle routes</caption>
+                  <thead>
+                    <tr className="border-b border-sand text-ink">
+                      <th scope="col" className="px-4 py-3 font-semibold">Leg</th>
+                      <th scope="col" className="px-4 py-3 font-semibold">Typical time</th>
+                      <th scope="col" className="px-4 py-3 font-semibold">Note</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-ink-soft">
+                    {driveTimes.map((d) => (
+                      <tr key={d.leg} className="border-b border-sand/60 last:border-0">
+                        <th scope="row" className="px-4 py-3 font-medium text-ink">{d.leg}</th>
+                        <td className="px-4 py-3 whitespace-nowrap">{d.time}</td>
+                        <td className="px-4 py-3">{d.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 className="mt-10 font-display text-xl font-semibold text-ink">Season Notes</h3>
+              <ul className="mt-3 max-w-3xl list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-ink-soft">
+                <li><span className="font-semibold text-ink">October to March</span> is the main season, with warm days and cool nights.</li>
+                <li><span className="font-semibold text-ink">December and January</span> bring morning fog around Delhi and Agra, which can delay early drives, trains and flights, and make a misty Taj sunrise.</li>
+                <li><span className="font-semibold text-ink">April to June</span> is very hot; we plan sightseeing for early morning and late afternoon.</li>
+                <li><span className="font-semibold text-ink">July to September</span> is the monsoon: greener and quieter, but Ranthambore National Park is closed.</li>
+                <li>The Taj Mahal is <span className="font-semibold text-ink">closed on Fridays</span> and opens 30 minutes before sunrise (
+                  <a href="https://tajmahal.gov.in/visiting-hours.aspx" className="text-maroon underline" target="_blank" rel="noopener noreferrer">official visiting hours</a>
+                  ), so we build every itinerary around that. See our{" "}
+                  <Link href="/travel-guide/taj-mahal-visiting-guide" className="text-maroon underline">Taj Mahal visiting guide</Link>.
+                </li>
+              </ul>
+            </Reveal>
+          </div>
+        </section>
+
+        <TripPhotos
+          heading="Our Guests on the Golden Triangle"
+          photos={[tripPhotos.hawaMahal, tripPhotos.udaipurGroup, tripPhotos.palaceSteps]}
         />
 
         <CityGrid

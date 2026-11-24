@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const august: MonthContent = {
   slug: "august",
   name: "August",
-  metaTitle: "India in August: Weather by Region & Best Time to Go",
+  metaTitle: "India Weather in August: Temperatures & Where to Go",
   metaDescription:
-    "August is deep monsoon season across most of India, with Independence Day and Teej among its highlights — Leh & Ladakh remains the clearest exception.",
+    "India weather in August: 26–34°C, humid, peak monsoon in most regions; Ladakh stays dry at 10–24°C. Independence Day, Teej and where to go.",
   heroImage: "/images/destinations/Leh-4.webp",
   heroImageAlt: "Motorbikes parked beside Pangong Lake, Ladakh",
   heroHeadline: "Best Time to Visit India in August",

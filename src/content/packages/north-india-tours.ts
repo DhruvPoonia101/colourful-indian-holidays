@@ -120,7 +120,7 @@ export const northIndiaTours: PackageContent = {
     {
       question: "Is the price per person fixed?",
       answer:
-        "We quote every trip individually rather than publish a fixed price, and the quote doesn't include the domestic flight segment by default — we only book flights when a client requests it. Send us your travel dates, hotel category, and whether you'd like flights arranged, and we'll reply with an exact quote.",
+        "No. The price shown is an indicative starting price per person, for two people sharing, for the hotel nights in this itinerary. It doesn't include the domestic flight segment — we only book flights when a client requests it. Send us your travel dates, hotel category, and whether you'd like flights arranged, and we'll reply with an exact quote.",
     },
   ],
   relatedPackages: [

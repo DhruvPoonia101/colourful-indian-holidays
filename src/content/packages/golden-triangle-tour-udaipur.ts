@@ -171,7 +171,7 @@ export const goldenTriangleUdaipurTours: PackageContent = {
     {
       question: "Is the price per person fixed?",
       answer:
-        "We quote every trip individually rather than publish a fixed price — the final cost depends on your travel dates, group size, and the hotel category you choose. Send us your dates and hotel preference and we'll reply with an exact quote, usually within 24 hours.",
+        "No. The price shown is an indicative starting price per person, for two people sharing, for the hotel nights in this itinerary, with flights excluded. The final cost depends on your travel dates, group size and hotel category, so we quote every trip individually. Send us your dates and hotel preference and we'll reply with an exact quote, usually within 24 hours.",
     },
     {
       question: "Is Ranakpur worth the detour on the way to Udaipur?",

@@ -404,6 +404,11 @@ export default function RajasthanItineraryGuidePage() {
             <Link href="/experiences/cultural-tours" className="text-maroon underline">
               Cultural Tours
             </Link>
+            . If you would rather see Rajasthan by luxury train, the Palace on Wheels covers eight
+            stops in seven nights, and our sister site lists its{" "}
+            <a href="https://palaceonwheelstour.com/price" target="_blank" rel="noopener noreferrer" className="text-maroon underline">
+              2026-27 ticket prices
+            </a>
             .
           </ArticleP>
 

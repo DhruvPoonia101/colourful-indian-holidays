@@ -39,7 +39,7 @@ const description =
 const pagePath = "/travel-guide/how-much-does-a-private-tour-of-india-cost";
 const heroImage = "/images/destinations/amber-fort-jaipur.webp";
 const datePublished = "2026-10-25";
-const dateModified = datePublished;
+const dateModified = "2026-11-24";
 
 export const metadata: Metadata = {
   title: `${title} (2026 Prices)`,
@@ -183,7 +183,7 @@ export default function CostGuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
-          factsCheckedOn="2026-10-25"
+          factsCheckedOn="2026-11-24"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I'd like a price for a private tour of India with Colourful Indian Holidays." />
@@ -241,20 +241,25 @@ export default function CostGuidePage() {
           <CurrencyControl className="mt-3" />
 
           <ArticleP>
+            <span className="font-semibold text-ink">How we set these prices:</span> they are our own
+            starting rates, last reviewed on 25 October 2026. We compared the published prices of
+            other private-tour operators selling the same kind of trip (private car and driver,
+            English-speaking guide, 3-4 star or heritage hotels), which worked out to roughly US$90
+            to US$130 per person per day, and set ours inside that range. The comparison below
+            names and links the sources. Each price is per person, for two people sharing a room, for
+            the number of hotel nights shown.
+          </ArticleP>
+
+          <ArticleP>
             <span className="font-semibold text-ink">Outside India:</span> starting prices per person
             per night are about <Price usd={RATE_PER_NIGHT_USD.nepal} /> for Nepal,{" "}
             <Price usd={RATE_PER_NIGHT_USD.ladakh} /> for Ladakh, <Price usd={RATE_PER_NIGHT_USD.kashmir} />{" "}
             for Kashmir and <Price usd={RATE_PER_NIGHT_USD.bhutan} /> for Bhutan. A 7-night Bhutan trip
             starts from about <Price usd={7 * RATE_PER_NIGHT_USD.bhutan} />. Bhutan costs more because
             the government charges visitors a Sustainable Development Fee of US$100 per person per
-            night, which is{" "}
-            <a
-              href="https://littlebhutan.com/travel-guide/bhutan-sdf/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-maroon underline"
-            >
-              confirmed through 31 August 2027
+            night, which the Department of Tourism has{" "}
+            <a href="https://www.bhutan.travel/announcements" className="text-maroon underline" target="_blank" rel="noopener noreferrer">
+              extended to 31 December 2029
             </a>
             . See our{" "}
             <Link href="/tours/bhutan-tours" className="text-maroon underline">Bhutan tours</Link>,{" "}

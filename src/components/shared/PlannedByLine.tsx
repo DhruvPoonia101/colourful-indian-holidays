@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /**
  * A small, single-line attribution for tour, experience and destination
  * pages — deliberately lighter than the blog's ArticleByline (no photo,
@@ -5,6 +7,9 @@
  * Placed just above the closing JourneyCTA on every page that uses it.
  * Addresses the audit's Content Quality finding that these 118 pages
  * carry no named author or reviewer at all.
+ *
+ * Reviewer (Narendra Poonia, Founder) added at Dhruv's request on 24 Nov 2026
+ * for the audit's "named operations reviewer" recommendation.
  *
  * Name and framing confirmed directly by Dhruv (30 Sep 2026): his own
  * name, "planned by" rather than "written by" since these pages aren't
@@ -22,7 +27,14 @@ export function PlannedByLine() {
       >
         Dhruv Poonia
       </a>
-      , Digital &amp; Marketing Manager
+      , Digital &amp; Marketing Manager · Reviewed by{" "}
+      <Link
+        href="/about-us#founder"
+        className="font-medium text-ink-soft underline decoration-ink-soft/30 underline-offset-2 hover:decoration-ink-soft"
+      >
+        Narendra Poonia
+      </Link>
+      , Founder
     </p>
   );
 }

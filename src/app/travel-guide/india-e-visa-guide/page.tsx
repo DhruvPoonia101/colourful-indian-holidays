@@ -41,7 +41,7 @@ const description =
 const pagePath = "/travel-guide/india-e-visa-guide";
 const heroImage = "/images/destinations/delhi-india-gate.webp";
 const datePublished = "2026-09-25";
-const dateModified = datePublished;
+const dateModified = "2026-11-24";
 
 export const metadata: Metadata = {
   title,
@@ -143,6 +143,21 @@ export default function IndiaEVisaGuidePage() {
 
         <ArticleBody>
           <ArticleP>
+            <span className="font-semibold text-ink">
+              Most tourists need an India e-Tourist visa, applied for online before departure in
+              one of three versions: 30 days (double entry), 1 year or 5 years (multiple entry).
+              On the 1-year and 5-year visas, US, UK, Canadian and Japanese citizens can stay up to
+              180 days per visit and most others 90 days. Every foreign visitor also files a free
+              e-Arrival Card within 72 hours of landing.
+            </span>
+          </ArticleP>
+          <p className="my-4 rounded-xl border border-sand bg-cream/60 px-4 py-3 text-sm text-ink-soft">
+            This is general travel guidance, not immigration or legal advice. The{" "}
+            <a href="https://indianvisaonline.gov.in/evisa/" className="text-maroon underline" target="_blank" rel="noopener noreferrer">official e-Visa portal</a>{" "}
+            is the final word on eligibility, fees and stay limits for your passport.
+          </p>
+
+          <ArticleP>
             Almost every international traveller visiting India for tourism needs to apply for an
             e-Visa before departure — there&apos;s no visa-on-arrival for the vast majority of
             nationalities, and the rules differ more by passport than most people expect going in.
@@ -241,17 +256,47 @@ export default function IndiaEVisaGuidePage() {
             rules for you unless you actually hold an Emirati passport.
           </ArticleP>
           <ArticleP>
-            As a quick reference, here&apos;s how the stay limit breaks down for six commonly asked
-            about nationalities on the 1-year and 5-year e-Tourist visas:
+            As a quick reference, here&apos;s how long you can stay on each e-Tourist visa for the
+            passports we&apos;re asked about most:
           </ArticleP>
-          <ArticleUL>
-            <li><span className="font-semibold text-ink">United States</span> — up to 180 days per visit</li>
-            <li><span className="font-semibold text-ink">United Kingdom</span> — up to 180 days per visit</li>
-            <li><span className="font-semibold text-ink">Canada</span> — up to 180 days per visit</li>
-            <li><span className="font-semibold text-ink">Australia</span> — up to 90 days per visit</li>
-            <li><span className="font-semibold text-ink">Germany</span> — up to 90 days per visit</li>
-            <li><span className="font-semibold text-ink">UAE (Emirati passport holders only)</span> — separate Visa-on-Arrival option, up to 60 days, available only if you&apos;ve previously held an Indian e-Visa or regular visa</li>
-          </ArticleUL>
+          <div className="my-2 overflow-x-auto rounded-2xl border border-sand bg-white">
+            <table className="w-full min-w-[560px] border-collapse text-left text-sm sm:text-base">
+              <caption className="sr-only">
+                Maximum stay per visit on India&apos;s 30-day, 1-year and 5-year e-Tourist visas by nationality
+              </caption>
+              <thead>
+                <tr className="border-b border-sand text-ink">
+                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">Passport</th>
+                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">30-day e-Visa</th>
+                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">1-year e-Visa</th>
+                  <th scope="col" className="px-3 py-3 font-semibold sm:px-5">5-year e-Visa</th>
+                </tr>
+              </thead>
+              <tbody className="text-ink-soft">
+                {[
+                  ["United States", "180 days"],
+                  ["United Kingdom", "180 days"],
+                  ["Canada", "180 days"],
+                  ["Japan", "180 days"],
+                  ["Australia", "90 days"],
+                  ["Germany", "90 days"],
+                  ["Most other eligible countries", "90 days"],
+                ].map(([country, stay]) => (
+                  <tr key={country} className="border-b border-sand/60 last:border-0">
+                    <th scope="row" className="px-3 py-3 font-medium text-ink sm:px-5">{country}</th>
+                    <td className="px-3 py-3 sm:px-5">30 days from arrival</td>
+                    <td className="px-3 py-3 sm:px-5">Up to {stay} per visit</td>
+                    <td className="px-3 py-3 sm:px-5">Up to {stay} per visit</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3 text-xs italic text-ink-soft/80">
+            On every tourist visa, total time in India is generally capped at 180 days in a calendar
+            year. Emirati passport holders have a separate visa-on-arrival option of up to 60 days,
+            available only if they have held an Indian e-Visa or regular visa before.
+          </p>
           <ArticleP>
             This list isn&apos;t exhaustive — dozens of other nationalities are eligible for the
             e-Tourist visa on the standard 90-day allowance — but it covers the passports we&apos;re

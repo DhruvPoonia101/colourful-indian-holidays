@@ -140,7 +140,7 @@ export const wildlifeTours: PackageContent = {
     {
       question: "Is the price per person fixed?",
       answer:
-        "We quote every trip individually rather than publish a fixed price — the final cost depends on your travel dates, group size, hotel category, and whether you'd like a private (non-shared) safari jeep. Send us your dates and we'll reply with an exact quote.",
+        "No. The price shown is an indicative starting price per person, for two people sharing, for the hotel nights in this itinerary. The final cost depends on your travel dates, group size, hotel category, and whether you'd like a private (non-shared) safari jeep. Send us your dates and we'll reply with an exact quote.",
     },
     {
       question: "Why include Sariska if Ranthambore has better sighting odds?",

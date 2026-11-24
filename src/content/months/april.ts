@@ -3,9 +3,9 @@ import type { MonthContent } from "./types";
 export const april: MonthContent = {
   slug: "april",
   name: "April",
-  metaTitle: "India in April: Weather by Region & Best Time to Go",
+  metaTitle: "India Weather in April: Temperatures & Where to Go",
   metaDescription:
-    "April brings serious heat to Rajasthan and Delhi, while Himachal, Darjeeling and Sikkim bloom in spring — and Ladakh's high passes begin to reopen.",
+    "India weather in April: 22–38°C in Delhi and Rajasthan, 12–24°C in Himachal. Head for the hills, where Darjeeling, Sikkim and Himachal bloom.",
   heroImage: "/images/destinations/Darjeeling.webp",
   heroImageAlt: "Darjeeling hillside town wrapped in cloud",
   heroHeadline: "Best Time to Visit India in April",

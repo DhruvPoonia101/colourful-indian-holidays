@@ -17,7 +17,7 @@ const description =
 const pagePath = "/travel-guide/hiring-a-car-in-rajasthan";
 const heroImage = "/images/destinations/car-suv.webp";
 const datePublished = "2026-08-31";
-const dateModified = datePublished; // bump when this article is next revised
+const dateModified = "2026-11-24";
 
 export const metadata: Metadata = {
   title,
@@ -85,6 +85,15 @@ export default function HiringACarInRajasthanGuidePage() {
         <ArticleTopCTA whatsappMessage="Hi! I'd like some advice on the right car/vehicle for my Rajasthan trip with Colourful Indian Holidays." />
 
         <ArticleBody>
+          <ArticleP>
+            <span className="font-semibold text-ink">
+              Hire a car with a private driver rather than driving yourself: Rajasthan&apos;s
+              distances are long (Jaipur to Jodhpur is close to six hours), traffic and rural roads
+              are unfamiliar, and a driver handles navigation and parking. A sedan suits couples,
+              an SUV or Tempo Traveller suits families and small groups.
+            </span>
+          </ArticleP>
+
           <ArticleP>
             Almost every international visitor who travels Rajasthan by road does it with a
             private driver rather than behind the wheel themselves, and once you understand why,
