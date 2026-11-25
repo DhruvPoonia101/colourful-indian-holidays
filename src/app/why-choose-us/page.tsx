@@ -57,7 +57,7 @@ const processSteps = [
   {
     title: "1. Tell Us Your Dates & Interests",
     description:
-      "A message on WhatsApp, email, or our contact form with your rough dates, budget range and what you'd like to see. We reply within 24 hours, usually with questions to sharpen the plan rather than a generic quote.",
+      "A message on WhatsApp, email, or our contact form with your rough dates, budget range and what you'd like to see. We usually reply within 2 hours, often with questions to sharpen the plan rather than a generic quote.",
   },
   {
     title: "2. We Draft a Real Itinerary",

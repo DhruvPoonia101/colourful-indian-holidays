@@ -200,7 +200,7 @@ export default function FaqPage() {
           eyebrow="Start Your Journey"
           headline="Still Have a Question?"
           headlineItalic="Just Ask."
-          subtext="Message us directly and we'll reply within 24 hours — or tell us your dates and we'll start drafting an itinerary."
+          subtext="Message us directly and we'll usually reply within 2 hours — or tell us your dates and we'll start drafting an itinerary."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage={`Hi! I have a question before booking my trip with ${SITE_NAME}.`}

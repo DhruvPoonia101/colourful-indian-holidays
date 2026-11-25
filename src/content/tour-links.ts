@@ -42,7 +42,7 @@ export const TOUR_LINKS: Record<string, TourLink> = {
     href: "/tours/maharashtra-tour",
     label: "Maharashtra Tour",
     title: "Visit Maharashtra on a private tour",
-    text: "Our Maharashtra tour is planned around your dates, with a private car and driver. Ask for a quote and we will reply within 24 hours.",
+    text: "Our Maharashtra tour is planned around your dates, with a private car and driver. Ask for a quote and we will send a tailored itinerary within 24 hours.",
   },
   "/destinations/andaman-islands": {
     href: "/experiences/andaman-beach-honeymoon",

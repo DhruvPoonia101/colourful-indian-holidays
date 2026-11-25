@@ -280,6 +280,6 @@ export const homeFaqs: FaqItem[] = [
   {
     question: "How do I actually start planning a trip with you?",
     answer:
-      "Send us a message through WhatsApp, email, or the contact form with your rough dates and what you'd like to see — we typically reply within 24 hours with initial ideas and questions to shape a tailored itinerary.",
+      "Send us a message through WhatsApp, email, or the contact form with your rough dates and what you'd like to see — we usually reply within 2 hours with initial ideas and questions, and send a tailored itinerary within 24 hours.",
   },
 ] as const;

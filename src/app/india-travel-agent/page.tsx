@@ -143,7 +143,7 @@ const steps = [
   {
     title: "Send us your dates and interests",
     description:
-      "Message us on WhatsApp, email or the contact form with rough dates, who is travelling and what you want to see. We reply within 24 hours.",
+      "Message us on WhatsApp, email or the contact form with rough dates, who is travelling and what you want to see. We usually reply within 2 hours and send a tailored itinerary within 24 hours.",
   },
   {
     title: "Receive a day-by-day itinerary and quote",
@@ -407,7 +407,7 @@ export default function IndiaTravelAgentPage() {
           eyebrow="Start Your Journey"
           headline="Talk to a Local Agent."
           headlineItalic="Get a Plan Within 24 Hours."
-          subtext="Tell us your dates and what you'd like to see, and we'll reply within 24 hours with a first itinerary."
+          subtext="Tell us your dates and what you'd like to see, and we'll send a first itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like help planning my India trip."

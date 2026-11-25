@@ -138,7 +138,7 @@ export default function FifteenPlusDayToursPage() {
           eyebrow="Start Your Journey"
           headline="Have More Than Two Weeks?"
           headlineItalic="Let's Build It Together."
-          subtext="Send us your rough dates and what you'd like to cover — we'll put together a custom 15+ day itinerary across India, Nepal, Bhutan or Sri Lanka and reply within 24 hours."
+          subtext="Send us your rough dates and what you'd like to cover — we'll put together a custom 15+ day itinerary across India, Nepal, Bhutan or Sri Lanka within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'm planning a trip of 15+ days and would like a custom itinerary from Colourful Indian Holidays."

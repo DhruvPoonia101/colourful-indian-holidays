@@ -34,7 +34,7 @@ const description =
 const pagePath = "/travel-guide/india-health-vaccination-guide";
 const heroImage = "/images/destinations/rishikesh-2.webp";
 const datePublished = "2026-09-25";
-const dateModified = datePublished;
+const dateModified = "2026-11-26";
 
 export const metadata: Metadata = {
   title,
@@ -62,7 +62,7 @@ const faqs: FaqItem[] = [
   {
     question: "Do I need any vaccines to enter India?",
     answer:
-      "No vaccine is legally required for entry, with one exception: proof of yellow fever vaccination is required if you've been in a country with risk of yellow fever transmission in the 6 days before arriving. Beyond that legal requirement, several vaccines are commonly recommended for general health protection — see your doctor or a travel health clinic to discuss what's right for your specific trip.",
+      "For most visitors, no. There are two exceptions, set by India's Ministry of Health: proof of yellow fever vaccination if you arrive within 6 days of leaving a country with yellow fever risk (for travellers aged 9 months and over), and proof of polio vaccination if you arrive from a country with current polio cases. Travellers coming from the US, UK, Europe, Canada or Australia normally meet neither condition. Beyond that, several vaccines are commonly recommended for health protection, so see your doctor or a travel health clinic about your specific trip.",
   },
   {
     question: "How far ahead of my trip should I see a doctor?",
@@ -139,6 +139,7 @@ export default function IndiaHealthVaccinationGuidePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-11-26"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I have a question before booking my trip with Colourful Indian Holidays." />
@@ -198,20 +199,42 @@ export default function IndiaHealthVaccinationGuidePage() {
 
           <ArticleH2>What Vaccines Are Commonly Discussed for India Travel?</ArticleH2>
           <ArticleP>
-            No vaccine is legally required to enter India, with one specific exception: travellers
-            arriving from a country with risk of yellow fever transmission must show proof of
-            yellow fever vaccination. Beyond that legal requirement, health authorities including
-            the US CDC commonly discuss the following with travellers to India — this is general
-            awareness, not a personal recommendation, and which of these (if any) make sense for
-            you is a conversation for your own doctor:
+            Most visitors need no vaccine to enter India. There are two exceptions. Travellers
+            aged 9 months and over who arrive within 6 days of leaving a country with yellow fever
+            risk must show a valid yellow fever certificate, or face quarantine (see{" "}
+            <a
+              href="https://ihpoe.mohfw.gov.in/vaccination.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-maroon underline"
+            >
+              India&apos;s Ministry of Health yellow fever rules
+            </a>
+            ). Travellers arriving from countries with current polio cases must show proof of
+            polio vaccination. Visitors flying in from the US, UK, Europe, Canada or Australia
+            normally meet neither condition, but check if your route passes through Africa, South
+            America or a country with polio cases. Beyond those entry rules, the US CDC&apos;s{" "}
+            <a
+              href="https://www.cdc.gov/yellow-book/hcp/asia/india.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-maroon underline"
+            >
+              Yellow Book chapter on India
+            </a>{" "}
+            discusses the following with travellers. This is general awareness, not a personal
+            recommendation, and which of these make sense for you is a conversation for your own
+            doctor:
           </ArticleP>
           <ArticleUL>
             <li>Being up to date on routine vaccines you&apos;d already have as part of normal healthcare — measles-mumps-rubella (MMR), tetanus-diphtheria-pertussis, and polio among them</li>
             <li>Hepatitis A, commonly discussed for most travellers to India regardless of trip style, since it spreads through contaminated food and water</li>
-            <li>Hepatitis B, typically discussed for longer stays or specific activities that carry exposure risk</li>
-            <li>Typhoid, commonly discussed for most travellers given how food and water are typically sourced while travelling</li>
+            <li>Hepatitis B, which the CDC now recommends for travellers to India generally, with guidance that varies by age</li>
+            <li>Typhoid, recommended by the CDC for most travellers including short trips, partly because typhoid picked up in South Asia is often resistant to common antibiotics</li>
             <li>Japanese encephalitis, typically discussed for longer stays in rural areas or during specific transmission seasons, since it&apos;s spread by mosquitoes in agricultural regions</li>
             <li>Rabies, sometimes discussed for travellers likely to have significant outdoor exposure or animal contact, given India&apos;s population of stray dogs in many areas</li>
+            <li>Chikungunya, a mosquito-borne illness for which a vaccine for adults is now available; worth asking about, especially for longer trips</li>
+            <li>Cholera, which has active transmission in parts of India; your clinic can tell you whether the vaccine is worthwhile for your route</li>
           </ArticleUL>
           <ArticleP>
             This list is a starting point for a conversation with a professional, not a checklist

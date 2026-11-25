@@ -548,7 +548,7 @@ export default function TajMahalVisitingGuidePage() {
           eyebrow="Start Your Journey"
           headline="Ready to See the Taj Mahal?"
           headlineItalic="Tell Us Your Dates."
-          subtext="We will schedule your visit around the Friday closure and the best light, with tickets and a private guide arranged — reply within 24 hours."
+          subtext="We will schedule your visit around the Friday closure and the best light, with tickets and a private guide arranged — itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like help planning a Taj Mahal visit with Colourful Indian Holidays."

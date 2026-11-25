@@ -443,7 +443,7 @@ export default function PrivateToursOfIndiaPage() {
           eyebrow="Start Your Journey"
           headline="Your Own Guide, Driver and Pace."
           headlineItalic="Tell Us Your Dates."
-          subtext="Tell us when you are travelling and what you would like to see, and we will reply within 24 hours with a first itinerary."
+          subtext="Tell us when you are travelling and what you would like to see, and we will send a first itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like a quote for a private tour of India."

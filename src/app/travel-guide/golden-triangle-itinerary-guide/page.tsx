@@ -458,7 +458,7 @@ export default function GoldenTriangleItineraryGuidePage() {
           eyebrow="Start Your Journey"
           headline="Ready to Plan Your Golden Triangle?"
           headlineItalic="Tell Us Your Dates."
-          subtext="Tell us how many days you have and we will build the route, with the Taj Mahal on the best available day — reply within 24 hours."
+          subtext="Tell us how many days you have and we will build the route, with the Taj Mahal on the best available day — itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like help planning a Golden Triangle itinerary with Colourful Indian Holidays."

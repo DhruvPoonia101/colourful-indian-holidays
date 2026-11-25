@@ -180,7 +180,7 @@ export default function SriLankaDestinationsHubPage() {
           eyebrow="Start Your Journey"
           headline="Your Sri Lanka Trip Awaits."
           headlineItalic="Which Route Fits?"
-          subtext="Tell us your dates and what you'd like to see — temples, tea country, wildlife or beaches — and we'll build the itinerary and reply within 24 hours."
+          subtext="Tell us your dates and what you'd like to see — temples, tea country, wildlife or beaches — and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like help planning a trip to Sri Lanka."

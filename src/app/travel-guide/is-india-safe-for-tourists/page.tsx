@@ -30,7 +30,7 @@ const description =
 const pagePath = "/travel-guide/is-india-safe-for-tourists";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 const datePublished = "2026-10-25";
-const dateModified = datePublished;
+const dateModified = "2026-11-26";
 
 export const metadata: Metadata = {
   title,
@@ -140,6 +140,7 @@ export default function IsIndiaSafePage() {
           authorUrl="https://www.linkedin.com/in/dhruv-poonia-4b4400288/"
           datePublished={datePublished}
           dateModified={dateModified}
+          factsCheckedOn="2026-11-26"
         />
 
         <ArticleTopCTA whatsappMessage="Hi! I have a question about travelling safely in India before booking with Colourful Indian Holidays." />
@@ -224,7 +225,7 @@ export default function IsIndiaSafePage() {
           </ArticleP>
           <ArticleUL>
             <li>
-              <a href="https://travel.state.gov" target="_blank" rel="noopener noreferrer" className="text-maroon underline">US State Department travel advisories</a>
+              <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/India.html" target="_blank" rel="noopener noreferrer" className="text-maroon underline">US State Department advice for India</a>
             </li>
             <li>
               <a href="https://www.gov.uk/foreign-travel-advice/india" target="_blank" rel="noopener noreferrer" className="text-maroon underline">UK Foreign Office advice for India</a>
@@ -268,15 +269,15 @@ export default function IsIndiaSafePage() {
 
           <ArticleH2>Emergency Numbers Worth Saving</ArticleH2>
           <ArticleUL>
-            <li><span className="font-semibold text-ink">112</span> — the national emergency number. It connects to police, fire and ambulance, and can be dialled even without a SIM.</li>
-            <li><span className="font-semibold text-ink">1363</span> — the Ministry of Tourism&apos;s 24-hour tourist helpline, which advises visitors in twelve languages including English. It is a guidance line rather than an emergency service, so call 112 first for anything urgent.</li>
+            <li><span className="font-semibold text-ink">112</span> — the national emergency number, run under the Home Ministry&apos;s Emergency Response Support System. It connects to police, fire and ambulance, and on most mobile phones it can be dialled even without a SIM or credit.</li>
+            <li><span className="font-semibold text-ink">1363 or 1800-11-1363</span> — the Ministry of Tourism&apos;s 24x7 toll-free tourist helpline, which advises visitors in 12 languages, 10 of them international (see the{" "}<a href="https://tourism.gov.in/sites/default/files/2026-02/Ministry%20of%20Tourism%20has%20set%20up%20a%2024x7%20Multi-Lingual%20Tourist%20Helpline.pdf" target="_blank" rel="noopener noreferrer" className="text-maroon underline">Ministry of Tourism notice</a>). It is a guidance line rather than an emergency service, so call 112 first for anything urgent.</li>
             <li><span className="font-semibold text-ink">1091</span> — the women-in-distress helpline, with 181 also used in many states.</li>
             <li><span className="font-semibold text-ink">139</span> — Indian Railways help, for problems on a train.</li>
           </ArticleUL>
           <ArticleP>
-            A foreign SIM roaming in India may not connect to short codes such as 1363. If a
-            number will not go through, ask your hotel to call for you, and keep our number and
-            your driver&apos;s saved as a fallback.
+            A foreign SIM roaming in India may not connect to short codes such as 1363. Try the
+            full number, 1800-11-1363, and if that will not go through either, ask your hotel to
+            call for you. Keep our number and your driver&apos;s saved as a fallback.
           </ArticleP>
 
           <ArticleH2>The Bottom Line</ArticleH2>
@@ -284,7 +285,7 @@ export default function IsIndiaSafePage() {
             India rewards preparation. Know the common scams, drink safe water, insure the trip,
             check your own government&apos;s advice, and travel with people who handle the awkward
             parts for you. If you would like a trip built around exactly that, tell us your dates
-            and route and we will reply within 24 hours.
+            and route. We usually reply within 2 hours and send a tailored itinerary within 24 hours.
           </ArticleP>
 
           <ArticleFAQ faqs={faqs} />
