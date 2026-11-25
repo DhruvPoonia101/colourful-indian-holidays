@@ -374,7 +374,7 @@ export default function ShekhawatiGuidePage() {
           eyebrow="Start Your Journey"
           headline="Add Shekhawati to Your Rajasthan Trip."
           headlineItalic="Where Will You Begin?"
-          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a trip that includes Shekhawati with Colourful Indian Holidays."

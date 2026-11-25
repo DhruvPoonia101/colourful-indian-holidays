@@ -12,7 +12,7 @@ import { associations } from "@/content/home";
 
 const title = "Awards & Recognition | Colourful Indian Holidays";
 const description =
-  "IATO-registered and recognised by Rajasthan Tourism and the Ministry of Tourism, with a 4.9★ rating on both Tripadvisor and Google.";
+  "IATO and TAAI member, recognised by Rajasthan Tourism and the Ministry of Tourism, with a 4.9★ rating on both Tripadvisor and Google.";
 const pagePath = "/awards-recognition";
 
 export const metadata: Metadata = {
@@ -53,6 +53,16 @@ const accreditations = [
       "A state-level recognition from the Rajasthan Tourism department, relevant given how much of our itinerary work is built around the state's forts, palaces and desert circuits.",
     href: "/documents/rajasthan-tourism-certificate.pdf",
   },
+  {
+    // No logo file: TAAI's mark is not used without its permission, so the
+    // card shows the acronym as text instead (see the render below).
+    src: null,
+    alt: "TAAI — Travel Agents Association of India member",
+    title: "TAAI Member",
+    description:
+      "The Travel Agents Association of India, founded in 1951, is the country's national association of travel agents and tour operators. Membership is a second, independent trade-body check alongside IATO.",
+    href: "https://travelagentsofindia.com",
+  },
 ];
 
 const travellersChoiceYears = associations.filter((a) => a.alt.includes("Travellers' Choice"));
@@ -84,7 +94,7 @@ export default function AwardsRecognitionPage() {
               />
             </Reveal>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-3">
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {accreditations.map((item, index) => (
                 <Reveal key={item.title} delay={index * 0.1}>
                   <a
@@ -94,13 +104,23 @@ export default function AwardsRecognitionPage() {
                     className="group flex h-full flex-col rounded-2xl border border-sand bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                   >
                     <div className="relative h-16 w-full">
-                      <Image
-                        src={item.src}
-                        alt={item.alt}
-                        fill
-                        sizes="200px"
-                        className="object-contain object-left"
-                      />
+                      {item.src ? (
+                        <Image
+                          src={item.src}
+                          alt={item.alt}
+                          fill
+                          sizes="200px"
+                          className="object-contain object-left"
+                        />
+                      ) : (
+                        <span
+                          role="img"
+                          aria-label={item.alt}
+                          className="flex h-16 items-center font-display text-3xl font-semibold tracking-wide text-maroon"
+                        >
+                          TAAI
+                        </span>
+                      )}
                     </div>
                     <h3 className="mt-4 font-display text-lg font-semibold text-maroon">
                       {item.title}

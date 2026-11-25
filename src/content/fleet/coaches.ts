@@ -6,7 +6,7 @@ export const coaches: VehicleContent = {
   tagline: "13+ Travellers",
   metaTitle: "Coach & Bus Rental with Driver | India Group Travel",
   metaDescription:
-    "A full-size, air-conditioned coach with a private driver — for large groups, corporate trips, and family reunions travelling India together.",
+    "Air-conditioned coach with a private driver for large groups and corporate trips in India. Fuel, tolls, parking, state taxes and driver allowance included.",
   heroImage: "/images/destinations/car-coach.webp",
   heroImageAlt: "Coach bus for group rental",
   heroHeadline: "Coaches — Large Group Travel with Driver",

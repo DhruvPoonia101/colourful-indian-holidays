@@ -69,12 +69,20 @@ export function organizationJsonLd() {
       opens: "00:00",
       closes: "23:59",
     },
-    // Accreditation stated on the site's trust badges (IATO membership page).
-    memberOf: {
-      "@type": "Organization",
-      name: "Indian Association of Tour Operators (IATO)",
-      url: "https://iato.in",
-    },
+    // IATO: stated on the site's trust badges (IATO membership page).
+    // TAAI: membership confirmed by Dhruv on 25 Nov 2026.
+    memberOf: [
+      {
+        "@type": "Organization",
+        name: "Indian Association of Tour Operators (IATO)",
+        url: "https://iato.in",
+      },
+      {
+        "@type": "Organization",
+        name: "Travel Agents Association of India (TAAI)",
+        url: "https://travelagentsofindia.com",
+      },
+    ],
     sameAs: BUSINESS.sameAs,
     // aggregateRating intentionally omitted: the page visibly shows two
     // separate, equally-prominent rating sources (Google 4.9/140+ and

@@ -109,6 +109,8 @@ export function TripPlannerBar() {
       // rather than resetting the form, so we don't lose the itinerary context.
       setStatus("success");
       setIsDetailsOpen(true);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "trip_planner_submitted", destination });
       // OpenAI Ads: one lead per trip-planner journey, counted when step 1
       // (trip + email) is accepted. Step 2 only enriches the same lead.
       trackLead();
@@ -165,6 +167,8 @@ export function TripPlannerBar() {
       }
 
       setDetailsStatus("success");
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "trip_planner_details_submitted", country });
     } catch (err) {
       setDetailsStatus("error");
       setDetailsErrorMessage(err instanceof Error ? err.message : "Something went wrong.");
@@ -349,7 +353,7 @@ export function TripPlannerBar() {
                       Thanks, {fullName || "there"}!
                     </p>
                     <p className="mt-2 text-sm text-ink-soft">
-                      We&apos;ve got your details and will reply within 24 hours.
+                      We&apos;ve got your details. We usually reply within 2 hours, and send a tailored itinerary and quote within 24 hours.
                     </p>
                   </div>
                 ) : (

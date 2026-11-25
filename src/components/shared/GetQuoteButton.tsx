@@ -76,6 +76,10 @@ export function GetQuoteButton({
   const open = () => {
     setIsOpen(true);
     setFormLoadedAt(Date.now()); // reset the time-trap for each fresh open, not just page load
+    // Start of the quote funnel (quote_opened -> quote_submitted), so GA4 can
+    // show how many people who open the form go on to send it, by page.
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "quote_opened", form_type: variant, page_name: pageName });
   };
 
   const close = () => {
@@ -206,8 +210,8 @@ export function GetQuoteButton({
                     <p className="font-display text-xl font-semibold text-ink">
                       Thanks, {fullName || "there"}!
                     </p>
-                    <p className="mt-2 text-sm text-ink-soft">
-                      We&apos;ve got your request and will reply within 24 hours.
+                    <p className="mt-2 text-sm text-ink-soft" role="status">
+                      We&apos;ve got your request. We usually reply within 2 hours, and send a tailored itinerary and quote within 24 hours.
                     </p>
                   </div>
                 ) : (
@@ -216,6 +220,8 @@ export function GetQuoteButton({
                     <input
                       type="text"
                       required
+                      aria-label="Full name"
+                      autoComplete="name"
                       placeholder="Full Name"
                       value={fullName}
                       onChange={(event) => setFullName(event.target.value)}
@@ -224,6 +230,8 @@ export function GetQuoteButton({
                     <input
                       type="email"
                       required
+                      aria-label="Email address"
+                      autoComplete="email"
                       placeholder="Email Address"
                       value={email}
                       onChange={(event) => setEmail(event.target.value)}
@@ -231,8 +239,9 @@ export function GetQuoteButton({
                     />
                     <input
                       type="tel"
-                      required
-                      placeholder="Phone / WhatsApp Number"
+                      aria-label="Phone or WhatsApp number (optional)"
+                      autoComplete="tel"
+                      placeholder="Phone / WhatsApp (optional)"
                       value={phone}
                       onChange={(event) => setPhone(event.target.value)}
                       className={fieldClass}
@@ -243,6 +252,7 @@ export function GetQuoteButton({
                         <input
                           type="text"
                           required
+                          aria-label="Route or destination"
                           placeholder="Route / Destination (e.g. Jaipur to Udaipur)"
                           value={route}
                           onChange={(event) => setRoute(event.target.value)}
@@ -253,6 +263,7 @@ export function GetQuoteButton({
                             ref={dateInputRef}
                             type="date"
                             required
+                            aria-label="Travel date"
                             min={todayISO}
                             max={twoYearsOutISO}
                             value={date}
@@ -266,6 +277,7 @@ export function GetQuoteButton({
                           />
                         </div>
                         <textarea
+                          aria-label="Anything else we should know (optional)"
                           placeholder="Anything else we should know? (optional)"
                           rows={3}
                           value={message}
@@ -277,6 +289,7 @@ export function GetQuoteButton({
                       <>
                         <select
                           required
+                          aria-label="Preferred travel month"
                           value={travelMonth}
                           onChange={(event) => setTravelMonth(event.target.value)}
                           className={`${fieldClass} ${travelMonth ? "text-ink" : "text-ink-soft/60"}`}
@@ -290,6 +303,7 @@ export function GetQuoteButton({
                         </select>
                         <select
                           required
+                          aria-label="Number of travellers"
                           value={travellers}
                           onChange={(event) => setTravellers(event.target.value)}
                           className={`${fieldClass} ${travellers ? "text-ink" : "text-ink-soft/60"}`}
@@ -302,6 +316,7 @@ export function GetQuoteButton({
                           ))}
                         </select>
                         <textarea
+                          aria-label="Special requests (optional)"
                           placeholder="Special Requests (optional)"
                           rows={3}
                           value={message}
@@ -328,8 +343,12 @@ export function GetQuoteButton({
                     </button>
 
                     {status === "error" && (
-                      <p className="text-center text-sm font-medium text-maroon">{errorMessage}</p>
+                      <p className="text-center text-sm font-medium text-maroon" role="alert">{errorMessage}</p>
                     )}
+                    <p className="text-center text-xs text-ink-soft/80">
+                      We use these details only to reply to your enquiry. See our{" "}
+                      <a href="/privacy-policy" className="underline">privacy policy</a>.
+                    </p>
                   </form>
                 )}
               </div>

@@ -157,7 +157,7 @@ export function ContactForm() {
 
         <div>
           <label htmlFor="phone" className="sr-only">
-            Phone number
+            Phone or WhatsApp number (optional)
           </label>
           <input
             id="phone"
@@ -165,7 +165,8 @@ export function ContactForm() {
             type="tel"
             value={phone}
             onChange={(event) => setPhone(event.target.value)}
-            placeholder="Phone number"
+            autoComplete="tel"
+            placeholder="Phone / WhatsApp (optional)"
             className={inputClass}
           />
         </div>
@@ -252,16 +253,22 @@ export function ContactForm() {
       </button>
 
       {status === "success" && (
-        <p className="mt-4 text-sm font-medium text-gold-dark">
-          Thanks! We&apos;ve got your enquiry and will reply within 24 hours.
+        <p className="mt-4 text-sm font-medium text-gold-dark" role="status">
+          Thanks! We&apos;ve got your enquiry. We usually reply within 2 hours, and send a tailored itinerary and quote within 24 hours.
         </p>
       )}
       {status === "error" && (
-        <p className="mt-4 text-sm font-medium text-maroon">{errorMessage}</p>
+        <p className="mt-4 text-sm font-medium text-maroon" role="alert">{errorMessage}</p>
       )}
       {status !== "success" && status !== "error" && (
         <p className="mt-4 text-xs text-ink-soft/70">
-          We&apos;ll reply directly to the email address you provide, usually within 24 hours.
+          We&apos;ll reply to the email address you provide, usually within 2 hours, and send a
+          tailored itinerary within 24 hours. We use these details only to reply to your enquiry
+          (see our{" "}
+          <a href="/privacy-policy" className="underline">
+            privacy policy
+          </a>
+          ).
         </p>
       )}
     </form>

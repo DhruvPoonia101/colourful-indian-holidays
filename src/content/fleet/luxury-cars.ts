@@ -6,7 +6,7 @@ export const luxuryCars: VehicleContent = {
   tagline: "Premium Travel",
   metaTitle: "Luxury Car Rental with Driver | India",
   metaDescription:
-    "A premium sedan with an experienced, formally presented driver — for travellers who want a higher standard of vehicle and service throughout their India trip.",
+    "Premium car with an experienced, formally presented driver for your India trip. Fuel, tolls, parking, state taxes and driver allowance included.",
   heroImage: "/images/destinations/car-luxury.webp",
   heroImageAlt: "Luxury sedan for private rental",
   heroHeadline: "Luxury Cars — A Higher Standard of Travel",

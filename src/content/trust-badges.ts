@@ -26,6 +26,6 @@ export const DEFAULT_TRUST_BADGES: TrustBadge[] = [
   },
   {
     label: "4.9 Star Rating on Trip Advisor",
-    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
   },
 ];

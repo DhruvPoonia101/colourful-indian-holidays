@@ -174,7 +174,7 @@ export default function FestivalToursPage() {
           eyebrow="Start Your Journey"
           headline="Your Festival Trip Awaits."
           headlineItalic="Which Will You Choose?"
-          subtext="Tell us which festival interests you and your travel window — we'll build an itinerary around it, usually with a reply within 24 hours."
+          subtext="Tell us which festival interests you and your travel window — we'll build an itinerary around it, usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a trip around an Indian festival with Colourful Indian Holidays."

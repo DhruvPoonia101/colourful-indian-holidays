@@ -146,7 +146,7 @@ export const luxuryIndiaTours: ExperienceContent = {
   ],
   bestTimeToVisit: {
     heading: "October–March is Best",
-    note: "Cool, comfortable conditions suit this itinerary's unhurried pace across all four cities. If your dates allow it, ask us about a Palace on Wheels extension or add-on — the luxury train we book through our sister site, Palace on Wheels Tour — for travellers who want the rail experience specifically alongside this itinerary's hotel-based approach.",
+    note: "Cool, comfortable conditions suit this itinerary's unhurried pace across all four cities. If your dates allow it, ask us about a Palace on Wheels extension or add-on — our sister company's luxury train, for travellers who want the rail experience specifically alongside this itinerary's hotel-based approach.",
   },
   relatedDestinations: [
     {
@@ -185,7 +185,7 @@ export const luxuryIndiaTours: ExperienceContent = {
     {
       question: "Is Colourful Indian Holidays a registered agency?",
       answer:
-        "Yes. We are an IATO-registered agency recognised by Rajasthan Tourism and the Ministry of Tourism, Government of India, based in Jaipur and planning private journeys since 2007. Our guests rate us 4.9 out of 5 on Google (140+ reviews) and on Tripadvisor (282+ reviews).",
+        "Yes. We are an IATO-registered agency recognised by Rajasthan Tourism and the Ministry of Tourism, Government of India, based in Jaipur and planning private journeys since 2007. Our guests rate us 4.9 out of 5 on Google (149 reviews) and on Tripadvisor (285 reviews), as of November 2026.",
     },
     {
       question: "How much deposit do I pay to book a luxury India tour?",
@@ -205,7 +205,7 @@ export const luxuryIndiaTours: ExperienceContent = {
     {
       question: "Can this itinerary be extended with a Palace on Wheels journey?",
       answer:
-        "Yes — the Palace on Wheels luxury train, which we book through our sister site Palace on Wheels Tour, is a genuine option to add either before or after this itinerary for travellers who want the rail experience specifically. Ask us about combining both when you enquire.",
+        "Yes — Palace on Wheels, our sister company's luxury train, is a genuine option to add either before or after this itinerary for travellers who want the rail experience specifically. Ask us about combining both when you enquire.",
     },
     {
       question: "Is this itinerary suitable for a family, or only couples?",

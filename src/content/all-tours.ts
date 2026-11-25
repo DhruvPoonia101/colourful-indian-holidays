@@ -1,6 +1,8 @@
 import type { CityCard } from "@/components/destinations/CityGrid";
 import type { PackageContent } from "@/content/packages/types";
 import { goldenTriangleTours } from "@/content/packages/golden-triangle-tour-classic";
+import { goldenTriangleTour4Days } from "@/content/packages/golden-triangle-tour-4-days";
+import { agraDayTripFromDelhi } from "@/content/packages/agra-day-trip-from-delhi";
 import { goldenTriangleUdaipurTours } from "@/content/packages/golden-triangle-tour-udaipur";
 import { goldenTriangleVaranasiTours } from "@/content/packages/golden-triangle-tour-varanasi";
 import { goldenTriangleRanthamboreTours } from "@/content/packages/golden-triangle-tour-ranthambore";
@@ -67,7 +69,7 @@ function card(p: PackageContent): CityCard {
   const nights = Math.max(days - 1, 1);
   return {
     name: p.name,
-    tagline: `${days} ${days === 1 ? "Day" : "Days"} / ${nights} ${nights === 1 ? "Night" : "Nights"}`,
+    tagline: days === 1 ? "Day Trip" : `${days} Days / ${nights} ${nights === 1 ? "Night" : "Nights"}`,
     description: p.tagline,
     href: `/tours/${p.slug}`,
     image: p.heroImage,
@@ -82,7 +84,7 @@ export const allTourGroups: TourGroup[] = [
     id: "golden-triangle",
     eyebrow: "Golden Triangle & North India",
     heading: "Delhi, Agra & Beyond",
-    tours: [goldenTriangleTours, goldenTriangleUdaipurTours, goldenTriangleVaranasiTours, goldenTriangleRanthamboreTours, goldenTriangleAjmerPushkarTours, tajMahalTours, northIndiaTours, northIndiaHighlights, indiaHighlights].filter((p) => !p.draftPendingReview).map(card),
+    tours: [goldenTriangleTours, goldenTriangleTour4Days, agraDayTripFromDelhi, goldenTriangleUdaipurTours, goldenTriangleVaranasiTours, goldenTriangleRanthamboreTours, goldenTriangleAjmerPushkarTours, tajMahalTours, northIndiaTours, northIndiaHighlights, indiaHighlights].filter((p) => !p.draftPendingReview).map(card),
   },
   {
     id: "rajasthan",

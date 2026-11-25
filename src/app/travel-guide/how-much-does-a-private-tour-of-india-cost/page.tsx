@@ -29,7 +29,8 @@ import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
  *
  * Comparison figures quoted from other sites are attributed and linked:
  * Top Indian Holidays' published estimates, a Star Tours group departure, and
- * Little Bhutan's note on Bhutan's government fee. Re-check them before
+ * the Bhutan Department of Tourism's fee announcement. Top Indian Holidays and
+ * Star Tours figures re-checked 25 Nov 2026 (unchanged). Re-check them before
  * updating this page.
  */
 
@@ -341,7 +342,7 @@ export default function CostGuidePage() {
 
           <ArticleH2>How Does This Compare With Other Options?</ArticleH2>
           <ArticleP>
-            Prices for private India trips vary widely by operator and hotel category. For
+            Prices for private India trips vary widely by operator and hotel category. Both figures below were checked on 25 November 2026. For
             comparison,
             <a
               href="https://www.topindianholidays.com/india-tour-package-cost"

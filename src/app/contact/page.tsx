@@ -69,7 +69,7 @@ export default function ContactPage() {
           breadcrumbs={breadcrumbs}
           eyebrow="Get in Touch"
           headline="Let's Plan Your India Journey"
-          subheadline="Tell us what you have in mind, and our Rajasthan-based travel experts will reply with a tailored itinerary and quote — usually within 24 hours."
+          subheadline="Tell us what you have in mind, and our Rajasthan-based travel experts usually reply within 2 hours, with a tailored itinerary and quote within 24 hours."
           quoteButtonPageName="Contact Us (Header)"
         />
 

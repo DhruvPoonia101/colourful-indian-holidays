@@ -156,7 +156,7 @@ export default function ToolPage() {
           eyebrow="Start Your Journey"
           headline="Know When? Let's Plan It."
           headlineItalic="Tell Us Your Dates."
-          subtext="Every itinerary is built privately around your dates and interests, with your own guide and driver. Tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests, with your own guide and driver. Tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I used the when-to-go planner and would like help choosing dates."

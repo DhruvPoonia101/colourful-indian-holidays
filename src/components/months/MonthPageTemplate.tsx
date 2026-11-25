@@ -219,7 +219,7 @@ export function MonthPageTemplate({ content }: { content: MonthContent }) {
           eyebrow="Start Your Journey"
           headline={`Your ${content.name} Trip Awaits.`}
           headlineItalic="Where Will You Go?"
-          subtext="Tell us your travel dates and where you'd like to go — we'll build an itinerary around the right regions for that time of year, usually with a reply within 24 hours."
+          subtext="Tell us your travel dates and where you'd like to go — we'll build an itinerary around the right regions for that time of year, usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage={`Hi! I'd like to plan a trip to India in ${content.name} with Colourful Indian Holidays.`}

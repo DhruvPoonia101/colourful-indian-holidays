@@ -87,7 +87,7 @@ export default function TravelGuidePage() {
           eyebrow="Start Your Journey"
           headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
-          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a tour with Colourful Indian Holidays."

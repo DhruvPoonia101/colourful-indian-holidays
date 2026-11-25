@@ -171,7 +171,7 @@ export default function PilgrimageToursPage() {
           eyebrow="Start Your Journey"
           headline="Your Pilgrimage Trip Awaits."
           headlineItalic="Which Site Calls You?"
-          subtext="Tell us which sites or occasions interest you and your travel window — we'll build an itinerary around it, usually with a reply within 24 hours."
+          subtext="Tell us which sites or occasions interest you and your travel window — we'll build an itinerary around it, usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a pilgrimage-focused trip with Colourful Indian Holidays."

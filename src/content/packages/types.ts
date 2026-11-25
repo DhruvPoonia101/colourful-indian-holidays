@@ -66,4 +66,11 @@ export type PackageContent = {
    * draft content and pricing can't be indexed or shown in search results.
    */
   draftPendingReview: boolean;
+  /**
+   * For trips the per-night rate in src/lib/pricing.ts doesn't fit, such as
+   * a same-day trip with no hotel night. The page then shows "Price on
+   * request" and the schema states the currency with no amount, instead of
+   * a nights-based figure that would be wrong.
+   */
+  priceOnRequest?: boolean;
 };

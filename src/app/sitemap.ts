@@ -1,43 +1,124 @@
 import type { MetadataRoute } from "next";
 import { execSync } from "node:child_process";
+import fs from "node:fs";
 import path from "node:path";
 import { SITE_URL } from "@/lib/seo/business";
 
-// Fixed fallback date — used only when a real per-file date can't be
-// determined (see getLastModified below). A sitemap that reports every
-// URL as "modified today, on every deploy" carries no real freshness
-// signal and can train Google to stop trusting lastmod entirely (see
-// FULLAUDITREPORT.md finding T3), which is exactly the failure mode a
-// single shared "today" constant would reproduce. Bump this only if the
-// git-based lookup below is ever unavailable for an extended period.
-const FALLBACK_LAST_UPDATED = new Date("2026-09-30");
+/*
+ * Real per-page lastmod, taken from git history.
+ *
+ * A page's date is the newest commit that touched either its own
+ * `src/app<path>/page.tsx` or a `@/content/...` module that page imports
+ * directly (tour itineraries, destination data and so on live there, so a
+ * content-only edit still updates the page's lastmod). Shared modules that
+ * many pages import (trust badges, related-guide lists, the fleet cards,
+ * nav labels) are ignored, so editing one of them doesn't mark the whole
+ * site as changed.
+ *
+ * Shallow clones: Vercel clones about 10 commits deep by default. In a
+ * shallow clone the oldest commit is grafted with no parent, so git reports
+ * every file not touched since then as "changed" in that commit, which made
+ * ~165 URLs share one wrong date (audit, Nov 2026). Commits that are shallow
+ * boundaries are therefore treated as unknown, and when no trustworthy date
+ * is found the URL is published without <lastmod> (an honest omission beats
+ * a wrong date). Set VERCEL_DEEP_CLONE=true in the Vercel project's
+ * environment variables so the build has full history and every URL gets
+ * its real date.
+ */
 
-// Real per-page lastmod, sourced from each page's own git history rather
-// than one shared constant or a fabricated per-page value (see
-// ACTION-PLAN.md #29). Every route in this file maps directly onto a
-// `src/app<path>/page.tsx` source file, so the file's own last commit
-// date is exactly the page's real last-edit date — no guessing involved.
-//
-// This depends on the build having real git history available (true for
-// a standard Vercel deploy, which clones the repo). If git isn't
-// available, or a file's history can't be resolved for any reason, this
-// falls back to FALLBACK_LAST_UPDATED rather than failing the build or
-// reporting a wrong date.
-function getLastModified(urlPath: string): Date {
-  const filePath = path.join("src/app", urlPath, "page.tsx");
+const APP_DIR = path.join(process.cwd(), "src/app");
+const CONTENT_DIR = path.join(process.cwd(), "src/content");
+/** A content module imported by more pages than this counts as shared. */
+const SHARED_IMPORT_THRESHOLD = 8;
+
+function git(args: string): string | null {
   try {
-    const iso = execSync(`git log -1 --format=%cI -- "${filePath}"`, {
+    return execSync(`git ${args}`, {
       cwd: process.cwd(),
       encoding: "utf-8",
       stdio: ["ignore", "pipe", "ignore"],
     }).trim();
-    if (!iso) return FALLBACK_LAST_UPDATED;
-    const date = new Date(iso);
-    if (Number.isNaN(date.getTime())) return FALLBACK_LAST_UPDATED;
-    return date;
   } catch {
-    return FALLBACK_LAST_UPDATED;
+    return null;
   }
+}
+
+const shallowBoundaries: Set<string> = (() => {
+  if (git("rev-parse --is-shallow-repository") !== "true") return new Set();
+  const shallowFile = git("rev-parse --git-path shallow");
+  if (!shallowFile) return new Set();
+  try {
+    const abs = path.isAbsolute(shallowFile) ? shallowFile : path.join(process.cwd(), shallowFile);
+    return new Set(fs.readFileSync(abs, "utf-8").split(/\s+/).filter(Boolean));
+  } catch {
+    return new Set();
+  }
+})();
+
+const CONTENT_IMPORT_RE = /from\s+["']@\/content\/([^"']+)["']/g;
+
+function contentImports(pageFile: string): string[] {
+  try {
+    const src = fs.readFileSync(pageFile, "utf-8");
+    return [...src.matchAll(CONTENT_IMPORT_RE)].map((m) => m[1]);
+  } catch {
+    return [];
+  }
+}
+
+/** How many page.tsx files import each @/content module. */
+const contentImportCounts: Map<string, number> = (() => {
+  const counts = new Map<string, number>();
+  const walk = (dir: string) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name === "page.tsx") {
+        for (const mod of new Set(contentImports(full))) {
+          counts.set(mod, (counts.get(mod) ?? 0) + 1);
+        }
+      }
+    }
+  };
+  try {
+    walk(APP_DIR);
+  } catch {
+    // No source tree available: every lookup below simply falls back.
+  }
+  return counts;
+})();
+
+function resolveContentModule(mod: string): string | null {
+  for (const candidate of [`${mod}.ts`, `${mod}.tsx`, `${mod}/index.ts`, `${mod}/index.tsx`]) {
+    const full = path.join(CONTENT_DIR, candidate);
+    if (fs.existsSync(full)) return full;
+  }
+  return null;
+}
+
+function lastCommitDate(file: string): Date | null {
+  const out = git(`log -1 --format="%H %cI" -- "${path.relative(process.cwd(), file)}"`);
+  if (!out) return null;
+  const [hash, iso] = out.split(" ");
+  if (!hash || !iso || shallowBoundaries.has(hash)) return null;
+  const date = new Date(iso);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function getLastModified(urlPath: string): Date | undefined {
+  const pageFile = path.join(APP_DIR, urlPath, "page.tsx");
+  const files = [pageFile];
+  for (const mod of contentImports(pageFile)) {
+    if ((contentImportCounts.get(mod) ?? 0) > SHARED_IMPORT_THRESHOLD) continue;
+    const resolved = resolveContentModule(mod);
+    if (resolved) files.push(resolved);
+  }
+  let newest: Date | undefined;
+  for (const file of files) {
+    const date = lastCommitDate(file);
+    if (date && (!newest || date > newest)) newest = date;
+  }
+  return newest;
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -1361,6 +1442,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: getLastModified("/tours/golden-triangle-tour-classic"),
       changeFrequency: "monthly",
       priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/tours/golden-triangle-tour-4-days`,
+      lastModified: getLastModified("/tours/golden-triangle-tour-4-days"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/tours/agra-day-trip-from-delhi`,
+      lastModified: getLastModified("/tours/agra-day-trip-from-delhi"),
+      changeFrequency: "monthly",
+      priority: 0.75,
     },
     {
       url: `${SITE_URL}/tours/golden-triangle-tour-ranthambore`,

@@ -128,6 +128,7 @@ export default function AboutUsPage() {
                 ["Trip style", "Private, tailor-made tours with your own car, driver and guide"],
                 ["Languages", BUSINESS.languages.join(", ")],
                 ["Contact", `${BUSINESS.telephone} · ${BUSINESS.email}`],
+                ["Response time", "First reply usually within 2 hours; a tailored itinerary and quote within 24 hours"],
               ].map(([term, value]) => (
                 <div key={term} className="grid gap-1 px-4 py-3 sm:grid-cols-[180px_1fr] sm:gap-4 sm:px-5">
                   <dt className="font-semibold text-ink">{term}</dt>
@@ -145,7 +146,7 @@ export default function AboutUsPage() {
                       </a>
                     </span>
                   ))}
-                  {" · "}
+                  {" · TAAI member · "}
                   <Link href="/awards-recognition" className="text-maroon underline">
                     Rajasthan Tourism recognition
                   </Link>
@@ -198,7 +199,8 @@ export default function AboutUsPage() {
                 <p>
                   Today we work with travellers from the USA, UK, Australia, Canada, across
                   Europe and beyond, speaking English, French, German and Spanish, and we&apos;re
-                  proud to be an IATO-registered agency recognised by Rajasthan Tourism and the
+                  proud to be an IATO-registered agency and a member of the Travel Agents
+                  Association of India (TAAI), recognised by Rajasthan Tourism and the
                   Ministry of Tourism, Government of India. That registration isn&apos;t just a
                   badge on a website — it means the agency you&apos;re booking with is an
                   accountable, verifiable business, which is exactly the kind of reassurance
@@ -327,7 +329,7 @@ export default function AboutUsPage() {
           eyebrow="Start Your Journey"
           headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
-          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a tour with Colourful Indian Holidays."

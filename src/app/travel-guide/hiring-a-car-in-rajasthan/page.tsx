@@ -611,7 +611,7 @@ export default function HiringACarInRajasthanGuidePage() {
           eyebrow="Start Your Journey"
           headline="Your Rajasthan Journey Awaits."
           headlineItalic="How Will You Get There?"
-          subtext="Every itinerary is built privately around your dates, group size and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates, group size and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like some advice on the right car/vehicle for my Rajasthan trip with Colourful Indian Holidays."

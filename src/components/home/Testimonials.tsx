@@ -8,11 +8,12 @@ import { SectionIntro } from "@/components/destinations/SectionIntro";
 import { testimonials } from "@/content/home";
 import { BUSINESS } from "@/lib/seo/business";
 
+// Counts come from BUSINESS so every page shows the same, last-checked numbers.
 const quickStats = [
-  { value: "4.9★", label: "Google Rating", platform: "google" as const },
-  { value: "140+", label: "Google Reviews", platform: "google" as const },
-  { value: "4.9★", label: "Tripadvisor Rating", platform: "tripadvisor" as const },
-  { value: "282+", label: "Tripadvisor Reviews", platform: "tripadvisor" as const },
+  { value: `${BUSINESS.googleRating.ratingValue}★`, label: "Google Rating", platform: "google" as const },
+  { value: `${BUSINESS.googleRating.reviewCount}+`, label: "Google Reviews", platform: "google" as const },
+  { value: `${BUSINESS.aggregateRating.ratingValue}★`, label: "Tripadvisor Rating", platform: "tripadvisor" as const },
+  { value: `${BUSINESS.aggregateRating.reviewCount}+`, label: "Tripadvisor Reviews", platform: "tripadvisor" as const },
   { value: "7900+", label: "Happy Travellers", platform: null },
 ];
 

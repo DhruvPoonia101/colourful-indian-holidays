@@ -490,7 +490,7 @@ export default function MonumentsGuidePage() {
           eyebrow="Start Your Journey"
           headline="Your Rajasthan Journey Awaits."
           headlineItalic="When Will You Go?"
-          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a Rajasthan trip focused on the forts and palaces with Colourful Indian Holidays."

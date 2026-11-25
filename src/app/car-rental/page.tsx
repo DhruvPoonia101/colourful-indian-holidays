@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { CityGrid } from "@/components/destinations/CityGrid";
 import { HighlightsStrip } from "@/components/destinations/HighlightsStrip";
+import { CarHireIncluded } from "@/components/fleet/CarHireIncluded";
 import { JourneyCTA } from "@/components/shared/JourneyCTA";
 import { fleetCards, carRentalHighlights } from "@/content/car-rental-hub";
 import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
@@ -64,12 +65,14 @@ export default function CarRentalHubPage() {
           highlights={carRentalHighlights}
         />
 
+        <CarHireIncluded />
+
         <JourneyCTA
           backgroundImage={heroImage}
           eyebrow="Start Your Journey"
           headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
-          subtext="Tell us your group size and itinerary, and we'll match you with the right vehicle — usually with a reply within 24 hours."
+          subtext="Tell us your group size and itinerary, and we'll match you with the right vehicle — usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to arrange a private car and driver with Colourful Indian Holidays."

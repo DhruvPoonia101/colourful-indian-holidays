@@ -86,7 +86,8 @@ export async function POST(request: Request) {
     );
   }
 
-  const baseValid = Boolean(fullName && email && EMAIL_REGEX.test(email) && phone);
+  // Phone is optional (25 Nov 2026): many international visitors prefer email.
+  const baseValid = Boolean(fullName && email && EMAIL_REGEX.test(email));
   const isCarRental = formType === "carRental";
   const detailsValid = isCarRental ? Boolean(route && date) : Boolean(travelMonth && travellers);
 
@@ -94,8 +95,8 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error: isCarRental
-          ? "Please fill in your name, email, phone, route, and travel date."
-          : "Please fill in your name, email, phone, preferred travel month, and number of travellers.",
+          ? "Please fill in your name, email, route, and travel date."
+          : "Please fill in your name, email, preferred travel month, and number of travellers.",
       },
       { status: 400 }
     );
@@ -149,7 +150,7 @@ export async function POST(request: Request) {
         ${pageUrl ? `<p><strong>Submitted From:</strong> <a href="${pageUrl}">${pageUrl}</a></p>` : ""}
         <p><strong>Name:</strong> ${fullName}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone / WhatsApp:</strong> ${phone}</p>
+        <p><strong>Phone / WhatsApp:</strong> ${phone || "Not given (reply by email)"}</p>
         ${route ? `<p><strong>Route / Destination:</strong> ${route}</p>` : ""}
         ${date ? `<p><strong>Travel Date:</strong> ${date}</p>` : ""}
         ${travelMonth ? `<p><strong>Preferred Travel Month:</strong> ${travelMonth}</p>` : ""}

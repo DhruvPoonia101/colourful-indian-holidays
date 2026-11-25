@@ -21,6 +21,14 @@ import type { CityCard } from "@/components/destinations/CityGrid";
 
 export const threeToFiveDayTours: CityCard[] = [
   {
+    name: "Golden Triangle Tour in 4 Days",
+    tagline: "4 Days / 3 Nights",
+    description: "Delhi, Agra & Jaipur, Short",
+    href: "/tours/golden-triangle-tour-4-days",
+    image: "/images/destinations/fatehpur-sikri.webp",
+    imageAlt: "Fatehpur Sikri's red sandstone courtyards",
+  },
+  {
     name: "Mahabalipuram Tour",
     tagline: "3 Days / 2 Nights",
     description: "UNESCO Rock-Cut Monuments",

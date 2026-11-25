@@ -70,32 +70,32 @@ export const associations = [
   {
     src: "/awards/tripadvisor-2014.webp",
     alt: "TripAdvisor Travellers' Choice 2014",
-    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
   },
   {
     src: "/awards/tripadvisor-2015.webp",
     alt: "TripAdvisor Travellers' Choice 2015",
-    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
   },
   {
     src: "/awards/tripadvisor-2016.webp",
     alt: "TripAdvisor Travellers' Choice 2016",
-    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
   },
   {
     src: "/awards/tripadvisor-2017.webp",
     alt: "TripAdvisor Travellers' Choice 2017",
-    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
   },
   {
     src: "/awards/tripadvisor-2019.webp",
     alt: "TripAdvisor Travellers' Choice 2019",
-    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
   },
   {
     src: "/awards/tripadvisor-2024.webp",
     alt: "TripAdvisor Travellers' Choice 2024",
-    href: "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    href: "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
   },
 ] as const;
 

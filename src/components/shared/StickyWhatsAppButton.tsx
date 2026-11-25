@@ -1,12 +1,35 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { whatsappUrl } from "@/lib/whatsapp";
 
 const DEFAULT_MESSAGE = "Hi! I'd like to plan a trip with Colourful Indian Holidays.";
 
+const FORM_FIELDS = "input, textarea, select";
+
 export function StickyWhatsAppButton() {
+  // Hide while someone is typing in a form field, so the floating button
+  // never covers the field or the submit button (most noticeable on phones,
+  // where the on-screen keyboard pushes fields towards the bottom edge).
+  const [isTyping, setIsTyping] = useState(false);
+
+  useEffect(() => {
+    const onFocusIn = (event: FocusEvent) => {
+      if (event.target instanceof Element && event.target.matches(FORM_FIELDS)) setIsTyping(true);
+    };
+    const onFocusOut = (event: FocusEvent) => {
+      if (event.target instanceof Element && event.target.matches(FORM_FIELDS)) setIsTyping(false);
+    };
+    document.addEventListener("focusin", onFocusIn);
+    document.addEventListener("focusout", onFocusOut);
+    return () => {
+      document.removeEventListener("focusin", onFocusIn);
+      document.removeEventListener("focusout", onFocusOut);
+    };
+  }, []);
+
   return (
     <motion.a
       href={whatsappUrl(DEFAULT_MESSAGE)}
@@ -24,8 +47,10 @@ export function StickyWhatsAppButton() {
       // larger screens anyway.
       className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))] right-5 z-50 flex items-center gap-2.5 rounded-full bg-[#25D366] px-5 py-3.5 text-white shadow-lg transition-transform duration-300 hover:scale-105 active:scale-95 sm:bottom-14 sm:right-6"
       initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ delay: 1, type: "spring", stiffness: 260, damping: 20 }}
+      animate={isTyping ? { scale: 0, opacity: 0 } : { scale: 1, opacity: 1 }}
+      aria-hidden={isTyping || undefined}
+      tabIndex={isTyping ? -1 : undefined}
+      transition={{ delay: isTyping ? 0 : 1, type: "spring", stiffness: 260, damping: 20 }}
     >
       <FaWhatsapp aria-hidden="true" className="h-6 w-6 shrink-0" />
       <span className="whitespace-nowrap text-sm font-bold tracking-wide">Chat on WhatsApp</span>

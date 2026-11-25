@@ -317,11 +317,7 @@ export default function GettingAroundIndiaGuidePage() {
             regions like Rajasthan and Kerala, or the mainland and the Andaman Islands — where the
             time saved clearly outweighs the airport-transfer overhead. Take a train where the
             route itself has appeal, the distance suits an overnight journey, or a specific train
-            (like the Palace on Wheels, whose fares sit alongside India&apos;s other{" "}
-            <a href="https://palaceonwheelstour.com/india-luxury-train-fares" target="_blank" rel="noopener noreferrer" className="text-maroon underline">
-              luxury train fares
-            </a>
-            , or a scenic hill line) is part of what you want to
+            (like the Palace on Wheels, or a scenic hill line) is part of what you want to
             experience rather than just a way to travel. And use a private car with driver for
             everything else — city-to-city legs within a region, all local transfers and
             sightseeing days, and any route where flexibility and door-to-door convenience matter
@@ -408,7 +404,7 @@ export default function GettingAroundIndiaGuidePage() {
           eyebrow="Start Your Journey"
           headline="Let Us Plan the Logistics."
           headlineItalic="You Just Show Up."
-          subtext="Every itinerary is built privately around your dates and interests, with transport worked out from the start — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests, with transport worked out from the start — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I have a question about getting around India before booking my trip with Colourful Indian Holidays."

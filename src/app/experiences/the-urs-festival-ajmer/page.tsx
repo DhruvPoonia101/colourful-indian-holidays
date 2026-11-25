@@ -132,7 +132,7 @@ export default function UrsFestivalAjmerPage() {
           eyebrow="Start Your Journey"
           headline="Time Your Trip Around the Urs Festival."
           headlineItalic="When Will You Go?"
-          subtext="Tell us your travel window and we'll build an itinerary around the festival, usually with a reply within 24 hours."
+          subtext="Tell us your travel window and we'll build an itinerary around the festival, usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a trip around the Urs Festival with Colourful Indian Holidays."

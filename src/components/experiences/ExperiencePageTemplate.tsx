@@ -207,8 +207,8 @@ export function ExperiencePageTemplate({
           headlineItalic="Let's Plan It Together."
           subtext={
             isHoneymoon
-              ? "Every honeymoon here is built privately around your dates and preferences — tell us what you have in mind and we'll reply within 24 hours."
-              : "Every journey here is built privately around your dates and preferences — tell us what you have in mind and we'll reply within 24 hours."
+              ? "Every honeymoon here is built privately around your dates and preferences — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
+              : "Every journey here is built privately around your dates and preferences — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           }
           primaryLabel="Plan My Journey"
           primaryHref="/contact"

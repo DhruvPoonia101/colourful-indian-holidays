@@ -6,7 +6,7 @@ export const sedan: VehicleContent = {
   tagline: "1 – 4 Travellers",
   metaTitle: "Sedan Car Rental with Driver | India",
   metaDescription:
-    "A comfortable, air-conditioned sedan with a private driver — ideal for couples or solo travellers moving between cities in India.",
+    "Air-conditioned sedan with a private driver for couples and solo travellers in India. Fuel, tolls, parking, state taxes and driver allowance included.",
   heroImage: "/images/destinations/car-sedan.webp",
   heroImageAlt: "White sedan car for rental",
   heroHeadline: "Sedan — Private Car with Driver",

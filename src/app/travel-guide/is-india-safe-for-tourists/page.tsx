@@ -306,7 +306,7 @@ export default function IsIndiaSafePage() {
           eyebrow="Start Your Journey"
           headline="Travel India With Support Behind You."
           headlineItalic="Tell Us Your Dates."
-          subtext="Every itinerary is built privately around your dates and interests, with your own guide and driver and 24/7 support. Tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests, with your own guide and driver and 24/7 support. Tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I have a question about travelling safely in India before booking with Colourful Indian Holidays."

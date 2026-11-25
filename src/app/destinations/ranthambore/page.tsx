@@ -244,7 +244,7 @@ export default function RanthamborePage() {
           eyebrow="Start Your Journey"
           headline="Your Ranthambore Safari Awaits."
           headlineItalic="When Will You Go?"
-          subtext="Tell us how many days you have and we'll build a Ranthambore safari into your wider Rajasthan itinerary — usually with a reply within 24 hours."
+          subtext="Tell us how many days you have and we'll build a Ranthambore safari into your wider Rajasthan itinerary — usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a Ranthambore safari with Colourful Indian Holidays."

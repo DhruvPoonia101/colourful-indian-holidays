@@ -10,6 +10,22 @@ export const goldenTriangleVariants: CityCard[] = [
     imageAlt: "Taj Mahal at sunrise, Agra",
   },
   {
+    name: "Golden Triangle Tour in 4 Days",
+    tagline: "Short on Time · 3 or 4 Days",
+    description: "Delhi, the Taj Mahal at sunrise and Jaipur, one day in each city.",
+    href: "/tours/golden-triangle-tour-4-days",
+    image: "/images/destinations/fatehpur-sikri.webp",
+    imageAlt: "Fatehpur Sikri's red sandstone courtyards",
+  },
+  {
+    name: "Agra Day Trip from Delhi",
+    tagline: "Same Day · By Car",
+    description: "The Taj Mahal and Agra Fort in one day, back in Delhi by night.",
+    href: "/tours/agra-day-trip-from-delhi",
+    image: "/images/destinations/mehtab-bagh.webp",
+    imageAlt: "The Taj Mahal seen from Mehtab Bagh, Agra",
+  },
+  {
     name: "Golden Triangle Tour with Udaipur",
     tagline: "9 Days",
     description: "The classic route extended with two days in Udaipur's lake city.",

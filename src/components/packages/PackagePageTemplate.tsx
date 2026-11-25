@@ -37,7 +37,9 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
   // schema/disclaimer while this row still says something else would be
   // a visible contradiction on the same page.
   const quickFacts = content.quickFacts.map((fact) =>
-    fact.label === "Starting From"
+    fact.label === "Starting From" && content.priceOnRequest
+      ? { ...fact, value: "Price on request" }
+      : fact.label === "Starting From"
       ? {
           ...fact,
           value: formatFromPrice(startingPrice, content.itinerary.length),
@@ -66,7 +68,7 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
               description: content.metaDescription,
               image: content.heroImage,
               durationDays: content.itinerary.length,
-              startingPrice,
+              startingPrice: content.priceOnRequest ? undefined : startingPrice,
               priceCurrency: "USD",
               itinerary: content.itinerary,
             })
@@ -91,7 +93,7 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
         <QuickFacts
           facts={quickFacts}
           quoteButtonPageName={`${content.name} (Quick Facts)`}
-          priceDisclaimer={PRICE_DISCLAIMER}
+          priceDisclaimer={content.priceOnRequest ? undefined : PRICE_DISCLAIMER}
         />
 
         <ItineraryTimeline
@@ -186,7 +188,7 @@ export function PackagePageTemplate({ content }: { content: PackageContent }) {
           eyebrow="Start Your Journey"
           headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
-          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage={`Hi! I'd like to book the ${content.name}.`}

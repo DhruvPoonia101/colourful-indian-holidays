@@ -1,3 +1,4 @@
+import { BUSINESS } from "@/lib/seo/business";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionIntro } from "@/components/destinations/SectionIntro";
 
@@ -39,7 +40,7 @@ const points = [
   {
     title: "A Track Record You Can Check Yourself",
     description:
-      "4.9★ on both Google (140+ reviews) and Tripadvisor (282+ reviews), plus Tripadvisor's Travellers' Choice award in six separate years — 2014, 2015, 2016, 2017, 2019 and 2024.",
+      `4.9★ on both Google (${BUSINESS.googleRating.reviewCount}+ reviews) and Tripadvisor (${BUSINESS.aggregateRating.reviewCount}+ reviews), plus Tripadvisor's Travellers' Choice award in six separate years — 2014, 2015, 2016, 2017, 2019 and 2024.`,
   },
 ];
 

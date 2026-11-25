@@ -234,7 +234,7 @@ export default function BestTimeHubPage() {
           eyebrow="Start Your Journey"
           headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
-          subtext="Tell us your travel window and where you'd like to go — we'll build an itinerary around the right season, usually with a reply within 24 hours."
+          subtext="Tell us your travel window and where you'd like to go — we'll build an itinerary around the right season, usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like help planning the right time to visit India with Colourful Indian Holidays."

@@ -195,7 +195,7 @@ const faqs: FaqItem[] = [
   {
     question: "Can you book Palace on Wheels and other luxury trains?",
     answer:
-      "Yes. We are an authorised booking agent for the Palace on Wheels, the luxury train run by RTDC and Indian Railways, through our sister site Palace on Wheels Tour (palaceonwheelstour.com). We can book it on its own or combine it with a private hotel-and-driver itinerary before or after the train journey.",
+      "Yes. Palace on Wheels is our sister company's luxury train, and we are an authorised booking agent for it. We can book it on its own or combine it with a private hotel-and-driver itinerary before or after the train journey.",
   },
   {
     question: "Where are you based, and which languages do you speak?",
@@ -252,6 +252,15 @@ export default function IndiaTravelAgentPage() {
                 <p>
                   Choosing who to book with is the hardest part, so below is how the main options
                   differ and how to verify any India agent, including us, before you pay a deposit.
+                  For the full checklist, with warning signs and the questions to ask, see our guide on{" "}
+                  <Link href="/travel-guide/how-to-choose-a-tour-operator-in-india" className="text-maroon underline">
+                    how to choose a tour operator in India
+                  </Link>
+                  . To see what a private trip with us includes and costs, go to{" "}
+                  <Link href="/private-tours-of-india" className="text-maroon underline">
+                    private tours of India
+                  </Link>
+                  .
                 </p>
               </div>
             </Reveal>

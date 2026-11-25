@@ -476,7 +476,7 @@ export default function TopCulturalFestivalsPage() {
           eyebrow="Start Your Journey"
           headline="Time Your Trip Around an Indian Festival."
           headlineItalic="When Will You Go?"
-          subtext="Every itinerary is built privately around your dates and interests — tell us which festival you'd like to catch and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us which festival you'd like to catch and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a trip around one of India's festivals with Colourful Indian Holidays."

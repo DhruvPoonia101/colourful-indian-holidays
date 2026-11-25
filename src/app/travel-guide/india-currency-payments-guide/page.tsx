@@ -358,7 +358,7 @@ export default function IndiaCurrencyPaymentsGuidePage() {
           eyebrow="Start Your Journey"
           headline="Money Sorted? Let's Plan the Trip."
           headlineItalic="Tell Us Your Dates."
-          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I have a question about payments before booking my trip with Colourful Indian Holidays."

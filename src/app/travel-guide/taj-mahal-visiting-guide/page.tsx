@@ -486,7 +486,15 @@ export default function TajMahalVisitingGuidePage() {
             monument at the best light you can manage, add Agra Fort only if energy allows, and
             leave shopping stops for another trip. If you can spare a night, the visit becomes
             far more relaxed, because you can see the monument at sunset one day and sunrise
-            the next, without rushing either.
+            the next, without rushing either. If a single day is all you have, our{" "}
+            <Link href="/tours/agra-day-trip-from-delhi" className="text-maroon underline">
+              Agra day trip from Delhi
+            </Link>{" "}
+            handles the car, the guide and the timing; with a little more time, the{" "}
+            <Link href="/tours/golden-triangle-tour-4-days" className="text-maroon underline">
+              4-day Golden Triangle tour
+            </Link>{" "}
+            adds a night in Agra for the sunrise.
           </ArticleP>
 
           <ArticleMidCTA

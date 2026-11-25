@@ -66,3 +66,22 @@ export const carRentalHighlights: Highlight[] = [
       "We only offer vehicles with a private driver included — Indian road conditions and traffic patterns make self-driving genuinely difficult for most international visitors.",
   },
 ] as const;
+
+/**
+ * What every car-and-driver booking includes, confirmed by Dhruv on
+ * 25 Nov 2026. Prices are quoted on request for each route (no published
+ * rate), so pages show this list and a quote prompt instead of a figure.
+ */
+export const carHireIncluded: string[] = [
+  "Fuel for the whole trip",
+  "Toll taxes",
+  "Parking charges",
+  "State taxes and interstate permits",
+  "The driver's food and overnight stay allowance",
+];
+
+export const carHireIncludedFaq = {
+  question: "What is included in the car hire price?",
+  answer:
+    "Fuel, toll taxes, parking, state taxes and the driver's food and overnight stay allowance are all included, so none of these are paid separately during the trip. Prices are on request: send us your route, dates and group size and we'll quote the full cost.",
+};

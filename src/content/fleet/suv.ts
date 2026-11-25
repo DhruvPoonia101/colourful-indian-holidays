@@ -6,7 +6,7 @@ export const suv: VehicleContent = {
   tagline: "1 – 6 Travellers",
   metaTitle: "SUV Car Rental with Driver | India",
   metaDescription:
-    "A spacious, air-conditioned SUV with a private driver — more room and ground clearance for longer drives and less predictable road conditions.",
+    "Spacious air-conditioned SUV with a private driver for families and long drives in India. Fuel, tolls, parking, state taxes and driver allowance included.",
   heroImage: "/images/destinations/car-suv.webp",
   heroImageAlt: "White SUV for rental",
   heroHeadline: "SUV — Private Car with Driver",

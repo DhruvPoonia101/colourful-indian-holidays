@@ -6,21 +6,21 @@ export const tempoTraveller: VehicleContent = {
   tagline: "5 – 12 Travellers",
   metaTitle: "Tempo Traveller Rental with Driver | India Group Travel",
   metaDescription:
-    "An air-conditioned Tempo Traveller minibus with a private driver — the standard choice for families and small groups travelling together across India.",
+    "Air-conditioned Tempo Traveller with a private driver for families and small groups in India. Fuel, tolls, parking, taxes and driver allowance included.",
   heroImage: "/images/destinations/car-tempo-traveller.webp",
   heroImageAlt: "Tempo Traveller minibus for group rental",
   heroHeadline: "Tempo Traveller — Group Travel with Driver",
   heroSubheadline:
     "An air-conditioned minibus with a private driver, seating up to 12 — the natural choice for extended families and small groups travelling together on one itinerary.",
   quickFacts: [
-    { label: "Capacity", value: "5 – 11 Travellers" },
+    { label: "Capacity", value: "5 – 12 Travellers" },
     { label: "Luggage Space", value: "Ample, incl. hold" },
     { label: "Best For", value: "Families & Small Groups" },
     { label: "Air Conditioning", value: "Standard" },
   ],
-  capacityPassengers: "11",
+  capacityPassengers: "12",
   luggageBags: "6 Large Bags",
-  bestForDescription: "Ideal for up to 11 passengers — medium groups, corporate teams.",
+  bestForDescription: "Ideal for up to 12 passengers — medium groups, corporate teams.",
   exampleModels: ["Force Traveller 12"],
   features: [
     "Air Conditioned",

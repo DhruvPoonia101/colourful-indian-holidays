@@ -47,19 +47,20 @@ export const BUSINESS = {
     "https://www.instagram.com/colourful_indian_holidays",
     "https://www.facebook.com/ciholidays",
     "https://www.linkedin.com/in/narendrapoonia/",
-    "https://www.tripadvisor.in/Attraction_Review-g304551-d3846895-Reviews-Colourful_Indian_Holidays-New_Delhi_National_Capital_Territory_of_Delhi.html",
+    "https://www.tripadvisor.in/Attraction_Review-g304555-d3846895-Reviews-Colourful_Indian_Holidays-Jaipur_Jaipur_District_Rajasthan.html",
     "https://share.google/7X4vOahXLHBf878Zv",
   ],
-  // Verified directly against this business's own Tripadvisor listing on 2026-08-19.
+  // Verified directly against this business's own Tripadvisor listing (Jaipur) on 2026-11-25.
   aggregateRating: {
     ratingValue: "4.9",
-    reviewCount: "282",
+    reviewCount: "285",
   },
   // Verified directly against this business's own Google Business Profile.
   // Distinct from the Tripadvisor aggregateRating above — do not merge the two counts.
   googleRating: {
     ratingValue: "4.9",
-    reviewCount: "140",
+    // Re-checked on Google Maps on 2026-11-25 (was 140).
+    reviewCount: "149",
     mapsUrl: "https://share.google/7X4vOahXLHBf878Zv",
   },
   languages: ["English", "French", "German", "Spanish"],

@@ -14,6 +14,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { goldenTriangleVariants } from "@/content/golden-triangle-hub";
 import { fleetCards } from "@/content/car-rental-hub";
 import { goldenTriangleTours } from "@/content/packages/golden-triangle-tour-classic";
+import { goldenTriangleTour4Days } from "@/content/packages/golden-triangle-tour-4-days";
 import { goldenTriangleUdaipurTours } from "@/content/packages/golden-triangle-tour-udaipur";
 import { goldenTriangleVaranasiTours } from "@/content/packages/golden-triangle-tour-varanasi";
 import { goldenTriangleRanthamboreTours } from "@/content/packages/golden-triangle-tour-ranthambore";
@@ -45,7 +46,7 @@ import type { PackageContent } from "@/content/packages/types";
 
 const title = "Golden Triangle Tour Packages | Delhi, Agra & Jaipur";
 const description =
-  "India's classic Delhi–Agra–Jaipur circuit in five private versions — the 6-day standard route, or extended with Udaipur, Varanasi, Ranthambore or Pushkar.";
+  "Private Delhi–Agra–Jaipur tours: a same-day Agra trip, 4 days, the classic 6 days, or extended with Udaipur, Varanasi, Ranthambore or Pushkar.";
 const pagePath = "/tours/golden-triangle-tour";
 const heroImage = "/images/destinations/agra-taj-mahal.webp";
 
@@ -102,14 +103,14 @@ const overview = [
   "The 6-day [[classic route|/tours/golden-triangle-tour-classic]] is built for exactly this — a genuine first-time introduction without needing two weeks off, or a longer trip you're not sure you're ready to commit to before you've actually visited India once. It's also, not coincidentally, the itinerary named most often on our country-specific guides for [[American|/india-tours-from-usa]], [[British|/india-tours-from-uk]] and [[Australian|/india-tours-from-australia]] travellers as the natural starting point, since it answers the question most first-time visitors are actually asking: what should I see if I only have one trip to India?",
   "Once the classic route stops being enough, the other four options here each extend it in a different direction rather than simply adding more days to the same three cities. Adding [[Udaipur|/tours/golden-triangle-tour-udaipur]] softens the pace with lake views and a noticeably more romantic register, which is why it's also a popular honeymoon extension — see our dedicated [[Taj Mahal Honeymoon|/experiences/taj-mahal-honeymoon]] itinerary if that's specifically what you're planning. Adding [[Varanasi|/tours/golden-triangle-tour-varanasi]] takes the trip toward India's spiritual and religious landscape instead, at the ghats where cremation rituals and the nightly Ganga aarti have run continuously for centuries. Adding [[Ranthambore|/tours/golden-triangle-tour-ranthambore]] brings in wildlife — a real chance at a wild tiger sighting — without needing a separate wildlife-focused trip. And adding [[Ajmer & Pushkar|/tours/golden-triangle-tour-ajmer-pushkar]] goes deeper into Rajasthan's religious diversity, pairing a Sufi shrine with a Hindu pilgrimage lake barely fifteen kilometres apart.",
   "Three of the sites on the classic route alone — the Taj Mahal, Agra Fort, and Jaipur's Jantar Mantar and walled Pink City — carry UNESCO World Heritage status, which is one reason this circuit anchors our dedicated [[UNESCO Heritage Sites|/experiences/unesco-heritage-sites]] itinerary too, alongside sites further afield in Delhi, Maharashtra and Odisha. If forts and palaces specifically are what draws you to Jaipur, our [[Palace & Fort Tours|/experiences/palace-fort-tours]] experience goes considerably deeper into that architectural tradition across four Rajasthan cities, of which Jaipur's Amber Fort is only the first.",
-  "Every version of this trip runs on a private vehicle and driver throughout — see our [[car rental fleet|/car-rental]] for the range — with an English-speaking guide at each stop rather than a fixed group tour schedule. If this is genuinely your first trip to India, our guides to [[India's e-Visa process|/travel-guide/india-e-visa-guide]] and [[getting around the country|/travel-guide/getting-around-india]] cover the practical groundwork most first-time visitors ask about before their trip even starts. Tell us your dates and which of the five routes above interests you, and we'll build the exact itinerary around it.",
+  "Every version of this trip runs on a private vehicle and driver throughout — see our [[car rental fleet|/car-rental]] for the range — with an English-speaking guide at each stop rather than a fixed group tour schedule. If this is genuinely your first trip to India, our guides to [[India's e-Visa process|/travel-guide/india-e-visa-guide]] and [[getting around the country|/travel-guide/getting-around-india]] cover the practical groundwork most first-time visitors ask about before their trip even starts. Tell us your dates and which of the routes above interests you, and we'll build the exact itinerary around it.",
 ];
 
 const faqs: FaqItem[] = [
   {
     question: "How many days do I need for the Golden Triangle?",
     answer:
-      "The classic Delhi-Agra-Jaipur circuit runs 6 days, which is enough to see each city's main sights without rushing. If you'd like to add Udaipur, Varanasi, Ranthambore, or Ajmer and Pushkar, the extended versions run 8 to 9 days instead.",
+      "The classic Delhi-Agra-Jaipur circuit runs 6 days, which is enough to see each city's main sights without rushing. Short on time, our 4-day version (or 3 days on request) covers one day per city, and an Agra day trip from Delhi fits the Taj Mahal into a single day. If you'd like to add Udaipur, Varanasi, Ranthambore, or Ajmer and Pushkar, the extended versions run 8 to 9 days instead.",
   },
   {
     question: "What's the best order to visit Delhi, Agra and Jaipur?",
@@ -141,6 +142,11 @@ const faqs: FaqItem[] = [
  * RATE_PER_NIGHT_USD.luxury (the same two tiers as the cost guide).
  */
 const routeChoices: { pkg: PackageContent; route: string; bestFor: string }[] = [
+  {
+    pkg: goldenTriangleTour4Days,
+    route: "Delhi, Agra, Fatehpur Sikri, Jaipur",
+    bestFor: "Short on time: one day per city (a 3-day version is possible)",
+  },
   {
     pkg: goldenTriangleTours,
     route: "Delhi, Agra, Jaipur",
@@ -199,7 +205,7 @@ const driveTimes = [
 
 /** Every tour this hub links to, as real package data — so the hub's schema
  * names, durations and indicative prices always match the trip pages. */
-const hubTrips = [goldenTriangleTours, goldenTriangleUdaipurTours, goldenTriangleVaranasiTours, goldenTriangleRanthamboreTours, goldenTriangleAjmerPushkarTours].map(packageToTripSummary);
+const hubTrips = [goldenTriangleTour4Days, goldenTriangleTours, goldenTriangleUdaipurTours, goldenTriangleVaranasiTours, goldenTriangleRanthamboreTours, goldenTriangleAjmerPushkarTours].map(packageToTripSummary);
 
 export default function GoldenTriangleHubPage() {
   return (
@@ -232,7 +238,7 @@ export default function GoldenTriangleHubPage() {
           imageAlt="Taj Mahal at sunrise, Agra"
           breadcrumbs={breadcrumbs}
           eyebrow="Tours & Packages"
-          headline="The Golden Triangle, Five Ways"
+          headline="The Golden Triangle, From One Day to Nine"
           subheadline="Delhi, Agra and Jaipur form the core of every version below — the difference is what you add on, and how many days you have."
         />
 
@@ -255,8 +261,9 @@ export default function GoldenTriangleHubPage() {
               <SectionIntro eyebrow="Compare the Routes" heading="Which Golden Triangle Route Suits Me?" />
               <p id="route-chooser" className="mt-4 max-w-3xl text-base leading-relaxed text-ink-soft">
                 <span className="font-semibold text-ink">
-                  Pick the classic 6-day route for a first look at Delhi, Agra and Jaipur, or add 2 to 3
-                  days for tigers, Pushkar, Udaipur or Varanasi.
+                  Pick the classic 6-day route for a first look at Delhi, Agra and Jaipur, the 4-day
+                  version if you are short on time, or add 2 to 3 days for tigers, Pushkar, Udaipur or
+                  Varanasi.
                 </span>{" "}
                 Prices are per person, two people sharing, for the hotel nights shown, with a private car,
                 driver and guide. What changes the final price: your dates, hotel category and group size.
@@ -300,6 +307,13 @@ export default function GoldenTriangleHubPage() {
                 </table>
               </div>
               <p className="mt-3 text-xs italic text-ink-soft/80">{PRICE_DISCLAIMER}</p>
+              <p className="mt-3 text-sm text-ink-soft">
+                Only have one day?{" "}
+                <Link href="/tours/agra-day-trip-from-delhi" className="font-semibold text-maroon underline">
+                  Agra day trip from Delhi
+                </Link>{" "}
+                by private car: the Taj Mahal and Agra Fort, back in Delhi the same night.
+              </p>
 
               <div className="mt-8 grid gap-6 md:grid-cols-2">
                 <div className="rounded-2xl border border-sand bg-white p-5">
@@ -326,6 +340,19 @@ export default function GoldenTriangleHubPage() {
                   </p>
                 </div>
               </div>
+
+              <h3 className="mt-10 font-display text-xl font-semibold text-ink">Golden Triangle Tours from Delhi</h3>
+              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-soft sm:text-base">
+                <span className="font-semibold text-ink">
+                  Every route above starts in Delhi: your guide and driver meet you at Indira Gandhi
+                  International Airport, and the tour ends with a transfer to Jaipur airport or back to Delhi
+                  for your flight home.
+                </span>{" "}
+                When you compare quotes, check what the price covers. Some Golden Triangle offers are priced
+                for the car, driver and guide only, with hotels and monument tickets added later. Our prices
+                include the hotel nights, daily breakfast, the private car and driver, an English-speaking
+                guide and monument entry fees, so the figure in the table is the trip, not a part of it.
+              </p>
 
               <h3 className="mt-10 font-display text-xl font-semibold text-ink">How Long Are the Drives?</h3>
               <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-soft">

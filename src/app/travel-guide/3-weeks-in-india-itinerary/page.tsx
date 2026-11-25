@@ -238,7 +238,7 @@ export default function Page() {
           eyebrow="Start Your Journey"
           headline="Three Weeks, Planned Around You."
           headlineItalic="Tell Us Your Dates."
-          subtext="Every itinerary is built privately around your dates and interests, with your own guide and driver. Tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests, with your own guide and driver. Tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like help planning a 3-week India trip with Colourful Indian Holidays."

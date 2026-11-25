@@ -12,6 +12,8 @@ import { breadcrumbJsonLd } from "@/lib/seo/breadcrumb-schema";
 import { faqJsonLd } from "@/lib/seo/faq-schema";
 import { DEFAULT_TRUST_BADGES } from "@/content/trust-badges";
 import type { VehicleContent } from "@/content/fleet/types";
+import { CarHireIncluded } from "@/components/fleet/CarHireIncluded";
+import { carHireIncludedFaq } from "@/content/car-rental-hub";
 
 export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
   const breadcrumbs = [
@@ -19,6 +21,12 @@ export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
     { name: "Car Rental", path: "/car-rental" },
     { name: content.name, path: `/car-rental/${content.slug}` },
   ];
+
+  // The shared "what's included" answer is added to every vehicle's FAQs
+  // (and their schema) unless the vehicle already asks it.
+  const faqs = content.faqs.some((f) => f.question === carHireIncludedFaq.question)
+    ? content.faqs
+    : [carHireIncludedFaq, ...content.faqs];
 
   return (
     <>
@@ -28,7 +36,7 @@ export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(content.faqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <main>
@@ -71,6 +79,8 @@ export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
           features={content.features}
         />
 
+        <CarHireIncluded />
+
         <PopularRoutes />
 
         <HighlightsStrip
@@ -92,7 +102,7 @@ export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
           eyebrow="FAQ"
           heading={`Common Questions About the ${content.name}`}
           intro="What travellers usually ask before arranging transport with us."
-          faqs={content.faqs}
+          faqs={faqs}
           whatsappMessage={`Hi! I have a question about renting a ${content.name}.`}
           topDivider
         />
@@ -102,7 +112,7 @@ export function VehiclePageTemplate({ content }: { content: VehicleContent }) {
           eyebrow="Start Your Journey"
           headline="Your India, Nepal, Bhutan & Sri Lanka Journey Awaits."
           headlineItalic="Where Will You Begin?"
-          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll reply within 24 hours."
+          subtext="Every itinerary is built privately around your dates and interests — tell us what you have in mind and we'll send a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage={`Hi! I'd like to book a ${content.name} with Colourful Indian Holidays.`}

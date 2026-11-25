@@ -219,7 +219,7 @@ export default function PushkarPage() {
           eyebrow="Start Your Journey"
           headline="Your Pushkar Journey Awaits."
           headlineItalic="When Will You Go?"
-          subtext="Tell us how many days you have and we'll build Pushkar into your wider Rajasthan itinerary — usually with a reply within 24 hours."
+          subtext="Tell us how many days you have and we'll build Pushkar into your wider Rajasthan itinerary — usually with a tailored itinerary within 24 hours."
           primaryLabel="Plan My Journey"
           primaryHref="/contact"
           whatsappMessage="Hi! I'd like to plan a Pushkar trip with Colourful Indian Holidays."
