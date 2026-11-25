@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { BUSINESS } from "@/lib/seo/business";
 import { formatLocation, getApproxLocation } from "@/lib/geo";
 import { saveLead } from "@/lib/leads-store";
+import { reportLeadToOpenAI } from "@/lib/openai-capi";
 import {
   getClientIp,
   isHoneypotFilled,
@@ -22,6 +23,9 @@ type LeadPayload = {
   companyWebsite?: string;
   formLoadedAt?: number;
   turnstileToken?: string;
+  pageUrl?: string;
+  /** Shared with the browser pixel so OpenAI de-duplicates the lead. */
+  leadEventId?: string;
 };
 
 export async function POST(request: Request) {
@@ -33,7 +37,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
-  const { destination, travelDate, days, travellers, email, companyWebsite, formLoadedAt, turnstileToken } = body;
+  const { destination, travelDate, days, travellers, email, companyWebsite, formLoadedAt, turnstileToken, pageUrl, leadEventId } = body;
 
   // Honeypot: only a bot fills a field it cannot see, so answer as though
   // the submission worked rather than telling the bot it was caught.
@@ -69,6 +73,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Please fill in every field with a valid email." }, { status: 400 });
   }
 
+  // The lead is valid and human-verified. Every success response below also
+  // reports it to OpenAI Ads from the server (src/lib/openai-capi.ts).
+  const accepted = () => {
+    reportLeadToOpenAI({ request, eventId: leadEventId, email, pageUrl });
+    return NextResponse.json({ ok: true });
+  };
+
   const geo = await getApproxLocation(ip);
 
   // Store first, email second: the database row is the permanent record and
@@ -91,7 +102,7 @@ export async function POST(request: Request) {
   if (!apiKey) {
     console.error("RESEND_API_KEY is not set — trip planner lead was not emailed.");
     return saved
-      ? NextResponse.json({ ok: true })
+      ? accepted()
       : NextResponse.json(
           { error: "Email sending isn't configured yet. Please try WhatsApp or call us instead." },
           { status: 500 }
@@ -120,14 +131,14 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error("Resend error:", error);
-      if (saved) return NextResponse.json({ ok: true });
+      if (saved) return accepted();
       return NextResponse.json({ error: "Couldn't send that just now — please try again." }, { status: 502 });
     }
 
-    return NextResponse.json({ ok: true });
+    return accepted();
   } catch (err) {
     console.error("Trip planner lead send failed:", err);
-    if (saved) return NextResponse.json({ ok: true });
+    if (saved) return accepted();
     return NextResponse.json({ error: "Couldn't send that just now — please try again." }, { status: 500 });
   }
 }

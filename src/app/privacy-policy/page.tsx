@@ -35,7 +35,7 @@ function UL({ children }: { children: React.ReactNode }) {
 
 export default function PrivacyPolicyPage() {
   return (
-    <LegalPageLayout title="Privacy Policy" lastUpdated="August 2026">
+    <LegalPageLayout title="Privacy Policy" lastUpdated="November 2026">
       <section>
         <H2>Copyright Notice</H2>
         <UL>
@@ -122,8 +122,11 @@ export default function PrivacyPolicyPage() {
           If you arrive from an advertisement on ChatGPT, we use the OpenAI Ads measurement pixel
           to record whether your visit led to an enquiry, such as submitting a quote request or
           contact form, or tapping our WhatsApp or phone link. The pixel stores an ad-click
-          reference in a first-party cookie. Information you type into our forms may be hashed
-          in your browser before it is used to match an enquiry to an ad. We use this only to
+          reference in a first-party cookie. When you send an enquiry, our server also reports it
+          to OpenAI with that ad-click reference, your IP address, your browser type and a
+          one-way SHA-256 hash of your email address (and of your phone number, if you give one
+          with its country code). OpenAI receives the hash, never the email address or phone
+          number itself, and uses it only to match the enquiry to an ad. We use this only to
           measure and improve our advertising, and we do not sell your personal information.
         </P>
       </section>

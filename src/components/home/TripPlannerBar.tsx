@@ -7,7 +7,7 @@ import { tripPlannerDestinations } from "@/lib/trip-planner-destinations";
 import { PRIMARY_COUNTRIES, OTHER_COUNTRIES } from "@/lib/countries";
 import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
-import { trackLead } from "@/lib/openai-pixel";
+import { newLeadEventId, trackLead } from "@/lib/openai-pixel";
 
 const DAYS_OPTIONS = [
   "2 Days",
@@ -84,6 +84,8 @@ export function TripPlannerBar() {
     setErrorMessage("");
 
     try {
+      // Same id goes to the server and the pixel, so OpenAI counts this lead once.
+      const leadEventId = newLeadEventId();
       const response = await fetch("/api/trip-planner-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -96,6 +98,8 @@ export function TripPlannerBar() {
           companyWebsite: honeypot,
           formLoadedAt,
           turnstileToken,
+          pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
+          leadEventId,
         }),
       });
 
@@ -113,7 +117,7 @@ export function TripPlannerBar() {
       window.dataLayer.push({ event: "trip_planner_submitted", destination });
       // OpenAI Ads: one lead per trip-planner journey, counted when step 1
       // (trip + email) is accepted. Step 2 only enriches the same lead.
-      trackLead();
+      trackLead(leadEventId);
     } catch (err) {
       setStatus("error");
       setErrorMessage(err instanceof Error ? err.message : "Something went wrong.");

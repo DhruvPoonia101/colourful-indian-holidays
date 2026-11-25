@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { BUSINESS } from "@/lib/seo/business";
 import { formatLocation, getApproxLocation } from "@/lib/geo";
 import { saveLead } from "@/lib/leads-store";
+import { reportLeadToOpenAI } from "@/lib/openai-capi";
 import {
   getClientIp,
   isHoneypotFilled,
@@ -28,6 +29,8 @@ type QuotePayload = {
   companyWebsite?: string;
   formLoadedAt?: number;
   turnstileToken?: string;
+  /** Shared with the browser pixel so OpenAI de-duplicates the lead. */
+  leadEventId?: string;
 };
 
 export async function POST(request: Request) {
@@ -54,6 +57,7 @@ export async function POST(request: Request) {
     companyWebsite,
     formLoadedAt,
     turnstileToken,
+    leadEventId,
   } = body;
 
   // Honeypot: only a bot fills a field it cannot see, so answer as though
@@ -102,6 +106,13 @@ export async function POST(request: Request) {
     );
   }
 
+  // The lead is valid and human-verified. Every success response below also
+  // reports it to OpenAI Ads from the server (src/lib/openai-capi.ts).
+  const accepted = () => {
+    reportLeadToOpenAI({ request, eventId: leadEventId, email, phone, pageUrl });
+    return NextResponse.json({ ok: true });
+  };
+
   const geo = await getApproxLocation(ip);
 
   // Store first, email second: the database row is the permanent record and
@@ -129,7 +140,7 @@ export async function POST(request: Request) {
   if (!apiKey) {
     console.error("RESEND_API_KEY is not set — quote request was not emailed.");
     return saved
-      ? NextResponse.json({ ok: true })
+      ? accepted()
       : NextResponse.json(
           { error: "Email sending isn't configured yet. Please try WhatsApp or call us instead." },
           { status: 500 }
@@ -163,14 +174,14 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error("Resend error:", error);
-      if (saved) return NextResponse.json({ ok: true });
+      if (saved) return accepted();
       return NextResponse.json({ error: "Couldn't send that just now — please try again." }, { status: 502 });
     }
 
-    return NextResponse.json({ ok: true });
+    return accepted();
   } catch (err) {
     console.error("Quote lead send failed:", err);
-    if (saved) return NextResponse.json({ ok: true });
+    if (saved) return accepted();
     return NextResponse.json({ error: "Couldn't send that just now — please try again." }, { status: 500 });
   }
 }

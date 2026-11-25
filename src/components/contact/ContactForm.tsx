@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FiSend } from "react-icons/fi";
 import { HoneypotField, useHoneypot } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
-import { trackLead } from "@/lib/openai-pixel";
+import { newLeadEventId, trackLead } from "@/lib/openai-pixel";
 
 const TRAVEL_MONTHS = [
   "January",
@@ -61,6 +61,8 @@ export function ContactForm() {
     setErrorMessage("");
 
     try {
+      // Same id goes to the server and the pixel, so OpenAI counts this lead once.
+      const leadEventId = newLeadEventId();
       const response = await fetch("/api/contact-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -74,6 +76,8 @@ export function ContactForm() {
           companyWebsite: honeypot,
           formLoadedAt,
           turnstileToken,
+          pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
+          leadEventId,
         }),
       });
 
@@ -93,7 +97,7 @@ export function ContactForm() {
       window.dataLayer.push({
         event: "contact_form_submitted",
       });
-      trackLead(); // OpenAI Ads: lead_created
+      trackLead(leadEventId); // OpenAI Ads: lead_created
 
       setFullName("");
       setEmail("");

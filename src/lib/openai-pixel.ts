@@ -24,17 +24,28 @@ function eventId(prefix: string): string {
 }
 
 /**
+ * Event id for one lead. Create it BEFORE posting the form and send it in the
+ * request body as `leadEventId`: the server reports the same lead to OpenAI's
+ * Conversions API with this id (src/lib/openai-capi.ts), so OpenAI counts the
+ * pixel copy and the server copy once.
+ */
+export function newLeadEventId(): string {
+  return eventId("lead");
+}
+
+/**
  * A real lead: a quote request, contact form or trip-planner submission that
  * the server has accepted. Standard OpenAI event `lead_created`
- * (data type `customer_action`). Call it only AFTER the API call succeeded.
+ * (data type `customer_action`). Call it only AFTER the API call succeeded,
+ * with the same id that was sent to the server.
  */
-export function trackLead(): void {
+export function trackLead(leadEventId: string = newLeadEventId()): void {
   try {
     window.oaiq?.(
       "measure",
       "lead_created",
       { type: "customer_action" },
-      { event_id: eventId("lead") },
+      { event_id: leadEventId },
     );
   } catch {
     // Measurement must never break the page or a form.

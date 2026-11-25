@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FiCalendar, FiSend, FiX } from "react-icons/fi";
 import { HoneypotField } from "@/components/shared/Honeypot";
 import { TurnstileWidget } from "@/components/shared/TurnstileWidget";
-import { trackLead } from "@/lib/openai-pixel";
+import { newLeadEventId, trackLead } from "@/lib/openai-pixel";
 
 const TRAVEL_MONTHS = [
   "January", "February", "March", "April", "May", "June",
@@ -103,6 +103,8 @@ export function GetQuoteButton({
     setErrorMessage("");
 
     try {
+      // Same id goes to the server and the pixel, so OpenAI counts this lead once.
+      const leadEventId = newLeadEventId();
       const response = await fetch("/api/quote-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -121,6 +123,7 @@ export function GetQuoteButton({
           companyWebsite: honeypot,
           formLoadedAt,
           turnstileToken,
+          leadEventId,
         }),
       });
 
@@ -142,7 +145,7 @@ export function GetQuoteButton({
         form_type: variant,
         page_name: pageName,
       });
-      trackLead(); // OpenAI Ads: lead_created
+      trackLead(leadEventId); // OpenAI Ads: lead_created
 
       setFullName("");
       setEmail("");
